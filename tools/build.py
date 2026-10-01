@@ -34,7 +34,7 @@ TRIPS=[("p_dxb_airport_terminal_3","p_dubai_mall"),("p_dxb_airport_terminal_1","
        ("p_dubai_mall","p_atlantis_the_palm"),("p_dubai_mall","p_gold_souk"),("p_al_fahidi_historical_district","p_museum_of_the_future"),
        ("p_dubai_marina_walk","p_mall_of_the_emirates"),("p_dubai_mall","p_expo_city_dubai")]
 url=lambda L:SITE+("" if TX[L]["file"]=="index.html" else TX[L]["file"])
-fav="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2318212A'/%3E%3Cpath d='M7 22 L13 10 L19 22 L25 10' fill='none' stroke='%23E1251B' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"
+fav="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 31s11-10.2 11-18A11 11 0 0 0 5 13c0 7.8 11 18 11 18z' fill='%23E1251B'/%3E%3Crect x='10.5' y='6.5' width='11' height='12' rx='3' fill='%23fff'/%3E%3Crect x='12.3' y='8.6' width='7.4' height='4' rx='1' fill='%23E1251B'/%3E%3Ccircle cx='13.3' cy='15.6' r='1.1' fill='%23E1251B'/%3E%3Ccircle cx='18.7' cy='15.6' r='1.1' fill='%23E1251B'/%3E%3C/svg%3E"
 alts='\n'.join(f'<link rel="alternate" hreflang="{L}" href="{url(L)}">' for L in ORDER)+f'\n<link rel="alternate" hreflang="x-default" href="{SITE}">'
 
 def page(L):
@@ -93,6 +93,7 @@ def page(L):
 <meta name="theme-color" content="#F4F7F8" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#10161C" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="{fav}">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <script type="application/ld+json">{json.dumps(ld,ensure_ascii=False)}</script>
 <style>body{{margin:0}}[hidden]{{display:none!important}}img{{max-width:100%}}</style>
 '''
