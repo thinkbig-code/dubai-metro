@@ -96,13 +96,16 @@ To build for another address (for example a new domain), set `SITE`: `SITE=https
 2. It is checked on a phone and a computer.
 3. Only after that is it committed here and goes live (usually within 1–2 minutes).
 
+The source is `src/dubai-metro.html`; after editing it, run `python3 tools/build.py` and commit the source together with the regenerated pages, `sw.js` and `manifest.webmanifest`. Each build gives `sw.js` a new version stamp, so phones that use the site offline pick up the update: online visitors get the new version at once, and an installed copy switches to it from the second launch after the update.
+
 ## Maintenance (every 2–3 months, about 30 minutes)
 
 1. **Station names.** Check for renamed stations (search "Dubai Metro station renamed"). Old names stay searchable.
 2. **Fares and hours.** Compare with RTA.
 3. **Palm Monorail.** Check whether it is running again, and its ticket prices.
 4. **RTA network map.** Compare with the latest PDF on rta.ae.
-5. **Self-test.** Open `https://dubaimetro.fyi/#selftest`, then the browser console (F12 → Console on a computer). It should end with `VALIDATION: N/N passed` and `ITINERARIES: 10/10 passed`. Any `FAIL` line means something broke.
+5. **Station coordinates.** If a station moves or a new one opens (for example the Blue Line), add its coordinates to `GEO` in the source, or "nearest station" will not know it.
+6. **Self-test.** Open `https://dubaimetro.fyi/#selftest`, then the browser console (F12 → Console on a computer). It should end with `VALIDATION: N/N passed` and `ITINERARIES: 10/10 passed`. Any `FAIL` line means something broke.
 
 ### Quick phone check after a bigger update
 
@@ -112,3 +115,7 @@ To build for another address (for example a new domain), set `SITE`: `SITE=https
 - The panel folds to one line with the handle and opens again.
 - Arabic and Urdu read right to left without cut-off letters; Hindi and Chinese show no empty boxes.
 - Dark mode is readable; the map pans and zooms with two fingers.
+- The location button in the From field fills in the nearest station (allow location when the phone asks).
+- After one visit, the site opens in airplane mode and still builds routes.
+- "Add to Home screen" (Android: Chrome menu; iPhone: Safari Share) adds the map-pin icon and opens without the address bar.
+- Line names appear at the ends of each line and follow the language.
