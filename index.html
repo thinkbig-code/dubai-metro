@@ -1803,12 +1803,13 @@ function runValidation(){
 }
 
 // ================= START =================
-// a shared link (#from~to) opens that route; otherwise show an example trip
+// a shared link (#from~to) opens that route; otherwise the fields start empty
 const SELFTEST=location.hash==="#selftest";
 let start=null,hashLang=null;
 let hashTour=null;
 try{const m=(location.hash||"").slice(1).split("~");if(m[0]==="tour"){hashTour=m[1]||"all";if(m[2]&&I18N[m[2]])hashLang=m[2];}else if(m.length>=2){const a=parseToken(m[0]),b=parseToken(m[1]);if(a&&b)start=[a,b];if(m[2]&&I18N[m[2]])hashLang=m[2];}}catch(e){}
-if(!start)start=[parseToken("p_dxb_airport_terminal_3"),parseToken("p_dubai_mall")];
+// no link: open with empty fields
+if(!start)start=[null,null];
 state.from=start[0];state.to=start[1];
 fromI.value=endName(state.from);toI.value=endName(state.to);
 // language: saved choice, else browser language, else English
