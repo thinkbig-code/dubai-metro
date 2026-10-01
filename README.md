@@ -32,6 +32,8 @@ Each language has its own page, so search engines can show people the version in
 - Sharing: copy link, WhatsApp, QR code and a trip card. Every route has its own link.
 - A built-in "Report a problem" form that opens a GitHub issue with the route details filled in.
 - Works on phones (bottom sheet that folds to one line) and computers, in light and dark mode.
+- "Nearest station to me": the location button in the From field picks the closest station and shows the walking time. The location stays on the device.
+- Works offline after the first visit, and can be installed on a phone's home screen like an app.
 
 ## Data and accuracy
 
@@ -40,6 +42,7 @@ Each language has its own page, so search engines can show people the version in
 - **Fares and opening hours** come from RTA announcements and public sources (2025–2026). Hours change during Ramadan and on public holidays.
 - **Palm Monorail** is run by a private operator and is not part of Nol; its status and ticket prices come from the operator's website. It is currently shown as temporarily suspended.
 - **Walking times** are rough estimates and are marked as such.
+- **Station coordinates** (for "nearest station") come from the same GTFS feed; the four Palm Monorail stations are approximate.
 
 The current RTA timetable is published on Dubai Pulse (dataset `rta_gtfs-open`), where access is granted on request.
 
@@ -53,6 +56,8 @@ Use the **Report a problem** button on the site, or open an issue here: https://
 |---|---|
 | `index.html`, `hi.html`, `ar.html`, `ur.html`, `ru.html`, `de.html`, `zh.html`, `fr.html` | The whole app, one page per language. Each file is self-contained (map, data, translations, code). |
 | `og-image.png` | Preview image for links shared in WhatsApp, Telegram and social networks. |
+| `manifest.webmanifest`, `icon-192.png`, `icon-512.png` | Lets the site be installed on a phone like an app. |
+| `sw.js` | Service worker for offline use: pages are fetched fresh when online and the last copy is used offline. Generated from `tools/sw.template.js`. |
 | `apple-touch-icon.png` | Icon shown when the site is added to a phone's home screen. The browser tab icon is built into each page. |
 | `sitemap.xml`, `robots.txt` | For search engines; the sitemap lists all eight language pages. |
 | `CNAME` | Connects the custom domain `dubaimetro.fyi` to GitHub Pages. Do not delete it. |
@@ -62,7 +67,8 @@ The eight pages are generated from one source file, so an update always changes 
 | Path | Purpose |
 |---|---|
 | `src/dubai-metro.html` | The single source of the app: map, data, routing, all eight interface languages. Edit this file, not the generated pages. |
-| `tools/build.py` | Builds the eight language pages, `sitemap.xml` and `robots.txt` from the source. |
+| `tools/build.py` | Builds the eight language pages, `sitemap.xml`, `robots.txt`, `manifest.webmanifest` and `sw.js` from the source. |
+| `tools/sw.template.js` | Source of `sw.js`; the build adds a version stamp so phones pick up updates. |
 | `tools/seo_texts.py` | Per-language page titles, descriptions and the "About this map" text. |
 
 To rebuild after a change (Python 3, no extra packages):

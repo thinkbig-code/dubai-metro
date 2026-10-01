@@ -36,6 +36,7 @@
 <meta name="theme-color" content="#10161C" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 31s11-10.2 11-18A11 11 0 0 0 5 13c0 7.8 11 18 11 18z' fill='%23E1251B'/%3E%3Crect x='10.5' y='6.5' width='11' height='12' rx='3' fill='%23fff'/%3E%3Crect x='12.3' y='8.6' width='7.4' height='4' rx='1' fill='%23E1251B'/%3E%3Ccircle cx='13.3' cy='15.6' r='1.1' fill='%23E1251B'/%3E%3Ccircle cx='18.7' cy='15.6' r='1.1' fill='%23E1251B'/%3E%3C/svg%3E">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Карта метро Дубая и маршруты", "url": "https://dubaimetro.fyi/ru.html", "description": "Бесплатная неофициальная карта метро Дубая с построением маршрута. Как добраться из аэропорта до Dubai Mall, Марины, JBR и Atlantis на метро, трамвае и монорельсе Palm: пошаговый маршрут, время в пути, цены Nol и часы работы, на 8 языках.", "applicationCategory": "TravelApplication", "operatingSystem": "Any", "isAccessibleForFree": true, "inLanguage": "ru", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "AED"}, "about": {"@type": "Place", "name": "Dubai", "address": {"@type": "PostalAddress", "addressCountry": "AE"}}}</script>
 <!-- anonymous visit counter (GoatCounter): no cookies, no personal data -->
 <script data-goatcounter="https://dubaimetro.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
@@ -101,6 +102,7 @@ body{background:var(--bg);color:var(--fg);font-family:var(--font-ui);font-size:1
 .st text{font-size:13px;fill:var(--fg);paint-order:stroke;stroke:var(--bg);stroke-width:3.5px;stroke-linejoin:round}
 .st.big text{font-weight:600}
 .st.hid text{visibility:hidden}
+.term text{font-size:10.5px;font-weight:700;letter-spacing:.01em}
 .ln.susp{stroke-dasharray:3 9;opacity:.55}
 .mono-note{font-size:10.5px;font-style:italic;fill:var(--muted)}
 .wtag rect{fill:var(--surface);stroke:var(--rule);stroke-width:1}
@@ -410,6 +412,13 @@ ol.steps2{list-style:none;margin:0;padding:14px 16px 8px}
 #about[dir=rtl] #aboutClose{float:left}
 #aboutClose{position:sticky;top:0;float:right;width:36px;height:36px;border-radius:50%;border:1px solid var(--rule);background:var(--surface);color:var(--fg);font-size:20px;cursor:pointer}
 .grab,.minbar{display:none}
+.field .loc{flex:none;width:30px;height:30px;margin-inline-end:2px;border:0;border-radius:8px;background:none;color:var(--accent);cursor:pointer;display:grid;place-items:center;padding:0}
+.field .loc svg{width:18px;height:18px}
+.field .loc:hover{background:var(--accent-soft)}
+.field .loc.busy svg{animation:locspin 1s linear infinite}
+@keyframes locspin{to{transform:rotate(360deg)}}
+#toast{position:fixed;left:50%;transform:translateX(-50%);top:16px;z-index:70;width:max-content;max-width:min(440px,calc(100% - 32px));background:var(--fg);color:var(--bg);
+  padding:10px 14px;border-radius:12px;box-shadow:var(--shadow);font-size:14px;line-height:1.4}
 .infobtn{width:34px;height:34px;border-radius:50%;border:1px solid var(--rule);background:var(--surface);color:var(--accent);font:600 16px/1 Georgia,serif;font-style:italic;cursor:pointer;flex:none}
 @media (min-width:721px){.infobtn{display:none}}
 @media (max-width:720px){
@@ -521,6 +530,7 @@ ol.steps2{list-style:none;margin:0;padding:14px 16px 8px}
     <div class="inputs">
       <div class="field" id="fFrom"><b style="background:var(--pinA)">A</b>
         <input id="from" autocomplete="off" placeholder="From: station or place" data-tph="phFrom" aria-label="From: station or place" role="combobox" aria-expanded="false">
+        <button class="loc" id="locBtn" data-tal="locBtn" aria-label="Nearest station to me" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="2.4" fill="currentColor"/><path d="M12 1.8v3.4M12 18.8v3.4M1.8 12h3.4M18.8 12h3.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
         <button class="x" id="clrFrom" data-tal="clear" aria-label="Clear">×</button></div>
       <div class="field" id="fTo"><b style="background:var(--pinB)">B</b>
         <input id="to" autocomplete="off" placeholder="Where to?" data-tph="phTo" aria-label="To: station or place" role="combobox" aria-expanded="false">
@@ -534,6 +544,7 @@ ol.steps2{list-style:none;margin:0;padding:14px 16px 8px}
 </section>
 
 <div id="pop" hidden></div>
+<div id="toast" role="status" aria-live="polite" hidden></div>
 <div id="card" hidden></div>
 
 <div id="legend">
@@ -588,7 +599,7 @@ const FLAG_SVG={
 const flag=(c,cls)=>`<svg class="flag ${cls||""}" viewBox="0 0 30 20" aria-hidden="true">${FLAG_SVG[c]}</svg>`;
 
 const I18N={
-en:{title:"Dubai Metro",n_t2:"Terminal 2 is not on the Metro: take the bus from Stadium or Abu Hail (Green Line), or a taxi.",n_etihad:"Connection to Etihad Rail intercity trains (Al Yalayis Station).",aboutLink:"About this map",more:"Details",less:"Less",hide:"Hide details",show:"Show details",phFrom:"From: station or place",phTo:"Where to?",clear:"Clear",swap:"Swap",popular:"Popular",pAirport:"Airport (DXB T3)",pOld:"Old Dubai",
+en:{title:"Dubai Metro",locBtn:"Nearest station to me",locNearest:"Nearest station: {s} ({w})",locFar:"The nearest station, {s}, is about {k} km away. A taxi may be easier.",locDenied:"Location access is off. Allow it in the browser settings to find the nearest station.",locFail:"Couldn't get your location. Try again or type a place.",n_t2:"Terminal 2 is not on the Metro: take the bus from Stadium or Abu Hail (Green Line), or a taxi.",n_etihad:"Connection to Etihad Rail intercity trains (Al Yalayis Station).",aboutLink:"About this map",more:"Details",less:"Less",hide:"Hide details",show:"Show details",phFrom:"From: station or place",phTo:"Where to?",clear:"Clear",swap:"Swap",popular:"Popular",pAirport:"Airport (DXB T3)",pOld:"Old Dubai",
 lgRed:"Red Line",lgGreen:"Green Line",lgTram:"Dubai Tram",lgMono:"Palm Monorail",lgIx:"Interchange",zin:"Zoom in",zout:"Zoom out",zfit:"Whole map",
 mMetro:"Metro",mTram:"Tram",mMono:"Monorail",stUntil:"{m} until {t}",stClosed:"{m} closed, opens {t}",
 zone:"Fare zone {z}",sepTicket:"Separate ticket",formerly:"formerly {x}",nearby:"Nearby:",fromHere:"From here",toHere:"To here",walkChip:"~{n} min walk",
@@ -614,7 +625,7 @@ attrib:"Run times are based on the RTA timetable (GTFS, 2021) and checked agains
 whySimilar:"Similar time, depends on waiting",monoSuspended:"Palm Monorail is temporarily suspended.",suspendedShort:"Temporarily suspended",stSuspended:"{m}: temporarily suspended",monoSource:"Palm Monorail status as published by the operator (palmmonorail.com).",
 w_airport:"follow the Metro signs, the station is linked to the terminal",w_metrolink:"via the covered Metro Link bridge",w_throughmall:"via the Metro Link bridge and through Dubai Mall",w_aquarium:"inside Dubai Mall, via the Metro Link bridge",w_opera:"through Dubai Mall and along the boulevard",w_bridgemall:"bridge straight into the mall",w_inmoe:"inside Mall of the Emirates",w_next:"next to the station",w_zabeel:"through Zabeel Park",w_under:"the station is under the mall",w_bridgeinto:"bridge into the mall",w_bluewaters:"over the Bluewaters footbridge",w_atlantis:"the monorail stops at the resort",w_nextmono:"next to the monorail station"},
 
-ru:{title:"Метро Дубая",n_t2:"Терминал 2 не на линии метро: от станций Stadium или Abu Hail (Зелёная линия) идёт автобус, или возьмите такси.",n_etihad:"Пересадка на междугородние поезда Etihad Rail (станция Al Yalayis).",aboutLink:"О карте",more:"Подробнее",less:"Свернуть",hide:"Скрыть",show:"Показать маршрут",phFrom:"Откуда: станция или место",phTo:"Куда едем?",clear:"Очистить",swap:"Поменять местами",popular:"Популярное",pAirport:"Аэропорт (DXB T3)",pOld:"Старый Дубай",
+ru:{title:"Метро Дубая",locBtn:"Ближайшая ко мне станция",locNearest:"Ближайшая станция: {s} ({w})",locFar:"Ближайшая станция, {s}, примерно в {k} км. Возможно, проще взять такси.",locDenied:"Доступ к геолокации выключен. Разрешите его в настройках браузера, чтобы найти ближайшую станцию.",locFail:"Не удалось определить местоположение. Попробуйте ещё раз или введите место.",n_t2:"Терминал 2 не на линии метро: от станций Stadium или Abu Hail (Зелёная линия) идёт автобус, или возьмите такси.",n_etihad:"Пересадка на междугородние поезда Etihad Rail (станция Al Yalayis).",aboutLink:"О карте",more:"Подробнее",less:"Свернуть",hide:"Скрыть",show:"Показать маршрут",phFrom:"Откуда: станция или место",phTo:"Куда едем?",clear:"Очистить",swap:"Поменять местами",popular:"Популярное",pAirport:"Аэропорт (DXB T3)",pOld:"Старый Дубай",
 lgRed:"Красная линия",lgGreen:"Зелёная линия",lgTram:"Трамвай",lgMono:"Монорельс Palm",lgIx:"Пересадка",zin:"Приблизить",zout:"Отдалить",zfit:"Вся схема",
 mMetro:"Метро",mTram:"Трамвай",mMono:"Монорельс",stUntil:"{m}: до {t}",stClosed:"{m}: закрыто, откроется в {t}",
 zone:"Тарифная зона {z}",sepTicket:"Отдельный билет",formerly:"раньше {x}",nearby:"Рядом:",fromHere:"Отсюда",toHere:"Сюда",walkChip:"~{n} мин пешком",
@@ -640,7 +651,7 @@ attrib:"Время в пути рассчитано по расписанию RT
 whySimilar:"Время похожее, зависит от ожидания",monoSuspended:"Монорельс Palm временно не работает.",suspendedShort:"Временно не работает",stSuspended:"{m}: временно не работает",monoSource:"Статус монорельса Palm указан по сайту оператора (palmmonorail.com).",
 w_airport:"идите по указателям Metro, станция соединена с терминалом",w_metrolink:"по крытому переходу Metro Link",w_throughmall:"по переходу Metro Link и через Dubai Mall",w_aquarium:"внутри Dubai Mall, по переходу Metro Link",w_opera:"через Dubai Mall и по бульвару",w_bridgemall:"мост ведёт прямо в торговый центр",w_inmoe:"внутри Mall of the Emirates",w_next:"рядом со станцией",w_zabeel:"через парк Zabeel",w_under:"станция прямо под торговым центром",w_bridgeinto:"мост в торговый центр",w_bluewaters:"по пешеходному мосту на Bluewaters",w_atlantis:"монорельс останавливается у курорта",w_nextmono:"рядом со станцией монорельса"},
 
-de:{title:"Dubai Metro",n_t2:"Terminal 2 liegt nicht an der Metro: Bus ab Stadium oder Abu Hail (Grüne Linie) oder Taxi.",n_etihad:"Anschluss an die Fernzüge von Etihad Rail (Station Al Yalayis).",aboutLink:"Über diese Karte",more:"Details",less:"Weniger",hide:"Details ausblenden",show:"Details anzeigen",phFrom:"Von: Station oder Ort",phTo:"Wohin?",clear:"Löschen",swap:"Tauschen",popular:"Beliebt",pAirport:"Flughafen (DXB T3)",pOld:"Altstadt",
+de:{title:"Dubai Metro",locBtn:"Nächste Station zu mir",locNearest:"Nächste Station: {s} ({w})",locFar:"Die nächste Station, {s}, ist etwa {k} km entfernt. Ein Taxi ist vielleicht einfacher.",locDenied:"Der Standortzugriff ist aus. Erlauben Sie ihn in den Browsereinstellungen, um die nächste Station zu finden.",locFail:"Standort konnte nicht ermittelt werden. Versuchen Sie es erneut oder geben Sie einen Ort ein.",n_t2:"Terminal 2 liegt nicht an der Metro: Bus ab Stadium oder Abu Hail (Grüne Linie) oder Taxi.",n_etihad:"Anschluss an die Fernzüge von Etihad Rail (Station Al Yalayis).",aboutLink:"Über diese Karte",more:"Details",less:"Weniger",hide:"Details ausblenden",show:"Details anzeigen",phFrom:"Von: Station oder Ort",phTo:"Wohin?",clear:"Löschen",swap:"Tauschen",popular:"Beliebt",pAirport:"Flughafen (DXB T3)",pOld:"Altstadt",
 lgRed:"Rote Linie",lgGreen:"Grüne Linie",lgTram:"Dubai Tram",lgMono:"Palm Monorail",lgIx:"Umstieg",zin:"Vergrößern",zout:"Verkleinern",zfit:"Ganze Karte",
 mMetro:"Metro",mTram:"Tram",mMono:"Monorail",stUntil:"{m} bis {t}",stClosed:"{m} geschlossen, öffnet {t}",
 zone:"Tarifzone {z}",sepTicket:"Eigenes Ticket",formerly:"früher {x}",nearby:"In der Nähe:",fromHere:"Von hier",toHere:"Hierher",walkChip:"~{n} Min. zu Fuß",
@@ -666,7 +677,7 @@ attrib:"Fahrzeiten basieren auf dem RTA-Fahrplan (GTFS, 2021) und wurden mit öf
 whySimilar:"Ähnliche Zeit, je nach Wartezeit",monoSuspended:"Die Palm Monorail ist vorübergehend außer Betrieb.",suspendedShort:"Vorübergehend außer Betrieb",stSuspended:"{m}: vorübergehend außer Betrieb",monoSource:"Status der Palm Monorail laut Betreiber (palmmonorail.com).",
 w_airport:"den Metro-Schildern folgen, die Station ist mit dem Terminal verbunden",w_metrolink:"über die überdachte Metro-Link-Brücke",w_throughmall:"über die Metro-Link-Brücke und durch die Dubai Mall",w_aquarium:"in der Dubai Mall, über die Metro-Link-Brücke",w_opera:"durch die Dubai Mall und über den Boulevard",w_bridgemall:"Brücke direkt ins Einkaufszentrum",w_inmoe:"in der Mall of the Emirates",w_next:"direkt neben der Station",w_zabeel:"durch den Zabeel Park",w_under:"die Station liegt unter dem Einkaufszentrum",w_bridgeinto:"Brücke ins Einkaufszentrum",w_bluewaters:"über die Fußgängerbrücke nach Bluewaters",w_atlantis:"die Monorail hält direkt am Resort",w_nextmono:"neben der Monorail-Station"},
 
-fr:{title:"Métro de Dubaï",n_t2:"Le terminal 2 n’est pas desservi par le métro : bus depuis Stadium ou Abu Hail (ligne verte), ou taxi.",n_etihad:"Correspondance avec les trains interurbains Etihad Rail (gare d’Al Yalayis).",aboutLink:"À propos de la carte",more:"Détails",less:"Réduire",hide:"Masquer",show:"Afficher l’itinéraire",phFrom:"Départ : station ou lieu",phTo:"Où allez-vous ?",clear:"Effacer",swap:"Inverser",popular:"Populaire",pAirport:"Aéroport (DXB T3)",pOld:"Vieux Dubaï",
+fr:{title:"Métro de Dubaï",locBtn:"Station la plus proche de moi",locNearest:"Station la plus proche : {s} ({w})",locFar:"La station la plus proche, {s}, est à environ {k} km. Un taxi sera peut-être plus simple.",locDenied:"L’accès à la position est désactivé. Autorisez-le dans les réglages du navigateur pour trouver la station la plus proche.",locFail:"Impossible d’obtenir votre position. Réessayez ou saisissez un lieu.",n_t2:"Le terminal 2 n’est pas desservi par le métro : bus depuis Stadium ou Abu Hail (ligne verte), ou taxi.",n_etihad:"Correspondance avec les trains interurbains Etihad Rail (gare d’Al Yalayis).",aboutLink:"À propos de la carte",more:"Détails",less:"Réduire",hide:"Masquer",show:"Afficher l’itinéraire",phFrom:"Départ : station ou lieu",phTo:"Où allez-vous ?",clear:"Effacer",swap:"Inverser",popular:"Populaire",pAirport:"Aéroport (DXB T3)",pOld:"Vieux Dubaï",
 lgRed:"Ligne rouge",lgGreen:"Ligne verte",lgTram:"Tramway de Dubaï",lgMono:"Monorail de Palm",lgIx:"Correspondance",zin:"Zoom avant",zout:"Zoom arrière",zfit:"Plan entier",
 mMetro:"Métro",mTram:"Tram",mMono:"Monorail",stUntil:"{m} jusqu’à {t}",stClosed:"{m} fermé, ouvre à {t}",
 zone:"Zone tarifaire {z}",sepTicket:"Billet séparé",formerly:"anciennement {x}",nearby:"À proximité :",fromHere:"Partir d’ici",toHere:"Aller ici",walkChip:"~{n} min à pied",
@@ -692,7 +703,7 @@ attrib:"Les temps de trajet reposent sur l’horaire de la RTA (GTFS, 2021) et o
 whySimilar:"Temps similaire, selon l’attente",monoSuspended:"Le monorail de Palm est temporairement suspendu.",suspendedShort:"Temporairement suspendu",stSuspended:"{m} : temporairement suspendu",monoSource:"Statut du monorail de Palm selon l’exploitant (palmmonorail.com).",
 w_airport:"suivez les panneaux Metro, la station est reliée au terminal",w_metrolink:"par la passerelle couverte Metro Link",w_throughmall:"par la passerelle Metro Link puis à travers le Dubai Mall",w_aquarium:"dans le Dubai Mall, par la passerelle Metro Link",w_opera:"à travers le Dubai Mall puis le long du boulevard",w_bridgemall:"passerelle directe vers le centre commercial",w_inmoe:"dans le Mall of the Emirates",w_next:"à côté de la station",w_zabeel:"à travers le Zabeel Park",w_under:"la station est sous le centre commercial",w_bridgeinto:"passerelle vers le centre commercial",w_bluewaters:"par la passerelle piétonne de Bluewaters",w_atlantis:"le monorail s’arrête au complexe",w_nextmono:"à côté de la station du monorail"},
 
-zh:{title:"迪拜地铁",n_t2:"2 号航站楼不在地铁沿线：可从绿线 Stadium 或 Abu Hail 站乘公交，或乘出租车。",n_etihad:"可换乘阿提哈德铁路城际列车（Al Yalayis 站）。",aboutLink:"关于本地图",more:"详情",less:"收起",hide:"收起详情",show:"显示详情",phFrom:"出发：车站或地点",phTo:"去哪里？",clear:"清除",swap:"交换",popular:"热门",pAirport:"机场 (DXB T3)",pOld:"迪拜老城",
+zh:{title:"迪拜地铁",locBtn:"离我最近的车站",locNearest:"最近的车站：{s}（{w}）",locFar:"最近的车站 {s} 约在 {k} 公里外，乘出租车可能更方便。",locDenied:"位置权限已关闭。请在浏览器设置中允许，以查找最近的车站。",locFail:"无法获取您的位置。请重试或输入地点。",n_t2:"2 号航站楼不在地铁沿线：可从绿线 Stadium 或 Abu Hail 站乘公交，或乘出租车。",n_etihad:"可换乘阿提哈德铁路城际列车（Al Yalayis 站）。",aboutLink:"关于本地图",more:"详情",less:"收起",hide:"收起详情",show:"显示详情",phFrom:"出发：车站或地点",phTo:"去哪里？",clear:"清除",swap:"交换",popular:"热门",pAirport:"机场 (DXB T3)",pOld:"迪拜老城",
 lgRed:"红线",lgGreen:"绿线",lgTram:"迪拜有轨电车",lgMono:"棕榈岛单轨",lgIx:"换乘站",zin:"放大",zout:"缩小",zfit:"全图",
 mMetro:"地铁",mTram:"有轨电车",mMono:"单轨",stUntil:"{m} 运营至 {t}",stClosed:"{m} 已停运，{t} 开始运营",
 zone:"票价区 {z}",sepTicket:"单独购票",formerly:"旧称 {x}",nearby:"附近：",fromHere:"从这里出发",toHere:"到这里",walkChip:"步行约 {n} 分钟",
@@ -718,7 +729,7 @@ attrib:"行车时间基于 RTA 时刻表（GTFS，2021），并已对照公开�
 whySimilar:"时间相近，取决于候车",monoSuspended:"棕榈岛单轨暂停运营。",suspendedShort:"暂停运营",stSuspended:"{m}：暂停运营",monoSource:"棕榈岛单轨运营状态以运营方网站为准（palmmonorail.com）。",
 w_airport:"按 Metro 指示牌走，车站与航站楼相连",w_metrolink:"经有顶棚的 Metro Link 天桥",w_throughmall:"经 Metro Link 天桥并穿过 Dubai Mall",w_aquarium:"在 Dubai Mall 内，经 Metro Link 天桥",w_opera:"穿过 Dubai Mall 后沿大道步行",w_bridgemall:"天桥直通商场",w_inmoe:"在 Mall of the Emirates 内",w_next:"就在车站旁",w_zabeel:"穿过 Zabeel 公园",w_under:"车站就在商场下方",w_bridgeinto:"天桥通往商场",w_bluewaters:"经 Bluewaters 人行桥",w_atlantis:"单轨在度假村门口停靠",w_nextmono:"就在单轨站旁"},
 
-hi:{title:"दुबई मेट्रो",n_t2:"टर्मिनल 2 मेट्रो पर नहीं है: ग्रीन लाइन के Stadium या Abu Hail से बस लें, या टैक्सी।",n_etihad:"Etihad Rail की इंटरसिटी ट्रेनों (Al Yalayis स्टेशन) से कनेक्शन।",aboutLink:"इस नक्शे के बारे में",more:"विवरण",less:"कम दिखाएँ",hide:"विवरण छिपाएँ",show:"विवरण दिखाएँ",phFrom:"कहाँ से: स्टेशन या जगह",phTo:"कहाँ जाना है?",clear:"साफ़ करें",swap:"अदला-बदली",popular:"लोकप्रिय",pAirport:"एयरपोर्ट (DXB T3)",pOld:"पुराना दुबई",
+hi:{title:"दुबई मेट्रो",locBtn:"मेरे पास का स्टेशन",locNearest:"सबसे पास का स्टेशन: {s} ({w})",locFar:"सबसे पास का स्टेशन, {s}, लगभग {k} किमी दूर है। टैक्सी आसान हो सकती है।",locDenied:"लोकेशन की अनुमति बंद है। सबसे पास का स्टेशन ढूँढने के लिए ब्राउज़र सेटिंग में इसे चालू करें।",locFail:"आपकी लोकेशन नहीं मिल सकी। फिर से कोशिश करें या कोई जगह लिखें।",n_t2:"टर्मिनल 2 मेट्रो पर नहीं है: ग्रीन लाइन के Stadium या Abu Hail से बस लें, या टैक्सी।",n_etihad:"Etihad Rail की इंटरसिटी ट्रेनों (Al Yalayis स्टेशन) से कनेक्शन।",aboutLink:"इस नक्शे के बारे में",more:"विवरण",less:"कम दिखाएँ",hide:"विवरण छिपाएँ",show:"विवरण दिखाएँ",phFrom:"कहाँ से: स्टेशन या जगह",phTo:"कहाँ जाना है?",clear:"साफ़ करें",swap:"अदला-बदली",popular:"लोकप्रिय",pAirport:"एयरपोर्ट (DXB T3)",pOld:"पुराना दुबई",
 lgRed:"रेड लाइन",lgGreen:"ग्रीन लाइन",lgTram:"दुबई ट्राम",lgMono:"पाम मोनोरेल",lgIx:"इंटरचेंज",zin:"ज़ूम इन",zout:"ज़ूम आउट",zfit:"पूरा नक्शा",
 mMetro:"मेट्रो",mTram:"ट्राम",mMono:"मोनोरेल",stUntil:"{m} {t} तक",stClosed:"{m} बंद, {t} बजे खुलेगी",
 zone:"किराया ज़ोन {z}",sepTicket:"अलग टिकट",formerly:"पहले {x}",nearby:"आसपास:",fromHere:"यहाँ से",toHere:"यहाँ तक",walkChip:"~{n} मिनट पैदल",
@@ -744,7 +755,7 @@ attrib:"यात्रा समय RTA की समय-सारिणी (GT
 whySimilar:"समय लगभग बराबर, इंतज़ार पर निर्भर",monoSuspended:"पाम मोनोरेल अस्थायी रूप से बंद है।",suspendedShort:"अस्थायी रूप से बंद",stSuspended:"{m}: अस्थायी रूप से बंद",monoSource:"पाम मोनोरेल की स्थिति ऑपरेटर की वेबसाइट (palmmonorail.com) के अनुसार।",
 w_airport:"Metro के संकेतों का पालन करें, स्टेशन टर्मिनल से जुड़ा है",w_metrolink:"ढके हुए Metro Link पुल से",w_throughmall:"Metro Link पुल से और Dubai Mall के अंदर से",w_aquarium:"Dubai Mall के अंदर, Metro Link पुल से",w_opera:"Dubai Mall से होकर बुलेवार्ड के साथ",w_bridgemall:"पुल सीधे मॉल में जाता है",w_inmoe:"Mall of the Emirates के अंदर",w_next:"स्टेशन के बगल में",w_zabeel:"ज़ाबील पार्क से होकर",w_under:"स्टेशन मॉल के नीचे है",w_bridgeinto:"पुल मॉल तक जाता है",w_bluewaters:"Bluewaters पैदल पुल से",w_atlantis:"मोनोरेल रिसॉर्ट पर रुकती है",w_nextmono:"मोनोरेल स्टेशन के बगल में"},
 
-ar:{title:"مترو دبي",n_t2:"المبنى 2 ليس على خط المترو: استقل الحافلة من Stadium أو Abu Hail (الخط الأخضر) أو سيارة أجرة.",n_etihad:"اتصال بقطارات الاتحاد بين المدن (محطة اليلايس).",aboutLink:"عن هذه الخريطة",more:"التفاصيل",less:"إخفاء",hide:"إخفاء التفاصيل",show:"عرض التفاصيل",phFrom:"من: محطة أو مكان",phTo:"إلى أين؟",clear:"مسح",swap:"تبديل",popular:"الأكثر طلبًا",pAirport:"المطار (DXB T3)",pOld:"دبي القديمة",
+ar:{title:"مترو دبي",locBtn:"أقرب محطة إليّ",locNearest:"أقرب محطة: {s} ({w})",locFar:"أقرب محطة، {s}، تبعد نحو {k} كم. قد تكون سيارة الأجرة أسهل.",locDenied:"الوصول إلى الموقع متوقف. اسمح به في إعدادات المتصفح للعثور على أقرب محطة.",locFail:"تعذّر تحديد موقعك. حاول مرة أخرى أو اكتب مكانًا.",n_t2:"المبنى 2 ليس على خط المترو: استقل الحافلة من Stadium أو Abu Hail (الخط الأخضر) أو سيارة أجرة.",n_etihad:"اتصال بقطارات الاتحاد بين المدن (محطة اليلايس).",aboutLink:"عن هذه الخريطة",more:"التفاصيل",less:"إخفاء",hide:"إخفاء التفاصيل",show:"عرض التفاصيل",phFrom:"من: محطة أو مكان",phTo:"إلى أين؟",clear:"مسح",swap:"تبديل",popular:"الأكثر طلبًا",pAirport:"المطار (DXB T3)",pOld:"دبي القديمة",
 lgRed:"الخط الأحمر",lgGreen:"الخط الأخضر",lgTram:"ترام دبي",lgMono:"مونوريل النخلة",lgIx:"محطة تبديل",zin:"تكبير",zout:"تصغير",zfit:"الخريطة كاملة",
 mMetro:"المترو",mTram:"الترام",mMono:"المونوريل",stUntil:"{m} حتى {t}",stClosed:"{m} مغلق، يفتح {t}",
 zone:"منطقة التعرفة {z}",sepTicket:"تذكرة منفصلة",formerly:"سابقًا {x}",nearby:"بالقرب:",fromHere:"من هنا",toHere:"إلى هنا",walkChip:"~{n} دقيقة سيرًا",
@@ -770,7 +781,7 @@ attrib:"تستند أزمنة الرحلات إلى جدول هيئة الطرق
 whySimilar:"وقت مقارب، حسب الانتظار",monoSuspended:"مونوريل النخلة متوقف مؤقتًا.",suspendedShort:"متوقف مؤقتًا",stSuspended:"{m}: متوقف مؤقتًا",monoSource:"حالة مونوريل النخلة وفق موقع المشغل (palmmonorail.com).",
 w_airport:"اتبع لافتات المترو، المحطة متصلة بمبنى المسافرين",w_metrolink:"عبر جسر Metro Link المغطى",w_throughmall:"عبر جسر Metro Link ثم داخل دبي مول",w_aquarium:"داخل دبي مول، عبر جسر Metro Link",w_opera:"عبر دبي مول ثم على طول البوليفارد",w_bridgemall:"جسر يؤدي مباشرة إلى المول",w_inmoe:"داخل مول الإمارات",w_next:"بجوار المحطة",w_zabeel:"عبر حديقة زعبيل",w_under:"المحطة أسفل المول",w_bridgeinto:"جسر إلى المول",w_bluewaters:"عبر جسر المشاة إلى بلوواترز",w_atlantis:"يتوقف المونوريل عند المنتجع",w_nextmono:"بجوار محطة المونوريل"},
 
-ur:{title:"دبئی میٹرو",n_t2:"ٹرمینل 2 میٹرو پر نہیں ہے: گرین لائن کے Stadium یا Abu Hail سے بس لیں، یا ٹیکسی۔",n_etihad:"Etihad Rail کی انٹرسٹی ٹرینوں (Al Yalayis اسٹیشن) سے رابطہ۔",aboutLink:"اس نقشے کے بارے میں",more:"تفصیلات",less:"کم دکھائیں",hide:"تفصیل چھپائیں",show:"تفصیل دکھائیں",phFrom:"کہاں سے: اسٹیشن یا جگہ",phTo:"کہاں جانا ہے؟",clear:"صاف کریں",swap:"تبدیل کریں",popular:"مقبول",pAirport:"ایئرپورٹ (DXB T3)",pOld:"پرانا دبئی",
+ur:{title:"دبئی میٹرو",locBtn:"میرے قریب ترین اسٹیشن",locNearest:"قریب ترین اسٹیشن: {s} ({w})",locFar:"قریب ترین اسٹیشن، {s}، تقریباً {k} کلومیٹر دور ہے۔ ٹیکسی آسان رہے گی۔",locDenied:"لوکیشن تک رسائی بند ہے۔ قریب ترین اسٹیشن تلاش کرنے کے لیے براؤزر کی ترتیبات میں اجازت دیں۔",locFail:"آپ کی لوکیشن معلوم نہ ہو سکی۔ دوبارہ کوشش کریں یا کوئی جگہ لکھیں۔",n_t2:"ٹرمینل 2 میٹرو پر نہیں ہے: گرین لائن کے Stadium یا Abu Hail سے بس لیں، یا ٹیکسی۔",n_etihad:"Etihad Rail کی انٹرسٹی ٹرینوں (Al Yalayis اسٹیشن) سے رابطہ۔",aboutLink:"اس نقشے کے بارے میں",more:"تفصیلات",less:"کم دکھائیں",hide:"تفصیل چھپائیں",show:"تفصیل دکھائیں",phFrom:"کہاں سے: اسٹیشن یا جگہ",phTo:"کہاں جانا ہے؟",clear:"صاف کریں",swap:"تبدیل کریں",popular:"مقبول",pAirport:"ایئرپورٹ (DXB T3)",pOld:"پرانا دبئی",
 lgRed:"ریڈ لائن",lgGreen:"گرین لائن",lgTram:"دبئی ٹرام",lgMono:"پام مونوریل",lgIx:"انٹرچینج",zin:"بڑا کریں",zout:"چھوٹا کریں",zfit:"پورا نقشہ",
 mMetro:"میٹرو",mTram:"ٹرام",mMono:"مونوریل",stUntil:"{m} {t} تک",stClosed:"{m} بند، {t} بجے کھلے گی",
 zone:"کرایہ زون {z}",sepTicket:"الگ ٹکٹ",formerly:"پہلے {x}",nearby:"قریب:",fromHere:"یہاں سے",toHere:"یہاں تک",walkChip:"~{n} منٹ پیدل",
@@ -956,6 +967,9 @@ function roundD(P,R){
 const lineD=ids=>roundD(chainPts(ids),22);
 function linePath(g,line,ids){return el("path",{class:"ln"+(line==="tram"||line==="mono"?" "+line:""),stroke:LINES[line].c,d:lineD(ids)},g);}
 
+// Station coordinates (lat, lon) for "nearest station": Metro and Tram from the RTA GTFS feed;
+// Palm Monorail is not in the feed, its four stations are approximate.
+const GEO={adcb:[25.24476,55.29828],abubaker:[25.27089,55.33285],abuhail:[25.27532,55.34638],at1:[25.24828,55.35264],at3:[25.24516,55.35939],furjan:[25.03041,55.15219],ghubaiba:[25.26535,55.28917],jadaf:[25.22514,55.33343],fardan:[25.08883,55.15795],nahda:[25.27327,55.36947],qiyadah:[25.27788,55.35293],qusais:[25.26257,55.38767],alras:[25.26872,55.29384],rigga:[25.26319,55.32416],garmin:[25.15525,55.22830],sufouh:[25.10796,55.16489],baniyas:[25.26892,55.30745],burjuman:[25.25499,55.30426],bk:[25.20147,55.26957],bb:[25.19136,55.26044],creek:[25.21896,55.33892],dmcc:[25.07128,55.13910],danube:[25.00092,55.09560],ccd:[25.25426,55.33029],dg:[25.03521,55.14536],dafz:[25.26988,55.37522],dhcc:[25.23089,55.32276],dic:[25.10183,55.17366],dip:[25.00555,55.15570],dmm:[25.07633,55.14203],dmt:[25.08117,55.14734],expo:[24.96353,55.14605],emirates:[25.24112,55.36567],et:[25.21718,55.27979],energy:[25.02613,55.10116],eand:[25.25484,55.40099],fc:[25.21096,55.27549],garhoud:[25.24947,55.33994],goldsouq:[25.27598,55.30155],ibn:[25.04657,55.11733],np:[25.05760,55.12710],jbr1:[25.07973,55.13822],jbr2:[25.07371,55.13225],jge:[25.01779,55.16325],jlt:[25.07190,55.13809],kv:[25.10424,55.16149],moe:[25.12050,55.19937],mt:[25.08674,55.14996],im:[25.11453,55.19052],mc:[25.09459,55.15194],ms:[25.09106,55.14855],oudmetha:[25.24405,55.31582],pj:[25.09835,55.15575],salah:[25.27039,55.32105],sharafdg:[25.25841,55.29743],sobha:[25.08029,55.14805],stadium:[25.27772,55.36178],gardens:[25.04352,55.13518],lp:[24.97723,55.09090],equiti:[25.12647,55.20748],union:[25.26616,55.31376],wtc:[25.22549,55.28549],centrepoint:[25.23012,55.39154],max:[25.23298,55.29177],palmgw:[25.10080,55.15350],ittihad:[25.10760,55.14520],pjm:[25.11240,55.13880],atlantis:[25.13100,55.11700]};
 // Walking links between separate stations (minutes are estimates)
 const WALKS=[
   {a:"dmt",b:"sobha",t:6},
@@ -1076,6 +1090,7 @@ function svcState(kind,now){
   return {open:false,opens:H[(d+1)%7][0]};
 }
 function renderStatus(){
+  if(typeof renderTermini==="function"&&document.querySelector(".termini"))renderTermini();
   const mn=document.getElementById("monoNote");if(mn)mn.textContent=isSuspended("mono")?t("stSuspended",{m:t(KIND_LABEL.mono)}):"";
   const now=dubaiNow();
   document.getElementById("status").innerHTML=Object.keys(HOURS).map(k=>{
@@ -1209,6 +1224,15 @@ LANDMARKS.forEach(([id,ico,x,y])=>{const P=PLACE_BY_ID[id];if(!P)return;
   el("title",{},g).textContent=P.n;
   el("circle",{cx:x,cy:y,r:11},g);const tx=el("text",{x,y:y+4.5,"text-anchor":"middle"},g);tx.textContent=ico;});
 const monoNote=el("text",{id:"monoNote",class:"mono-note",x:150,y:726,"text-anchor":"middle"},base);
+// line names at the ends of each line (like the line numbers on a metro map); text follows the language
+// [line, x, y, anchor: s=start e=end m=middle]
+const TERMINI=[["red",1040,172,"s"],["red",600,1012,"m"],["red",762,1060,"s"],["green",760,36,"s"],["green",1042,400,"s"],["tram",350,612,"m"],["mono",122,512,"e"]];
+const termG=el("g",{class:"termini"},base);
+function renderTermini(){termG.innerHTML="";
+  TERMINI.forEach(([l,x,y,a])=>{const L=LINES[l];const g=el("g",{class:"term"},termG);
+    const r=el("rect",{height:18,rx:9,fill:L.c},g);const tx=el("text",{y:y+4,fill:L.ink},g);tx.textContent=t(L.key);
+    const w=tx.getComputedTextLength()+16;const x0=a==="s"?x:a==="e"?x-w:x-w/2;
+    r.setAttribute("x",x0);r.setAttribute("y",y-9);r.setAttribute("width",w);tx.setAttribute("x",x0+8);});}
 
 // pan / zoom
 const map=$("#map"),world=$("#world");
@@ -1518,6 +1542,22 @@ const endToken=e=>e.lm?e.lm.id:e.st;
 function parseToken(t){if(ST[t])return {st:t};const p=PLACE_BY_ID[t];return p?{st:p.st,lm:p}:null;}
 function setEnd(k,e){if(state.view!=="route"){state.view="route";$("#panel").classList.remove("explore");$("#vRoute").setAttribute("aria-selected","true");$("#vExplore").setAttribute("aria-selected","false");}state[k]=e;(k==="from"?fromI:toI).value=endName(e);update(true);}
 $("#swap").onclick=()=>{const a=state.from;state.from=state.to;state.to=a;fromI.value=endName(state.from);toI.value=endName(state.to);update(true);};
+// "Nearest station to me": the location stays on the device and is only used to pick a station
+function distM(a,b){const R=6371000,r=Math.PI/180,dl=(b[0]-a[0])*r,dn=(b[1]-a[1])*r,x=Math.sin(dl/2)**2+Math.cos(a[0]*r)*Math.cos(b[0]*r)*Math.sin(dn/2)**2;return 2*R*Math.asin(Math.sqrt(x));}
+function nearestStation(p){let best=null;
+  for(const id in GEO){if([...ST[id].lines].every(l=>isSuspended(LINES[l].kind)))continue;const d=distM(p,GEO[id]);if(!best||d<best.d)best={id,d};}
+  return best;}
+let toastT=0;
+function toast(msg){const el=$("#toast");el.textContent=msg;el.hidden=false;clearTimeout(toastT);toastT=setTimeout(()=>{el.hidden=true;},6000);}
+if(navigator.geolocation)$("#locBtn").hidden=false;
+$("#locBtn").onclick=()=>{const b=$("#locBtn");b.classList.add("busy");
+  navigator.geolocation.getCurrentPosition(pos=>{b.classList.remove("busy");
+    const n=nearestStation([pos.coords.latitude,pos.coords.longitude]);if(!n){toast(t("locFail"));return;}
+    if(n.d<=15000)setEnd("from",{st:n.id}); // farther than that: probably not in Dubai, only say how far
+    // walking time: straight-line distance plus a third for real streets, at about 80 m a minute
+    if(n.d>4000)toast(t("locFar",{s:ST[n.id].n,k:(n.d/1000).toFixed(1)}));
+    else toast(t("locNearest",{s:ST[n.id].n,w:t("walkChip",{n:Math.max(1,Math.round(n.d*1.3/80))})}));
+  },err=>{b.classList.remove("busy");toast(t(err.code===1?"locDenied":"locFail"));},{enableHighAccuracy:true,timeout:12000,maximumAge:60000});};
 $("#clrFrom").onclick=()=>{setEnd("from",null);fromI.focus();};
 $("#clrTo").onclick=()=>{setEnd("to",null);toI.focus();};
 function setMin(on){const p=$("#panel");p.classList.toggle("min",on);$("#grab").setAttribute("aria-expanded",String(!on));
@@ -2191,5 +2231,11 @@ addEventListener("hashchange",()=>{const m=location.hash.slice(1).split("~");if(
 })();
 </script>
 
+<script>
+if("serviceWorker" in navigator&&(location.protocol==="https:"||location.hostname==="localhost")){
+  addEventListener("load",()=>{navigator.serviceWorker.register("sw.js").then(()=>navigator.serviceWorker.ready)
+    .then(r=>{if(r.active)r.active.postMessage({type:"cache",url:location.pathname});}).catch(()=>{});});
+}
+</script>
 </body>
 </html>

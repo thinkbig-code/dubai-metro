@@ -37,6 +37,15 @@ url=lambda L:SITE+("" if TX[L]["file"]=="index.html" else TX[L]["file"])
 fav="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 31s11-10.2 11-18A11 11 0 0 0 5 13c0 7.8 11 18 11 18z' fill='%23E1251B'/%3E%3Crect x='10.5' y='6.5' width='11' height='12' rx='3' fill='%23fff'/%3E%3Crect x='12.3' y='8.6' width='7.4' height='4' rx='1' fill='%23E1251B'/%3E%3Ccircle cx='13.3' cy='15.6' r='1.1' fill='%23E1251B'/%3E%3Ccircle cx='18.7' cy='15.6' r='1.1' fill='%23E1251B'/%3E%3C/svg%3E"
 alts='\n'.join(f'<link rel="alternate" hreflang="{L}" href="{url(L)}">' for L in ORDER)+f'\n<link rel="alternate" hreflang="x-default" href="{SITE}">'
 
+# offline support: register the service worker on the public site (https) or a local test server
+SW_REG="""
+<script>
+if("serviceWorker" in navigator&&(location.protocol==="https:"||location.hostname==="localhost")){
+  addEventListener("load",()=>{navigator.serviceWorker.register("sw.js").then(()=>navigator.serviceWorker.ready)
+    .then(r=>{if(r.active)r.active.postMessage({type:"cache",url:location.pathname});}).catch(()=>{});});
+}
+</script>"""
+
 def page(L):
     X=TX[L]
     trips='\n'.join(f'<li><a href="#{a}~{b}~{L}">{html.escape(t)}</a></li>' for (a,b),t in zip(TRIPS,X["trips"]))
@@ -94,6 +103,7 @@ def page(L):
 <meta name="theme-color" content="#10161C" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="{fav}">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
 <script type="application/ld+json">{json.dumps(ld,ensure_ascii=False)}</script>
 <!-- anonymous visit counter (GoatCounter): no cookies, no personal data -->
 <script data-goatcounter="https://dubaimetro.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
@@ -101,10 +111,18 @@ def page(L):
 '''
     # the English root page keeps the visitor's own language; the others open in theirs
     if L=="en": head=head.replace(' data-pagelang="en"','')
-    return head+rest[:i_map]+'</head>\n<body>\n'+about+rest[i_map:]+'\n</body>\n</html>\n'
+    return head+rest[:i_map]+'</head>\n<body>\n'+about+rest[i_map:]+SW_REG+'\n</body>\n</html>\n'
 
 for L in ORDER:
     open(OUT+TX[L]["file"],'w').write(page(L))
+import hashlib
+ver=hashlib.sha1(''.join(open(OUT+TX[L]["file"]).read() for L in ORDER).encode()).hexdigest()[:10]
+manifest={"name":"Dubai Metro Map & Route Planner","short_name":"Dubai Metro","description":html.unescape(TX["en"]["ogDesc"]),
+  "start_url":"./","scope":"./","display":"standalone","background_color":"#F4F7F8","theme_color":"#F4F7F8",
+  "icons":[{"src":"icon-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
+           {"src":"icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}]}
+open(OUT+'manifest.webmanifest','w').write(json.dumps(manifest,ensure_ascii=False,indent=1))
+open(OUT+'sw.js','w').write(open(os.path.join(HERE,'sw.template.js')).read().replace('__VERSION__',ver))
 today=datetime.date.today().isoformat()
 xl='\n'.join(f'    <xhtml:link rel="alternate" hreflang="{o}" href="{url(o)}"/>' for o in ORDER)+f'\n    <xhtml:link rel="alternate" hreflang="x-default" href="{SITE}"/>'
 urls='\n'.join(f'  <url>\n    <loc>{url(L)}</loc>\n    <lastmod>{today}</lastmod>\n{xl}\n  </url>' for L in ORDER)
