@@ -95,6 +95,8 @@ def page(L):
 <link rel="icon" href="{fav}">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <script type="application/ld+json">{json.dumps(ld,ensure_ascii=False)}</script>
+<!-- anonymous visit counter (GoatCounter): no cookies, no personal data -->
+<script data-goatcounter="https://dubaimetro.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <style>body{{margin:0}}[hidden]{{display:none!important}}img{{max-width:100%}}</style>
 '''
     # the English root page keeps the visitor's own language; the others open in theirs

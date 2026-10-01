@@ -4,7 +4,7 @@ An unofficial, free map and journey planner for the Dubai Metro, Dubai Tram and 
 
 **Live site: https://dubaimetro.fyi**
 
-Type a place or a station (or tap a popular place) and the planner shows the route with every change, the walking parts, an estimated travel time and the Nol fare. It runs in the browser on phones and computers; there is nothing to install, no account and no tracking.
+Type a place or a station (or tap a popular place) and the planner shows the route with every change, the walking parts, an estimated travel time and the Nol fare. It runs in the browser on phones and computers; there is nothing to install and no account. Visits are counted anonymously with [GoatCounter](https://www.goatcounter.com/) (no cookies, no personal data); the statistics are at https://dubaimetro.goatcounter.com.
 
 This is an independent, non-commercial project. It is not affiliated with RTA, and it does not use RTA or Dubai Metro logos.
 
