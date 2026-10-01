@@ -1169,6 +1169,29 @@ const homeBox=()=>innerWidth<=720?MBOX:DBOX;
   el("path",{class:"sheet-edge",d:hole},waterG);
 })();
 let view={x:0,y:0,k:1},routeBox=null,lastSig="";
+// ---- usage events (GoatCounter custom events; the public site loads GoatCounter, the preview does not) ----
+// Only ids from our own data and short labels are sent: never coordinates, names typed by the user (except the
+// guarded no-result text below), report text or anything that identifies a person.
+// path = "<event>/<a>/<b>", title = "<language>|<detail>|..."
+let trkSrc="";const trkQ=[];let trkTimer=0;const trkSeen=new Set();
+function track(ev,a,b,...detail){
+  try{
+    const path=[ev,a||"-",b||"-"].map(x=>String(x).replace(/[\/\s]+/g,"_")).join("/");
+    const title=[LANG].concat(detail.filter(x=>x!==undefined&&x!=="")).join("|");
+    const send=x=>{try{window.goatcounter.count(x);}catch(e){}};
+    const ev1={path,title,event:true};
+    if(window.goatcounter&&window.goatcounter.count){send(ev1);return;}
+    // the counter script loads async: keep a few events and retry for up to 10 seconds
+    if(trkQ.length<20)trkQ.push(ev1);
+    if(!trkTimer){let n=0;trkTimer=setInterval(()=>{
+      if(window.goatcounter&&window.goatcounter.count){trkQ.splice(0).forEach(send);}
+      if(!trkQ.length||++n>20){clearInterval(trkTimer);trkTimer=0;trkQ.length=0;}},500);}
+  }catch(e){}
+}
+const tok=e=>e?endToken(e):"-";
+// free text from a search that found nothing: lower case, short, and dropped if it looks like a number or address
+function safeText(q){q=String(q||"").trim().toLowerCase().replace(/\s+/g," ").slice(0,40);
+  if(!q||/@/.test(q)||(q.match(/\d/g)||[]).length>=3)return "";return q;}
 // free movement while the finger is down; if the map has been pushed almost off screen,
 // it glides back after release. No limits are applied mid-gesture.
 function fitScale(){const b=BOX;return Math.min(innerWidth/(b.x1-b.x0),innerHeight/(b.y1-b.y0));}
@@ -1226,13 +1249,13 @@ function endPtr(e){
     map.classList.remove("dragging");
     if(drag&&moved<6){const st=drag.target.closest&&drag.target.closest(".st");
       const lm=drag.target.closest&&drag.target.closest(".lmk");
-      if(lm){closePop();setEnd("to",parseToken(lm.dataset.place));}
+      if(lm){closePop();trkSrc="map";setEnd("to",parseToken(lm.dataset.place));}
       else if(st&&st.dataset.id)openPop(st.dataset.id);else closePop();}
     drag=null;settleView();
   }
 }
 map.addEventListener("pointerup",endPtr);map.addEventListener("pointercancel",endPtr);
-base.addEventListener("keydown",e=>{const lm=e.target.closest(".lmk");if(lm&&(e.key==="Enter"||e.key===" ")){e.preventDefault();setEnd("to",parseToken(lm.dataset.place));return;}const st=e.target.closest(".st");if(st&&(e.key==="Enter"||e.key===" ")){e.preventDefault();openPop(st.dataset.id);}});
+base.addEventListener("keydown",e=>{const lm=e.target.closest(".lmk");if(lm&&(e.key==="Enter"||e.key===" ")){e.preventDefault();trkSrc="map";setEnd("to",parseToken(lm.dataset.place));return;}const st=e.target.closest(".st");if(st&&(e.key==="Enter"||e.key===" ")){e.preventDefault();openPop(st.dataset.id);}});
 $("#zin").onclick=()=>zoomAt(1.4,innerWidth/2,innerHeight/2,true);
 $("#zout").onclick=()=>zoomAt(1/1.4,innerWidth/2,innerHeight/2,true);
 $("#zfit").onclick=()=>fitBox(BOX,true);
@@ -1262,12 +1285,12 @@ function openPop(id){
       ul.innerHTML=rows.map(({pl,v})=>`<li><button data-p="${pl.id}"><span>${esc(POPULAR_LABEL[pl.id]?POPULAR_LABEL[pl.id]():pl.n)}</span><b>${esc(rng(v.time,v.timeMax))}</b></button></li>`).join("");
       ul.dataset.done="1";
       ul.addEventListener("click",e=>{const b=e.target.closest("button[data-p]");if(!b)return;const pl=PLACE_BY_ID[b.dataset.p];
-        state.from={st:id};fromI.value=endName(state.from);closePop();setEnd("to",{st:pl.st,lm:pl});});
+        state.from={st:id};fromI.value=endName(state.from);closePop();trkSrc="map";setEnd("to",{st:pl.st,lm:pl});});
     }
     ul.hidden=!ul.hidden;$("#pW").setAttribute("aria-expanded",String(!ul.hidden));placePop();
   };
-  $("#pA").onclick=()=>{setEnd("from",{st:id});closePop();};
-  $("#pB").onclick=()=>{setEnd("to",{st:id});closePop();};
+  $("#pA").onclick=()=>{trkSrc="map";setEnd("from",{st:id});closePop();};
+  $("#pB").onclick=()=>{trkSrc="map";setEnd("to",{st:id});closePop();};
   $("#pA").focus({preventScroll:true});
 }
 function closePop(){pop.hidden=true;popId=null;}
@@ -1463,7 +1486,7 @@ const endName=e=>e?(e.lm?e.lm.n:ST[e.st].n):"";
 const endToken=e=>e.lm?e.lm.id:e.st;
 function parseToken(t){if(ST[t])return {st:t};const p=PLACE_BY_ID[t];return p?{st:p.st,lm:p}:null;}
 function setEnd(k,e){if(state.view!=="route"){state.view="route";$("#panel").classList.remove("explore");$("#vRoute").setAttribute("aria-selected","true");$("#vExplore").setAttribute("aria-selected","false");}state[k]=e;(k==="from"?fromI:toI).value=endName(e);update(true);}
-$("#swap").onclick=()=>{const a=state.from;state.from=state.to;state.to=a;fromI.value=endName(state.from);toI.value=endName(state.to);update(true);};
+$("#swap").onclick=()=>{trkSrc="swap";const a=state.from;state.from=state.to;state.to=a;fromI.value=endName(state.from);toI.value=endName(state.to);update(true);};
 // "Nearest station to me": the location stays on the device and is only used to pick a station
 function distM(a,b){const R=6371000,r=Math.PI/180,dl=(b[0]-a[0])*r,dn=(b[1]-a[1])*r,x=Math.sin(dl/2)**2+Math.cos(a[0]*r)*Math.cos(b[0]*r)*Math.sin(dn/2)**2;return 2*R*Math.asin(Math.sqrt(x));}
 function nearestStation(p){let best=null;
@@ -1474,12 +1497,13 @@ function toast(msg){const el=$("#toast");el.textContent=msg;el.hidden=false;clea
 if(navigator.geolocation)$("#locBtn").hidden=false;
 $("#locBtn").onclick=()=>{const b=$("#locBtn");b.classList.add("busy");
   navigator.geolocation.getCurrentPosition(pos=>{b.classList.remove("busy");
-    const n=nearestStation([pos.coords.latitude,pos.coords.longitude]);if(!n){toast(t("locFail"));return;}
-    if(n.d<=15000)setEnd("from",{st:n.id}); // farther than that: probably not in Dubai, only say how far
+    const n=nearestStation([pos.coords.latitude,pos.coords.longitude]);if(!n){track("geo","fail","-");toast(t("locFail"));return;}
+    track("geo",n.d<=4000?"ok":n.d<=15000?"far":"outside",n.id);
+    if(n.d<=15000){trkSrc="geo";setEnd("from",{st:n.id});} // farther than that: probably not in Dubai, only say how far
     // walking time: straight-line distance plus a third for real streets, at about 80 m a minute
     if(n.d>4000)toast(t("locFar",{s:ST[n.id].n,k:(n.d/1000).toFixed(1)}));
     else toast(t("locNearest",{s:ST[n.id].n,w:t("walkChip",{n:Math.max(1,Math.round(n.d*1.3/80))})}));
-  },err=>{b.classList.remove("busy");toast(t(err.code===1?"locDenied":"locFail"));},{enableHighAccuracy:true,timeout:12000,maximumAge:60000});};
+  },err=>{b.classList.remove("busy");track("geo",err.code===1?"denied":"fail","-");toast(t(err.code===1?"locDenied":"locFail"));},{enableHighAccuracy:true,timeout:12000,maximumAge:60000});};
 $("#clrFrom").onclick=()=>{setEnd("from",null);fromI.focus();};
 $("#clrTo").onclick=()=>{setEnd("to",null);toI.focus();};
 function setMin(on){const p=$("#panel");p.classList.toggle("min",on);$("#grab").setAttribute("aria-expanded",String(!on));
@@ -1497,7 +1521,7 @@ $("#tog").onclick=()=>{const p=$("#panel");const c=p.classList.toggle("collapsed
 // popular places
 function renderChips(){$("#chips").innerHTML=`<span class="lbl">${esc(t("popular"))}</span>`+POPULAR.map(id=>`<button data-p="${id}">${esc(POPULAR_LABEL[id]?POPULAR_LABEL[id]():PLACE_BY_ID[id].n)}</button>`).join("");}
 $("#chips").addEventListener("click",e=>{const b=e.target.closest("button[data-p]");if(!b)return;const p=PLACE_BY_ID[b.dataset.p];
-  const end={st:p.st,lm:p};
+  const end={st:p.st,lm:p};trkSrc="popular";
   if(!state.to){setEnd("to",end);if(!state.from)fromI.focus();}else if(!state.from)setEnd("from",end);else setEnd("to",end);});
 
 function writeHash(){
@@ -1557,6 +1581,7 @@ function reportTarget(c){
 }
 function openReport(){
   const c=reportContext(),tg=reportTarget(c),txt=reportText(c);
+  track("report",tok(state.from),tok(state.to),"opened");
   const box=$("#card");box.dir=LANGS.find(l=>l.code===LANG).rtl?"rtl":"ltr";
   box.innerHTML=`<div class="cbox" role="dialog" aria-modal="true" aria-labelledby="rTitle">
     <div class="chead"><span class="cbrand">${esc(t("title"))}</span><button class="cclose" id="cClose" aria-label="${esc(t("close"))}">×</button></div>
@@ -1570,7 +1595,8 @@ function openReport(){
   </div>`;
   box.hidden=false;
   $("#cClose").onclick=closeCard;
-  $("#rCopy").onclick=()=>{const b=$("#rCopy"),ta=$("#rText");
+  box.querySelector(".share a.primary")?.addEventListener("click",()=>track("report",tok(state.from),tok(state.to),"sent"));
+  $("#rCopy").onclick=()=>{track("report",tok(state.from),tok(state.to),"copied");const b=$("#rCopy"),ta=$("#rText");
     const fb=()=>{ta.focus();ta.select();};
     try{navigator.clipboard.writeText(txt).then(()=>{b.textContent=t("copied");setTimeout(()=>b.textContent=t("copyDetails"),2000);},fb);}catch(e){fb();}};
   $("#cClose").focus();
@@ -1609,6 +1635,7 @@ function update(fit,noAnim){
     return;
   }
   const variants=computeVariants(from,to);
+  {if(!trkSeen.has(sig)){trkSeen.add(sig);track("route",tok(from),tok(to),trkSrc||"other",variants.length?"ok":"none");}trkSrc="";}
   if(!variants.length){hint(t("noRoute"));return;}
   const r=variants.find(v=>v.modes.includes(state.mode))||variants[0];
   renderResult(r,variants);
@@ -1789,19 +1816,20 @@ function renderResult(r,variants){
     `<li class="step" style="--c:var(--pinB);--ink:#fff"><span class="num" aria-hidden="true">B</span><div><div class="tt">${esc(t("arriveAt",{x:endName(to)}))}</div></div></li></ol>`+footHTML();
   const wasOpen=document.getElementById("infoBox")?.open;
   res.innerHTML=h;
-  $("#moreBtn").onclick=()=>{$("#panel").classList.toggle("peek");renderResult(r,variants);if(routeBox)fitBox(routeBox,true,1.6);};
+  $("#moreBtn").onclick=()=>{if($("#panel").classList.contains("peek"))track("view",tok(from),tok(to),"details");$("#panel").classList.toggle("peek");renderResult(r,variants);if(routeBox)fitBox(routeBox,true,1.6);};
   if(wasOpen)document.getElementById("infoBox").open=true;
   $("#tBackRoute")?.addEventListener("click",()=>{state.tour=state.tourBack;state.tourBack=null;setView("explore");});
-  res.querySelectorAll(".tabs button[data-v]").forEach(b=>b.onclick=()=>{state.mode=variants[+b.dataset.v].modes[0];update(true);});
-  $("#shCard").onclick=openCard;
-  $("#shCopy").onclick=()=>{
+  res.querySelectorAll(".tabs button[data-v]").forEach(b=>b.onclick=()=>{state.mode=variants[+b.dataset.v].modes[0];track("view",tok(from),tok(to),state.mode);update(true);});
+  $("#shCard").onclick=()=>{track("share",tok(from),tok(to),"card");openCard();};
+  res.querySelector('.share a[href^="https://wa.me"]')?.addEventListener("click",()=>track("share",tok(from),tok(to),"whatsapp"));
+  $("#shCopy").onclick=()=>{track("share",tok(from),tok(to),"copy");
     const b=$("#shCopy");
     const fallback=()=>{$("#shOut").hidden=false;const i=$("#shUrl");i.focus();i.select();b.textContent=t("copyFallback");};
     try{navigator.clipboard.writeText(url).then(()=>{b.textContent=t("copied");setTimeout(()=>b.textContent=t("copy"),2000);},fallback);}catch(e){fallback();}
   };
   $("#shQr").onclick=()=>{
     const q=$("#qr"),open=q.hidden;
-    $("#shOut").hidden=false;q.hidden=!open;$("#shQr").setAttribute("aria-expanded",String(open));
+    $("#shOut").hidden=false;q.hidden=!open;$("#shQr").setAttribute("aria-expanded",String(open));if(open)track("share",tok(from),tok(to),"qr");
     if(open&&!q.dataset.done){
       if(window.QRCode){new QRCode(q,{text:url,width:160,height:160,colorDark:"#000000",colorLight:"#ffffff",correctLevel:QRCode.CorrectLevel.M});q.dataset.done="1";}
       else q.textContent=t("qrFail");
@@ -1842,8 +1870,11 @@ function combo(input,wrap,key){
       return `<li role="option" data-i="${i}" class="${i===act?"on":""}"><span class="dots">${[...s.lines].map(l=>`<i class="dot" style="background:${LINES[l].c}"></i>`).join("")}</span>
         <span class="nm">${esc(s.n)}<small>${esc(t("station"))} · ${[...s.lines].map(l=>esc(t(LINES[l].key))).join(", ")}${m.via?` · ${esc(t("formerly",{x:m.via}))}`:""}</small></span></li>`;}).join(""):`<li class="empty">${esc(t("nothing"))}</li>`;
   };
-  const choose=i=>{const m=items[i];if(!m)return;close();setEnd(key,m.place?{st:m.place.st,lm:m.place}:{st:m.id});input.blur();};
-  input.addEventListener("focus",()=>{input.select();render();closePop();});
+  let chosen=false;
+  const choose=i=>{const m=items[i];if(!m)return;chosen=true;
+    if(m.place)track("place",m.place.id,key,m.via?"alias":"name");else track("station",m.id,key,m.via?"former_name":"name");
+    close();trkSrc="search";setEnd(key,m.place?{st:m.place.st,lm:m.place}:{st:m.id});input.blur();};
+  input.addEventListener("focus",()=>{chosen=false;input.select();render();closePop();});
   input.addEventListener("input",render);
   input.addEventListener("keydown",e=>{
     if(!ul)return;
@@ -1853,7 +1884,10 @@ function combo(input,wrap,key){
     else if(e.key==="Escape"){close();input.blur();}
   });
   wrap.addEventListener("pointerdown",e=>{const li=e.target.closest("li[data-i]");if(li){e.preventDefault();choose(+li.dataset.i);}});
-  input.addEventListener("blur",()=>setTimeout(()=>{close();input.value=endName(state[key]);},120));
+  input.addEventListener("blur",()=>setTimeout(()=>{
+    // typed something, nothing matched, nothing chosen: worth knowing which places people miss
+    if(!chosen&&input.value.trim()&&input.value!==endName(state[key])&&!matches(input.value).length){const q=safeText(input.value);if(q)track("noresult",key,"-",q);}
+    close();input.value=endName(state[key]);},120));
 }
 combo(fromI,$("#fFrom"),"from");
 combo(toI,$("#fTo"),"to");
@@ -1947,7 +1981,7 @@ function renderExplore(fit){
   res.innerHTML=h;
   $("#tBack").onclick=()=>{state.tour=null;renderExplore(true);};
   res.querySelectorAll("[data-seg]").forEach(b=>b.onclick=()=>{const s=c.segs[+b.dataset.seg];
-    state.tourBack=it.id;state.from=s.A;state.to=s.B;fromI.value=endName(s.A);toI.value=endName(s.B);setView("route");});
+    state.tourBack=it.id;trkSrc="tour";state.from=s.A;state.to=s.B;fromI.value=endName(s.A);toI.value=endName(s.B);setView("route");});
   res.querySelectorAll("[data-stop]").forEach(b=>b.onclick=()=>{const e=c.ends[+b.dataset.stop];const S=ST[e.st];
     fitBox({x0:S.x-160,x1:S.x+260,y0:S.y-160,y1:S.y+160},true,1.6);setTimeout(()=>openPop(e.st),480);});
   // draw every segment on the map, with numbered stops
@@ -2110,7 +2144,7 @@ let hashTour=null;
 try{const m=(location.hash||"").slice(1).split("~");if(m[0]==="tour"){hashTour=m[1]||"all";if(m[2]&&I18N[m[2]])hashLang=m[2];}else if(m.length>=2){const a=parseToken(m[0]),b=parseToken(m[1]);if(a&&b)start=[a,b];if(m[2]&&I18N[m[2]])hashLang=m[2];}}catch(e){}
 // no link: open with empty fields
 if(!start)start=[null,null];
-state.from=start[0];state.to=start[1];
+state.from=start[0];state.to=start[1];if(start[0]&&start[1])trkSrc="link";
 fromI.value=endName(state.from);toI.value=endName(state.to);
 // language: saved choice, else browser language, else English
 function pickLang(){
@@ -2154,6 +2188,6 @@ if(hashTour){state.tour=TOUR_BY_ID[hashTour]?hashTour:null;state.view="explore";
 update(true,true);
 addEventListener("resize",placePop);
 addEventListener("hashchange",()=>{const m=location.hash.slice(1).split("~");if(m.length<2||m[0]==="tour")return;const a=parseToken(m[0]),b=parseToken(m[1]);
-  if(a&&b&&(endToken(a)!==endToken(state.from||{st:""})||endToken(b)!==endToken(state.to||{st:""}))){state.from=a;state.to=b;fromI.value=endName(a);toI.value=endName(b);update(true);}});
+  if(a&&b&&(endToken(a)!==endToken(state.from||{st:""})||endToken(b)!==endToken(state.to||{st:""}))){trkSrc="link";state.from=a;state.to=b;fromI.value=endName(a);toI.value=endName(b);update(true);}});
 })();
 </script>
