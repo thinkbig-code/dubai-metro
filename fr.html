@@ -1849,6 +1849,10 @@ function renderResult(r,variants){
   const steps=buildSteps(r);
   const dep=state.departMs||Date.now();
   const fmt=m=>new Intl.DateTimeFormat("en-GB",{timeZone:"Asia/Dubai",hour:"2-digit",minute:"2-digit",hourCycle:"h23"}).format(new Date(dep+m*60000));
+  // a line that is closed (or suspended) when the trip reaches it: show how long the trip takes, not a clock time
+  const offHours=(()=>{let cum=from.lm?.min||0;const at0=dubaiAt(dep);
+    for(const l of r.legs){if(l.type!=="ride"){cum+=l.t;continue;}const k=LINES[svcById[l.svc].line].kind;
+      if(isSuspended(k)||!svcState(k,addMin(at0,cum)).open)return true;cum+=legTime(l);}return false;})();
   const meta=v=>rng(v.time,v.timeMax)+" · "+(v.xf?t("changes",{n:v.xf}):t("noChanges"))+" · "+(v.walk?t("walking",{n:v.walk}):t("noWalking"));
   const LBL={fast:"fastest",few:"fewer",walk:"leastWalk"};
   let h=state.tourBack?`<div class="tbackwrap"><button class="tback" id="tBackRoute"><span class="barr" aria-hidden="true">←</span> ${esc(t("backTour"))}: ${esc(tourText(state.tourBack,0))}</button></div>`:"";
@@ -1856,7 +1860,7 @@ function renderResult(r,variants){
   if(variants.length>1)h+=`<div class="tabs" role="group" aria-label="${esc(t("optLabel"))}">`+variants.map((v,i)=>
     `<button data-v="${i}" aria-pressed="${v===r}"><b>${esc(v.modes.map(m=>t(LBL[m])).join(" · "))}</b><span>${esc(meta(v))}</span><em class="why">${esc(why[i])}</em></button>`).join("")+`</div>`;
   h+=`<div class="sum"><span class="t">${esc(rng(r.time,r.timeMax))}</span><span class="m">${esc((r.xf?t("changes",{n:r.xf}):t("noChanges"))+" · "+(r.walk?t("walking",{n:r.walk}):t("noWalking"))+(r.stops?" · "+t("stops",{n:r.stops}):""))}</span>
-    <span class="arr">${esc(state.departMs?t("arriveFrom",{t0:fmt(0),t1:fmt(r.time),t2:fmt(r.timeMax)}):t("arrive",{t1:fmt(r.time),t2:fmt(r.timeMax)}))}</span><span class="note">${esc(t("estNote"))}</span></div>`;
+    ${offHours?"":`<span class="arr">${esc(state.departMs?t("arriveFrom",{t0:fmt(0),t1:fmt(r.time),t2:fmt(r.timeMax)}):t("arrive",{t1:fmt(r.time),t2:fmt(r.timeMax)}))}</span>`}<span class="note">${esc(t("estNote"))}</span></div>`;
   // journey at a glance: walk, lines and changes in order
   const walkIco=WALK_ICO;
   const chipsG=[];
