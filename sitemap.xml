@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dubaimetro.fyi/</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://dubaimetro.fyi/"/>
     <xhtml:link rel="alternate" hreflang="hi" href="https://dubaimetro.fyi/hi.html"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://dubaimetro.fyi/ar.html"/>
@@ -15,7 +15,7 @@
   </url>
   <url>
     <loc>https://dubaimetro.fyi/hi.html</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://dubaimetro.fyi/"/>
     <xhtml:link rel="alternate" hreflang="hi" href="https://dubaimetro.fyi/hi.html"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://dubaimetro.fyi/ar.html"/>
@@ -28,7 +28,7 @@
   </url>
   <url>
     <loc>https://dubaimetro.fyi/ar.html</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://dubaimetro.fyi/"/>
     <xhtml:link rel="alternate" hreflang="hi" href="https://dubaimetro.fyi/hi.html"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://dubaimetro.fyi/ar.html"/>
@@ -41,7 +41,7 @@
   </url>
   <url>
     <loc>https://dubaimetro.fyi/ur.html</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://dubaimetro.fyi/"/>
     <xhtml:link rel="alternate" hreflang="hi" href="https://dubaimetro.fyi/hi.html"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://dubaimetro.fyi/ar.html"/>
@@ -54,7 +54,7 @@
   </url>
   <url>
     <loc>https://dubaimetro.fyi/ru.html</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://dubaimetro.fyi/"/>
     <xhtml:link rel="alternate" hreflang="hi" href="https://dubaimetro.fyi/hi.html"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://dubaimetro.fyi/ar.html"/>
@@ -67,7 +67,7 @@
   </url>
   <url>
     <loc>https://dubaimetro.fyi/de.html</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://dubaimetro.fyi/"/>
     <xhtml:link rel="alternate" hreflang="hi" href="https://dubaimetro.fyi/hi.html"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://dubaimetro.fyi/ar.html"/>
@@ -80,7 +80,7 @@
   </url>
   <url>
     <loc>https://dubaimetro.fyi/zh.html</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://dubaimetro.fyi/"/>
     <xhtml:link rel="alternate" hreflang="hi" href="https://dubaimetro.fyi/hi.html"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://dubaimetro.fyi/ar.html"/>
@@ -93,7 +93,7 @@
   </url>
   <url>
     <loc>https://dubaimetro.fyi/fr.html</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-02</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://dubaimetro.fyi/"/>
     <xhtml:link rel="alternate" hreflang="hi" href="https://dubaimetro.fyi/hi.html"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://dubaimetro.fyi/ar.html"/>
@@ -103,5 +103,85 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://dubaimetro.fyi/zh.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://dubaimetro.fyi/fr.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dubaimetro.fyi/"/>
+  </url>
+  <url>
+    <loc>https://dubaimetro.fyi/stations/</loc>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://dubaimetro.fyi/lines/red-line/</loc>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://dubaimetro.fyi/lines/green-line/</loc>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://dubaimetro.fyi/tram/</loc>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://dubaimetro.fyi/palm-monorail/</loc>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://dubaimetro.fyi/destinations/dubai-mall/</loc>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://dubaimetro.fyi/destinations/museum-of-the-future/</loc>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://dubaimetro.fyi/destinations/dubai-frame/</loc>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://dubaimetro.fyi/destinations/gold-souk/</loc>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://dubaimetro.fyi/destinations/atlantis-the-palm/</loc>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://dubaimetro.fyi/destinations/dubai-marina/</loc>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://dubaimetro.fyi/destinations/jbr/</loc>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://dubaimetro.fyi/destinations/mall-of-the-emirates/</loc>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://dubaimetro.fyi/destinations/expo-city-dubai/</loc>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://dubaimetro.fyi/destinations/dubai-airport/</loc>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://dubaimetro.fyi/stations/burjuman/</loc>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://dubaimetro.fyi/stations/sobha-realty/</loc>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://dubaimetro.fyi/routes/dubai-airport-to-dubai-mall/</loc>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://dubaimetro.fyi/routes/dubai-marina-to-dubai-mall/</loc>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://dubaimetro.fyi/routes/dubai-airport-to-dubai-marina/</loc>
+    <lastmod>2026-10-02</lastmod>
   </url>
 </urlset>

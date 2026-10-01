@@ -497,6 +497,8 @@ ol.steps2{list-style:none;margin:0;padding:14px 16px 8px}
 <p class="lst" dir="ltr">Jumeirah Beach Residence 1, Jumeirah Beach Residence 2, Jumeirah Lakes Towers, Dubai Marina Mall, Dubai Marina, Marina Towers, Mina Seyahi, Media City, Palm Jumeirah, Knowledge Village, Al Sufouh.</p>
 <p><b>Palm Monorail:</b> Palm Gateway to Atlantis Aquaventure, along the Palm Jumeirah. It is run by a private operator and is not part of the Nol system. At the time of the last update the operator listed it as temporarily suspended.</p>
 <p class="lst" dir="ltr">Palm Gateway, Al Ittihad Park, Palm Jumeirah Mall, Atlantis Aquaventure.</p>
+<h2>Guides to stations and places</h2>
+<p class="lst" dir="ltr"><a href="stations/" hreflang="en" lang="en">Dubai Metro Stations</a> · <a href="lines/red-line/" hreflang="en" lang="en">Dubai Metro Red Line</a> · <a href="lines/green-line/" hreflang="en" lang="en">Dubai Metro Green Line</a> · <a href="tram/" hreflang="en" lang="en">Dubai Tram</a> · <a href="palm-monorail/" hreflang="en" lang="en">Palm Monorail</a> · <a href="destinations/dubai-mall/" hreflang="en" lang="en">Dubai Mall</a> · <a href="destinations/museum-of-the-future/" hreflang="en" lang="en">Museum of the Future</a> · <a href="destinations/dubai-frame/" hreflang="en" lang="en">Dubai Frame</a> · <a href="destinations/gold-souk/" hreflang="en" lang="en">Gold Souk</a> · <a href="destinations/atlantis-the-palm/" hreflang="en" lang="en">Atlantis The Palm</a> · <a href="destinations/dubai-marina/" hreflang="en" lang="en">Dubai Marina</a> · <a href="destinations/jbr/" hreflang="en" lang="en">JBR (Jumeirah Beach Residence)</a> · <a href="destinations/mall-of-the-emirates/" hreflang="en" lang="en">Mall of the Emirates</a> · <a href="destinations/expo-city-dubai/" hreflang="en" lang="en">Expo City Dubai</a> · <a href="destinations/dubai-airport/" hreflang="en" lang="en">Dubai Airport (DXB)</a> · <a href="stations/burjuman/" hreflang="en" lang="en">BurJuman Metro Station, Dubai</a> · <a href="stations/sobha-realty/" hreflang="en" lang="en">Sobha Realty Metro Station, Dubai</a> · <a href="routes/dubai-airport-to-dubai-mall/" hreflang="en" lang="en">Dubai Airport to Dubai Mall by metro</a> · <a href="routes/dubai-marina-to-dubai-mall/" hreflang="en" lang="en">Dubai Marina to Dubai Mall by metro</a> · <a href="routes/dubai-airport-to-dubai-marina/" hreflang="en" lang="en">Dubai Airport to Dubai Marina and JBR by metro</a></p>
 <h2>Questions</h2>
 <h3>What are the Dubai Metro opening hours?</h3>
 <p>Usually 5:00 to midnight Monday to Thursday and Saturday, 5:00 to 1:00 on Friday night, and 8:00 to midnight on Sunday. The Tram runs about 6:00 to 1:00 (from 9:00 on Sunday). Hours change during Ramadan and on public holidays; check RTA before a late trip.</p>
@@ -2226,7 +2228,9 @@ let hashTour=null;
 try{const m=(location.hash||"").slice(1).split("~");if(m[0]==="tour"){hashTour=m[1]||"all";if(m[2]&&I18N[m[2]])hashLang=m[2];}else if(m.length>=2){const a=parseToken(m[0]),b=parseToken(m[1]);if(a&&b)start=[a,b];if(m[2]&&I18N[m[2]])hashLang=m[2];}}catch(e){}
 // no link: open with empty fields
 if(!start)start=[null,null];
-state.from=start[0];state.to=start[1];if(start[0]&&start[1])trkSrc="link";
+state.from=start[0];state.to=start[1];if(start[0]&&start[1]){trkSrc="link";
+  // arrived from one of our guide pages: count it as that page's conversion ("landing:destinations-dubai-mall")
+  try{const r=new URL(document.referrer);if(r.host===location.host&&/^\/(destinations|routes|stations|lines|tram|palm-monorail)\//.test(r.pathname))trkSrc="landing:"+r.pathname.split("/").filter(Boolean).join("-");}catch(e){}}
 fromI.value=endName(state.from);toI.value=endName(state.to);
 // language: saved choice, else browser language, else English
 function pickLang(){
@@ -2265,7 +2269,9 @@ document.addEventListener("click",e=>{if(!$("#langMenu").hidden&&!e.target.close
 applyLang(hashLang||pickLang(),false);
 setInterval(()=>{renderStatus();if(!state.departMs)renderLeave();},60000);
 fitBox(homeBox(),false);
-if(SELFTEST){window.__dm={computeVariants,parseToken,ids:Object.keys(ST),places:PLACES.map(x=>x.id)};runValidation();}
+if(SELFTEST){window.__dm={computeVariants,parseToken,ids:Object.keys(ST),places:PLACES.map(x=>x.id),
+  // read-only data for the page generator (tools/export_data.js); nothing here changes the app
+  data:{ST,SVC,LINES,PLACES,POPULAR,ZONE,FARES,MONO_FARES,HOURS,SERVICE_STATUS,WALKS,GEO,ALIAS,ITINERARIES,I18N_EN:I18N.en},legTime,headwayFor};runValidation();}
 if(hashTour){state.tour=TOUR_BY_ID[hashTour]?hashTour:null;state.view="explore";$("#panel").classList.add("explore");$("#vRoute").setAttribute("aria-selected","false");$("#vExplore").setAttribute("aria-selected","true");}
 update(true,true);
 addEventListener("resize",placePop);

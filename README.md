@@ -59,7 +59,8 @@ Use the **Report a problem** button on the site, or open an issue here: https://
 | `manifest.webmanifest`, `icon-192.png`, `icon-512.png` | Lets the site be installed on a phone like an app. |
 | `sw.js` | Service worker for offline use: pages are fetched fresh when online and the last copy is used offline. Generated from `tools/sw.template.js`. |
 | `apple-touch-icon.png` | Icon shown when the site is added to a phone's home screen. The browser tab icon is built into each page. |
-| `sitemap.xml`, `robots.txt` | For search engines; the sitemap lists all eight language pages. |
+| `stations/`, `lines/`, `tram/`, `palm-monorail/`, `destinations/`, `routes/` | English guide pages for search engines (20 pages): stations with old and new names, the lines, ten places and three routes. Each page hands off to the planner. |
+| `sitemap.xml`, `robots.txt` | For search engines; the sitemap lists the eight language pages and the guide pages. |
 | `CNAME` | Connects the custom domain `dubaimetro.fyi` to GitHub Pages. Do not delete it. |
 
 The eight pages are generated from one source file, so an update always changes all eight together:
@@ -70,12 +71,26 @@ The eight pages are generated from one source file, so an update always changes 
 | `tools/build.py` | Builds the eight language pages, `sitemap.xml`, `robots.txt`, `manifest.webmanifest` and `sw.js` from the source. |
 | `tools/sw.template.js` | Source of `sw.js`; the build adds a version stamp so phones pick up updates. |
 | `tools/seo_texts.py` | Per-language page titles, descriptions and the "About this map" text. |
+| `tools/seo_config.json` | Which guide pages exist (destinations, stations, routes) and which routes each one shows. A page exists only if it is listed here. |
+| `tools/export_data.js` | Exports the app's data and the routes the guide pages need to `tools/seo_data.json`, using the app's own router. Needs Node and Playwright. |
+| `tools/seo_data.json` | The exported data. Committed, so the build itself needs only Python. |
+| `tools/seo_pages.py` | Builds the guide pages from the two files above; called by `build.py`. No fact on a guide page is typed by hand. |
 
 To rebuild after a change (Python 3, no extra packages):
 
 ```
 python3 tools/build.py
 ```
+
+If the change touches the network data (stations, places, walking times, fares, hours) or `tools/seo_config.json`, export the data first so the guide pages match the planner:
+
+```
+node tools/export_data.js && python3 tools/build.py
+```
+
+## Usage events
+
+The site sends anonymous events to GoatCounter (dubaimetro.goatcounter.com) as `event/a/b` with the interface language and a detail in the title: `route` (with where the trip came from: search, popular, map, link, tour, geo, swap or `landing:<guide page>`), `place` and `station` (picked in the search, and whether by name, alias or former name), `noresult` (search text that found nothing, shortened and dropped if it looks like a number or e-mail), `view` (route option or details), `share`, `report` and `geo`. Only ids from the app's data are sent: no coordinates, no report text, nothing about the person.
 
 To build for another address (for example a new domain), set `SITE`: `SITE=https://example.com/ python3 tools/build.py`, then update `CNAME`.
 

@@ -9,6 +9,7 @@ import re, json, html, datetime, sys, os
 HERE=os.path.dirname(os.path.abspath(__file__)); ROOT=os.path.dirname(HERE)
 sys.path.insert(0, HERE)
 from seo_texts import TX, ORDER
+import seo_pages  # English guide pages: stations, lines, destinations, routes (data from tools/seo_data.json)
 SITE=os.environ.get('SITE','https://dubaimetro.fyi/')
 OUT=os.environ.get('OUT',ROOT+'/')
 s=open(os.path.join(ROOT,'src','dubai-metro.html')).read()
@@ -46,6 +47,15 @@ if("serviceWorker" in navigator&&(location.protocol==="https:"||location.hostnam
 }
 </script>"""
 
+# English guide pages, built first so the language pages can link to them
+GUIDES=seo_pages.build()
+GUIDES_H={"en":"Guides to stations and places","ru":"Путеводитель по станциям и местам (на английском)","hi":"स्टेशनों और जगहों की गाइड (अंग्रेज़ी में)",
+  "ar":"أدلة المحطات والأماكن (بالإنجليزية)","ur":"اسٹیشنوں اور جگہوں کی گائیڈ (انگریزی میں)","de":"Stationen und Orte (auf Englisch)",
+  "zh":"车站与地点指南（英文）","fr":"Guides des stations et des lieux (en anglais)"}
+def short(title):
+    return title.split(':')[0].replace(' by Metro','')
+GUIDE_LINKS=' · '.join(f'<a href="{p}" hreflang="en" lang="en">{html.escape(short(t))}</a>' for p,t in GUIDES.items())
+
 def page(L):
     X=TX[L]
     trips='\n'.join(f'<li><a href="#{a}~{b}~{L}">{html.escape(t)}</a></li>' for (a,b),t in zip(TRIPS,X["trips"]))
@@ -68,6 +78,8 @@ def page(L):
 <p class="lst" dir="ltr">{lst(T)}.</p>
 <p>{X["mono"].format(a=N(M[0]),b=N(M[-1]))}{X["susp"] if mono_suspended else ""}</p>
 <p class="lst" dir="ltr">{lst(M)}.</p>
+<h2>{html.escape(GUIDES_H[L])}</h2>
+<p class="lst" dir="ltr">{GUIDE_LINKS}</p>
 <h2>{html.escape(X["faq"])}</h2>
 {faq}
 <p><a href="https://github.com/thinkbig-code/dubai-metro/issues">{html.escape(X["report"])}</a></p>
@@ -126,6 +138,7 @@ open(OUT+'sw.js','w').write(open(os.path.join(HERE,'sw.template.js')).read().rep
 today=datetime.date.today().isoformat()
 xl='\n'.join(f'    <xhtml:link rel="alternate" hreflang="{o}" href="{url(o)}"/>' for o in ORDER)+f'\n    <xhtml:link rel="alternate" hreflang="x-default" href="{SITE}"/>'
 urls='\n'.join(f'  <url>\n    <loc>{url(L)}</loc>\n    <lastmod>{today}</lastmod>\n{xl}\n  </url>' for L in ORDER)
+urls+='\n'+'\n'.join(f'  <url>\n    <loc>{SITE}{p}</loc>\n    <lastmod>{today}</lastmod>\n  </url>' for p in GUIDES)
 open(OUT+'sitemap.xml','w').write(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n{urls}\n</urlset>\n')
 open(OUT+'robots.txt','w').write(f'User-agent: *\nAllow: /\n\nSitemap: {SITE}sitemap.xml\n')
-print("deploy built:",', '.join(TX[L]["file"] for L in ORDER))
+print("deploy built:",', '.join(TX[L]["file"] for L in ORDER),"+",len(GUIDES),"guide pages")

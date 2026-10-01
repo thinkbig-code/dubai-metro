@@ -1,0 +1,299 @@
+{
+ "_about": "Pages built by tools/seo_pages.py. Only pages listed here exist; every fact on them comes from the app data (tools/seo_data.json). Add a page only when it passes the five INDEX gates in the SEO blueprint.",
+ "destinations": [
+  {
+   "slug": "dubai-mall",
+   "title": "Dubai Mall",
+   "main": "p_dubai_mall",
+   "also": [
+    "p_burj_khalifa",
+    "p_dubai_fountain",
+    "p_dubai_aquarium",
+    "p_dubai_opera"
+   ],
+   "query": "nearest metro station to Dubai Mall and Burj Khalifa",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_marina_walk",
+    "p_jbr_the_walk",
+    "p_gold_souk",
+    "p_expo_city_dubai"
+   ]
+  },
+  {
+   "slug": "museum-of-the-future",
+   "title": "Museum of the Future",
+   "main": "p_museum_of_the_future",
+   "also": [],
+   "query": "Museum of the Future metro station",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_al_fahidi_historical_district"
+   ]
+  },
+  {
+   "slug": "dubai-frame",
+   "title": "Dubai Frame",
+   "main": "p_dubai_frame",
+   "also": [],
+   "query": "nearest metro station to Dubai Frame",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "burjuman"
+   ]
+  },
+  {
+   "slug": "gold-souk",
+   "title": "Gold Souk",
+   "main": "p_gold_souk",
+   "also": [],
+   "query": "metro to Gold Souk Dubai",
+   "origins": [
+    "union",
+    "burjuman",
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk"
+   ]
+  },
+  {
+   "slug": "atlantis-the-palm",
+   "title": "Atlantis The Palm",
+   "main": "p_atlantis_the_palm",
+   "also": [
+    "p_aquaventure_waterpark"
+   ],
+   "query": "metro to Atlantis The Palm",
+   "origins": [
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_jbr_the_walk",
+    "p_dxb_airport_terminal_3"
+   ]
+  },
+  {
+   "slug": "dubai-marina",
+   "title": "Dubai Marina",
+   "main": "p_dubai_marina_walk",
+   "also": [
+    "p_dubai_marina_mall"
+   ],
+   "query": "Dubai Marina metro station",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_expo_city_dubai",
+    "p_mall_of_the_emirates"
+   ],
+   "lead": "The Dubai Marina tram stop is on Dubai Marina Walk. The nearest metro station is Sobha Realty, which used to be called Dubai Marina (and later DAMAC Properties); it is about 6 minutes on foot from the tram stop."
+  },
+  {
+   "slug": "jbr",
+   "title": "JBR (Jumeirah Beach Residence)",
+   "main": "p_jbr_the_walk",
+   "also": [
+    "p_the_beach_jbr",
+    "p_ain_dubai_bluewaters"
+   ],
+   "query": "JBR metro station",
+   "lead": "There is no metro station at JBR. The Dubai Tram stops at Jumeirah Beach Residence 1 and 2, and the nearest metro stations are reached by tram and a short walk.",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_mall_of_the_emirates",
+    "p_gold_souk",
+    "p_expo_city_dubai"
+   ]
+  },
+  {
+   "slug": "mall-of-the-emirates",
+   "title": "Mall of the Emirates",
+   "main": "p_mall_of_the_emirates",
+   "also": [
+    "p_ski_dubai"
+   ],
+   "query": "Mall of the Emirates metro station",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_jbr_the_walk",
+    "p_gold_souk"
+   ]
+  },
+  {
+   "slug": "expo-city-dubai",
+   "title": "Expo City Dubai",
+   "main": "p_expo_city_dubai",
+   "also": [],
+   "query": "Expo City metro station",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "burjuman",
+    "p_dubai_marina_walk",
+    "p_ibn_battuta_mall"
+   ]
+  },
+  {
+   "slug": "dubai-airport",
+   "title": "Dubai Airport (DXB)",
+   "main": "p_dxb_airport_terminal_3",
+   "also": [
+    "p_dxb_airport_terminal_1",
+    "p_dxb_airport_terminal_2"
+   ],
+   "query": "Dubai Airport metro station, Terminal 1, 2 and 3",
+   "reverse": true,
+   "origins": [
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_jbr_the_walk",
+    "p_gold_souk",
+    "p_expo_city_dubai"
+   ],
+   "lead": "Airport Terminal 1 and Airport Terminal 3 are stations on the Red Line, each linked to its terminal: about 5 minutes on foot, follow the Metro signs. Terminal 2 is not on the Metro: take the bus from Stadium or Abu Hail (Green Line), or a taxi."
+  }
+ ],
+ "stations": [
+  {
+   "id": "burjuman",
+   "slug": "burjuman",
+   "to": [
+    "p_gold_souk",
+    "p_dubai_frame",
+    "p_dubai_mall",
+    "p_dxb_airport_terminal_3",
+    "p_expo_city_dubai"
+   ]
+  },
+  {
+   "id": "sobha",
+   "slug": "sobha-realty",
+   "to": [
+    "p_dubai_marina_walk",
+    "p_jbr_the_walk",
+    "p_dubai_mall",
+    "p_dxb_airport_terminal_3",
+    "p_expo_city_dubai"
+   ]
+  }
+ ],
+ "routes": [
+  {
+   "slug": "dubai-airport-to-dubai-mall",
+   "title": "Dubai Airport to Dubai Mall by metro",
+   "query": "Dubai Airport to Dubai Mall by metro",
+   "pairs": [
+    [
+     "p_dxb_airport_terminal_3",
+     "p_dubai_mall"
+    ],
+    [
+     "p_dxb_airport_terminal_1",
+     "p_dubai_mall"
+    ],
+    [
+     "p_dxb_airport_terminal_3",
+     "p_burj_khalifa"
+    ]
+   ],
+   "return": [
+    "p_dubai_mall",
+    "p_dxb_airport_terminal_3"
+   ]
+  },
+  {
+   "slug": "dubai-marina-to-dubai-mall",
+   "title": "Dubai Marina to Dubai Mall by metro",
+   "query": "Dubai Marina to Dubai Mall by metro",
+   "pairs": [
+    [
+     "p_dubai_marina_walk",
+     "p_dubai_mall"
+    ],
+    [
+     "p_dubai_marina_mall",
+     "p_dubai_mall"
+    ],
+    [
+     "p_dubai_marina_walk",
+     "p_burj_khalifa"
+    ]
+   ],
+   "return": [
+    "p_dubai_mall",
+    "p_dubai_marina_walk"
+   ]
+  },
+  {
+   "slug": "dubai-airport-to-dubai-marina",
+   "title": "Dubai Airport to Dubai Marina and JBR by metro",
+   "query": "Dubai Airport to Dubai Marina by metro",
+   "pairs": [
+    [
+     "p_dxb_airport_terminal_3",
+     "p_dubai_marina_walk"
+    ],
+    [
+     "p_dxb_airport_terminal_1",
+     "p_dubai_marina_walk"
+    ],
+    [
+     "p_dxb_airport_terminal_3",
+     "p_jbr_the_walk"
+    ]
+   ],
+   "return": [
+    "p_dubai_marina_walk",
+    "p_dxb_airport_terminal_3"
+   ]
+  }
+ ],
+ "extra_pairs": [
+  [
+   "p_dxb_airport_terminal_3",
+   "p_dubai_mall"
+  ],
+  [
+   "p_dubai_mall",
+   "p_mall_of_the_emirates"
+  ],
+  [
+   "p_dubai_mall",
+   "p_expo_city_dubai"
+  ],
+  [
+   "union",
+   "p_gold_souk"
+  ],
+  [
+   "p_al_fahidi_historical_district",
+   "p_dubai_mall"
+  ],
+  [
+   "creek",
+   "eand"
+  ],
+  [
+   "p_jbr_the_walk",
+   "p_dubai_mall"
+  ],
+  [
+   "p_dubai_marina_walk",
+   "p_jbr_the_walk"
+  ],
+  [
+   "p_dxb_airport_terminal_3",
+   "p_jbr_the_walk"
+  ]
+ ],
+ "_extra_pairs": "Routes shown in the 'Popular trips' tables of the line pages."
+}

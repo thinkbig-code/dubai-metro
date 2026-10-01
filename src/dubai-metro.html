@@ -2144,7 +2144,9 @@ let hashTour=null;
 try{const m=(location.hash||"").slice(1).split("~");if(m[0]==="tour"){hashTour=m[1]||"all";if(m[2]&&I18N[m[2]])hashLang=m[2];}else if(m.length>=2){const a=parseToken(m[0]),b=parseToken(m[1]);if(a&&b)start=[a,b];if(m[2]&&I18N[m[2]])hashLang=m[2];}}catch(e){}
 // no link: open with empty fields
 if(!start)start=[null,null];
-state.from=start[0];state.to=start[1];if(start[0]&&start[1])trkSrc="link";
+state.from=start[0];state.to=start[1];if(start[0]&&start[1]){trkSrc="link";
+  // arrived from one of our guide pages: count it as that page's conversion ("landing:destinations-dubai-mall")
+  try{const r=new URL(document.referrer);if(r.host===location.host&&/^\/(destinations|routes|stations|lines|tram|palm-monorail)\//.test(r.pathname))trkSrc="landing:"+r.pathname.split("/").filter(Boolean).join("-");}catch(e){}}
 fromI.value=endName(state.from);toI.value=endName(state.to);
 // language: saved choice, else browser language, else English
 function pickLang(){
@@ -2183,7 +2185,9 @@ document.addEventListener("click",e=>{if(!$("#langMenu").hidden&&!e.target.close
 applyLang(hashLang||pickLang(),false);
 setInterval(()=>{renderStatus();if(!state.departMs)renderLeave();},60000);
 fitBox(homeBox(),false);
-if(SELFTEST){window.__dm={computeVariants,parseToken,ids:Object.keys(ST),places:PLACES.map(x=>x.id)};runValidation();}
+if(SELFTEST){window.__dm={computeVariants,parseToken,ids:Object.keys(ST),places:PLACES.map(x=>x.id),
+  // read-only data for the page generator (tools/export_data.js); nothing here changes the app
+  data:{ST,SVC,LINES,PLACES,POPULAR,ZONE,FARES,MONO_FARES,HOURS,SERVICE_STATUS,WALKS,GEO,ALIAS,ITINERARIES,I18N_EN:I18N.en},legTime,headwayFor};runValidation();}
 if(hashTour){state.tour=TOUR_BY_ID[hashTour]?hashTour:null;state.view="explore";$("#panel").classList.add("explore");$("#vRoute").setAttribute("aria-selected","false");$("#vExplore").setAttribute("aria-selected","true");}
 update(true,true);
 addEventListener("resize",placePop);
