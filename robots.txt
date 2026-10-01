@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://thinkbig-code.github.io/dubai-metro/sitemap.xml
+Sitemap: https://dubaimetro.fyi/sitemap.xml
