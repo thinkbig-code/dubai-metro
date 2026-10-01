@@ -20,19 +20,19 @@
 /* Layout: full-bleed pannable schematic, floating route panel top-left (top sheet on phones), legend + zoom controls bottom */
 :root{
   --bg:#F4F7F8; --surface:#FFFFFF; --fg:#18212A; --muted:#62707C; --rule:#DFE5E9;
-  --red:#E1251B; --green:#21A246; --tram:#EE8A00; --mono:#7B4FC4; --mono-ink:#FFFFFF; --water:#CDE5F1; --water-ink:#6E9DB6; --land:#EDF1F2;
+  --red:#E1251B; --green:#21A246; --tram:#EE8A00; --mono:#7B4FC4; --mono-ink:#FFFFFF; --water:#CDE5F1; --water-ink:#5E8FAA; --sea:#BEDCEC; --shallow:#D6EBF5; --wave:#B1D5E8; --sand:#EADBB8;
   --accent:#1D5FB4; --accent-soft:#E3EDF9; --ok:#21A246; --warn-bg:#FFF1D6; --warn-fg:#7A4B00; --shadow:0 6px 24px rgba(20,35,50,.12),0 1px 3px rgba(20,35,50,.08);
   --font-ui:"Golos Text",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
   --font-display:"Unbounded","Golos Text",system-ui,sans-serif;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   --bg:#10161C; --surface:#18212A; --fg:#E6ECF0; --muted:#94A2AE; --rule:#2A3640;
-  --red:#F2473D; --green:#37C063; --tram:#FFA42A; --mono:#B08CF0; --mono-ink:#1A1A1A; --water:#17344A; --water-ink:#5E8FAD; --land:#1A232B;
+  --red:#F2473D; --green:#37C063; --tram:#FFA42A; --mono:#B08CF0; --mono-ink:#1A1A1A; --water:#17344A; --water-ink:#6F9DBA; --sea:#0F2738; --shallow:#16344A; --wave:#14304A; --sand:#3B3627;
   --accent:#6FA6F0; --accent-soft:#1E3550; --ok:#37C063; --warn-bg:#3A2C10; --warn-fg:#FFD58A; --shadow:0 6px 24px rgba(0,0,0,.45),0 1px 3px rgba(0,0,0,.3);
   color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#10161C; --surface:#18212A; --fg:#E6ECF0; --muted:#94A2AE; --rule:#2A3640;
-  --red:#F2473D; --green:#37C063; --tram:#FFA42A; --mono:#B08CF0; --mono-ink:#1A1A1A; --water:#17344A; --water-ink:#5E8FAD; --land:#1A232B;
+  --red:#F2473D; --green:#37C063; --tram:#FFA42A; --mono:#B08CF0; --mono-ink:#1A1A1A; --water:#17344A; --water-ink:#6F9DBA; --sea:#0F2738; --shallow:#16344A; --wave:#14304A; --sand:#3B3627;
   --accent:#6FA6F0; --accent-soft:#1E3550; --ok:#37C063; --warn-bg:#3A2C10; --warn-fg:#FFD58A; --shadow:0 6px 24px rgba(0,0,0,.45),0 1px 3px rgba(0,0,0,.3);
   color-scheme:dark}
 html,body{height:100%}
@@ -49,11 +49,20 @@ body{background:var(--bg);color:var(--fg);font-family:var(--font-ui);font-size:1
 .ln.tram,.ln.mono{stroke-width:6}
 .walk.long{stroke-width:4;stroke-dasharray:2 7;opacity:.7}
 .walk{stroke:var(--muted);stroke-width:5;stroke-linecap:round;opacity:.4}
-.water{fill:none;stroke:var(--water);stroke-width:30;stroke-linecap:round;stroke-linejoin:round}
-.sea{fill:var(--water)}
-.palm line{stroke:var(--land);stroke-linecap:round}
-.palm-crescent{fill:none;stroke:var(--land);stroke-width:8;stroke-linecap:round}
-.water-label{fill:var(--water-ink);font-size:12px;font-style:italic;letter-spacing:.06em}
+.water{fill:none;stroke:var(--shallow);stroke-width:30;stroke-linecap:round;stroke-linejoin:round}
+.sea{fill:var(--sea)}
+.wave{fill:none;stroke:var(--wave);stroke-width:1.2;stroke-linecap:round}
+.shallow{fill:none;stroke:var(--shallow);stroke-width:46;stroke-linejoin:round}
+.shallow-isl{fill:var(--shallow);stroke:var(--shallow);stroke-width:12;stroke-linejoin:round}
+.land{fill:var(--bg)}
+.shallow-fill{fill:var(--shallow)}
+.beach{fill:none;stroke:var(--sand);stroke-width:2.6;stroke-linejoin:round;stroke-linecap:round}
+.bank{fill:none;stroke:var(--sand);stroke-width:1.2;opacity:.8}
+.land.isl{stroke:var(--sand);stroke-width:1.2}
+.palm-halo line,.palm-halo path{stroke:var(--shallow);stroke-linecap:round;stroke-width:20}
+.palm-halo line[stroke-width="6"]{stroke-width:14}
+.palm line,.palm path{stroke:var(--bg);stroke-linecap:round}
+.water-label{fill:var(--water-ink);font-weight:500;font-size:12px;font-style:italic;letter-spacing:.06em}
 .st circle.mk{fill:var(--surface);stroke-width:3}
 .st circle.ix{fill:var(--surface);stroke:var(--fg);stroke-width:3}
 .st .hit{fill:transparent}
@@ -344,6 +353,9 @@ ol.steps2{list-style:none;margin:0;padding:14px 16px 8px}
 #zoom button:hover{background:var(--accent-soft)}
 #zoom button:focus-visible{outline:2px solid var(--accent)}
 #zoom .fit{font-size:15px}
+#north{width:42px;height:42px;border-radius:50%;background:var(--surface);box-shadow:var(--shadow);position:relative;margin-bottom:4px}
+#north svg{position:absolute;inset:7px;width:28px;height:28px}
+#north b{position:absolute;left:3px;top:1px;font-size:10px;font-weight:700;color:var(--fg)}
 
 @media (max-width:720px){
   #panel{width:auto;right:16px;max-height:44%}
@@ -404,6 +416,7 @@ ol.steps2{list-style:none;margin:0;padding:14px 16px 8px}
   <span><b class="ixm"></b><span data-t="lgIx">Interchange</span></span>
 </div>
 <div id="zoom">
+  <div id="north" aria-hidden="true" title="N"><svg viewBox="0 0 24 24"><g transform="rotate(-45 12 12)"><path d="M12 2.5l4.2 9.5H7.8z" fill="var(--red)"/><path d="M12 21.5L7.8 12h8.4z" fill="var(--muted)" opacity=".55"/></g></svg><b>N</b></div>
   <button id="zin" data-tal="zin" aria-label="Zoom in">+</button>
   <button id="zout" data-tal="zout" aria-label="Zoom out">−</button>
   <button id="zfit" class="fit" data-tal="zfit" aria-label="Whole map" title="Whole map">⤢</button>
@@ -945,21 +958,65 @@ const $=s=>document.querySelector(s);
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const base=$("#base"),overlay=$("#overlay"),pinsG=$("#pins"),waterG=$("#water");
 
-// sea on the left, the Palm as land, Dubai Creek across the middle
-el("path",{class:"sea",d:"M240,-3000 L240,3000 L-3000,3000 L-3000,-3000Z"},waterG);
-(function(){ // Palm Jumeirah drawn along the monorail: trunk, fronds, crescent
-  const g=el("g",{class:"palm"},waterG);
+// ---- sea, coast and islands ----
+// smooth curve through points (Catmull-Rom → cubic Bézier)
+function smoothD(P,closed){
+  const n=P.length,g=i=>P[closed?(i+n)%n:Math.max(0,Math.min(n-1,i))];
+  let d=`M${P[0][0]},${P[0][1]}`;
+  for(let i=0;i<(closed?n:n-1);i++){
+    const p0=g(i-1),p1=g(i),p2=g(i+1),p3=g(i+2);
+    const c1=[p1[0]+(p2[0]-p0[0])/6,p1[1]+(p2[1]-p0[1])/6],c2=[p2[0]-(p3[0]-p1[0])/6,p2[1]-(p3[1]-p1[1])/6];
+    d+=`C${c1[0].toFixed(1)},${c1[1].toFixed(1)} ${c2[0].toFixed(1)},${c2[1].toFixed(1)} ${p2[0]},${p2[1]}`;
+  }
+  return closed?d+"Z":d;
+}
+// shoreline drawn as one curve: down the coast, into Dubai Creek along its north bank,
+// round the head of the creek, back out along the south bank, then on down the coast
+const COAST_N=[[262,-700],[258,-420],[244,-200],[236,-20],[234,120],[246,240],[256,288],[264,314],[274,332],[288,343],[306,349]];
+// creek: mouth flares into the sea; the head opens into the Ras Al Khor lagoon
+const CREEK=[[330,351],[360,351],[700,351],[990,351],[1024,354],[1052,370],[1080,398],[1116,410],[1152,404],[1186,416],[1200,442],[1184,466],[1146,472],[1110,462],[1084,444],[1060,416],[1036,393],[1008,382],[980,380],[700,380],[360,380],[330,380]];
+const COAST_S=[[308,384],[292,392],[280,404],[268,424],[252,446],[256,474],[268,500],[262,580],[254,660],[250,730],[246,790],[244,850],[238,930],[232,1000],[236,1060],[228,1130],[204,1176],[156,1206],[150,1252],[196,1284],[222,1330],[230,1450],[236,1800]];
+const COAST=COAST_N.concat(CREEK,COAST_S);
+(function(){
+  const coastD=smoothD(COAST);
+  const defs=el("defs",{},waterG);
+  const pat=el("pattern",{id:"waves",width:46,height:30,patternUnits:"userSpaceOnUse"},defs);
+  el("path",{class:"wave",d:"M4,9 q4,-4 8,0 t8,0 M27,24 q4,-4 8,0 t8,0"},pat);
+  el("rect",{class:"sea",x:-3000,y:-3000,width:6000,height:7000},waterG);
+  el("rect",{x:-3000,y:-3000,width:3240,height:7000,fill:"url(#waves)"},waterG);
+  // shallow water along the shore and round the islands
+  el("path",{class:"shallow",d:coastD},waterG);
+  el("path",{class:"shallow-fill",d:smoothD([[300,346]].concat(CREEK,[[300,388]]),true)},waterG);
+  const isl=[];
+  // Dubai Islands off Deira
+  isl.push([[150,150],[196,128],[222,160],[214,214],[176,236],[146,206]]);
+  isl.push([[178,262],[206,252],[214,282],[188,296]]);
+  // Bluewaters, off JBR
+  isl.push([[196,1018],[212,1010],[222,1024],[214,1040],[198,1038]]);
+  // Burj Al Arab
+  isl.push([[226,700],[232,694],[238,702],[232,710]]);
+  // The World: a scatter of small islands
+  const W=[[118,472],[134,466],[150,474],[166,468],[112,490],[128,488],[146,494],[164,490],[180,486],[120,510],[138,512],[156,510],[100,528],[118,532],[136,534],[170,530],[188,520],[150,552],[168,550],[186,546],[128,558],[146,574],[164,572],[182,568],[138,594],[156,596],[174,590],[160,616]];
+  W.forEach(([x,y],i)=>{const r=2.5+(i*7%5)*.8,j=((i*13)%7-3)*1.2,k=((i*5)%5-2)*1.4;x+=j;y+=k;isl.push([[x-r,y+r*.2],[x-r*.2,y-r*.7],[x+r,y-r*.1],[x+r*.1,y+r*.8]]);});
+  const islD=isl.map(P=>smoothD(P,true));
+  islD.forEach(d=>el("path",{class:"shallow-isl",d},waterG));
+  // land: everything right of the coast
+  el("path",{class:"land",d:coastD+"L3000,1800L3000,-700Z"},waterG);
+  islD.forEach(d=>el("path",{class:"land isl",d},waterG));
+  el("path",{class:"beach",d:coastD},waterG);
+  // Palm Jumeirah along the monorail: trunk, fronds, crescent (halo of shallow water, then land)
   const O=[244,782],u=[-Math.SQRT1_2,-Math.SQRT1_2],v=[Math.SQRT1_2,-Math.SQRT1_2];
   const P=(s,n)=>[O[0]+s*u[0]+n*v[0],O[1]+s*u[1]+n*v[1]];
-  const ln=(a,b,w)=>el("line",{x1:a[0].toFixed(1),y1:a[1].toFixed(1),x2:b[0].toFixed(1),y2:b[1].toFixed(1),"stroke-width":w},g);
-  ln(P(-6,0),P(178,0),16);
-  for(let i=0;i<8;i++){const s0=44+i*15,L=62-i*4;
-    [-1,1].forEach(sd=>ln(P(s0,0),P(s0+L*.55,sd*L),6));}
-  const r=96,c=108,a0=-2.2,a1=2.2,pt=a=>P(c+r*Math.cos(a),r*Math.sin(a));
-  const A=pt(a0),B=pt(a1);
-  el("path",{class:"palm-crescent",d:`M${A[0].toFixed(1)},${A[1].toFixed(1)} A${r},${r} 0 1 1 ${B[0].toFixed(1)},${B[1].toFixed(1)}`},g);
+  const r=96,c=108,a0=-2.2,a1=2.2,pt=a=>P(c+r*Math.cos(a),r*Math.sin(a)),A=pt(a0),B=pt(a1);
+  const cres=`M${A[0].toFixed(1)},${A[1].toFixed(1)} A${r},${r} 0 1 1 ${B[0].toFixed(1)},${B[1].toFixed(1)}`;
+  ["palm-halo","palm"].forEach(cls=>{
+    const g=el("g",{class:cls},waterG);
+    const ln=(a,b,w)=>el("line",{x1:a[0].toFixed(1),y1:a[1].toFixed(1),x2:b[0].toFixed(1),y2:b[1].toFixed(1),"stroke-width":w},g);
+    ln(P(-6,0),P(178,0),16);
+    for(let i=0;i<8;i++){const s0=44+i*15,L=62-i*4;[-1,1].forEach(sd=>ln(P(s0,0),P(s0+L*.55,sd*L),6));}
+    el("path",{d:cres,"stroke-width":8,fill:"none"},g);
+  });
 })();
-el("path",{class:"water",d:roundD([[200,365],[1040,365],[1110,435],[1150,435]],40)},waterG);
 const wl=el("text",{class:"water-label",x:450,y:369},waterG);wl.textContent="Dubai Creek";
 
 function drawLines(g){
@@ -997,6 +1054,9 @@ Object.keys(ST).forEach(id=>drawStation(id,base,true));
 // pan / zoom
 const map=$("#map"),world=$("#world");
 const BOX={x0:40,y0:-60,x1:1150,y1:1320};
+// phones: open on the city centre at a readable size instead of the whole network
+const MBOX={x0:420,y0:150,x1:860,y1:640};
+const homeBox=()=>innerWidth<=720?MBOX:BOX;
 let view={x:0,y:0,k:1};
 const apply=anim=>{world.classList.toggle("anim",!!anim);world.style.transform=`translate(${view.x}px,${view.y}px) scale(${view.k})`;placePop();};
 function panelInset(){
@@ -1265,7 +1325,7 @@ const fromI=$("#from"),toI=$("#to"),res=$("#result");
 $("#reset").addEventListener("click",()=>{
   state.from=null;state.to=null;state.mode="fast";state.departMs=null;state.tourBack=null;
   fromI.value="";toI.value="";renderLeave();closePop();$("#card").hidden=true;
-  update(false);fitBox(BOX,true);toI.focus({preventScroll:true});
+  update(false);fitBox(homeBox(),true);toI.focus({preventScroll:true});
 });
 $("#leave").addEventListener("change",e=>{state.departMs=e.target.value?+e.target.value:null;update(false);});
 const endName=e=>e?(e.lm?e.lm.n:ST[e.st].n):"";
@@ -1911,7 +1971,7 @@ $("#langMenu").addEventListener("keydown",e=>{const bs=[...$("#langMenu").queryS
 document.addEventListener("click",e=>{if(!$("#langMenu").hidden&&!e.target.closest("#langMenu"))toggleMenu(false);});
 applyLang(hashLang||pickLang(),false);
 setInterval(()=>{renderStatus();if(!state.departMs)renderLeave();},60000);
-fitBox(BOX,false);
+fitBox(homeBox(),false);
 if(SELFTEST){window.__dm={computeVariants,parseToken,ids:Object.keys(ST),places:PLACES.map(x=>x.id)};runValidation();}
 if(hashTour){state.tour=TOUR_BY_ID[hashTour]?hashTour:null;state.view="explore";$("#panel").classList.add("explore");$("#vRoute").setAttribute("aria-selected","false");$("#vExplore").setAttribute("aria-selected","true");}
 update(true,true);
