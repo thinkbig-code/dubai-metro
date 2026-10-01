@@ -1211,14 +1211,32 @@ function panelInset(){
   return {l:p.right+16,t:16,r:70,b:70};
 }
 let lastFit=null; // the last framing, so the map can be re-framed when the panel changes size
+let lastInset="",refitT=0;
+// Whenever the free space for the map changes (the panel grows or shrinks because its content changed,
+// it is folded or opened, details are shown, the phone is rotated), frame the last thing again once the
+// panel has settled, unless the person has moved the map themselves since.
+const isHome=b=>b===MBOX||b===DBOX;
+const spaceKey=()=>innerWidth+"x"+innerHeight+JSON.stringify(panelInset());
+function refitSoon(){clearTimeout(refitT);refitT=setTimeout(()=>{
+  if(!lastFit||userMoved||spaceKey()===lastInset)return;
+  fitBox(isHome(lastFit.b)?homeBox():lastFit.b,true,lastFit.maxK);},140);}
+// no route on screen: go back to the opening view if the map still shows a route, a tour or the whole
+// network, but never pull the map away from where the person has moved it
+function fitHomeIfAway(anim){if(!userMoved&&lastFit&&!isHome(lastFit.b))fitBox(homeBox(),anim);}
+// test hook (only with ?debug in the address): what the map shows and what the last framing asked for
+if(/[?&]debug\b/.test(location.search))window.__dmView=()=>{const ins=panelInset();let k=null;
+  if(lastFit){const b=lastFit.b,W=Math.max(120,innerWidth-ins.l-ins.r),H=Math.max(120,innerHeight-ins.t-ins.b);k=Math.min(W/(b.x1-b.x0),H/(b.y1-b.y0),lastFit.maxK||2.2);}
+  return {k:view.k,want:k,box:lastFit&&lastFit.b};};
+let userMoved=false; // the person has panned or zoomed since the last framing: leave their view alone
 function fitBox(b,anim,maxK){
-  lastFit={b,maxK};
+  lastFit={b,maxK};userMoved=false;lastInset=spaceKey();
   const ins=panelInset();
   const W=Math.max(120,innerWidth-ins.l-ins.r),H=Math.max(120,innerHeight-ins.t-ins.b);
   const k=Math.min(W/(b.x1-b.x0),H/(b.y1-b.y0),maxK||2.2);
   view.k=k;view.x=ins.l+(W-(b.x1-b.x0)*k)/2-b.x0*k;view.y=ins.t+(H-(b.y1-b.y0)*k)/2-b.y0*k;apply(anim);
 }
 function zoomAt(f,cx,cy,anim){
+  userMoved=true;
   const k=Math.max(fitScale()*.6,Math.min(5,view.k*f));f=k/view.k;
   view.x=cx-(cx-view.x)*f;view.y=cy-(cy-view.y)*f;view.k=k;apply(anim);
 }
@@ -1239,7 +1257,7 @@ map.addEventListener("pointermove",e=>{
     zoomAt((pinch.k*d/pinch.d)/view.k,(a.x+b.x)/2,(a.y+b.y)/2);
     view.x+=(e.clientX-prev.x)/2;view.y+=(e.clientY-prev.y)/2;apply();moved=99;return;
   }
-  if(drag){view.x+=e.clientX-prev.x;view.y+=e.clientY-prev.y;moved+=Math.abs(e.clientX-prev.x)+Math.abs(e.clientY-prev.y);apply();}
+  if(drag){view.x+=e.clientX-prev.x;view.y+=e.clientY-prev.y;moved+=Math.abs(e.clientX-prev.x)+Math.abs(e.clientY-prev.y);if(moved>=6)userMoved=true;apply();}
 });
 function endPtr(e){
   if(!ptrs.has(e.pointerId))return;
@@ -1627,16 +1645,18 @@ function update(fit,noAnim){
   $("#reset").hidden=!(from||to);
   if(!from||!to){
     hint(t(to&&!from?"startQ":(from?"hintOne":"hintNone")));
+    if(fit)fitHomeIfAway(!noAnim);
     return;
   }
   if(from.st===to.st){
     if(from.lm&&to.lm&&from.lm!==to.lm)hint(t("hintBoth",{a:from.lm.n,b:to.lm.n,s:ST[from.st].n}));
     else hint(t("hintSame"));
+    if(fit)fitHomeIfAway(!noAnim);
     return;
   }
   const variants=computeVariants(from,to);
   {if(!trkSeen.has(sig)){trkSeen.add(sig);track("route",tok(from),tok(to),trkSrc||"other",variants.length?"ok":"none");}trkSrc="";}
-  if(!variants.length){hint(t("noRoute"));return;}
+  if(!variants.length){hint(t("noRoute"));if(fit)fitHomeIfAway(!noAnim);return;}
   const r=variants.find(v=>v.modes.includes(state.mode))||variants[0];
   renderResult(r,variants);
   base.classList.add("dim");
@@ -2185,6 +2205,8 @@ document.addEventListener("click",e=>{if(!$("#langMenu").hidden&&!e.target.close
 applyLang(hashLang||pickLang(),false);
 setInterval(()=>{renderStatus();if(!state.departMs)renderLeave();},60000);
 fitBox(homeBox(),false);
+try{new ResizeObserver(refitSoon).observe($("#panel"));}catch(e){}
+addEventListener("resize",refitSoon);
 if(SELFTEST){window.__dm={computeVariants,parseToken,ids:Object.keys(ST),places:PLACES.map(x=>x.id),
   // read-only data for the page generator (tools/export_data.js); nothing here changes the app
   data:{ST,SVC,LINES,PLACES,POPULAR,ZONE,FARES,MONO_FARES,HOURS,SERVICE_STATUS,WALKS,GEO,ALIAS,ITINERARIES,I18N_EN:I18N.en},legTime,headwayFor};runValidation();}
