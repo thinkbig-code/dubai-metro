@@ -370,13 +370,25 @@ ol.steps2{list-style:none;margin:0;padding:14px 16px 8px}
 #north b{position:absolute;left:3px;top:1px;font-size:10px;font-weight:700;color:var(--fg)}
 
 .morewrap{display:none}
+.grab,.minbar{display:none}
 @media (max-width:720px){
   /* phones: the panel is a sheet at the bottom; the map gets the screen */
   #panel{top:auto;bottom:calc(8px + env(safe-area-inset-bottom,0px));left:8px;right:8px;width:auto;max-width:none;max-height:78%;
     display:grid;grid-template-columns:1fr auto;align-content:start;border-radius:18px}
   #panel>*{grid-column:1/-1}
-  #panel>.viewtabs{grid-column:1;grid-row:1;margin:10px 0 8px 10px}
-  #panel>.ph{grid-column:2;grid-row:1;padding:10px 10px 8px 6px;align-items:center}
+  #panel>.grab{grid-column:1/-1;grid-row:1}
+  #panel>.viewtabs{grid-column:1;grid-row:2;margin:0 0 8px 10px}
+  #panel>.ph{grid-column:2;grid-row:2;padding:0 10px 8px 6px;align-items:center}
+  /* handle: tap to fold the sheet down to one line */
+  .grab{display:flex;justify-content:center;align-items:center;width:100%;height:26px;border:0;background:none;cursor:pointer;padding:0}
+  .grab i{display:block;width:44px;height:5px;border-radius:3px;background:var(--rule)}
+  .grab:focus-visible i{background:var(--accent)}
+  #panel.min>:not(.grab):not(.minbar){display:none}
+  #panel.min .minbar{display:flex;grid-column:1/-1;align-items:center;gap:10px;width:auto;margin:0 10px 10px;padding:10px 14px;border:0;border-radius:12px;
+    background:var(--bg);color:var(--fg);font:inherit;font-size:15px;text-align:start;cursor:pointer}
+  .minbar b{font-size:17px;white-space:nowrap}
+  .minbar span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--muted)}
+  .minbar em{margin-inline-start:auto;font-style:normal;color:var(--accent);font-weight:600}
   .ph h1,.ph .tog,.ph>span{display:none}
   .viewtabs button{padding:7px 6px;font-size:13px}
   .fields{padding:0 10px 8px;gap:6px}
@@ -423,6 +435,8 @@ ol.steps2{list-style:none;margin:0;padding:14px 16px 8px}
 </div>
 
 <section id="panel" aria-label="Route">
+  <button class="grab" id="grab" aria-expanded="true"><i aria-hidden="true"></i></button>
+  <button class="minbar" id="minbar"></button>
   <div class="ph"><h1 data-t="title">Dubai Metro</h1><div class="phr"><div class="langw"><button class="langbtn" id="langBtn" aria-haspopup="menu" aria-expanded="false"></button><div class="langmenu" id="langMenu" role="menu" hidden></div></div><button class="tog" id="tog" aria-expanded="true">Hide details</button></div></div>
   <div class="status" id="status" aria-live="polite"></div>
   <div class="viewtabs" role="tablist"><button id="vRoute" role="tab" aria-selected="true" data-t="planner">Route planner</button><button id="vExplore" role="tab" aria-selected="false" data-t="explore">Explore Dubai</button></div>
@@ -1419,6 +1433,14 @@ function setEnd(k,e){if(state.view!=="route"){state.view="route";$("#panel").cla
 $("#swap").onclick=()=>{const a=state.from;state.from=state.to;state.to=a;fromI.value=endName(state.from);toI.value=endName(state.to);update(true);};
 $("#clrFrom").onclick=()=>{setEnd("from",null);fromI.focus();};
 $("#clrTo").onclick=()=>{setEnd("to",null);toI.focus();};
+function setMin(on){const p=$("#panel");p.classList.toggle("min",on);$("#grab").setAttribute("aria-expanded",String(!on));
+  $("#grab").setAttribute("aria-label",t(on?"show":"hide"));
+  requestAnimationFrame(()=>{if(state.from&&state.to&&routeBox)fitBox(routeBox,true,1.6);});}
+function renderMinbar(){const {from,to}=state;const mb=$("#minbar");
+  if(from&&to&&lastRoute)mb.innerHTML=`<b>${esc(rng(lastRoute.time,lastRoute.timeMax))}</b><span>${esc(endName(from)+" → "+endName(to))}</span><em>▴</em>`;
+  else mb.innerHTML=`<span>${esc(t("phTo"))}</span><em>▴</em>`;}
+$("#grab").onclick=()=>{renderMinbar();setMin(!$("#panel").classList.contains("min"));};
+$("#minbar").onclick=()=>setMin(false);
 $("#tog").onclick=()=>{const p=$("#panel");const c=p.classList.toggle("collapsed");$("#tog").textContent=t(c?"show":"hide");$("#tog").setAttribute("aria-expanded",String(!c));};
 
 // popular places
@@ -1515,7 +1537,7 @@ function update(fit,noAnim){
   $("#panel").classList.toggle("has-route",!!(from&&to));
   $("#panel").classList.toggle("empty",!from&&!to);
   // a new trip opens with the short summary; details are one tap away (phones)
-  const sig=(from?endToken(from):"")+">"+(to?endToken(to):"");if(sig!==lastSig){lastSig=sig;$("#panel").classList.add("peek");}
+  const sig=(from?endToken(from):"")+">"+(to?endToken(to):"");if(sig!==lastSig){lastSig=sig;$("#panel").classList.add("peek");$("#panel").classList.remove("min");}
   fromI.placeholder=t(to&&!from?"startQ":"phFrom");
   $("#reset").hidden=!(from||to);
   if(!from||!to){
