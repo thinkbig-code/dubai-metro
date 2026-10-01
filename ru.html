@@ -1497,7 +1497,9 @@ const fromI=$("#from"),toI=$("#to"),res=$("#result");
 $("#reset").addEventListener("click",()=>{
   state.from=null;state.to=null;state.mode="fast";state.departMs=null;state.tourBack=null;
   fromI.value="";toI.value="";renderLeave();closePop();$("#card").hidden=true;
-  update(false);fitBox(homeBox(),true);toI.focus({preventScroll:true});
+  update(false);fitBox(homeBox(),true);
+  // no focus here: focusing the field would pop open the suggestions list (and the phone keyboard)
+  if(document.activeElement)document.activeElement.blur();
 });
 $("#leave").addEventListener("change",e=>{state.departMs=e.target.value?+e.target.value:null;update(false);});
 const endName=e=>e?(e.lm?e.lm.n:ST[e.st].n):"";
