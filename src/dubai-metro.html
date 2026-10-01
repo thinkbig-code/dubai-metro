@@ -1,0 +1,2111 @@
+<title>Dubai Metro Map</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Unbounded:wght@600&family=Noto+Sans+Arabic:wght@400;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap">
+<style>
+/* Layout: full-bleed pannable schematic, floating route panel top-left (top sheet on phones), legend + zoom controls bottom */
+:root{
+  --bg:#F4F7F8; --surface:#FFFFFF; --fg:#18212A; --muted:#62707C; --rule:#DFE5E9;
+  --red:#E1251B; --green:#21A246; --tram:#EE8A00; --mono:#7B4FC4; --mono-ink:#FFFFFF; --water:#CDE5F1; --water-ink:#5E8FAA; --sea:#BEDCEC; --shallow:#D6EBF5; --wave:#B1D5E8; --sand:#EADBB8; --district:#C9D2D8; --outside:#E4E9EC;
+  --accent:#1D5FB4; --accent-soft:#E3EDF9; --ok:#21A246; --warn-bg:#FFF1D6; --warn-fg:#7A4B00; --shadow:0 6px 24px rgba(20,35,50,.12),0 1px 3px rgba(20,35,50,.08);
+  --font-ui:"Golos Text",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --font-display:"Unbounded","Golos Text",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#10161C; --surface:#18212A; --fg:#E6ECF0; --muted:#94A2AE; --rule:#2A3640;
+  --red:#F2473D; --green:#37C063; --tram:#FFA42A; --mono:#B08CF0; --mono-ink:#1A1A1A; --water:#17344A; --water-ink:#6F9DBA; --sea:#0F2738; --shallow:#16344A; --wave:#14304A; --sand:#3B3627; --district:#2A3540; --outside:#0B0F13;
+  --accent:#6FA6F0; --accent-soft:#1E3550; --ok:#37C063; --warn-bg:#3A2C10; --warn-fg:#FFD58A; --shadow:0 6px 24px rgba(0,0,0,.45),0 1px 3px rgba(0,0,0,.3);
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#10161C; --surface:#18212A; --fg:#E6ECF0; --muted:#94A2AE; --rule:#2A3640;
+  --red:#F2473D; --green:#37C063; --tram:#FFA42A; --mono:#B08CF0; --mono-ink:#1A1A1A; --water:#17344A; --water-ink:#6F9DBA; --sea:#0F2738; --shallow:#16344A; --wave:#14304A; --sand:#3B3627; --district:#2A3540; --outside:#0B0F13;
+  --accent:#6FA6F0; --accent-soft:#1E3550; --ok:#37C063; --warn-bg:#3A2C10; --warn-fg:#FFD58A; --shadow:0 6px 24px rgba(0,0,0,.45),0 1px 3px rgba(0,0,0,.3);
+  color-scheme:dark}
+html,body{height:100%}
+body{background:var(--bg);color:var(--fg);font-family:var(--font-ui);font-size:14px;overflow:hidden}
+*{box-sizing:border-box}
+#map{position:fixed;inset:0;touch-action:none;cursor:grab;user-select:none;-webkit-user-select:none}
+#map.dragging{cursor:grabbing}
+#map svg{width:100%;height:100%;display:block}
+#world{transform-origin:0 0}
+#world.anim{transition:transform .45s cubic-bezier(.3,.7,.2,1)}
+@media (prefers-reduced-motion:reduce){#world.anim{transition:none}}
+
+.ln{fill:none;stroke-width:9;stroke-linecap:round;stroke-linejoin:round}
+.ln.tram,.ln.mono{stroke-width:6}
+.walk{stroke:var(--muted);stroke-width:4;stroke-linecap:round;stroke-dasharray:.1 7;opacity:.7}
+.walk.long{stroke-width:4;stroke-dasharray:.1 7;opacity:.7}
+.water{fill:none;stroke:var(--shallow);stroke-width:30;stroke-linecap:round;stroke-linejoin:round}
+.sea{fill:var(--sea)}
+.wave{fill:none;stroke:var(--wave);stroke-width:1.2;stroke-linecap:round}
+.shallow{fill:none;stroke:var(--shallow);stroke-width:46;stroke-linejoin:round}
+.shallow-isl{fill:var(--shallow);stroke:var(--shallow);stroke-width:12;stroke-linejoin:round}
+.land{fill:var(--bg)}
+.shallow-fill{fill:var(--shallow)}
+.beach{fill:none;stroke:var(--sand);stroke-width:2.6;stroke-linejoin:round;stroke-linecap:round}
+.bank{fill:none;stroke:var(--sand);stroke-width:1.2;opacity:.8}
+.land.isl{stroke:var(--sand);stroke-width:1.2}
+.palm-halo line,.palm-halo path{stroke:var(--shallow);stroke-linecap:round;stroke-width:20}
+.palm-halo line[stroke-width="6"]{stroke-width:14}
+.palm line,.palm path{stroke:var(--bg);stroke-linecap:round}
+.outside{fill:var(--outside)}
+.sheet-edge{fill:none;stroke:var(--rule);stroke-width:1.5}
+.border{fill:none;stroke:var(--muted);stroke-width:1.6;stroke-dasharray:7 6;opacity:.45}
+.district{fill:var(--district);font-size:13px;font-weight:600;letter-spacing:.22em}
+.water-label{fill:var(--water-ink);font-weight:500;font-size:12px;font-style:italic;letter-spacing:.06em}
+.st circle.mk{fill:var(--surface);stroke-width:3}
+.st circle.ix{fill:var(--surface);stroke:var(--fg);stroke-width:3}
+.st .hit{fill:transparent}
+.st text{font-size:13px;fill:var(--fg);paint-order:stroke;stroke:var(--bg);stroke-width:3.5px;stroke-linejoin:round}
+.st.big text{font-weight:600}
+.st.hid text{visibility:hidden}
+.ln.susp{stroke-dasharray:3 9;opacity:.55}
+.mono-note{font-size:10.5px;font-style:italic;fill:var(--muted)}
+.wtag rect{fill:var(--surface);stroke:var(--rule);stroke-width:1}
+.wtag text{font-size:10.5px;font-weight:600;fill:var(--muted)}
+.lmk{cursor:pointer;outline:none}
+.lmk circle{fill:var(--surface);stroke:var(--rule);stroke-width:1.2;filter:drop-shadow(0 1px 1.5px rgba(20,35,50,.18))}
+.lmk text{font-size:12px;font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif;pointer-events:none}
+.lmk:hover circle,.lmk:focus-visible circle{stroke:var(--accent);stroke-width:2}
+.st{cursor:pointer;outline:none}
+.st:hover text,.st:focus-visible text{fill:var(--accent)}
+.st:focus-visible circle.mk,.st:focus-visible circle.ix{stroke:var(--accent)}
+#base{transition:opacity .25s}
+#base.dim{opacity:.18}
+.ov text{font-weight:600}
+.pin circle{stroke:var(--surface);stroke-width:3}
+.pin text{fill:#fff;font-size:12px;font-weight:700;text-anchor:middle;pointer-events:none}
+
+/* panel */
+#panel{position:fixed;top:calc(16px + env(safe-area-inset-top,0px));left:16px;width:360px;max-width:calc(100% - 32px);
+  background:var(--surface);border-radius:16px;box-shadow:var(--shadow);display:flex;flex-direction:column;max-height:calc(100% - 100px);z-index:5}
+.ph{padding:16px 16px 8px;display:flex;align-items:baseline;justify-content:space-between;gap:8px}
+.ph h1{font-family:var(--font-display);font-size:17px;font-weight:600;margin:0;letter-spacing:-.01em}
+.ph span{color:var(--muted);font-size:12px}
+.fields{padding:4px 16px 14px;display:grid;grid-template-columns:1fr 36px;gap:8px;align-items:center}
+.inputs{display:flex;flex-direction:column;gap:6px;min-width:0}
+.field{position:relative;display:flex;align-items:center;background:var(--bg);border-radius:10px;border:1.5px solid transparent}
+.field:focus-within{border-color:var(--accent)}
+.field b{flex:none;width:22px;height:22px;margin-inline-start:8px;border-radius:50%;color:#fff;font-size:11px;display:grid;place-items:center}
+.field input{flex:1;min-width:0;border:0;background:transparent;font:inherit;font-size:15px;color:var(--fg);padding:10px 8px;outline:none}
+.field input::placeholder{color:var(--muted)}
+.field .x{border:0;background:none;color:var(--muted);font-size:18px;padding:0 10px;cursor:pointer;line-height:1}
+.field .x:focus-visible{outline:2px solid var(--accent);border-radius:6px}
+button.swap{width:36px;height:36px;border-radius:50%;border:1px solid var(--rule);background:var(--surface);color:var(--fg);cursor:pointer;font-size:16px;display:grid;place-items:center}
+button.swap:hover{background:var(--accent-soft)}
+button.swap:focus-visible{outline:2px solid var(--accent)}
+.dd{position:absolute;left:0;right:0;top:calc(100% + 6px);background:var(--surface);border-radius:12px;box-shadow:var(--shadow);z-index:20;
+  max-height:280px;overflow-y:auto;list-style:none;margin:0;padding:6px}
+.dd li{padding:8px 10px;border-radius:8px;cursor:pointer;display:flex;align-items:center;gap:8px}
+.dd li.on,.dd li:hover{background:var(--accent-soft)}
+.dd .dots{display:flex;gap:3px;flex:none}
+.dot{width:9px;height:9px;border-radius:50%;display:inline-block;flex:none}
+.dd .nm{min-width:0}
+.dd small{display:block;color:var(--muted);font-size:12px}
+.dd .empty{color:var(--muted);cursor:default}
+
+#result{border-top:1px solid var(--rule);overflow-y:auto;min-height:0}
+#result:empty{display:none}
+.hint{padding:14px 16px;color:var(--muted);line-height:1.45}
+.tabs{display:flex;gap:6px;padding:12px 16px 0}
+.tabs button{border:1px solid var(--rule);background:transparent;color:var(--fg);font:inherit;font-size:13px;padding:6px 12px;border-radius:999px;cursor:pointer}
+.tabs button[aria-pressed="true"]{background:var(--fg);color:var(--surface);border-color:var(--fg)}
+.tabs button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sum{padding:12px 16px 4px;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px}
+.sum .t{font-family:var(--font-display);font-size:26px;font-weight:600;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.sum .m{color:var(--muted)}
+.sum .arr{width:100%;color:var(--muted);font-size:13px}
+.bar{display:flex;height:6px;margin:8px 16px 4px;border-radius:3px;overflow:hidden;gap:2px}
+.bar i{display:block;height:100%}
+ol.steps{list-style:none;margin:0;padding:8px 16px 16px}
+.leg{display:grid;grid-template-columns:18px 1fr;gap:0 12px}
+.leg .rail{position:relative;display:flex;justify-content:center}
+.leg .rail::before{content:"";position:absolute;top:6px;bottom:-6px;width:5px;border-radius:3px;background:var(--c)}
+.leg .rail::after{content:"";position:absolute;top:2px;width:12px;height:12px;border-radius:50%;background:var(--surface);border:3px solid var(--c);box-sizing:border-box}
+.leg .body{padding-bottom:14px;min-width:0}
+.leg .st1{font-weight:600;font-size:15px}
+.leg .dir{color:var(--muted);font-size:13px;margin-top:2px}
+.leg details{margin-top:6px;font-size:13px}
+.leg summary{cursor:pointer;color:var(--accent)}
+.leg summary:focus-visible{outline:2px solid var(--accent);border-radius:4px}
+.leg details ul{margin:6px 0 0;padding:0;list-style:none;color:var(--muted);display:flex;flex-direction:column;gap:3px}
+.xfer{display:grid;grid-template-columns:18px 1fr;gap:0 12px;color:var(--muted);font-size:13px}
+.xfer .rail{display:flex;justify-content:center}
+.xfer .rail::before{content:"";width:0;border-left:3px dotted var(--muted);height:100%}
+.xfer .body{padding:2px 0 14px}
+.end{display:grid;grid-template-columns:18px 1fr;gap:0 12px;font-weight:600;font-size:15px}
+.end .rail{display:flex;justify-content:center}
+.end .rail::after{content:"";width:14px;height:14px;border-radius:50%;background:var(--fg);margin-top:2px}
+.status{padding:0 16px 8px;font-size:12.5px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 12px}
+.status span{display:inline-flex;align-items:center;gap:6px}
+.status i{width:8px;height:8px;border-radius:50%;background:var(--ok)}
+.status i.off{background:var(--muted)}
+.fare{margin:10px 16px 2px;padding:10px 12px;border-radius:10px;background:var(--bg);display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;font-variant-numeric:tabular-nums}
+.fare b{font-size:16px}
+.fare span{color:var(--muted);font-size:12.5px}
+.warn{margin:8px 16px 0;padding:8px 12px;border-radius:10px;background:var(--warn-bg);color:var(--warn-fg);font-size:13px;line-height:1.4}
+.near{font-size:12.5px;margin-bottom:10px;line-height:1.4}
+.near span{color:var(--muted)}
+details.info{padding:10px 16px 0;font-size:13px;border-top:1px solid var(--rule)}
+details.info summary{cursor:pointer;font-weight:600;padding-bottom:10px}
+details.info summary:focus-visible{outline:2px solid var(--accent);border-radius:4px}
+details.info table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums;margin-bottom:10px}
+details.info th,details.info td{text-align:left;padding:4px 6px 4px 0;border-bottom:1px solid var(--rule);font-size:12.5px}
+details.info th{color:var(--muted);font-weight:500}
+details.info p{margin:0 0 10px;color:var(--muted);font-size:12.5px;line-height:1.45}
+.dd .lm{width:9px;height:9px;border-radius:2px;background:var(--muted);transform:rotate(45deg);flex:none;margin:0 3px}
+.chips{display:flex;gap:6px;overflow-x:auto;padding:0 16px 12px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chips .lbl{flex:none;color:var(--muted);font-size:12px;align-self:center;margin-right:2px}
+.chips button{flex:none;font:inherit;font-size:13px;border:1px solid var(--rule);background:var(--surface);color:var(--fg);border-radius:999px;padding:7px 12px;cursor:pointer;white-space:nowrap}
+.chips button:hover{background:var(--accent-soft)}
+.chips button:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.share{display:flex;flex-wrap:wrap;gap:6px;padding:10px 16px 0}
+.share button,.share a{font:inherit;font-size:13px;border:1px solid var(--rule);background:var(--surface);color:var(--fg);border-radius:10px;padding:7px 12px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+.share button:hover,.share a:hover{background:var(--accent-soft)}
+.share button:focus-visible,.share a:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.shout{padding:8px 16px 0;display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.shout input{width:100%;font:inherit;font-size:12.5px;padding:8px 10px;border-radius:8px;border:1px solid var(--rule);background:var(--bg);color:var(--fg)}
+.qr{background:#fff;padding:10px;border-radius:10px;line-height:0}
+.qr img,.qr canvas{display:block;width:160px;height:160px}
+ol.steps2{list-style:none;margin:0;padding:14px 16px 8px}
+.step{position:relative;display:grid;grid-template-columns:24px minmax(0,1fr);gap:12px;padding-bottom:16px}
+.step::before{content:"";position:absolute;inset-inline-start:10.5px;top:26px;bottom:2px;width:3px;border-radius:2px;background:var(--c)}
+.step.onfoot::before{background:none;width:0;border-inline-start:3px dotted var(--muted);inset-inline-start:10.5px}
+.step:last-child{padding-bottom:4px}
+.step:last-child::before{display:none}
+.step .num{width:24px;height:24px;border-radius:50%;background:var(--c);color:var(--ink);font-size:12px;font-weight:700;display:grid;place-items:center}
+.step.onfoot .num{background:var(--rule);color:var(--fg)}
+.step .tt{font-weight:600;font-size:15px;line-height:1.3;padding-top:2px}
+.step .sub{color:var(--muted);font-size:13px;margin-top:3px;line-height:1.4}
+.step .off{margin-top:6px;font-size:14px}
+.step .off b{font-weight:600}
+.step details{margin-top:6px;font-size:13px}
+.step summary{cursor:pointer;color:var(--accent)}
+.step summary:focus-visible{outline:2px solid var(--accent);border-radius:4px}
+.step details ul{margin:6px 0 0;padding:0;list-style:none;color:var(--muted);display:flex;flex-direction:column;gap:3px}
+.ph .tog{display:none;font:inherit;font-size:12.5px;border:1px solid var(--rule);background:var(--surface);color:var(--fg);border-radius:999px;padding:5px 10px;cursor:pointer}
+#panel.collapsed #result{display:none}
+#panel>*:not(#result){flex:none}
+.phr{display:flex;align-items:center;gap:8px}
+.ph{align-items:center}
+.flag{width:22px;height:15px;border-radius:3px;flex:none;display:block;box-shadow:0 0 0 1px rgba(0,0,0,.12)}
+.langw{position:relative}
+.langbtn{display:inline-flex;align-items:center;gap:6px;font:inherit;font-size:12.5px;font-weight:600;letter-spacing:.04em;border:1px solid var(--rule);background:var(--surface);color:var(--fg);border-radius:999px;padding:5px 9px 5px 6px;cursor:pointer}
+.langbtn:hover{background:var(--accent-soft)}
+.langbtn:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.langbtn .chev{width:10px;height:6px;color:var(--muted)}
+.langmenu{position:absolute;top:calc(100% + 8px);inset-inline-end:0;z-index:30;background:var(--surface);border-radius:14px;box-shadow:var(--shadow);padding:8px;width:min(300px,calc(100vw - 48px));display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.langmenu .lnote{grid-column:1/-1;font-size:11.5px;color:var(--muted);padding:2px 6px 6px}
+.langmenu button{display:flex;align-items:center;gap:10px;font:inherit;font-size:14px;border:0;background:transparent;color:var(--fg);border-radius:10px;padding:9px 8px;cursor:pointer;text-align:start;min-height:44px}
+.langmenu button .flag{width:26px;height:17px}
+.langmenu button:hover{background:var(--accent-soft)}
+.langmenu button:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.langmenu button[aria-checked="true"]{background:var(--accent-soft);font-weight:600}
+[hidden]{display:none!important}
+.tabs button .why{font-style:normal;font-size:11.5px;line-height:1.35;color:var(--accent);margin-top:1px}
+.tabs button[aria-pressed="true"] .why{color:inherit;opacity:.85}
+.foot button.report{font:inherit;background:transparent;border:0;padding:0;cursor:pointer}
+.cbox textarea{width:100%;margin-top:10px;font:12.5px/1.45 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--fg);background:var(--bg);border:1px solid var(--rule);border-radius:10px;padding:10px;resize:vertical}
+.cbox .share{padding:10px 0 0}
+.rnote{margin:8px 0 0;font-size:13px;color:var(--muted);line-height:1.45}
+.leave label{white-space:nowrap}
+.leave{flex-wrap:wrap;row-gap:6px}
+.leave select{flex:none}
+.leave .reset{flex:none;margin-inline-start:auto;font:inherit;font-size:13px;font-weight:600;color:var(--accent);background:transparent;border:1px solid var(--rule);border-radius:999px;padding:7px 12px;min-height:38px;cursor:pointer;white-space:nowrap}
+.leave .reset:hover{background:var(--accent-soft)}
+.leave .reset:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.foot .src{margin:6px 0 0}
+.foot .report{display:inline-block;margin-top:8px;color:var(--accent);font-weight:600;text-decoration:none}
+.foot .report:hover{text-decoration:underline}
+.viewtabs{display:grid;grid-template-columns:1fr 1fr;gap:4px;margin:0 16px 10px;padding:3px;background:var(--bg);border-radius:12px}
+.viewtabs button{font:inherit;font-size:13.5px;font-weight:600;border:0;border-radius:9px;padding:8px 6px;background:transparent;color:var(--muted);cursor:pointer;min-height:38px}
+.viewtabs button[aria-selected="true"]{background:var(--surface);color:var(--fg);box-shadow:0 1px 3px rgba(0,0,0,.12)}
+.viewtabs button:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+#panel.explore .fields,#panel.explore .leave,#panel.explore .chips{display:none}
+.tours{list-style:none;margin:0;padding:12px 16px;display:flex;flex-direction:column;gap:8px}
+.tcard{display:flex;flex-direction:column;align-items:flex-start;gap:4px;width:100%;text-align:start;font:inherit;color:var(--fg);background:var(--surface);border:1px solid var(--rule);border-radius:14px;padding:12px 14px;cursor:pointer}
+.tcard:hover{background:var(--accent-soft)}
+.tcard:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.tcard b{font-size:15px}
+.tdesc{font-size:13px;color:var(--muted);line-height:1.4}
+.tmeta{display:flex;flex-wrap:wrap;gap:4px 8px;align-items:center;margin-top:2px}
+.tmeta i{font-style:normal;font-size:11.5px}
+.tmeta .tag{background:var(--accent-soft);color:var(--accent);border-radius:999px;padding:2px 8px;font-weight:600}
+.tmeta .tim{color:var(--muted)}
+.tourhead{padding:12px 16px 4px}
+.tourhead h2{font-size:19px;margin:8px 0 4px;text-wrap:balance}
+.tourhead p{margin:0 0 6px;color:var(--muted);font-size:13.5px;line-height:1.45}
+.tback{font:inherit;font-size:13px;color:var(--accent);background:transparent;border:0;padding:4px 0;cursor:pointer}
+.tback:focus-visible{outline:2px solid var(--accent);border-radius:4px}
+.tbackwrap{padding:10px 16px 0}
+.tsum{display:flex;flex-direction:column;gap:2px;margin-top:10px;padding:10px 12px;border-radius:10px;background:var(--bg)}
+.tsum b{font-size:16px}
+.tsum span{font-size:13px;color:var(--muted)}
+.tsum .note{font-size:11.5px}
+.tnote{margin-top:8px;font-size:12.5px;color:var(--muted);line-height:1.4}
+.tourhead .warn{margin:8px 0 0}
+.tline{list-style:none;margin:0;padding:8px 16px 12px}
+.tstop button{display:flex;align-items:center;gap:12px;width:100%;font:inherit;color:var(--fg);background:transparent;border:0;padding:8px 0;cursor:pointer;text-align:start;min-height:44px}
+.tstop button:focus-visible{outline:2px solid var(--accent);border-radius:8px}
+.tnum{flex:none;width:26px;height:26px;border-radius:50%;background:var(--pinB);color:#fff;font-size:12px;font-weight:700;display:grid;place-items:center;font-variant-numeric:tabular-nums}
+.tname{font-weight:600;font-size:15px;min-width:0}
+.tname small{display:block;font-weight:400;font-size:12px;color:var(--muted)}
+.tseg{margin-inline-start:12px;border-inline-start:3px dotted var(--rule);padding-inline-start:20px}
+.tseg button{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;width:100%;font:inherit;color:var(--fg);background:var(--bg);border:0;border-radius:10px;padding:8px 10px;cursor:pointer;text-align:start;min-height:44px;margin:2px 0}
+.tseg button:hover{background:var(--accent-soft)}
+.tseg button:focus-visible{outline:2px solid var(--accent)}
+.tseg .modes{padding:0;gap:4px}
+.tseg .tst{font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+.tseg .tgo{margin-inline-start:auto;color:var(--muted);font-size:18px}
+:root[dir="rtl"] .tseg .tgo,#panel[dir="rtl"] .tseg .tgo{transform:scaleX(-1)}
+#panel[dir="rtl"] .barr{display:inline-block;transform:scaleX(-1)}
+.tseg.same{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--muted);padding-block:6px}
+.tseg.same .mw{border:1px dashed var(--muted);border-radius:6px;padding:2px 6px}
+.tseg .wico,.tseg.same .wico{width:9px;height:12px}
+.modes .mx{color:var(--muted);font-size:14px;line-height:1;padding:0 2px}
+.leave{display:flex;align-items:center;gap:8px;padding:0 16px 10px;font-size:13px;color:var(--muted)}
+.leave select{font:inherit;font-size:13.5px;color:var(--fg);background:var(--bg);border:1.5px solid transparent;border-radius:10px;padding:7px 10px;min-height:38px;cursor:pointer}
+.leave select:focus-visible{border-color:var(--accent);outline:none}
+.warn p{margin:0}.warn p+p{margin-top:4px;font-size:12px;opacity:.85}
+.share .primary{background:var(--fg);color:var(--surface);border-color:var(--fg)}
+.share .primary:hover{background:var(--fg);opacity:.9}
+#pop .wf{display:block;width:100%;margin-top:8px;background:transparent;color:var(--accent);border:1px solid var(--rule);font-weight:600;font-size:13px}
+#pop .wf:hover{background:var(--accent-soft)}
+#pop .wfl{list-style:none;margin:8px 0 0;padding:0;max-height:240px;overflow-y:auto;display:flex;flex-direction:column;gap:2px}
+#pop .wfl button{display:flex;justify-content:space-between;gap:8px;width:100%;background:transparent;color:var(--fg);font-weight:400;font-size:13px;padding:8px 6px;border-radius:8px;text-align:start;min-height:40px;align-items:center}
+#pop .wfl button:hover,#pop .wfl button:focus-visible{background:var(--accent-soft)}
+#pop .wfl b{font-weight:600;white-space:nowrap;font-variant-numeric:tabular-nums}
+#card{position:fixed;inset:0;z-index:50;background:rgba(10,16,22,.55);display:grid;place-items:center;padding:16px;overflow-y:auto}
+.cbox{background:var(--surface);color:var(--fg);border-radius:20px;box-shadow:var(--shadow);width:min(380px,100%);padding:18px 18px 16px}
+.chead{display:flex;justify-content:space-between;align-items:center}
+.cbrand{font-family:var(--font-display);font-size:12px;color:var(--muted);letter-spacing:.02em}
+.cclose{border:0;background:var(--bg);color:var(--fg);width:36px;height:36px;border-radius:50%;font-size:20px;cursor:pointer}
+.cclose:focus-visible{outline:2px solid var(--accent)}
+.cbox h2{font-size:18px;margin:10px 0 4px;line-height:1.3;text-wrap:balance}
+.ctime{font-family:var(--font-display);font-size:30px;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.cmeta{color:var(--muted);font-size:13.5px;margin-top:2px}
+.crows{list-style:none;margin:14px 0 0;padding:0;display:flex;flex-direction:column;gap:0}
+.crows li{display:flex;align-items:center;gap:10px;padding:7px 0;position:relative;font-size:14px}
+.crows li+li{border-top:1px solid var(--rule)}
+.crows .ml{background:var(--c);color:var(--ink);font-size:12px;font-weight:600;border-radius:6px;padding:3px 8px;white-space:nowrap;flex:none}
+.crows small{display:block;color:var(--muted);font-size:12px}
+.crows .cw{color:var(--muted)}
+.crows .wico{width:12px;height:16px;flex:none;margin:0 8px}
+.crows .xi{width:28px;text-align:center;color:var(--muted);flex:none}
+.crows .cd{font-weight:600}
+.crows .pinb{flex:none;width:22px;height:22px;border-radius:50%;background:var(--pinB);color:#fff;font-size:11px;font-weight:700;display:grid;place-items:center;margin:0 3px}
+.cfare{display:flex;justify-content:space-between;align-items:baseline;margin-top:12px;padding:10px 12px;border-radius:10px;background:var(--bg);font-size:13px;color:var(--muted)}
+.cfare b{color:var(--fg);font-size:16px}
+.cfoot{display:flex;gap:12px;align-items:center;margin-top:12px}
+.cfoot p{margin:0;font-size:11.5px;color:var(--muted);line-height:1.4}
+.cqr{background:#fff;padding:6px;border-radius:8px;line-height:0;flex:none}
+.cqr img,.cqr canvas{width:84px;height:84px}
+.modes .wico{width:9px;height:12px}
+.tabs{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:6px;padding:12px 16px 0}
+.tabs button{display:flex;flex-direction:column;align-items:flex-start;gap:2px;text-align:start;border-radius:12px;padding:8px 10px;min-height:48px}
+.tabs button b{font-weight:600;font-size:13px}
+.tabs button span{font-size:12px;opacity:.8;line-height:1.35}
+.sum .note{width:100%;color:var(--muted);font-size:12px;line-height:1.4}
+.modes{display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding:10px 16px 0}
+.modes .ml{background:var(--c);color:var(--ink);font-size:12.5px;font-weight:600;border-radius:6px;padding:3px 8px;white-space:nowrap}
+.modes .mw{display:inline-flex;align-items:center;gap:3px;font-size:12.5px;color:var(--fg);background:var(--bg);border:1px dashed var(--muted);border-radius:6px;padding:2px 7px;font-variant-numeric:tabular-nums}
+.modes .mw svg{width:9px;height:12px}
+.modes .sep{width:10px;height:2px;background:var(--rule);border-radius:1px;flex:none}
+.dest{display:flex;gap:8px;align-items:flex-start;margin:10px 16px 0;font-size:13px;line-height:1.4}
+.dest .pinb{flex:none;width:20px;height:20px;border-radius:50%;background:var(--pinB);color:#fff;font-size:11px;font-weight:700;display:grid;place-items:center}
+:root:lang(ar) #panel,:root:lang(ar) #pop,:root:lang(ar) #legend{font-family:"Noto Sans Arabic",var(--font-ui)}
+:root:lang(hi) #panel,:root:lang(hi) #pop,:root:lang(hi) #legend{font-family:"Golos Text","Noto Sans Devanagari",system-ui,sans-serif}
+:root:lang(ur) #panel,:root:lang(ur) #pop,:root:lang(ur) #legend{font-family:"Noto Nastaliq Urdu","Noto Sans Arabic",var(--font-ui)}
+:root:lang(ur) .ph h1{font-family:"Noto Nastaliq Urdu","Noto Sans Arabic",sans-serif;font-size:19px}
+:root:lang(ur) .step .tt,:root:lang(ur) .step .sub,:root:lang(ur) .sum .m,:root:lang(ur) .sum .arr,:root:lang(ur) .hint,:root:lang(ur) .fare span,:root:lang(ur) .warn,:root:lang(ur) details.info p,:root:lang(ur) .foot,:root:lang(ur) .status{line-height:2.1}
+:root:lang(ur) .sum .t{font-family:"Noto Nastaliq Urdu","Noto Sans Arabic",sans-serif}
+.langmenu span[lang="ur"]{font-family:"Noto Nastaliq Urdu","Noto Sans Arabic",sans-serif;line-height:1.6}
+.langmenu span[lang="ar"]{font-family:"Noto Sans Arabic",sans-serif}
+.langmenu span[lang="hi"]{font-family:"Noto Sans Devanagari",sans-serif}
+:root:lang(ar) .ph h1,:root:lang(ar) .sum .t{font-family:"Noto Sans Arabic",sans-serif;letter-spacing:0}
+:root:lang(hi) .ph h1,:root:lang(hi) .sum .t{font-family:"Noto Sans Devanagari",sans-serif;letter-spacing:0}
+.foot{padding:10px 16px 14px;color:var(--muted);font-size:12px;line-height:1.4;border-top:1px solid var(--rule)}
+
+/* popover */
+#pop{position:fixed;z-index:10;background:var(--surface);border-radius:14px;box-shadow:var(--shadow);padding:12px;width:240px}
+#pop h3{margin:0 0 4px;font-size:15px}
+#pop .lines{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:6px}
+.chip{display:inline-flex;align-items:center;gap:5px;font-size:12px;color:var(--muted)}
+#pop .former{font-size:12px;color:var(--muted);margin-bottom:10px;line-height:1.35}
+#pop .btns{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+#pop button{font:inherit;font-weight:600;border:0;border-radius:10px;padding:9px;cursor:pointer;color:#fff}
+#pop button:focus-visible{outline:2px solid var(--fg);outline-offset:2px}
+#pop .a{background:var(--fg);color:var(--surface)}
+#pop .b{background:var(--accent)}
+:root{--pinA:#18212A;--pinB:#1D5FB4}
+
+/* legend + zoom */
+#legend{position:fixed;left:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));background:var(--surface);border-radius:12px;box-shadow:var(--shadow);
+  padding:8px 12px;display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px;max-width:calc(100% - 100px);z-index:4}
+#legend span{display:inline-flex;align-items:center;gap:6px}
+#legend i{display:inline-block;width:18px;height:5px;border-radius:3px}
+#legend .ixm{width:12px;height:12px;border-radius:50%;border:3px solid var(--fg);background:var(--surface)}
+#zoom{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;gap:6px;z-index:4}
+#zoom button{width:42px;height:42px;border-radius:12px;border:0;background:var(--surface);color:var(--fg);box-shadow:var(--shadow);font-size:20px;cursor:pointer;font-family:var(--font-ui)}
+#zoom button:hover{background:var(--accent-soft)}
+#zoom button:focus-visible{outline:2px solid var(--accent)}
+#zoom .fit{font-size:15px}
+#north{width:42px;height:42px;border-radius:50%;background:var(--surface);box-shadow:var(--shadow);position:relative;margin-bottom:4px}
+#north svg{position:absolute;inset:7px;width:28px;height:28px}
+#north b{position:absolute;left:3px;top:1px;font-size:10px;font-weight:700;color:var(--fg)}
+
+.morewrap{display:none}
+#about{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+#about.open{position:fixed;inset:0;margin:auto;width:min(720px,calc(100% - 24px));height:min(86%,900px);overflow:auto;clip-path:none;white-space:normal;
+  background:var(--surface);color:var(--fg);z-index:60;border-radius:18px;box-shadow:var(--shadow);padding:22px 22px 28px;font-size:14.5px;line-height:1.55}
+#about h1{font-family:var(--font-display);font-size:20px;margin:0 0 10px}
+#about h2{font-size:16px;margin:20px 0 6px}
+#about p,#about li{color:var(--fg)}
+#about ul{padding-inline-start:20px;margin:6px 0}
+#about .lst{color:var(--muted);font-size:13.5px}
+#about a{color:var(--accent)}
+#about[dir=rtl] #aboutClose{float:left}
+#aboutClose{position:sticky;top:0;float:right;width:36px;height:36px;border-radius:50%;border:1px solid var(--rule);background:var(--surface);color:var(--fg);font-size:20px;cursor:pointer}
+.grab,.minbar{display:none}
+.infobtn{width:34px;height:34px;border-radius:50%;border:1px solid var(--rule);background:var(--surface);color:var(--accent);font:600 16px/1 Georgia,serif;font-style:italic;cursor:pointer;flex:none}
+@media (min-width:721px){.infobtn{display:none}}
+@media (max-width:720px){
+  /* phones: the panel is a sheet at the bottom; the map gets the screen */
+  #panel{top:auto;bottom:calc(8px + env(safe-area-inset-bottom,0px));left:8px;right:8px;width:auto;max-width:none;max-height:78%;
+    display:grid;grid-template-columns:1fr auto;align-content:start;border-radius:18px}
+  #panel>*{grid-column:1/-1}
+  #panel>.grab{grid-column:1/-1;grid-row:1}
+  #panel>.viewtabs{grid-column:1;grid-row:2;margin:0 0 8px 10px}
+  #panel>.ph{grid-column:2;grid-row:2;padding:0 10px 8px 6px;align-items:center}
+  /* handle: tap to fold the sheet down to one line */
+  .grab{display:flex;justify-content:center;align-items:center;width:100%;height:26px;border:0;background:none;cursor:pointer;padding:0}
+  .grab i{display:block;width:44px;height:5px;border-radius:3px;background:var(--rule)}
+  .grab:focus-visible i{background:var(--accent)}
+  #panel.min>:not(.grab):not(.minbar){display:none}
+  #panel.min .minbar{display:flex;grid-column:1/-1;align-items:center;gap:10px;width:auto;margin:0 10px 10px;padding:10px 14px;border:0;border-radius:12px;
+    background:var(--bg);color:var(--fg);font:inherit;font-size:15px;text-align:start;cursor:pointer}
+  .minbar b{font-size:17px;white-space:nowrap}
+  .minbar span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--muted)}
+  .minbar em{margin-inline-start:auto;font-style:normal;color:var(--accent);font-weight:600}
+  .ph h1,.ph .tog,.ph>span{display:none}
+  .viewtabs button{padding:7px 6px;font-size:13px}
+  .fields{padding:0 10px 8px;gap:6px}
+  .inputs{flex-direction:row;gap:6px}
+  .inputs .field{flex:1;min-width:0}
+  .inputs input{font-size:15px}
+  .chips{padding:0 10px 10px}
+  .leave{padding:0 10px 8px}
+  .status{padding:0 12px 6px}
+  #result{max-height:calc(78vh - 150px)}
+  .fields{position:relative}
+  .inputs .field{position:static}
+  .dd{top:auto;bottom:calc(100% + 6px);left:10px;right:10px;max-height:min(52vh,420px);overflow-y:auto}
+  .langmenu{top:auto;bottom:calc(100% + 8px)}
+  #zoom{top:calc(12px + env(safe-area-inset-top,0px));bottom:auto;right:12px}
+  #legend{display:none}
+  /* nothing typed yet: tabs, the two fields and popular places */
+  #panel.empty:not(.explore) .status,#panel.empty:not(.explore) .leave,#panel.empty:not(.explore) #result{display:none}
+  /* a trip: short summary first, the rest under "Details" */
+  #panel.has-route .chips{display:none}
+  #panel.has-route.peek:not(.explore) .status{display:none}
+  #panel.peek:not(.explore) #result>:not(.sum):not(.modes):not(.warn):not(.morewrap):not(.tbackwrap){display:none}
+  #panel.peek:not(.explore) .sum .note{display:none}
+  #panel.peek:not(.explore) #result{display:flex;flex-direction:column}
+  #panel.peek:not(.explore) .morewrap{order:9}
+  #panel.peek:not(.explore) .warn{margin-top:0}
+  .morewrap{display:block;padding:2px 14px 12px}
+  .more{width:100%;font:inherit;font-size:14px;font-weight:600;padding:9px;border-radius:12px;border:1px solid var(--rule);background:var(--bg);color:var(--accent);cursor:pointer}
+  .sum .note{font-size:11.5px}
+}
+</style>
+
+<div id="map" aria-label="Dubai Metro map">
+  <svg id="svg" role="img" aria-label="Dubai Metro and Tram line map">
+    <g id="world">
+      <g id="water"></g>
+      <g id="base"></g>
+      <g id="overlay"></g>
+      <g id="pins"></g>
+    </g>
+  </svg>
+</div>
+
+<section id="panel" aria-label="Route">
+  <button class="grab" id="grab" aria-expanded="true"><i aria-hidden="true"></i></button>
+  <button class="minbar" id="minbar"></button>
+  <div class="ph"><h1 data-t="title">Dubai Metro</h1><div class="phr"><button class="infobtn" id="infoBtn" data-tal="aboutLink" aria-label="About this map" hidden>i</button><div class="langw"><button class="langbtn" id="langBtn" aria-haspopup="menu" aria-expanded="false"></button><div class="langmenu" id="langMenu" role="menu" hidden></div></div><button class="tog" id="tog" aria-expanded="true">Hide details</button></div></div>
+  <div class="status" id="status" aria-live="polite"></div>
+  <div class="viewtabs" role="tablist"><button id="vRoute" role="tab" aria-selected="true" data-t="planner">Route planner</button><button id="vExplore" role="tab" aria-selected="false" data-t="explore">Explore Dubai</button></div>
+  <div class="fields">
+    <div class="inputs">
+      <div class="field" id="fFrom"><b style="background:var(--pinA)">A</b>
+        <input id="from" autocomplete="off" placeholder="From: station or place" data-tph="phFrom" aria-label="From: station or place" role="combobox" aria-expanded="false">
+        <button class="x" id="clrFrom" data-tal="clear" aria-label="Clear">×</button></div>
+      <div class="field" id="fTo"><b style="background:var(--pinB)">B</b>
+        <input id="to" autocomplete="off" placeholder="Where to?" data-tph="phTo" aria-label="To: station or place" role="combobox" aria-expanded="false">
+        <button class="x" id="clrTo" data-tal="clear" aria-label="Clear">×</button></div>
+    </div>
+    <button class="swap" id="swap" data-tal="swap" aria-label="Swap" title="Swap">⇅</button>
+  </div>
+  <div class="leave"><label for="leave" data-t="leaveAt">Leave at</label><select id="leave"></select><button class="reset" id="reset" data-t="newRoute" hidden>New route</button></div>
+  <div class="chips" id="chips" aria-label="Popular places"></div>
+  <div id="result"></div>
+</section>
+
+<div id="pop" hidden></div>
+<div id="card" hidden></div>
+
+<div id="legend">
+  <span><i style="background:var(--red)"></i><span data-t="lgRed">Red Line</span></span>
+  <span><i style="background:var(--green)"></i><span data-t="lgGreen">Green Line</span></span>
+  <span><i style="background:var(--tram);height:3px"></i><span data-t="lgTram">Dubai Tram</span></span>
+  <span><i style="background:var(--mono);height:3px"></i><span data-t="lgMono">Palm Monorail</span></span>
+  <span><b class="ixm"></b><span data-t="lgIx">Interchange</span></span>
+</div>
+<div id="zoom">
+  <div id="north" aria-hidden="true" title="N"><svg viewBox="0 0 24 24"><g transform="rotate(-45 12 12)"><path d="M12 2.5l4.2 9.5H7.8z" fill="var(--red)"/><path d="M12 21.5L7.8 12h8.4z" fill="var(--muted)" opacity=".55"/></g></svg><b>N</b></div>
+  <button id="zin" data-tal="zin" aria-label="Zoom in">+</button>
+  <button id="zout" data-tal="zout" aria-label="Zoom out">−</button>
+  <button id="zfit" class="fit" data-tal="zfit" aria-label="Whole map" title="Whole map">⤢</button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+(function(){
+// Public link used for sharing (the page itself runs in a sandboxed frame and cannot see its own address)
+const BASE_URL="https://dubaimetro.fyi/";
+// Where "Report a problem" leads (a GitHub Issues page, Google Form or similar). Empty = button hidden.
+const REPORT_URL="https://github.com/thinkbig-code/dubai-metro/issues";
+// Optional: an e-mail address for reports, used only when REPORT_URL is empty. Never filled in automatically.
+const REPORT_EMAIL="";
+
+// ================= LANGUAGES =================
+// Order = countries by visitors to Dubai (India, Saudi Arabia, UK, Russia, Germany, China, Pakistan, France).
+// Arabic is shown with the UAE flag as the host country's language.
+const LANGS=[
+  {code:"hi",flag:"in",native:"हिन्दी"},
+  {code:"ar",flag:"ae",native:"العربية",rtl:true},
+  {code:"en",flag:"gb",native:"English"},
+  {code:"ru",flag:"ru",native:"Русский"},
+  {code:"de",flag:"de",native:"Deutsch"},
+  {code:"zh",flag:"cn",native:"中文"},
+  {code:"ur",flag:"pk",native:"اردو",rtl:true},
+  {code:"fr",flag:"fr",native:"Français"}
+];
+function starPts(cx,cy,r,rot){const p=[];for(let i=0;i<10;i++){const a=rot+Math.PI/5*i-Math.PI/2,rr=i%2?r*.382:r;p.push((cx+rr*Math.cos(a)).toFixed(2)+","+(cy+rr*Math.sin(a)).toFixed(2));}return p.join(" ");}
+const FLAG_SVG={
+  in:`<rect width="30" height="20" fill="#fff"/><rect width="30" height="6.67" fill="#FF9933"/><rect y="13.33" width="30" height="6.67" fill="#138808"/><circle cx="15" cy="10" r="2.6" fill="none" stroke="#000080" stroke-width=".6"/><circle cx="15" cy="10" r=".6" fill="#000080"/>`,
+  ae:`<rect width="30" height="20" fill="#fff"/><rect width="30" height="6.67" fill="#00732F"/><rect y="13.33" width="30" height="6.67" fill="#000"/><rect width="8" height="20" fill="#EF3340"/>`,
+  gb:`<rect width="30" height="20" fill="#012169"/><path d="M0,0L30,20M30,0L0,20" stroke="#fff" stroke-width="4"/><path d="M0,0L30,20M30,0L0,20" stroke="#C8102E" stroke-width="1.4"/><path d="M15,0V20M0,10H30" stroke="#fff" stroke-width="6"/><path d="M15,0V20M0,10H30" stroke="#C8102E" stroke-width="3.4"/>`,
+  ru:`<rect width="30" height="20" fill="#fff"/><rect y="6.67" width="30" height="6.67" fill="#0039A6"/><rect y="13.33" width="30" height="6.67" fill="#D52B1E"/>`,
+  de:`<rect width="30" height="20" fill="#000"/><rect y="6.67" width="30" height="6.67" fill="#DD0000"/><rect y="13.33" width="30" height="6.67" fill="#FFCE00"/>`,
+  cn:`<rect width="30" height="20" fill="#EE1C25"/><polygon fill="#FFFF00" points="${starPts(5,5,3,0)}"/><polygon fill="#FFFF00" points="${starPts(10,2,1,.6)}"/><polygon fill="#FFFF00" points="${starPts(12,4,1,.2)}"/><polygon fill="#FFFF00" points="${starPts(12,7,1,0)}"/><polygon fill="#FFFF00" points="${starPts(10,9,1,.5)}"/>`,
+  pk:`<rect width="30" height="20" fill="#01411C"/><rect width="7.5" height="20" fill="#fff"/><circle cx="18.6" cy="10" r="5" fill="#fff"/><circle cx="20.1" cy="8.8" r="4.4" fill="#01411C"/><polygon fill="#fff" points="${starPts(21.6,7.6,1.5,.3)}"/>`,
+  fr:`<rect width="30" height="20" fill="#fff"/><rect width="10" height="20" fill="#0055A4"/><rect x="20" width="10" height="20" fill="#EF4135"/>`
+};
+const flag=(c,cls)=>`<svg class="flag ${cls||""}" viewBox="0 0 30 20" aria-hidden="true">${FLAG_SVG[c]}</svg>`;
+
+const I18N={
+en:{title:"Dubai Metro",n_t2:"Terminal 2 is not on the Metro: take the bus from Stadium or Abu Hail (Green Line), or a taxi.",n_etihad:"Connection to Etihad Rail intercity trains (Al Yalayis Station).",aboutLink:"About this map",more:"Details",less:"Less",hide:"Hide details",show:"Show details",phFrom:"From: station or place",phTo:"Where to?",clear:"Clear",swap:"Swap",popular:"Popular",pAirport:"Airport (DXB T3)",pOld:"Old Dubai",
+lgRed:"Red Line",lgGreen:"Green Line",lgTram:"Dubai Tram",lgMono:"Palm Monorail",lgIx:"Interchange",zin:"Zoom in",zout:"Zoom out",zfit:"Whole map",
+mMetro:"Metro",mTram:"Tram",mMono:"Monorail",stUntil:"{m} until {t}",stClosed:"{m} closed, opens {t}",
+zone:"Fare zone {z}",sepTicket:"Separate ticket",formerly:"formerly {x}",nearby:"Nearby:",fromHere:"From here",toHere:"To here",walkChip:"~{n} min walk",
+hintNone:"Where do you want to go? Type a place or a station, or tap one of the popular places. Old station names work too: Rashidiya, Al Karama, JLT.",
+hintOne:"Now choose the other end: type a station or place above, tap a popular place, or tap a station on the map.",
+hintSame:"Start and destination are the same.",hintBoth:"{a} and {b} are both next to {s} station, so you can walk between them.",noRoute:"No route found between these two. Try another station or place.",
+optLabel:"Route option",fastest:"Fastest",fewer:"Fewer changes",min:"~{n} min",changes:{one:"{n} transfer",other:"{n} transfers"},noChanges:"no transfers",stops:{one:"{n} stop",other:"{n} stops"},walking:"~{n} min walking",
+arrive:"Leave now, arrive around {t1}–{t2} Dubai time",
+estFare:"Estimated fare, Silver Nol",zones:{one:"{n} zone",other:"{n} zones"},plusMono:"+ Palm Monorail",goldRed:"Gold AED {g} · Red ticket AED {r}",monoExtra:"(monorail extra)",monoOnly:"Palm Monorail, separate fare",
+wClosed:"{m} is closed now and opens at {t}.",wCloses:"{m} closes at {t}, so you may not finish this trip tonight.",
+copy:"Copy link",copied:"Link copied",copyFallback:"Select and copy the link below",qr:"QR code",qrFail:"QR code could not load. Use the link above.",linkLabel:"Route link",waMsg:"{a} → {b} by Dubai Metro: {u}",
+goTo:"Go to {s}",fromPlace:"~{n} min from {p}, {w}",nearestTo:"The nearest stop to {p}",take:"Take the {l} towards {d}",boardAt:"Board at {s}",getOff:"Get off at {s}",onWay:"Stops on the way",
+changeTrains:"Change trains at {s}",waitPlatform:"Wait on the platform for a train towards {d} · ~{n} min",changeTo:"Change to the {l}",followSigns:"Follow the {l} signs inside {s} · ~{n} min",
+walkTo:"Walk to {s}",onFootOut:"~{n} min on foot, outside the stations",onFootSign:"~{n} min on foot, signposted",walkToPlace:"Walk to {p}",placeWalk:"~{n} min, {w}",noWalkData:"Short walk from the station; we don't have a reliable time for this one",arriveAt:"Arrive at {x}",or:"{a} or {b}",
+hoursFares:"Hours and fares",monThu:"Mon–Thu",fri:"Friday",sat:"Saturday",sun:"Sunday",metroTram:"Metro and tram",z1:"1 zone",z2:"2 zones",z3:"3+ zones",
+infoP:"Fares count the zones your trip passes through. Gold Class costs double. You need at least AED 7.5 on a Nol card to pass the gates. The Palm Monorail has its own fare: AED 20 one-way end to end. Shorter trips cost AED 5–10. Hours change on public holidays and during Ramadan.",
+foot:"Unofficial map. All times are estimates (waiting depends on the line and time of day; monorail about every 15 min). Walking times are rough. Station names as of September 2026.",
+place:"Place",station:"Station",nothing:"Nothing found. Try a station name or a place like Dubai Mall.",lang:"Language",langNote:"Sorted by visitors to Dubai",
+leastWalk:"Least walking",minRange:"~{a}–{b} min",estNote:"Estimate, not real-time. The lower figure is travel only; the higher adds typical waiting for each train.",destInfo:"{p} is ~{n} min on foot from {s}",destInfoNo:"{p}: nearest stop is {s}",routeModes:"Journey at a glance",
+onFootFrom:"~{n} min on foot from {x}",leaveNow:"Leave now",leaveAt:"Leave at",wNotRunning:"{m} isn't running at {t0}; it opens at {t}.",hoursNote:"These are published service hours; the last train from each end of the line may leave a little earlier.",tripCard:"Trip card",close:"Close",whereFrom:"Where can I go from here?",startQ:"Where are you starting from?",towards:"towards {d}",arriveFrom:"Leave at {t0}, arrive around {t1}–{t2} Dubai time",changeAt:"Change at {s}",
+noWalking:"no walking",explore:"Explore Dubai",planner:"Route planner",allTours:"All itineraries",backTour:"Back to itinerary",placesN:{one:"{n} place",other:"{n} places"},transportTime:"Transport time ~{a}–{b} min",visitNote:"Time spent at each place is not included.",sameArea:"On foot, same area",tMorning:"Morning",tAfternoon:"Afternoon",tEvening:"Evening",tAny:"Any time",tLayover:"Depends on your layover",tgFirst:"First time",tgCulture:"Culture",tgShopping:"Shopping",tgBeach:"Beach",tgArch:"Architecture",tgFamily:"Family",tgEvening:"Evening",stopoverWarn:"Leave plenty of time to get back to DXB, go through security and board. Check your airline's advice before leaving the airport.",abraNote:"The abra boat across the creek is not in the planner; these segments use the metro.",showRoute:"Show route",
+attrib:"Run times are based on the RTA timetable (GTFS, 2021) and checked against public sources.",report:"Report a problem",newRoute:"New route",whyFaster:"Fastest by ~{n} min",whySlower:"+{n} min",whySameTime:"Same travel time",whyDirect:"No transfers",whyFewerXf:{one:"{n} fewer transfer",other:"{n} fewer transfers"},whyMoreXf:{one:"{n} more transfer",other:"{n} more transfers"},whyLessWalk:"~{n} min less walking",whyMoreWalk:"~{n} min more walking",reportNotSet:"No feedback address has been set up for this site yet. You can copy the details below and send them to the site owner.",copyDetails:"Copy details",openFeedback:"Open feedback page",sendEmail:"Send by email",
+whySimilar:"Similar time, depends on waiting",monoSuspended:"Palm Monorail is temporarily suspended.",suspendedShort:"Temporarily suspended",stSuspended:"{m}: temporarily suspended",monoSource:"Palm Monorail status as published by the operator (palmmonorail.com).",
+w_airport:"follow the Metro signs, the station is linked to the terminal",w_metrolink:"via the covered Metro Link bridge",w_throughmall:"via the Metro Link bridge and through Dubai Mall",w_aquarium:"inside Dubai Mall, via the Metro Link bridge",w_opera:"through Dubai Mall and along the boulevard",w_bridgemall:"bridge straight into the mall",w_inmoe:"inside Mall of the Emirates",w_next:"next to the station",w_zabeel:"through Zabeel Park",w_under:"the station is under the mall",w_bridgeinto:"bridge into the mall",w_bluewaters:"over the Bluewaters footbridge",w_atlantis:"the monorail stops at the resort",w_nextmono:"next to the monorail station"},
+
+ru:{title:"Метро Дубая",n_t2:"Терминал 2 не на линии метро: от станций Stadium или Abu Hail (Зелёная линия) идёт автобус, или возьмите такси.",n_etihad:"Пересадка на междугородние поезда Etihad Rail (станция Al Yalayis).",aboutLink:"О карте",more:"Подробнее",less:"Свернуть",hide:"Скрыть",show:"Показать маршрут",phFrom:"Откуда: станция или место",phTo:"Куда едем?",clear:"Очистить",swap:"Поменять местами",popular:"Популярное",pAirport:"Аэропорт (DXB T3)",pOld:"Старый Дубай",
+lgRed:"Красная линия",lgGreen:"Зелёная линия",lgTram:"Трамвай",lgMono:"Монорельс Palm",lgIx:"Пересадка",zin:"Приблизить",zout:"Отдалить",zfit:"Вся схема",
+mMetro:"Метро",mTram:"Трамвай",mMono:"Монорельс",stUntil:"{m}: до {t}",stClosed:"{m}: закрыто, откроется в {t}",
+zone:"Тарифная зона {z}",sepTicket:"Отдельный билет",formerly:"раньше {x}",nearby:"Рядом:",fromHere:"Отсюда",toHere:"Сюда",walkChip:"~{n} мин пешком",
+hintNone:"Куда едем? Введите место или станцию либо выберите популярное место. Старые названия станций тоже работают: Rashidiya, Al Karama, JLT.",
+hintOne:"Теперь выберите вторую точку: введите станцию или место, нажмите на популярное место или на станцию на схеме.",
+hintSame:"Начало и конец маршрута совпадают.",hintBoth:"{a} и {b} находятся рядом со станцией {s}, между ними можно дойти пешком.",noRoute:"Маршрут не найден. Попробуйте другую станцию или место.",
+optLabel:"Вариант маршрута",fastest:"Быстрее",fewer:"Меньше пересадок",min:"~{n} мин",changes:{one:"{n} пересадка",few:"{n} пересадки",many:"{n} пересадок",other:"{n} пересадки"},noChanges:"без пересадок",stops:{one:"{n} остановка",few:"{n} остановки",many:"{n} остановок",other:"{n} остановки"},walking:"~{n} мин пешком",
+arrive:"Если выйти сейчас, прибытие около {t1}–{t2} по дубайскому времени",
+estFare:"Примерная цена, Silver Nol",zones:{one:"{n} зона",few:"{n} зоны",many:"{n} зон",other:"{n} зоны"},plusMono:"+ монорельс Palm",goldRed:"Gold AED {g} · Red ticket AED {r}",monoExtra:"(монорельс оплачивается отдельно)",monoOnly:"Монорельс Palm, отдельный тариф",
+wClosed:"{m}: сейчас закрыто, откроется в {t}.",wCloses:"{m}: работает до {t}, сегодня можно не успеть доехать.",
+copy:"Копировать ссылку",copied:"Ссылка скопирована",copyFallback:"Выделите и скопируйте ссылку ниже",qr:"QR-код",qrFail:"QR-код не загрузился. Используйте ссылку выше.",linkLabel:"Ссылка на маршрут",waMsg:"{a} → {b} на метро Дубая: {u}",
+goTo:"Дойдите до {s}",fromPlace:"~{n} мин от {p}, {w}",nearestTo:"Ближайшая к {p} остановка",take:"Садитесь: {l}, в сторону {d}",boardAt:"Посадка: {s}",getOff:"Выходите на {s}",onWay:"Промежуточные остановки",
+changeTrains:"Смените поезд на {s}",waitPlatform:"Дождитесь на платформе поезда в сторону {d} · ~{n} мин",changeTo:"Пересадка: {l}",followSigns:"Идите по указателям «{l}» внутри станции {s} · ~{n} мин",
+walkTo:"Пешком до {s}",onFootOut:"~{n} мин пешком, вне станций",onFootSign:"~{n} мин пешком, по указателям",walkToPlace:"Пешком до {p}",placeWalk:"~{n} мин, {w}",noWalkData:"Недалеко от станции; надёжного времени пешком у нас нет",arriveAt:"Прибытие: {x}",or:"{a} или {b}",
+hoursFares:"Часы работы и тарифы",monThu:"Пн–Чт",fri:"Пятница",sat:"Суббота",sun:"Воскресенье",metroTram:"Метро и трамвай",z1:"1 зона",z2:"2 зоны",z3:"3+ зоны",
+infoP:"Цена зависит от числа зон, через которые проходит поездка. Gold Class стоит вдвое дороже. Чтобы пройти турникет, на карте Nol должно быть не меньше AED 7.5. У монорельса Palm свой тариф: AED 20 в одну сторону из конца в конец. Короткие поездки стоят AED 5–10. В праздники и в Рамадан часы работы меняются.",
+foot:"Неофициальная схема. Всё время примерное (ожидание зависит от линии и времени суток; монорельс примерно раз в 15 мин). Время пешком приблизительное. Названия станций на сентябрь 2026.",
+place:"Место",station:"Станция",nothing:"Ничего не найдено. Попробуйте название станции или место, например Dubai Mall.",lang:"Язык",langNote:"По числу туристов в Дубае",
+leastWalk:"Меньше пешком",minRange:"~{a}–{b} мин",estNote:"Это оценка, а не данные в реальном времени. Меньшее число только дорога, большее с обычным ожиданием каждого поезда.",destInfo:"{p}: ~{n} мин пешком от {s}",destInfoNo:"{p}: ближайшая остановка {s}",routeModes:"Маршрут коротко",
+onFootFrom:"~{n} мин пешком от {x}",leaveNow:"Выйти сейчас",leaveAt:"Выезд в",wNotRunning:"{m}: в {t0} не работает, откроется в {t}.",hoursNote:"Это официальные часы работы; последний поезд с конечной может уйти немного раньше.",tripCard:"Карточка поездки",close:"Закрыть",whereFrom:"Куда можно доехать отсюда?",startQ:"Откуда едете?",towards:"в сторону {d}",arriveFrom:"Выезд в {t0}, прибытие около {t1}–{t2} по дубайскому времени",changeAt:"Пересадка на {s}",
+noWalking:"без ходьбы",explore:"Прогулки по Дубаю",planner:"Маршрут",allTours:"Все прогулки",backTour:"Назад к прогулке",placesN:{one:"{n} место",few:"{n} места",many:"{n} мест",other:"{n} места"},transportTime:"В пути ~{a}–{b} мин",visitNote:"Время на сами места не учтено.",sameArea:"Пешком, рядом",tMorning:"Утро",tAfternoon:"День",tEvening:"Вечер",tAny:"В любое время",tLayover:"Зависит от пересадки",tgFirst:"Впервые",tgCulture:"Культура",tgShopping:"Шопинг",tgBeach:"Пляж",tgArch:"Архитектура",tgFamily:"Семья",tgEvening:"Вечер",stopoverWarn:"Оставьте с запасом время, чтобы вернуться в DXB, пройти досмотр и сесть в самолёт. Перед выходом из аэропорта уточните правила у авиакомпании.",abraNote:"Лодки-абры через залив в планировщике нет; эти участки построены на метро.",showRoute:"Показать маршрут",
+attrib:"Время в пути рассчитано по расписанию RTA (GTFS, 2021) и сверено с открытыми источниками.",report:"Сообщить об ошибке",newRoute:"Новый маршрут",whyFaster:"Быстрее на ~{n} мин",whySlower:"+{n} мин",whySameTime:"То же время в пути",whyDirect:"Без пересадок",whyFewerXf:{one:"на {n} пересадку меньше",few:"на {n} пересадки меньше",many:"на {n} пересадок меньше",other:"на {n} пересадки меньше"},whyMoreXf:{one:"на {n} пересадку больше",few:"на {n} пересадки больше",many:"на {n} пересадок больше",other:"на {n} пересадки больше"},whyLessWalk:"на ~{n} мин меньше пешком",whyMoreWalk:"на ~{n} мин больше пешком",reportNotSet:"Адрес для отзывов на этом сайте пока не настроен. Скопируйте данные ниже и отправьте их владельцу сайта.",copyDetails:"Скопировать данные",openFeedback:"Открыть страницу отзывов",sendEmail:"Отправить по почте",
+whySimilar:"Время похожее, зависит от ожидания",monoSuspended:"Монорельс Palm временно не работает.",suspendedShort:"Временно не работает",stSuspended:"{m}: временно не работает",monoSource:"Статус монорельса Palm указан по сайту оператора (palmmonorail.com).",
+w_airport:"идите по указателям Metro, станция соединена с терминалом",w_metrolink:"по крытому переходу Metro Link",w_throughmall:"по переходу Metro Link и через Dubai Mall",w_aquarium:"внутри Dubai Mall, по переходу Metro Link",w_opera:"через Dubai Mall и по бульвару",w_bridgemall:"мост ведёт прямо в торговый центр",w_inmoe:"внутри Mall of the Emirates",w_next:"рядом со станцией",w_zabeel:"через парк Zabeel",w_under:"станция прямо под торговым центром",w_bridgeinto:"мост в торговый центр",w_bluewaters:"по пешеходному мосту на Bluewaters",w_atlantis:"монорельс останавливается у курорта",w_nextmono:"рядом со станцией монорельса"},
+
+de:{title:"Dubai Metro",n_t2:"Terminal 2 liegt nicht an der Metro: Bus ab Stadium oder Abu Hail (Grüne Linie) oder Taxi.",n_etihad:"Anschluss an die Fernzüge von Etihad Rail (Station Al Yalayis).",aboutLink:"Über diese Karte",more:"Details",less:"Weniger",hide:"Details ausblenden",show:"Details anzeigen",phFrom:"Von: Station oder Ort",phTo:"Wohin?",clear:"Löschen",swap:"Tauschen",popular:"Beliebt",pAirport:"Flughafen (DXB T3)",pOld:"Altstadt",
+lgRed:"Rote Linie",lgGreen:"Grüne Linie",lgTram:"Dubai Tram",lgMono:"Palm Monorail",lgIx:"Umstieg",zin:"Vergrößern",zout:"Verkleinern",zfit:"Ganze Karte",
+mMetro:"Metro",mTram:"Tram",mMono:"Monorail",stUntil:"{m} bis {t}",stClosed:"{m} geschlossen, öffnet {t}",
+zone:"Tarifzone {z}",sepTicket:"Eigenes Ticket",formerly:"früher {x}",nearby:"In der Nähe:",fromHere:"Von hier",toHere:"Hierher",walkChip:"~{n} Min. zu Fuß",
+hintNone:"Wohin möchten Sie? Geben Sie einen Ort oder eine Station ein oder tippen Sie auf einen beliebten Ort. Alte Stationsnamen funktionieren auch: Rashidiya, Al Karama, JLT.",
+hintOne:"Wählen Sie jetzt das andere Ende: oben eine Station oder einen Ort eingeben, einen beliebten Ort antippen oder eine Station auf der Karte.",
+hintSame:"Start und Ziel sind gleich.",hintBoth:"{a} und {b} liegen beide an der Station {s}, Sie können zu Fuß gehen.",noRoute:"Keine Verbindung gefunden. Versuchen Sie eine andere Station oder einen anderen Ort.",
+optLabel:"Routenoption",fastest:"Schnellste",fewer:"Weniger Umstiege",min:"~{n} Min.",changes:{one:"{n} Umstieg",other:"{n} Umstiege"},noChanges:"ohne Umstieg",stops:{one:"{n} Haltestelle",other:"{n} Haltestellen"},walking:"~{n} Min. zu Fuß",
+arrive:"Jetzt losfahren, Ankunft gegen {t1}–{t2} Uhr Ortszeit Dubai",
+estFare:"Geschätzter Preis, Silver Nol",zones:{one:"{n} Zone",other:"{n} Zonen"},plusMono:"+ Palm Monorail",goldRed:"Gold AED {g} · Red Ticket AED {r}",monoExtra:"(Monorail extra)",monoOnly:"Palm Monorail, eigener Tarif",
+wClosed:"{m}: gerade geschlossen, öffnet um {t}.",wCloses:"{m}: schließt um {t}, die Fahrt klappt heute vielleicht nicht mehr.",
+copy:"Link kopieren",copied:"Link kopiert",copyFallback:"Link unten markieren und kopieren",qr:"QR-Code",qrFail:"QR-Code konnte nicht geladen werden. Nutzen Sie den Link oben.",linkLabel:"Routenlink",waMsg:"{a} → {b} mit der Dubai Metro: {u}",
+goTo:"Gehen Sie zu {s}",fromPlace:"~{n} Min. von {p}, {w}",nearestTo:"Nächste Haltestelle bei {p}",take:"Nehmen Sie: {l}, Richtung {d}",boardAt:"Einsteigen: {s}",getOff:"Aussteigen: {s}",onWay:"Haltestellen unterwegs",
+changeTrains:"Zug wechseln in {s}",waitPlatform:"Am Bahnsteig auf einen Zug Richtung {d} warten · ~{n} Min.",changeTo:"Umsteigen: {l}",followSigns:"Den Schildern „{l}“ in {s} folgen · ~{n} Min.",
+walkTo:"Zu Fuß zu {s}",onFootOut:"~{n} Min. zu Fuß, außerhalb der Stationen",onFootSign:"~{n} Min. zu Fuß, ausgeschildert",walkToPlace:"Zu Fuß zu {p}",placeWalk:"~{n} Min., {w}",noWalkData:"Kurzer Weg von der Station; eine verlässliche Gehzeit haben wir nicht",arriveAt:"Ankunft: {x}",or:"{a} oder {b}",
+hoursFares:"Zeiten und Preise",monThu:"Mo–Do",fri:"Freitag",sat:"Samstag",sun:"Sonntag",metroTram:"Metro und Tram",z1:"1 Zone",z2:"2 Zonen",z3:"3+ Zonen",
+infoP:"Der Preis richtet sich nach den Zonen, die Ihre Fahrt durchquert. Gold Class kostet das Doppelte. Für die Schranke brauchen Sie mindestens AED 7.5 auf der Nol-Karte. Die Palm Monorail hat einen eigenen Tarif: AED 20 einfach über die ganze Strecke. Kürzere Fahrten kosten AED 5–10. An Feiertagen und im Ramadan gelten andere Zeiten.",
+foot:"Inoffizielle Karte. Alle Zeiten sind Schätzungen (Wartezeit je nach Linie und Tageszeit; Monorail etwa alle 15 Min.). Gehzeiten sind grob geschätzt. Stationsnamen Stand September 2026.",
+place:"Ort",station:"Station",nothing:"Nichts gefunden. Versuchen Sie einen Stationsnamen oder einen Ort wie Dubai Mall.",lang:"Sprache",langNote:"Nach Besucherzahl in Dubai",
+leastWalk:"Wenig Fußweg",minRange:"~{a}–{b} Min.",estNote:"Schätzung, keine Echtzeitdaten. Die kleinere Zahl ist reine Fahrzeit, die größere enthält die übliche Wartezeit auf jeden Zug.",destInfo:"{p}: ~{n} Min. zu Fuß von {s}",destInfoNo:"{p}: nächste Haltestelle ist {s}",routeModes:"Route im Überblick",
+onFootFrom:"~{n} Min. zu Fuß von {x}",leaveNow:"Jetzt los",leaveAt:"Abfahrt um",wNotRunning:"{m} fährt um {t0} nicht; Betriebsbeginn {t}.",hoursNote:"Das sind die offiziellen Betriebszeiten; der letzte Zug ab Endstation kann etwas früher fahren.",tripCard:"Reisekarte",close:"Schließen",whereFrom:"Wohin komme ich von hier?",startQ:"Wo starten Sie?",towards:"Richtung {d}",arriveFrom:"Abfahrt {t0}, Ankunft gegen {t1}–{t2} Uhr Ortszeit Dubai",changeAt:"Umstieg in {s}",
+noWalking:"kein Fußweg",explore:"Dubai entdecken",planner:"Routenplaner",allTours:"Alle Touren",backTour:"Zurück zur Tour",placesN:{one:"{n} Ort",other:"{n} Orte"},transportTime:"Fahrzeit ~{a}–{b} Min.",visitNote:"Die Zeit vor Ort ist nicht eingerechnet.",sameArea:"Zu Fuß, gleiche Gegend",tMorning:"Morgens",tAfternoon:"Nachmittags",tEvening:"Abends",tAny:"Jederzeit",tLayover:"Hängt vom Aufenthalt ab",tgFirst:"Erster Besuch",tgCulture:"Kultur",tgShopping:"Shopping",tgBeach:"Strand",tgArch:"Architektur",tgFamily:"Familie",tgEvening:"Abends",stopoverWarn:"Planen Sie genug Zeit für die Rückkehr zum DXB, die Sicherheitskontrolle und das Boarding ein. Fragen Sie vorher Ihre Airline.",abraNote:"Das Abra-Boot über den Creek ist nicht im Planer; diese Abschnitte nutzen die Metro.",showRoute:"Route anzeigen",
+attrib:"Fahrzeiten basieren auf dem RTA-Fahrplan (GTFS, 2021) und wurden mit öffentlichen Quellen abgeglichen.",report:"Fehler melden",newRoute:"Neue Route",whyFaster:"~{n} Min. schneller",whySlower:"+{n} Min.",whySameTime:"Gleiche Fahrzeit",whyDirect:"Ohne Umstieg",whyFewerXf:{one:"{n} Umstieg weniger",other:"{n} Umstiege weniger"},whyMoreXf:{one:"{n} Umstieg mehr",other:"{n} Umstiege mehr"},whyLessWalk:"~{n} Min. weniger zu Fuß",whyMoreWalk:"~{n} Min. mehr zu Fuß",reportNotSet:"Für diese Seite ist noch keine Feedback-Adresse eingerichtet. Sie können die Angaben unten kopieren und an den Betreiber senden.",copyDetails:"Angaben kopieren",openFeedback:"Feedback-Seite öffnen",sendEmail:"Per E-Mail senden",
+whySimilar:"Ähnliche Zeit, je nach Wartezeit",monoSuspended:"Die Palm Monorail ist vorübergehend außer Betrieb.",suspendedShort:"Vorübergehend außer Betrieb",stSuspended:"{m}: vorübergehend außer Betrieb",monoSource:"Status der Palm Monorail laut Betreiber (palmmonorail.com).",
+w_airport:"den Metro-Schildern folgen, die Station ist mit dem Terminal verbunden",w_metrolink:"über die überdachte Metro-Link-Brücke",w_throughmall:"über die Metro-Link-Brücke und durch die Dubai Mall",w_aquarium:"in der Dubai Mall, über die Metro-Link-Brücke",w_opera:"durch die Dubai Mall und über den Boulevard",w_bridgemall:"Brücke direkt ins Einkaufszentrum",w_inmoe:"in der Mall of the Emirates",w_next:"direkt neben der Station",w_zabeel:"durch den Zabeel Park",w_under:"die Station liegt unter dem Einkaufszentrum",w_bridgeinto:"Brücke ins Einkaufszentrum",w_bluewaters:"über die Fußgängerbrücke nach Bluewaters",w_atlantis:"die Monorail hält direkt am Resort",w_nextmono:"neben der Monorail-Station"},
+
+fr:{title:"Métro de Dubaï",n_t2:"Le terminal 2 n’est pas desservi par le métro : bus depuis Stadium ou Abu Hail (ligne verte), ou taxi.",n_etihad:"Correspondance avec les trains interurbains Etihad Rail (gare d’Al Yalayis).",aboutLink:"À propos de la carte",more:"Détails",less:"Réduire",hide:"Masquer",show:"Afficher l’itinéraire",phFrom:"Départ : station ou lieu",phTo:"Où allez-vous ?",clear:"Effacer",swap:"Inverser",popular:"Populaire",pAirport:"Aéroport (DXB T3)",pOld:"Vieux Dubaï",
+lgRed:"Ligne rouge",lgGreen:"Ligne verte",lgTram:"Tramway de Dubaï",lgMono:"Monorail de Palm",lgIx:"Correspondance",zin:"Zoom avant",zout:"Zoom arrière",zfit:"Plan entier",
+mMetro:"Métro",mTram:"Tram",mMono:"Monorail",stUntil:"{m} jusqu’à {t}",stClosed:"{m} fermé, ouvre à {t}",
+zone:"Zone tarifaire {z}",sepTicket:"Billet séparé",formerly:"anciennement {x}",nearby:"À proximité :",fromHere:"Partir d’ici",toHere:"Aller ici",walkChip:"~{n} min à pied",
+hintNone:"Où voulez-vous aller ? Tapez un lieu ou une station, ou choisissez un lieu populaire. Les anciens noms de stations fonctionnent aussi : Rashidiya, Al Karama, JLT.",
+hintOne:"Choisissez maintenant l’autre point : tapez une station ou un lieu, touchez un lieu populaire ou une station sur le plan.",
+hintSame:"Le départ et l’arrivée sont identiques.",hintBoth:"{a} et {b} sont tous deux près de la station {s}, vous pouvez y aller à pied.",noRoute:"Aucun itinéraire trouvé. Essayez une autre station ou un autre lieu.",
+optLabel:"Option d’itinéraire",fastest:"Le plus rapide",fewer:"Moins de correspondances",min:"~{n} min",changes:{one:"{n} correspondance",other:"{n} correspondances"},noChanges:"sans correspondance",stops:{one:"{n} arrêt",other:"{n} arrêts"},walking:"~{n} min à pied",
+arrive:"En partant maintenant, arrivée vers {t1}–{t2}, heure de Dubaï",
+estFare:"Tarif estimé, Silver Nol",zones:{one:"{n} zone",other:"{n} zones"},plusMono:"+ Monorail de Palm",goldRed:"Gold AED {g} · Red ticket AED {r}",monoExtra:"(monorail en plus)",monoOnly:"Monorail de Palm, tarif séparé",
+wClosed:"{m} : fermé pour le moment, ouvre à {t}.",wCloses:"{m} : ferme à {t}, vous risquez de ne pas finir ce trajet ce soir.",
+copy:"Copier le lien",copied:"Lien copié",copyFallback:"Sélectionnez et copiez le lien ci-dessous",qr:"Code QR",qrFail:"Le code QR n’a pas pu se charger. Utilisez le lien ci-dessus.",linkLabel:"Lien de l’itinéraire",waMsg:"{a} → {b} en métro à Dubaï : {u}",
+goTo:"Rendez-vous à {s}",fromPlace:"~{n} min depuis {p}, {w}",nearestTo:"L’arrêt le plus proche de {p}",take:"Prenez : {l}, direction {d}",boardAt:"Montez à {s}",getOff:"Descendez à {s}",onWay:"Arrêts en chemin",
+changeTrains:"Changez de train à {s}",waitPlatform:"Attendez sur le quai un train direction {d} · ~{n} min",changeTo:"Correspondance : {l}",followSigns:"Suivez les panneaux « {l} » dans {s} · ~{n} min",
+walkTo:"À pied jusqu’à {s}",onFootOut:"~{n} min à pied, hors des stations",onFootSign:"~{n} min à pied, fléché",walkToPlace:"À pied jusqu’à {p}",placeWalk:"~{n} min, {w}",noWalkData:"Courte marche depuis la station ; nous n’avons pas de durée fiable",arriveAt:"Arrivée : {x}",or:"{a} ou {b}",
+hoursFares:"Horaires et tarifs",monThu:"Lun–Jeu",fri:"Vendredi",sat:"Samedi",sun:"Dimanche",metroTram:"Métro et tram",z1:"1 zone",z2:"2 zones",z3:"3+ zones",
+infoP:"Le prix dépend du nombre de zones traversées. La Gold Class coûte le double. Il faut au moins AED 7.5 sur la carte Nol pour passer les portiques. Le monorail de Palm a son propre tarif : AED 20 l’aller simple de bout en bout. Les trajets plus courts coûtent AED 5–10. Les horaires changent les jours fériés et pendant le Ramadan.",
+foot:"Plan non officiel. Toutes les durées sont estimées (l’attente dépend de la ligne et de l’heure ; monorail environ toutes les 15 min). Les temps de marche sont approximatifs. Noms des stations à jour en septembre 2026.",
+place:"Lieu",station:"Station",nothing:"Aucun résultat. Essayez un nom de station ou un lieu comme Dubai Mall.",lang:"Langue",langNote:"Par nombre de visiteurs à Dubaï",
+leastWalk:"Moins de marche",minRange:"~{a}–{b} min",estNote:"Estimation, pas en temps réel. Le chiffre bas correspond au trajet seul, le chiffre haut ajoute l’attente habituelle de chaque train.",destInfo:"{p} : ~{n} min à pied depuis {s}",destInfoNo:"{p} : arrêt le plus proche {s}",routeModes:"Trajet en bref",
+onFootFrom:"~{n} min à pied depuis {x}",leaveNow:"Partir maintenant",leaveAt:"Départ à",wNotRunning:"{m} : pas de service à {t0}, ouverture à {t}.",hoursNote:"Ce sont les horaires officiels ; le dernier train depuis chaque terminus peut partir un peu plus tôt.",tripCard:"Fiche trajet",close:"Fermer",whereFrom:"Où aller d’ici ?",startQ:"D’où partez-vous ?",towards:"direction {d}",arriveFrom:"Départ à {t0}, arrivée vers {t1}–{t2}, heure de Dubaï",changeAt:"Correspondance à {s}",
+noWalking:"sans marche",explore:"Explorer Dubaï",planner:"Itinéraire",allTours:"Tous les circuits",backTour:"Retour au circuit",placesN:{one:"{n} lieu",other:"{n} lieux"},transportTime:"Temps de transport ~{a}–{b} min",visitNote:"Le temps passé sur place n’est pas compté.",sameArea:"À pied, même quartier",tMorning:"Matin",tAfternoon:"Après-midi",tEvening:"Soir",tAny:"À tout moment",tLayover:"Selon votre escale",tgFirst:"Première visite",tgCulture:"Culture",tgShopping:"Shopping",tgBeach:"Plage",tgArch:"Architecture",tgFamily:"Famille",tgEvening:"Soir",stopoverWarn:"Prévoyez largement le temps de revenir à DXB, de passer la sécurité et d’embarquer. Vérifiez les consignes de votre compagnie avant de sortir.",abraNote:"L’abra (bateau) sur la crique n’est pas dans le planificateur ; ces trajets utilisent le métro.",showRoute:"Voir l’itinéraire",
+attrib:"Les temps de trajet reposent sur l’horaire de la RTA (GTFS, 2021) et ont été vérifiés avec des sources publiques.",report:"Signaler un problème",newRoute:"Nouvel itinéraire",whyFaster:"Plus rapide de ~{n} min",whySlower:"+{n} min",whySameTime:"Même temps de trajet",whyDirect:"Sans correspondance",whyFewerXf:{one:"{n} correspondance de moins",other:"{n} correspondances de moins"},whyMoreXf:{one:"{n} correspondance de plus",other:"{n} correspondances de plus"},whyLessWalk:"~{n} min de marche en moins",whyMoreWalk:"~{n} min de marche en plus",reportNotSet:"Aucune adresse de retour n’est encore configurée pour ce site. Vous pouvez copier les détails ci-dessous et les envoyer au propriétaire du site.",copyDetails:"Copier les détails",openFeedback:"Ouvrir la page de retour",sendEmail:"Envoyer par e-mail",
+whySimilar:"Temps similaire, selon l’attente",monoSuspended:"Le monorail de Palm est temporairement suspendu.",suspendedShort:"Temporairement suspendu",stSuspended:"{m} : temporairement suspendu",monoSource:"Statut du monorail de Palm selon l’exploitant (palmmonorail.com).",
+w_airport:"suivez les panneaux Metro, la station est reliée au terminal",w_metrolink:"par la passerelle couverte Metro Link",w_throughmall:"par la passerelle Metro Link puis à travers le Dubai Mall",w_aquarium:"dans le Dubai Mall, par la passerelle Metro Link",w_opera:"à travers le Dubai Mall puis le long du boulevard",w_bridgemall:"passerelle directe vers le centre commercial",w_inmoe:"dans le Mall of the Emirates",w_next:"à côté de la station",w_zabeel:"à travers le Zabeel Park",w_under:"la station est sous le centre commercial",w_bridgeinto:"passerelle vers le centre commercial",w_bluewaters:"par la passerelle piétonne de Bluewaters",w_atlantis:"le monorail s’arrête au complexe",w_nextmono:"à côté de la station du monorail"},
+
+zh:{title:"迪拜地铁",n_t2:"2 号航站楼不在地铁沿线：可从绿线 Stadium 或 Abu Hail 站乘公交，或乘出租车。",n_etihad:"可换乘阿提哈德铁路城际列车（Al Yalayis 站）。",aboutLink:"关于本地图",more:"详情",less:"收起",hide:"收起详情",show:"显示详情",phFrom:"出发：车站或地点",phTo:"去哪里？",clear:"清除",swap:"交换",popular:"热门",pAirport:"机场 (DXB T3)",pOld:"迪拜老城",
+lgRed:"红线",lgGreen:"绿线",lgTram:"迪拜有轨电车",lgMono:"棕榈岛单轨",lgIx:"换乘站",zin:"放大",zout:"缩小",zfit:"全图",
+mMetro:"地铁",mTram:"有轨电车",mMono:"单轨",stUntil:"{m} 运营至 {t}",stClosed:"{m} 已停运，{t} 开始运营",
+zone:"票价区 {z}",sepTicket:"单独购票",formerly:"旧称 {x}",nearby:"附近：",fromHere:"从这里出发",toHere:"到这里",walkChip:"步行约 {n} 分钟",
+hintNone:"想去哪里？输入地点或车站，或点击热门地点。旧站名也可以搜索：Rashidiya、Al Karama、JLT。",
+hintOne:"请选择另一端：在上方输入车站或地点，点击热门地点，或在地图上点击车站。",
+hintSame:"起点和终点相同。",hintBoth:"{a} 和 {b} 都在 {s} 站附近，可以步行往来。",noRoute:"未找到路线。请尝试其他车站或地点。",
+optLabel:"路线选项",fastest:"最快",fewer:"换乘最少",min:"约 {n} 分钟",changes:{other:"换乘 {n} 次"},noChanges:"无需换乘",stops:{other:"{n} 站"},walking:"步行约 {n} 分钟",
+arrive:"现在出发，约 {t1}–{t2}（迪拜时间）到达",
+estFare:"预估票价，Silver Nol",zones:{other:"{n} 个区"},plusMono:"+ 棕榈岛单轨",goldRed:"Gold AED {g} · Red ticket AED {r}",monoExtra:"（单轨另付）",monoOnly:"棕榈岛单轨，单独计价",
+wClosed:"{m}目前停运，{t} 开始运营。",wCloses:"{m}于 {t} 停运，今晚可能无法完成此行程。",
+copy:"复制链接",copied:"已复制链接",copyFallback:"请选中并复制下方链接",qr:"二维码",qrFail:"二维码加载失败，请使用上方链接。",linkLabel:"路线链接",waMsg:"{a} → {b} 迪拜地铁路线：{u}",
+goTo:"前往 {s}",fromPlace:"从 {p} 出发约 {n} 分钟，{w}",nearestTo:"距离 {p} 最近的车站",take:"乘坐{l}，往 {d} 方向",boardAt:"在 {s} 上车",getOff:"在 {s} 下车",onWay:"途经车站",
+changeTrains:"在 {s} 换车",waitPlatform:"在站台等候往 {d} 方向的列车 · 约 {n} 分钟",changeTo:"换乘{l}",followSigns:"在 {s} 站内按“{l}”指示牌前往 · 约 {n} 分钟",
+walkTo:"步行至 {s}",onFootOut:"步行约 {n} 分钟，需出站",onFootSign:"步行约 {n} 分钟，有指示牌",walkToPlace:"步行至 {p}",placeWalk:"约 {n} 分钟，{w}",noWalkData:"离车站不远；暂无可靠的步行时间",arriveAt:"到达 {x}",or:"{a} 或 {b}",
+hoursFares:"运营时间与票价",monThu:"周一至周四",fri:"周五",sat:"周六",sun:"周日",metroTram:"地铁和有轨电车",z1:"1 个区",z2:"2 个区",z3:"3 个区及以上",
+infoP:"票价按行程经过的区数计算。Gold Class 票价加倍。Nol 卡余额至少需 AED 7.5 才能进站。棕榈岛单轨单独计价：全程单程 AED 20。较短行程 AED 5–10。公共假日和斋月期间运营时间会调整。",
+foot:"非官方地图。所有时间均为估算（候车时间取决于线路和时段；单轨约 15 分钟一班）。步行时间仅供参考。站名截至 2026 年 9 月。",
+place:"地点",station:"车站",nothing:"未找到结果。请尝试车站名或地点，例如 Dubai Mall。",lang:"语言",langNote:"按赴迪拜游客数量排序",
+leastWalk:"步行最少",minRange:"约 {a}–{b} 分钟",estNote:"估算值，非实时数据。较小的数字仅为行程时间，较大的数字包含每趟车的一般候车时间。",destInfo:"{p}：从 {s} 步行约 {n} 分钟",destInfoNo:"{p}：最近的车站是 {s}",routeModes:"行程概览",
+onFootFrom:"从 {x} 步行约 {n} 分钟",leaveNow:"现在出发",leaveAt:"出发时间",wNotRunning:"{m}在 {t0} 不运营，{t} 开始运营。",hoursNote:"以上为官方运营时间；从终点站发出的末班车可能稍早。",tripCard:"行程卡",close:"关闭",whereFrom:"从这里能去哪里？",startQ:"从哪里出发？",towards:"往 {d} 方向",arriveFrom:"{t0} 出发，约 {t1}–{t2}（迪拜时间）到达",changeAt:"在 {s} 换乘",
+noWalking:"无需步行",explore:"探索迪拜",planner:"路线规划",allTours:"全部行程",backTour:"返回行程",placesN:{other:"{n} 个地点"},transportTime:"交通时间约 {a}–{b} 分钟",visitNote:"不含在各景点停留的时间。",sameArea:"步行，同一区域",tMorning:"上午",tAfternoon:"下午",tEvening:"晚上",tAny:"任何时间",tLayover:"取决于中转时间",tgFirst:"初访",tgCulture:"文化",tgShopping:"购物",tgBeach:"海滩",tgArch:"建筑",tgFamily:"亲子",tgEvening:"夜晚",stopoverWarn:"请预留充足时间返回 DXB、通过安检并登机。离开机场前请向航空公司确认。",abraNote:"规划器不含跨河的阿布拉船；这些路段使用地铁。",showRoute:"查看路线",
+attrib:"行车时间基于 RTA 时刻表（GTFS，2021），并已对照公开资料核实。",report:"报告问题",newRoute:"新路线",whyFaster:"快约 {n} 分钟",whySlower:"+{n} 分钟",whySameTime:"行程时间相同",whyDirect:"无需换乘",whyFewerXf:{other:"少换乘 {n} 次"},whyMoreXf:{other:"多换乘 {n} 次"},whyLessWalk:"少步行约 {n} 分钟",whyMoreWalk:"多步行约 {n} 分钟",reportNotSet:"本网站尚未设置反馈地址。您可以复制下方信息并发送给网站所有者。",copyDetails:"复制信息",openFeedback:"打开反馈页面",sendEmail:"通过邮件发送",
+whySimilar:"时间相近，取决于候车",monoSuspended:"棕榈岛单轨暂停运营。",suspendedShort:"暂停运营",stSuspended:"{m}：暂停运营",monoSource:"棕榈岛单轨运营状态以运营方网站为准（palmmonorail.com）。",
+w_airport:"按 Metro 指示牌走，车站与航站楼相连",w_metrolink:"经有顶棚的 Metro Link 天桥",w_throughmall:"经 Metro Link 天桥并穿过 Dubai Mall",w_aquarium:"在 Dubai Mall 内，经 Metro Link 天桥",w_opera:"穿过 Dubai Mall 后沿大道步行",w_bridgemall:"天桥直通商场",w_inmoe:"在 Mall of the Emirates 内",w_next:"就在车站旁",w_zabeel:"穿过 Zabeel 公园",w_under:"车站就在商场下方",w_bridgeinto:"天桥通往商场",w_bluewaters:"经 Bluewaters 人行桥",w_atlantis:"单轨在度假村门口停靠",w_nextmono:"就在单轨站旁"},
+
+hi:{title:"दुबई मेट्रो",n_t2:"टर्मिनल 2 मेट्रो पर नहीं है: ग्रीन लाइन के Stadium या Abu Hail से बस लें, या टैक्सी।",n_etihad:"Etihad Rail की इंटरसिटी ट्रेनों (Al Yalayis स्टेशन) से कनेक्शन।",aboutLink:"इस नक्शे के बारे में",more:"विवरण",less:"कम दिखाएँ",hide:"विवरण छिपाएँ",show:"विवरण दिखाएँ",phFrom:"कहाँ से: स्टेशन या जगह",phTo:"कहाँ जाना है?",clear:"साफ़ करें",swap:"अदला-बदली",popular:"लोकप्रिय",pAirport:"एयरपोर्ट (DXB T3)",pOld:"पुराना दुबई",
+lgRed:"रेड लाइन",lgGreen:"ग्रीन लाइन",lgTram:"दुबई ट्राम",lgMono:"पाम मोनोरेल",lgIx:"इंटरचेंज",zin:"ज़ूम इन",zout:"ज़ूम आउट",zfit:"पूरा नक्शा",
+mMetro:"मेट्रो",mTram:"ट्राम",mMono:"मोनोरेल",stUntil:"{m} {t} तक",stClosed:"{m} बंद, {t} बजे खुलेगी",
+zone:"किराया ज़ोन {z}",sepTicket:"अलग टिकट",formerly:"पहले {x}",nearby:"आसपास:",fromHere:"यहाँ से",toHere:"यहाँ तक",walkChip:"~{n} मिनट पैदल",
+hintNone:"कहाँ जाना है? कोई जगह या स्टेशन लिखें, या किसी लोकप्रिय जगह पर टैप करें। पुराने स्टेशन नाम भी चलते हैं: Rashidiya, Al Karama, JLT.",
+hintOne:"अब दूसरा छोर चुनें: ऊपर स्टेशन या जगह लिखें, कोई लोकप्रिय जगह चुनें, या नक्शे पर स्टेशन टैप करें।",
+hintSame:"शुरुआत और मंज़िल एक ही हैं।",hintBoth:"{a} और {b} दोनों {s} स्टेशन के पास हैं, आप पैदल जा सकते हैं।",noRoute:"कोई रास्ता नहीं मिला। कोई दूसरा स्टेशन या जगह आज़माएँ।",
+optLabel:"रास्ते का विकल्प",fastest:"सबसे तेज़",fewer:"कम इंटरचेंज",min:"~{n} मिनट",changes:{one:"{n} इंटरचेंज",other:"{n} इंटरचेंज"},noChanges:"कोई इंटरचेंज नहीं",stops:{one:"{n} स्टॉप",other:"{n} स्टॉप"},walking:"~{n} मिनट पैदल",
+arrive:"अभी निकलें तो दुबई समय के अनुसार लगभग {t1}–{t2} बजे पहुँचेंगे",
+estFare:"अनुमानित किराया, Silver Nol",zones:{one:"{n} ज़ोन",other:"{n} ज़ोन"},plusMono:"+ पाम मोनोरेल",goldRed:"Gold AED {g} · Red ticket AED {r}",monoExtra:"(मोनोरेल का किराया अलग)",monoOnly:"पाम मोनोरेल, अलग किराया",
+wClosed:"{m} अभी बंद है और {t} बजे खुलेगी।",wCloses:"{m} {t} बजे बंद होगी, हो सकता है आज यह सफ़र पूरा न हो।",
+copy:"लिंक कॉपी करें",copied:"लिंक कॉपी हो गया",copyFallback:"नीचे दिया लिंक चुनकर कॉपी करें",qr:"QR कोड",qrFail:"QR कोड लोड नहीं हुआ। ऊपर दिया लिंक इस्तेमाल करें।",linkLabel:"रास्ते का लिंक",waMsg:"{a} → {b} दुबई मेट्रो से: {u}",
+goTo:"{s} जाएँ",fromPlace:"{p} से ~{n} मिनट, {w}",nearestTo:"{p} के सबसे पास का स्टॉप",take:"{d} की ओर जाने वाली {l} लें",boardAt:"{s} से चढ़ें",getOff:"{s} पर उतरें",onWay:"रास्ते के स्टॉप",
+changeTrains:"{s} पर ट्रेन बदलें",waitPlatform:"प्लेटफ़ॉर्म पर {d} की ओर जाने वाली ट्रेन का इंतज़ार करें · ~{n} मिनट",changeTo:"{l} के लिए इंटरचेंज करें",followSigns:"{s} स्टेशन के अंदर “{l}” के संकेतों का पालन करें · ~{n} मिनट",
+walkTo:"पैदल {s} तक",onFootOut:"~{n} मिनट पैदल, स्टेशनों के बाहर",onFootSign:"~{n} मिनट पैदल, रास्ते में संकेत हैं",walkToPlace:"पैदल {p} तक",placeWalk:"~{n} मिनट, {w}",noWalkData:"स्टेशन से थोड़ी दूरी पर; पैदल समय का भरोसेमंद अनुमान हमारे पास नहीं है",arriveAt:"{x} पहुँचें",or:"{a} या {b}",
+hoursFares:"समय और किराया",monThu:"सोम–गुरु",fri:"शुक्रवार",sat:"शनिवार",sun:"रविवार",metroTram:"मेट्रो और ट्राम",z1:"1 ज़ोन",z2:"2 ज़ोन",z3:"3+ ज़ोन",
+infoP:"किराया इस पर निर्भर करता है कि आपका सफ़र कितने ज़ोन से गुज़रता है। Gold Class का किराया दोगुना है। गेट पार करने के लिए Nol कार्ड में कम से कम AED 7.5 होने चाहिए। पाम मोनोरेल का किराया अलग है: पूरे रास्ते के लिए एक तरफ़ AED 20। छोटे सफ़र का किराया AED 5–10 है। सार्वजनिक छुट्टियों और रमज़ान में समय बदल जाता है।",
+foot:"अनौपचारिक नक्शा। सभी समय अनुमानित हैं (इंतज़ार लाइन और समय पर निर्भर करता है; मोनोरेल लगभग हर 15 मिनट)। पैदल समय मोटा अनुमान है। स्टेशन नाम सितंबर 2026 के अनुसार।",
+place:"जगह",station:"स्टेशन",nothing:"कुछ नहीं मिला। स्टेशन का नाम या Dubai Mall जैसी जगह आज़माएँ।",lang:"भाषा",langNote:"दुबई आने वाले पर्यटकों की संख्या के क्रम में",
+leastWalk:"सबसे कम पैदल",minRange:"~{a}–{b} मिनट",estNote:"यह अनुमान है, रियल-टाइम नहीं। छोटा आँकड़ा सिर्फ़ सफ़र का समय है, बड़े में हर ट्रेन का सामान्य इंतज़ार भी जुड़ा है।",destInfo:"{p}: {s} से ~{n} मिनट पैदल",destInfoNo:"{p}: सबसे पास का स्टॉप {s}",routeModes:"सफ़र एक नज़र में",
+onFootFrom:"{x} से ~{n} मिनट पैदल",leaveNow:"अभी निकलें",leaveAt:"निकलने का समय",wNotRunning:"{m} {t0} बजे नहीं चलती; {t} बजे शुरू होगी।",hoursNote:"ये आधिकारिक संचालन समय हैं; लाइन के आख़िरी स्टेशन से आख़िरी ट्रेन थोड़ा पहले भी निकल सकती है।",tripCard:"यात्रा कार्ड",close:"बंद करें",whereFrom:"यहाँ से कहाँ जा सकते हैं?",startQ:"आप कहाँ से शुरू कर रहे हैं?",towards:"{d} की ओर",arriveFrom:"{t0} बजे निकलें, दुबई समय के अनुसार लगभग {t1}–{t2} बजे पहुँचेंगे",changeAt:"{s} पर इंटरचेंज",
+noWalking:"पैदल नहीं",explore:"दुबई घूमें",planner:"रूट प्लानर",allTours:"सभी यात्राएँ",backTour:"यात्रा पर वापस",placesN:{one:"{n} जगह",other:"{n} जगहें"},transportTime:"सफ़र का समय ~{a}–{b} मिनट",visitNote:"हर जगह पर बिताया समय शामिल नहीं है।",sameArea:"पैदल, पास में",tMorning:"सुबह",tAfternoon:"दोपहर",tEvening:"शाम",tAny:"कभी भी",tLayover:"आपके स्टॉपओवर पर निर्भर",tgFirst:"पहली बार",tgCulture:"संस्कृति",tgShopping:"शॉपिंग",tgBeach:"बीच",tgArch:"वास्तुकला",tgFamily:"परिवार",tgEvening:"शाम",stopoverWarn:"DXB लौटने, सुरक्षा जाँच और बोर्डिंग के लिए भरपूर समय रखें। एयरपोर्ट से निकलने से पहले अपनी एयरलाइन से पूछ लें।",abraNote:"क्रीक पार करने वाली अबरा नाव प्लानर में नहीं है; ये हिस्से मेट्रो से हैं।",showRoute:"रास्ता देखें",
+attrib:"यात्रा समय RTA की समय-सारिणी (GTFS, 2021) पर आधारित है और सार्वजनिक स्रोतों से मिलाया गया है।",report:"समस्या बताएँ",newRoute:"नया रास्ता",whyFaster:"~{n} मिनट तेज़",whySlower:"+{n} मिनट",whySameTime:"सफ़र का समय उतना ही",whyDirect:"कोई इंटरचेंज नहीं",whyFewerXf:{one:"{n} इंटरचेंज कम",other:"{n} इंटरचेंज कम"},whyMoreXf:{one:"{n} इंटरचेंज ज़्यादा",other:"{n} इंटरचेंज ज़्यादा"},whyLessWalk:"~{n} मिनट कम पैदल",whyMoreWalk:"~{n} मिनट ज़्यादा पैदल",reportNotSet:"इस साइट के लिए अभी कोई फ़ीडबैक पता सेट नहीं है। नीचे दी गई जानकारी कॉपी करके साइट के मालिक को भेज सकते हैं।",copyDetails:"जानकारी कॉपी करें",openFeedback:"फ़ीडबैक पेज खोलें",sendEmail:"ईमेल से भेजें",
+whySimilar:"समय लगभग बराबर, इंतज़ार पर निर्भर",monoSuspended:"पाम मोनोरेल अस्थायी रूप से बंद है।",suspendedShort:"अस्थायी रूप से बंद",stSuspended:"{m}: अस्थायी रूप से बंद",monoSource:"पाम मोनोरेल की स्थिति ऑपरेटर की वेबसाइट (palmmonorail.com) के अनुसार।",
+w_airport:"Metro के संकेतों का पालन करें, स्टेशन टर्मिनल से जुड़ा है",w_metrolink:"ढके हुए Metro Link पुल से",w_throughmall:"Metro Link पुल से और Dubai Mall के अंदर से",w_aquarium:"Dubai Mall के अंदर, Metro Link पुल से",w_opera:"Dubai Mall से होकर बुलेवार्ड के साथ",w_bridgemall:"पुल सीधे मॉल में जाता है",w_inmoe:"Mall of the Emirates के अंदर",w_next:"स्टेशन के बगल में",w_zabeel:"ज़ाबील पार्क से होकर",w_under:"स्टेशन मॉल के नीचे है",w_bridgeinto:"पुल मॉल तक जाता है",w_bluewaters:"Bluewaters पैदल पुल से",w_atlantis:"मोनोरेल रिसॉर्ट पर रुकती है",w_nextmono:"मोनोरेल स्टेशन के बगल में"},
+
+ar:{title:"مترو دبي",n_t2:"المبنى 2 ليس على خط المترو: استقل الحافلة من Stadium أو Abu Hail (الخط الأخضر) أو سيارة أجرة.",n_etihad:"اتصال بقطارات الاتحاد بين المدن (محطة اليلايس).",aboutLink:"عن هذه الخريطة",more:"التفاصيل",less:"إخفاء",hide:"إخفاء التفاصيل",show:"عرض التفاصيل",phFrom:"من: محطة أو مكان",phTo:"إلى أين؟",clear:"مسح",swap:"تبديل",popular:"الأكثر طلبًا",pAirport:"المطار (DXB T3)",pOld:"دبي القديمة",
+lgRed:"الخط الأحمر",lgGreen:"الخط الأخضر",lgTram:"ترام دبي",lgMono:"مونوريل النخلة",lgIx:"محطة تبديل",zin:"تكبير",zout:"تصغير",zfit:"الخريطة كاملة",
+mMetro:"المترو",mTram:"الترام",mMono:"المونوريل",stUntil:"{m} حتى {t}",stClosed:"{m} مغلق، يفتح {t}",
+zone:"منطقة التعرفة {z}",sepTicket:"تذكرة منفصلة",formerly:"سابقًا {x}",nearby:"بالقرب:",fromHere:"من هنا",toHere:"إلى هنا",walkChip:"~{n} دقيقة سيرًا",
+hintNone:"إلى أين تريد الذهاب؟ اكتب اسم مكان أو محطة، أو اختر أحد الأماكن الشائعة. الأسماء القديمة للمحطات تعمل أيضًا: Rashidiya وAl Karama وJLT.",
+hintOne:"اختر الآن الطرف الآخر: اكتب محطة أو مكانًا، أو اختر مكانًا شائعًا، أو اضغط على محطة في الخريطة.",
+hintSame:"نقطة البداية والوجهة متطابقتان.",hintBoth:"{a} و{b} كلاهما قرب محطة {s}، ويمكنك السير بينهما.",noRoute:"لم يتم العثور على مسار. جرّب محطة أو مكانًا آخر.",
+optLabel:"خيار المسار",fastest:"الأسرع",fewer:"أقل تبديلات",min:"~{n} دقيقة",changes:{zero:"{n} تبديل",one:"تبديل واحد",two:"تبديلان",few:"{n} تبديلات",many:"{n} تبديلًا",other:"{n} تبديل"},noChanges:"بدون تبديل",stops:{zero:"{n} محطة",one:"محطة واحدة",two:"محطتان",few:"{n} محطات",many:"{n} محطة",other:"{n} محطة"},walking:"~{n} دقيقة سيرًا",
+arrive:"إذا انطلقت الآن تصل نحو {t1}–{t2} بتوقيت دبي",
+estFare:"الأجرة التقديرية، Silver Nol",zones:{one:"منطقة واحدة",two:"منطقتان",few:"{n} مناطق",many:"{n} منطقة",other:"{n} منطقة"},plusMono:"+ مونوريل النخلة",goldRed:"Gold AED {g} · Red ticket AED {r}",monoExtra:"(أجرة المونوريل منفصلة)",monoOnly:"مونوريل النخلة، أجرة منفصلة",
+wClosed:"{m} مغلق الآن ويفتح الساعة {t}.",wCloses:"يغلق {m} الساعة {t}، وقد لا تتمكن من إكمال هذه الرحلة الليلة.",
+copy:"نسخ الرابط",copied:"تم نسخ الرابط",copyFallback:"حدّد الرابط أدناه وانسخه",qr:"رمز QR",qrFail:"تعذّر تحميل رمز QR. استخدم الرابط أعلاه.",linkLabel:"رابط المسار",waMsg:"من {a} إلى {b} بمترو دبي: {u}",
+goTo:"توجّه إلى {s}",fromPlace:"~{n} دقيقة من {p}، {w}",nearestTo:"أقرب محطة إلى {p}",take:"اركب {l} باتجاه {d}",boardAt:"اصعد في {s}",getOff:"انزل في {s}",onWay:"المحطات على الطريق",
+changeTrains:"بدّل القطار في {s}",waitPlatform:"انتظر على الرصيف قطارًا باتجاه {d} · ~{n} دقيقة",changeTo:"بدّل إلى {l}",followSigns:"اتبع لافتات «{l}» داخل {s} · ~{n} دقيقة",
+walkTo:"سيرًا إلى {s}",onFootOut:"~{n} دقيقة سيرًا، خارج المحطات",onFootSign:"~{n} دقيقة سيرًا، الطريق موضّح باللافتات",walkToPlace:"سيرًا إلى {p}",placeWalk:"~{n} دقيقة، {w}",noWalkData:"مسافة قصيرة من المحطة؛ لا يتوفر لدينا وقت سير موثوق",arriveAt:"الوصول إلى {x}",or:"{a} أو {b}",
+hoursFares:"المواعيد والأجرة",monThu:"الإثنين–الخميس",fri:"الجمعة",sat:"السبت",sun:"الأحد",metroTram:"المترو والترام",z1:"منطقة واحدة",z2:"منطقتان",z3:"3 مناطق أو أكثر",
+infoP:"تُحسب الأجرة حسب عدد المناطق التي تمر بها رحلتك. الدرجة الذهبية (Gold Class) بضعف السعر. يجب أن يكون رصيد بطاقة Nol سبعة دراهم ونصفًا على الأقل لعبور البوابات. لمونوريل النخلة أجرة خاصة: 20 درهمًا ذهابًا للمسار كاملًا. والرحلات الأقصر بين 5 و10 دراهم. تتغير المواعيد في العطلات الرسمية وخلال رمضان.",
+foot:"خريطة غير رسمية. جميع الأوقات تقديرية (يعتمد الانتظار على الخط ووقت اليوم؛ المونوريل كل 15 دقيقة تقريبًا). أوقات السير تقريبية. أسماء المحطات محدّثة حتى سبتمبر 2026.",
+place:"مكان",station:"محطة",nothing:"لا توجد نتائج. جرّب اسم محطة أو مكانًا مثل Dubai Mall.",lang:"اللغة",langNote:"مرتبة حسب عدد زوار دبي",
+leastWalk:"أقل مشي",minRange:"~{a}–{b} دقيقة",estNote:"هذا تقدير وليس بيانات فورية. الرقم الأصغر لزمن الرحلة فقط، والأكبر يضيف الانتظار المعتاد لكل قطار.",destInfo:"{p}: ~{n} دقيقة سيرًا من {s}",destInfoNo:"{p}: أقرب محطة {s}",routeModes:"الرحلة باختصار",
+onFootFrom:"~{n} دقيقة سيرًا من {x}",leaveNow:"انطلق الآن",leaveAt:"وقت الانطلاق",wNotRunning:"{m} لا يعمل الساعة {t0}، ويبدأ التشغيل الساعة {t}.",hoursNote:"هذه مواعيد التشغيل الرسمية؛ قد يغادر آخر قطار من نهاية الخط قبل ذلك بقليل.",tripCard:"بطاقة الرحلة",close:"إغلاق",whereFrom:"إلى أين يمكنني الذهاب من هنا؟",startQ:"من أين تنطلق؟",towards:"باتجاه {d}",arriveFrom:"انطلاق {t0}، الوصول نحو {t1}–{t2} بتوقيت دبي",changeAt:"التبديل في {s}",
+noWalking:"بدون مشي",explore:"استكشف دبي",planner:"مخطط الرحلات",allTours:"كل الجولات",backTour:"العودة إلى الجولة",placesN:{zero:"{n} أماكن",one:"مكان واحد",two:"مكانان",few:"{n} أماكن",many:"{n} مكانًا",other:"{n} مكان"},transportTime:"زمن التنقل ~{a}–{b} دقيقة",visitNote:"لا يشمل الوقت الذي تقضيه في كل مكان.",sameArea:"سيرًا، المنطقة نفسها",tMorning:"صباحًا",tAfternoon:"بعد الظهر",tEvening:"مساءً",tAny:"أي وقت",tLayover:"حسب مدة التوقف",tgFirst:"الزيارة الأولى",tgCulture:"ثقافة",tgShopping:"تسوق",tgBeach:"شاطئ",tgArch:"عمارة",tgFamily:"عائلة",tgEvening:"مساءً",stopoverWarn:"اترك وقتًا كافيًا للعودة إلى مطار دبي واجتياز التفتيش والصعود إلى الطائرة. راجع تعليمات شركة الطيران قبل مغادرة المطار.",abraNote:"قارب العبرة عبر الخور غير مشمول في المخطط؛ هذه المقاطع تستخدم المترو.",showRoute:"عرض المسار",
+attrib:"تستند أزمنة الرحلات إلى جدول هيئة الطرق والمواصلات (GTFS، 2021) وتمت مطابقتها مع مصادر عامة.",report:"الإبلاغ عن مشكلة",newRoute:"مسار جديد",whyFaster:"أسرع بنحو {n} دقيقة",whySlower:"+{n} دقيقة",whySameTime:"نفس زمن الرحلة",whyDirect:"بدون تبديل",whyFewerXf:{zero:"أقل بـ{n} تبديل",one:"تبديل واحد أقل",two:"تبديلان أقل",few:"أقل بـ{n} تبديلات",many:"أقل بـ{n} تبديلًا",other:"أقل بـ{n} تبديل"},whyMoreXf:{zero:"أكثر بـ{n} تبديل",one:"تبديل واحد إضافي",two:"تبديلان إضافيان",few:"{n} تبديلات إضافية",many:"{n} تبديلًا إضافيًا",other:"{n} تبديل إضافي"},whyLessWalk:"مشي أقل بنحو {n} دقيقة",whyMoreWalk:"مشي أكثر بنحو {n} دقيقة",reportNotSet:"لم يتم إعداد عنوان للملاحظات في هذا الموقع بعد. يمكنك نسخ التفاصيل أدناه وإرسالها إلى صاحب الموقع.",copyDetails:"نسخ التفاصيل",openFeedback:"فتح صفحة الملاحظات",sendEmail:"إرسال بالبريد",
+whySimilar:"وقت مقارب، حسب الانتظار",monoSuspended:"مونوريل النخلة متوقف مؤقتًا.",suspendedShort:"متوقف مؤقتًا",stSuspended:"{m}: متوقف مؤقتًا",monoSource:"حالة مونوريل النخلة وفق موقع المشغل (palmmonorail.com).",
+w_airport:"اتبع لافتات المترو، المحطة متصلة بمبنى المسافرين",w_metrolink:"عبر جسر Metro Link المغطى",w_throughmall:"عبر جسر Metro Link ثم داخل دبي مول",w_aquarium:"داخل دبي مول، عبر جسر Metro Link",w_opera:"عبر دبي مول ثم على طول البوليفارد",w_bridgemall:"جسر يؤدي مباشرة إلى المول",w_inmoe:"داخل مول الإمارات",w_next:"بجوار المحطة",w_zabeel:"عبر حديقة زعبيل",w_under:"المحطة أسفل المول",w_bridgeinto:"جسر إلى المول",w_bluewaters:"عبر جسر المشاة إلى بلوواترز",w_atlantis:"يتوقف المونوريل عند المنتجع",w_nextmono:"بجوار محطة المونوريل"},
+
+ur:{title:"دبئی میٹرو",n_t2:"ٹرمینل 2 میٹرو پر نہیں ہے: گرین لائن کے Stadium یا Abu Hail سے بس لیں، یا ٹیکسی۔",n_etihad:"Etihad Rail کی انٹرسٹی ٹرینوں (Al Yalayis اسٹیشن) سے رابطہ۔",aboutLink:"اس نقشے کے بارے میں",more:"تفصیلات",less:"کم دکھائیں",hide:"تفصیل چھپائیں",show:"تفصیل دکھائیں",phFrom:"کہاں سے: اسٹیشن یا جگہ",phTo:"کہاں جانا ہے؟",clear:"صاف کریں",swap:"تبدیل کریں",popular:"مقبول",pAirport:"ایئرپورٹ (DXB T3)",pOld:"پرانا دبئی",
+lgRed:"ریڈ لائن",lgGreen:"گرین لائن",lgTram:"دبئی ٹرام",lgMono:"پام مونوریل",lgIx:"انٹرچینج",zin:"بڑا کریں",zout:"چھوٹا کریں",zfit:"پورا نقشہ",
+mMetro:"میٹرو",mTram:"ٹرام",mMono:"مونوریل",stUntil:"{m} {t} تک",stClosed:"{m} بند، {t} بجے کھلے گی",
+zone:"کرایہ زون {z}",sepTicket:"الگ ٹکٹ",formerly:"پہلے {x}",nearby:"قریب:",fromHere:"یہاں سے",toHere:"یہاں تک",walkChip:"~{n} منٹ پیدل",
+hintNone:"کہاں جانا ہے؟ کوئی جگہ یا اسٹیشن لکھیں، یا کسی مقبول جگہ پر ٹیپ کریں۔ پرانے اسٹیشن نام بھی چلتے ہیں: Rashidiya، Al Karama، JLT۔",
+hintOne:"اب دوسرا سرا منتخب کریں: اوپر اسٹیشن یا جگہ لکھیں، کوئی مقبول جگہ چنیں، یا نقشے پر اسٹیشن ٹیپ کریں۔",
+hintSame:"شروع اور منزل ایک ہی ہیں۔",hintBoth:"{a} اور {b} دونوں {s} اسٹیشن کے قریب ہیں، آپ پیدل جا سکتے ہیں۔",noRoute:"کوئی راستہ نہیں ملا۔ کوئی اور اسٹیشن یا جگہ آزمائیں۔",
+optLabel:"راستے کا انتخاب",fastest:"سب سے تیز",fewer:"کم تبدیلیاں",min:"~{n} منٹ",changes:{one:"{n} تبدیلی",other:"{n} تبدیلیاں"},noChanges:"کوئی تبدیلی نہیں",stops:{one:"{n} اسٹاپ",other:"{n} اسٹاپ"},walking:"~{n} منٹ پیدل",
+arrive:"ابھی نکلیں تو دبئی وقت کے مطابق تقریباً {t1}–{t2} بجے پہنچیں گے",
+estFare:"اندازاً کرایہ، Silver Nol",zones:{one:"{n} زون",other:"{n} زون"},plusMono:"+ پام مونوریل",goldRed:"Gold AED {g} · Red ticket AED {r}",monoExtra:"(مونوریل کا کرایہ الگ)",monoOnly:"پام مونوریل، الگ کرایہ",
+wClosed:"{m} ابھی بند ہے اور {t} بجے کھلے گی۔",wCloses:"{m} {t} بجے بند ہو جائے گی، ممکن ہے آج یہ سفر مکمل نہ ہو۔",
+copy:"لنک کاپی کریں",copied:"لنک کاپی ہو گیا",copyFallback:"نیچے والا لنک منتخب کر کے کاپی کریں",qr:"QR کوڈ",qrFail:"QR کوڈ لوڈ نہیں ہوا۔ اوپر والا لنک استعمال کریں۔",linkLabel:"راستے کا لنک",waMsg:"{a} سے {b} تک دبئی میٹرو سے: {u}",
+goTo:"{s} جائیں",fromPlace:"{p} سے ~{n} منٹ، {w}",nearestTo:"{p} کا قریب ترین اسٹاپ",take:"{d} کی طرف جانے والی {l} لیں",boardAt:"{s} سے سوار ہوں",getOff:"{s} پر اتریں",onWay:"راستے کے اسٹاپ",
+changeTrains:"{s} پر ٹرین بدلیں",waitPlatform:"پلیٹ فارم پر {d} کی طرف جانے والی ٹرین کا انتظار کریں · ~{n} منٹ",changeTo:"{l} میں تبدیل کریں",followSigns:"{s} اسٹیشن کے اندر “{l}” کے نشانات پر چلیں · ~{n} منٹ",
+walkTo:"پیدل {s} تک",onFootOut:"~{n} منٹ پیدل، اسٹیشنوں کے باہر",onFootSign:"~{n} منٹ پیدل، راستے میں نشانات ہیں",walkToPlace:"پیدل {p} تک",placeWalk:"~{n} منٹ، {w}",noWalkData:"اسٹیشن سے تھوڑا فاصلہ؛ پیدل وقت کا قابلِ اعتماد اندازہ ہمارے پاس نہیں",arriveAt:"{x} پہنچیں",or:"{a} یا {b}",
+hoursFares:"اوقات اور کرایہ",monThu:"پیر–جمعرات",fri:"جمعہ",sat:"ہفتہ",sun:"اتوار",metroTram:"میٹرو اور ٹرام",z1:"1 زون",z2:"2 زون",z3:"3+ زون",
+infoP:"کرایہ اس پر منحصر ہے کہ آپ کا سفر کتنے زون سے گزرتا ہے۔ Gold Class کا کرایہ دوگنا ہے۔ گیٹ سے گزرنے کے لیے Nol کارڈ میں کم از کم AED 7.5 ہونے چاہییں۔ پام مونوریل کا کرایہ الگ ہے: پورے راستے کے لیے یک طرفہ AED 20۔ چھوٹے سفر کا کرایہ AED 5–10 ہے۔ سرکاری تعطیلات اور رمضان میں اوقات بدل جاتے ہیں۔",
+foot:"غیر سرکاری نقشہ۔ تمام اوقات اندازاً ہیں (انتظار لائن اور وقت پر منحصر ہے؛ مونوریل تقریباً ہر 15 منٹ)۔ پیدل وقت موٹا اندازہ ہے۔ اسٹیشنوں کے نام ستمبر 2026 کے مطابق۔",
+place:"جگہ",station:"اسٹیشن",nothing:"کچھ نہیں ملا۔ اسٹیشن کا نام یا Dubai Mall جیسی جگہ آزمائیں۔",lang:"زبان",langNote:"دبئی آنے والے سیاحوں کی تعداد کے لحاظ سے",
+leastWalk:"سب سے کم پیدل",minRange:"~{a}–{b} منٹ",estNote:"یہ اندازہ ہے، ریئل ٹائم نہیں۔ چھوٹا عدد صرف سفر کا وقت ہے، بڑے میں ہر ٹرین کا عام انتظار بھی شامل ہے۔",destInfo:"{p}: {s} سے ~{n} منٹ پیدل",destInfoNo:"{p}: قریب ترین اسٹاپ {s}",routeModes:"سفر ایک نظر میں",
+onFootFrom:"{x} سے ~{n} منٹ پیدل",leaveNow:"ابھی نکلیں",leaveAt:"روانگی کا وقت",wNotRunning:"{m} {t0} بجے نہیں چلتی؛ {t} بجے شروع ہوگی۔",hoursNote:"یہ سرکاری اوقات ہیں؛ لائن کے آخری اسٹیشن سے آخری ٹرین تھوڑا پہلے بھی نکل سکتی ہے۔",tripCard:"سفر کارڈ",close:"بند کریں",whereFrom:"یہاں سے کہاں جا سکتے ہیں؟",startQ:"آپ کہاں سے شروع کر رہے ہیں؟",towards:"{d} کی طرف",arriveFrom:"{t0} بجے روانگی، دبئی وقت کے مطابق تقریباً {t1}–{t2} بجے پہنچیں گے",changeAt:"{s} پر تبدیلی",
+noWalking:"پیدل نہیں",explore:"دبئی دیکھیں",planner:"روٹ پلانر",allTours:"تمام ٹورز",backTour:"ٹور پر واپس",placesN:{one:"{n} جگہ",other:"{n} جگہیں"},transportTime:"سفر کا وقت ~{a}–{b} منٹ",visitNote:"ہر جگہ پر گزارا وقت شامل نہیں۔",sameArea:"پیدل، اسی علاقے میں",tMorning:"صبح",tAfternoon:"دوپہر",tEvening:"شام",tAny:"کسی بھی وقت",tLayover:"آپ کے اسٹاپ اوور پر منحصر",tgFirst:"پہلی بار",tgCulture:"ثقافت",tgShopping:"شاپنگ",tgBeach:"بیچ",tgArch:"فنِ تعمیر",tgFamily:"فیملی",tgEvening:"شام",stopoverWarn:"DXB واپس آنے، سیکیورٹی اور بورڈنگ کے لیے کافی وقت رکھیں۔ ایئرپورٹ سے نکلنے سے پہلے اپنی ایئرلائن سے معلوم کر لیں۔",abraNote:"کریک پار کرنے والی ابرا کشتی پلانر میں نہیں؛ یہ حصے میٹرو سے ہیں۔",showRoute:"راستہ دیکھیں",
+attrib:"سفر کے اوقات RTA کے ٹائم ٹیبل (GTFS، 2021) پر مبنی ہیں اور عوامی ذرائع سے ملائے گئے ہیں۔",report:"مسئلہ بتائیں",newRoute:"نیا راستہ",whyFaster:"~{n} منٹ تیز",whySlower:"+{n} منٹ",whySameTime:"سفر کا وقت اتنا ہی",whyDirect:"کوئی تبدیلی نہیں",whyFewerXf:{one:"{n} تبدیلی کم",other:"{n} تبدیلیاں کم"},whyMoreXf:{one:"{n} تبدیلی زیادہ",other:"{n} تبدیلیاں زیادہ"},whyLessWalk:"~{n} منٹ کم پیدل",whyMoreWalk:"~{n} منٹ زیادہ پیدل",reportNotSet:"اس سائٹ کے لیے ابھی فیڈبیک کا پتہ سیٹ نہیں ہوا۔ نیچے دی گئی تفصیلات کاپی کر کے سائٹ کے مالک کو بھیج سکتے ہیں۔",copyDetails:"تفصیلات کاپی کریں",openFeedback:"فیڈبیک صفحہ کھولیں",sendEmail:"ای میل سے بھیجیں",
+whySimilar:"وقت تقریباً برابر، انتظار پر منحصر",monoSuspended:"پام مونوریل عارضی طور پر بند ہے۔",suspendedShort:"عارضی طور پر بند",stSuspended:"{m}: عارضی طور پر بند",monoSource:"پام مونوریل کی صورتحال آپریٹر کی ویب سائٹ (palmmonorail.com) کے مطابق۔",
+w_airport:"Metro کے نشانات پر چلیں، اسٹیشن ٹرمینل سے جڑا ہے",w_metrolink:"ڈھکے ہوئے Metro Link پل سے",w_throughmall:"Metro Link پل سے اور Dubai Mall کے اندر سے",w_aquarium:"Dubai Mall کے اندر، Metro Link پل سے",w_opera:"Dubai Mall سے ہو کر بلیوارڈ کے ساتھ",w_bridgemall:"پل سیدھا مال میں جاتا ہے",w_inmoe:"Mall of the Emirates کے اندر",w_next:"اسٹیشن کے ساتھ",w_zabeel:"زعبیل پارک سے ہو کر",w_under:"اسٹیشن مال کے نیچے ہے",w_bridgeinto:"پل مال تک جاتا ہے",w_bluewaters:"Bluewaters پیدل پل سے",w_atlantis:"مونوریل ریزورٹ پر رکتی ہے",w_nextmono:"مونوریل اسٹیشن کے ساتھ"}
+};
+let LANG="en";
+function t(key,vars){
+  let s=(I18N[LANG]&&I18N[LANG][key]);if(s==null)s=I18N.en[key];if(s==null)return key;
+  if(typeof s==="object"){const n=vars&&vars.n;let cat="other";try{cat=new Intl.PluralRules(LANG).select(n);}catch(e){}s=s[cat]??s.other??I18N.en[key].other;}
+  if(vars)s=s.replace(/\{(\w+)\}/g,(m,k)=>vars[k]!=null?vars[k]:m);
+  if(LANG==="ar")s=s.replace(/(\d+) دقيقة/g,(m,d)=>{const n=+d;
+    if(n===1)return "دقيقة واحدة";if(n===2)return "دقيقتان";if(n>=3&&n<=10)return d+" دقائق";return m;});
+  return s;
+}
+
+
+// ================= DATA =================
+// Stations. id: [name, x, y, labelPos, formerNames]
+const RAW = {
+  centrepoint:["Centrepoint",1024,198,"r",["Al Rashidiya","Rashidiya"]],
+  emirates:["Emirates",994,228,"r"],
+  at3:["Airport Terminal 3",970,252,"r"],
+  at1:["Airport Terminal 1",946,276,"r"],
+  garhoud:["Al Garhoud",902,300,"b",["GGICO"]],
+  ccd:["City Centre Deira",794,300,"b",["Deira City Centre"]],
+  rigga:["Al Rigga",692,300,"b"],
+  union:["Union",600,300,"tl"],
+  burjuman:["BurJuman",600,400,"tl2",["Khalid Bin Al Waleed"]],
+  adcb:["ADCB",600,446,"r",["Al Karama"]],
+  max:["Max",600,472,"r",["Al Jafiliya"]],
+  wtc:["World Trade Centre",600,498,"r"],
+  et:["Emirates Towers",600,524,"r"],
+  fc:["Financial Centre",600,550,"r"],
+  bk:["Burj Khalifa/Dubai Mall",600,576,"r"],
+  bb:["Business Bay",600,602,"r"],
+  garmin:["Garmin",600,636,"r",["ONPASSIVE","Al Safa","Noor Bank"]],
+  equiti:["Equiti",600,662,"r",["Umm Al Sheif","First Abu Dhabi Bank","First Gulf Bank"]],
+  moe:["Mall of the Emirates",600,688,"r"],
+  im:["InsuranceMarket",600,714,"r",["Mashreq","Sharaf DG (Red Line)"]],
+  dic:["Dubai Internet City",600,740,"r"],
+  fardan:["Al Fardan Exchange",600,766,"r",["Al Khail","Nakheel"]],
+  sobha:["Sobha Realty",600,792,"r",["Dubai Marina","DAMAC Properties"]],
+  dmcc:["DMCC",600,858,"r",["Jumeirah Lakes Towers","JLT"]],
+  np:["National Paints",600,884,"r",["Jabal Ali","Jebel Ali","Nakheel Harbour & Tower"]],
+  ibn:["Ibn Battuta",600,910,"l"],
+  energy:["Energy",600,936,"l",["DUBAL"]],
+  danube:["Danube",600,962,"l",["Jebel Ali Industrial"]],
+  lp:["Life Pharmacy",600,988,"l",["UAE Exchange","Jebel Ali"]],
+  gardens:["The Gardens",624,908,"r"],
+  dg:["Discovery Gardens",648,932,"r"],
+  furjan:["Al Furjan",672,956,"r"],
+  jge:["Jumeirah Golf Estates",696,980,"r"],
+  dip:["Dubai Investment Park",720,1004,"r"],
+  expo:["Expo 2020",748,1032,"r",["Expo City Dubai"]],
+
+  eand:["e&",746,60,"r",["Etisalat","Etisalat by e&"]],
+  qusais:["Al Qusais",718,88,"r"],
+  dafz:["Dubai Airport Free Zone",694,112,"r"],
+  nahda:["Al Nahda",670,136,"r"],
+  stadium:["Stadium",646,160,"r"],
+  qiyadah:["Al Qiyadah",622,184,"r"],
+  abuhail:["Abu Hail",600,222,"r"],
+  abubaker:["Abu Baker Al Siddique",600,248,"r"],
+  salah:["Salah Al Din",600,274,"r"],
+  baniyas:["Baniyas Square",510,300,"b"],
+  goldsouq:["Gold Souq",406,300,"b",["Palm Deira"]],
+  alras:["Al Ras",330,300,"l"],
+  ghubaiba:["Al Ghubaiba",420,400,"b"],
+  sharafdg:["Sharaf DG",510,400,"b",["Al Fahidi"]],
+  oudmetha:["Oud Metha",696,400,"b"],
+  dhcc:["Dubai Healthcare City",822,400,"b"],
+  jadaf:["Al Jadaf",934,400,"b"],
+  creek:["Creek",1026,400,"b"],
+
+  jbr1:["Jumeirah Beach Residence 1",350,836,"l"],
+  jbr2:["Jumeirah Beach Residence 2",350,860,"l"],
+  jlt:["Jumeirah Lakes Towers",420,858,"br",["JLT"]],
+  dmm:["Dubai Marina Mall",420,832,"r"],
+  dmt:["Dubai Marina",350,792,"l"],
+  mt:["Marina Towers",350,766,"r"],
+  ms:["Mina Seyahi",350,740,"r"],
+  mc:["Media City",350,714,"r",["Dubai Media City"]],
+  pj:["Palm Jumeirah",350,688,"r"],
+  kv:["Knowledge Village",350,662,"r"],
+  sufouh:["Al Sufouh",350,636,"r"],
+
+  palmgw:["Palm Gateway",290,688,"l",["Gateway"]],
+  ittihad:["Al Ittihad Park",240,638,"l"],
+  pjm:["Palm Jumeirah Mall",190,588,"l",["Nakheel Mall"]],
+  atlantis:["Atlantis Aquaventure",136,534,"l",["Atlantis"]]
+};
+const ST={};
+for(const id in RAW){const [n,x,y,p,f]=RAW[id];ST[id]={id,n,x,y,p,f:f||[],lines:new Set()};}
+
+// Lines (ink = text colour on top of the line colour)
+const LINES={
+  red:{key:"lgRed",c:"var(--red)",ink:"#fff",kind:"metro"},
+  green:{key:"lgGreen",c:"var(--green)",ink:"#fff",kind:"metro"},
+  tram:{key:"lgTram",c:"var(--tram)",ink:"#1A1A1A",kind:"tram"},
+  mono:{key:"lgMono",c:"var(--mono)",ink:"var(--mono-ink)",kind:"mono"}
+};
+// Services (train patterns)
+const R_MAIN=["centrepoint","emirates","at3","at1","garhoud","ccd","rigga","union","burjuman","adcb","max","wtc","et","fc","bk","bb","garmin","equiti","moe","im","dic","fardan","sobha","dmcc","np","ibn","energy","danube","lp"];
+const R_BR=["np","gardens","dg","furjan","jge","dip","expo"];
+const G=["eand","qusais","dafz","nahda","stadium","qiyadah","abuhail","abubaker","salah","union","baniyas","goldsouq","alras","ghubaiba","sharafdg","burjuman","oudmetha","dhcc","jadaf","creek"];
+const T=["jbr1","jbr2","jlt","dmm","dmt","mt","ms","mc","pj","kv","sufouh"];
+const M=["palmgw","ittihad","pjm","atlantis"];
+const NP_I=R_MAIN.indexOf("np");
+const SVC=[
+  {id:"R1",line:"red",stops:R_MAIN},
+  {id:"R2",line:"red",stops:R_MAIN.slice(0,NP_I+1).concat(R_BR.slice(1))},
+  {id:"G",line:"green",stops:G},
+  // The tram runs one way round a loop at the JBR end (anti-clockwise):
+  // ... Dubai Marina → JBR 1 → JBR 2 → JLT → Dubai Marina Mall → Dubai Marina → ... Al Sufouh.
+  // Modelled as two one-way patterns: towards Al Sufouh (from the loop) and towards JBR (into the loop).
+  {id:"T",line:"tram",stops:T,oneway:true},
+  {id:"TI",line:"tram",stops:["sufouh","kv","pj","mc","ms","mt","dmt","jbr1","jbr2","jlt","dmm"],oneway:true},
+  {id:"M",line:"mono",stops:M}
+];
+SVC.forEach(s=>s.stops.forEach(id=>ST[id].lines.add(s.line)));
+
+
+// ---- schematic geometry ----
+// Frame: "up" is north-east (towards Sharjah), "left" is the sea. Lines run at 0/45/90 degrees.
+// BENDS: corner points between two neighbouring stations (listed a→b; reversed automatically).
+const BENDS={
+  "garhoud|at1":[[922,300]],
+  "abuhail|qiyadah":[[600,206]],
+  "alras|ghubaiba":[[330,330]],
+  "dmt|jbr1":[[350,812]],
+  "jbr2|jlt":[[350,884],[420,884]],
+  "dmm|dmt":[[420,812],[350,812]]
+};
+// multi-line labels
+const LABEL_LINES={jbr1:["JBR 1"],jbr2:["JBR 2"]};
+// everyday short names (not former names): found by search, not shown as "formerly"
+const ALIAS={jbr1:["JBR 1","JBR1"],jbr2:["JBR 2","JBR2"]};
+function segPts(a,b){
+  const k=a+"|"+b;if(BENDS[k])return BENDS[k];
+  const r=BENDS[b+"|"+a];return r?r.slice().reverse():[];
+}
+function chainPts(ids){
+  const out=[[ST[ids[0]].x,ST[ids[0]].y]];
+  for(let i=1;i<ids.length;i++){segPts(ids[i-1],ids[i]).forEach(p=>out.push(p));out.push([ST[ids[i]].x,ST[ids[i]].y]);}
+  return out;
+}
+// polyline with rounded corners
+function roundD(P,R){
+  const q=[P[0]];for(let i=1;i<P.length;i++){const a=q[q.length-1],b=P[i];if(Math.abs(a[0]-b[0])>.01||Math.abs(a[1]-b[1])>.01)q.push(b);}
+  if(q.length<2)return "";
+  let d=`M${q[0][0]},${q[0][1]}`;
+  for(let i=1;i<q.length-1;i++){
+    const [ax,ay]=q[i-1],[bx,by]=q[i],[cx,cy]=q[i+1];
+    const l1=Math.hypot(bx-ax,by-ay),l2=Math.hypot(cx-bx,cy-by);
+    const cross=Math.abs((bx-ax)*(cy-by)-(by-ay)*(cx-bx));
+    if(cross<1e-6){d+=`L${bx},${by}`;continue;}
+    const r=Math.min(R,l1/2,l2/2);
+    const p1=[bx-(bx-ax)/l1*r,by-(by-ay)/l1*r],p2=[bx+(cx-bx)/l2*r,by+(cy-by)/l2*r];
+    d+=`L${p1[0].toFixed(1)},${p1[1].toFixed(1)}Q${bx},${by} ${p2[0].toFixed(1)},${p2[1].toFixed(1)}`;
+  }
+  const z=q[q.length-1];return d+`L${z[0]},${z[1]}`;
+}
+const lineD=ids=>roundD(chainPts(ids),22);
+function linePath(g,line,ids){return el("path",{class:"ln"+(line==="tram"||line==="mono"?" "+line:""),stroke:LINES[line].c,d:lineD(ids)},g);}
+
+// Walking links between separate stations (minutes are estimates)
+const WALKS=[
+  {a:"dmt",b:"sobha",t:6},
+  {a:"jlt",b:"dmcc",t:6},
+  {a:"pj",b:"palmgw",t:8,long:true},
+  {a:"jbr1",b:"dmm",t:12,long:true}
+];
+const WALK_OF={};WALKS.forEach(w=>{WALK_OF[w.a]={to:w.b,t:w.t};WALK_OF[w.b]={to:w.a,t:w.t};});
+
+// Minutes between neighbouring stops (approximate, dwell included)
+// Minutes between neighbouring stops. Metro and tram: median scheduled run time (incl. dwell) from the
+// RTA GTFS timetable (archived via Transitland, Nov 2021; track and stations unchanged since).
+// Palm Monorail is not in the RTA feed: ~10 min end to end per the operator, so 3 per hop.
+const SEG_DEFAULT={red:2,green:2,tram:2.5,mono:3};
+const SEG={"abubaker|abuhail":2.2,"abubaker|salah":2.0,"abuhail|qiyadah":1.6,"adcb|burjuman":2.6,"adcb|max":2.2,"alras|ghubaiba":1.6,"alras|goldsouq":2.1,"baniyas|goldsouq":2.2,"baniyas|union":1.9,"bb|bk":2.2,"bb|garmin":4.8,"bk|fc":1.9,"burjuman|oudmetha":2.6,"burjuman|sharafdg":2.1,"burjuman|union":2.8,"ccd|garhoud":2.2,"ccd|rigga":2.0,"centrepoint|emirates":3.5,"creek|jadaf":1.8,"dafz|nahda":1.6,"dafz|qusais":2.2,"danube|energy":3.0,"danube|lp":3.0,"dg|furjan":1.9,"dg|gardens":2.2,"dhcc|jadaf":2.3,"dhcc|oudmetha":2.7,"dic|fardan":2.6,"dic|im":2.7,"dip|expo":5.0,"dip|jge":2.3,"dmcc|np":2.7,"dmcc|sobha":2.0,"dmm|dmt":2.7,"dmm|jlt":1.9,"dmt|jbr1":3.9,"dmt|mt":2.9,"eand|qusais":2.5,"energy|ibn":3.1,"equiti|garmin":3.9,"equiti|moe":1.8,"et|fc":1.6,"et|wtc":1.8,"fardan|sobha":2.1,"furjan|jge":3.1,"gardens|np":2.8,"ghubaiba|sharafdg":2.2,"ibn|np":2.5,"im|moe":1.9,"jbr1|jbr2":2.5,"jbr2|jlt":3.7,"kv|pj":2.7,"kv|sufouh":1.9,"max|wtc":2.0,"mc|ms":2.0,"mc|pj":2.2,"ms|mt":3.0,"nahda|stadium":1.8,"qiyadah|stadium":2.0,"rigga|union":2.1,"salah|union":1.9,"at1|at3":1.9,"at1|garhoud":2.2,"at3|emirates":1.6};
+const segT=(a,b,line)=>SEG[a+"|"+b]??SEG[b+"|"+a]??SEG_DEFAULT[line];
+const XFER_LINE=4, XFER_SAME=3;
+
+// Fare zones (RTA Nol). Tram stops taken as zone 2. Monorail is ticketed separately.
+const ZONE={};
+const setZ=(ids,z)=>ids.forEach(i=>ZONE[i]=z);
+setZ(["centrepoint","emirates","at3","at1","garhoud","ccd","rigga","union"],5);
+setZ(["burjuman","adcb","max","wtc","et","fc","bk","bb"],6);
+setZ(["garmin","equiti","moe","im","dic","fardan","sobha","dmcc","np","ibn","energy","danube","gardens","dg","furjan"],2);
+setZ(["lp","dip","expo"],1); ZONE.jge=3;
+setZ(["eand","qusais","dafz","nahda","stadium","qiyadah","abuhail","abubaker","salah","baniyas","goldsouq","alras"],5);
+setZ(["ghubaiba","sharafdg","oudmetha","dhcc","jadaf","creek"],6);
+setZ(T,2);
+const FARES={silver:[3,5,7.5],gold:[6,10,15],red:[4,6,8.5]};
+// Palm Monorail is ticketed separately. Single fares (AED) per station pair from the operator's
+// ticket-price table (palmmonorail.com/ticket-prices); the same in both directions.
+const MONO_FARES={"palmgw|ittihad":10,"palmgw|pjm":10,"palmgw|atlantis":20,"ittihad|pjm":5,"ittihad|atlantis":10,"pjm|atlantis":10};
+const monoFare=(a,b)=>MONO_FARES[a+"|"+b]??MONO_FARES[b+"|"+a]??null;
+const monoFareOf=legs=>legs.filter(l=>l.type==="ride"&&svcById[l.svc].line==="mono")
+  .reduce((a,l)=>a+(monoFare(l.stops[0],l.stops[l.stops.length-1])||0),0);
+const fareIdx=n=>Math.min(n,3)-1;
+
+// Operating hours, minutes from midnight (close may run past 24:00); index 0 = Sunday
+const HOURS={
+  metro:[[480,1440],[300,1440],[300,1440],[300,1440],[300,1440],[300,1500],[300,1440]],
+  tram:[[540,1500],[360,1500],[360,1500],[360,1500],[360,1500],[360,1500],[360,1500]],
+  mono:[[540,1320],[540,1320],[540,1320],[540,1320],[540,1320],[540,1320],[540,1320]]
+};
+const KIND_LABEL={metro:"mMetro",tram:"mTram",mono:"mMono"};
+
+// Places: where people actually want to go. walk/min only where the connection is well known; all times are estimates.
+const PLACES=[
+  {n:"DXB Airport Terminal 3",st:"at3",walk:"w_airport",min:5,aka:["DXB","Airport","Emirates terminal"]},
+  {n:"DXB Airport Terminal 1",st:"at1",walk:"w_airport",min:5,aka:["DXB","Airport"]},
+  // not on the rail network (RTA map, Sep 2026): bus link from Stadium or Abu Hail; no walking time given
+  {n:"DXB Airport Terminal 2",st:"stadium",note:"n_t2",aka:["Terminal 2","T2","flydubai"]},
+  // RTA map (Sep 2026): connection at Jumeirah Golf Estates to Etihad Rail, Al Yalayis Station
+  {n:"Etihad Rail (Al Yalayis Station)",st:"jge",note:"n_etihad",aka:["Etihad Rail","Al Yalayis","train","Abu Dhabi train"]},
+  {n:"Dubai Mall",st:"bk",walk:"w_metrolink",min:12,aka:["Downtown"]},
+  {n:"Burj Khalifa",st:"bk",walk:"w_throughmall",min:15,aka:["Downtown","At the Top"]},
+  {n:"Dubai Fountain",st:"bk",walk:"w_throughmall",min:15},
+  {n:"Dubai Aquarium",st:"bk",walk:"w_aquarium",min:12},
+  {n:"Dubai Opera",st:"bk",walk:"w_opera",min:20},
+  {n:"Mall of the Emirates",st:"moe",walk:"w_bridgemall",min:3},
+  {n:"Ski Dubai",st:"moe",walk:"w_inmoe",min:8},
+  {n:"Museum of the Future",st:"et",walk:"w_next",min:5},
+  {n:"DIFC",st:"fc",aka:["Gate Village"]},
+  {n:"Dubai World Trade Centre",st:"wtc",aka:["DWTC"]},
+  {n:"Dubai Frame",st:"max",walk:"w_zabeel",min:15},
+  {n:"BurJuman Mall",st:"burjuman",walk:"w_under",min:2},
+  {n:"Al Fahidi Historical District",st:"sharafdg",aka:["Old Dubai","Bastakiya","Al Fahidi"]},
+  {n:"Textile Souk",st:"ghubaiba",aka:["Old Dubai"]},
+  {n:"Bur Dubai abra station",st:"ghubaiba",aka:["Abra"]},
+  {n:"Al Seef",st:"ghubaiba",aka:["Old Dubai","Creek"]},
+  {n:"Gold Souk",st:"goldsouq",aka:["Old Dubai","Deira"]},
+  {n:"Spice Souk",st:"alras",aka:["Old Dubai","Deira"]},
+  {n:"Deira Old Souk abra station",st:"alras",aka:["Abra"]},
+  {n:"City Centre Deira mall",st:"ccd",walk:"w_bridgeinto",min:3},
+  {n:"Wafi City",st:"dhcc"},
+  {n:"Dubai Marina Walk",st:"dmt",aka:["Marina"]},
+  {n:"Dubai Marina Mall",st:"dmm",aka:["Marina"]},
+  {n:"JBR The Walk",st:"jbr2",aka:["JBR","Jumeirah Beach Residence"]},
+  {n:"The Beach JBR",st:"jbr2",aka:["JBR"]},
+  {n:"Ain Dubai / Bluewaters",st:"jbr1",walk:"w_bluewaters",min:15,aka:["Bluewaters"]},
+  {n:"Atlantis The Palm",st:"atlantis",walk:"w_atlantis",min:3,aka:["Palm","Atlantis"]},
+  {n:"Aquaventure Waterpark",st:"atlantis",walk:"w_nextmono",min:3,aka:["Palm"]},
+  {n:"The View at The Palm",st:"pjm",aka:["Palm","Palm Tower"]},
+  {n:"Palm Jumeirah Mall",st:"pjm",aka:["Nakheel Mall","Palm"]},
+  {n:"Ibn Battuta Mall",st:"ibn",walk:"w_bridgeinto",min:5},
+  {n:"Expo City Dubai",st:"expo",aka:["Expo"]},
+  {n:"Dubai Internet City",st:"dic"},
+  {n:"Dubai Media City",st:"mc"},
+  {n:"Knowledge Park",st:"kv"}
+];
+PLACES.forEach(p=>{p.id="p_"+p.n.toLowerCase().replace(/[^a-z0-9]+/g,"_").replace(/^_|_$/g,"");p.aka=p.aka||[];});
+const PLACE_BY_ID=Object.fromEntries(PLACES.map(p=>[p.id,p]));
+const POPULAR=["p_dxb_airport_terminal_3","p_dubai_mall","p_burj_khalifa","p_dubai_marina_walk","p_jbr_the_walk","p_atlantis_the_palm","p_gold_souk","p_al_fahidi_historical_district","p_museum_of_the_future","p_dubai_frame","p_mall_of_the_emirates","p_expo_city_dubai"];
+const POPULAR_LABEL={p_dxb_airport_terminal_3:()=>t("pAirport"),p_dubai_marina_walk:()=>"Dubai Marina",p_jbr_the_walk:()=>"JBR",p_atlantis_the_palm:()=>"Atlantis",p_al_fahidi_historical_district:()=>t("pOld"),p_expo_city_dubai:()=>"Expo City"};
+
+// Current availability, separate from the network and timetable data.
+// Palm Monorail: the operator's website states the service is "temporarily suspended until further notice".
+// Set to "operating" when it resumes; stations, routing, fares and hours are kept unchanged.
+const SERVICE_STATUS={metro:"operating",tram:"operating",mono:"suspended"};
+const isSuspended=k=>SERVICE_STATUS[k]==="suspended";
+
+// ================= TIME =================
+function dubaiNow(){return dubaiAt(Date.now());}
+// day of week and minutes after midnight in Dubai for a given moment
+function dubaiAt(ms){
+  const parts=new Intl.DateTimeFormat("en-GB",{timeZone:"Asia/Dubai",weekday:"short",hour:"2-digit",minute:"2-digit",hourCycle:"h23"}).formatToParts(new Date(ms));
+  const g=t=>parts.find(p=>p.type===t).value;
+  return {d:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].indexOf(g("weekday")),m:(+g("hour"))*60+(+g("minute"))};
+}
+const addMin=(at,n)=>{let m=at.m+n,d=at.d;while(m>=1440){m-=1440;d=(d+1)%7;}return {d,m};};
+const hm=m=>{m=((m%1440)+1440)%1440;return String(Math.floor(m/60)).padStart(2,"0")+":"+String(m%60).padStart(2,"0");};
+function svcState(kind,now){
+  const H=HOURS[kind];const {d,m}=now;
+  const prev=H[(d+6)%7];
+  if(prev[1]>1440&&m<prev[1]-1440)return {open:true,close:prev[1]-1440};
+  const [o,c]=H[d];
+  if(m>=o&&m<c)return {open:true,close:c};
+  if(m<o)return {open:false,opens:o};
+  return {open:false,opens:H[(d+1)%7][0]};
+}
+function renderStatus(){
+  const mn=document.getElementById("monoNote");if(mn)mn.textContent=isSuspended("mono")?t("stSuspended",{m:t(KIND_LABEL.mono)}):"";
+  const now=dubaiNow();
+  document.getElementById("status").innerHTML=Object.keys(HOURS).map(k=>{
+    if(isSuspended(k))return `<span><i class="off"></i>${esc(t("stSuspended",{m:t(KIND_LABEL[k])}))}</span>`;
+    const st=svcState(k,now);
+    return `<span><i class="${st.open?"":"off"}"></i>${esc(st.open?t("stUntil",{m:t(KIND_LABEL[k]),t:hm(st.close)}):t("stClosed",{m:t(KIND_LABEL[k]),t:hm(st.opens)}))}</span>`;}).join("");
+}
+
+// ================= MAP =================
+const NS="http://www.w3.org/2000/svg";
+const el=(tag,attrs={},parent)=>{const e=document.createElementNS(NS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);if(parent)parent.appendChild(e);return e;};
+const pts=ids=>ids.map(id=>ST[id].x+","+ST[id].y).join(" ");
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const base=$("#base"),overlay=$("#overlay"),pinsG=$("#pins"),waterG=$("#water");
+
+// ---- sea, coast and islands ----
+// smooth curve through points (Catmull-Rom → cubic Bézier)
+function smoothD(P,closed){
+  const n=P.length,g=i=>P[closed?(i+n)%n:Math.max(0,Math.min(n-1,i))];
+  let d=`M${P[0][0]},${P[0][1]}`;
+  for(let i=0;i<(closed?n:n-1);i++){
+    const p0=g(i-1),p1=g(i),p2=g(i+1),p3=g(i+2);
+    const c1=[p1[0]+(p2[0]-p0[0])/6,p1[1]+(p2[1]-p0[1])/6],c2=[p2[0]-(p3[0]-p1[0])/6,p2[1]-(p3[1]-p1[1])/6];
+    d+=`C${c1[0].toFixed(1)},${c1[1].toFixed(1)} ${c2[0].toFixed(1)},${c2[1].toFixed(1)} ${p2[0]},${p2[1]}`;
+  }
+  return closed?d+"Z":d;
+}
+// shoreline drawn as one curve: down the coast, into Dubai Creek along its north bank,
+// round the head of the creek, back out along the south bank, then on down the coast
+const COAST_N=[[266,-3000],[262,-700],[258,-420],[244,-200],[236,-20],[234,120],[246,240],[256,288],[264,314],[274,332],[288,343],[306,349]];
+// creek: mouth flares into the sea; the head opens into the Ras Al Khor lagoon
+const CREEK=[[330,351],[360,351],[700,351],[990,351],[1024,354],[1052,370],[1080,398],[1116,410],[1152,404],[1186,416],[1200,442],[1184,466],[1146,472],[1110,462],[1084,444],[1060,416],[1036,393],[1008,382],[980,380],[700,380],[360,380],[330,380]];
+const COAST_S=[[308,384],[292,392],[280,404],[268,424],[252,446],[256,474],[268,500],[262,580],[254,660],[250,730],[246,790],[244,850],[238,930],[232,1000],[236,1060],[228,1130],[204,1176],[156,1206],[150,1252],[196,1284],[222,1330],[230,1450],[236,1800],[240,4000]];
+// background drawn in the original frame and squeezed vertically to the compact layout
+const FY=y=>y<=300?300-(300-y)*.71:y<=430?300+(y-300)*.77:y<=964?400.1+(y-430)*.734:792+(y-964)*.752;
+const FP=([x,y])=>[x,+FY(y).toFixed(1)];
+const COAST=COAST_N.concat(CREEK,COAST_S).map(FP);
+(function(){
+  const coastD=smoothD(COAST);
+  const defs=el("defs",{},waterG);
+  const pat=el("pattern",{id:"waves",width:46,height:30,patternUnits:"userSpaceOnUse"},defs);
+  el("path",{class:"wave",d:"M4,9 q4,-4 8,0 t8,0 M27,24 q4,-4 8,0 t8,0"},pat);
+  el("rect",{class:"sea",x:-4000,y:-4000,width:8000,height:9000},waterG);
+  el("rect",{x:-4000,y:-4000,width:4240,height:9000,fill:"url(#waves)"},waterG);
+  // shallow water along the shore and round the islands
+  el("path",{class:"shallow",d:coastD},waterG);
+  el("path",{class:"shallow-fill",d:smoothD([[300,346]].concat(CREEK,[[300,388]]).map(FP),true)},waterG);
+  const isl=[];
+  // Dubai Islands off Deira
+  isl.push([[150,150],[196,128],[222,160],[214,214],[176,236],[146,206]]);
+  isl.push([[178,262],[206,252],[214,282],[188,296]]);
+  // Bluewaters, off JBR
+  isl.push([[196,1018],[212,1010],[222,1024],[214,1040],[198,1038]]);
+  // Burj Al Arab
+  isl.push([[226,700],[232,694],[238,702],[232,710]]);
+  // The World: a scatter of small islands
+  const W=[[118,472],[134,466],[150,474],[166,468],[112,490],[128,488],[146,494],[164,490],[180,486],[120,510],[138,512],[156,510],[100,528],[118,532],[136,534],[170,530],[188,520],[150,552],[168,550],[186,546],[128,558],[146,574],[164,572],[182,568],[138,594],[156,596],[174,590],[160,616]];
+  W.forEach(([x,y],i)=>{const r=2.5+(i*7%5)*.8,j=((i*13)%7-3)*1.2,k=((i*5)%5-2)*1.4;x+=j;y+=k;isl.push([[x-r,y+r*.2],[x-r*.2,y-r*.7],[x+r,y-r*.1],[x+r*.1,y+r*.8]]);});
+  const islD=isl.map(P=>smoothD(P.map(FP),true));
+  islD.forEach(d=>el("path",{class:"shallow-isl",d},waterG));
+  // land: everything right of the coast
+  el("path",{class:"land",d:coastD+"L4000,4000L4000,-3000Z"},waterG);
+  islD.forEach(d=>el("path",{class:"land isl",d},waterG));
+  el("path",{class:"beach",d:coastD},waterG);
+  // Palm Jumeirah along the monorail: trunk, fronds, crescent (halo of shallow water, then land)
+  const O=[244,642],PS=.78,u=[-Math.SQRT1_2,-Math.SQRT1_2],v=[Math.SQRT1_2,-Math.SQRT1_2];
+  const P=(s,n)=>[O[0]+(s*u[0]+n*v[0])*PS,O[1]+(s*u[1]+n*v[1])*PS];
+  const r=96,c=108,a0=-2.2,a1=2.2,pt=a=>P(c+r*Math.cos(a),r*Math.sin(a)),rr=r*PS,A=pt(a0),B=pt(a1);
+  const cres=`M${A[0].toFixed(1)},${A[1].toFixed(1)} A${rr},${rr} 0 1 1 ${B[0].toFixed(1)},${B[1].toFixed(1)}`;
+  ["palm-halo","palm"].forEach(cls=>{
+    const g=el("g",{class:cls},waterG);
+    const ln=(a,b,w)=>el("line",{x1:a[0].toFixed(1),y1:a[1].toFixed(1),x2:b[0].toFixed(1),y2:b[1].toFixed(1),"stroke-width":w},g);
+    ln(P(-6,0),P(178,0),16);
+    for(let i=0;i<8;i++){const s0=44+i*15,L=62-i*4;[-1,1].forEach(sd=>ln(P(s0,0),P(s0+L*.55,sd*L),6));}
+    el("path",{d:cres,"stroke-width":8,fill:"none"},g);
+  });
+})();
+// Dubai–Sharjah border (dashed) at the top of the sheet
+el("path",{class:"border",d:smoothD([[256,-104],[420,-112],[640,-104],[860,-92],[1040,-66],[1250,-20]].map(FP))},waterG);
+// quiet area names so the land is not empty (proper names, same in every language)
+[["DEIRA",470,214],["BUR DUBAI",480,456],["KARAMA",520,504],["JUMEIRAH",460,586],["DOWNTOWN",1120,580],["AL BARSHA",1130,692],["DUBAI MARINA",430,918],["JEBEL ALI",470,1024],["AL QUSAIS",960,112],["RAS AL KHOR",1180,462],["SHARJAH",620,-8],["ABU DHABI ↓",560,1096]]
+  .forEach(([n,x,y])=>{const d=el("text",{class:"district",x,y,"text-anchor":"middle"},waterG);d.textContent=n;});
+const wl=el("text",{class:"water-label",x:450,y:FY(369).toFixed(1)},waterG);wl.textContent="Dubai Creek";
+
+function drawLines(g){
+  WALKS.forEach(w=>el("line",{class:"walk"+(w.long?" long":""),x1:ST[w.a].x,y1:ST[w.a].y,x2:ST[w.b].x,y2:ST[w.b].y},g));
+  linePath(g,"red",R_MAIN);linePath(g,"red",R_BR);linePath(g,"green",G);
+  linePath(g,"tram",SVC.find(v=>v.id==="TI").stops.concat(["dmt"]));
+  const mono=linePath(g,"mono",M);if(isSuspended("mono"))mono.classList.add("susp");
+}
+function isIx(id){return ST[id].lines.size>1||WALK_OF[id];}
+function drawStation(id,g,interactive){
+  const s=ST[id];const ix=isIx(id);
+  const grp=el("g",{class:"st"+(ix?" big":""),"data-id":id},g);
+  if(interactive){grp.setAttribute("tabindex","0");grp.setAttribute("role","button");grp.setAttribute("aria-label",s.n+" station");}
+  const line=[...s.lines][0];const thin=line==="tram"||line==="mono";
+  if(ix) el("circle",{class:"ix",cx:s.x,cy:s.y,r:thin&&s.lines.size<2?6.5:8},grp);
+  else el("circle",{class:"mk",cx:s.x,cy:s.y,r:thin?4.5:5.5,stroke:LINES[line].c},grp);
+  const off=ix?13:11,L=LABEL_LINES[id]||[s.n],lh=13;
+  let x=s.x,y=s.y,anchor="start",dy0=4;
+  switch(s.p){
+    case "l":x-=off;anchor="end";dy0=4-(L.length-1)*lh/2;break;
+    case "t":anchor="middle";dy0=-off-(L.length-1)*lh;break;
+    case "b":anchor="middle";dy0=off+10;break;
+    case "tl":x-=off-2;anchor="end";dy0=-off+2;break;
+    case "tl2":x-=off-2;anchor="end";dy0=-off+2;break;
+    case "br":x+=4;dy0=off+12;break;
+    default:x+=off;dy0=4-(L.length-1)*lh/2;
+  }
+  const t=el("text",{x,y:y+dy0,"text-anchor":anchor},grp);
+  L.forEach((ln,i)=>{const sp=el("tspan",{x,dy:i?lh:0},t);sp.textContent=ln;});
+  if(interactive)el("circle",{class:"hit",cx:s.x,cy:s.y,r:14},grp);
+  return grp;
+}
+drawLines(base);
+Object.keys(ST).forEach(id=>drawStation(id,base,true));
+// walking transfers: minutes on a small tag
+WALKS.forEach(w=>{const A=ST[w.a],B=ST[w.b];if(Math.hypot(A.x-B.x,A.y-B.y)<120)return;
+  const g=el("g",{class:"wtag"},base),x=(A.x+B.x)/2,y=(A.y+B.y)/2;
+  el("rect",{x:x-19,y:y-9,width:38,height:18,rx:9},g);
+  const tx=el("text",{x,y:y+4,"text-anchor":"middle"},g);tx.textContent="🚶"+w.t;});
+// landmarks: tap to plan a trip there
+const LANDMARKS=[["p_dxb_airport_terminal_3","✈️",950,232],["p_burj_khalifa","🏙️",574,576],["p_dubai_mall","🛍️",550,576],
+  ["p_museum_of_the_future","🔮",574,524],["p_dubai_frame","🖼️",574,472],["p_ski_dubai","⛷️",574,688],
+  ["p_gold_souk","💍",406,278],["p_al_fahidi_historical_district","🏛️",468,378],["p_atlantis_the_palm","🐠",160,514],
+  ["p_ain_dubai_bluewaters","🎡",209,822],["p_expo_city_dubai","🌐",726,1054],["p_jbr_the_walk","🏖️",300,880],
+  ["p_dxb_airport_terminal_2","✈️",626,142],["p_etihad_rail_al_yalayis_station","🚆",672,1020]];
+LANDMARKS.forEach(([id,ico,x,y])=>{const P=PLACE_BY_ID[id];if(!P)return;
+  const g=el("g",{class:"lmk","data-place":id,tabindex:"0",role:"button","aria-label":P.n},base);
+  el("title",{},g).textContent=P.n;
+  el("circle",{cx:x,cy:y,r:11},g);const tx=el("text",{x,y:y+4.5,"text-anchor":"middle"},g);tx.textContent=ico;});
+const monoNote=el("text",{id:"monoNote",class:"mono-note",x:150,y:726,"text-anchor":"middle"},base);
+
+// pan / zoom
+const map=$("#map"),world=$("#world");
+const BOX={x0:20,y0:20,x1:1120,y1:1060};
+// phones: open on the city centre at a readable size instead of the whole network
+// opening view: a little closer than the whole network (the ⤢ button still shows everything)
+const MBOX={x0:400,y0:160,x1:925,y1:700};   // phones
+const DBOX={x0:150,y0:40,x1:1100,y1:960};   // computers
+const homeBox=()=>innerWidth<=720?MBOX:DBOX;
+(function(){ // the map sheet
+  const x0=BOX.x0-110,y0=BOX.y0-120,x1=BOX.x1+130,y1=BOX.y1+110,r=36;
+  const hole=`M${x0+r},${y0}H${x1-r}Q${x1},${y0} ${x1},${y0+r}V${y1-r}Q${x1},${y1} ${x1-r},${y1}H${x0+r}Q${x0},${y1} ${x0},${y1-r}V${y0+r}Q${x0},${y0} ${x0+r},${y0}Z`;
+  el("path",{class:"outside","fill-rule":"evenodd",d:"M-6000,-6000H8000V8000H-6000Z"+hole},waterG);
+  el("path",{class:"sheet-edge",d:hole},waterG);
+})();
+let view={x:0,y:0,k:1},routeBox=null,lastSig="";
+// free movement while the finger is down; if the map has been pushed almost off screen,
+// it glides back after release. No limits are applied mid-gesture.
+function fitScale(){const b=BOX;return Math.min(innerWidth/(b.x1-b.x0),innerHeight/(b.y1-b.y0));}
+function settleView(){
+  const b=BOX,W=innerWidth,H=innerHeight,m=Math.min(W,H)*.25;
+  const L=view.x+b.x0*view.k,R=view.x+b.x1*view.k,T=view.y+b.y0*view.k,B=view.y+b.y1*view.k;
+  let dx=0,dy=0;
+  if(R<m)dx=m-R;else if(L>W-m)dx=(W-m)-L;
+  if(B<m)dy=m-B;else if(T>H-m)dy=(H-m)-T;
+  if(dx||dy){view.x+=dx;view.y+=dy;apply(true);}
+}
+let settleT=0;const settleSoon=()=>{clearTimeout(settleT);settleT=setTimeout(settleView,350);};
+const apply=anim=>{world.classList.toggle("anim",!!anim);world.style.transform=`translate(${view.x}px,${view.y}px) scale(${view.k})`;placePop();};
+function panelInset(){
+  const p=$("#panel").getBoundingClientRect();
+  if(innerWidth<=720)return {l:8,t:8,r:8,b:Math.max(16,innerHeight-p.top+8)};
+  return {l:p.right+16,t:16,r:70,b:70};
+}
+function fitBox(b,anim,maxK){
+  const ins=panelInset();
+  const W=Math.max(120,innerWidth-ins.l-ins.r),H=Math.max(120,innerHeight-ins.t-ins.b);
+  const k=Math.min(W/(b.x1-b.x0),H/(b.y1-b.y0),maxK||2.2);
+  view.k=k;view.x=ins.l+(W-(b.x1-b.x0)*k)/2-b.x0*k;view.y=ins.t+(H-(b.y1-b.y0)*k)/2-b.y0*k;apply(anim);
+}
+function zoomAt(f,cx,cy,anim){
+  const k=Math.max(fitScale()*.6,Math.min(5,view.k*f));f=k/view.k;
+  view.x=cx-(cx-view.x)*f;view.y=cy-(cy-view.y)*f;view.k=k;apply(anim);
+}
+map.addEventListener("wheel",e=>{e.preventDefault();zoomAt(Math.exp(-e.deltaY*0.0015),e.clientX,e.clientY);settleSoon();},{passive:false});
+const ptrs=new Map();let drag=null,moved=0,pinch=null;
+map.addEventListener("pointerdown",e=>{
+  if(e.button!==0&&e.pointerType==="mouse")return;
+  map.setPointerCapture(e.pointerId);ptrs.set(e.pointerId,{x:e.clientX,y:e.clientY});
+  moved=0;drag={target:e.target};
+  if(ptrs.size===2){const [a,b]=[...ptrs.values()];pinch={d:Math.hypot(a.x-b.x,a.y-b.y),k:view.k};}
+  map.classList.add("dragging");world.classList.remove("anim");
+});
+map.addEventListener("pointermove",e=>{
+  if(!ptrs.has(e.pointerId))return;
+  const prev=ptrs.get(e.pointerId);ptrs.set(e.pointerId,{x:e.clientX,y:e.clientY});
+  if(ptrs.size===2&&pinch){
+    const [a,b]=[...ptrs.values()];const d=Math.hypot(a.x-b.x,a.y-b.y);
+    zoomAt((pinch.k*d/pinch.d)/view.k,(a.x+b.x)/2,(a.y+b.y)/2);
+    view.x+=(e.clientX-prev.x)/2;view.y+=(e.clientY-prev.y)/2;apply();moved=99;return;
+  }
+  if(drag){view.x+=e.clientX-prev.x;view.y+=e.clientY-prev.y;moved+=Math.abs(e.clientX-prev.x)+Math.abs(e.clientY-prev.y);apply();}
+});
+function endPtr(e){
+  if(!ptrs.has(e.pointerId))return;
+  ptrs.delete(e.pointerId);
+  if(ptrs.size<2)pinch=null;
+  if(ptrs.size===0){
+    map.classList.remove("dragging");
+    if(drag&&moved<6){const st=drag.target.closest&&drag.target.closest(".st");
+      const lm=drag.target.closest&&drag.target.closest(".lmk");
+      if(lm){closePop();setEnd("to",parseToken(lm.dataset.place));}
+      else if(st&&st.dataset.id)openPop(st.dataset.id);else closePop();}
+    drag=null;settleView();
+  }
+}
+map.addEventListener("pointerup",endPtr);map.addEventListener("pointercancel",endPtr);
+base.addEventListener("keydown",e=>{const lm=e.target.closest(".lmk");if(lm&&(e.key==="Enter"||e.key===" ")){e.preventDefault();setEnd("to",parseToken(lm.dataset.place));return;}const st=e.target.closest(".st");if(st&&(e.key==="Enter"||e.key===" ")){e.preventDefault();openPop(st.dataset.id);}});
+$("#zin").onclick=()=>zoomAt(1.4,innerWidth/2,innerHeight/2,true);
+$("#zout").onclick=()=>zoomAt(1/1.4,innerWidth/2,innerHeight/2,true);
+$("#zfit").onclick=()=>fitBox(BOX,true);
+
+// station popover
+const pop=$("#pop");let popId=null;
+function chipsFor(id){return [...ST[id].lines].map(l=>`<span class="chip"><i class="dot" style="background:${LINES[l].c}"></i>${t(LINES[l].key)}</span>`).join("")+
+  (WALK_OF[id]?`<span class="chip">↔ ${ST[WALK_OF[id].to].n}, ${esc(t("walkChip",{n:WALK_OF[id].t}))}</span>`:"");}
+function openPop(id){
+  popId=id;const s=ST[id];pop.dir=LANGS.find(l=>l.code===LANG).rtl?"rtl":"ltr";
+  const near=PLACES.filter(p=>p.st===id);
+  pop.innerHTML=`<h3>${esc(s.n)}</h3><div class="lines">${chipsFor(id)}</div>`+
+    `<div class="former">${esc(ZONE[id]?t("zone",{z:ZONE[id]}):t("sepTicket"))}${s.f.length?` · ${esc(t("formerly",{x:s.f.join(", ")}))}`:""}</div>`+
+    ([...s.lines].some(l=>isSuspended(LINES[l].kind))?`<div class="warn">${esc(t("monoSuspended"))}</div>`:"")+
+    near.filter(p=>p.note).map(p=>`<div class="near">${esc(t(p.note))}</div>`).join("")+
+    (near.some(p=>!p.note)?`<div class="near"><span>${esc(t("nearby"))}</span> ${near.filter(p=>!p.note).map(p=>esc(p.n)).join(", ")}</div>`:"")+
+    `<div class="btns"><button class="a" id="pA">${esc(t("fromHere"))}</button><button class="b" id="pB">${esc(t("toHere"))}</button></div>`+
+    `<button class="wf" id="pW" aria-expanded="false">${esc(t("whereFrom"))}</button><ul class="wfl" id="pWl" hidden></ul>`;
+  pop.hidden=false;placePop();
+  $("#pW").onclick=()=>{
+    const ul=$("#pWl");
+    if(ul.hidden&&!ul.dataset.done){
+      // calculated with the same engine as the main planner
+      const rows=POPULAR.map(pid=>PLACE_BY_ID[pid]).filter(pl=>pl.st!==id).map(pl=>{
+        const rt=route(id,pl.st,"fast");if(!rt)return null;const v=summarize(rt,{st:id},{st:pl.st,lm:pl});return {pl,v};
+      }).filter(Boolean).sort((a,b)=>a.v.time-b.v.time);
+      ul.innerHTML=rows.map(({pl,v})=>`<li><button data-p="${pl.id}"><span>${esc(POPULAR_LABEL[pl.id]?POPULAR_LABEL[pl.id]():pl.n)}</span><b>${esc(rng(v.time,v.timeMax))}</b></button></li>`).join("");
+      ul.dataset.done="1";
+      ul.addEventListener("click",e=>{const b=e.target.closest("button[data-p]");if(!b)return;const pl=PLACE_BY_ID[b.dataset.p];
+        state.from={st:id};fromI.value=endName(state.from);closePop();setEnd("to",{st:pl.st,lm:pl});});
+    }
+    ul.hidden=!ul.hidden;$("#pW").setAttribute("aria-expanded",String(!ul.hidden));placePop();
+  };
+  $("#pA").onclick=()=>{setEnd("from",{st:id});closePop();};
+  $("#pB").onclick=()=>{setEnd("to",{st:id});closePop();};
+  $("#pA").focus({preventScroll:true});
+}
+function closePop(){pop.hidden=true;popId=null;}
+function placePop(){
+  if(popId==null||pop.hidden)return;const s=ST[popId];
+  const sx=view.x+s.x*view.k,sy=view.y+s.y*view.k;
+  const w=pop.offsetWidth,h=pop.offsetHeight;
+  let x=sx-w/2,y=sy-h-16;if(y<8)y=sy+16;
+  const lim=innerWidth<=720?$("#panel").getBoundingClientRect().top-8:innerHeight-8;
+  x=Math.max(8,Math.min(innerWidth-w-8,x));y=Math.max(8,Math.min(lim-h,y));
+  pop.style.left=x+"px";pop.style.top=y+"px";
+}
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closePop();});
+
+// ================= ROUTING =================
+const svcById=Object.fromEntries(SVC.map(s=>[s.id,s]));
+function nodesOf(st){return SVC.filter(s=>s.stops.includes(st)).map(s=>st+"@"+s.id);}
+function neighbors(node){
+  const [st,sid]=node.split("@");const s=svcById[sid];const out=[];
+  const i=s.stops.indexOf(st);
+  (s.oneway?[i+1]:[i-1,i+1]).forEach(j=>{if(j>=0&&j<s.stops.length){const nb=s.stops[j];out.push({to:nb+"@"+sid,t:segT(st,nb,s.line),k:"ride"});}});
+  SVC.forEach(o=>{if(o.id!==sid&&o.stops.includes(st))out.push({to:st+"@"+o.id,t:o.line===s.line?XFER_SAME:XFER_LINE,k:"xfer"});});
+  if(WALK_OF[st])nodesOf(WALK_OF[st].to).forEach(n=>out.push({to:n,t:WALK_OF[st].t,k:"walk"}));
+  return out;
+}
+// Typical wait when boarding (minutes), from published headways. Used only for the upper end of the time range.
+// Headways (minutes) by line and time of day, from the same RTA timetable; monorail from the operator.
+// Red Line trains alternate between the Expo and Life Pharmacy branches, so beyond National Paints
+// a given branch is served half as often.
+const HEADWAY={red:{peak:3,day:4,late:9},green:{peak:6,day:10,late:10},tram:{peak:8,day:8,late:8},mono:{peak:15,day:15,late:15}};
+const EXPECTED_WAIT={red:2,green:5,tram:4,mono:7.5}; // about half the daytime headway, used to compare routes
+function periodAt(at){const wk=at.d>=1&&at.d<=5;const h=Math.floor(at.m/60)%24;
+  if(h>=21||h<5)return "late";if(wk&&((h>=7&&h<10)||(h>=17&&h<20)))return "peak";return "day";}
+function headwayFor(l,at){const line=svcById[l.svc].line;let hw=HEADWAY[line][periodAt(at)];
+  if(line==="red"&&l.stops.some(x=>svcById.R1.stops.indexOf(x)>NP_I||(svcById.R2.stops.indexOf(x)>NP_I)))hw*=2;return hw;}
+// Lexicographic Dijkstra over (station, service, onboard) states.
+// Metrics are tracked separately:
+//   time  = riding + in-station changes + walking links (minutes, estimates)
+//   rides = number of boardings; transfers = rides - 1 (only a new boarding is a transfer)
+//   walk  = minutes on foot between stations (never counted as a transfer)
+// Each mode only chooses the order in which these metrics are compared.
+const xfOf=c=>Math.max(0,c.rides-1);
+// "eff" = time plus the typical wait for every boarding after the first, so a transfer is never
+// treated as free when comparing routes (the displayed range still shows time and time+waits).
+const CRITERIA={fast:c=>[c.eff,xfOf(c),c.walk],few:c=>[xfOf(c),c.eff,c.walk],walk:c=>[c.walk,c.eff,xfOf(c)]};
+const lessThan=(a,b)=>{for(let i=0;i<a.length;i++){if(a[i]<b[i])return true;if(a[i]>b[i])return false;}return false;};
+function route(a,b,mode){
+  const key=CRITERIA[mode];const cost={},prev={},done=new Set();
+  // state "st@svc#0" = standing at the station, able to board svc; "#1" = on board
+  nodesOf(a).forEach(n=>{cost[n+"#0"]={time:0,eff:0,rides:0,walk:0};});
+  while(true){
+    let u=null;
+    for(const n in cost)if(!done.has(n)&&(u==null||lessThan(key(cost[n]),key(cost[u]))))u=n;
+    if(u==null)return null;
+    const [node,ob]=u.split("#");
+    if(node.split("@")[0]===b){
+      // walk back, keeping the kind of every step (ride / xfer / walk)
+      const steps=[{n:u,k:null}];while(prev[steps[0].n]){const p=prev[steps[0].n];steps[0].k=p.k;steps.unshift({n:p.u,k:null});}
+      const nodes=[],kinds=[];
+      steps.forEach(x=>{const nd=x.n.split("#")[0];if(nodes.length&&nodes[nodes.length-1]===nd)return;nodes.push(nd);kinds.push(x.k);});
+      return {path:nodes,kinds,...cost[u],transfers:xfOf(cost[u])};
+    }
+    done.add(u);
+    for(const e of neighbors(node)){
+      const c={...cost[u]};let to;
+      if(e.k==="ride"){c.time+=e.t;c.eff+=e.t;if(ob!=="1"){if(c.rides>0)c.eff+=EXPECTED_WAIT[svcById[node.split("@")[1]].line];c.rides+=1;}to=e.to+"#1";}
+      else if(e.k==="xfer"){c.time+=e.t;c.eff+=e.t;to=e.to+"#0";}
+      else{c.time+=e.t;c.eff+=e.t;c.walk+=e.t;to=e.to+"#0";}
+      if(cost[to]==null||lessThan(key(c),key(cost[to]))){cost[to]=c;prev[to]={u,k:e.k};}
+    }
+  }
+}
+// The three options (fastest, fewer changes, least walking); identical routes are merged
+function computeVariants(from,to){
+  const variants=[];
+  for(const m of ["fast","few","walk"]){
+    const rt=route(from.st,to.st,m);if(!rt)continue;
+    const v=summarize(rt,from,to);
+    const same=variants.find(x=>x.sig===v.sig);
+    if(same)same.modes.push(m);else variants.push({...v,modes:[m]});
+  }
+  return variants;
+}
+// "Why this route?": one line per option, built only from the calculated numbers and compared with the
+// fastest option. Times are compared on the range shown to the user (without waiting / with typical waiting):
+// a difference is stated only when both ends agree; otherwise the line says the time depends on waiting.
+function timeDiff(v,f){
+  const lo=v.time-f.time,hi=v.timeMax-f.timeMax;
+  if(lo===0&&hi===0)return {k:"same"};
+  if(lo>=0&&hi>=0)return {k:"slower",n:Math.max(1,Math.round((lo+hi)/2))};
+  if(lo<=0&&hi<=0)return {k:"faster",n:Math.max(1,Math.round(-(lo+hi)/2))};
+  return {k:"similar"};
+}
+function explainVariants(variants){
+  const f=variants.find(v=>v.modes.includes("fast"))||variants[0];
+  const say=d=>d.k==="slower"?t("whySlower",{n:d.n}):d.k==="faster"?t("whyFaster",{n:d.n}):d.k==="same"?t("whySameTime"):t("whySimilar");
+  return variants.map(v=>{
+    const parts=[];
+    if(v===f){
+      const others=variants.filter(x=>x!==f);
+      const ds=others.map(x=>timeDiff(x,f));
+      if(ds.length&&ds.every(d=>d.k==="slower"))parts.push(t("whyFaster",{n:Math.min(...ds.map(d=>d.n))}));
+      else if(ds.length&&ds.every(d=>d.k==="same"))parts.push(t("whySameTime"));
+      else parts.push(t("whySimilar"));
+      if(f.xf===0&&others.some(x=>x.xf>0))parts.push(t("whyDirect"));
+    }else{
+      const dx=f.xf-v.xf,dw=f.walk-v.walk;
+      if(dx>0)parts.push(v.xf===0?t("whyDirect"):t("whyFewerXf",{n:dx}));
+      else if(dx<0)parts.push(t("whyMoreXf",{n:-dx}));
+      if(dw>0)parts.push(t("whyLessWalk",{n:dw}));else if(dw<0)parts.push(t("whyMoreWalk",{n:-dw}));
+      parts.push(say(timeDiff(v,f)));
+    }
+    // one sentence-like line: capital first part, lower-case continuation (no effect on scripts without case)
+    return parts.map((x,i)=>i===0?x.charAt(0).toLocaleUpperCase(LANG)+x.slice(1):x.charAt(0).toLocaleLowerCase(LANG)+x.slice(1)).join(" · ");
+  });
+}
+// Summary of one route, including walking to and from places and a waiting allowance
+function summarize(rt,from=state.from,to=state.to){
+  const legs=Array.isArray(rt)?toLegs(rt):toLegs(rt.path,rt.kinds);
+  const rides=legs.filter(l=>l.type==="ride");
+  const ride=rides.reduce((a,l)=>a+legTime(l),0);
+  const changeT=legs.filter(l=>l.type!=="ride").reduce((a,l)=>a+l.t,0);
+  const endWalk=(from.lm?.min||0)+(to.lm?.min||0);
+  const walk=endWalk+legs.filter(l=>l.type==="walk").reduce((a,l)=>a+l.t,0);
+  const time=Math.round(ride+changeT+endWalk);
+  const at=dubaiAt(state.departMs||Date.now());
+  const wait=rides.reduce((a,l)=>a+headwayFor(l,at),0);
+  // a transfer = a new boarding after the first one; walking never counts
+  return {legs,time,timeMax:Math.round(time+wait),walk,xf:Math.max(0,rides.length-1),rides:rides.length,
+    stops:rides.reduce((a,l)=>a+l.stops.length-1,0),
+    sig:legs.map(l=>l.type+":"+(l.svc||"")+":"+(l.stops||[l.from,l.to]).join(">")).join("|")};
+}
+
+// kinds[i] = how path[i] was reached from path[i-1] ("ride", "xfer" or "walk")
+function toLegs(path,kinds){
+  const legs=[];let cur=null;
+  for(let i=0;i<path.length;i++){
+    const [st,sid]=path[i].split("@");
+    if(!cur){cur={type:"ride",svc:sid,stops:[st]};continue;}
+    const [pst,psid]=path[i-1].split("@");
+    const k=kinds?kinds[i]:(sid===psid&&st!==pst?"ride":(st===pst?"xfer":"walk"));
+    if(k==="ride")cur.stops.push(st);
+    else{
+      if(cur.stops.length>1)legs.push(cur);
+      const kind=k;
+      if(cur.stops.length>1||kind==="walk")legs.push({type:kind,from:pst,to:st,svc:sid,fromSvc:psid,t:kind==="walk"?WALK_OF[pst].t:(svcById[sid].line===svcById[psid].line?XFER_SAME:XFER_LINE)});
+      cur={type:"ride",svc:sid,stops:[st]};
+    }
+  }
+  if(cur&&cur.stops.length>1)legs.push(cur);
+  while(legs.length&&legs[0].type==="xfer")legs.shift();
+  while(legs.length&&legs[legs.length-1].type==="xfer")legs.pop();
+  return legs;
+}
+function direction(leg){
+  const s=svcById[leg.svc];const i0=s.stops.indexOf(leg.stops[0]),i1=s.stops.indexOf(leg.stops[leg.stops.length-1]);
+  const fwd=i1>i0;
+  if(s.line==="red"){
+    if(!fwd)return "Centrepoint";
+    if(i1>NP_I)return leg.svc==="R1"?"Life Pharmacy":"Expo 2020";
+    return t("or",{a:"Life Pharmacy",b:"Expo 2020"});
+  }
+  if(s.line==="green")return fwd?"Creek":"e&";
+  if(s.line==="tram")return leg.svc==="T"?"Al Sufouh":"JBR 1";
+  return fwd?"Atlantis Aquaventure":"Palm Gateway";
+}
+const legTime=l=>{let t=0;for(let i=1;i<l.stops.length;i++)t+=segT(l.stops[i-1],l.stops[i],svcById[l.svc].line);return t;};
+
+// ================= STATE =================
+// an end is {st} for a station or {st, lm} for a place served by that station
+const state={from:null,to:null,mode:"fast",departMs:null,view:"route",tour:null,tourBack:null};
+// departure choices: now, then every 30 minutes for the next 24 hours (Dubai time)
+function renderLeave(){
+  const sel=$("#leave");const keep=state.departMs;
+  const now=Date.now();const at=dubaiAt(now);
+  let first=now+((30-at.m%30)%30||30)*60000;first-=first%60000;
+  let html=`<option value="">${esc(t("leaveNow"))}</option>`;
+  for(let i=0;i<48;i++){const ms=first+i*30*60000;const a=dubaiAt(ms);
+    html+=`<option value="${ms}">${hm(a.m)}${a.d!==at.d?" (+1)":""}</option>`;}
+  sel.innerHTML=html;
+  if(keep&&[...sel.options].some(o=>o.value===String(keep)))sel.value=String(keep);else{sel.value="";state.departMs=null;}
+}
+const fromI=$("#from"),toI=$("#to"),res=$("#result");
+$("#reset").addEventListener("click",()=>{
+  state.from=null;state.to=null;state.mode="fast";state.departMs=null;state.tourBack=null;
+  fromI.value="";toI.value="";renderLeave();closePop();$("#card").hidden=true;
+  update(false);fitBox(homeBox(),true);
+  // no focus here: focusing the field would pop open the suggestions list (and the phone keyboard)
+  if(document.activeElement)document.activeElement.blur();
+});
+$("#leave").addEventListener("change",e=>{state.departMs=e.target.value?+e.target.value:null;update(false);});
+const endName=e=>e?(e.lm?e.lm.n:ST[e.st].n):"";
+const endToken=e=>e.lm?e.lm.id:e.st;
+function parseToken(t){if(ST[t])return {st:t};const p=PLACE_BY_ID[t];return p?{st:p.st,lm:p}:null;}
+function setEnd(k,e){if(state.view!=="route"){state.view="route";$("#panel").classList.remove("explore");$("#vRoute").setAttribute("aria-selected","true");$("#vExplore").setAttribute("aria-selected","false");}state[k]=e;(k==="from"?fromI:toI).value=endName(e);update(true);}
+$("#swap").onclick=()=>{const a=state.from;state.from=state.to;state.to=a;fromI.value=endName(state.from);toI.value=endName(state.to);update(true);};
+$("#clrFrom").onclick=()=>{setEnd("from",null);fromI.focus();};
+$("#clrTo").onclick=()=>{setEnd("to",null);toI.focus();};
+function setMin(on){const p=$("#panel");p.classList.toggle("min",on);$("#grab").setAttribute("aria-expanded",String(!on));
+  $("#grab").setAttribute("aria-label",t(on?"show":"hide"));
+  requestAnimationFrame(()=>{if(state.from&&state.to&&routeBox)fitBox(routeBox,true,1.6);});}
+function renderMinbar(){const {from,to}=state;const mb=$("#minbar");
+  if(from&&to&&lastRoute)mb.innerHTML=`<b>${esc(rng(lastRoute.time,lastRoute.timeMax))}</b><span>${esc(endName(from)+" → "+endName(to))}</span><em>▴</em>`;
+  else mb.innerHTML=`<span>${esc(t("phTo"))}</span><em>▴</em>`;}
+$("#grab").onclick=()=>{renderMinbar();setMin(!$("#panel").classList.contains("min"));};
+$("#minbar").onclick=()=>setMin(false);
+$("#tog").onclick=()=>{const p=$("#panel");const c=p.classList.toggle("collapsed");$("#tog").textContent=t(c?"show":"hide");$("#tog").setAttribute("aria-expanded",String(!c));};
+
+// popular places
+function renderChips(){$("#chips").innerHTML=`<span class="lbl">${esc(t("popular"))}</span>`+POPULAR.map(id=>`<button data-p="${id}">${esc(POPULAR_LABEL[id]?POPULAR_LABEL[id]():PLACE_BY_ID[id].n)}</button>`).join("");}
+$("#chips").addEventListener("click",e=>{const b=e.target.closest("button[data-p]");if(!b)return;const p=PLACE_BY_ID[b.dataset.p];
+  const end={st:p.st,lm:p};
+  if(!state.to){setEnd("to",end);if(!state.from)fromI.focus();}else if(!state.from)setEnd("from",end);else setEnd("to",end);});
+
+function writeHash(){
+  if(state.view==="explore")return;
+  try{const h=state.from&&state.to?"#"+endToken(state.from)+"~"+endToken(state.to)+"~"+LANG:"";
+    history.replaceState(null,"",location.pathname+location.search+h);}catch(e){}
+}
+function shareUrl(){return BASE_URL+"#"+endToken(state.from)+"~"+endToken(state.to)+"~"+LANG;}
+
+function drawPins(){
+  pinsG.innerHTML="";
+  [["from","A","var(--pinA)"],["to","B","var(--pinB)"]].forEach(([k,l,c])=>{
+    const e=state[k];if(!e)return;const s=ST[e.st];
+    const g=el("g",{class:"pin"},pinsG);
+    el("circle",{cx:s.x,cy:s.y,r:11,fill:c},g);
+    const t=el("text",{x:s.x,y:s.y+4},g);t.textContent=l;
+  });
+}
+
+function infoHTML(){return `<details class="info" id="infoBox"><summary>${esc(t("hoursFares"))}</summary>
+  <table><tr><th></th><th>${esc(t("mMetro"))}</th><th>${esc(t("mTram"))}</th><th>${esc(t("mMono"))}</th></tr>
+  <tr><td>${esc(t("monThu"))}</td><td>05:00–00:00</td><td>06:00–01:00</td><td>${esc(isSuspended("mono")?t("suspendedShort"):"09:00–22:00")}</td></tr>
+  <tr><td>${esc(t("fri"))}</td><td>05:00–01:00</td><td>06:00–01:00</td><td>${esc(isSuspended("mono")?t("suspendedShort"):"09:00–22:00")}</td></tr>
+  <tr><td>${esc(t("sat"))}</td><td>05:00–00:00</td><td>06:00–01:00</td><td>${esc(isSuspended("mono")?t("suspendedShort"):"09:00–22:00")}</td></tr>
+  <tr><td>${esc(t("sun"))}</td><td>08:00–00:00</td><td>09:00–01:00</td><td>${esc(isSuspended("mono")?t("suspendedShort"):"09:00–22:00")}</td></tr></table>
+  <table><tr><th>${esc(t("metroTram"))}</th><th>${esc(t("z1"))}</th><th>${esc(t("z2"))}</th><th>${esc(t("z3"))}</th></tr>
+  <tr><td>Silver Nol</td><td>AED 3</td><td>AED 5</td><td>AED 7.5</td></tr>
+  <tr><td>Gold Nol</td><td>AED 6</td><td>AED 10</td><td>AED 15</td></tr>
+  <tr><td>Red ticket</td><td>AED 4</td><td>AED 6</td><td>AED 8.5</td></tr></table>
+  <p>${esc(t("infoP"))}</p></details>`;}
+// Report text for the site owner (labels in English so every report reads the same)
+function reportContext(){
+  const inRoute=state.view==="route";const from=inRoute?state.from:null,to=inRoute?state.to:null;const r=inRoute?lastRoute:null;
+  const MODE={fast:"Fastest",few:"Fewer changes",walk:"Least walking"};
+  const lines=r?r.legs.map(l=>l.type==="ride"?I18N.en[LINES[svcById[l.svc].line].key]:(l.type==="walk"?"walk "+l.t+" min":"change")).join(" > "):"";
+  let url="";try{url=!inRoute?BASE_URL+"#tour~"+(state.tour||"all")+"~"+LANG:(from&&to?shareUrl():BASE_URL);}catch(e){url=BASE_URL;}
+  return {from:from?endName(from):"",to:to?endName(to):"",mode:r?MODE[state.mode]||"Fastest":"",lines,
+    transfers:r?r.xf:"",walking:r?r.walk+" min":"",time:r?r.time+"–"+r.timeMax+" min":"",language:LANG,url,
+    view:state.view,tour:state.view==="explore"?state.tour||"":""};
+}
+function reportText(c){
+  return ["From: "+(c.from||"-"),"To: "+(c.to||"-"),"Route option: "+(c.mode||"-"),"Lines: "+(c.lines||"-"),
+    "Transfers: "+(c.transfers===""?"-":c.transfers),"Walking: "+(c.walking||"-"),"Travel time (estimate): "+(c.time||"-"),
+    (c.tour?"Itinerary: "+c.tour:null),"Language: "+c.language,"Link: "+c.url,"","What is wrong:",""].filter(x=>x!==null).join("\n");
+}
+function reportTarget(c){
+  const body=reportText(c),title=c.from&&c.to?c.from+" → "+c.to:"Dubai Metro Map";
+  if(REPORT_URL){
+    if(/github\.com\/[^/]+\/[^/]+\/issues/.test(REPORT_URL)){
+      const base=REPORT_URL.replace(/\/$/,"");
+      return {kind:"url",href:(base.endsWith("/new")?base:base+"/new")+"?title="+encodeURIComponent(title)+"&body="+encodeURIComponent(body)};
+    }
+    return {kind:"url",href:REPORT_URL};
+  }
+  if(REPORT_EMAIL)return {kind:"mail",href:"mailto:"+REPORT_EMAIL+"?subject="+encodeURIComponent("Dubai Metro Map: "+title)+"&body="+encodeURIComponent(body),email:REPORT_EMAIL};
+  return {kind:"none"};
+}
+function openReport(){
+  const c=reportContext(),tg=reportTarget(c),txt=reportText(c);
+  const box=$("#card");box.dir=LANGS.find(l=>l.code===LANG).rtl?"rtl":"ltr";
+  box.innerHTML=`<div class="cbox" role="dialog" aria-modal="true" aria-labelledby="rTitle">
+    <div class="chead"><span class="cbrand">${esc(t("title"))}</span><button class="cclose" id="cClose" aria-label="${esc(t("close"))}">×</button></div>
+    <h2 id="rTitle">${esc(t("report"))}</h2>
+    ${tg.kind==="none"?`<p class="rnote">${esc(t("reportNotSet"))}</p>`:""}
+    <textarea id="rText" readonly dir="ltr" rows="10" aria-label="${esc(t("report"))}">${esc(txt)}</textarea>
+    <div class="share">${tg.kind==="url"?`<a class="primary" href="${esc(tg.href)}" target="_blank" rel="noopener">${esc(t("openFeedback"))}</a>`:""}
+      ${tg.kind==="mail"?`<a class="primary" href="${esc(tg.href)}">${esc(t("sendEmail"))}</a>`:""}
+      <button id="rCopy">${esc(t("copyDetails"))}</button></div>
+    ${tg.kind==="mail"?`<p class="rnote" dir="ltr">${esc(tg.email)}</p>`:""}
+  </div>`;
+  box.hidden=false;
+  $("#cClose").onclick=closeCard;
+  $("#rCopy").onclick=()=>{const b=$("#rCopy"),ta=$("#rText");
+    const fb=()=>{ta.focus();ta.select();};
+    try{navigator.clipboard.writeText(txt).then(()=>{b.textContent=t("copied");setTimeout(()=>b.textContent=t("copyDetails"),2000);},fb);}catch(e){fb();}};
+  $("#cClose").focus();
+}
+function reportLink(){return `<button class="report" data-report="1">${esc(t("report"))}</button>`;}
+res.addEventListener("click",e=>{if(e.target.closest("[data-report]"))openReport();});
+function footHTML(){const ab=document.getElementById("about")?` · <a href="#" class="aboutlink">${esc(t("aboutLink"))}</a>`:"";
+  return infoHTML()+`<div class="foot">${esc(t("foot"))}<p class="src">${esc(t("attrib"))} ${esc(t("monoSource"))}</p>${reportLink()}${ab}</div>`;}
+// "About this map" (present on the public site): plain text for readers and search engines, opened as a dialog
+function openAbout(e){if(e)e.preventDefault();const a=document.getElementById("about");if(!a)return;a.classList.add("open");a.setAttribute("role","dialog");a.setAttribute("aria-modal","true");a.querySelector("button")?.focus();}
+if(document.getElementById("about"))document.getElementById("infoBtn").hidden=false;
+$("#infoBtn").onclick=()=>openAbout();
+function closeAbout(){const a=document.getElementById("about");if(!a)return;a.classList.remove("open");a.removeAttribute("role");a.removeAttribute("aria-modal");}
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeAbout();});
+document.addEventListener("click",e=>{if(e.target.closest&&e.target.closest(".aboutlink"))openAbout(e);else if(e.target.closest&&e.target.closest("#aboutClose"))closeAbout();else if(e.target.closest&&e.target.closest("#about a[href^='#']")){closeAbout();}});
+
+function hint(msg){const o=document.getElementById("infoBox")?.open;res.innerHTML=`<div class="hint">${esc(msg)}</div>`+footHTML();if(o)document.getElementById("infoBox").open=true;}
+
+function update(fit,noAnim){
+  if(state.view==="explore"){renderExplore(fit);return;}
+  drawPins();overlay.innerHTML="";base.querySelectorAll(".st.hid").forEach(n=>n.classList.remove("hid"));base.classList.remove("dim");writeHash();
+  const {from,to}=state;
+  $("#panel").classList.toggle("has-route",!!(from&&to));
+  $("#panel").classList.toggle("empty",!from&&!to);
+  // a new trip opens with the short summary; details are one tap away (phones)
+  const sig=(from?endToken(from):"")+">"+(to?endToken(to):"");if(sig!==lastSig){lastSig=sig;$("#panel").classList.add("peek");$("#panel").classList.remove("min");}
+  fromI.placeholder=t(to&&!from?"startQ":"phFrom");
+  $("#reset").hidden=!(from||to);
+  if(!from||!to){
+    hint(t(to&&!from?"startQ":(from?"hintOne":"hintNone")));
+    return;
+  }
+  if(from.st===to.st){
+    if(from.lm&&to.lm&&from.lm!==to.lm)hint(t("hintBoth",{a:from.lm.n,b:to.lm.n,s:ST[from.st].n}));
+    else hint(t("hintSame"));
+    return;
+  }
+  const variants=computeVariants(from,to);
+  if(!variants.length){hint(t("noRoute"));return;}
+  const r=variants.find(v=>v.modes.includes(state.mode))||variants[0];
+  renderResult(r,variants);
+  base.classList.add("dim");
+  const ids=new Set();
+  r.legs.forEach(l=>{
+    if(l.type==="ride"){
+      const line=svcById[l.svc].line;
+      linePath(overlay,line,l.stops);
+      l.stops.forEach(s=>ids.add(s));
+    }else if(l.type==="walk"){
+      el("line",{class:"walk",style:"opacity:.7",x1:ST[l.from].x,y1:ST[l.from].y,x2:ST[l.to].x,y2:ST[l.to].y},overlay);
+      ids.add(l.from);ids.add(l.to);
+    }
+  });
+  ids.forEach(id=>base.querySelector(`.st[data-id="${id}"]`)?.classList.add("hid"));const ov=el("g",{class:"ov"},overlay);
+  ids.forEach(id=>drawStation(id,ov,false));
+  {const xs=[...ids].map(i=>ST[i].x),ys=[...ids].map(i=>ST[i].y);
+    routeBox={x0:Math.min(...xs)-80,x1:Math.max(...xs)+170,y0:Math.min(...ys)-110,y1:Math.max(...ys)+110};}
+  if(fit)fitBox(routeBox,!noAnim,1.6);
+}
+
+// Turn the calculated legs into numbered, plain-language instructions
+function buildSteps(r){
+  const {from,to}=state;const steps=[];
+  const lname=sid=>t(LINES[svcById[sid].line].key);
+  const legs=r.legs.slice();
+  const leadWalk=legs[0]&&legs[0].type==="walk"?legs.shift():null;
+  const tailWalk=legs.length&&legs[legs.length-1].type==="walk"?legs.pop():null;
+  if(from.lm){
+    if(leadWalk)steps.push({walk:true,min:leadWalk.t+(from.lm.min||0),title:t("goTo",{s:ST[leadWalk.to].n}),sub:t("onFootFrom",{n:leadWalk.t+(from.lm.min||0),x:from.lm.n})});
+    else steps.push({walk:true,min:from.lm.min||0,title:t("goTo",{s:ST[from.st].n}),
+      sub:from.lm.note?t(from.lm.note):from.lm.min?t("fromPlace",{n:from.lm.min,p:from.lm.n,w:t(from.lm.walk)}):t("nearestTo",{p:from.lm.n})});
+  }else if(leadWalk)steps.push({walk:true,min:leadWalk.t,title:t("walkTo",{s:ST[leadWalk.to].n}),sub:t("onFootFrom",{n:leadWalk.t,x:ST[leadWalk.from].n})});
+  legs.forEach((l,i)=>{
+    if(l.type==="ride"){
+      const L=LINES[svcById[l.svc].line],n=l.stops.length-1,tm=Math.round(legTime(l));
+      const first=i===0||legs[i-1].type==="walk";
+      steps.push({c:L.c,ink:L.ink,min:tm,
+        title:t("take",{l:t(L.key),d:direction(l)}),
+        sub:(first?t("boardAt",{s:ST[l.stops[0]].n})+" · ":"")+t("stops",{n})+" · "+t("min",{n:tm}),
+        off:ST[l.stops[n]].n,mid:l.stops.slice(1,-1)});
+    }else if(l.type==="xfer"){
+      const same=svcById[l.svc].line===svcById[l.fromSvc].line;
+      steps.push({walk:true,min:l.t,title:same?t("changeTrains",{s:ST[l.from].n}):t("changeTo",{l:lname(l.svc)}),
+        sub:same?t("waitPlatform",{d:l.svc==="R2"?"Expo 2020":"Life Pharmacy",n:l.t}):t("followSigns",{l:lname(l.svc),s:ST[l.from].n,n:l.t})});
+    }else{
+      const w=WALKS.find(w=>(w.a===l.from&&w.b===l.to)||(w.b===l.from&&w.a===l.to));
+      steps.push({walk:true,min:l.t,title:t("walkTo",{s:ST[l.to].n}),sub:t(w.long?"onFootOut":"onFootSign",{n:l.t})});
+    }
+  });
+  if(to.lm){
+    if(tailWalk)steps.push({walk:true,min:tailWalk.t+(to.lm.min||0),title:t("walkToPlace",{p:to.lm.n}),sub:t("onFootFrom",{n:tailWalk.t+(to.lm.min||0),x:ST[tailWalk.from].n})});
+    else steps.push({walk:true,min:to.lm.min||0,title:to.lm.note?to.lm.n:t("walkToPlace",{p:to.lm.n}),
+      sub:to.lm.note?t(to.lm.note):to.lm.min?t("placeWalk",{n:to.lm.min,w:t(to.lm.walk)}):t("noWalkData")});
+  }else if(tailWalk)steps.push({walk:true,min:tailWalk.t,title:t("walkTo",{s:ST[tailWalk.to].n}),sub:t("onFootFrom",{n:tailWalk.t,x:ST[tailWalk.from].n})});
+  return steps;
+}
+
+const WALK_ICO=`<svg class="wico" viewBox="0 0 12 16" aria-hidden="true"><circle cx="7" cy="2" r="1.6" fill="currentColor"/><path d="M6 5l-2 4 2 1 1 5M6 5l3 3 2-1M5 10l-2 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+let lastRoute=null;
+// Compact, screenshot-friendly summary of the chosen route
+function openCard(){
+  const r=lastRoute;if(!r)return;const {from,to}=state;
+  const rows=[];
+  const walkRow=n=>`<li class="cw">${WALK_ICO}<span>${esc(t("walking",{n}))}</span></li>`;
+  const lead=r.legs[0]&&r.legs[0].type==="walk"?r.legs[0]:null,tail=r.legs.length>1&&r.legs[r.legs.length-1].type==="walk"?r.legs[r.legs.length-1]:null;
+  const startWalk=(from.lm?.min||0)+(lead?lead.t:0);if(startWalk)rows.push(walkRow(startWalk));
+  r.legs.forEach((l,i)=>{
+    if(l===lead||l===tail)return;
+    if(l.type==="ride"){const L=LINES[svcById[l.svc].line];const n=l.stops.length-1;
+      rows.push(`<li class="cr"><span class="ml" style="--c:${L.c};--ink:${L.ink}">${esc(t(L.key))}</span><span>${esc(ST[l.stops[0]].n)} → ${esc(ST[l.stops[n]].n)}<small>${esc(t("towards",{d:direction(l)})+" · "+t("stops",{n}))}</small></span></li>`);}
+    else if(l.type==="xfer")rows.push(`<li class="cx"><span class="xi" aria-hidden="true">⇄</span><span>${esc(t("changeAt",{s:ST[l.from].n}))}</span></li>`);
+    else rows.push(walkRow(l.t));
+  });
+  const endWalk=(to.lm?.min||0)+(tail?tail.t:0);if(endWalk)rows.push(walkRow(endWalk));
+  rows.push(`<li class="cd"><span class="pinb">B</span><span>${esc(endName(to))}</span></li>`);
+  const zs=new Set();let mono=false;
+  r.legs.forEach(l=>{if(l.type!=="ride")return;if(svcById[l.svc].line==="mono"){mono=true;return;}l.stops.forEach(id=>zs.add(ZONE[id]));});
+  const mf=monoFareOf(r.legs);
+  const fare=zs.size?`AED ${FARES.silver[fareIdx(zs.size)]}${mono?" + "+mf:""}`:(mono?`AED ${mf}`:"");
+  const c=$("#card");
+  c.dir=LANGS.find(l=>l.code===LANG).rtl?"rtl":"ltr";
+  c.innerHTML=`<div class="cbox" role="dialog" aria-modal="true" aria-labelledby="cTitle">
+    <div class="chead"><span class="cbrand">${esc(t("title"))}</span><button class="cclose" id="cClose" aria-label="${esc(t("close"))}">×</button></div>
+    <h2 id="cTitle">${esc(endName(from))} → ${esc(endName(to))}</h2>
+    <div class="ctime">${esc(rng(r.time,r.timeMax))}</div>
+    <div class="cmeta">${esc((r.xf?t("changes",{n:r.xf}):t("noChanges"))+" · "+(r.walk?t("walking",{n:r.walk}):t("noWalking"))+(r.stops?" · "+t("stops",{n:r.stops}):""))}</div>
+    <ol class="crows">${rows.join("")}</ol>
+    ${mono&&isSuspended("mono")?`<div class="warn">${esc(t("monoSuspended"))}</div>`:""}
+    ${fare?`<div class="cfare"><span>${esc(t("estFare"))}</span><b>${fare}</b></div>`:""}
+    <div class="cfoot"><div class="cqr" id="cQr"></div><p>${esc(t("estNote"))}</p></div>
+  </div>`;
+  c.hidden=false;
+  if(window.QRCode)new QRCode($("#cQr"),{text:shareUrl(),width:96,height:96,colorDark:"#000000",colorLight:"#ffffff",correctLevel:QRCode.CorrectLevel.M});
+  else $("#cQr").remove();
+  $("#cClose").onclick=closeCard;$("#cClose").focus();
+}
+function closeCard(){$("#card").hidden=true;$("#shCard")?.focus();}
+$("#card").addEventListener("click",e=>{if(e.target.id==="card")closeCard();});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!$("#card").hidden)closeCard();});
+
+const rng=(a,b)=>a===b?t("min",{n:a}):t("minRange",{a,b});
+function renderResult(r,variants){
+  lastRoute=r;
+  const {from,to}=state;
+  const steps=buildSteps(r);
+  const dep=state.departMs||Date.now();
+  const fmt=m=>new Intl.DateTimeFormat("en-GB",{timeZone:"Asia/Dubai",hour:"2-digit",minute:"2-digit",hourCycle:"h23"}).format(new Date(dep+m*60000));
+  const meta=v=>rng(v.time,v.timeMax)+" · "+(v.xf?t("changes",{n:v.xf}):t("noChanges"))+" · "+(v.walk?t("walking",{n:v.walk}):t("noWalking"));
+  const LBL={fast:"fastest",few:"fewer",walk:"leastWalk"};
+  let h=state.tourBack?`<div class="tbackwrap"><button class="tback" id="tBackRoute"><span class="barr" aria-hidden="true">←</span> ${esc(t("backTour"))}: ${esc(tourText(state.tourBack,0))}</button></div>`:"";
+  const why=variants.length>1?explainVariants(variants):[];
+  if(variants.length>1)h+=`<div class="tabs" role="group" aria-label="${esc(t("optLabel"))}">`+variants.map((v,i)=>
+    `<button data-v="${i}" aria-pressed="${v===r}"><b>${esc(v.modes.map(m=>t(LBL[m])).join(" · "))}</b><span>${esc(meta(v))}</span><em class="why">${esc(why[i])}</em></button>`).join("")+`</div>`;
+  h+=`<div class="sum"><span class="t">${esc(rng(r.time,r.timeMax))}</span><span class="m">${esc((r.xf?t("changes",{n:r.xf}):t("noChanges"))+" · "+(r.walk?t("walking",{n:r.walk}):t("noWalking"))+(r.stops?" · "+t("stops",{n:r.stops}):""))}</span>
+    <span class="arr">${esc(state.departMs?t("arriveFrom",{t0:fmt(0),t1:fmt(r.time),t2:fmt(r.timeMax)}):t("arrive",{t1:fmt(r.time),t2:fmt(r.timeMax)}))}</span><span class="note">${esc(t("estNote"))}</span></div>`;
+  // journey at a glance: walk, lines and changes in order
+  const walkIco=WALK_ICO;
+  const chipsG=[];
+  if(from.lm&&from.lm.min)chipsG.push(`<span class="mw" title="${esc(t("walking",{n:from.lm.min}))}">${walkIco}${from.lm.min}</span>`);
+  r.legs.forEach(l=>{
+    if(l.type==="ride"){const L=LINES[svcById[l.svc].line];chipsG.push(`<span class="ml" style="--c:${L.c};--ink:${L.ink}">${esc(t(L.key))}</span>`);}
+    else if(l.type==="walk")chipsG.push(`<span class="mw" title="${esc(t("walking",{n:l.t}))}">${walkIco}${l.t}</span>`);
+    else if(l.type==="xfer")chipsG.push(`<span class="mx" title="${esc(t("changeAt",{s:ST[l.from].n}))}" aria-label="${esc(t("changeAt",{s:ST[l.from].n}))}">⇄</span>`);
+  });
+  if(to.lm&&to.lm.min)chipsG.push(`<span class="mw" title="${esc(t("walking",{n:to.lm.min}))}">${walkIco}${to.lm.min}</span>`);
+  h+=`<div class="modes" aria-label="${esc(t("routeModes"))}">${chipsG.join('<i class="sep" aria-hidden="true"></i>')}</div>`;
+  const peek=$("#panel").classList.contains("peek");
+  h+=`<div class="morewrap"><button class="more" id="moreBtn" aria-expanded="${!peek}">${esc(t(peek?"more":"less"))} <span aria-hidden="true">${peek?"▴":"▾"}</span></button></div>`;
+  const tw=r.legs.length&&r.legs[r.legs.length-1].type==="walk"?r.legs[r.legs.length-1]:null;
+  if(to.lm&&tw)h+=`<div class="dest"><span class="pinb">B</span><span>${esc(t("destInfo",{p:to.lm.n,n:tw.t+(to.lm.min||0),s:ST[tw.from].n}))}</span></div>`;
+  else if(to.lm&&to.lm.note)h+=`<div class="dest"><span class="pinb">B</span><span>${esc(to.lm.n+": "+t(to.lm.note))}</span></div>`;
+  else if(to.lm)h+=`<div class="dest"><span class="pinb">B</span><span>${esc(to.lm.min?t("destInfo",{p:to.lm.n,n:to.lm.min,s:ST[to.st].n}):t("destInfoNo",{p:to.lm.n,s:ST[to.st].n}))}${to.lm.min?" · "+esc(t(to.lm.walk)):""}</span></div>`;
+  const total=r.timeMax;
+  // estimated fare
+  const zs=new Set();let mono=false;
+  r.legs.forEach(l=>{if(l.type!=="ride")return;if(svcById[l.svc].line==="mono"){mono=true;return;}l.stops.forEach(id=>zs.add(ZONE[id]));});
+  const nz=zs.size;
+  if(nz){const fi=fareIdx(nz);
+    h+=`<div class="fare"><b>AED ${FARES.silver[fi]}${mono?" + "+monoFareOf(r.legs):""}</b><span>${esc(t("estFare")+" · "+t("zones",{n:nz})+(mono?" "+t("plusMono"):""))}</span><span>${esc(t("goldRed",{g:FARES.gold[fi],r:FARES.red[fi]})+(mono?" "+t("monoExtra"):""))}</span></div>`;
+  }else if(mono){
+    h+=`<div class="fare"><b>AED ${monoFareOf(r.legs)}</b><span>${esc(t("monoOnly"))}</span></div>`;
+  }
+  // service hours check
+  const at0=dubaiAt(dep);const warns=[];const seen=new Set();let cum=from.lm?.min||0,closing=false;
+  r.legs.forEach(l=>{
+    if(l.type!=="ride"){cum+=l.t;return;}
+    const k=LINES[svcById[l.svc].line].kind,lt=legTime(l);
+    if(!seen.has(k)&&isSuspended(k)){seen.add(k);warns.unshift(t("monoSuspended"));}
+    if(!seen.has(k)){seen.add(k);
+      const at=addMin(at0,cum),st=svcState(k,at);
+      if(!st.open)warns.push(t("wNotRunning",{m:t(KIND_LABEL[k]),t0:hm(at.m),t:hm(st.opens)}));
+      else if(at.m+headwayFor(l,at)+lt>st.close){warns.push(t("wCloses",{m:t(KIND_LABEL[k]),t:hm(st.close)}));closing=true;}
+    }
+    cum+=lt;
+  });
+  if(closing)warns.push(t("hoursNote"));
+  if(warns.length)h+=`<div class="warn" role="status">${warns.map(w=>`<p>${esc(w)}</p>`).join("")}</div>`;
+  // share
+  const url=shareUrl();
+  const wa="https://wa.me/?text="+encodeURIComponent(t("waMsg",{a:endName(from),b:endName(to),u:url}));
+  h+=`<div class="share"><button id="shCard" class="primary">${esc(t("tripCard"))}</button><button id="shCopy">${esc(t("copy"))}</button><a href="${wa}" target="_blank" rel="noopener">WhatsApp</a><button id="shQr" aria-expanded="false">${esc(t("qr"))}</button></div>
+    <div class="shout" id="shOut" hidden><input id="shUrl" readonly value="${esc(url)}" aria-label="${esc(t("linkLabel"))}" dir="ltr"><div class="qr" id="qr" hidden></div></div>`;
+  // time bar
+  h+=`<div class="bar" aria-hidden="true">`+steps.filter(s=>s.min).map(s=>`<i style="flex:${s.min};background:${s.walk?"var(--rule)":s.c}"></i>`).join("")+`</div>`;
+  // steps
+  let k=0;
+  h+=`<ol class="steps2">`+steps.map(s=>{k++;
+    return `<li class="step${s.walk?" onfoot":""}" style="--c:${s.c||"var(--muted)"};--ink:${s.ink||"#fff"}"><span class="num" aria-hidden="true">${k}</span><div>
+      <div class="tt">${esc(s.title)}</div><div class="sub">${esc(s.sub)}</div>`+
+      (s.off?`<div class="off">${esc(t("getOff",{s:"\u0001"})).replace("\u0001","<b>"+esc(s.off)+"</b>")}</div>`:"")+
+      (s.mid&&s.mid.length?`<details><summary>${esc(t("onWay"))}</summary><ul>${s.mid.map(x=>`<li>${esc(ST[x].n)}</li>`).join("")}</ul></details>`:"")+
+      `</div></li>`;}).join("")+
+    `<li class="step" style="--c:var(--pinB);--ink:#fff"><span class="num" aria-hidden="true">B</span><div><div class="tt">${esc(t("arriveAt",{x:endName(to)}))}</div></div></li></ol>`+footHTML();
+  const wasOpen=document.getElementById("infoBox")?.open;
+  res.innerHTML=h;
+  $("#moreBtn").onclick=()=>{$("#panel").classList.toggle("peek");renderResult(r,variants);if(routeBox)fitBox(routeBox,true,1.6);};
+  if(wasOpen)document.getElementById("infoBox").open=true;
+  $("#tBackRoute")?.addEventListener("click",()=>{state.tour=state.tourBack;state.tourBack=null;setView("explore");});
+  res.querySelectorAll(".tabs button[data-v]").forEach(b=>b.onclick=()=>{state.mode=variants[+b.dataset.v].modes[0];update(true);});
+  $("#shCard").onclick=openCard;
+  $("#shCopy").onclick=()=>{
+    const b=$("#shCopy");
+    const fallback=()=>{$("#shOut").hidden=false;const i=$("#shUrl");i.focus();i.select();b.textContent=t("copyFallback");};
+    try{navigator.clipboard.writeText(url).then(()=>{b.textContent=t("copied");setTimeout(()=>b.textContent=t("copy"),2000);},fallback);}catch(e){fallback();}
+  };
+  $("#shQr").onclick=()=>{
+    const q=$("#qr"),open=q.hidden;
+    $("#shOut").hidden=false;q.hidden=!open;$("#shQr").setAttribute("aria-expanded",String(open));
+    if(open&&!q.dataset.done){
+      if(window.QRCode){new QRCode(q,{text:url,width:160,height:160,colorDark:"#000000",colorLight:"#ffffff",correctLevel:QRCode.CorrectLevel.M});q.dataset.done="1";}
+      else q.textContent=t("qrFail");
+    }
+  };
+}
+
+// ================= SEARCH =================
+const norm=s=>s.toLowerCase().replace(/[^a-z0-9&]/g,"");
+const IDS=Object.keys(ST);
+function matches(q){
+  const n=norm(q);
+  if(!n)return POPULAR.map(id=>({place:PLACE_BY_ID[id],score:0})).concat(IDS.slice().sort((a,b)=>ST[a].n.localeCompare(ST[b].n)).map(id=>({id,score:1})));
+  const out=[];
+  PLACES.forEach(p=>{const nn=norm(p.n);
+    if(nn.startsWith(n))out.push({place:p,score:0});
+    else if(nn.includes(n))out.push({place:p,score:2});
+    else{const a=p.aka.find(x=>norm(x).includes(n));if(a)out.push({place:p,score:2.5,via:a});}
+  });
+  IDS.forEach(id=>{const s=ST[id];const nn=norm(s.n);
+    if(nn.startsWith(n))out.push({id,score:0.5});
+    else if(nn.includes(n))out.push({id,score:2});
+    else if((ALIAS[id]||[]).some(x=>norm(x).startsWith(n)))out.push({id,score:0.6});
+    else{const f=s.f.find(x=>norm(x).includes(n));if(f)out.push({id,score:3,via:f});}
+  });
+  return out.sort((a,b)=>a.score-b.score);
+}
+function combo(input,wrap,key){
+  let ul=null,items=[],act=0;
+  const close=()=>{if(ul){ul.remove();ul=null;}input.setAttribute("aria-expanded","false");};
+  const render=()=>{
+    items=matches(input.value).slice(0,50);act=0;
+    if(!ul){ul=document.createElement("ul");ul.className="dd";ul.setAttribute("role","listbox");wrap.appendChild(ul);}
+    input.setAttribute("aria-expanded","true");
+    ul.innerHTML=items.length?items.map((m,i)=>{
+      if(m.place){const p=m.place;return `<li role="option" data-i="${i}" class="${i===act?"on":""}"><i class="lm"></i><span class="nm">${esc(p.n)}<small>${esc(t("place"))} · ${esc(ST[p.st].n)}${p.min?` · ${esc(t("walkChip",{n:p.min}))}`:""}</small></span></li>`;}
+      const s=ST[m.id];
+      return `<li role="option" data-i="${i}" class="${i===act?"on":""}"><span class="dots">${[...s.lines].map(l=>`<i class="dot" style="background:${LINES[l].c}"></i>`).join("")}</span>
+        <span class="nm">${esc(s.n)}<small>${esc(t("station"))} · ${[...s.lines].map(l=>esc(t(LINES[l].key))).join(", ")}${m.via?` · ${esc(t("formerly",{x:m.via}))}`:""}</small></span></li>`;}).join(""):`<li class="empty">${esc(t("nothing"))}</li>`;
+  };
+  const choose=i=>{const m=items[i];if(!m)return;close();setEnd(key,m.place?{st:m.place.st,lm:m.place}:{st:m.id});input.blur();};
+  input.addEventListener("focus",()=>{input.select();render();closePop();});
+  input.addEventListener("input",render);
+  input.addEventListener("keydown",e=>{
+    if(!ul)return;
+    if(e.key==="ArrowDown"||e.key==="ArrowUp"){e.preventDefault();if(!items.length)return;act=(act+(e.key==="ArrowDown"?1:-1)+items.length)%items.length;
+      [...ul.children].forEach((li,i)=>li.classList.toggle("on",i===act));ul.children[act]?.scrollIntoView({block:"nearest"});}
+    else if(e.key==="Enter"){e.preventDefault();choose(act);}
+    else if(e.key==="Escape"){close();input.blur();}
+  });
+  wrap.addEventListener("pointerdown",e=>{const li=e.target.closest("li[data-i]");if(li){e.preventDefault();choose(+li.dataset.i);}});
+  input.addEventListener("blur",()=>setTimeout(()=>{close();input.value=endName(state[key]);},120));
+}
+combo(fromI,$("#fFrom"),"from");
+combo(toI,$("#fTo"),"to");
+
+// ================= EXPLORE DUBAI (itineraries) =================
+// Data only: an itinerary is an ordered list of existing place/station tokens.
+// Every segment is calculated with route() + summarize(), the same engine as the planner.
+const ITINERARIES=[
+  {id:"first",stops:["p_burj_khalifa","p_museum_of_the_future","p_al_fahidi_historical_district","p_dubai_marina_walk","p_atlantis_the_palm"],tags:["tgFirst","tgArch"],timing:["tAny"]},
+  {id:"old",stops:["p_al_fahidi_historical_district","p_al_seef","p_bur_dubai_abra_station","p_spice_souk","p_gold_souk"],tags:["tgCulture"],timing:["tMorning","tAfternoon"],notes:["abraNote"]},
+  {id:"icons",stops:["p_burj_khalifa","p_dubai_mall","p_museum_of_the_future","p_the_view_at_the_palm","p_atlantis_the_palm"],tags:["tgFirst","tgArch"],timing:["tAny"]},
+  {id:"downtown",stops:["p_burj_khalifa","p_dubai_mall","p_dubai_fountain","p_dubai_aquarium","p_dubai_opera"],tags:["tgShopping","tgEvening"],timing:["tEvening"]},
+  {id:"marina",stops:["p_dubai_marina_mall","p_dubai_marina_walk","p_jbr_the_walk","p_ain_dubai_bluewaters"],tags:["tgBeach","tgEvening"],timing:["tAfternoon","tEvening"]},
+  {id:"palm",stops:["p_dubai_marina_walk","palmgw","p_the_view_at_the_palm","p_atlantis_the_palm","p_aquaventure_waterpark"],tags:["tgFamily","tgBeach"],timing:["tAny"]},
+  {id:"modern",stops:["p_museum_of_the_future","p_difc","p_dubai_mall","p_burj_khalifa"],tags:["tgArch","tgShopping"],timing:["tAfternoon","tEvening"]},
+  {id:"culture",stops:["p_textile_souk","p_spice_souk","p_gold_souk","p_dubai_frame"],tags:["tgCulture","tgShopping"],timing:["tMorning","tAfternoon"],notes:["abraNote"]},
+  {id:"stopover",stops:["p_dxb_airport_terminal_3","p_al_fahidi_historical_district","p_dubai_mall","p_burj_khalifa","p_dxb_airport_terminal_3"],tags:["tgFirst"],timing:["tLayover"],notes:["stopoverWarn"]},
+  {id:"oneday",stops:["p_al_fahidi_historical_district","p_burj_khalifa","p_jbr_the_walk","p_atlantis_the_palm"],tags:["tgFirst"],timing:["tAny"]}
+];
+const TOUR_BY_ID=Object.fromEntries(ITINERARIES.map(x=>[x.id,x]));
+// [title, one-line description] per language
+const TOUR_TEXT={
+first:{en:["Dubai First Time","A first look at Dubai: Downtown, the Museum of the Future, the old town, the Marina and the Palm."],ru:["Дубай впервые","Первое знакомство: Даунтаун, Музей будущего, старый город, Марина и Пальма."],de:["Dubai zum ersten Mal","Ein erster Eindruck: Downtown, Museum of the Future, Altstadt, Marina und Palm."],fr:["Dubaï pour la première fois","Un premier aperçu : Downtown, Musée du Futur, vieille ville, Marina et Palm."],zh:["初访迪拜","初次认识迪拜：市中心、未来博物馆、老城、码头和棕榈岛。"],hi:["पहली बार दुबई","दुबई की पहली झलक: डाउनटाउन, म्यूज़ियम ऑफ़ द फ़्यूचर, पुराना शहर, मरीना और पाम।"],ar:["دبي للمرة الأولى","تعرّف أول على دبي: وسط المدينة ومتحف المستقبل والمدينة القديمة والمارينا والنخلة."],ur:["پہلی بار دبئی","دبئی کی پہلی جھلک: ڈاؤن ٹاؤن، میوزیم آف دی فیوچر، پرانا شہر، مرینا اور پام۔"]},
+old:{en:["Old Dubai","Historic neighbourhoods, the creek waterfront and the traditional souks."],ru:["Старый Дубай","Исторические кварталы, набережная залива и традиционные рынки."],de:["Altes Dubai","Historische Viertel, das Ufer des Creek und traditionelle Souks."],fr:["Le vieux Dubaï","Quartiers historiques, rives de la crique et souks traditionnels."],zh:["迪拜老城","历史街区、迪拜河畔和传统集市。"],hi:["पुराना दुबई","ऐतिहासिक मोहल्ले, क्रीक का किनारा और पारंपरिक बाज़ार।"],ar:["دبي القديمة","الأحياء التاريخية وواجهة الخور والأسواق التقليدية."],ur:["پرانا دبئی","تاریخی محلے، کریک کا کنارا اور روایتی بازار۔"]},
+icons:{en:["Dubai Icons","The landmarks most visitors want to see, from Burj Khalifa to Atlantis."],ru:["Символы Дубая","Главные достопримечательности, от Бурдж-Халифы до Atlantis."],de:["Wahrzeichen Dubais","Die bekanntesten Sehenswürdigkeiten, vom Burj Khalifa bis Atlantis."],fr:["Les icônes de Dubaï","Les sites incontournables, du Burj Khalifa à Atlantis."],zh:["迪拜地标","从哈利法塔到亚特兰蒂斯的经典地标。"],hi:["दुबई के प्रतीक","बुर्ज ख़लीफ़ा से अटलांटिस तक मशहूर जगहें।"],ar:["معالم دبي","أبرز المعالم من برج خليفة إلى أتلانتس."],ur:["دبئی کی پہچان","برج خلیفہ سے اٹلانٹس تک مشہور مقامات۔"]},
+downtown:{en:["Downtown Dubai","Burj Khalifa, Dubai Mall and the fountain, all within walking distance."],ru:["Даунтаун","Бурдж-Халифа, Dubai Mall и фонтан, всё в пешей доступности."],de:["Downtown Dubai","Burj Khalifa, Dubai Mall und Brunnen, alles zu Fuß erreichbar."],fr:["Downtown Dubaï","Burj Khalifa, Dubai Mall et la fontaine, tout à pied."],zh:["迪拜市中心","哈利法塔、迪拜购物中心和音乐喷泉，步行可达。"],hi:["डाउनटाउन दुबई","बुर्ज ख़लीफ़ा, दुबई मॉल और फ़व्वारा, सब पैदल दूरी पर।"],ar:["وسط مدينة دبي","برج خليفة ودبي مول والنافورة، وكلها على مسافة سير."],ur:["ڈاؤن ٹاؤن دبئی","برج خلیفہ، دبئی مال اور فوارہ، سب پیدل فاصلے پر۔"]},
+marina:{en:["Marina & JBR","An easy way to explore the waterfront, the beach and the evening atmosphere."],ru:["Марина и JBR","Набережная, пляж и вечерняя атмосфера без поездок через весь город."],de:["Marina & JBR","Uferpromenade, Strand und Abendstimmung, ohne durch die ganze Stadt zu fahren."],fr:["Marina & JBR","Le front de mer, la plage et l’ambiance du soir, sans traverser la ville."],zh:["码头与 JBR","海滨、海滩和夜晚氛围，无需横穿全城。"],hi:["मरीना और JBR","समुद्र किनारा, बीच और शाम का माहौल, पूरा शहर पार किए बिना।"],ar:["المارينا وJBR","الواجهة البحرية والشاطئ وأجواء المساء دون عبور المدينة كلها."],ur:["مرینا اور JBR","ساحلی سیرگاہ، بیچ اور شام کا ماحول، پورا شہر پار کیے بغیر۔"]},
+palm:{en:["Palm & Atlantis","Tram and Palm Monorail out to the Palm, Atlantis and Aquaventure."],ru:["Пальма и Atlantis","На трамвае и монорельсе до Пальмы, Atlantis и Aquaventure."],de:["Palm & Atlantis","Mit Tram und Palm Monorail zur Palm, nach Atlantis und Aquaventure."],fr:["Palm & Atlantis","En tram et en monorail jusqu’à Palm, Atlantis et Aquaventure."],zh:["棕榈岛与亚特兰蒂斯","乘有轨电车和单轨前往棕榈岛、亚特兰蒂斯和水上乐园。"],hi:["पाम और अटलांटिस","ट्राम और पाम मोनोरेल से पाम, अटलांटिस और एक्वावेंचर तक।"],ar:["النخلة وأتلانتس","بالترام ومونوريل النخلة إلى النخلة وأتلانتس وأكوافنتشر."],ur:["پام اور اٹلانٹس","ٹرام اور پام مونوریل سے پام، اٹلانٹس اور ایکوا وینچر تک۔"]},
+modern:{en:["Modern Dubai","Architecture and the business district, ending in Downtown."],ru:["Современный Дубай","Архитектура и деловой район, финиш в Даунтауне."],de:["Modernes Dubai","Architektur und Geschäftsviertel, Ziel ist Downtown."],fr:["Dubaï moderne","Architecture et quartier d’affaires, jusqu’à Downtown."],zh:["现代迪拜","现代建筑和金融区，终点为市中心。"],hi:["आधुनिक दुबई","आधुनिक वास्तुकला और बिज़नेस डिस्ट्रिक्ट, आख़िर में डाउनटाउन।"],ar:["دبي الحديثة","العمارة الحديثة ومنطقة الأعمال، وصولًا إلى وسط المدينة."],ur:["جدید دبئی","جدید فنِ تعمیر اور کاروباری علاقہ، آخر میں ڈاؤن ٹاؤن۔"]},
+culture:{en:["Culture & Souks","The textile, spice and gold souks on both sides of the creek, then the Dubai Frame."],ru:["Культура и рынки","Текстильный, пряный и золотой рынки по обе стороны залива, затем Dubai Frame."],de:["Kultur & Souks","Textil-, Gewürz- und Goldsouk auf beiden Seiten des Creek, danach der Dubai Frame."],fr:["Culture & souks","Souks des tissus, des épices et de l’or des deux côtés de la crique, puis le Dubai Frame."],zh:["文化与集市","迪拜河两岸的布料、香料和黄金集市，最后是迪拜相框。"],hi:["संस्कृति और बाज़ार","क्रीक के दोनों ओर कपड़ा, मसाला और सोना बाज़ार, फिर दुबई फ़्रेम।"],ar:["الثقافة والأسواق","أسواق الأقمشة والتوابل والذهب على ضفتي الخور، ثم برواز دبي."],ur:["ثقافت اور بازار","کریک کے دونوں طرف کپڑے، مصالحے اور سونے کے بازار، پھر دبئی فریم۔"]},
+stopover:{en:["Airport Stopover","A short loop from DXB to the old town and Downtown and back."],ru:["Пересадка в аэропорту","Короткая петля из DXB в старый город и Даунтаун и обратно."],de:["Zwischenstopp am Flughafen","Eine kurze Runde vom DXB in die Altstadt und nach Downtown und zurück."],fr:["Escale à l’aéroport","Une boucle courte depuis DXB vers la vieille ville et Downtown, puis retour."],zh:["机场中转游","从 DXB 出发去老城和市中心，再返回机场的短线。"],hi:["एयरपोर्ट स्टॉपओवर","DXB से पुराने शहर और डाउनटाउन तक और वापस एक छोटा चक्कर।"],ar:["توقف في المطار","جولة قصيرة من مطار دبي إلى المدينة القديمة ووسط المدينة والعودة."],ur:["ایئرپورٹ اسٹاپ اوور","DXB سے پرانے شہر اور ڈاؤن ٹاؤن تک اور واپسی کا مختصر چکر۔"]},
+oneday:{en:["Dubai in One Day","Old Dubai, Downtown, JBR and the Palm in one transport-focused day."],ru:["Дубай за один день","Старый Дубай, Даунтаун, JBR и Пальма за один день в пути."],de:["Dubai an einem Tag","Altes Dubai, Downtown, JBR und die Palm an einem Tag."],fr:["Dubaï en un jour","Vieux Dubaï, Downtown, JBR et Palm en une journée."],zh:["一日游迪拜","一天内游览老城、市中心、JBR 和棕榈岛。"],hi:["एक दिन में दुबई","एक दिन में पुराना दुबई, डाउनटाउन, JBR और पाम।"],ar:["دبي في يوم واحد","دبي القديمة ووسط المدينة وJBR والنخلة في يوم واحد."],ur:["ایک دن میں دبئی","ایک دن میں پرانا دبئی، ڈاؤن ٹاؤن، JBR اور پام۔"]}
+};
+const tourText=(id,i)=>(TOUR_TEXT[id][LANG]||TOUR_TEXT[id].en)[i];
+
+// Calculate every segment with the planner's engine and add the totals up.
+function computeTour(it){
+  const ends=it.stops.map(parseToken);const segs=[];
+  for(let i=0;i<ends.length-1;i++){
+    const A=ends[i],B=ends[i+1];
+    if(!A||!B){segs.push({A,B,error:true});continue;}
+    if(A.st===B.st){segs.push({A,B,same:true});continue;}
+    const rt=route(A.st,B.st,"fast");
+    segs.push(rt?{A,B,v:summarize(rt,A,B)}:{A,B,error:true});
+  }
+  const ok=segs.filter(s=>s.v);
+  return {ends,segs,tot:{time:ok.reduce((a,s)=>a+s.v.time,0),timeMax:ok.reduce((a,s)=>a+s.v.timeMax,0),walk:ok.reduce((a,s)=>a+s.v.walk,0),xf:ok.reduce((a,s)=>a+s.v.xf,0)}};
+}
+function legChips(legs){
+  return legs.map(l=>{
+    if(l.type==="ride"){const L=LINES[svcById[l.svc].line];return `<span class="ml" style="--c:${L.c};--ink:${L.ink}">${esc(t(L.key))}</span>`;}
+    if(l.type==="walk")return `<span class="mw">${WALK_ICO}${l.t}</span>`;
+    return `<span class="mx" aria-hidden="true">⇄</span>`;
+  }).join('<i class="sep" aria-hidden="true"></i>');
+}
+function setView(v){
+  state.view=v;
+  $("#panel").classList.toggle("explore",v==="explore");
+  $("#vRoute").setAttribute("aria-selected",String(v==="route"));$("#vExplore").setAttribute("aria-selected",String(v==="explore"));
+  closePop();
+  if(v==="explore")renderExplore(true);else update(true);
+}
+function renderExplore(fit){
+  drawPins();overlay.innerHTML="";base.querySelectorAll(".st.hid").forEach(n=>n.classList.remove("hid"));base.classList.remove("dim");pinsG.innerHTML="";
+  const it=state.tour&&TOUR_BY_ID[state.tour];
+  try{history.replaceState(null,"",location.pathname+location.search+"#tour~"+(it?it.id:"all")+"~"+LANG);}catch(e){}
+  if(!it){
+    res.innerHTML=`<ul class="tours">`+ITINERARIES.map(x=>`<li><button class="tcard" data-tour="${x.id}">
+      <b>${esc(tourText(x.id,0))}</b><span class="tdesc">${esc(tourText(x.id,1))}</span>
+      <span class="tmeta">${x.tags.map(g=>`<i class="tag">${esc(t(g))}</i>`).join("")}<i class="tim">${esc(x.timing.map(k=>t(k)).join(" · "))}</i><i class="tim">${esc(t("placesN",{n:x.stops.length}))}</i></span></button></li>`).join("")+`</ul>`+footHTML();
+    res.querySelectorAll("[data-tour]").forEach(b=>b.onclick=()=>{state.tour=b.dataset.tour;renderExplore(true);res.scrollTop=0;});
+    if(fit)fitBox(BOX,true);
+    return;
+  }
+  const c=computeTour(it);
+  let h=`<div class="tourhead"><button class="tback" id="tBack"><span class="barr" aria-hidden="true">←</span> ${esc(t("allTours"))}</button>
+    <h2>${esc(tourText(it.id,0))}</h2><p>${esc(tourText(it.id,1))}</p>
+    <div class="tmeta">${it.tags.map(g=>`<i class="tag">${esc(t(g))}</i>`).join("")}<i class="tim">${esc(it.timing.map(k=>t(k)).join(" · "))}</i></div>
+    <div class="tsum"><b>${esc(c.segs.some(sg=>sg.v)?t("transportTime",{a:c.tot.time,b:c.tot.timeMax}):t("sameArea"))}</b>
+    <span>${esc(t("placesN",{n:it.stops.length})+" · "+(c.tot.xf?t("changes",{n:c.tot.xf}):t("noChanges"))+" · "+(c.tot.walk?t("walking",{n:c.tot.walk}):t("noWalking")))}</span>
+    <span class="note">${esc(t("visitNote"))} ${esc(t("estNote"))}</span></div>`+
+    (it.notes||[]).map(n=>`<div class="${n==="stopoverWarn"?"warn":"tnote"}">${esc(t(n))}</div>`).join("")+
+    (isSuspended("mono")&&c.segs.some(sg=>sg.v&&sg.v.legs.some(l=>l.type==="ride"&&svcById[l.svc].line==="mono"))?`<div class="warn">${esc(t("monoSuspended"))}</div>`:"")+`</div><ol class="tline">`;
+  c.ends.forEach((e,i)=>{
+    h+=`<li class="tstop"><button data-stop="${i}"><span class="tnum">${i+1}</span><span class="tname">${esc(endName(e))}<small>${esc(ST[e.st].n)}</small></span></button></li>`;
+    const s=c.segs[i];if(!s)return;
+    if(s.same)h+=`<li class="tseg same"><span class="mw">${WALK_ICO}</span><span>${esc(t("sameArea"))}</span></li>`;
+    else if(s.v)h+=`<li class="tseg"><button data-seg="${i}" aria-label="${esc(t("showRoute"))}: ${esc(endName(s.A))} → ${esc(endName(s.B))}"><span class="modes">${legChips(s.v.legs)}</span><span class="tst">${esc(rng(s.v.time,s.v.timeMax))}${s.v.xf?" · "+esc(t("changes",{n:s.v.xf})):""}</span><span class="tgo" aria-hidden="true">›</span></button></li>`;
+  });
+  h+=`</ol>`+footHTML();
+  res.innerHTML=h;
+  $("#tBack").onclick=()=>{state.tour=null;renderExplore(true);};
+  res.querySelectorAll("[data-seg]").forEach(b=>b.onclick=()=>{const s=c.segs[+b.dataset.seg];
+    state.tourBack=it.id;state.from=s.A;state.to=s.B;fromI.value=endName(s.A);toI.value=endName(s.B);setView("route");});
+  res.querySelectorAll("[data-stop]").forEach(b=>b.onclick=()=>{const e=c.ends[+b.dataset.stop];const S=ST[e.st];
+    fitBox({x0:S.x-160,x1:S.x+260,y0:S.y-160,y1:S.y+160},true,1.6);setTimeout(()=>openPop(e.st),480);});
+  // draw every segment on the map, with numbered stops
+  base.classList.add("dim");const ids=new Set();
+  c.segs.forEach(s=>{if(!s.v)return;s.v.legs.forEach(l=>{
+    if(l.type==="ride"){const line=svcById[l.svc].line;linePath(overlay,line,l.stops);l.stops.forEach(x=>ids.add(x));}
+    else if(l.type==="walk"){el("line",{class:"walk",style:"opacity:.7",x1:ST[l.from].x,y1:ST[l.from].y,x2:ST[l.to].x,y2:ST[l.to].y},overlay);ids.add(l.from);ids.add(l.to);}
+  });});
+  c.ends.forEach(e=>ids.add(e.st));
+  ids.forEach(id=>base.querySelector(`.st[data-id="${id}"]`)?.classList.add("hid"));const ov=el("g",{class:"ov"},overlay);ids.forEach(id=>drawStation(id,ov,false));
+  const seen={};c.ends.forEach((e,i)=>{const S=ST[e.st];const k=seen[e.st]=(seen[e.st]||0)+1;
+    const g=el("g",{class:"pin"},pinsG);el("circle",{cx:S.x+(k-1)*16,cy:S.y-(k-1)*16,r:11,fill:"var(--pinB)"},g);
+    const tx=el("text",{x:S.x+(k-1)*16,y:S.y-(k-1)*16+4},g);tx.textContent=String(i+1);});
+  if(fit){const xs=[...ids].map(i=>ST[i].x),ys=[...ids].map(i=>ST[i].y);
+    fitBox({x0:Math.min(...xs)-80,x1:Math.max(...xs)+170,y0:Math.min(...ys)-110,y1:Math.max(...ys)+110},true,1.6);}
+}
+$("#vRoute").onclick=()=>setView("route");
+$("#vExplore").onclick=()=>setView("explore");
+
+// ================= VALIDATION (development only) =================
+// Expectations come from the network data in this file: line sequence and transfer count.
+const VALIDATION=[
+  ["p_dxb_airport_terminal_3","p_dubai_mall","red",0],["p_dxb_airport_terminal_3","p_burj_khalifa","red",0],
+  ["p_dxb_airport_terminal_3","p_mall_of_the_emirates","red",0],["p_dxb_airport_terminal_3","p_dubai_marina_walk","red",0],
+  ["p_dxb_airport_terminal_3","p_atlantis_the_palm","red>tram>mono",2],["p_dxb_airport_terminal_1","p_dubai_mall","red",0],
+  ["p_dubai_mall","p_dxb_airport_terminal_3","red",0],["p_dubai_mall","p_mall_of_the_emirates","red",0],
+  ["p_dubai_mall","p_dubai_marina_walk","red",0],["p_burj_khalifa","p_dubai_marina_walk","red",0],
+  ["p_difc","p_dubai_mall","red",0],["p_museum_of_the_future","p_dubai_mall","red",0],
+  ["burjuman","p_gold_souk","green",0],["burjuman","p_dubai_mall","red",0],
+  ["p_al_fahidi_historical_district","p_dubai_mall","green>red",1],["p_gold_souk","burjuman","green",0],
+  ["p_gold_souk","p_dubai_marina_walk","green>red",1],["p_city_centre_deira_mall","p_dubai_mall","red",0],
+  ["p_dubai_marina_walk","p_jbr_the_walk","tram",0],["p_jbr_the_walk","p_dubai_mall","tram>red",1],
+  ["p_dubai_marina_walk","p_mall_of_the_emirates","red",0],["p_dubai_marina_walk","p_atlantis_the_palm","tram>mono",1],
+  ["p_jbr_the_walk","p_atlantis_the_palm","tram>mono",1],["dmcc","p_mall_of_the_emirates","red",0],
+  ["sobha","p_jbr_the_walk","tram",0,"fast"],["eand","creek","green",0,"fast"],["sobha","p_jbr_the_walk","tram",0,"few"],["palmgw","p_atlantis_the_palm","mono",0],["pj","p_atlantis_the_palm","mono",0],
+  ["p_dubai_mall","p_atlantis_the_palm","red>tram>mono",2],["p_mall_of_the_emirates","p_atlantis_the_palm","red>tram>mono",2],
+  ["p_dubai_marina_mall","p_atlantis_the_palm","tram>mono",1],["p_atlantis_the_palm","p_dubai_mall","mono>tram>red",2],
+  ["p_expo_city_dubai","p_dubai_marina_walk","red",0],["p_expo_city_dubai","p_dubai_mall","red",0],
+  ["p_expo_city_dubai","burjuman","red",0],["p_expo_city_dubai","p_dxb_airport_terminal_3","red",0],
+  ["p_dxb_airport_terminal_3","p_gold_souk","red>green",1],["eand","p_dubai_mall","green>red",1],
+  ["p_dubai_mall","p_jbr_the_walk","red>tram",1],["sufouh","p_dxb_airport_terminal_3","tram>red",1],
+  ["dmt","sobha","",0],["lp","p_expo_city_dubai","red>red",1],["p_wafi_city","p_atlantis_the_palm","green>red>tram>mono",3],
+  ["union","creek","green",0,"few"],["union","creek","red>green",1,"fast"],["p_textile_souk","p_spice_souk","green",0],["ibn","np","red",0],
+  // added in the data audit: Red Line branches, walking links, Palm Monorail, airport
+  ["centrepoint","expo","red",0],["centrepoint","lp","red",0],["dip","ibn","red>red",1],["gardens","np","red",0],
+  ["jlt","dmcc","",0],["pj","palmgw","",0],["p_dxb_airport_terminal_1","p_atlantis_the_palm","red>tram>mono",2],
+  ["p_palm_jumeirah_mall","p_atlantis_the_palm","mono",0],["p_ibn_battuta_mall","p_dxb_airport_terminal_3","red",0],
+  // tram loop (one way, anti-clockwise)
+  ["dmt","jbr1","tram",0],["jbr1","dmt","tram",0],["jbr2","sufouh","tram",0],["sufouh","jbr2","tram",0],
+  ["jlt","dmt","tram",0],["jlt","jbr2","tram>tram",1],["sufouh","dmm","tram",0],
+  // walking between two stops of the same line must stay a walk, not a ride
+  ["dmm","jbr1","",0]
+];
+// fare checks for the Palm Monorail (full length vs shorter trips)
+// Palm Monorail fares, all 12 directed station pairs (operator ticket-price table), calculated through route()
+const FARE_VALIDATION=[["palmgw","ittihad",10],["ittihad","palmgw",10],["palmgw","pjm",10],["pjm","palmgw",10],["palmgw","atlantis",20],["atlantis","palmgw",20],
+  ["ittihad","pjm",5],["pjm","ittihad",5],["ittihad","atlantis",10],["atlantis","ittihad",10],["pjm","atlantis",10],["atlantis","pjm",10]];
+// routes where the options really differ (found by scanning every pair of stations and places)
+const WHY_CASES=[["union","creek",["fast","few"]],["union","p_wafi_city",["fast","few"]],["dmm","jbr2",["fast","walk"]],["jlt","jbr1",["fast","walk"]],["dmm","p_jbr_the_walk",["fast","walk"]]];
+function runValidation(){
+  const keep={from:state.from,to:state.to};let fails=0;const rows=[];
+  VALIDATION.forEach(([a,b,lines,xf,mode="fast"])=>{
+    const A=parseToken(a),B=parseToken(b);state.from=A;state.to=B;
+    const rt=route(A.st,B.st,mode);
+    if(!rt){fails++;console.log("FAIL: "+endName(A)+" → "+endName(B)+"\n  no route");return;}
+    const v=summarize(rt,A,B);
+    const got=v.legs.filter(l=>l.type==="ride").map(l=>svcById[l.svc].line).join(">");
+    const walkLegs=v.legs.filter(l=>l.type==="walk").reduce((x,l)=>x+l.t,0)+(A.lm?.min||0)+(B.lm?.min||0);
+    const problems=[];
+    if(got!==lines)problems.push(`lines expected "${lines}", got "${got}"`);
+    if(v.xf!==xf)problems.push(`transfers expected ${xf}, got ${v.xf}`);
+    if(rt.transfers!==v.xf)problems.push(`engine counted ${rt.transfers} transfers, summary ${v.xf}`);
+    if(v.walk!==walkLegs)problems.push(`walking ${v.walk} ≠ walking legs ${walkLegs}`);
+    if(v.xf!==Math.max(0,v.rides-1))problems.push("transfers ≠ boardings − 1");
+    if(lines&&v.stops<1)problems.push("no stops on a ride route");
+    if(v.time<=0&&lines)problems.push("non-positive time");
+    if(problems.length){fails++;console.log(`FAIL: ${endName(A)} → ${endName(B)} [${mode}]\n  `+problems.join("\n  "));}
+    rows.push({from:endName(A),to:endName(B),mode,lines:got,transfers:v.xf,walk:v.walk,stops:v.stops,time:v.time+"–"+v.timeMax,ok:!problems.length});
+  });
+  FARE_VALIDATION.forEach(([a,b,want])=>{
+    const A=parseToken(a),B=parseToken(b);const rt=route(A.st,B.st,"fast");const v=summarize(rt,A,B);const got=monoFareOf(v.legs);
+    if(got!==want){fails++;console.log(`FAIL: monorail fare ${endName(A)} → ${endName(B)}: expected AED ${want}, got AED ${got}`);}
+    rows.push({from:endName(A),to:endName(B),mode:"fare",lines:"mono",transfers:v.xf,walk:v.walk,stops:v.stops,time:"AED "+got,ok:got===want});
+  });
+  // monorail fare symmetry and service-status layer
+  {const st=["palmgw","ittihad","pjm","atlantis"];const probs=[];
+    st.forEach(a=>st.forEach(b=>{if(a!==b&&(monoFare(a,b)==null||monoFare(a,b)!==monoFare(b,a)))probs.push(`fare(${a},${b}) ≠ fare(${b},${a})`);}));
+    if(!svcById.M||svcById.M.stops.length!==4)probs.push("monorail service definition missing");
+    const rt=route("palmgw","atlantis","fast");if(!rt)probs.push("monorail routes can no longer be calculated");
+    if(isSuspended("mono")){const v=summarize(rt,{st:"palmgw"},{st:"atlantis"});
+      if(!v.legs.some(l=>l.type==="ride"&&svcById[l.svc].line==="mono"))probs.push("monorail route lost its monorail leg");}
+    if(probs.length){fails++;console.log("FAIL: monorail checks\n  "+probs.join("\n  "));}
+    rows.push({from:"monorail",to:"",mode:"symmetry/status",lines:probs.length?probs.join("; "):"ok",transfers:"",walk:"",stops:"",time:"",ok:!probs.length});}
+  // "Why this route?" explanations and report context (checked in English)
+  {const keepLang=LANG;LANG="en";
+    WHY_CASES.forEach(([a,b,needModes])=>{
+      const A=parseToken(a),B=parseToken(b);const vs=computeVariants(A,B);const why=explainVariants(vs);
+      const f=vs.find(v=>v.modes.includes("fast"));const probs=[];
+      needModes.forEach(m=>{const i=vs.findIndex(v=>v.modes.includes(m));if(i<0||!why[i])probs.push("no explanation for "+m);});
+      vs.forEach((v,i)=>{const w=why[i]||"";
+        if(v!==f){
+          const lo=v.time-f.time,hi=v.timeMax-f.timeMax;
+          if(lo<0&&hi<0)probs.push("an option is quicker than 'fastest' at both ends of the range");
+          if(/\+\d+ min/.test(w)&&!(lo>=0&&hi>=0&&(lo+hi)>0))probs.push("says slower but is not: "+w);
+          if(/Similar time/.test(w)&&!((lo>0&&hi<0)||(lo<0&&hi>0)))probs.push("says similar but one option is clearly better: "+w);
+          if(/fewer transfer/.test(w)&&!(v.xf<f.xf))probs.push("says fewer transfers but is not: "+w);
+          if(/more transfer/.test(w)&&!(v.xf>f.xf))probs.push("says more transfers but is not: "+w);
+          if(/less walking/.test(w)&&!(v.walk<f.walk))probs.push("says less walking but is not: "+w);
+          if(/more walking/.test(w)&&!(v.walk>f.walk))probs.push("says more walking but is not: "+w);
+          if(/Same travel time/.test(w)&&!(lo===0&&hi===0))probs.push("says same time but differs: "+w);
+          if(v.modes.includes("few")&&v.xf>f.xf)probs.push("fewer-changes option has more transfers");
+          if(v.modes.includes("walk")&&v.walk>f.walk)probs.push("least-walking option walks more");
+        }else if(/Fastest by ~(\d+)/.test(w)){
+          if(!vs.filter(x=>x!==f).every(x=>x.time>=f.time&&x.timeMax>=f.timeMax))probs.push("claims 'fastest by' but another option is quicker at one end");}
+      });
+      if(probs.length){fails++;console.log(`FAIL: why ${endName(A)} → ${endName(B)}\n  `+probs.join("\n  "));}
+      rows.push({from:endName(A),to:endName(B),mode:"why",lines:why.join(" | "),transfers:"",walk:"",stops:"",time:"",ok:!probs.length});
+    });
+    // report context carries the selected ends and route option
+    const A=parseToken("p_dxb_airport_terminal_3"),B=parseToken("p_dubai_mall");
+    const keep2={from:state.from,to:state.to,mode:state.mode,view:state.view},keepR=lastRoute;
+    state.from=A;state.to=B;state.mode="few";state.view="route";const vs=computeVariants(A,B);lastRoute=vs.find(v=>v.modes.includes("few"))||vs[0];
+    const c=reportContext(),txt=reportText(c);const probs=[];
+    if(c.from!==endName(A)||c.to!==endName(B))probs.push("from/to missing");
+    if(c.mode!=="Fewer changes")probs.push("route option missing");
+    if(!/Red Line/.test(c.lines))probs.push("lines missing");
+    if(!/#p_dxb_airport_terminal_3~p_dubai_mall~/.test(c.url))probs.push("route link missing");
+    ["From: ","To: ","Route option: ","Transfers: ","Walking: ","Travel time","Language: ","Link: "].forEach(k=>{if(!txt.includes(k))probs.push("report text lacks "+k);});
+    if(!REPORT_URL&&!REPORT_EMAIL&&reportTarget(c).kind!=="none")probs.push("invented a destination");
+    if(probs.length){fails++;console.log("FAIL: report context\n  "+probs.join("\n  "));}
+    rows.push({from:"report",to:"",mode:"report",lines:probs.length?probs.join("; "):"ok",transfers:"",walk:"",stops:"",time:"",ok:!probs.length});
+    state.from=keep2.from;state.to=keep2.to;state.mode=keep2.mode;state.view=keep2.view;lastRoute=keepR;
+    LANG=keepLang;}
+  let tourSegs=0,tourOk=0,tourFails=0;
+  ITINERARIES.forEach(it=>{
+    const probs=[];
+    if(!TOUR_TEXT[it.id])probs.push("no title/description");
+    it.stops.forEach(x=>{if(!parseToken(x))probs.push("unknown stop "+x);});
+    let c=null;try{c=computeTour(it);}catch(e){probs.push("crash: "+e.message);}
+    if(c){const n=c.segs.length,good=c.segs.filter(sg=>sg.v||sg.same).length;tourSegs+=n;tourOk+=good;
+      if(good!==n)probs.push(`${n-good} segment(s) without a route`);
+      ["time","timeMax","walk","xf"].forEach(k=>{if(!Number.isFinite(c.tot[k]))probs.push("total "+k+" not calculated");});
+      console.log(`${tourText(it.id,0)}: ${it.stops.length} destinations, ${n} segments, ${good}/${n} routes valid, transport ${c.tot.time}–${c.tot.timeMax} min, walking ${c.tot.walk}, transfers ${c.tot.xf}: ${probs.length?"FAIL":"PASS"}`);}
+    if(probs.length){tourFails++;console.log("FAIL itinerary "+it.id+": "+probs.join("; "));}
+  });
+  console.log(`ITINERARIES: ${ITINERARIES.length-tourFails}/${ITINERARIES.length} passed, segments ${tourOk}/${tourSegs}`);
+  fails+=tourFails;
+  state.from=keep.from;state.to=keep.to;
+  console.table(rows);
+  const total=VALIDATION.length+FARE_VALIDATION.length+1+WHY_CASES.length+1;
+  console.log(`VALIDATION: ${total-fails}/${total} passed`);
+  return fails;
+}
+
+// ================= START =================
+// a shared link (#from~to) opens that route; otherwise the fields start empty
+const SELFTEST=location.hash==="#selftest";
+let start=null,hashLang=null;
+let hashTour=null;
+try{const m=(location.hash||"").slice(1).split("~");if(m[0]==="tour"){hashTour=m[1]||"all";if(m[2]&&I18N[m[2]])hashLang=m[2];}else if(m.length>=2){const a=parseToken(m[0]),b=parseToken(m[1]);if(a&&b)start=[a,b];if(m[2]&&I18N[m[2]])hashLang=m[2];}}catch(e){}
+// no link: open with empty fields
+if(!start)start=[null,null];
+state.from=start[0];state.to=start[1];
+fromI.value=endName(state.from);toI.value=endName(state.to);
+// language: saved choice, else browser language, else English
+function pickLang(){
+  // a language page of the public site (ru.html, de.html, ...) opens in its own language
+  const pl=document.documentElement.dataset.pagelang;if(pl&&I18N[pl])return pl;
+  let c=null;try{c=localStorage.getItem("dm_lang");}catch(e){}
+  if(!c||!I18N[c]){const nav=(navigator.languages||[navigator.language||"en"]).map(x=>String(x).slice(0,2).toLowerCase());c=nav.find(x=>I18N[x])||"en";}
+  return c;
+}
+function renderLangBtn(){
+  const L=LANGS.find(l=>l.code===LANG);
+  $("#langBtn").innerHTML=flag(L.flag)+`<span>${L.code.toUpperCase()}</span><svg class="chev" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>`;
+  $("#langBtn").setAttribute("aria-label",t("lang")+": "+L.native);
+  $("#langMenu").innerHTML=`<div class="lnote">${esc(t("langNote"))}</div>`+LANGS.map((l,i)=>`<button role="menuitemradio" aria-checked="${l.code===LANG}" data-l="${l.code}">${flag(l.flag)}<span lang="${l.code}" dir="${l.rtl?"rtl":"ltr"}">${esc(l.native)}</span></button>`).join("");
+}
+function applyLang(code,rerender){
+  LANG=code;const L=LANGS.find(l=>l.code===code);
+  document.documentElement.lang=code;
+  $("#panel").dir=L.rtl?"rtl":"ltr";
+  try{localStorage.setItem("dm_lang",code);}catch(e){}
+  document.querySelectorAll("[data-t]").forEach(n=>n.textContent=t(n.dataset.t));
+  document.querySelectorAll("[data-tph]").forEach(n=>n.placeholder=t(n.dataset.tph));
+  document.querySelectorAll("[data-tal]").forEach(n=>{n.setAttribute("aria-label",t(n.dataset.tal));n.title=t(n.dataset.tal);});
+  $("#tog").textContent=t($("#panel").classList.contains("collapsed")?"show":"hide");
+  renderLangBtn();renderChips();renderStatus();renderLeave();closePop();if(!$("#card").hidden)openCard();
+  if(rerender)update(false);
+}
+function toggleMenu(open){const m=$("#langMenu");m.hidden=!open;$("#langBtn").setAttribute("aria-expanded",String(open));if(open)m.querySelector('[aria-checked="true"]')?.focus();}
+$("#langBtn").onclick=e=>{e.stopPropagation();toggleMenu($("#langMenu").hidden);};
+$("#langMenu").addEventListener("click",e=>{const b=e.target.closest("button[data-l]");if(!b)return;applyLang(b.dataset.l,true);toggleMenu(false);$("#langBtn").focus();});
+$("#langMenu").addEventListener("keydown",e=>{const bs=[...$("#langMenu").querySelectorAll("button")];const i=bs.indexOf(document.activeElement);
+  if(e.key==="ArrowDown"||e.key==="ArrowRight"){e.preventDefault();bs[(i+1)%bs.length].focus();}
+  else if(e.key==="ArrowUp"||e.key==="ArrowLeft"){e.preventDefault();bs[(i-1+bs.length)%bs.length].focus();}
+  else if(e.key==="Escape"){toggleMenu(false);$("#langBtn").focus();}});
+document.addEventListener("click",e=>{if(!$("#langMenu").hidden&&!e.target.closest("#langMenu"))toggleMenu(false);});
+applyLang(hashLang||pickLang(),false);
+setInterval(()=>{renderStatus();if(!state.departMs)renderLeave();},60000);
+fitBox(homeBox(),false);
+if(SELFTEST){window.__dm={computeVariants,parseToken,ids:Object.keys(ST),places:PLACES.map(x=>x.id)};runValidation();}
+if(hashTour){state.tour=TOUR_BY_ID[hashTour]?hashTour:null;state.view="explore";$("#panel").classList.add("explore");$("#vRoute").setAttribute("aria-selected","false");$("#vExplore").setAttribute("aria-selected","true");}
+update(true,true);
+addEventListener("resize",placePop);
+addEventListener("hashchange",()=>{const m=location.hash.slice(1).split("~");if(m.length<2||m[0]==="tour")return;const a=parseToken(m[0]),b=parseToken(m[1]);
+  if(a&&b&&(endToken(a)!==endToken(state.from||{st:""})||endToken(b)!==endToken(state.to||{st:""}))){state.from=a;state.to=b;fromI.value=endName(a);toI.value=endName(b);update(true);}});
+})();
+</script>

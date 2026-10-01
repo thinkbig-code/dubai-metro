@@ -56,7 +56,21 @@ Use the **Report a problem** button on the site, or open an issue here: https://
 | `sitemap.xml`, `robots.txt` | For search engines; the sitemap lists all eight language pages. |
 | `CNAME` | Connects the custom domain `dubaimetro.fyi` to GitHub Pages. Do not delete it. |
 
-The eight pages are generated from one source file, so an update always changes all eight together. The generator script is not in this repository yet.
+The eight pages are generated from one source file, so an update always changes all eight together:
+
+| Path | Purpose |
+|---|---|
+| `src/dubai-metro.html` | The single source of the app: map, data, routing, all eight interface languages. Edit this file, not the generated pages. |
+| `tools/build.py` | Builds the eight language pages, `sitemap.xml` and `robots.txt` from the source. |
+| `tools/seo_texts.py` | Per-language page titles, descriptions and the "About this map" text. |
+
+To rebuild after a change (Python 3, no extra packages):
+
+```
+python3 tools/build.py
+```
+
+To build for another address (for example a new domain), set `SITE`: `SITE=https://example.com/ python3 tools/build.py`, then update `CNAME`.
 
 ## Hosting
 
