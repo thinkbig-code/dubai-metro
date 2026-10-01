@@ -20,19 +20,19 @@
 /* Layout: full-bleed pannable schematic, floating route panel top-left (top sheet on phones), legend + zoom controls bottom */
 :root{
   --bg:#F4F7F8; --surface:#FFFFFF; --fg:#18212A; --muted:#62707C; --rule:#DFE5E9;
-  --red:#E1251B; --green:#21A246; --tram:#EE8A00; --mono:#7B4FC4; --mono-ink:#FFFFFF; --water:#CDE5F1; --water-ink:#6E9DB6;
+  --red:#E1251B; --green:#21A246; --tram:#EE8A00; --mono:#7B4FC4; --mono-ink:#FFFFFF; --water:#CDE5F1; --water-ink:#6E9DB6; --land:#EDF1F2;
   --accent:#1D5FB4; --accent-soft:#E3EDF9; --ok:#21A246; --warn-bg:#FFF1D6; --warn-fg:#7A4B00; --shadow:0 6px 24px rgba(20,35,50,.12),0 1px 3px rgba(20,35,50,.08);
   --font-ui:"Golos Text",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
   --font-display:"Unbounded","Golos Text",system-ui,sans-serif;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   --bg:#10161C; --surface:#18212A; --fg:#E6ECF0; --muted:#94A2AE; --rule:#2A3640;
-  --red:#F2473D; --green:#37C063; --tram:#FFA42A; --mono:#B08CF0; --mono-ink:#1A1A1A; --water:#17344A; --water-ink:#5E8FAD;
+  --red:#F2473D; --green:#37C063; --tram:#FFA42A; --mono:#B08CF0; --mono-ink:#1A1A1A; --water:#17344A; --water-ink:#5E8FAD; --land:#1A232B;
   --accent:#6FA6F0; --accent-soft:#1E3550; --ok:#37C063; --warn-bg:#3A2C10; --warn-fg:#FFD58A; --shadow:0 6px 24px rgba(0,0,0,.45),0 1px 3px rgba(0,0,0,.3);
   color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#10161C; --surface:#18212A; --fg:#E6ECF0; --muted:#94A2AE; --rule:#2A3640;
-  --red:#F2473D; --green:#37C063; --tram:#FFA42A; --mono:#B08CF0; --mono-ink:#1A1A1A; --water:#17344A; --water-ink:#5E8FAD;
+  --red:#F2473D; --green:#37C063; --tram:#FFA42A; --mono:#B08CF0; --mono-ink:#1A1A1A; --water:#17344A; --water-ink:#5E8FAD; --land:#1A232B;
   --accent:#6FA6F0; --accent-soft:#1E3550; --ok:#37C063; --warn-bg:#3A2C10; --warn-fg:#FFD58A; --shadow:0 6px 24px rgba(0,0,0,.45),0 1px 3px rgba(0,0,0,.3);
   color-scheme:dark}
 html,body{height:100%}
@@ -45,17 +45,21 @@ body{background:var(--bg);color:var(--fg);font-family:var(--font-ui);font-size:1
 #world.anim{transition:transform .45s cubic-bezier(.3,.7,.2,1)}
 @media (prefers-reduced-motion:reduce){#world.anim{transition:none}}
 
-.ln{fill:none;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}
-.ln.tram,.ln.mono{stroke-width:5}
+.ln{fill:none;stroke-width:9;stroke-linecap:round;stroke-linejoin:round}
+.ln.tram,.ln.mono{stroke-width:6}
 .walk.long{stroke-width:4;stroke-dasharray:2 7;opacity:.7}
-.walk{stroke:var(--muted);stroke-width:9;stroke-linecap:round;opacity:.35}
-.water{fill:none;stroke:var(--water);stroke-width:22;stroke-linecap:round;stroke-linejoin:round}
-.water-label{fill:var(--water-ink);font-size:12px;font-style:italic;letter-spacing:.04em}
+.walk{stroke:var(--muted);stroke-width:5;stroke-linecap:round;opacity:.4}
+.water{fill:none;stroke:var(--water);stroke-width:30;stroke-linecap:round;stroke-linejoin:round}
+.sea{fill:var(--water)}
+.palm line{stroke:var(--land);stroke-linecap:round}
+.palm-crescent{fill:none;stroke:var(--land);stroke-width:8;stroke-linecap:round}
+.water-label{fill:var(--water-ink);font-size:12px;font-style:italic;letter-spacing:.06em}
 .st circle.mk{fill:var(--surface);stroke-width:3}
 .st circle.ix{fill:var(--surface);stroke:var(--fg);stroke-width:3}
 .st .hit{fill:transparent}
-.st text{font-size:12px;fill:var(--fg);paint-order:stroke;stroke:var(--bg);stroke-width:3.5px;stroke-linejoin:round}
+.st text{font-size:12.5px;fill:var(--fg);paint-order:stroke;stroke:var(--bg);stroke-width:3.5px;stroke-linejoin:round}
 .st.big text{font-weight:600}
+.st.hid text{visibility:hidden}
 .st{cursor:pointer;outline:none}
 .st:hover text,.st:focus-visible text{fill:var(--accent)}
 .st:focus-visible circle.mk,.st:focus-visible circle.ix{stroke:var(--accent)}
@@ -665,77 +669,77 @@ function t(key,vars){
 // ================= DATA =================
 // Stations. id: [name, x, y, labelPos, formerNames]
 const RAW = {
-  centrepoint:["Centrepoint",1750,460,"rd",["Al Rashidiya","Rashidiya"]],
-  emirates:["Emirates",1680,460,"rd"],
-  at3:["Airport Terminal 3",1610,460,"rd"],
-  at1:["Airport Terminal 1",1540,460,"rd"],
-  garhoud:["Al Garhoud",1470,460,"rd",["GGICO"]],
-  ccd:["City Centre Deira",1400,460,"rd",["Deira City Centre"]],
-  rigga:["Al Rigga",1350,410,"r"],
-  union:["Union",1300,360,"r"],
-  burjuman:["BurJuman",1140,520,"r",["Khalid Bin Al Waleed"]],
-  adcb:["ADCB",1100,560,"l",["Al Karama"]],
-  max:["Max",1060,600,"l",["Al Jafiliya"]],
-  wtc:["World Trade Centre",1020,640,"l"],
-  et:["Emirates Towers",980,680,"l"],
-  fc:["Financial Centre",940,720,"l"],
-  bk:["Burj Khalifa/Dubai Mall",900,760,"l"],
-  bb:["Business Bay",860,800,"rd"],
-  garmin:["Garmin",780,800,"rd",["ONPASSIVE","Al Safa","Noor Bank"]],
-  equiti:["Equiti",700,800,"rd",["Umm Al Sheif","First Abu Dhabi Bank","First Gulf Bank"]],
-  moe:["Mall of the Emirates",620,800,"rd"],
-  im:["InsuranceMarket",540,800,"rd",["Mashreq","Sharaf DG (Red Line)"]],
-  dic:["Dubai Internet City",460,800,"rd"],
-  fardan:["Al Fardan Exchange",380,800,"rd",["Al Khail","Nakheel"]],
-  sobha:["Sobha Realty",300,800,"rd",["Dubai Marina","DAMAC Properties"]],
-  dmcc:["DMCC",220,800,"rd",["Jumeirah Lakes Towers","JLT"]],
-  np:["National Paints",140,800,"rd",["Jabal Ali","Jebel Ali","Nakheel Harbour & Tower"]],
-  ibn:["Ibn Battuta",60,800,"rd"],
-  energy:["Energy",-20,800,"rd",["DUBAL"]],
-  danube:["Danube",-100,800,"rd",["Jebel Ali Industrial"]],
-  lp:["Life Pharmacy",-180,800,"rd",["UAE Exchange","Jebel Ali"]],
-  gardens:["The Gardens",140,900,"r"],
-  dg:["Discovery Gardens",140,960,"r"],
-  furjan:["Al Furjan",140,1020,"r"],
-  jge:["Jumeirah Golf Estates",140,1080,"r"],
-  dip:["Dubai Investment Park",140,1140,"r"],
-  expo:["Expo 2020",140,1200,"r",["Expo City Dubai"]],
+  centrepoint:["Centrepoint",1050,160,"r",["Al Rashidiya","Rashidiya"]],
+  emirates:["Emirates",1008,202,"r"],
+  at3:["Airport Terminal 3",974,236,"r"],
+  at1:["Airport Terminal 1",940,270,"r"],
+  garhoud:["Al Garhoud",880,300,"b",["GGICO"]],
+  ccd:["City Centre Deira",780,300,"b",["Deira City Centre"]],
+  rigga:["Al Rigga",690,300,"b"],
+  union:["Union",600,300,"tl"],
+  burjuman:["BurJuman",600,430,"tl2",["Khalid Bin Al Waleed"]],
+  adcb:["ADCB",600,492,"r",["Al Karama"]],
+  max:["Max",600,526,"r",["Al Jafiliya"]],
+  wtc:["World Trade Centre",600,560,"r"],
+  et:["Emirates Towers",600,594,"r"],
+  fc:["Financial Centre",600,628,"r"],
+  bk:["Burj Khalifa/Dubai Mall",600,662,"r"],
+  bb:["Business Bay",600,698,"r"],
+  garmin:["Garmin",600,752,"r",["ONPASSIVE","Al Safa","Noor Bank"]],
+  equiti:["Equiti",600,788,"r",["Umm Al Sheif","First Abu Dhabi Bank","First Gulf Bank"]],
+  moe:["Mall of the Emirates",600,822,"r"],
+  im:["InsuranceMarket",600,856,"r",["Mashreq","Sharaf DG (Red Line)"]],
+  dic:["Dubai Internet City",600,890,"r"],
+  fardan:["Al Fardan Exchange",600,926,"r",["Al Khail","Nakheel"]],
+  sobha:["Sobha Realty",600,964,"r",["Dubai Marina","DAMAC Properties"]],
+  dmcc:["DMCC",600,1054,"r",["Jumeirah Lakes Towers","JLT"]],
+  np:["National Paints",600,1090,"r",["Jabal Ali","Jebel Ali","Nakheel Harbour & Tower"]],
+  ibn:["Ibn Battuta",600,1124,"l"],
+  energy:["Energy",600,1158,"l",["DUBAL"]],
+  danube:["Danube",600,1192,"l",["Jebel Ali Industrial"]],
+  lp:["Life Pharmacy",600,1226,"l",["UAE Exchange","Jebel Ali"]],
+  gardens:["The Gardens",634,1124,"r"],
+  dg:["Discovery Gardens",668,1158,"r"],
+  furjan:["Al Furjan",702,1192,"r"],
+  jge:["Jumeirah Golf Estates",736,1226,"r"],
+  dip:["Dubai Investment Park",770,1260,"r"],
+  expo:["Expo 2020",808,1298,"r",["Expo City Dubai"]],
 
-  eand:["e&",1870,210,"ru",["Etisalat","Etisalat by e&"]],
-  qusais:["Al Qusais",1800,210,"ru"],
-  dafz:["Dubai Airport Free Zone",1730,210,"ru"],
-  nahda:["Al Nahda",1660,210,"ru"],
-  stadium:["Stadium",1590,210,"ru"],
-  qiyadah:["Al Qiyadah",1520,210,"ru"],
-  abuhail:["Abu Hail",1450,210,"ru"],
-  abubaker:["Abu Baker Al Siddique",1400,260,"r"],
-  salah:["Salah Al Din",1350,310,"r"],
-  baniyas:["Baniyas Square",1240,360,"ru"],
-  goldsouq:["Gold Souq",1180,360,"ru",["Palm Deira"]],
-  alras:["Al Ras",1120,360,"ru"],
-  ghubaiba:["Al Ghubaiba",1080,400,"l"],
-  sharafdg:["Sharaf DG",1080,460,"l",["Al Fahidi"]],
-  oudmetha:["Oud Metha",1190,570,"r"],
-  dhcc:["Dubai Healthcare City",1240,620,"r"],
-  jadaf:["Al Jadaf",1290,670,"r"],
-  creek:["Creek",1340,720,"r"],
+  eand:["e&",808,-36,"r",["Etisalat","Etisalat by e&"]],
+  qusais:["Al Qusais",768,4,"r"],
+  dafz:["Dubai Airport Free Zone",734,38,"r"],
+  nahda:["Al Nahda",700,72,"r"],
+  stadium:["Stadium",666,106,"r"],
+  qiyadah:["Al Qiyadah",632,140,"r"],
+  abuhail:["Abu Hail",600,190,"r"],
+  abubaker:["Abu Baker Al Siddique",600,226,"r"],
+  salah:["Salah Al Din",600,262,"r"],
+  baniyas:["Baniyas Square",510,300,"b"],
+  goldsouq:["Gold Souq",420,300,"b",["Palm Deira"]],
+  alras:["Al Ras",330,300,"l"],
+  ghubaiba:["Al Ghubaiba",420,430,"b"],
+  sharafdg:["Sharaf DG",510,430,"b",["Al Fahidi"]],
+  oudmetha:["Oud Metha",690,430,"b"],
+  dhcc:["Dubai Healthcare City",792,430,"b"],
+  jadaf:["Al Jadaf",894,430,"b"],
+  creek:["Creek",990,430,"b"],
 
-  jbr1:["JBR 1",140,720,"ru",["Jumeirah Beach Residence 1"]],
-  jbr2:["JBR 2",180,720,"ru",["Jumeirah Beach Residence 2"]],
-  jlt:["Jumeirah Lakes Towers",220,720,"ru",["JLT"]],
-  dmm:["Dubai Marina Mall",260,720,"ru"],
-  dmt:["Dubai Marina",300,720,"ru"],
-  mt:["Marina Towers",340,720,"ru"],
-  ms:["Mina Seyahi",380,720,"ru"],
-  mc:["Media City",420,720,"ru",["Dubai Media City"]],
-  pj:["Palm Jumeirah",460,720,"ru"],
-  kv:["Knowledge Village",500,720,"ru"],
-  sufouh:["Al Sufouh",540,720,"ru"],
+  jbr1:["JBR 1",350,1022,"l",["Jumeirah Beach Residence 1"]],
+  jbr2:["JBR 2",350,1056,"l",["Jumeirah Beach Residence 2"]],
+  jlt:["Jumeirah Lakes Towers",420,1054,"br",["JLT"]],
+  dmm:["Dubai Marina Mall",420,1018,"r"],
+  dmt:["Dubai Marina",350,964,"l"],
+  mt:["Marina Towers",350,930,"r"],
+  ms:["Mina Seyahi",350,896,"r"],
+  mc:["Media City",350,862,"r",["Dubai Media City"]],
+  pj:["Palm Jumeirah",350,828,"r"],
+  kv:["Knowledge Village",350,794,"r"],
+  sufouh:["Al Sufouh",350,760,"r"],
 
-  palmgw:["Palm Gateway",500,640,"r",["Gateway"]],
-  ittihad:["Al Ittihad Park",500,580,"r"],
-  pjm:["Palm Jumeirah Mall",500,520,"r",["Nakheel Mall"]],
-  atlantis:["Atlantis Aquaventure",500,460,"r",["Atlantis"]]
+  palmgw:["Palm Gateway",290,828,"l",["Gateway"]],
+  ittihad:["Al Ittihad Park",230,768,"l"],
+  pjm:["Palm Jumeirah Mall",170,708,"l",["Nakheel Mall"]],
+  atlantis:["Atlantis Aquaventure",104,642,"l",["Atlantis"]]
 };
 const ST={};
 for(const id in RAW){const [n,x,y,p,f]=RAW[id];ST[id]={id,n,x,y,p,f:f||[],lines:new Set()};}
@@ -766,6 +770,49 @@ const SVC=[
   {id:"M",line:"mono",stops:M}
 ];
 SVC.forEach(s=>s.stops.forEach(id=>ST[id].lines.add(s.line)));
+
+
+// ---- schematic geometry ----
+// Frame: "up" is north-east (towards Sharjah), "left" is the sea. Lines run at 0/45/90 degrees.
+// BENDS: corner points between two neighbouring stations (listed a→b; reversed automatically).
+const BENDS={
+  "garhoud|at1":[[910,300]],
+  "abuhail|qiyadah":[[600,172]],
+  "alras|ghubaiba":[[330,340]],
+  "np|gardens":[],
+  "dmt|jbr1":[[350,990]],
+  "jbr2|jlt":[[350,1084],[420,1084]],
+  "dmm|dmt":[[420,990],[350,990]]
+};
+// multi-line labels
+const LABEL_LINES={ccd:["City Centre","Deira"],baniyas:["Baniyas","Square"],dhcc:["Dubai Healthcare","City"]};
+function segPts(a,b){
+  const k=a+"|"+b;if(BENDS[k])return BENDS[k];
+  const r=BENDS[b+"|"+a];return r?r.slice().reverse():[];
+}
+function chainPts(ids){
+  const out=[[ST[ids[0]].x,ST[ids[0]].y]];
+  for(let i=1;i<ids.length;i++){segPts(ids[i-1],ids[i]).forEach(p=>out.push(p));out.push([ST[ids[i]].x,ST[ids[i]].y]);}
+  return out;
+}
+// polyline with rounded corners
+function roundD(P,R){
+  const q=[P[0]];for(let i=1;i<P.length;i++){const a=q[q.length-1],b=P[i];if(Math.abs(a[0]-b[0])>.01||Math.abs(a[1]-b[1])>.01)q.push(b);}
+  if(q.length<2)return "";
+  let d=`M${q[0][0]},${q[0][1]}`;
+  for(let i=1;i<q.length-1;i++){
+    const [ax,ay]=q[i-1],[bx,by]=q[i],[cx,cy]=q[i+1];
+    const l1=Math.hypot(bx-ax,by-ay),l2=Math.hypot(cx-bx,cy-by);
+    const cross=Math.abs((bx-ax)*(cy-by)-(by-ay)*(cx-bx));
+    if(cross<1e-6){d+=`L${bx},${by}`;continue;}
+    const r=Math.min(R,l1/2,l2/2);
+    const p1=[bx-(bx-ax)/l1*r,by-(by-ay)/l1*r],p2=[bx+(cx-bx)/l2*r,by+(cy-by)/l2*r];
+    d+=`L${p1[0].toFixed(1)},${p1[1].toFixed(1)}Q${bx},${by} ${p2[0].toFixed(1)},${p2[1].toFixed(1)}`;
+  }
+  const z=q[q.length-1];return d+`L${z[0]},${z[1]}`;
+}
+const lineD=ids=>roundD(chainPts(ids),22);
+function linePath(g,line,ids){return el("path",{class:"ln"+(line==="tram"||line==="mono"?" "+line:""),stroke:LINES[line].c,d:lineD(ids)},g);}
 
 // Walking links between separate stations (minutes are estimates)
 const WALKS=[
@@ -898,16 +945,27 @@ const $=s=>document.querySelector(s);
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const base=$("#base"),overlay=$("#overlay"),pinsG=$("#pins"),waterG=$("#water");
 
-el("polyline",{class:"water",points:"960,300 1100,380 1220,440 1340,540 1450,700 1540,830"},waterG);
-const wl=el("text",{class:"water-label",transform:"translate(1405,585) rotate(56)"},waterG);wl.textContent="Dubai Creek";
+// sea on the left, the Palm as land, Dubai Creek across the middle
+el("path",{class:"sea",d:"M240,-3000 L240,3000 L-3000,3000 L-3000,-3000Z"},waterG);
+(function(){ // Palm Jumeirah drawn along the monorail: trunk, fronds, crescent
+  const g=el("g",{class:"palm"},waterG);
+  const O=[244,782],u=[-Math.SQRT1_2,-Math.SQRT1_2],v=[Math.SQRT1_2,-Math.SQRT1_2];
+  const P=(s,n)=>[O[0]+s*u[0]+n*v[0],O[1]+s*u[1]+n*v[1]];
+  const ln=(a,b,w)=>el("line",{x1:a[0].toFixed(1),y1:a[1].toFixed(1),x2:b[0].toFixed(1),y2:b[1].toFixed(1),"stroke-width":w},g);
+  ln(P(-6,0),P(178,0),16);
+  for(let i=0;i<8;i++){const s0=44+i*15,L=62-i*4;
+    [-1,1].forEach(sd=>ln(P(s0,0),P(s0+L*.55,sd*L),6));}
+  const r=96,c=108,a0=-2.2,a1=2.2,pt=a=>P(c+r*Math.cos(a),r*Math.sin(a));
+  const A=pt(a0),B=pt(a1);
+  el("path",{class:"palm-crescent",d:`M${A[0].toFixed(1)},${A[1].toFixed(1)} A${r},${r} 0 1 1 ${B[0].toFixed(1)},${B[1].toFixed(1)}`},g);
+})();
+el("path",{class:"water",d:roundD([[200,365],[1040,365],[1110,435],[1150,435]],40)},waterG);
+const wl=el("text",{class:"water-label",x:450,y:369},waterG);wl.textContent="Dubai Creek";
 
 function drawLines(g){
   WALKS.forEach(w=>el("line",{class:"walk"+(w.long?" long":""),x1:ST[w.a].x,y1:ST[w.a].y,x2:ST[w.b].x,y2:ST[w.b].y},g));
-  el("polyline",{class:"ln",stroke:LINES.red.c,points:pts(R_MAIN)},g);
-  el("polyline",{class:"ln",stroke:LINES.red.c,points:pts(R_BR)},g);
-  el("polyline",{class:"ln",stroke:LINES.green.c,points:pts(G)},g);
-  el("polyline",{class:"ln tram",stroke:LINES.tram.c,points:pts(T)},g);
-  el("polyline",{class:"ln mono",stroke:LINES.mono.c,points:pts(M)},g);
+  linePath(g,"red",R_MAIN);linePath(g,"red",R_BR);linePath(g,"green",G);
+  linePath(g,"tram",SVC.find(v=>v.id==="TI").stops.concat(["dmt"]));linePath(g,"mono",M);
 }
 function isIx(id){return ST[id].lines.size>1||WALK_OF[id];}
 function drawStation(id,g,interactive){
@@ -917,12 +975,19 @@ function drawStation(id,g,interactive){
   const line=[...s.lines][0];const thin=line==="tram"||line==="mono";
   if(ix) el("circle",{class:"ix",cx:s.x,cy:s.y,r:thin&&s.lines.size<2?6.5:8},grp);
   else el("circle",{class:"mk",cx:s.x,cy:s.y,r:thin?4.5:5.5,stroke:LINES[line].c},grp);
-  let t;const off=ix?13:11;
-  if(s.p==="r")t=el("text",{x:s.x+off,y:s.y+4},grp);
-  else if(s.p==="l")t=el("text",{x:s.x-off,y:s.y+4,"text-anchor":"end"},grp);
-  else if(s.p==="rd")t=el("text",{x:off,y:4,transform:`translate(${s.x},${s.y}) rotate(40)`},grp);
-  else t=el("text",{x:off,y:4,transform:`translate(${s.x},${s.y}) rotate(-40)`},grp);
-  t.textContent=s.n;
+  const off=ix?13:11,L=LABEL_LINES[id]||[s.n],lh=13;
+  let x=s.x,y=s.y,anchor="start",dy0=4;
+  switch(s.p){
+    case "l":x-=off;anchor="end";dy0=4-(L.length-1)*lh/2;break;
+    case "t":anchor="middle";dy0=-off-(L.length-1)*lh;break;
+    case "b":anchor="middle";dy0=off+10;break;
+    case "tl":x-=off-2;anchor="end";dy0=-off+2;break;
+    case "tl2":x-=off-2;anchor="end";dy0=-off+2;break;
+    case "br":x+=4;dy0=off+12;break;
+    default:x+=off;dy0=4-(L.length-1)*lh/2;
+  }
+  const t=el("text",{x,y:y+dy0,"text-anchor":anchor},grp);
+  L.forEach((ln,i)=>{const sp=el("tspan",{x,dy:i?lh:0},t);sp.textContent=ln;});
   if(interactive)el("circle",{class:"hit",cx:s.x,cy:s.y,r:14},grp);
   return grp;
 }
@@ -931,7 +996,7 @@ Object.keys(ST).forEach(id=>drawStation(id,base,true));
 
 // pan / zoom
 const map=$("#map"),world=$("#world");
-const BOX={x0:-260,y0:110,x1:1990,y1:1260};
+const BOX={x0:40,y0:-60,x1:1150,y1:1320};
 let view={x:0,y:0,k:1};
 const apply=anim=>{world.classList.toggle("anim",!!anim);world.style.transform=`translate(${view.x}px,${view.y}px) scale(${view.k})`;placePop();};
 function panelInset(){
@@ -1301,7 +1366,7 @@ function hint(msg){const o=document.getElementById("infoBox")?.open;res.innerHTM
 
 function update(fit,noAnim){
   if(state.view==="explore"){renderExplore(fit);return;}
-  drawPins();overlay.innerHTML="";base.classList.remove("dim");writeHash();
+  drawPins();overlay.innerHTML="";base.querySelectorAll(".st.hid").forEach(n=>n.classList.remove("hid"));base.classList.remove("dim");writeHash();
   const {from,to}=state;
   $("#panel").classList.toggle("has-route",!!(from&&to));
   fromI.placeholder=t(to&&!from?"startQ":"phFrom");
@@ -1324,14 +1389,14 @@ function update(fit,noAnim){
   r.legs.forEach(l=>{
     if(l.type==="ride"){
       const line=svcById[l.svc].line;
-      el("polyline",{class:"ln"+(line==="tram"||line==="mono"?" "+line:""),stroke:LINES[line].c,points:pts(l.stops)},overlay);
+      linePath(overlay,line,l.stops);
       l.stops.forEach(s=>ids.add(s));
     }else if(l.type==="walk"){
       el("line",{class:"walk",style:"opacity:.7",x1:ST[l.from].x,y1:ST[l.from].y,x2:ST[l.to].x,y2:ST[l.to].y},overlay);
       ids.add(l.from);ids.add(l.to);
     }
   });
-  const ov=el("g",{class:"ov"},overlay);
+  ids.forEach(id=>base.querySelector(`.st[data-id="${id}"]`)?.classList.add("hid"));const ov=el("g",{class:"ov"},overlay);
   ids.forEach(id=>drawStation(id,ov,false));
   if(fit){
     const xs=[...ids].map(i=>ST[i].x),ys=[...ids].map(i=>ST[i].y);
@@ -1617,7 +1682,7 @@ function setView(v){
   if(v==="explore")renderExplore(true);else update(true);
 }
 function renderExplore(fit){
-  drawPins();overlay.innerHTML="";base.classList.remove("dim");pinsG.innerHTML="";
+  drawPins();overlay.innerHTML="";base.querySelectorAll(".st.hid").forEach(n=>n.classList.remove("hid"));base.classList.remove("dim");pinsG.innerHTML="";
   const it=state.tour&&TOUR_BY_ID[state.tour];
   try{history.replaceState(null,"",location.pathname+location.search+"#tour~"+(it?it.id:"all")+"~"+LANG);}catch(e){}
   if(!it){
@@ -1653,11 +1718,11 @@ function renderExplore(fit){
   // draw every segment on the map, with numbered stops
   base.classList.add("dim");const ids=new Set();
   c.segs.forEach(s=>{if(!s.v)return;s.v.legs.forEach(l=>{
-    if(l.type==="ride"){const line=svcById[l.svc].line;el("polyline",{class:"ln"+(line==="tram"||line==="mono"?" "+line:""),stroke:LINES[line].c,points:pts(l.stops)},overlay);l.stops.forEach(x=>ids.add(x));}
+    if(l.type==="ride"){const line=svcById[l.svc].line;linePath(overlay,line,l.stops);l.stops.forEach(x=>ids.add(x));}
     else if(l.type==="walk"){el("line",{class:"walk",style:"opacity:.7",x1:ST[l.from].x,y1:ST[l.from].y,x2:ST[l.to].x,y2:ST[l.to].y},overlay);ids.add(l.from);ids.add(l.to);}
   });});
   c.ends.forEach(e=>ids.add(e.st));
-  const ov=el("g",{class:"ov"},overlay);ids.forEach(id=>drawStation(id,ov,false));
+  ids.forEach(id=>base.querySelector(`.st[data-id="${id}"]`)?.classList.add("hid"));const ov=el("g",{class:"ov"},overlay);ids.forEach(id=>drawStation(id,ov,false));
   const seen={};c.ends.forEach((e,i)=>{const S=ST[e.st];const k=seen[e.st]=(seen[e.st]||0)+1;
     const g=el("g",{class:"pin"},pinsG);el("circle",{cx:S.x+(k-1)*16,cy:S.y-(k-1)*16,r:11,fill:"var(--pinB)"},g);
     const tx=el("text",{x:S.x+(k-1)*16,y:S.y-(k-1)*16+4},g);tx.textContent=String(i+1);});
