@@ -1849,10 +1849,11 @@ function renderResult(r,variants){
   const steps=buildSteps(r);
   const dep=state.departMs||Date.now();
   const fmt=m=>new Intl.DateTimeFormat("en-GB",{timeZone:"Asia/Dubai",hour:"2-digit",minute:"2-digit",hourCycle:"h23"}).format(new Date(dep+m*60000));
-  // a line that is closed (or suspended) when the trip reaches it: show how long the trip takes, not a clock time
+  // a line that is closed, suspended or closing before the ride ends: show how long the trip takes, not a clock time
   const offHours=(()=>{let cum=from.lm?.min||0;const at0=dubaiAt(dep);
     for(const l of r.legs){if(l.type!=="ride"){cum+=l.t;continue;}const k=LINES[svcById[l.svc].line].kind;
-      if(isSuspended(k)||!svcState(k,addMin(at0,cum)).open)return true;cum+=legTime(l);}return false;})();
+      const at=addMin(at0,cum),st=svcState(k,at),lt=legTime(l);
+      if(isSuspended(k)||!st.open||at.m+headwayFor(l,at)+lt>st.close)return true;cum+=lt;}return false;})();
   const meta=v=>rng(v.time,v.timeMax)+" · "+(v.xf?t("changes",{n:v.xf}):t("noChanges"))+" · "+(v.walk?t("walking",{n:v.walk}):t("noWalking"));
   const LBL={fast:"fastest",few:"fewer",walk:"leastWalk"};
   let h=state.tourBack?`<div class="tbackwrap"><button class="tback" id="tBackRoute"><span class="barr" aria-hidden="true">←</span> ${esc(t("backTour"))}: ${esc(tourText(state.tourBack,0))}</button></div>`:"";
@@ -1889,7 +1890,7 @@ function renderResult(r,variants){
     h+=`<div class="fare"><b>AED ${monoFareOf(r.legs)}</b><span>${esc(t("monoOnly"))}</span></div>`;
   }
   // service hours check
-  const at0=dubaiAt(dep);const warns=[];const seen=new Set();let cum=from.lm?.min||0,closing=false;
+  const at0=dubaiAt(dep);const warns=[];const seen=new Set();let cum=from.lm?.min||0,closing=false,closesW=false;
   r.legs.forEach(l=>{
     if(l.type!=="ride"){cum+=l.t;return;}
     const k=LINES[svcById[l.svc].line].kind,lt=legTime(l);
@@ -1897,14 +1898,15 @@ function renderResult(r,variants){
     if(!seen.has(k)){seen.add(k);
       const at=addMin(at0,cum),st=svcState(k,at);
       if(!st.open)warns.push(t("wNotRunning",{m:t(KIND_LABEL[k]),t0:hm(at.m),t:hm(st.opens)}));
-      else if(at.m+headwayFor(l,at)+lt>st.close){warns.push(t("wCloses",{m:t(KIND_LABEL[k]),t:hm(st.close)}));closing=true;}
+      else if(at.m+headwayFor(l,at)+lt>st.close){warns.push(t("wCloses",{m:t(KIND_LABEL[k]),t:hm(st.close)}));closesW=true;}
       // published hours are not last-train times: in the RTA timetable the last end-to-end trains leave
       // about an hour before the published closing, so any ride starting in that last hour gets the note
       else if(st.close-at.m<=LAST_TRAIN_WINDOW)closing=true;
     }
     cum+=lt;
   });
-  if(closing)warns.push(t("hoursNote"));
+  // "may not finish tonight" already says it all; the last-train note is for the hour before that
+  if(closing&&!closesW)warns.push(t("hoursNote"));
   if(warns.length)h+=`<div class="warn" role="status">${warns.map(w=>`<p>${esc(w)}</p>`).join("")}</div>`;
   // share
   const url=shareUrl();
