@@ -1267,7 +1267,9 @@ function panelInset(){
   if(innerWidth<=720)return {l:8,t:8,r:8,b:Math.max(16,innerHeight-p.top+8)};
   return {l:p.right+16,t:16,r:70,b:70};
 }
+let lastFit=null; // the last framing, so the map can be re-framed when the panel changes size
 function fitBox(b,anim,maxK){
+  lastFit={b,maxK};
   const ins=panelInset();
   const W=Math.max(120,innerWidth-ins.l-ins.r),H=Math.max(120,innerHeight-ins.t-ins.b);
   const k=Math.min(W/(b.x1-b.x0),H/(b.y1-b.y0),maxK||2.2);
@@ -1562,9 +1564,11 @@ $("#clrFrom").onclick=()=>{setEnd("from",null);fromI.focus();};
 $("#clrTo").onclick=()=>{setEnd("to",null);toI.focus();};
 function setMin(on){const p=$("#panel");p.classList.toggle("min",on);$("#grab").setAttribute("aria-expanded",String(!on));
   $("#grab").setAttribute("aria-label",t(on?"show":"hide"));
-  requestAnimationFrame(()=>{if(state.from&&state.to&&routeBox)fitBox(routeBox,true,1.6);});}
+  // re-frame whatever is on screen (route, tour or the whole map) for the new free space
+  requestAnimationFrame(()=>{if(lastFit)fitBox(lastFit.b,true,lastFit.maxK);});}
 function renderMinbar(){const {from,to}=state;const mb=$("#minbar");
-  if(from&&to&&lastRoute)mb.innerHTML=`<b>${esc(rng(lastRoute.time,lastRoute.timeMax))}</b><span>${esc(endName(from)+" → "+endName(to))}</span><em>▴</em>`;
+  if(state.view==="explore")mb.innerHTML=`<span>${esc(state.tour?tourText(state.tour,0):t("explore"))}</span><em>▴</em>`;
+  else if(from&&to&&lastRoute)mb.innerHTML=`<b>${esc(rng(lastRoute.time,lastRoute.timeMax))}</b><span>${esc(endName(from)+" → "+endName(to))}</span><em>▴</em>`;
   else mb.innerHTML=`<span>${esc(t("phTo"))}</span><em>▴</em>`;}
 $("#grab").onclick=()=>{renderMinbar();setMin(!$("#panel").classList.contains("min"));};
 $("#minbar").onclick=()=>setMin(false);
