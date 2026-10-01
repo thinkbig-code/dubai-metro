@@ -1,102 +1,93 @@
-# Dubai Metro Map: как выложить и поддерживать
+# Dubai Metro Map
 
-Сайт состоит из одного файла `index.html`. Сервер, база данных и сборка не нужны.
+An unofficial, free map and journey planner for the Dubai Metro, Dubai Tram and Palm Monorail.
 
-## 1. Выложить на GitHub Pages (бесплатно)
+**Live site: https://dubaimetro.fyi**
 
-1. Зарегистрируйся на github.com, если ещё нет аккаунта.
-2. Нажми **New repository**, назови его, например, `dubai-metro`, выбери **Public** и нажми **Create repository**.
-3. На странице репозитория нажми **uploading an existing file** и перетащи туда `index.html` и этот `README.md`. Затем нажми **Commit changes**.
-4. Открой **Settings → Pages**. В разделе **Build and deployment** выбери **Deploy from a branch**, ветку `main` и папку `/ (root)`, затем нажми **Save**.
-5. Через 1–2 минуты сайт откроется по адресу `https://thinkbig-code.github.io/dubai-metro/`.
+Type a place or a station (or tap a popular place) and the planner shows the route with every change, the walking parts, an estimated travel time and the Nol fare. It runs in the browser on phones and computers; there is nothing to install, no account and no tracking.
 
-Ссылки на маршруты, кнопка WhatsApp и QR-коды сами подставят этот адрес, в коде ничего менять не нужно.
+This is an independent, non-commercial project. It is not affiliated with RTA, and it does not use RTA or Dubai Metro logos.
 
-**Свой домен (по желанию).** Купи короткий домен у любого регистратора (около $10 в год). Затем открой **Settings → Pages → Custom domain**, впиши домен и сделай у регистратора DNS-запись по инструкции GitHub. Галочку **Enforce HTTPS** включи после того, как она станет доступна.
+## Languages
 
-### Вариант без GitHub: Netlify
+Each language has its own page, so search engines can show people the version in their language. The English page follows the visitor's saved or browser language; the others always open in their own language.
 
-Открой app.netlify.com/drop и перетащи папку с `index.html`. Сайт сразу получит адрес вида `что-то.netlify.app`, его можно переименовать в настройках. Для обновления снова перетащи папку.
-
-## 2. Кнопка «Сообщить об ошибке»
-
-Кнопка видна всегда. По нажатию открывается окно с готовым отчётом: откуда и куда, выбранный вариант маршрута, линии, пересадки, минуты пешком, время в пути, язык и ссылка на маршрут. Куда этот отчёт уйдёт, задаётся двумя строками в `index.html`:
-
-```
-const REPORT_URL="";
-const REPORT_EMAIL="";
-```
-
-- **Ничего не задано** (как сейчас): окно объясняет, что адрес для отзывов не настроен, и предлагает скопировать отчёт.
-- **GitHub Issues** (удобнее всего):
-  1. В репозитории открой **Settings → General → Features** и проверь, что галочка **Issues** включена.
-  2. Впиши `const REPORT_URL="https://github.com/thinkbig-code/dubai-metro/issues";`
-  3. Сохрани файл в репозитории (значок карандаша → Commit changes).
-
-  Кнопка в окне откроет новое обращение, где заголовок уже заполнен маршрутом, а текст отчётом. Для отправки нужен аккаунт GitHub.
-- **Google Form или любая другая страница:** впиши её адрес в `REPORT_URL`. Окно откроет страницу, а отчёт можно скопировать и вставить туда.
-- **Почта:** если `REPORT_URL` пустой, можно вписать адрес в `REPORT_EMAIL`. Тогда окно откроет почтовую программу с готовым письмом. Учти, что этот адрес увидит любой посетитель сайта.
-
-## 3. Проверка на телефоне перед запуском
-
-Пройди всё это на своём телефоне, на опубликованном адресе:
-
-- [ ] Маршрут «Аэропорт → Dubai Mall» строится, видно время, цену и шаги.
-- [ ] Кнопка «Копировать ссылку» копирует ссылку; ссылка, открытая на другом телефоне, показывает тот же маршрут на том же языке.
-- [ ] Кнопка WhatsApp открывает WhatsApp с текстом и ссылкой.
-- [ ] QR-код появляется, и камера другого телефона его распознаёт.
-- [ ] «Карточка поездки» открывается, читается и закрывается крестиком.
-- [ ] «Выезд в» меняет время прибытия; поздний выезд к Atlantis даёт предупреждение про монорельс.
-- [ ] Вкладка «Прогулки по Дубаю»: карточки открываются, нажатие на участок ведёт в маршрут и обратно.
-- [ ] Арабский и урду: текст справа налево, буквы не обрезаются (особенно урду, у него высокий шрифт).
-- [ ] Хинди и китайский: нет пустых квадратиков вместо символов.
-- [ ] Тёмная тема телефона: всё читается.
-- [ ] Карта двигается и приближается пальцами, карточка станции не уезжает за экран.
-
-## 4. Поддержка (раз в 2–3 месяца, около получаса)
-
-1. **Названия станций.** Поищи в новостях «Dubai Metro station renamed». Если станцию переименовали, поправь её в блоке `RAW` (первое значение), а старое название добавь в список бывших названий (последний массив). Так поиск по старому имени продолжит работать.
-2. **Тарифы и часы работы.** Сверь с сайтом RTA блоки `FARES` и `HOURS`. В праздники и Рамадан часы меняются; это отмечено на сайте, в код вносить не нужно.
-3. **Монорельс.** Проверь, работает ли он (`SERVICE_STATUS.mono`: `"operating"` или `"suspended"`), таблицу цен `MONO_FARES` и часы работы.
-4. **Самопроверка.** Открой сайт с `#selftest` в конце адреса, например `https://thinkbig-code.github.io/dubai-metro/#selftest`, затем открой консоль браузера (на компьютере F12 → Console). В конце должно быть `VALIDATION: N/N passed` и `ITINERARIES: 10/10 passed`. Если что-то с пометкой FAIL, значит правка что-то сломала.
-
-## 5. Откуда данные
-
-- **Время перегонов метро и трамвая** взято из расписания RTA в формате GTFS (версия ноября 2021 года из архива Transitland). Пути и станции с тех пор не менялись. Интервалы движения из того же расписания используются как ориентир.
-- **Названия станций, часы работы, тарифы, схема поездов Красной линии** взяты из новостей RTA и открытых источников за 2025–2026 годы.
-- **Монорельс Palm** обслуживает частный оператор, его в расписании RTA нет. Данные по нему взяты из открытых источников.
-- **Время пешком** приблизительное и помечено на сайте как оценка.
-
-Свежее расписание RTA лежит на Dubai Pulse (набор `rta_gtfs-open`), доступ к нему выдаётся по запросу. Если проект будет расти, стоит подать заявку как некоммерческий проект: тогда будут и актуальные данные, и формальное разрешение на их использование.
-
-Сайт неофициальный и не связан с RTA. Не используй на нём логотипы RTA и Dubai Metro.
-
-## 6. Поиск Google (SEO) и языковые страницы
-
-У сайта восемь адресов, по одному на язык. Google показывает каждому человеку страницу на его языке:
-
-| Язык | Адрес |
+| Language | Address |
 |---|---|
-| English | `https://thinkbig-code.github.io/dubai-metro/` |
-| हिन्दी | `.../dubai-metro/hi.html` |
-| العربية | `.../dubai-metro/ar.html` |
-| اردو | `.../dubai-metro/ur.html` |
-| Русский | `.../dubai-metro/ru.html` |
-| Deutsch | `.../dubai-metro/de.html` |
-| 中文 | `.../dubai-metro/zh.html` |
-| Français | `.../dubai-metro/fr.html` |
+| English | https://dubaimetro.fyi/ |
+| हिन्दी (Hindi) | https://dubaimetro.fyi/hi.html |
+| العربية (Arabic) | https://dubaimetro.fyi/ar.html |
+| اردو (Urdu) | https://dubaimetro.fyi/ur.html |
+| Русский (Russian) | https://dubaimetro.fyi/ru.html |
+| Deutsch (German) | https://dubaimetro.fyi/de.html |
+| 中文 (Chinese) | https://dubaimetro.fyi/zh.html |
+| Français (French) | https://dubaimetro.fyi/fr.html |
 
-Языковая страница сразу открывается на своём языке. Главная (английская) открывается на языке, который человек выбрал раньше, или на языке его телефона. У каждой страницы свой заголовок и описание для поиска, свой раздел «About this map» (описание, линии и станции, популярные маршруты, частые вопросы), ссылки на остальные языки (hreflang) и данные schema.org. Раздел открывается ссылкой внизу панели, а на телефоне кнопкой «i» рядом с выбором языка.
+## What it does
 
-**Какие файлы загружать (все вместе, Add file → Upload files):** `index.html`, `hi.html`, `ar.html`, `ur.html`, `ru.html`, `de.html`, `zh.html`, `fr.html`, `og-image.png`, `sitemap.xml`, `robots.txt`, `README.md`. При каждом обновлении сайта заменяются все восемь html-файлов, потому что в каждом из них лежит вся программа.
+- Place-to-place routes across the Red and Green Lines, the Expo branch, the Dubai Tram and the Palm Monorail, with up to three options (fastest, fewer changes, least walking) and a short "why this route" note.
+- Step-by-step directions, estimated travel time (with typical waiting time), estimated Nol fare by zone, and opening-hours warnings for late trips.
+- About 40 popular places (airport terminals, Dubai Mall, Burj Khalifa, Marina, JBR, Atlantis, souks, Expo City and more), with walking notes where the connection is well known.
+- "Explore Dubai": ten ready-made day trips that open as routes.
+- Sharing: copy link, WhatsApp, QR code and a trip card. Every route has its own link.
+- A built-in "Report a problem" form that opens a GitHub issue with the route details filled in.
+- Works on phones (bottom sheet that folds to one line) and computers, in light and dark mode.
 
-**Подключить Google Search Console (один раз, 10 минут):**
-1. Открой search.google.com/search-console и войди с аккаунтом Google.
-2. **Add property → URL prefix**, впиши `https://thinkbig-code.github.io/dubai-metro/`.
-3. Способ подтверждения **HTML tag**: Google покажет строку вида `<meta name="google-site-verification" content="...">`. Пришли её мне, я вставлю её во все страницы, ты загрузишь их и нажмёшь **Verify**.
-4. В разделе **Sitemaps** впиши `sitemap.xml` и нажми **Submit**. В карте сайта перечислены все восемь языковых страниц.
-5. Через 2–4 недели в **Performance** будет видно, по каким запросам и из каких стран приходят люди.
+## Data and accuracy
 
-`robots.txt` начнёт работать, когда у сайта будет свой домен (сейчас поисковики читают его только из корня `thinkbig-code.github.io`). Он ничему не мешает.
+- **Run times** between stations come from the RTA GTFS timetable (November 2021 edition, archived by Transitland). Track and stations have not changed since; travel times are estimates, not real-time.
+- **Station names, lines, fare zones and connections** are checked against the RTA rail network map published on 25 September 2026, including the Etihad Rail connection at Jumeirah Golf Estates (Al Yalayis Station) and the bus link to Airport Terminal 2.
+- **Fares and opening hours** come from RTA announcements and public sources (2025–2026). Hours change during Ramadan and on public holidays.
+- **Palm Monorail** is run by a private operator and is not part of Nol; its status and ticket prices come from the operator's website. It is currently shown as temporarily suspended.
+- **Walking times** are rough estimates and are marked as such.
 
-**Если подключишь свой домен:** адрес `thinkbig-code.github.io/dubai-metro/` прописан во всех страницах (canonical, hreflang, og:url, og:image), в `sitemap.xml` и `robots.txt`. Скажи мне новый домен, я заменю везде.
+The current RTA timetable is published on Dubai Pulse (dataset `rta_gtfs-open`), where access is granted on request.
+
+## Report a problem
+
+Use the **Report a problem** button on the site, or open an issue here: https://github.com/thinkbig-code/dubai-metro/issues
+
+## Files
+
+| File | Purpose |
+|---|---|
+| `index.html`, `hi.html`, `ar.html`, `ur.html`, `ru.html`, `de.html`, `zh.html`, `fr.html` | The whole app, one page per language. Each file is self-contained (map, data, translations, code). |
+| `og-image.png` | Preview image for links shared in WhatsApp, Telegram and social networks. |
+| `sitemap.xml`, `robots.txt` | For search engines; the sitemap lists all eight language pages. |
+| `CNAME` | Connects the custom domain `dubaimetro.fyi` to GitHub Pages. Do not delete it. |
+
+The eight pages are generated from one source file, so an update always changes all eight together. The generator script is not in this repository yet.
+
+## Hosting
+
+- **GitHub Pages**, branch `main`, folder `/ (root)`, with **Enforce HTTPS** turned on.
+- **Domain:** `dubaimetro.fyi`, registered at Porkbun. DNS records:
+  - `A` `@` → `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+  - `AAAA` `@` → `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153`
+  - `CNAME` `www` → `thinkbig-code.github.io`
+  - `TXT` `@` → `google-site-verification=…` (keeps Google Search Console verified; do not remove)
+- Old links to `thinkbig-code.github.io/dubai-metro/` redirect to the new domain automatically.
+- **Google Search Console:** domain property `dubaimetro.fyi`, sitemap `https://dubaimetro.fyi/sitemap.xml` submitted.
+
+## How updates are made
+
+1. A change is prepared and published as a preview first.
+2. It is checked on a phone and a computer.
+3. Only after that is it committed here and goes live (usually within 1–2 minutes).
+
+## Maintenance (every 2–3 months, about 30 minutes)
+
+1. **Station names.** Check for renamed stations (search "Dubai Metro station renamed"). Old names stay searchable.
+2. **Fares and hours.** Compare with RTA.
+3. **Palm Monorail.** Check whether it is running again, and its ticket prices.
+4. **RTA network map.** Compare with the latest PDF on rta.ae.
+5. **Self-test.** Open `https://dubaimetro.fyi/#selftest`, then the browser console (F12 → Console on a computer). It should end with `VALIDATION: N/N passed` and `ITINERARIES: 10/10 passed`. Any `FAIL` line means something broke.
+
+### Quick phone check after a bigger update
+
+- A route from the airport to Dubai Mall shows time, fare and steps.
+- A copied link opens the same route and language on another phone.
+- WhatsApp, QR code and the trip card work.
+- The panel folds to one line with the handle and opens again.
+- Arabic and Urdu read right to left without cut-off letters; Hindi and Chinese show no empty boxes.
+- Dark mode is readable; the map pans and zooms with two fingers.
