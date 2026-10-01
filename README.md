@@ -53,6 +53,7 @@ Use the **Report a problem** button on the site, or open an issue here: https://
 |---|---|
 | `index.html`, `hi.html`, `ar.html`, `ur.html`, `ru.html`, `de.html`, `zh.html`, `fr.html` | The whole app, one page per language. Each file is self-contained (map, data, translations, code). |
 | `og-image.png` | Preview image for links shared in WhatsApp, Telegram and social networks. |
+| `apple-touch-icon.png` | Icon shown when the site is added to a phone's home screen. The browser tab icon is built into each page. |
 | `sitemap.xml`, `robots.txt` | For search engines; the sitemap lists all eight language pages. |
 | `CNAME` | Connects the custom domain `dubaimetro.fyi` to GitHub Pages. Do not delete it. |
 
