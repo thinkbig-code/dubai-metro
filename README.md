@@ -4,7 +4,7 @@ An unofficial, free map and journey planner for the Dubai Metro, Dubai Tram and 
 
 **Live site: https://dubaimetro.fyi**
 
-Type a place or a station (or tap a popular place) and the planner shows the route with every change, the walking parts, an estimated travel time and the Nol fare. It runs in the browser on phones and computers; there is nothing to install and no account. Visits are counted anonymously with [GoatCounter](https://www.goatcounter.com/) (no cookies, no personal data); the statistics are at https://dubaimetro.goatcounter.com.
+Type a place or a station (or tap a place icon on the map) and the planner shows the route with every change, the walking parts, an estimated travel time and the Nol fare. It runs in the browser on phones and computers; there is nothing to install and no account. Visits are counted anonymously with [GoatCounter](https://www.goatcounter.com/) (no cookies, no personal data); the statistics are at https://dubaimetro.goatcounter.com.
 
 This is an independent, non-commercial project. It is not affiliated with RTA, and it does not use RTA or Dubai Metro logos.
 
@@ -99,7 +99,7 @@ After every push to `main` that changes a page, the GitHub Actions workflow `.gi
 
 ## Usage events
 
-The site sends anonymous events to GoatCounter (dubaimetro.goatcounter.com) as `event/a/b` with the interface language and a detail in the title: `route` (with where the trip came from: search, popular, map, link, geo, swap or `landing:<guide page>`), `place` and `station` (picked in the search, and whether by name, alias or former name), `noresult` (search text that found nothing, shortened and dropped if it looks like a number or e-mail), `view` (route option or details), `share`, `report` and `geo`. Only ids from the app's data are sent: no coordinates, no report text, nothing about the person.
+The site sends anonymous events to GoatCounter (dubaimetro.goatcounter.com) as `event/a/b` with the interface language and a detail in the title: `route` (with where the trip came from: search, map, link, geo, swap or `landing:<guide page>`), `place` and `station` (picked in the search, and whether by name, alias or former name), `noresult` (search text that found nothing, shortened and dropped if it looks like a number or e-mail), `view` (route option or details), `share`, `report` and `geo`. Only ids from the app's data are sent: no coordinates, no report text, nothing about the person.
 
 Events for the map and station-first use:
 
@@ -107,7 +107,7 @@ Events for the map and station-first use:
 - `route_from_station_click/<station>` and `route_to_station_click/<station>`: From here / To here in a station card (a place picked from the card is sent as the second part).
 - `station_pair_route_search/<from>/<to>`: a route with a station at both ends.
 - `station_link/at|from|to/<station>`: the app opened from a one-station link.
-- Every `route` event also carries `first_<mode>`: how the page view started (`map`, `station_search`, `place_search`, `popular`, `geo`, `link`, `landing`, `swap`).
+- Every `route` event also carries `first_<mode>`: how the page view started (`map`, `station_search`, `place_search`, `geo`, `link`, `landing`, `swap`).
 
 ## Links into the app
 
