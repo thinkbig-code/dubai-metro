@@ -62,7 +62,7 @@ Use the **Report a problem** button on the site, or open an issue here: https://
 | `sw.js` | Service worker for offline use: pages are fetched fresh when online and the last copy is used offline. Generated from `tools/sw.template.js`. |
 | `apple-touch-icon.png` | Icon shown when the site is added to a phone's home screen. The browser tab icon is built into each page. |
 | `dubai-metro-map.png` | The whole network as a picture, for Google Images and sharing. Drawn by the app itself with `tools/render_map.js`. |
-| `map/`, `stations/`, `lines/`, `tram/`, `palm-monorail/`, `destinations/`, `routes/` | English guide pages for search engines (21 pages, including the map image page): stations with old and new names, the lines, ten places and three routes. Each page hands off to the planner. |
+| `map/`, `stations/`, `lines/`, `tram/`, `palm-monorail/`, `destinations/`, `routes/` | English guide pages for search engines (22 pages, including the map image page): stations with old and new names, the lines, three station pages, ten places and three routes. Each page hands off to the planner or opens a station on the map. |
 | `sitemap.xml`, `robots.txt` | For search engines; the sitemap lists the ten language pages and the guide pages. |
 | `CNAME` | Connects the custom domain `dubaimetro.fyi` to GitHub Pages. Do not delete it. |
 
@@ -97,6 +97,22 @@ If station names or the map drawing change, also redraw the map picture (set the
 ## Usage events
 
 The site sends anonymous events to GoatCounter (dubaimetro.goatcounter.com) as `event/a/b` with the interface language and a detail in the title: `route` (with where the trip came from: search, popular, map, link, tour, geo, swap or `landing:<guide page>`), `place` and `station` (picked in the search, and whether by name, alias or former name), `noresult` (search text that found nothing, shortened and dropped if it looks like a number or e-mail), `view` (route option or details), `share`, `report` and `geo`. Only ids from the app's data are sent: no coordinates, no report text, nothing about the person.
+
+Events for the map and station-first use:
+
+- `map_station_click/<station>`: a station tapped on the map; the title adds where the visitor came from (`home` or `landing:<guide page>`) and `phone` or `desktop` (from screen width only).
+- `route_from_station_click/<station>` and `route_to_station_click/<station>`: From here / To here in a station card (a place picked from the card is sent as the second part).
+- `station_pair_route_search/<from>/<to>`: a route with a station at both ends.
+- `station_link/at|from|to/<station>`: the app opened from a one-station link.
+- Every `route` event also carries `first_<mode>`: how the page view started (`map`, `station_search`, `place_search`, `popular`, `tour`, `geo`, `link`, `landing`, `swap`).
+
+## Links into the app
+
+- `#<from>~<to>~<lang>`: a route (stations or places).
+- `#at~<station>~<lang>`: the map centred on the station with its card open (From here / To here).
+- `#<station>~~<lang>` or `#~<station>~<lang>`: one end filled in, the other left for a tap or a search.
+
+Guide pages use these: every station name has a small "map" link, station pages have Show on the map / Plan a route from here / Plan a route to here, and /map/ lists every station as a link that opens it on the map.
 
 To build for another address (for example a new domain), set `SITE`: `SITE=https://example.com/ python3 tools/build.py`, then update `CNAME`.
 

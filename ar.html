@@ -506,7 +506,7 @@ ol.steps2{list-style:none;margin:0;padding:14px 16px 8px}
 <p><b>مونوريل النخلة:</b> من Palm Gateway إلى Atlantis Aquaventure على امتداد نخلة جميرا. تديره شركة خاصة وليس جزءًا من نظام نول. عند آخر تحديث، كان المشغّل يشير إلى توقف الخدمة مؤقتًا.</p>
 <p class="lst" dir="ltr">Palm Gateway, Al Ittihad Park, Palm Jumeirah Mall, Atlantis Aquaventure.</p>
 <h2>أدلة المحطات والأماكن (بالإنجليزية)</h2>
-<p class="lst" dir="ltr"><a href="stations/" hreflang="en" lang="en">Dubai Metro Stations</a> · <a href="map/" hreflang="en" lang="en">Dubai Metro Map 2026</a> · <a href="lines/red-line/" hreflang="en" lang="en">Dubai Metro Red Line</a> · <a href="lines/green-line/" hreflang="en" lang="en">Dubai Metro Green Line</a> · <a href="tram/" hreflang="en" lang="en">Dubai Tram</a> · <a href="palm-monorail/" hreflang="en" lang="en">Palm Monorail</a> · <a href="destinations/dubai-mall/" hreflang="en" lang="en">Dubai Mall</a> · <a href="destinations/museum-of-the-future/" hreflang="en" lang="en">Museum of the Future</a> · <a href="destinations/dubai-frame/" hreflang="en" lang="en">Dubai Frame</a> · <a href="destinations/gold-souk/" hreflang="en" lang="en">Gold Souk</a> · <a href="destinations/atlantis-the-palm/" hreflang="en" lang="en">Atlantis The Palm</a> · <a href="destinations/dubai-marina/" hreflang="en" lang="en">Dubai Marina</a> · <a href="destinations/jbr/" hreflang="en" lang="en">JBR (Jumeirah Beach Residence)</a> · <a href="destinations/mall-of-the-emirates/" hreflang="en" lang="en">Mall of the Emirates</a> · <a href="destinations/expo-city-dubai/" hreflang="en" lang="en">Expo City Dubai</a> · <a href="destinations/dubai-airport/" hreflang="en" lang="en">Dubai Airport (DXB)</a> · <a href="stations/burjuman/" hreflang="en" lang="en">BurJuman Metro Station, Dubai</a> · <a href="stations/sobha-realty/" hreflang="en" lang="en">Sobha Realty Metro Station, Dubai</a> · <a href="routes/dubai-airport-to-dubai-mall/" hreflang="en" lang="en">Dubai Airport to Dubai Mall by metro</a> · <a href="routes/dubai-marina-to-dubai-mall/" hreflang="en" lang="en">Dubai Marina to Dubai Mall by metro</a> · <a href="routes/dubai-airport-to-dubai-marina/" hreflang="en" lang="en">Dubai Airport to Dubai Marina and JBR by metro</a></p>
+<p class="lst" dir="ltr"><a href="stations/" hreflang="en" lang="en">Dubai Metro Stations</a> · <a href="map/" hreflang="en" lang="en">Dubai Metro Map 2026</a> · <a href="lines/red-line/" hreflang="en" lang="en">Dubai Metro Red Line</a> · <a href="lines/green-line/" hreflang="en" lang="en">Dubai Metro Green Line</a> · <a href="tram/" hreflang="en" lang="en">Dubai Tram</a> · <a href="palm-monorail/" hreflang="en" lang="en">Palm Monorail</a> · <a href="destinations/dubai-mall/" hreflang="en" lang="en">Dubai Mall</a> · <a href="destinations/museum-of-the-future/" hreflang="en" lang="en">Museum of the Future</a> · <a href="destinations/dubai-frame/" hreflang="en" lang="en">Dubai Frame</a> · <a href="destinations/gold-souk/" hreflang="en" lang="en">Gold Souk</a> · <a href="destinations/atlantis-the-palm/" hreflang="en" lang="en">Atlantis The Palm</a> · <a href="destinations/dubai-marina/" hreflang="en" lang="en">Dubai Marina</a> · <a href="destinations/jbr/" hreflang="en" lang="en">JBR (Jumeirah Beach Residence)</a> · <a href="destinations/mall-of-the-emirates/" hreflang="en" lang="en">Mall of the Emirates</a> · <a href="destinations/expo-city-dubai/" hreflang="en" lang="en">Expo City Dubai</a> · <a href="destinations/dubai-airport/" hreflang="en" lang="en">Dubai Airport (DXB)</a> · <a href="stations/burjuman/" hreflang="en" lang="en">BurJuman Metro Station, Dubai</a> · <a href="stations/sobha-realty/" hreflang="en" lang="en">Sobha Realty Metro Station, Dubai</a> · <a href="stations/union/" hreflang="en" lang="en">Union Metro Station, Dubai</a> · <a href="routes/dubai-airport-to-dubai-mall/" hreflang="en" lang="en">Dubai Airport to Dubai Mall by metro</a> · <a href="routes/dubai-marina-to-dubai-mall/" hreflang="en" lang="en">Dubai Marina to Dubai Mall by metro</a> · <a href="routes/dubai-airport-to-dubai-marina/" hreflang="en" lang="en">Dubai Airport to Dubai Marina and JBR by metro</a></p>
 <h2>أسئلة شائعة</h2>
 <h3>ما مواعيد تشغيل مترو دبي؟</h3>
 <p>عادةً من 5:00 صباحًا حتى منتصف الليل من الاثنين إلى الخميس ويوم السبت، ومن 5:00 صباحًا حتى 1:00 بعد منتصف الليل يوم الجمعة، ومن 8:00 صباحًا حتى منتصف الليل يوم الأحد. يعمل الترام تقريبًا من 6:00 صباحًا حتى 1:00 بعد منتصف الليل (من 9:00 يوم الأحد). تتغير المواعيد في رمضان والعطلات الرسمية، لذا تحقّق من هيئة الطرق والمواصلات قبل الرحلات المتأخرة.</p>
@@ -1275,7 +1275,11 @@ let view={x:0,y:0,k:1},routeBox=null,lastSig="";
 // guarded no-result text below), report text or anything that identifies a person.
 // path = "<event>/<a>/<b>", title = "<language>|<detail>|..."
 let trkSrc="";const trkQ=[];let trkTimer=0;const trkSeen=new Set();
+// how this page view started (map, station_search, place_search, popular, tour, geo, link, landing): sent with every route
+let firstMode="";const FIRST_OF={map_station_click:"map",route_from_station_click:"map",route_to_station_click:"map",place:"place_search",station:"station_search",geo:"geo"};
+const device=()=>innerWidth<=720?"phone":"desktop";
 function track(ev,a,b,...detail){
+  if(!firstMode&&FIRST_OF[ev])firstMode=FIRST_OF[ev];
   try{
     const path=[ev,a||"-",b||"-"].map(x=>String(x).replace(/[\/\s]+/g,"_")).join("/");
     const title=[LANG].concat(detail.filter(x=>x!==undefined&&x!=="")).join("|");
@@ -1369,12 +1373,12 @@ function endPtr(e){
     if(drag&&moved<6){const st=drag.target.closest&&drag.target.closest(".st");
       const lm=drag.target.closest&&drag.target.closest(".lmk");
       if(lm){closePop();trkSrc="map";setEnd("to",parseToken(lm.dataset.place));}
-      else if(st&&st.dataset.id)openPop(st.dataset.id);else closePop();}
+      else if(st&&st.dataset.id){openPop(st.dataset.id);track("map_station_click",st.dataset.id,"-",trkSurface(),device());}else closePop();}
     drag=null;settleView();
   }
 }
 map.addEventListener("pointerup",endPtr);map.addEventListener("pointercancel",endPtr);
-base.addEventListener("keydown",e=>{const lm=e.target.closest(".lmk");if(lm&&(e.key==="Enter"||e.key===" ")){e.preventDefault();trkSrc="map";setEnd("to",parseToken(lm.dataset.place));return;}const st=e.target.closest(".st");if(st&&(e.key==="Enter"||e.key===" ")){e.preventDefault();openPop(st.dataset.id);}});
+base.addEventListener("keydown",e=>{const lm=e.target.closest(".lmk");if(lm&&(e.key==="Enter"||e.key===" ")){e.preventDefault();trkSrc="map";setEnd("to",parseToken(lm.dataset.place));return;}const st=e.target.closest(".st");if(st&&(e.key==="Enter"||e.key===" ")){e.preventDefault();openPop(st.dataset.id);track("map_station_click",st.dataset.id,"-",trkSurface(),device());}});
 $("#zin").onclick=()=>zoomAt(1.4,innerWidth/2,innerHeight/2,true);
 $("#zout").onclick=()=>zoomAt(1/1.4,innerWidth/2,innerHeight/2,true);
 $("#zfit").onclick=()=>fitBox(BOX,true);
@@ -1404,12 +1408,12 @@ function openPop(id){
       ul.innerHTML=rows.map(({pl,v})=>`<li><button data-p="${pl.id}"><span>${esc(POPULAR_LABEL[pl.id]?POPULAR_LABEL[pl.id]():pl.n)}</span><b>${esc(rng(v.time,v.timeMax))}</b></button></li>`).join("");
       ul.dataset.done="1";
       ul.addEventListener("click",e=>{const b=e.target.closest("button[data-p]");if(!b)return;const pl=PLACE_BY_ID[b.dataset.p];
-        state.from={st:id};fromI.value=endName(state.from);closePop();trkSrc="map";setEnd("to",{st:pl.st,lm:pl});});
+        track("route_from_station_click",id,pl.id);state.from={st:id};fromI.value=endName(state.from);closePop();trkSrc="map";setEnd("to",{st:pl.st,lm:pl});});
     }
     ul.hidden=!ul.hidden;$("#pW").setAttribute("aria-expanded",String(!ul.hidden));placePop();
   };
-  $("#pA").onclick=()=>{trkSrc="map";setEnd("from",{st:id});closePop();};
-  $("#pB").onclick=()=>{trkSrc="map";setEnd("to",{st:id});closePop();};
+  $("#pA").onclick=()=>{track("route_from_station_click",id);trkSrc="map";setEnd("from",{st:id});closePop();};
+  $("#pB").onclick=()=>{track("route_to_station_click",id);trkSrc="map";setEnd("to",{st:id});closePop();};
   $("#pA").focus({preventScroll:true});
 }
 function closePop(){pop.hidden=true;popId=null;}
@@ -1756,7 +1760,9 @@ function update(fit,noAnim){
     return;
   }
   const variants=computeVariants(from,to);
-  {if(!trkSeen.has(sig)){trkSeen.add(sig);track("route",tok(from),tok(to),trkSrc||"other",variants.length?"ok":"none");}trkSrc="";}
+  {if(!trkSeen.has(sig)){trkSeen.add(sig);if(!firstMode)firstMode=String(trkSrc||"other").split(":")[0];
+    track("route",tok(from),tok(to),trkSrc||"other",variants.length?"ok":"none","first_"+firstMode);
+    if(!from.lm&&!to.lm)track("station_pair_route_search",from.st,to.st,firstMode);}trkSrc="";}
   if(!variants.length){hint(t("noRoute"));if(fit)fitHomeIfAway(!noAnim);return;}
   const r=variants.find(v=>v.modes.includes(state.mode))||variants[0];
   renderResult(r,variants);
@@ -2268,13 +2274,20 @@ function runValidation(){
 // a shared link (#from~to) opens that route; otherwise the fields start empty
 const SELFTEST=location.hash==="#selftest";
 let start=null,hashLang=null;
-let hashTour=null;
-try{const m=(location.hash||"").slice(1).split("~");if(m[0]==="tour"){hashTour=m[1]||"all";if(m[2]&&I18N[m[2]])hashLang=m[2];}else if(m.length>=2){const a=parseToken(m[0]),b=parseToken(m[1]);if(a&&b)start=[a,b];if(m[2]&&I18N[m[2]])hashLang=m[2];}}catch(e){}
+let hashTour=null,hashAt=null;
+// links: #from~to(~lang) a route; #at~<station>(~lang) the map on that station with its card open;
+// #<station>~ or #~<station> (~lang) one end filled in, the other left for a tap or a search
+try{const m=(location.hash||"").slice(1).split("~");if(m[0]==="tour"){hashTour=m[1]||"all";if(m[2]&&I18N[m[2]])hashLang=m[2];}
+  else if(m[0]==="at"&&ST[m[1]]){hashAt=m[1];if(m[2]&&I18N[m[2]])hashLang=m[2];}
+  else if(m.length>=2){const a=m[0]?parseToken(m[0]):null,b=m[1]?parseToken(m[1]):null;if(a||b)start=[a,b];if(m[2]&&I18N[m[2]])hashLang=m[2];}}catch(e){}
+// the guide page the visitor came from, if any ("landing:destinations-dubai-mall")
+function trkLanding(){try{const r=new URL(document.referrer);if(r.host===location.host&&/^\/(destinations|routes|stations|lines|tram|palm-monorail|map)\//.test(r.pathname))return "landing:"+r.pathname.split("/").filter(Boolean).join("-");}catch(e){}return "";}
+function trkSurface(){return trkLanding()||"home";}
 // no link: open with empty fields
 if(!start)start=[null,null];
-state.from=start[0];state.to=start[1];if(start[0]&&start[1]){trkSrc="link";
-  // arrived from one of our guide pages: count it as that page's conversion ("landing:destinations-dubai-mall")
-  try{const r=new URL(document.referrer);if(r.host===location.host&&/^\/(destinations|routes|stations|lines|tram|palm-monorail)\//.test(r.pathname))trkSrc="landing:"+r.pathname.split("/").filter(Boolean).join("-");}catch(e){}}
+state.from=start[0];state.to=start[1];if(start[0]&&start[1]){trkSrc=trkLanding()||"link";}
+const oneStationLink=hashAt||(start[0]||start[1])&&!(start[0]&&start[1]);
+if(oneStationLink)firstMode=trkLanding()?"landing":"link";
 fromI.value=endName(state.from);toI.value=endName(state.to);
 // language: saved choice, else browser language, else English
 function pickLang(){
@@ -2311,6 +2324,7 @@ $("#langMenu").addEventListener("keydown",e=>{const bs=[...$("#langMenu").queryS
   else if(e.key==="Escape"){toggleMenu(false);$("#langBtn").focus();}});
 document.addEventListener("click",e=>{if(!$("#langMenu").hidden&&!e.target.closest("#langMenu"))toggleMenu(false);});
 applyLang(hashLang||pickLang(),false);
+if(oneStationLink)track("station_link",hashAt?"at":start[0]?"from":"to",hashAt||endToken(start[0]||start[1]),trkSurface());
 setInterval(()=>{renderStatus();if(!state.departMs)renderLeave();},60000);
 fitBox(homeBox(),false);
 try{new ResizeObserver(refitSoon).observe($("#panel"));}catch(e){}
@@ -2320,8 +2334,11 @@ if(SELFTEST){window.__dm={computeVariants,parseToken,ids:Object.keys(ST),places:
   data:{ST,SVC,LINES,PLACES,POPULAR,ZONE,FARES,MONO_FARES,HOURS,SERVICE_STATUS,WALKS,GEO,ALIAS,ITINERARIES,I18N_EN:I18N.en},legTime,headwayFor};runValidation();}
 if(hashTour){state.tour=TOUR_BY_ID[hashTour]?hashTour:null;state.view="explore";$("#panel").classList.add("explore");$("#vRoute").setAttribute("aria-selected","false");$("#vExplore").setAttribute("aria-selected","true");}
 update(true,true);
+function showStation(id){const S=ST[id];closePop();fitBox({x0:S.x-160,x1:S.x+260,y0:S.y-160,y1:S.y+160},true,1.6);setTimeout(()=>openPop(id),480);}
+if(hashAt)showStation(hashAt);
 addEventListener("resize",placePop);
-addEventListener("hashchange",()=>{const m=location.hash.slice(1).split("~");if(m.length<2||m[0]==="tour")return;const a=parseToken(m[0]),b=parseToken(m[1]);
+addEventListener("hashchange",()=>{const m=location.hash.slice(1).split("~");if(m.length<2||m[0]==="tour")return;
+  if(m[0]==="at"){if(ST[m[1]])showStation(m[1]);return;}const a=parseToken(m[0]),b=parseToken(m[1]);
   if(a&&b&&(endToken(a)!==endToken(state.from||{st:""})||endToken(b)!==endToken(state.to||{st:""}))){trkSrc="link";state.from=a;state.to=b;fromI.value=endName(a);toI.value=endName(b);update(true);}});
 })();
 </script>

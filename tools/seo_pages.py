@@ -273,6 +273,8 @@ h3{font-size:16px;margin:18px 0 6px}
 .lead{font-size:18px}
 .cta{display:inline-block;background:#E1251B;color:#fff;text-decoration:none;font-weight:600;padding:10px 16px;border-radius:999px;margin:6px 0}
 .cta.sm{font-size:14px;padding:6px 12px}
+.cta.alt{background:var(--surface);color:var(--accent);border:1px solid var(--rule)}
+.mapl{font-size:12px;font-weight:600;text-decoration:none;border:1px solid var(--rule);border-radius:999px;padding:0 6px;margin-inline-start:4px;white-space:nowrap}
 .card{background:var(--surface);border:1px solid var(--rule);border-radius:12px;padding:12px 14px;margin:10px 0}
 .sum{font-weight:600}
 .chip{display:inline-block;font-size:12px;font-weight:600;padding:2px 8px;border-radius:999px;background:var(--c);color:#fff}
@@ -479,7 +481,7 @@ def station(cfg):
             lead += ' %s (%s) is about %d minutes away on foot.' % (ST[o]['n'], ', '.join(LINE_NAME[l] for l in ST[o]['lines']), w['t'])
     if other_names(sid):
         lead += ' Other or former names: %s.' % ', '.join(other_names(sid))
-    body = ['<h1>%s metro station</h1>' % e(s['n']), '<p class="lead">%s</p>' % e(lead), plan(sid, 'p_dubai_mall' if sid != 'bk' else 'p_gold_souk', 'Plan a route from here')]
+    body = ['<h1>%s metro station</h1>' % e(s['n']), '<p class="lead">%s</p>' % e(lead), station_ctas(sid)]
     body.append('<h2>Station facts</h2>' + station_facts(sid))
     # neighbours on each line
     body.append('<h2>Next stations</h2><ul>')
@@ -492,6 +494,15 @@ def station(cfg):
         prev = ST[st[i - 1]]['n'] if i > 0 else None; nxt = ST[st[i + 1]]['n'] if i + 1 < len(st) else None
         body.append('<li>%s: %s</li>' % (e(LINE_NAME[sv['line']]), e(' · '.join(x for x in [prev and ('towards %s: %s' % (ST[st[0]]['n'], prev)), nxt and ('towards %s: %s' % (ST[st[-1]]['n'], nxt))] if x))))
     body.append('</ul>')
+    if sid in D['geo']:
+        # stations on other lines within 2 km in a straight line (not a walking time: no sourced path)
+        others = sorted((km(sid, o), o) for o in D['geo'] if o != sid and not (set(ST[o]['lines']) & set(lines)))
+        close = [(d, o) for d, o in others if d <= 2.0][:4]
+        if close:
+            body.append('<h2>Other lines nearby</h2><ul>')
+            for d, o in close:
+                body.append('<li>%s (%s), about %.1f km in a straight line%s</li>' % (st_cell(o), e(', '.join(LINE_NAME[l] for l in ST[o]['lines'])), d, ''))
+            body.append('</ul>')
     near = [p for p in D['places'] if p['st'] == sid]
     for w in WALKS:
         if sid in (w['a'], w['b']):
@@ -561,10 +572,24 @@ def conn(sid, line):
     return '; '.join(out)
 
 
+def at_link(sid):
+    """opens the app with the map centred on the station and its card open (From here / To here)"""
+    return '{ROOT}#at~%s~en' % sid
+
+
+def map_pin(sid):
+    return ' <a class="mapl" href="%s" aria-label="Show %s on the interactive map">map</a>' % (at_link(sid), e(ST[sid]['n']))
+
+
 def st_cell(sid):
     links = station_links(sid)
     nm = e(ST[sid]['n'])
-    return ('<a href="{ROOT}%s">%s</a>' % (links[0][0], nm)) if links else nm
+    return (('<a href="{ROOT}%s">%s</a>' % (links[0][0], nm)) if links else nm) + map_pin(sid)
+
+
+def station_ctas(sid):
+    return ('<p><a class="cta" href="%s">Show on the map</a> <a class="cta alt" href="{ROOT}#%s~~en">Plan a route from here</a> '
+            '<a class="cta alt" href="{ROOT}#~%s~en">Plan a route to here</a></p>') % (at_link(sid), sid, sid)
 
 
 def station_table(ids, line):
@@ -646,6 +671,13 @@ def stations_list():
     for i in renamed:
         body.append('<tr><td>%s</td><td>%s</td><td>%s</td></tr>' % (st_cell(i), e(', '.join(other_names(i))), e(', '.join(LINE_NAME[l] for l in ST[i]['lines']))))
     body.append('</table></div>')
+    xs = sorted({i for i in ids if len(ST[i]['lines']) > 1}, key=lambda i: ST[i]['n'])
+    body.append('<h2>Interchanges and walking links</h2><ul>')
+    for i in xs:
+        body.append('<li>%s: change between the %s inside the station.</li>' % (st_cell(i), e(' and '.join(LINE_NAME[l] for l in ST[i]['lines']))))
+    for w in WALKS:
+        body.append('<li>%s and %s: about %d minutes on foot.</li>' % (st_cell(w['a']), st_cell(w['b']), w['t']))
+    body.append('</ul>')
     body.append('<h2>All stations A–Z</h2><div class="scroll"><table><tr><th>Station</th><th>Lines</th><th>Zone</th></tr>')
     for i in ids:
         z = '' if ST[i]['lines'] == ['mono'] else ZONE.get(i, '')
@@ -688,7 +720,11 @@ def map_page():
             '<li><b>Interchanges in one station</b>: %s.</li>' % e(', '.join(ST[x]['n'] for x in xs)),
             '<li><b>Walking links between stations</b> (dotted on the map): %s.</li>' % e('; '.join(walks)),
             '</ul>',
-            '<p>Looking for a station by an old name? See <a href="{ROOT}stations/">all stations with their new and old names</a>.</p>']
+            '<p>Looking for a station by an old name? See <a href="{ROOT}stations/">all stations with their new and old names</a>.</p>',
+            '<h2>Open a station on the interactive map</h2><p>Tap a name: the map opens on that station, then choose From here or To here and tap a second station.</p>']
+    for title, ids in (('Red Line', R1 + [x for x in R2 if x not in R1]), ('Green Line', G), ('Dubai Tram', [x for i, x in enumerate(T) if x not in T[:i]]), ('Palm Monorail', M)):
+        body.append('<h3>%s</h3><p class="stl">%s</p>' % (e(title), ' · '.join('<a href="%s">%s</a>' % (at_link(x), e(ST[x]['n'])) for x in ids)))
+    body = body
     ld = {"@context": "https://schema.org", "@type": "ImageObject", "contentUrl": SITE + MAP_IMG, "name": "Dubai Metro, Tram and Palm Monorail map",
           "description": MAP_ALT, "width": MAP_W, "height": MAP_H, "encodingFormat": "image/png"}
     write(path, frame(path, 'Dubai Metro Map 2026: All Lines and Stations (Image and Interactive)', lead, '\n'.join(body), [(path, 'Map')], ld, og_image=MAP_IMG))

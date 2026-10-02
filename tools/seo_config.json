@@ -184,6 +184,17 @@
     "p_dxb_airport_terminal_3",
     "p_expo_city_dubai"
    ]
+  },
+  {
+   "id": "union",
+   "slug": "union",
+   "to": [
+    "p_gold_souk",
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_al_fahidi_historical_district",
+    "p_city_centre_deira_mall"
+   ]
   }
  ],
  "routes": [
