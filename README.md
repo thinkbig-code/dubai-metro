@@ -30,7 +30,6 @@ Each language has its own page, so search engines can show people the version in
 - Place-to-place routes across the Red and Green Lines, the Expo branch, the Dubai Tram and the Palm Monorail, with up to three options (fastest, fewer changes, least walking) and a short "why this route" note.
 - Step-by-step directions, estimated travel time (with typical waiting time), estimated Nol fare by zone, and opening-hours warnings for late trips.
 - About 40 popular places (airport terminals, Dubai Mall, Burj Khalifa, Marina, JBR, Atlantis, souks, Expo City and more), with walking notes where the connection is well known.
-- "Explore Dubai": ten ready-made day trips that open as routes.
 - Sharing: copy link, WhatsApp, QR code and a trip card. Every route has its own link.
 - A built-in "Report a problem" form that opens a GitHub issue with the route details filled in.
 - Works on phones (bottom sheet that folds to one line) and computers, in light and dark mode.
@@ -96,7 +95,7 @@ If station names or the map drawing change, also redraw the map picture (set the
 
 ## Usage events
 
-The site sends anonymous events to GoatCounter (dubaimetro.goatcounter.com) as `event/a/b` with the interface language and a detail in the title: `route` (with where the trip came from: search, popular, map, link, tour, geo, swap or `landing:<guide page>`), `place` and `station` (picked in the search, and whether by name, alias or former name), `noresult` (search text that found nothing, shortened and dropped if it looks like a number or e-mail), `view` (route option or details), `share`, `report` and `geo`. Only ids from the app's data are sent: no coordinates, no report text, nothing about the person.
+The site sends anonymous events to GoatCounter (dubaimetro.goatcounter.com) as `event/a/b` with the interface language and a detail in the title: `route` (with where the trip came from: search, popular, map, link, geo, swap or `landing:<guide page>`), `place` and `station` (picked in the search, and whether by name, alias or former name), `noresult` (search text that found nothing, shortened and dropped if it looks like a number or e-mail), `view` (route option or details), `share`, `report` and `geo`. Only ids from the app's data are sent: no coordinates, no report text, nothing about the person.
 
 Events for the map and station-first use:
 
@@ -104,7 +103,7 @@ Events for the map and station-first use:
 - `route_from_station_click/<station>` and `route_to_station_click/<station>`: From here / To here in a station card (a place picked from the card is sent as the second part).
 - `station_pair_route_search/<from>/<to>`: a route with a station at both ends.
 - `station_link/at|from|to/<station>`: the app opened from a one-station link.
-- Every `route` event also carries `first_<mode>`: how the page view started (`map`, `station_search`, `place_search`, `popular`, `tour`, `geo`, `link`, `landing`, `swap`).
+- Every `route` event also carries `first_<mode>`: how the page view started (`map`, `station_search`, `place_search`, `popular`, `geo`, `link`, `landing`, `swap`).
 
 ## Links into the app
 

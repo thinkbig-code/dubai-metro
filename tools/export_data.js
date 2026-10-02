@@ -45,7 +45,7 @@ for (const [a, b] of cfg.extra_pairs || []) add(a, b);
     return {
       stations: ST, services: svc, places: d.PLACES, popular: d.POPULAR, zone: d.ZONE, fares: d.FARES,
       monoFares: d.MONO_FARES, hours: d.HOURS, status: d.SERVICE_STATUS, walks: d.WALKS, geo: d.GEO,
-      alias: d.ALIAS, itineraries: d.ITINERARIES.map(x => x.id), en: d.I18N_EN, routes
+      alias: d.ALIAS, en: d.I18N_EN, routes
     };
   }, [...pairs]);
   out.generatedFor = 'Wednesday 12:00 Dubai time';
