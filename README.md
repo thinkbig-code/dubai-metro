@@ -27,7 +27,7 @@ Each language has its own page, so search engines can show people the version in
 
 ## What it does
 
-- Place-to-place routes across the Red and Green Lines, the Expo branch, the Dubai Tram and the Palm Monorail, showing the fastest route, plus a one-line option with fewer changes when it takes at most 5 minutes longer.
+- Place-to-place routes across the Red and Green Lines, the Expo branch, the Dubai Tram and the Palm Monorail, showing up to three route options as cards (the fastest, one that changes elsewhere, one with fewer changes) when an option is at most 30% and 10 minutes slower.
 - Step-by-step directions, estimated travel time (with typical waiting time), estimated Nol fare by zone, and opening-hours warnings for late trips.
 - About 40 popular places (airport terminals, Dubai Mall, Burj Khalifa, Marina, JBR, Atlantis, souks, Expo City and more), with walking notes where the connection is well known.
 - Sharing: copy link, WhatsApp, QR code and a trip card. Every route has its own link.
@@ -99,7 +99,7 @@ After every push to `main` that changes a page, the GitHub Actions workflow `.gi
 
 ## Usage events
 
-The site sends anonymous events to GoatCounter (dubaimetro.goatcounter.com) as `event/a/b` with the interface language and a detail in the title: `route` (with where the trip came from: search, map, link, geo, swap or `landing:<guide page>`), `place` and `station` (picked in the search, and whether by name, alias or former name), `noresult` (search text that found nothing, shortened and dropped if it looks like a number or e-mail), `view` (route option or details), `share`, `report` and `geo`. Only ids from the app's data are sent: no coordinates, no report text, nothing about the person.
+The site sends anonymous events to GoatCounter (dubaimetro.goatcounter.com) as `event/a/b` with the interface language and a detail in the title: `route` (with where the trip came from: search, map, link, geo, swap or `landing:<guide page>`), `place` and `station` (picked in the search, and whether by name, alias or former name), `noresult` (search text that found nothing, shortened and dropped if it looks like a number or e-mail), `view` (route option `opt_N` or details), `share`, `report` and `geo`. Only ids from the app's data are sent: no coordinates, no report text, nothing about the person.
 
 Events for the map and station-first use:
 
