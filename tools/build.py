@@ -57,6 +57,13 @@ def short(title):
     return title.split(':')[0].replace(' by Metro','')
 GUIDE_LINKS=' · '.join(f'<a href="{p}" hreflang="en" lang="en">{html.escape(short(t))}</a>' for p,t in GUIDES.items())
 
+def rtl_ranges(x):
+    """right-to-left pages: number ranges (05:00–00:00, 1-2) isolated left to right in the text, so they are
+    not shown reversed after Arabic-script letters; tags and links are left alone"""
+    rng = re.compile(r'(?<!\u2066)(\d+(?::\d+)?\s?[–-]\s?\d+(?::\d+)?)')
+    return re.sub(r'>([^<]+)<', lambda m: '>' + rng.sub('\u2066\\1\u2069', m.group(1)) + '<', x)
+
+
 def page(L):
     X=TX[L]
     trips='\n'.join(f'<li><a href="#{a}~{b}~{L}">{html.escape(t)}</a></li>' for (a,b),t in zip(TRIPS,X["trips"]))
@@ -88,6 +95,7 @@ def page(L):
 <p class="lst">{other}</p>
 </section>
 '''
+    if X["dir"]=="rtl": about=rtl_ranges(about)
     ld={"@context":"https://schema.org","@type":"WebApplication","name":html.unescape(X["ogTitle"]),"url":url(L),
         "description":html.unescape(X["desc"]),"applicationCategory":"TravelApplication","operatingSystem":"Any","isAccessibleForFree":True,
         "inLanguage":L,"offers":{"@type":"Offer","price":"0","priceCurrency":"AED"},
