@@ -65,6 +65,7 @@ def page(L):
 <button id="aboutClose" aria-label="{html.escape(X["close"])}">×</button>
 <h1 id="aboutH">{html.escape(X["h1"])}</h1>
 <p>{html.escape(X["intro"])}</p>
+<p><a href="map/" hreflang="en"><img src="dubai-metro-map.png" width="{seo_pages.MAP_W}" height="{seo_pages.MAP_H}" alt="{html.escape(seo_pages.MAP_ALT)}" loading="lazy" style="width:100%;height:auto;border-radius:12px"></a></p>
 <h2>{html.escape(X["popular"])}</h2>
 <ul>
 {trips}
@@ -138,7 +139,9 @@ open(OUT+'sw.js','w').write(open(os.path.join(HERE,'sw.template.js')).read().rep
 today=datetime.date.today().isoformat()
 xl='\n'.join(f'    <xhtml:link rel="alternate" hreflang="{o}" href="{url(o)}"/>' for o in ORDER)+f'\n    <xhtml:link rel="alternate" hreflang="x-default" href="{SITE}"/>'
 urls='\n'.join(f'  <url>\n    <loc>{url(L)}</loc>\n    <lastmod>{today}</lastmod>\n{xl}\n  </url>' for L in ORDER)
-urls+='\n'+'\n'.join(f'  <url>\n    <loc>{SITE}{p}</loc>\n    <lastmod>{today}</lastmod>\n  </url>' for p in GUIDES)
-open(OUT+'sitemap.xml','w').write(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n{urls}\n</urlset>\n')
+IMG=f'\n    <image:image><image:loc>{SITE}{seo_pages.MAP_IMG}</image:loc></image:image>'
+urls='\n'.join(f'  <url>\n    <loc>{url(L)}</loc>\n    <lastmod>{today}</lastmod>\n{xl}{IMG}\n  </url>' for L in ORDER)
+urls+='\n'+'\n'.join(f'  <url>\n    <loc>{SITE}{p}</loc>\n    <lastmod>{today}</lastmod>{IMG if p in ("map/","stations/") else ""}\n  </url>' for p in GUIDES)
+open(OUT+'sitemap.xml','w').write(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n{urls}\n</urlset>\n')
 open(OUT+'robots.txt','w').write(f'User-agent: *\nAllow: /\n\nSitemap: {SITE}sitemap.xml\n')
 print("deploy built:",', '.join(TX[L]["file"] for L in ORDER),"+",len(GUIDES),"guide pages")

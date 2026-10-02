@@ -293,7 +293,7 @@ ul.links{padding-inline-start:18px}
 """
 
 
-def frame(path, title, desc, body, crumbs, ld_extra=None):
+def frame(path, title, desc, body, crumbs, ld_extra=None, og_image='og-image.png'):
     depth = path.count('/')
     root = '../' * depth
     PAGES[path] = title
@@ -318,7 +318,7 @@ def frame(path, title, desc, body, crumbs, ld_extra=None):
 <meta property="og:url" content="{url}">
 <meta property="og:title" content="{e(title)}">
 <meta property="og:description" content="{e(desc)}">
-<meta property="og:image" content="{SITE}og-image.png">
+<meta property="og:image" content="{SITE}{og_image}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#F4F7F8" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#10161C" media="(prefers-color-scheme: dark)">
@@ -329,7 +329,7 @@ def frame(path, title, desc, body, crumbs, ld_extra=None):
 <style>{CSS}</style>
 </head>
 <body>
-<header class="top"><nav><a class="brand" href="{root}">Dubai Metro Map</a><a href="{root}lines/red-line/">Red Line</a><a href="{root}lines/green-line/">Green Line</a><a href="{root}tram/">Tram</a><a href="{root}stations/">Stations</a></nav></header>
+<header class="top"><nav><a class="brand" href="{root}">Dubai Metro Map</a><a href="{root}lines/red-line/">Red Line</a><a href="{root}lines/green-line/">Green Line</a><a href="{root}tram/">Tram</a><a href="{root}stations/">Stations</a><a href="{root}map/">Map image</a></nav></header>
 <main>
 <div class="crumbs">{crumb_html}</div>
 {body}
@@ -641,7 +641,7 @@ def stations_list():
     ids = sorted(ST, key=lambda i: ST[i]['n'].lower())
     renamed = [i for i in ids if other_names(i)]
     lead = 'All %d stations of the Dubai Metro, Dubai Tram and Palm Monorail, with their lines and fare zones. %d of them are also known by another or an earlier name; find the current name below.' % (len(ids), len(renamed))
-    body = ['<h1>Dubai Metro stations: new and old names</h1>', '<p class="lead">%s</p>' % e(lead)]
+    body = ['<h1>Dubai Metro stations: new and old names</h1>', '<p class="lead">%s</p>' % e(lead), map_figure()]
     body.append('<h2>Stations with other or former names</h2><div class="scroll"><table><tr><th>Current name</th><th>Other or former names</th><th>Lines</th></tr>')
     for i in renamed:
         body.append('<tr><td>%s</td><td>%s</td><td>%s</td></tr>' % (st_cell(i), e(', '.join(other_names(i))), e(', '.join(LINE_NAME[l] for l in ST[i]['lines']))))
@@ -655,9 +655,49 @@ def stations_list():
     write(path, frame(path, 'Dubai Metro Stations: Full List with Old and New Names', lead, '\n'.join(body), [(path, 'Stations')]))
 
 
+MAP_IMG = 'dubai-metro-map.png'
+MAP_W, MAP_H = 1600, 1560
+MAP_ALT = 'Dubai Metro map: Red Line, Green Line, Dubai Tram and Palm Monorail with all stations and interchanges'
+
+
+def map_figure(link=True):
+    img = '<img src="{ROOT}%s" width="%d" height="%d" alt="%s" loading="lazy" style="width:100%%;height:auto;border:1px solid var(--rule);border-radius:12px;background:#fff">' % (MAP_IMG, MAP_W, MAP_H, e(MAP_ALT))
+    if link:
+        img = '<a href="{ROOT}map/">%s</a>' % img
+    return '<figure style="margin:12px 0">%s<figcaption class="note">The whole network on one map. <a href="{ROOT}">Open the interactive map</a> to tap a station and get a route.</figcaption></figure>' % img
+
+
+def map_page():
+    path = 'map/'
+    n_st = len(ST)
+    G, R1, R2, T, M = SVC['G']['stops'], SVC['R1']['stops'], SVC['R2']['stops'], SVC['T']['stops'], SVC['M']['stops']
+    red = len(set(R1) | set(R2))
+    lead = ('A schematic map of the Dubai Metro Red Line (%d stations) and Green Line (%d stations), the Dubai Tram (%d stops) and the Palm Monorail (%d stations): '
+            '%d stations in all, with current names and every interchange.') % (red, len(G), len(set(T)), len(M), n_st)
+    xs = sorted({sid for sid in ST if len(ST[sid]['lines']) > 1}, key=lambda i: ST[i]['n'])
+    walks = ['%s and %s (~%d min on foot)' % (ST[w['a']]['n'], ST[w['b']]['n'], w['t']) for w in WALKS]
+    body = ['<h1>Dubai Metro map 2026: all lines and stations</h1>', '<p class="lead">%s</p>' % e(lead),
+            '<a class="cta" href="{ROOT}">Open the interactive map</a>',
+            '<figure style="margin:12px 0"><img src="{ROOT}%s" width="%d" height="%d" alt="%s" style="width:100%%;height:auto;border:1px solid var(--rule);border-radius:12px;background:#fff"><figcaption class="note">%s</figcaption></figure>' % (
+                MAP_IMG, MAP_W, MAP_H, e(MAP_ALT), 'Schematic, not to scale. Station names as of September 2026. An unofficial map, not affiliated with RTA.'),
+            '<h2>How to read the map</h2><ul>',
+            '<li><b>Red Line</b>: %s to %s, with a branch from %s to %s. <a href="{ROOT}lines/red-line/">Red Line stations</a></li>' % (e(ST[R1[0]]['n']), e(ST[R1[-1]]['n']), e(ST['np']['n']), e(ST[R2[-1]]['n'])),
+            '<li><b>Green Line</b>: %s to %s. <a href="{ROOT}lines/green-line/">Green Line stations</a></li>' % (e(ST[G[0]]['n']), e(ST[G[-1]]['n'])),
+            '<li><b>Dubai Tram</b>: %s to %s, one way round a loop at JBR. <a href="{ROOT}tram/">Tram stops</a></li>' % (e(ST[T[0]]['n']), e(ST[T[-1]]['n'])),
+            '<li><b>Palm Monorail</b>: %s to %s%s. <a href="{ROOT}palm-monorail/">Status and fares</a></li>' % (e(ST[M[0]]['n']), e(ST[M[-1]]['n']), ', temporarily suspended' if 'mono' in SUSP else ''),
+            '<li><b>Interchanges in one station</b>: %s.</li>' % e(', '.join(ST[x]['n'] for x in xs)),
+            '<li><b>Walking links between stations</b> (dotted on the map): %s.</li>' % e('; '.join(walks)),
+            '</ul>',
+            '<p>Looking for a station by an old name? See <a href="{ROOT}stations/">all stations with their new and old names</a>.</p>']
+    ld = {"@context": "https://schema.org", "@type": "ImageObject", "contentUrl": SITE + MAP_IMG, "name": "Dubai Metro, Tram and Palm Monorail map",
+          "description": MAP_ALT, "width": MAP_W, "height": MAP_H, "encodingFormat": "image/png"}
+    write(path, frame(path, 'Dubai Metro Map 2026: All Lines and Stations (Image and Interactive)', lead, '\n'.join(body), [(path, 'Map')], ld, og_image=MAP_IMG))
+
+
 def build():
     PAGES.clear()
     stations_list()
+    map_page()
     line_pages()
     for d in CFG['destinations']:
         destination(d)

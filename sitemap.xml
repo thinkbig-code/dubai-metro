@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://dubaimetro.fyi/</loc>
     <lastmod>2026-10-02</lastmod>
@@ -12,6 +12,7 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://dubaimetro.fyi/zh.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://dubaimetro.fyi/fr.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dubaimetro.fyi/"/>
+    <image:image><image:loc>https://dubaimetro.fyi/dubai-metro-map.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://dubaimetro.fyi/hi.html</loc>
@@ -25,6 +26,7 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://dubaimetro.fyi/zh.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://dubaimetro.fyi/fr.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dubaimetro.fyi/"/>
+    <image:image><image:loc>https://dubaimetro.fyi/dubai-metro-map.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://dubaimetro.fyi/ar.html</loc>
@@ -38,6 +40,7 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://dubaimetro.fyi/zh.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://dubaimetro.fyi/fr.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dubaimetro.fyi/"/>
+    <image:image><image:loc>https://dubaimetro.fyi/dubai-metro-map.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://dubaimetro.fyi/ur.html</loc>
@@ -51,6 +54,7 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://dubaimetro.fyi/zh.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://dubaimetro.fyi/fr.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dubaimetro.fyi/"/>
+    <image:image><image:loc>https://dubaimetro.fyi/dubai-metro-map.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://dubaimetro.fyi/ru.html</loc>
@@ -64,6 +68,7 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://dubaimetro.fyi/zh.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://dubaimetro.fyi/fr.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dubaimetro.fyi/"/>
+    <image:image><image:loc>https://dubaimetro.fyi/dubai-metro-map.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://dubaimetro.fyi/de.html</loc>
@@ -77,6 +82,7 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://dubaimetro.fyi/zh.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://dubaimetro.fyi/fr.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dubaimetro.fyi/"/>
+    <image:image><image:loc>https://dubaimetro.fyi/dubai-metro-map.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://dubaimetro.fyi/zh.html</loc>
@@ -90,6 +96,7 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://dubaimetro.fyi/zh.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://dubaimetro.fyi/fr.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dubaimetro.fyi/"/>
+    <image:image><image:loc>https://dubaimetro.fyi/dubai-metro-map.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://dubaimetro.fyi/fr.html</loc>
@@ -103,10 +110,17 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://dubaimetro.fyi/zh.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://dubaimetro.fyi/fr.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dubaimetro.fyi/"/>
+    <image:image><image:loc>https://dubaimetro.fyi/dubai-metro-map.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://dubaimetro.fyi/stations/</loc>
     <lastmod>2026-10-02</lastmod>
+    <image:image><image:loc>https://dubaimetro.fyi/dubai-metro-map.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://dubaimetro.fyi/map/</loc>
+    <lastmod>2026-10-02</lastmod>
+    <image:image><image:loc>https://dubaimetro.fyi/dubai-metro-map.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://dubaimetro.fyi/lines/red-line/</loc>

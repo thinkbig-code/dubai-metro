@@ -59,7 +59,8 @@ Use the **Report a problem** button on the site, or open an issue here: https://
 | `manifest.webmanifest`, `icon-192.png`, `icon-512.png` | Lets the site be installed on a phone like an app. |
 | `sw.js` | Service worker for offline use: pages are fetched fresh when online and the last copy is used offline. Generated from `tools/sw.template.js`. |
 | `apple-touch-icon.png` | Icon shown when the site is added to a phone's home screen. The browser tab icon is built into each page. |
-| `stations/`, `lines/`, `tram/`, `palm-monorail/`, `destinations/`, `routes/` | English guide pages for search engines (20 pages): stations with old and new names, the lines, ten places and three routes. Each page hands off to the planner. |
+| `dubai-metro-map.png` | The whole network as a picture, for Google Images and sharing. Drawn by the app itself with `tools/render_map.js`. |
+| `map/`, `stations/`, `lines/`, `tram/`, `palm-monorail/`, `destinations/`, `routes/` | English guide pages for search engines (21 pages, including the map image page): stations with old and new names, the lines, ten places and three routes. Each page hands off to the planner. |
 | `sitemap.xml`, `robots.txt` | For search engines; the sitemap lists the eight language pages and the guide pages. |
 | `CNAME` | Connects the custom domain `dubaimetro.fyi` to GitHub Pages. Do not delete it. |
 
@@ -74,6 +75,7 @@ The eight pages are generated from one source file, so an update always changes 
 | `tools/seo_config.json` | Which guide pages exist (destinations, stations, routes) and which routes each one shows. A page exists only if it is listed here. |
 | `tools/export_data.js` | Exports the app's data and the routes the guide pages need to `tools/seo_data.json`, using the app's own router. Needs Node and Playwright. |
 | `tools/seo_data.json` | The exported data. Committed, so the build itself needs only Python. |
+| `tools/render_map.js` | Renders `dubai-metro-map.png` from the app's own map. Needs Node and Playwright. |
 | `tools/seo_pages.py` | Builds the guide pages from the two files above; called by `build.py`. No fact on a guide page is typed by hand. |
 
 To rebuild after a change (Python 3, no extra packages):
@@ -87,6 +89,8 @@ If the change touches the network data (stations, places, walking times, fares, 
 ```
 node tools/export_data.js && python3 tools/build.py
 ```
+
+If station names or the map drawing change, also redraw the map picture (set the date of the names if it changed): `NAMES_AS_OF="September 2026" node tools/render_map.js`.
 
 ## Usage events
 
