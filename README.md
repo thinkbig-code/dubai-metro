@@ -27,7 +27,7 @@ Each language has its own page, so search engines can show people the version in
 
 ## What it does
 
-- Place-to-place routes across the Red and Green Lines, the Expo branch, the Dubai Tram and the Palm Monorail, with up to three options (fastest, fewer changes, least walking) and a short "why this route" note.
+- Place-to-place routes across the Red and Green Lines, the Expo branch, the Dubai Tram and the Palm Monorail, showing the fastest route, plus a one-line option with fewer changes when it takes at most 5 minutes longer.
 - Step-by-step directions, estimated travel time (with typical waiting time), estimated Nol fare by zone, and opening-hours warnings for late trips.
 - About 40 popular places (airport terminals, Dubai Mall, Burj Khalifa, Marina, JBR, Atlantis, souks, Expo City and more), with walking notes where the connection is well known.
 - Sharing: copy link, WhatsApp, QR code and a trip card. Every route has its own link.
