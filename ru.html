@@ -955,7 +955,9 @@ const BENDS={
 // multi-line labels
 const LABEL_LINES={jbr1:["JBR 1"],jbr2:["JBR 2"]};
 // everyday short names (not former names): found by search, not shown as "formerly"
-const ALIAS={jbr1:["JBR 1","JBR1"],jbr2:["JBR 2","JBR2"]};
+// other names people type, including Arabic names (RTA, Dubai Media Office and Arabic Wikipedia where checked,
+// otherwise common usage); used only for search, never shown
+const ALIAS={"jbr1":["JBR 1","JBR1","جميرا بيتش ريزيدنس 1","جي بي آر 1"],"jbr2":["JBR 2","JBR2","جميرا بيتش ريزيدنس 2","جي بي آر 2"],"centrepoint":["سنتربوينت","سنتر بوينت","الراشدية"],"emirates":["طيران الإمارات","الإمارات"],"at3":["مبنى المطار 3","مطار دبي مبنى 3","المبنى 3"],"at1":["مبنى المطار 1","مطار دبي مبنى 1","المبنى 1"],"garhoud":["القرهود","جي جي كو"],"ccd":["سيتي سنتر ديرة","ديرة سيتي سنتر"],"rigga":["الرقة"],"union":["الاتحاد"],"burjuman":["برجمان","بر جمان"],"adcb":["بنك أبوظبي التجاري","بنك أبو ظبي التجاري","الكرامة"],"max":["ماكس","الجافلية"],"wtc":["المركز التجاري العالمي","مركز دبي التجاري العالمي"],"et":["أبراج الإمارات"],"fc":["المركز المالي","مركز دبي المالي العالمي"],"bk":["برج خليفة","دبي مول"],"bb":["الخليج التجاري","بزنس باي","بيزنس باي"],"garmin":["جارمن","غارمن","أون باسيف","نور بنك"],"equiti":["إكويتي","أم الشيف"],"moe":["مول الإمارات"],"im":["سوق التأمين","إنشورانس ماركت","المشرق"],"dic":["مدينة دبي للإنترنت"],"fardan":["الفردان للصرافة","الفردان","الخيل"],"sobha":["شوبا العقارية","شوبا","سوبها","داماك"],"dmcc":["مركز دبي للسلع المتعددة","دي إم سي سي","أبراج بحيرات جميرا"],"np":["دهانات ناشونال","ناشيونال باينتس","جبل علي"],"ibn":["ابن بطوطة"],"energy":["الطاقة"],"danube":["دانوب"],"lp":["صيدلية لايف","لايف فارمسي","الإمارات للصرافة"],"gardens":["ذا جاردنز","جاردنز"],"dg":["ديسكفري جاردنز","دسكفري جاردنز"],"furjan":["الفرجان"],"jge":["عقارات جميرا للجولف","جميرا جولف إستيتس","جميرا للجولف"],"dip":["مجمع دبي للاستثمار"],"expo":["إكسبو 2020","إكسبو"],"eand":["إي آند","اي اند","اتصالات"],"qusais":["القصيص"],"dafz":["المنطقة الحرة لمطار دبي","المنطقة الحرة"],"nahda":["النهدة"],"stadium":["الاستاد","ستاد"],"qiyadah":["القيادة"],"abuhail":["أبو هيل"],"abubaker":["أبو بكر الصديق","أبوبكر الصديق"],"salah":["صلاح الدين"],"baniyas":["ساحة بني ياس","بني ياس","بنياس"],"goldsouq":["سوق الذهب"],"alras":["الراس","الرأس"],"ghubaiba":["الغبيبة"],"sharafdg":["شرف دي جي","الفهيدي"],"oudmetha":["عود ميثاء","عود ميثا"],"dhcc":["مدينة دبي الطبية","مدينة دبي للرعاية الصحية"],"jadaf":["الجداف"],"creek":["الخور","خور دبي"],"jlt":["أبراج بحيرات جميرا","أبراج بحيرة جميرا"],"dmm":["دبي مارينا مول","مارينا مول"],"dmt":["دبي مارينا","مرسى دبي"],"mt":["أبراج مارينا","مارينا تاورز"],"ms":["ميناء السياحي","مينا السياحي"],"mc":["مدينة دبي للإعلام","ميديا سيتي"],"pj":["نخلة جميرا"],"kv":["قرية المعرفة"],"sufouh":["الصفوح"],"palmgw":["بوابة النخلة","بالم جيتواي"],"ittihad":["حديقة الاتحاد","منتزه الاتحاد"],"pjm":["بالم جميرا مول","نخلة جميرا مول","نخيل مول"],"atlantis":["أتلانتس أكوافنتشر","أتلانتس","أكوافنتشر"]};
 function segPts(a,b){
   const k=a+"|"+b;if(BENDS[k])return BENDS[k];
   const r=BENDS[b+"|"+a];return r?r.slice().reverse():[];
@@ -1036,47 +1038,47 @@ const LAST_TRAIN_WINDOW=60;
 
 // Places: where people actually want to go. walk/min only where the connection is well known; all times are estimates.
 const PLACES=[
-  {n:"DXB Airport Terminal 3",st:"at3",walk:"w_airport",min:5,aka:["DXB","Airport","Emirates terminal"]},
-  {n:"DXB Airport Terminal 1",st:"at1",walk:"w_airport",min:5,aka:["DXB","Airport"]},
+  {n:"DXB Airport Terminal 3",st:"at3",walk:"w_airport",min:5,aka:["DXB","Airport","Emirates terminal","مطار دبي مبنى 3","المبنى 3","دبئی ایئرپورٹ","ایئرپورٹ ٹرمینل 3"]},
+  {n:"DXB Airport Terminal 1",st:"at1",walk:"w_airport",min:5,aka:["DXB","Airport","مطار دبي مبنى 1","المبنى 1","ایئرپورٹ ٹرمینل 1"]},
   // not on the rail network (RTA map, Sep 2026): bus link from Stadium or Abu Hail; no walking time given
-  {n:"DXB Airport Terminal 2",st:"stadium",note:"n_t2",aka:["Terminal 2","T2","flydubai"]},
+  {n:"DXB Airport Terminal 2",st:"stadium",note:"n_t2",aka:["Terminal 2","T2","flydubai","مطار دبي مبنى 2","المبنى 2","ایئرپورٹ ٹرمینل 2"]},
   // RTA map (Sep 2026): connection at Jumeirah Golf Estates to Etihad Rail, Al Yalayis Station
-  {n:"Etihad Rail (Al Yalayis Station)",st:"jge",note:"n_etihad",aka:["Etihad Rail","Al Yalayis","train","Abu Dhabi train"]},
-  {n:"Dubai Mall",st:"bk",walk:"w_metrolink",min:12,aka:["Downtown"]},
-  {n:"Burj Khalifa",st:"bk",walk:"w_throughmall",min:15,aka:["Downtown","At the Top"]},
-  {n:"Dubai Fountain",st:"bk",walk:"w_throughmall",min:15},
-  {n:"Dubai Aquarium",st:"bk",walk:"w_aquarium",min:12},
-  {n:"Dubai Opera",st:"bk",walk:"w_opera",min:20},
-  {n:"Mall of the Emirates",st:"moe",walk:"w_bridgemall",min:3},
-  {n:"Ski Dubai",st:"moe",walk:"w_inmoe",min:8},
-  {n:"Museum of the Future",st:"et",walk:"w_next",min:5},
-  {n:"DIFC",st:"fc",aka:["Gate Village"]},
-  {n:"Dubai World Trade Centre",st:"wtc",aka:["DWTC"]},
-  {n:"Dubai Frame",st:"max",walk:"w_zabeel",min:15},
-  {n:"BurJuman Mall",st:"burjuman",walk:"w_under",min:2},
-  {n:"Al Fahidi Historical District",st:"sharafdg",aka:["Old Dubai","Bastakiya","Al Fahidi"]},
-  {n:"Textile Souk",st:"ghubaiba",aka:["Old Dubai"]},
-  {n:"Bur Dubai abra station",st:"ghubaiba",aka:["Abra"]},
-  {n:"Al Seef",st:"ghubaiba",aka:["Old Dubai","Creek"]},
-  {n:"Gold Souk",st:"goldsouq",aka:["Old Dubai","Deira"]},
-  {n:"Spice Souk",st:"alras",aka:["Old Dubai","Deira"]},
-  {n:"Deira Old Souk abra station",st:"alras",aka:["Abra"]},
-  {n:"City Centre Deira mall",st:"ccd",walk:"w_bridgeinto",min:3},
-  {n:"Wafi City",st:"dhcc"},
-  {n:"Dubai Marina Walk",st:"dmt",aka:["Marina"]},
-  {n:"Dubai Marina Mall",st:"dmm",aka:["Marina"]},
-  {n:"JBR The Walk",st:"jbr2",aka:["JBR","Jumeirah Beach Residence"]},
-  {n:"The Beach JBR",st:"jbr2",aka:["JBR"]},
-  {n:"Ain Dubai / Bluewaters",st:"jbr1",walk:"w_bluewaters",min:15,aka:["Bluewaters"]},
-  {n:"Atlantis The Palm",st:"atlantis",walk:"w_atlantis",min:3,aka:["Palm","Atlantis"]},
-  {n:"Aquaventure Waterpark",st:"atlantis",walk:"w_nextmono",min:3,aka:["Palm"]},
-  {n:"The View at The Palm",st:"pjm",aka:["Palm","Palm Tower"]},
-  {n:"Palm Jumeirah Mall",st:"pjm",aka:["Nakheel Mall","Palm"]},
-  {n:"Ibn Battuta Mall",st:"ibn",walk:"w_bridgeinto",min:5},
-  {n:"Expo City Dubai",st:"expo",aka:["Expo"]},
-  {n:"Dubai Internet City",st:"dic"},
-  {n:"Dubai Media City",st:"mc"},
-  {n:"Knowledge Park",st:"kv"}
+  {n:"Etihad Rail (Al Yalayis Station)",st:"jge",note:"n_etihad",aka:["Etihad Rail","Al Yalayis","train","Abu Dhabi train","قطارات الاتحاد","قطار الاتحاد","اليلايس"]},
+  {n:"Dubai Mall",st:"bk",walk:"w_metrolink",min:12,aka:["Downtown","دبي مول","مول دبي","دبئی مال"]},
+  {n:"Burj Khalifa",st:"bk",walk:"w_throughmall",min:15,aka:["Downtown","At the Top","برج خليفة"]},
+  {n:"Dubai Fountain",st:"bk",walk:"w_throughmall",min:15,aka:["نافورة دبي"]},
+  {n:"Dubai Aquarium",st:"bk",walk:"w_aquarium",min:12,aka:["دبي أكواريوم","أكواريوم دبي"]},
+  {n:"Dubai Opera",st:"bk",walk:"w_opera",min:20,aka:["دبي أوبرا","أوبرا دبي"]},
+  {n:"Mall of the Emirates",st:"moe",walk:"w_bridgemall",min:3,aka:["مول الإمارات","مال آف دی ایمریٹس","امارات مال"]},
+  {n:"Ski Dubai",st:"moe",walk:"w_inmoe",min:8,aka:["سكي دبي"]},
+  {n:"Museum of the Future",st:"et",walk:"w_next",min:5,aka:["متحف المستقبل"]},
+  {n:"DIFC",st:"fc",aka:["Gate Village","مركز دبي المالي العالمي"]},
+  {n:"Dubai World Trade Centre",st:"wtc",aka:["DWTC","مركز دبي التجاري العالمي"]},
+  {n:"Dubai Frame",st:"max",walk:"w_zabeel",min:15,aka:["برواز دبي","إطار دبي","دبئی فریم"]},
+  {n:"BurJuman Mall",st:"burjuman",walk:"w_under",min:2,aka:["برجمان مول","برجمان","برجمان مال"]},
+  {n:"Al Fahidi Historical District",st:"sharafdg",aka:["Old Dubai","Bastakiya","Al Fahidi","حي الفهيدي التاريخي","حي الفهيدي","البستكية"]},
+  {n:"Textile Souk",st:"ghubaiba",aka:["Old Dubai","سوق المنسوجات","سوق الأقمشة"]},
+  {n:"Bur Dubai abra station",st:"ghubaiba",aka:["Abra","عبرة بر دبي"]},
+  {n:"Al Seef",st:"ghubaiba",aka:["Old Dubai","Creek","السيف"]},
+  {n:"Gold Souk",st:"goldsouq",aka:["Old Dubai","Deira","سوق الذهب","گولڈ سوق"]},
+  {n:"Spice Souk",st:"alras",aka:["Old Dubai","Deira","سوق البهارات","سوق التوابل"]},
+  {n:"Deira Old Souk abra station",st:"alras",aka:["Abra","عبرة سوق ديرة القديم","سوق ديرة القديم"]},
+  {n:"City Centre Deira mall",st:"ccd",walk:"w_bridgeinto",min:3,aka:["سيتي سنتر ديرة","سٹی سینٹر دیرہ"]},
+  {n:"Wafi City",st:"dhcc",aka:["وافي سيتي","وافي"]},
+  {n:"Dubai Marina Walk",st:"dmt",aka:["Marina","ممشى دبي مارينا","ممشى المارينا"]},
+  {n:"Dubai Marina Mall",st:"dmm",aka:["Marina","دبي مارينا مول","مارينا مول","مرینا مال"]},
+  {n:"JBR The Walk",st:"jbr2",aka:["JBR","Jumeirah Beach Residence","ذا ووك","جي بي آر"]},
+  {n:"The Beach JBR",st:"jbr2",aka:["JBR","ذا بيتش","شاطئ جي بي آر"]},
+  {n:"Ain Dubai / Bluewaters",st:"jbr1",walk:"w_bluewaters",min:15,aka:["Bluewaters","عين دبي","بلوواترز"]},
+  {n:"Atlantis The Palm",st:"atlantis",walk:"w_atlantis",min:3,aka:["Palm","Atlantis","أتلانتس النخلة","أتلانتس"]},
+  {n:"Aquaventure Waterpark",st:"atlantis",walk:"w_nextmono",min:3,aka:["Palm","أكوافنتشر"]},
+  {n:"The View at The Palm",st:"pjm",aka:["Palm","Palm Tower","ذا فيو"]},
+  {n:"Palm Jumeirah Mall",st:"pjm",aka:["Nakheel Mall","Palm","بالم جميرا مول","نخيل مول"]},
+  {n:"Ibn Battuta Mall",st:"ibn",walk:"w_bridgeinto",min:5,aka:["ابن بطوطة مول","ابن بطوطة","ابن بطوطہ مال"]},
+  {n:"Expo City Dubai",st:"expo",aka:["Expo","مدينة إكسبو دبي","إكسبو"]},
+  {n:"Dubai Internet City",st:"dic",aka:["مدينة دبي للإنترنت"]},
+  {n:"Dubai Media City",st:"mc",aka:["مدينة دبي للإعلام"]},
+  {n:"Knowledge Park",st:"kv",aka:["مجمع دبي للمعرفة"]}
 ];
 PLACES.forEach(p=>{p.id="p_"+p.n.toLowerCase().replace(/[^a-z0-9]+/g,"_").replace(/^_|_$/g,"");p.aka=p.aka||[];});
 const PLACE_BY_ID=Object.fromEntries(PLACES.map(p=>[p.id,p]));
@@ -1963,7 +1965,8 @@ function renderResult(r,variants){
 }
 
 // ================= SEARCH =================
-const norm=s=>s.toLowerCase().replace(/[^a-z0-9&]/g,"");
+// Latin and Arabic-script letters; diacritics dropped, letter variants folded (alef forms, ta marbuta, Urdu ye/kaf/he, hamza seat ئ dropped so دبئی = دبي)
+const norm=s=>s.toLowerCase().replace(/[\u064B-\u065F\u0670\u0640]/g,"").replace(/[أإآٱ]/g,"ا").replace(/ة/g,"ه").replace(/[ىیے]/g,"ي").replace(/ک/g,"ك").replace(/[ہۃھ]/g,"ه").replace(/ئ/g,"").replace(/[^a-z0-9&\u0621-\u064A]/g,"");
 const IDS=Object.keys(ST);
 function matches(q){
   const n=norm(q);
@@ -1977,7 +1980,7 @@ function matches(q){
   IDS.forEach(id=>{const s=ST[id];const nn=norm(s.n);
     if(nn.startsWith(n))out.push({id,score:0.5});
     else if(nn.includes(n))out.push({id,score:2});
-    else if((ALIAS[id]||[]).some(x=>norm(x).startsWith(n)))out.push({id,score:0.6});
+    else if((ALIAS[id]||[]).some(x=>norm(x).includes(n)))out.push({id,score:0.6});
     else{const f=s.f.find(x=>norm(x).includes(n));if(f)out.push({id,score:3,via:f});}
   });
   return out.sort((a,b)=>a.score-b.score);
