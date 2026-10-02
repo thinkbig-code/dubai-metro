@@ -1,7 +1,7 @@
 {
  "name": "Dubai Metro Map & Route Planner",
  "short_name": "Dubai Metro",
- "description": "Metro, Tram and Palm Monorail: directions, travel times, Nol fares and opening hours. Free, in 8 languages.",
+ "description": "Metro, Tram and Palm Monorail: directions, travel times, Nol fares and opening hours. Free, in 10 languages.",
  "start_url": "./",
  "scope": "./",
  "display": "standalone",

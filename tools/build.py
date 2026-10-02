@@ -1,4 +1,4 @@
-"""Build the eight language pages of dubaimetro.fyi from src/dubai-metro.html.
+"""Build the ten language pages of dubaimetro.fyi from src/dubai-metro.html.
 
 Usage (from the repository root):  python3 tools/build.py
 Writes index.html, hi.html, ar.html, ur.html, ru.html, de.html, zh.html, fr.html,
@@ -51,7 +51,8 @@ if("serviceWorker" in navigator&&(location.protocol==="https:"||location.hostnam
 GUIDES=seo_pages.build()
 GUIDES_H={"en":"Guides to stations and places","ru":"Путеводитель по станциям и местам (на английском)","hi":"स्टेशनों और जगहों की गाइड (अंग्रेज़ी में)",
   "ar":"أدلة المحطات والأماكن (بالإنجليزية)","ur":"اسٹیشنوں اور جگہوں کی گائیڈ (انگریزی میں)","de":"Stationen und Orte (auf Englisch)",
-  "zh":"车站与地点指南（英文）","fr":"Guides des stations et des lieux (en anglais)"}
+  "zh":"车站与地点指南（英文）","fr":"Guides des stations et des lieux (en anglais)",
+  "tl":"Gabay sa mga istasyon at lugar (sa English)","bn":"স্টেশন ও জায়গার গাইড (ইংরেজিতে)"}
 def short(title):
     return title.split(':')[0].replace(' by Metro','')
 GUIDE_LINKS=' · '.join(f'<a href="{p}" hreflang="en" lang="en">{html.escape(short(t))}</a>' for p,t in GUIDES.items())
