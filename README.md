@@ -93,6 +93,10 @@ node tools/export_data.js && python3 tools/build.py
 
 If station names or the map drawing change, also redraw the map picture (set the date of the names if it changed): `NAMES_AS_OF="September 2026" node tools/render_map.js`.
 
+## IndexNow (Bing, Yandex and others)
+
+After every push to `main` that changes a page, the GitHub Actions workflow `.github/workflows/indexnow.yml` waits two minutes for GitHub Pages to publish, then sends the changed page addresses to IndexNow, so Bing, Yandex, Seznam and Naver crawl them soon. Google does not use IndexNow; it reads `sitemap.xml`. To send every page in the sitemap, run the workflow by hand: Actions → IndexNow → Run workflow. The key is the file `db8803a2bf36307407eb5b4f24516cad.txt` in the site root; `tools/indexnow.py` does the sending.
+
 ## Usage events
 
 The site sends anonymous events to GoatCounter (dubaimetro.goatcounter.com) as `event/a/b` with the interface language and a detail in the title: `route` (with where the trip came from: search, popular, map, link, geo, swap or `landing:<guide page>`), `place` and `station` (picked in the search, and whether by name, alias or former name), `noresult` (search text that found nothing, shortened and dropped if it looks like a number or e-mail), `view` (route option or details), `share`, `report` and `geo`. Only ids from the app's data are sent: no coordinates, no report text, nothing about the person.
