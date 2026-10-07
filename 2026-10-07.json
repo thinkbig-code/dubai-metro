@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-07T22:06:28Z",
+ "generated": "2026-10-07T23:03:11Z",
  "start": "2026-09-07",
  "end": "2026-10-08",
  "total": {
-  "total": 133,
+  "total": 134,
   "total_events": 66,
-  "total_utc": 133,
+  "total_utc": 134,
   "stats": [
    {
     "day": "2026-09-07",
@@ -758,7 +758,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 133
+    "monthly": 134
    },
    {
     "day": "2026-10-02",
@@ -879,7 +879,7 @@
      0
     ],
     "daily": 13,
-    "weekly": 75
+    "weekly": 76
    },
    {
     "day": "2026-10-06",
@@ -946,7 +946,7 @@
     "hourly": [
      24,
      17,
-     0,
+     1,
      0,
      0,
      0,
@@ -969,7 +969,7 @@
      0,
      0
     ],
-    "daily": 41
+    "daily": 42
    }
   ]
  },
@@ -979,7 +979,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 60,
+   "count": 61,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -987,7 +987,7 @@
     "2026-10-04": 7,
     "2026-10-05": 6,
     "2026-10-07": 7,
-    "2026-10-08": 7
+    "2026-10-08": 8
    }
   },
   {
@@ -1619,7 +1619,7 @@
   "/": [
    {
     "name": "(direct or unknown)",
-    "count": 56
+    "count": 57
    },
    {
     "name": "com.reddit.frontpage",
@@ -1661,7 +1661,7 @@
   "(direct or unknown)": [
    {
     "path": "/",
-    "count": 56
+    "count": 57
    },
    {
     "path": "/tram",
@@ -1708,7 +1708,7 @@
  "toprefs": [
   {
    "name": "",
-   "count": 110,
+   "count": 111,
    "ref_scheme": "o"
   },
   {
@@ -1746,7 +1746,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 107
+   "count": 108
   },
   {
    "id": "rus",
@@ -1768,7 +1768,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 79
+   "count": 80
   },
   {
    "id": "US",
@@ -1865,7 +1865,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 63
+   "count": 64
   },
   {
    "id": "tablet",
@@ -1900,12 +1900,12 @@
    "count": 42
   },
   {
-   "name": "",
-   "count": 1
-  },
-  {
    "id": "Firefox",
    "name": "Firefox",
+   "count": 2
+  },
+  {
+   "name": "",
    "count": 1
   }
  ],
@@ -1923,7 +1923,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 24
+   "count": 25
   },
   {
    "id": "macOS",
