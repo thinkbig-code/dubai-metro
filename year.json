@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-07T17:42:16Z",
+ "generated": "2026-10-07T19:45:47Z",
  "start": "2025-10-07",
  "end": "2026-10-08",
  "total": {
-  "total": 74,
-  "total_events": 23,
-  "total_utc": 74,
+  "total": 88,
+  "total_events": 35,
+  "total_utc": 88,
   "stats": [
    {
     "day": "2025-10-07",
@@ -10808,7 +10808,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 74
+    "monthly": 88
    },
    {
     "day": "2026-10-02",
@@ -10959,7 +10959,7 @@
      0
     ],
     "daily": 0,
-    "weekly": 3
+    "weekly": 17
    },
    {
     "day": "2026-10-07",
@@ -10985,11 +10985,11 @@
      0,
      0,
      0,
+     7,
      0,
-     0,
-     0
+     7
     ],
-    "daily": 3
+    "daily": 17
    },
    {
     "day": "2026-10-08",
@@ -11026,20 +11026,22 @@
  "hits": [
   {
    "path": "/",
+   "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 49,
+   "count": 51,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
     "2026-10-03": 4,
     "2026-10-04": 7,
     "2026-10-05": 6,
-    "2026-10-07": 3
+    "2026-10-07": 5
    }
   },
   {
    "path": "place/p_dubai_mall/from",
+   "path_id": 109724714,
    "title": "ru|name",
    "event": true,
    "count": 2,
@@ -11048,7 +11050,128 @@
    }
   },
   {
+   "path": "station_pair_route_search/creek/moe",
+   "path_id": 110313002,
+   "title": "en|map",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-07": 1
+   }
+  },
+  {
+   "path": "route/creek/moe",
+   "path_id": 110313001,
+   "title": "en|map|ok|first_map",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-07": 1
+   }
+  },
+  {
+   "path": "route_to_station_click/moe/-",
+   "path_id": 110313000,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-07": 1
+   }
+  },
+  {
+   "path": "map_station_click/moe/-",
+   "path_id": 110312988,
+   "title": "en|home|phone",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-07": 1
+   }
+  },
+  {
+   "path": "route_from_station_click/creek/-",
+   "path_id": 110312982,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-07": 1
+   }
+  },
+  {
+   "path": "map_station_click/creek/-",
+   "path_id": 110312977,
+   "title": "en|home|phone",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-07": 1
+   }
+  },
+  {
+   "path": "station_pair_route_search/sobha/centrepoint",
+   "path_id": 110294750,
+   "title": "en|map",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-07": 1
+   }
+  },
+  {
+   "path": "route/sobha/centrepoint",
+   "path_id": 110294749,
+   "title": "en|map|ok|first_map",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-07": 1
+   }
+  },
+  {
+   "path": "route_to_station_click/centrepoint/-",
+   "path_id": 110294748,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-07": 1
+   }
+  },
+  {
+   "path": "map_station_click/centrepoint/-",
+   "path_id": 110294742,
+   "title": "en|home|desktop",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-07": 1
+   }
+  },
+  {
+   "path": "route_from_station_click/sobha/-",
+   "path_id": 110294730,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-07": 1
+   }
+  },
+  {
+   "path": "map_station_click/sobha/-",
+   "path_id": 110294723,
+   "title": "en|home|desktop",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-07": 1
+   }
+  },
+  {
    "path": "/tram",
+   "path_id": 109752598,
    "title": "Dubai Tram: Stops, JBR Loop, Metro Links and Hours",
    "event": false,
    "count": 1,
@@ -11058,6 +11181,7 @@
   },
   {
    "path": "route/p_dubai_mall/et",
+   "path_id": 109748383,
    "title": "en|search|ok|first_place_search",
    "event": true,
    "count": 1,
@@ -11067,6 +11191,7 @@
   },
   {
    "path": "station/et/to",
+   "path_id": 109748382,
    "title": "en|name",
    "event": true,
    "count": 1,
@@ -11076,6 +11201,7 @@
   },
   {
    "path": "route/p_dubai_mall/p_jbr_the_walk",
+   "path_id": 109724730,
    "title": "ru|search|ok|first_place_search",
    "event": true,
    "count": 1,
@@ -11085,6 +11211,7 @@
   },
   {
    "path": "place/p_jbr_the_walk/to",
+   "path_id": 109724724,
    "title": "ru|name",
    "event": true,
    "count": 1,
@@ -11094,6 +11221,7 @@
   },
   {
    "path": "station_pair_route_search/dmt/bk",
+   "path_id": 109553312,
    "title": "en|map",
    "event": true,
    "count": 1,
@@ -11103,6 +11231,7 @@
   },
   {
    "path": "route/dmt/bk",
+   "path_id": 109553311,
    "title": "en|map|ok|first_map",
    "event": true,
    "count": 1,
@@ -11112,6 +11241,7 @@
   },
   {
    "path": "route_to_station_click/bk/-",
+   "path_id": 109553310,
    "title": "en",
    "event": true,
    "count": 1,
@@ -11121,6 +11251,7 @@
   },
   {
    "path": "map_station_click/bk/-",
+   "path_id": 109553304,
    "title": "en|home|phone",
    "event": true,
    "count": 1,
@@ -11130,6 +11261,7 @@
   },
   {
    "path": "route_from_station_click/dmt/-",
+   "path_id": 109553303,
    "title": "en",
    "event": true,
    "count": 1,
@@ -11139,6 +11271,7 @@
   },
   {
    "path": "map_station_click/dmt/-",
+   "path_id": 109553298,
    "title": "en|home|phone",
    "event": true,
    "count": 1,
@@ -11148,6 +11281,7 @@
   },
   {
    "path": "map_station_click/dic/-",
+   "path_id": 109247471,
    "title": "en|home|desktop",
    "event": true,
    "count": 1,
@@ -11157,6 +11291,7 @@
   },
   {
    "path": "view/p_atlantis_the_palm/p_dxb_airport_terminal_3",
+   "path_id": 109223206,
    "title": "ru|details",
    "event": true,
    "count": 1,
@@ -11166,6 +11301,7 @@
   },
   {
    "path": "route/p_atlantis_the_palm/p_dxb_airport_terminal_3",
+   "path_id": 109223190,
    "title": "ru|search|ok",
    "event": true,
    "count": 1,
@@ -11175,6 +11311,7 @@
   },
   {
    "path": "place/p_atlantis_the_palm/from",
+   "path_id": 109223189,
    "title": "ru|name",
    "event": true,
    "count": 1,
@@ -11184,6 +11321,7 @@
   },
   {
    "path": "view/bk/p_dxb_airport_terminal_3",
+   "path_id": 109221730,
    "title": "en|details",
    "event": true,
    "count": 1,
@@ -11193,6 +11331,7 @@
   },
   {
    "path": "station/bk/from",
+   "path_id": 109221708,
    "title": "en|name",
    "event": true,
    "count": 1,
@@ -11202,6 +11341,7 @@
   },
   {
    "path": "route/bk/p_dxb_airport_terminal_3",
+   "path_id": 109221707,
    "title": "en|search|ok",
    "event": true,
    "count": 1,
@@ -11211,6 +11351,7 @@
   },
   {
    "path": "/ru.html",
+   "path_id": 109203485,
    "title": "Карта метро Дубая и планировщик маршрутов: метро, трамвай, монорельс",
    "event": false,
    "count": 1,
@@ -11220,6 +11361,7 @@
   },
   {
    "path": "route/bb/moe",
+   "path_id": 109178054,
    "title": "ru|map|ok",
    "event": true,
    "count": 1,
@@ -11229,6 +11371,7 @@
   },
   {
    "path": "route/moe/bb",
+   "path_id": 109178005,
    "title": "ru|map|ok",
    "event": true,
    "count": 1,
@@ -11238,6 +11381,7 @@
   },
   {
    "path": "route/bk/jge",
+   "path_id": 109172116,
    "title": "en|map|ok",
    "event": true,
    "count": 1,
@@ -11247,6 +11391,7 @@
   },
   {
    "path": "route/bk/emirates",
+   "path_id": 109171170,
    "title": "en|map|ok",
    "event": true,
    "count": 1,
@@ -11255,10 +11400,68 @@
    }
   }
  ],
+ "page_refs": {
+  "/": [
+   {
+    "name": "(direct or unknown)",
+    "count": 49
+   },
+   {
+    "name": "web.telegram.org",
+    "count": 1
+   },
+   {
+    "name": "www.bing.com",
+    "count": 1
+   }
+  ],
+  "/tram": [
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   }
+  ],
+  "/ru.html": [
+   {
+    "name": "dubaimetro.fyi",
+    "count": 1
+   }
+  ]
+ },
+ "ref_pages": {
+  "(direct or unknown)": [
+   {
+    "path": "/",
+    "count": 49
+   },
+   {
+    "path": "/tram",
+    "count": 1
+   }
+  ],
+  "web.telegram.org": [
+   {
+    "path": "/",
+    "count": 1
+   }
+  ],
+  "www.bing.com": [
+   {
+    "path": "/",
+    "count": 1
+   }
+  ],
+  "dubaimetro.fyi": [
+   {
+    "path": "/ru.html",
+    "count": 1
+   }
+  ]
+ },
  "toprefs": [
   {
    "name": "",
-   "count": 70,
+   "count": 84,
    "ref_scheme": "o"
   },
   {
@@ -11278,7 +11481,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 49
+   "count": 63
   },
   {
    "id": "rus",
@@ -11300,7 +11503,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 28
+   "count": 42
   },
   {
    "id": "US",
@@ -11387,7 +11590,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 32
+   "count": 39
   },
   {
    "id": "tablet",
@@ -11397,7 +11600,7 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 24
+   "count": 31
   },
   {
    "id": "desktophd",
@@ -11414,12 +11617,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 47
+   "count": 54
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 25
+   "count": 32
   },
   {
    "name": "",
@@ -11435,12 +11638,12 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 21
+   "count": 28
   },
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 21
+   "count": 28
   },
   {
    "id": "Linux",
