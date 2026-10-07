@@ -140,7 +140,7 @@ for L in ORDER:
     open(OUT+TX[L]["file"],'w').write(page(L))
 import hashlib
 ver=hashlib.sha1(''.join(open(OUT+TX[L]["file"]).read() for L in ORDER).encode()).hexdigest()[:10]
-manifest={"name":"Dubai Metro Map & Route Planner","short_name":"Dubai Metro","description":html.unescape(TX["en"]["ogDesc"]),
+manifest={"name":"Interactive Dubai Metro Map","short_name":"Dubai Metro","description":html.unescape(TX["en"]["ogDesc"]),
   "start_url":"./","scope":"./","display":"standalone","background_color":"#F4F7F8","theme_color":"#F4F7F8",
   "icons":[{"src":"icon-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
            {"src":"icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}]}
