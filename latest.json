@@ -1,0 +1,446 @@
+{
+ "site": "https://dubaimetro.goatcounter.com",
+ "generated": "2026-10-07T17:42:08Z",
+ "start": "2026-09-07",
+ "end": "2026-10-08",
+ "total": {
+  "error": "HTTP 404",
+  "body": "{\"error\":\"not found\"}"
+ },
+ "hits": [
+  {
+   "path": "/",
+   "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
+   "event": false,
+   "count": 49,
+   "daily": {
+    "2026-10-01": 6,
+    "2026-10-02": 23,
+    "2026-10-03": 4,
+    "2026-10-04": 7,
+    "2026-10-05": 6,
+    "2026-10-07": 3
+   }
+  },
+  {
+   "path": "place/p_dubai_mall/from",
+   "title": "ru|name",
+   "event": true,
+   "count": 2,
+   "daily": {
+    "2026-10-05": 2
+   }
+  },
+  {
+   "path": "/tram",
+   "title": "Dubai Tram: Stops, JBR Loop, Metro Links and Hours",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-10-05": 1
+   }
+  },
+  {
+   "path": "route/p_dubai_mall/et",
+   "title": "en|search|ok|first_place_search",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-05": 1
+   }
+  },
+  {
+   "path": "station/et/to",
+   "title": "en|name",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-05": 1
+   }
+  },
+  {
+   "path": "route/p_dubai_mall/p_jbr_the_walk",
+   "title": "ru|search|ok|first_place_search",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-05": 1
+   }
+  },
+  {
+   "path": "place/p_jbr_the_walk/to",
+   "title": "ru|name",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-05": 1
+   }
+  },
+  {
+   "path": "station_pair_route_search/dmt/bk",
+   "title": "en|map",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-04": 1
+   }
+  },
+  {
+   "path": "route/dmt/bk",
+   "title": "en|map|ok|first_map",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-04": 1
+   }
+  },
+  {
+   "path": "route_to_station_click/bk/-",
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-04": 1
+   }
+  },
+  {
+   "path": "map_station_click/bk/-",
+   "title": "en|home|phone",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-04": 1
+   }
+  },
+  {
+   "path": "route_from_station_click/dmt/-",
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-04": 1
+   }
+  },
+  {
+   "path": "map_station_click/dmt/-",
+   "title": "en|home|phone",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-04": 1
+   }
+  },
+  {
+   "path": "map_station_click/dic/-",
+   "title": "en|home|desktop",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-02": 1
+   }
+  },
+  {
+   "path": "view/p_atlantis_the_palm/p_dxb_airport_terminal_3",
+   "title": "ru|details",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-02": 1
+   }
+  },
+  {
+   "path": "route/p_atlantis_the_palm/p_dxb_airport_terminal_3",
+   "title": "ru|search|ok",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-02": 1
+   }
+  },
+  {
+   "path": "place/p_atlantis_the_palm/from",
+   "title": "ru|name",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-02": 1
+   }
+  },
+  {
+   "path": "view/bk/p_dxb_airport_terminal_3",
+   "title": "en|details",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-02": 1
+   }
+  },
+  {
+   "path": "station/bk/from",
+   "title": "en|name",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-02": 1
+   }
+  },
+  {
+   "path": "route/bk/p_dxb_airport_terminal_3",
+   "title": "en|search|ok",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-02": 1
+   }
+  },
+  {
+   "path": "/ru.html",
+   "title": "Карта метро Дубая и планировщик маршрутов: метро, трамвай, монорельс",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-10-02": 1
+   }
+  },
+  {
+   "path": "route/bb/moe",
+   "title": "ru|map|ok",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-02": 1
+   }
+  },
+  {
+   "path": "route/moe/bb",
+   "title": "ru|map|ok",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-02": 1
+   }
+  },
+  {
+   "path": "route/bk/jge",
+   "title": "en|map|ok",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-02": 1
+   }
+  },
+  {
+   "path": "route/bk/emirates",
+   "title": "en|map|ok",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-02": 1
+   }
+  }
+ ],
+ "toprefs": [
+  {
+   "name": "",
+   "count": 70,
+   "ref_scheme": "o"
+  },
+  {
+   "id": "www.bing.com",
+   "name": "www.bing.com",
+   "count": 2,
+   "ref_scheme": "h"
+  },
+  {
+   "id": "web.telegram.org",
+   "name": "web.telegram.org",
+   "count": 1,
+   "ref_scheme": "h"
+  }
+ ],
+ "languages": [
+  {
+   "id": "eng",
+   "name": "English",
+   "count": 49
+  },
+  {
+   "id": "rus",
+   "name": "Russian",
+   "count": 13
+  },
+  {
+   "id": "(unknown)",
+   "name": "(unknown)",
+   "count": 11
+  },
+  {
+   "id": "deu",
+   "name": "German",
+   "count": 1
+  }
+ ],
+ "locations": [
+  {
+   "id": "AE",
+   "name": "United Arab Emirates",
+   "count": 28
+  },
+  {
+   "id": "US",
+   "name": "United States",
+   "count": 17
+  },
+  {
+   "id": "FR",
+   "name": "France",
+   "count": 5
+  },
+  {
+   "id": "DE",
+   "name": "Germany",
+   "count": 4
+  },
+  {
+   "id": "ID",
+   "name": "Indonesia",
+   "count": 4
+  },
+  {
+   "id": "GB",
+   "name": "United Kingdom",
+   "count": 2
+  },
+  {
+   "id": "IN",
+   "name": "India",
+   "count": 2
+  },
+  {
+   "id": "RU",
+   "name": "Russia",
+   "count": 2
+  },
+  {
+   "id": "UZ",
+   "name": "Uzbekistan",
+   "count": 2
+  },
+  {
+   "id": "AR",
+   "name": "Argentina",
+   "count": 1
+  },
+  {
+   "id": "BR",
+   "name": "Brazil",
+   "count": 1
+  },
+  {
+   "id": "CA",
+   "name": "Canada",
+   "count": 1
+  },
+  {
+   "id": "CL",
+   "name": "Chile",
+   "count": 1
+  },
+  {
+   "id": "LT",
+   "name": "Republic of Lithuania",
+   "count": 1
+  },
+  {
+   "id": "NL",
+   "name": "Netherlands",
+   "count": 1
+  },
+  {
+   "id": "PL",
+   "name": "Poland",
+   "count": 1
+  },
+  {
+   "id": "SE",
+   "name": "Sweden",
+   "count": 1
+  }
+ ],
+ "sizes": [
+  {
+   "id": "phone",
+   "name": "",
+   "count": 32
+  },
+  {
+   "id": "tablet",
+   "name": "",
+   "count": 13
+  },
+  {
+   "id": "desktop",
+   "name": "",
+   "count": 24
+  },
+  {
+   "id": "desktophd",
+   "name": "",
+   "count": 5
+  },
+  {
+   "id": "unknown",
+   "name": "",
+   "count": 0
+  }
+ ],
+ "browsers": [
+  {
+   "id": "Chrome",
+   "name": "Chrome",
+   "count": 47
+  },
+  {
+   "id": "Safari",
+   "name": "Safari",
+   "count": 25
+  },
+  {
+   "name": "",
+   "count": 1
+  },
+  {
+   "id": "Firefox",
+   "name": "Firefox",
+   "count": 1
+  }
+ ],
+ "systems": [
+  {
+   "id": "iOS",
+   "name": "iOS",
+   "count": 21
+  },
+  {
+   "id": "Windows",
+   "name": "Windows",
+   "count": 21
+  },
+  {
+   "id": "Linux",
+   "name": "Linux",
+   "count": 12
+  },
+  {
+   "id": "Android",
+   "name": "Android",
+   "count": 10
+  },
+  {
+   "id": "macOS",
+   "name": "macOS",
+   "count": 10
+  }
+ ],
+ "campaigns": []
+}
