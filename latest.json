@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-07T20:31:39Z",
+ "generated": "2026-10-07T22:06:28Z",
  "start": "2026-09-07",
  "end": "2026-10-08",
  "total": {
-  "total": 116,
-  "total_events": 56,
-  "total_utc": 116,
+  "total": 133,
+  "total_events": 66,
+  "total_utc": 133,
   "stats": [
    {
     "day": "2026-09-07",
@@ -758,7 +758,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 116
+    "monthly": 133
    },
    {
     "day": "2026-10-02",
@@ -879,7 +879,7 @@
      0
     ],
     "daily": 13,
-    "weekly": 58
+    "weekly": 75
    },
    {
     "day": "2026-10-06",
@@ -945,7 +945,7 @@
     "day": "2026-10-08",
     "hourly": [
      24,
-     0,
+     17,
      0,
      0,
      0,
@@ -969,7 +969,7 @@
      0,
      0
     ],
-    "daily": 24
+    "daily": 41
    }
   ]
  },
@@ -979,7 +979,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 58,
+   "count": 60,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -987,7 +987,28 @@
     "2026-10-04": 7,
     "2026-10-05": 6,
     "2026-10-07": 7,
+    "2026-10-08": 7
+   }
+  },
+  {
+   "path": "/tl.html",
+   "path_id": 110332677,
+   "title": "Interactive na Mapa ng Dubai Metro: Metro, Tram, Palm Monorail",
+   "event": false,
+   "count": 5,
+   "daily": {
     "2026-10-08": 5
+   }
+  },
+  {
+   "path": "place/p_dubai_mall/from",
+   "path_id": 109724714,
+   "title": "ru|name",
+   "event": true,
+   "count": 3,
+   "daily": {
+    "2026-10-05": 2,
+    "2026-10-08": 1
    }
   },
   {
@@ -1011,6 +1032,28 @@
    }
   },
   {
+   "path": "place/p_atlantis_the_palm/to",
+   "path_id": 110313388,
+   "title": "en|name",
+   "event": true,
+   "count": 2,
+   "daily": {
+    "2026-10-07": 1,
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "geo/denied/-",
+   "path_id": 110313382,
+   "title": "en",
+   "event": true,
+   "count": 2,
+   "daily": {
+    "2026-10-07": 1,
+    "2026-10-08": 1
+   }
+  },
+  {
    "path": "map_station_click/sobha/-",
    "path_id": 110294723,
    "title": "en|home|desktop",
@@ -1022,13 +1065,73 @@
    }
   },
   {
-   "path": "place/p_dubai_mall/from",
-   "path_id": 109724714,
-   "title": "ru|name",
+   "path": "route/p_gold_souk/p_atlantis_the_palm",
+   "path_id": 110330350,
+   "title": "en|search|ok|first_geo",
    "event": true,
-   "count": 2,
+   "count": 1,
    "daily": {
-    "2026-10-05": 2
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "place/p_gold_souk/from",
+   "path_id": 110330338,
+   "title": "en|name",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "route/furjan/p_dxb_airport_terminal_3",
+   "path_id": 110326931,
+   "title": "en|map|ok|first_place_search",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "route_from_station_click/furjan/-",
+   "path_id": 110326930,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "map_station_click/furjan/-",
+   "path_id": 110326925,
+   "title": "en|home|desktop",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "route/p_dubai_mall/p_dxb_airport_terminal_3",
+   "path_id": 110326900,
+   "title": "en|search|ok|first_place_search",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "place/p_dxb_airport_terminal_3/to",
+   "path_id": 110326886,
+   "title": "en|name",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
    }
   },
   {
@@ -1169,26 +1272,6 @@
    "count": 1,
    "daily": {
     "2026-10-08": 1
-   }
-  },
-  {
-   "path": "place/p_atlantis_the_palm/to",
-   "path_id": 110313388,
-   "title": "en|name",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-07": 1
-   }
-  },
-  {
-   "path": "geo/denied/-",
-   "path_id": 110313382,
-   "title": "en",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-07": 1
    }
   },
   {
@@ -1536,7 +1619,7 @@
   "/": [
    {
     "name": "(direct or unknown)",
-    "count": 54
+    "count": 56
    },
    {
     "name": "com.reddit.frontpage",
@@ -1549,6 +1632,16 @@
    {
     "name": "www.bing.com",
     "count": 1
+   }
+  ],
+  "/tl.html": [
+   {
+    "name": "www.facebook.com",
+    "count": 3
+   },
+   {
+    "name": "Facebook",
+    "count": 2
    }
   ],
   "/tram": [
@@ -1568,7 +1661,7 @@
   "(direct or unknown)": [
    {
     "path": "/",
-    "count": 54
+    "count": 56
    },
    {
     "path": "/tram",
@@ -1593,6 +1686,18 @@
     "count": 1
    }
   ],
+  "www.facebook.com": [
+   {
+    "path": "/tl.html",
+    "count": 3
+   }
+  ],
+  "Facebook": [
+   {
+    "path": "/tl.html",
+    "count": 2
+   }
+  ],
   "dubaimetro.fyi": [
    {
     "path": "/ru.html",
@@ -1603,7 +1708,7 @@
  "toprefs": [
   {
    "name": "",
-   "count": 98,
+   "count": 110,
    "ref_scheme": "o"
   },
   {
@@ -1611,6 +1716,18 @@
    "name": "com.reddit.frontpage",
    "count": 14,
    "ref_scheme": "o"
+  },
+  {
+   "id": "www.facebook.com",
+   "name": "www.facebook.com",
+   "count": 3,
+   "ref_scheme": "h"
+  },
+  {
+   "id": "Facebook",
+   "name": "Facebook",
+   "count": 2,
+   "ref_scheme": "c"
   },
   {
    "id": "www.bing.com",
@@ -1629,7 +1746,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 90
+   "count": 107
   },
   {
    "id": "rus",
@@ -1651,12 +1768,12 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 67
+   "count": 79
   },
   {
    "id": "US",
    "name": "United States",
-   "count": 18
+   "count": 21
   },
   {
    "id": "FR",
@@ -1676,6 +1793,11 @@
   {
    "id": "GB",
    "name": "United Kingdom",
+   "count": 2
+  },
+  {
+   "id": "IE",
+   "name": "Ireland",
    "count": 2
   },
   {
@@ -1743,7 +1865,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 58
+   "count": 63
   },
   {
    "id": "tablet",
@@ -1753,12 +1875,12 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 40
+   "count": 47
   },
   {
    "id": "desktophd",
    "name": "",
-   "count": 5
+   "count": 10
   },
   {
    "id": "unknown",
@@ -1770,12 +1892,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 77
+   "count": 89
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 37
+   "count": 42
   },
   {
    "name": "",
@@ -1791,12 +1913,12 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 33
+   "count": 38
   },
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 29
+   "count": 34
   },
   {
    "id": "Android",
@@ -1806,7 +1928,7 @@
   {
    "id": "macOS",
    "name": "macOS",
-   "count": 17
+   "count": 24
   },
   {
    "id": "Linux",
