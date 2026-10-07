@@ -1,5 +1,5 @@
 {
- "_about": "Pages built by tools/seo_pages.py. Only pages listed here exist; every fact on them comes from the app data (tools/seo_data.json). Add a page only when it passes the five INDEX gates in the SEO blueprint.",
+ "_about": "Pages built by tools/seo_pages.py. Only pages listed here exist; every fact on them comes from the app data (tools/seo_data.json). Add a page only when it passes the five INDEX gates in the SEO blueprint. Added 7 Oct 2026: 17 more destination pages from the app's places (Burj Khalifa, DIFC, DWTC, old Dubai souks, malls, media and internet cities, Etihad Rail).",
  "destinations": [
   {
    "slug": "dubai-mall",
@@ -160,6 +160,255 @@
     "p_expo_city_dubai"
    ],
    "lead": "Airport Terminal 1 and Airport Terminal 3 are stations on the Red Line, each linked to its terminal: about 5 minutes on foot, follow the Metro signs. Terminal 2 is not on the Metro: take the bus from Stadium or Abu Hail (Green Line), or a taxi."
+  },
+  {
+   "slug": "burj-khalifa",
+   "title": "Burj Khalifa",
+   "main": "p_burj_khalifa",
+   "also": [
+    "p_dubai_fountain",
+    "p_dubai_opera"
+   ],
+   "query": "Burj Khalifa metro station",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates",
+    "p_al_fahidi_historical_district"
+   ]
+  },
+  {
+   "slug": "difc",
+   "title": "DIFC (Dubai International Financial Centre)",
+   "main": "p_difc",
+   "also": [],
+   "query": "DIFC metro station",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "dubai-world-trade-centre",
+   "title": "Dubai World Trade Centre",
+   "main": "p_dubai_world_trade_centre",
+   "also": [],
+   "query": "World Trade Centre metro station Dubai",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "burjuman-mall",
+   "title": "BurJuman Mall",
+   "main": "p_burjuman_mall",
+   "also": [],
+   "query": "BurJuman metro station",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "al-fahidi",
+   "title": "Al Fahidi Historical District (Al Bastakiya)",
+   "main": "p_al_fahidi_historical_district",
+   "also": [],
+   "query": "Al Fahidi metro station",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "al-seef",
+   "title": "Al Seef, Textile Souk and Bur Dubai abra",
+   "main": "p_al_seef",
+   "also": [
+    "p_textile_souk",
+    "p_bur_dubai_abra_station"
+   ],
+   "query": "Al Seef metro station",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "spice-souk",
+   "title": "Spice Souk and Deira Old Souk abra",
+   "main": "p_spice_souk",
+   "also": [
+    "p_deira_old_souk_abra_station"
+   ],
+   "query": "Spice Souk metro station",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "city-centre-deira",
+   "title": "City Centre Deira",
+   "main": "p_city_centre_deira_mall",
+   "also": [],
+   "query": "City Centre Deira metro station",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "wafi-city",
+   "title": "Wafi City",
+   "main": "p_wafi_city",
+   "also": [],
+   "query": "Wafi Mall metro station",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "ibn-battuta-mall",
+   "title": "Ibn Battuta Mall",
+   "main": "p_ibn_battuta_mall",
+   "also": [],
+   "query": "Ibn Battuta metro station",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "palm-jumeirah-mall",
+   "title": "Palm Jumeirah Mall and The View at The Palm",
+   "main": "p_palm_jumeirah_mall",
+   "also": [
+    "p_the_view_at_the_palm"
+   ],
+   "query": "The View at The Palm metro",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "ain-dubai",
+   "title": "Ain Dubai and Bluewaters",
+   "main": "p_ain_dubai_bluewaters",
+   "also": [],
+   "query": "Ain Dubai metro station",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "ski-dubai",
+   "title": "Ski Dubai",
+   "main": "p_ski_dubai",
+   "also": [],
+   "query": "Ski Dubai metro station",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_al_fahidi_historical_district"
+   ]
+  },
+  {
+   "slug": "dubai-internet-city",
+   "title": "Dubai Internet City",
+   "main": "p_dubai_internet_city",
+   "also": [],
+   "query": "Dubai Internet City metro station",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "dubai-media-city",
+   "title": "Dubai Media City",
+   "main": "p_dubai_media_city",
+   "also": [],
+   "query": "Dubai Media City tram",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "knowledge-park",
+   "title": "Knowledge Park",
+   "main": "p_knowledge_park",
+   "also": [],
+   "query": "Knowledge Park tram station",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "etihad-rail-dubai",
+   "title": "Etihad Rail Dubai Station (Al Yalayis)",
+   "main": "p_etihad_rail_al_yalayis_station",
+   "also": [],
+   "query": "Etihad Rail Dubai station metro",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ],
+   "lead": "Etihad Rail's Dubai station at Al Yalayis opened on 30 September 2026. It is linked to Jumeirah Golf Estates station on the Red Line (Expo 2020 branch) by a covered 400-metre footbridge, about 5 minutes on foot."
   }
  ],
  "stations": [

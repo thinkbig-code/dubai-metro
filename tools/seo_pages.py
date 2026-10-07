@@ -428,6 +428,8 @@ def destination(d):
             lead += ' It is about %d minutes on foot, %s.' % (main['min'], t(main['walk']))
         if other_names(sid):
             lead += ' The station has also been called %s.' % ' and '.join(other_names(sid))
+        if main.get('note'):
+            lead += ' ' + t(main['note'], s=s['n'])
     body = ['<h1>%s by metro: nearest station and how to get there</h1>' % e(d['title']), '<p class="lead">%s</p>' % e(lead)]
     if any(LINE_KIND[l] in SUSP for l in lines):
         body.append('<div class="warn">%s The routes below show the monorail part for when it reopens; check the operator before you travel.</div>' % e(t('monoSuspended')))
