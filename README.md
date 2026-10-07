@@ -31,7 +31,7 @@ Each language has its own page, so search engines can show people the version in
 - Step-by-step directions, estimated travel time (with typical waiting time), estimated Nol fare by zone, and opening-hours warnings for late trips.
 - About 40 popular places (airport terminals, Dubai Mall, Burj Khalifa, Marina, JBR, Atlantis, souks, Expo City and more), with walking notes where the connection is well known.
 - Sharing: copy link, WhatsApp, QR code and a trip card. Every route has its own link.
-- A built-in "Report a problem" form that opens a GitHub issue with the route details filled in.
+- A built-in "Report a problem" button that opens an e-mail with the route details filled in (no account needed).
 - Works on phones (bottom sheet that folds to one line) and computers, in light and dark mode.
 - "Nearest station to me": the location button in the From field picks the closest station and shows the walking time. The location stays on the device.
 - Works offline after the first visit, and can be installed on a phone's home screen like an app.
@@ -49,7 +49,7 @@ The current RTA timetable is published on Dubai Pulse (dataset `rta_gtfs-open`),
 
 ## Report a problem
 
-Use the **Report a problem** button on the site, or open an issue here: https://github.com/thinkbig-code/dubai-metro/issues
+Use the **Report a problem** button on the site (it opens an e-mail to callmebackemail@protonmail.com with the route details), or open an issue here: https://github.com/thinkbig-code/dubai-metro/issues
 
 ## Files
 

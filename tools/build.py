@@ -91,7 +91,7 @@ def page(L):
 <p class="lst" dir="ltr">{GUIDE_LINKS}</p>
 <h2>{html.escape(X["faq"])}</h2>
 {faq}
-<p><a href="https://github.com/thinkbig-code/dubai-metro/issues">{html.escape(X["report"])}</a></p>
+<p><a href="mailto:callmebackemail@protonmail.com?subject=Dubai%20Metro%20Map">{html.escape(X["report"])}</a></p>
 <p class="lst">{other}</p>
 </section>
 '''

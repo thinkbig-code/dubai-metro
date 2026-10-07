@@ -338,7 +338,7 @@ def frame(path, title, desc, body, crumbs, ld_extra=None, og_image='og-image.png
 </main>
 <footer>
 <p>{e(t('foot'))} {e(t('attrib'))} Travel times on this page are for a weekday at midday, including typical waiting.</p>
-<p>An independent, non-commercial map, not affiliated with RTA. <a href="https://github.com/thinkbig-code/dubai-metro/issues">Report a problem</a> · <a href="{root}">Open the route planner</a></p>
+<p>An independent, non-commercial map, not affiliated with RTA. <a href="mailto:callmebackemail@protonmail.com?subject=Dubai%20Metro%20Map">Report a problem</a> · <a href="{root}">Open the route planner</a></p>
 </footer>
 </body>
 </html>
