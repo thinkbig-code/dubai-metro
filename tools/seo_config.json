@@ -1,5 +1,5 @@
 {
- "_about": "Pages built by tools/seo_pages.py. Only pages listed here exist; every fact on them comes from the app data (tools/seo_data.json). Add a page only when it passes the five INDEX gates in the SEO blueprint. Added 7 Oct 2026: 17 more destination pages from the app's places (Burj Khalifa, DIFC, DWTC, old Dubai souks, malls, media and internet cities, Etihad Rail).",
+ "_about": "Pages built by tools/seo_pages.py. Only pages listed here exist; every fact on them comes from the app data (tools/seo_data.json). Add a page only when it passes the five INDEX gates in the SEO blueprint. Added 7 Oct 2026: 17 more destination pages from the app's places (Burj Khalifa, DIFC, DWTC, old Dubai souks, malls, media and internet cities, Etihad Rail). Added 8 Oct 2026: 56 new places with sourced positions (consulates, government offices, hospitals, malls, souks, parks, hotels, bus and ferry stations), each with its page.",
  "destinations": [
   {
    "slug": "dubai-mall",
@@ -409,6 +409,790 @@
     "p_mall_of_the_emirates"
    ],
    "lead": "Etihad Rail's Dubai station at Al Yalayis opened on 30 September 2026. It is linked to Jumeirah Golf Estates station on the Red Line (Expo 2020 branch) by a covered 400-metre footbridge, about 5 minutes on foot."
+  },
+  {
+   "slug": "almas-tower",
+   "title": "Almas Tower (DMCC HQ)",
+   "main": "p_almas_tower_dmcc_hq",
+   "also": [],
+   "query": "nearest metro station to Almas Tower",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_mall_of_the_emirates",
+    "p_expo_city_dubai"
+   ]
+  },
+  {
+   "slug": "jebel-ali-free-zone",
+   "title": "Jebel Ali Free Zone (JAFZA)",
+   "main": "p_jebel_ali_free_zone_jafza",
+   "also": [],
+   "query": "nearest metro station to Jebel Ali Free Zone",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "egyptian-consulate-dubai",
+   "title": "Egyptian Consulate Dubai",
+   "main": "p_egyptian_consulate_dubai",
+   "also": [],
+   "query": "nearest metro station to Egyptian Consulate Dubai",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "indian-consulate-dubai",
+   "title": "Indian Consulate Dubai",
+   "main": "p_indian_consulate_dubai",
+   "also": [],
+   "query": "nearest metro station to Indian Consulate Dubai",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "pakistan-consulate-dubai",
+   "title": "Pakistan Consulate Dubai",
+   "main": "p_pakistan_consulate_dubai",
+   "also": [],
+   "query": "nearest metro station to Pakistan Consulate Dubai",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "us-consulate-dubai",
+   "title": "US Consulate Dubai",
+   "main": "p_us_consulate_dubai",
+   "also": [],
+   "query": "nearest metro station to US Consulate Dubai",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "dewa-head-office",
+   "title": "DEWA Head Office",
+   "main": "p_dewa_head_office",
+   "also": [],
+   "query": "nearest metro station to DEWA Head Office",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "dubai-chamber-of-commerce",
+   "title": "Dubai Chamber of Commerce",
+   "main": "p_dubai_chamber_of_commerce",
+   "also": [],
+   "query": "nearest metro station to Dubai Chamber of Commerce",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "dubai-land-department",
+   "title": "Dubai Land Department",
+   "main": "p_dubai_land_department",
+   "also": [],
+   "query": "nearest metro station to Dubai Land Department",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "dubai-municipality-head-office",
+   "title": "Dubai Municipality Head Office",
+   "main": "p_dubai_municipality_head_office",
+   "also": [],
+   "query": "nearest metro station to Dubai Municipality Head Office",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "dubai-police-general-headquarters",
+   "title": "Dubai Police General Headquarters",
+   "main": "p_dubai_police_general_headquarters",
+   "also": [],
+   "query": "nearest metro station to Dubai Police General Headquarters",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "gdrfa-immigration-al-jafiliya",
+   "title": "GDRFA Immigration Al Jafiliya",
+   "main": "p_gdrfa_immigration_al_jafiliya",
+   "also": [],
+   "query": "nearest metro station to GDRFA Immigration Al Jafiliya",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "al-jalila-children-s-specialty-hospital",
+   "title": "Al Jalila Children's Specialty Hospital",
+   "main": "p_al_jalila_children_s_specialty_hospital",
+   "also": [],
+   "query": "nearest metro station to Al Jalila Children's Specialty Hospital",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "al-zahra-hospital-dubai",
+   "title": "Al Zahra Hospital Dubai",
+   "main": "p_al_zahra_hospital_dubai",
+   "also": [],
+   "query": "nearest metro station to Al Zahra Hospital Dubai",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "american-hospital-dubai",
+   "title": "American Hospital Dubai",
+   "main": "p_american_hospital_dubai",
+   "also": [],
+   "query": "nearest metro station to American Hospital Dubai",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "aster-hospital-al-qusais",
+   "title": "Aster Hospital Al Qusais",
+   "main": "p_aster_hospital_al_qusais",
+   "also": [],
+   "query": "nearest metro station to Aster Hospital Al Qusais",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "aster-hospital-mankhool",
+   "title": "Aster Hospital Mankhool",
+   "main": "p_aster_hospital_mankhool",
+   "also": [],
+   "query": "nearest metro station to Aster Hospital Mankhool",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "canadian-specialist-hospital",
+   "title": "Canadian Specialist Hospital",
+   "main": "p_canadian_specialist_hospital",
+   "also": [],
+   "query": "nearest metro station to Canadian Specialist Hospital",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "dubai-hospital",
+   "title": "Dubai Hospital",
+   "main": "p_dubai_hospital",
+   "also": [],
+   "query": "nearest metro station to Dubai Hospital",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "international-modern-hospital",
+   "title": "International Modern Hospital",
+   "main": "p_international_modern_hospital",
+   "also": [],
+   "query": "nearest metro station to International Modern Hospital",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "iranian-hospital-dubai",
+   "title": "Iranian Hospital Dubai",
+   "main": "p_iranian_hospital_dubai",
+   "also": [],
+   "query": "nearest metro station to Iranian Hospital Dubai",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "latifa-hospital",
+   "title": "Latifa Hospital",
+   "main": "p_latifa_hospital",
+   "also": [],
+   "query": "nearest metro station to Latifa Hospital",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "medeor-hospital-dubai",
+   "title": "Medeor Hospital Dubai",
+   "main": "p_medeor_hospital_dubai",
+   "also": [],
+   "query": "nearest metro station to Medeor Hospital Dubai",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "rashid-hospital",
+   "title": "Rashid Hospital",
+   "main": "p_rashid_hospital",
+   "also": [],
+   "query": "nearest metro station to Rashid Hospital",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "saudi-german-hospital-dubai",
+   "title": "Saudi German Hospital Dubai",
+   "main": "p_saudi_german_hospital_dubai",
+   "also": [],
+   "query": "nearest metro station to Saudi German Hospital Dubai",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "address-downtown",
+   "title": "Address Downtown",
+   "main": "p_address_downtown",
+   "also": [],
+   "query": "nearest metro station to Address Downtown",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates",
+    "p_expo_city_dubai"
+   ]
+  },
+  {
+   "slug": "jw-marriott-marquis-dubai",
+   "title": "JW Marriott Marquis Dubai",
+   "main": "p_jw_marriott_marquis_dubai",
+   "also": [],
+   "query": "nearest metro station to JW Marriott Marquis Dubai",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates",
+    "p_expo_city_dubai"
+   ]
+  },
+  {
+   "slug": "jumeirah-emirates-towers",
+   "title": "Jumeirah Emirates Towers",
+   "main": "p_jumeirah_emirates_towers",
+   "also": [],
+   "query": "nearest metro station to Jumeirah Emirates Towers",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "al-mulla-plaza",
+   "title": "Al Mulla Plaza",
+   "main": "p_al_mulla_plaza",
+   "also": [],
+   "query": "nearest metro station to Al Mulla Plaza",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "al-nasr-leisureland",
+   "title": "Al Nasr Leisureland",
+   "main": "p_al_nasr_leisureland",
+   "also": [],
+   "query": "nearest metro station to Al Nasr Leisureland",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "al-shindagha-museum",
+   "title": "Al Shindagha Museum",
+   "main": "p_al_shindagha_museum",
+   "also": [],
+   "query": "nearest metro station to Al Shindagha Museum",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "alserkal-avenue",
+   "title": "Alserkal Avenue",
+   "main": "p_alserkal_avenue",
+   "also": [],
+   "query": "nearest metro station to Alserkal Avenue",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "coca-cola-arena",
+   "title": "Coca-Cola Arena",
+   "main": "p_coca_cola_arena",
+   "also": [],
+   "query": "nearest metro station to Coca-Cola Arena",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates",
+    "p_expo_city_dubai"
+   ]
+  },
+  {
+   "slug": "dubai-creek-harbour",
+   "title": "Dubai Creek Harbour",
+   "main": "p_dubai_creek_harbour",
+   "also": [],
+   "query": "nearest metro station to Dubai Creek Harbour",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "dubai-dolphinarium",
+   "title": "Dubai Dolphinarium",
+   "main": "p_dubai_dolphinarium",
+   "also": [],
+   "query": "nearest metro station to Dubai Dolphinarium",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "dubai-garden-glow",
+   "title": "Dubai Garden Glow",
+   "main": "p_dubai_garden_glow",
+   "also": [],
+   "query": "nearest metro station to Dubai Garden Glow",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "sheikh-mohammed-centre-for-cultural-understanding",
+   "title": "Sheikh Mohammed Centre for Cultural Understanding",
+   "main": "p_sheikh_mohammed_centre_for_cultural_understanding",
+   "also": [],
+   "query": "nearest metro station to Sheikh Mohammed Centre for Cultural Understanding",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "st-mary-s-catholic-church",
+   "title": "St. Mary's Catholic Church",
+   "main": "p_st_mary_s_catholic_church",
+   "also": [],
+   "query": "nearest metro station to St. Mary's Catholic Church",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "al-ghurair-centre",
+   "title": "Al Ghurair Centre",
+   "main": "p_al_ghurair_centre",
+   "also": [],
+   "query": "nearest metro station to Al Ghurair Centre",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "al-khaleej-centre",
+   "title": "Al Khaleej Centre",
+   "main": "p_al_khaleej_centre",
+   "also": [],
+   "query": "nearest metro station to Al Khaleej Centre",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "dubai-festival-city-mall",
+   "title": "Dubai Festival City Mall",
+   "main": "p_dubai_festival_city_mall",
+   "also": [],
+   "query": "nearest metro station to Dubai Festival City Mall",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "reef-mall",
+   "title": "Reef Mall",
+   "main": "p_reef_mall",
+   "also": [],
+   "query": "nearest metro station to Reef Mall",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "times-square-center",
+   "title": "Times Square Center",
+   "main": "p_times_square_center",
+   "also": [],
+   "query": "nearest metro station to Times Square Center",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_expo_city_dubai"
+   ]
+  },
+  {
+   "slug": "karama-market",
+   "title": "Karama Market",
+   "main": "p_karama_market",
+   "also": [],
+   "query": "nearest metro station to Karama Market",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "meena-bazaar",
+   "title": "Meena Bazaar",
+   "main": "p_meena_bazaar",
+   "also": [],
+   "query": "nearest metro station to Meena Bazaar",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "naif-souk",
+   "title": "Naif Souk",
+   "main": "p_naif_souk",
+   "also": [],
+   "query": "nearest metro station to Naif Souk",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_mall_of_the_emirates",
+    "p_expo_city_dubai"
+   ]
+  },
+  {
+   "slug": "al-barsha-pond-park",
+   "title": "Al Barsha Pond Park",
+   "main": "p_al_barsha_pond_park",
+   "also": [],
+   "query": "nearest metro station to Al Barsha Pond Park",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_expo_city_dubai"
+   ]
+  },
+  {
+   "slug": "creek-park",
+   "title": "Creek Park",
+   "main": "p_creek_park",
+   "also": [],
+   "query": "nearest metro station to Creek Park",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "safa-park",
+   "title": "Safa Park",
+   "main": "p_safa_park",
+   "also": [],
+   "query": "nearest metro station to Safa Park",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates",
+    "p_expo_city_dubai"
+   ]
+  },
+  {
+   "slug": "zabeel-park",
+   "title": "Zabeel Park",
+   "main": "p_zabeel_park",
+   "also": [],
+   "query": "nearest metro station to Zabeel Park",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "al-ghubaiba-bus-station",
+   "title": "Al Ghubaiba Bus Station",
+   "main": "p_al_ghubaiba_bus_station",
+   "also": [],
+   "query": "nearest metro station to Al Ghubaiba Bus Station",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "al-sabkha-abra-station",
+   "title": "Al Sabkha Abra Station",
+   "main": "p_al_sabkha_abra_station",
+   "also": [],
+   "query": "nearest metro station to Al Sabkha Abra Station",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_mall_of_the_emirates",
+    "p_expo_city_dubai"
+   ]
+  },
+  {
+   "slug": "dubai-ferry-al-ghubaiba-marine-station",
+   "title": "Dubai Ferry Al Ghubaiba Marine Station",
+   "main": "p_dubai_ferry_al_ghubaiba_marine_station",
+   "also": [],
+   "query": "nearest metro station to Dubai Ferry Al Ghubaiba Marine Station",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "ibn-battuta-bus-station",
+   "title": "Ibn Battuta Bus Station",
+   "main": "p_ibn_battuta_bus_station",
+   "also": [],
+   "query": "nearest metro station to Ibn Battuta Bus Station",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates"
+   ]
+  },
+  {
+   "slug": "american-university-in-dubai",
+   "title": "American University in Dubai",
+   "main": "p_american_university_in_dubai",
+   "also": [],
+   "query": "nearest metro station to American University in Dubai",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_mall_of_the_emirates",
+    "p_expo_city_dubai"
+   ]
+  },
+  {
+   "slug": "canadian-university-dubai",
+   "title": "Canadian University Dubai",
+   "main": "p_canadian_university_dubai",
+   "also": [],
+   "query": "nearest metro station to Canadian University Dubai",
+   "origins": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_marina_walk",
+    "p_gold_souk",
+    "p_mall_of_the_emirates",
+    "p_expo_city_dubai"
+   ]
   }
  ],
  "stations": [
