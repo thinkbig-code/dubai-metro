@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-08T13:59:44Z",
+ "generated": "2026-10-08T14:59:40Z",
  "start": "2025-10-08",
  "end": "2026-10-09",
  "total": {
-  "total": 167,
-  "total_events": 93,
-  "total_utc": 167,
+  "total": 198,
+  "total_events": 123,
+  "total_utc": 198,
   "stats": [
    {
     "day": "2025-10-08",
@@ -10778,7 +10778,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 167
+    "monthly": 198
    },
    {
     "day": "2026-10-02",
@@ -10959,7 +10959,7 @@
      11
     ],
     "daily": 21,
-    "weekly": 96
+    "weekly": 127
    },
    {
     "day": "2026-10-08",
@@ -10982,14 +10982,14 @@
      2,
      0,
      6,
-     0,
+     31,
      0,
      0,
      0,
      0,
      0
     ],
-    "daily": 75
+    "daily": 106
    },
    {
     "day": "2026-10-09",
@@ -11041,6 +11041,16 @@
    }
   },
   {
+   "path": "visit/new/-",
+   "path_id": 110447314,
+   "title": "en",
+   "event": true,
+   "count": 5,
+   "daily": {
+    "2026-10-08": 5
+   }
+  },
+  {
    "path": "/tl.html",
    "path_id": 110332677,
    "title": "Interactive na Mapa ng Dubai Metro: Metro, Tram, Palm Monorail",
@@ -11048,16 +11058,6 @@
    "count": 5,
    "daily": {
     "2026-10-08": 5
-   }
-  },
-  {
-   "path": "visit/new/-",
-   "path_id": 110447314,
-   "title": "en",
-   "event": true,
-   "count": 4,
-   "daily": {
-    "2026-10-08": 4
    }
   },
   {
@@ -11069,6 +11069,16 @@
    "daily": {
     "2026-10-05": 2,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "map_station_click/dmm/-",
+   "path_id": 110382397,
+   "title": "en|home|phone",
+   "event": true,
+   "count": 2,
+   "daily": {
+    "2026-10-08": 2
    }
   },
   {
@@ -11147,6 +11157,17 @@
    }
   },
   {
+   "path": "place/p_jbr_the_walk/to",
+   "path_id": 109724724,
+   "title": "ru|name",
+   "event": true,
+   "count": 2,
+   "daily": {
+    "2026-10-05": 1,
+    "2026-10-08": 1
+   }
+  },
+  {
    "path": "place/p_atlantis_the_palm/from",
    "path_id": 109223189,
    "title": "ru|name",
@@ -11154,6 +11175,286 @@
    "count": 2,
    "daily": {
     "2026-10-02": 1,
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/destinations/dubai-mall",
+   "path_id": 110484997,
+   "title": "Dubai Mall Metro Station: Burj Khalifa/Dubai Mall (Red Line), 12 min walk",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "station_pair_route_search/palmgw/atlantis",
+   "path_id": 110484440,
+   "title": "en|place_search",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "route/palmgw/atlantis",
+   "path_id": 110484439,
+   "title": "en|map|ok|first_place_search",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "route_to_station_click/atlantis/-",
+   "path_id": 110484438,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "map_station_click/atlantis/-",
+   "path_id": 110484435,
+   "title": "en|home|desktop",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "route_from_station_click/palmgw/-",
+   "path_id": 110484431,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "station_pair_route_search/pj/palmgw",
+   "path_id": 110484371,
+   "title": "en|place_search",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "route/pj/palmgw",
+   "path_id": 110484370,
+   "title": "en|map|ok|first_place_search",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "route_to_station_click/palmgw/-",
+   "path_id": 110484369,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "map_station_click/palmgw/-",
+   "path_id": 110484363,
+   "title": "en|home|desktop",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "route_from_station_click/pj/-",
+   "path_id": 110484359,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "map_station_click/pj/-",
+   "path_id": 110484352,
+   "title": "en|home|desktop",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "station_pair_route_search/jbr1/dmcc",
+   "path_id": 110484241,
+   "title": "en|place_search",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "route/jbr1/dmcc",
+   "path_id": 110484240,
+   "title": "en|map|ok|first_place_search",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "route_from_station_click/jbr1/-",
+   "path_id": 110484239,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "map_station_click/jbr1/-",
+   "path_id": 110484234,
+   "title": "en|home|desktop",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "station_pair_route_search/dmm/dmcc",
+   "path_id": 110484223,
+   "title": "en|place_search",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "route/dmm/dmcc",
+   "path_id": 110484222,
+   "title": "en|map|ok|first_place_search",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "route_to_station_click/dmcc/-",
+   "path_id": 110484221,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "map_station_click/dmcc/-",
+   "path_id": 110484219,
+   "title": "en|home|desktop",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "station_pair_route_search/dmm/jlt",
+   "path_id": 110484215,
+   "title": "en|place_search",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "route/dmm/jlt",
+   "path_id": 110484214,
+   "title": "en|map|ok|first_place_search",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "route_to_station_click/jlt/-",
+   "path_id": 110484213,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "map_station_click/jlt/-",
+   "path_id": 110484203,
+   "title": "en|home|desktop",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "route/dmm/p_jbr_the_walk",
+   "path_id": 110484180,
+   "title": "en|map|ok|first_place_search",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "route_from_station_click/dmm/-",
+   "path_id": 110484179,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "route/p_dubai_internet_city/p_jbr_the_walk",
+   "path_id": 110483985,
+   "title": "en|search|ok|first_place_search",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "place/p_dubai_internet_city/from",
+   "path_id": 110483974,
+   "title": "en|name",
+   "event": true,
+   "count": 1,
+   "daily": {
     "2026-10-08": 1
    }
   },
@@ -11341,16 +11642,6 @@
    "path": "route_from_station_click/centrepoint/-",
    "path_id": 110382473,
    "title": "en",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-08": 1
-   }
-  },
-  {
-   "path": "map_station_click/dmm/-",
-   "path_id": 110382397,
-   "title": "en|home|phone",
    "event": true,
    "count": 1,
    "daily": {
@@ -11698,16 +11989,6 @@
    }
   },
   {
-   "path": "place/p_jbr_the_walk/to",
-   "path_id": 109724724,
-   "title": "ru|name",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-05": 1
-   }
-  },
-  {
    "path": "station_pair_route_search/dmt/bk",
    "path_id": 109553312,
    "title": "en|map",
@@ -11879,10 +12160,10 @@
   }
  ],
  "summary": {
-  "visits": 167,
-  "routes": 20,
+  "visits": 198,
+  "routes": 27,
   "routes_not_found": 0,
-  "routes_per_visit": 0.12,
+  "routes_per_visit": 0.14,
   "share_rate": 0.0,
   "shares": {},
   "failed_search_rate": 0.0,
@@ -11893,9 +12174,37 @@
    "fail": 1
   },
   "visitors_new_return": {
-   "new": 4
+   "new": 5
   },
   "top_routes": [
+   {
+    "name": "palmgw > atlantis",
+    "count": 1
+   },
+   {
+    "name": "pj > palmgw",
+    "count": 1
+   },
+   {
+    "name": "jbr1 > dmcc",
+    "count": 1
+   },
+   {
+    "name": "dmm > dmcc",
+    "count": 1
+   },
+   {
+    "name": "dmm > jlt",
+    "count": 1
+   },
+   {
+    "name": "dmm > p_jbr_the_walk",
+    "count": 1
+   },
+   {
+    "name": "p_dubai_internet_city > p_jbr_the_walk",
+    "count": 1
+   },
    {
     "name": "dic > p_burj_khalifa",
     "count": 1
@@ -11927,37 +12236,13 @@
    {
     "name": "alras > sobha",
     "count": 1
-   },
-   {
-    "name": "baniyas > rigga",
-    "count": 1
-   },
-   {
-    "name": "creek > moe",
-    "count": 1
-   },
-   {
-    "name": "sobha > centrepoint",
-    "count": 1
-   },
-   {
-    "name": "p_dubai_mall > et",
-    "count": 1
-   },
-   {
-    "name": "p_dubai_mall > p_jbr_the_walk",
-    "count": 1
-   },
-   {
-    "name": "dmt > bk",
-    "count": 1
-   },
-   {
-    "name": "p_atlantis_the_palm > p_dxb_airport_terminal_3",
-    "count": 1
    }
   ],
   "top_origins": [
+   {
+    "name": "dmm",
+    "count": 3
+   },
    {
     "name": "p_dubai_mall",
     "count": 3
@@ -11965,6 +12250,22 @@
    {
     "name": "bk",
     "count": 3
+   },
+   {
+    "name": "palmgw",
+    "count": 1
+   },
+   {
+    "name": "pj",
+    "count": 1
+   },
+   {
+    "name": "jbr1",
+    "count": 1
+   },
+   {
+    "name": "p_dubai_internet_city",
+    "count": 1
    },
    {
     "name": "dic",
@@ -11977,26 +12278,6 @@
    {
     "name": "union",
     "count": 1
-   },
-   {
-    "name": "centrepoint",
-    "count": 1
-   },
-   {
-    "name": "p_gold_souk",
-    "count": 1
-   },
-   {
-    "name": "furjan",
-    "count": 1
-   },
-   {
-    "name": "alras",
-    "count": 1
-   },
-   {
-    "name": "baniyas",
-    "count": 1
    }
   ],
   "top_destinations": [
@@ -12005,8 +12286,28 @@
     "count": 4
    },
    {
+    "name": "p_jbr_the_walk",
+    "count": 3
+   },
+   {
+    "name": "dmcc",
+    "count": 2
+   },
+   {
     "name": "moe",
     "count": 2
+   },
+   {
+    "name": "atlantis",
+    "count": 1
+   },
+   {
+    "name": "palmgw",
+    "count": 1
+   },
+   {
+    "name": "jlt",
+    "count": 1
    },
    {
     "name": "p_burj_khalifa",
@@ -12018,26 +12319,6 @@
    },
    {
     "name": "garhoud",
-    "count": 1
-   },
-   {
-    "name": "creek",
-    "count": 1
-   },
-   {
-    "name": "p_atlantis_the_palm",
-    "count": 1
-   },
-   {
-    "name": "sobha",
-    "count": 1
-   },
-   {
-    "name": "rigga",
-    "count": 1
-   },
-   {
-    "name": "centrepoint",
     "count": 1
    }
   ]
@@ -12073,6 +12354,12 @@
    {
     "name": "Facebook",
     "count": 2
+   }
+  ],
+  "/destinations/dubai-mall": [
+   {
+    "name": "chatgpt.com",
+    "count": 1
    }
   ],
   "/tram": [
@@ -12135,6 +12422,12 @@
     "count": 2
    }
   ],
+  "chatgpt.com": [
+   {
+    "path": "/destinations/dubai-mall",
+    "count": 1
+   }
+  ],
   "dubaimetro.fyi": [
    {
     "path": "/ru.html",
@@ -12145,7 +12438,7 @@
  "toprefs": [
   {
    "name": "",
-   "count": 132,
+   "count": 162,
    "ref_scheme": "o"
   },
   {
@@ -12183,13 +12476,19 @@
    "name": "web.telegram.org",
    "count": 1,
    "ref_scheme": "h"
+  },
+  {
+   "id": "chatgpt.com",
+   "name": "chatgpt.com",
+   "count": 1,
+   "ref_scheme": "c"
   }
  ],
  "languages": [
   {
    "id": "eng",
    "name": "English",
-   "count": 141
+   "count": 172
   },
   {
    "id": "rus",
@@ -12211,7 +12510,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 113
+   "count": 143
   },
   {
    "id": "US",
@@ -12284,6 +12583,11 @@
    "count": 1
   },
   {
+   "id": "KR",
+   "name": "South Korea",
+   "count": 1
+  },
+  {
    "id": "LT",
    "name": "Republic of Lithuania",
    "count": 1
@@ -12308,7 +12612,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 91
+   "count": 92
   },
   {
    "id": "tablet",
@@ -12318,7 +12622,7 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 53
+   "count": 83
   },
   {
    "id": "desktophd",
@@ -12335,12 +12639,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 105
+   "count": 135
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 57
+   "count": 58
   },
   {
    "id": "Firefox",
@@ -12356,7 +12660,12 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 53
+   "count": 54
+  },
+  {
+   "id": "macOS",
+   "name": "macOS",
+   "count": 54
   },
   {
    "id": "Windows",
@@ -12367,11 +12676,6 @@
    "id": "Android",
    "name": "Android",
    "count": 37
-  },
-  {
-   "id": "macOS",
-   "name": "macOS",
-   "count": 24
   },
   {
    "id": "Linux",
