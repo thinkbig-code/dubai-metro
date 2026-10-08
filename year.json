@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-08T17:58:07Z",
+ "generated": "2026-10-08T19:00:52Z",
  "start": "2025-10-08",
  "end": "2026-10-09",
  "total": {
-  "total": 198,
-  "total_events": 123,
-  "total_utc": 198,
+  "total": 201,
+  "total_events": 125,
+  "total_utc": 201,
   "stats": [
    {
     "day": "2025-10-08",
@@ -10778,7 +10778,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 198
+    "monthly": 201
    },
    {
     "day": "2026-10-02",
@@ -10959,7 +10959,7 @@
      11
     ],
     "daily": 21,
-    "weekly": 127
+    "weekly": 130
    },
    {
     "day": "2026-10-08",
@@ -10986,10 +10986,10 @@
      0,
      0,
      0,
-     0,
+     3,
      0
     ],
-    "daily": 106
+    "daily": 109
    },
    {
     "day": "2026-10-09",
@@ -11029,7 +11029,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 67,
+   "count": 68,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -11037,7 +11037,7 @@
     "2026-10-04": 7,
     "2026-10-05": 6,
     "2026-10-07": 7,
-    "2026-10-08": 14
+    "2026-10-08": 15
    }
   },
   {
@@ -11045,9 +11045,9 @@
    "path_id": 110447314,
    "title": "en",
    "event": true,
-   "count": 5,
+   "count": 6,
    "daily": {
-    "2026-10-08": 5
+    "2026-10-08": 6
    }
   },
   {
@@ -11175,6 +11175,16 @@
    "count": 2,
    "daily": {
     "2026-10-02": 1,
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "map_station_click/oudmetha/-",
+   "path_id": 110521118,
+   "title": "en|home|phone",
+   "event": true,
+   "count": 1,
+   "daily": {
     "2026-10-08": 1
    }
   },
@@ -12160,10 +12170,10 @@
   }
  ],
  "summary": {
-  "visits": 198,
+  "visits": 201,
   "routes": 27,
   "routes_not_found": 0,
-  "routes_per_visit": 0.14,
+  "routes_per_visit": 0.13,
   "share_rate": 0.0,
   "shares": {},
   "failed_search_rate": 0.0,
@@ -12174,7 +12184,7 @@
    "fail": 1
   },
   "visitors_new_return": {
-   "new": 5
+   "new": 6
   },
   "top_routes": [
    {
@@ -12327,7 +12337,7 @@
   "/": [
    {
     "name": "(direct or unknown)",
-    "count": 61
+    "count": 62
    },
    {
     "name": "com.reddit.frontpage",
@@ -12379,7 +12389,7 @@
   "(direct or unknown)": [
    {
     "path": "/",
-    "count": 61
+    "count": 62
    },
    {
     "path": "/tram",
@@ -12438,7 +12448,7 @@
  "toprefs": [
   {
    "name": "",
-   "count": 162,
+   "count": 165,
    "ref_scheme": "o"
   },
   {
@@ -12488,7 +12498,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 172
+   "count": 175
   },
   {
    "id": "rus",
@@ -12515,7 +12525,7 @@
   {
    "id": "US",
    "name": "United States",
-   "count": 21
+   "count": 24
   },
   {
    "id": "FR",
@@ -12612,7 +12622,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 92
+   "count": 95
   },
   {
    "id": "tablet",
@@ -12644,7 +12654,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 58
+   "count": 61
   },
   {
    "id": "Firefox",
@@ -12660,7 +12670,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 54
+   "count": 57
   },
   {
    "id": "macOS",
