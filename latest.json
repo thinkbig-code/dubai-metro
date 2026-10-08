@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-08T01:34:54Z",
+ "generated": "2026-10-08T10:53:15Z",
  "start": "2026-09-08",
  "end": "2026-10-09",
  "total": {
-  "total": 134,
-  "total_events": 66,
-  "total_utc": 134,
+  "total": 153,
+  "total_events": 82,
+  "total_utc": 153,
   "stats": [
    {
     "day": "2026-09-08",
@@ -728,7 +728,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 134
+    "monthly": 153
    },
    {
     "day": "2026-10-02",
@@ -879,7 +879,7 @@
      0
     ],
     "daily": 0,
-    "weekly": 63
+    "weekly": 82
    },
    {
     "day": "2026-10-07",
@@ -921,14 +921,14 @@
      0,
      0,
      0,
+     9,
+     6,
      0,
      0,
      0,
      0,
      0,
-     0,
-     0,
-     0,
+     4,
      0,
      0,
      0,
@@ -939,7 +939,7 @@
      0,
      0
     ],
-    "daily": 42
+    "daily": 61
    },
    {
     "day": "2026-10-09",
@@ -979,7 +979,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 61,
+   "count": 64,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -987,7 +987,7 @@
     "2026-10-04": 7,
     "2026-10-05": 6,
     "2026-10-07": 7,
-    "2026-10-08": 8
+    "2026-10-08": 11
    }
   },
   {
@@ -1054,6 +1054,28 @@
    }
   },
   {
+   "path": "map_station_click/creek/-",
+   "path_id": 110312977,
+   "title": "en|home|phone",
+   "event": true,
+   "count": 2,
+   "daily": {
+    "2026-10-07": 1,
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "map_station_click/centrepoint/-",
+   "path_id": 110294742,
+   "title": "en|home|desktop",
+   "event": true,
+   "count": 2,
+   "daily": {
+    "2026-10-07": 1,
+    "2026-10-08": 1
+   }
+  },
+  {
    "path": "map_station_click/sobha/-",
    "path_id": 110294723,
    "title": "en|home|desktop",
@@ -1061,6 +1083,147 @@
    "count": 2,
    "daily": {
     "2026-10-07": 1,
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "place/p_atlantis_the_palm/from",
+   "path_id": 109223189,
+   "title": "ru|name",
+   "event": true,
+   "count": 2,
+   "daily": {
+    "2026-10-02": 1,
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "geo/ok/dhcc",
+   "path_id": 110447415,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "geo/fail/-",
+   "path_id": 110447348,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "visit/new/-",
+   "path_id": 110447314,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "station_pair_route_search/union/garhoud",
+   "path_id": 110390897,
+   "title": "en|place_search",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "route/union/garhoud",
+   "path_id": 110390896,
+   "title": "en|search|ok|first_place_search",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "station/garhoud/to",
+   "path_id": 110390895,
+   "title": "en|name",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "station/union/from",
+   "path_id": 110390878,
+   "title": "en|name",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "view/centrepoint/creek",
+   "path_id": 110382482,
+   "title": "en|opt_2",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "route_to_station_click/creek/-",
+   "path_id": 110382477,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "route/centrepoint/creek",
+   "path_id": 110382476,
+   "title": "en|map|ok|first_map",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "station_pair_route_search/centrepoint/creek",
+   "path_id": 110382475,
+   "title": "en|map",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "route_from_station_click/centrepoint/-",
+   "path_id": 110382473,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "map_station_click/dmm/-",
+   "path_id": 110382397,
+   "title": "en|home|phone",
+   "event": true,
+   "count": 1,
+   "daily": {
     "2026-10-08": 1
    }
   },
@@ -1325,16 +1488,6 @@
    }
   },
   {
-   "path": "map_station_click/creek/-",
-   "path_id": 110312977,
-   "title": "en|home|phone",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-07": 1
-   }
-  },
-  {
    "path": "station_pair_route_search/sobha/centrepoint",
    "path_id": 110294750,
    "title": "en|map",
@@ -1358,16 +1511,6 @@
    "path": "route_to_station_click/centrepoint/-",
    "path_id": 110294748,
    "title": "en",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-07": 1
-   }
-  },
-  {
-   "path": "map_station_click/centrepoint/-",
-   "path_id": 110294742,
-   "title": "en|home|desktop",
    "event": true,
    "count": 1,
    "daily": {
@@ -1525,16 +1668,6 @@
    }
   },
   {
-   "path": "place/p_atlantis_the_palm/from",
-   "path_id": 109223189,
-   "title": "ru|name",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-02": 1
-   }
-  },
-  {
    "path": "view/bk/p_dxb_airport_terminal_3",
    "path_id": 109221730,
    "title": "en|details",
@@ -1615,15 +1748,179 @@
    }
   }
  ],
+ "summary": {
+  "visits": 153,
+  "routes": 18,
+  "routes_not_found": 0,
+  "routes_per_visit": 0.12,
+  "share_rate": 0.0,
+  "shares": {},
+  "failed_search_rate": 0.0,
+  "failed_searches": [],
+  "nearest_station": {
+   "denied": 2,
+   "ok": 1,
+   "fail": 1
+  },
+  "visitors_new_return": {
+   "new": 1
+  },
+  "top_routes": [
+   {
+    "name": "union > garhoud",
+    "count": 1
+   },
+   {
+    "name": "centrepoint > creek",
+    "count": 1
+   },
+   {
+    "name": "p_gold_souk > p_atlantis_the_palm",
+    "count": 1
+   },
+   {
+    "name": "furjan > p_dxb_airport_terminal_3",
+    "count": 1
+   },
+   {
+    "name": "p_dubai_mall > p_dxb_airport_terminal_3",
+    "count": 1
+   },
+   {
+    "name": "alras > sobha",
+    "count": 1
+   },
+   {
+    "name": "baniyas > rigga",
+    "count": 1
+   },
+   {
+    "name": "creek > moe",
+    "count": 1
+   },
+   {
+    "name": "sobha > centrepoint",
+    "count": 1
+   },
+   {
+    "name": "p_dubai_mall > et",
+    "count": 1
+   },
+   {
+    "name": "p_dubai_mall > p_jbr_the_walk",
+    "count": 1
+   },
+   {
+    "name": "dmt > bk",
+    "count": 1
+   },
+   {
+    "name": "p_atlantis_the_palm > p_dxb_airport_terminal_3",
+    "count": 1
+   },
+   {
+    "name": "bk > p_dxb_airport_terminal_3",
+    "count": 1
+   },
+   {
+    "name": "bb > moe",
+    "count": 1
+   }
+  ],
+  "top_origins": [
+   {
+    "name": "p_dubai_mall",
+    "count": 3
+   },
+   {
+    "name": "bk",
+    "count": 3
+   },
+   {
+    "name": "union",
+    "count": 1
+   },
+   {
+    "name": "centrepoint",
+    "count": 1
+   },
+   {
+    "name": "p_gold_souk",
+    "count": 1
+   },
+   {
+    "name": "furjan",
+    "count": 1
+   },
+   {
+    "name": "alras",
+    "count": 1
+   },
+   {
+    "name": "baniyas",
+    "count": 1
+   },
+   {
+    "name": "creek",
+    "count": 1
+   },
+   {
+    "name": "sobha",
+    "count": 1
+   }
+  ],
+  "top_destinations": [
+   {
+    "name": "p_dxb_airport_terminal_3",
+    "count": 4
+   },
+   {
+    "name": "moe",
+    "count": 2
+   },
+   {
+    "name": "garhoud",
+    "count": 1
+   },
+   {
+    "name": "creek",
+    "count": 1
+   },
+   {
+    "name": "p_atlantis_the_palm",
+    "count": 1
+   },
+   {
+    "name": "sobha",
+    "count": 1
+   },
+   {
+    "name": "rigga",
+    "count": 1
+   },
+   {
+    "name": "centrepoint",
+    "count": 1
+   },
+   {
+    "name": "et",
+    "count": 1
+   },
+   {
+    "name": "p_jbr_the_walk",
+    "count": 1
+   }
+  ]
+ },
  "page_refs": {
   "/": [
    {
     "name": "(direct or unknown)",
-    "count": 57
+    "count": 59
    },
    {
     "name": "com.reddit.frontpage",
-    "count": 2
+    "count": 3
    },
    {
     "name": "web.telegram.org",
@@ -1661,7 +1958,7 @@
   "(direct or unknown)": [
    {
     "path": "/",
-    "count": 57
+    "count": 59
    },
    {
     "path": "/tram",
@@ -1671,7 +1968,7 @@
   "com.reddit.frontpage": [
    {
     "path": "/",
-    "count": 2
+    "count": 3
    }
   ],
   "web.telegram.org": [
@@ -1708,13 +2005,13 @@
  "toprefs": [
   {
    "name": "",
-   "count": 111,
+   "count": 124,
    "ref_scheme": "o"
   },
   {
    "id": "com.reddit.frontpage",
    "name": "com.reddit.frontpage",
-   "count": 14,
+   "count": 20,
    "ref_scheme": "o"
   },
   {
@@ -1746,7 +2043,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 108
+   "count": 127
   },
   {
    "id": "rus",
@@ -1768,7 +2065,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 80
+   "count": 99
   },
   {
    "id": "US",
@@ -1865,7 +2162,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 64
+   "count": 83
   },
   {
    "id": "tablet",
@@ -1892,12 +2189,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 89
+   "count": 99
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 42
+   "count": 51
   },
   {
    "id": "Firefox",
@@ -1913,17 +2210,17 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 38
+   "count": 47
+  },
+  {
+   "id": "Android",
+   "name": "Android",
+   "count": 35
   },
   {
    "id": "Windows",
    "name": "Windows",
    "count": 34
-  },
-  {
-   "id": "Android",
-   "name": "Android",
-   "count": 25
   },
   {
    "id": "macOS",
