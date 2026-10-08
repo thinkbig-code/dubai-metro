@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-08T10:53:29Z",
+ "generated": "2026-10-08T13:59:44Z",
  "start": "2025-10-08",
  "end": "2026-10-09",
  "total": {
-  "total": 153,
-  "total_events": 82,
-  "total_utc": 153,
+  "total": 167,
+  "total_events": 93,
+  "total_utc": 167,
   "stats": [
    {
     "day": "2025-10-08",
@@ -10778,7 +10778,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 153
+    "monthly": 167
    },
    {
     "day": "2026-10-02",
@@ -10959,7 +10959,7 @@
      11
     ],
     "daily": 21,
-    "weekly": 82
+    "weekly": 96
    },
    {
     "day": "2026-10-08",
@@ -10978,10 +10978,10 @@
      0,
      0,
      0,
-     4,
+     10,
+     2,
      0,
-     0,
-     0,
+     6,
      0,
      0,
      0,
@@ -10989,7 +10989,7 @@
      0,
      0
     ],
-    "daily": 61
+    "daily": 75
    },
    {
     "day": "2026-10-09",
@@ -11029,7 +11029,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 64,
+   "count": 67,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -11037,7 +11037,7 @@
     "2026-10-04": 7,
     "2026-10-05": 6,
     "2026-10-07": 7,
-    "2026-10-08": 11
+    "2026-10-08": 14
    }
   },
   {
@@ -11048,6 +11048,16 @@
    "count": 5,
    "daily": {
     "2026-10-08": 5
+   }
+  },
+  {
+   "path": "visit/new/-",
+   "path_id": 110447314,
+   "title": "en",
+   "event": true,
+   "count": 4,
+   "daily": {
+    "2026-10-08": 4
    }
   },
   {
@@ -11148,6 +11158,86 @@
    }
   },
   {
+   "path": "route/dic/p_burj_khalifa",
+   "path_id": 110476419,
+   "title": "en|geo|ok|first_place_search",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "geo/ok/dic",
+   "path_id": 110476418,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "place/p_burj_khalifa/to",
+   "path_id": 110476414,
+   "title": "en|name",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "place/p_burj_khalifa/from",
+   "path_id": 110476379,
+   "title": "en|name",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "station_pair_route_search/qiyadah/adcb",
+   "path_id": 110447956,
+   "title": "en|station_search",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "route/qiyadah/adcb",
+   "path_id": 110447955,
+   "title": "en|search|ok|first_station_search",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "station/adcb/to",
+   "path_id": 110447954,
+   "title": "en|name",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "station/qiyadah/from",
+   "path_id": 110447934,
+   "title": "en|name",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
    "path": "geo/ok/dhcc",
    "path_id": 110447415,
    "title": "en",
@@ -11160,16 +11250,6 @@
   {
    "path": "geo/fail/-",
    "path_id": 110447348,
-   "title": "en",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-08": 1
-   }
-  },
-  {
-   "path": "visit/new/-",
-   "path_id": 110447314,
    "title": "en",
    "event": true,
    "count": 1,
@@ -11799,8 +11879,8 @@
   }
  ],
  "summary": {
-  "visits": 153,
-  "routes": 18,
+  "visits": 167,
+  "routes": 20,
   "routes_not_found": 0,
   "routes_per_visit": 0.12,
   "share_rate": 0.0,
@@ -11809,13 +11889,21 @@
   "failed_searches": [],
   "nearest_station": {
    "denied": 2,
-   "ok": 1,
+   "ok": 2,
    "fail": 1
   },
   "visitors_new_return": {
-   "new": 1
+   "new": 4
   },
   "top_routes": [
+   {
+    "name": "dic > p_burj_khalifa",
+    "count": 1
+   },
+   {
+    "name": "qiyadah > adcb",
+    "count": 1
+   },
    {
     "name": "union > garhoud",
     "count": 1
@@ -11867,14 +11955,6 @@
    {
     "name": "p_atlantis_the_palm > p_dxb_airport_terminal_3",
     "count": 1
-   },
-   {
-    "name": "bk > p_dxb_airport_terminal_3",
-    "count": 1
-   },
-   {
-    "name": "bb > moe",
-    "count": 1
    }
   ],
   "top_origins": [
@@ -11885,6 +11965,14 @@
    {
     "name": "bk",
     "count": 3
+   },
+   {
+    "name": "dic",
+    "count": 1
+   },
+   {
+    "name": "qiyadah",
+    "count": 1
    },
    {
     "name": "union",
@@ -11909,14 +11997,6 @@
    {
     "name": "baniyas",
     "count": 1
-   },
-   {
-    "name": "creek",
-    "count": 1
-   },
-   {
-    "name": "sobha",
-    "count": 1
    }
   ],
   "top_destinations": [
@@ -11927,6 +12007,14 @@
    {
     "name": "moe",
     "count": 2
+   },
+   {
+    "name": "p_burj_khalifa",
+    "count": 1
+   },
+   {
+    "name": "adcb",
+    "count": 1
    },
    {
     "name": "garhoud",
@@ -11951,14 +12039,6 @@
    {
     "name": "centrepoint",
     "count": 1
-   },
-   {
-    "name": "et",
-    "count": 1
-   },
-   {
-    "name": "p_jbr_the_walk",
-    "count": 1
    }
   ]
  },
@@ -11966,11 +12046,15 @@
   "/": [
    {
     "name": "(direct or unknown)",
-    "count": 59
+    "count": 61
    },
    {
     "name": "com.reddit.frontpage",
     "count": 3
+   },
+   {
+    "name": "Yahoo",
+    "count": 1
    },
    {
     "name": "web.telegram.org",
@@ -12008,7 +12092,7 @@
   "(direct or unknown)": [
    {
     "path": "/",
-    "count": 59
+    "count": 61
    },
    {
     "path": "/tram",
@@ -12019,6 +12103,12 @@
    {
     "path": "/",
     "count": 3
+   }
+  ],
+  "Yahoo": [
+   {
+    "path": "/",
+    "count": 1
    }
   ],
   "web.telegram.org": [
@@ -12055,7 +12145,7 @@
  "toprefs": [
   {
    "name": "",
-   "count": 124,
+   "count": 132,
    "ref_scheme": "o"
   },
   {
@@ -12063,6 +12153,12 @@
    "name": "com.reddit.frontpage",
    "count": 20,
    "ref_scheme": "o"
+  },
+  {
+   "id": "Yahoo",
+   "name": "Yahoo",
+   "count": 6,
+   "ref_scheme": "g"
   },
   {
    "id": "www.facebook.com",
@@ -12093,7 +12189,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 127
+   "count": 141
   },
   {
    "id": "rus",
@@ -12115,7 +12211,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 99
+   "count": 113
   },
   {
    "id": "US",
@@ -12212,7 +12308,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 83
+   "count": 91
   },
   {
    "id": "tablet",
@@ -12222,7 +12318,7 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 47
+   "count": 53
   },
   {
    "id": "desktophd",
@@ -12239,17 +12335,17 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 99
+   "count": 105
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 51
+   "count": 57
   },
   {
    "id": "Firefox",
    "name": "Firefox",
-   "count": 2
+   "count": 4
   },
   {
    "name": "",
@@ -12260,17 +12356,17 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 47
-  },
-  {
-   "id": "Android",
-   "name": "Android",
-   "count": 35
+   "count": 53
   },
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 34
+   "count": 40
+  },
+  {
+   "id": "Android",
+   "name": "Android",
+   "count": 37
   },
   {
    "id": "macOS",
