@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-08T22:57:14Z",
+ "generated": "2026-10-08T23:55:30Z",
  "start": "2026-09-08",
  "end": "2026-10-09",
  "total": {
-  "total": 203,
-  "total_events": 126,
-  "total_utc": 203,
+  "total": 205,
+  "total_events": 127,
+  "total_utc": 205,
   "stats": [
    {
     "day": "2026-09-08",
@@ -728,7 +728,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 203
+    "monthly": 205
    },
    {
     "day": "2026-10-02",
@@ -879,7 +879,7 @@
      0
     ],
     "daily": 0,
-    "weekly": 132
+    "weekly": 134
    },
    {
     "day": "2026-10-07",
@@ -947,7 +947,7 @@
      0,
      0,
      0,
-     0,
+     2,
      0,
      0,
      0,
@@ -969,7 +969,7 @@
      0,
      0
     ],
-    "daily": 0
+    "daily": 2
    }
   ]
  },
@@ -979,7 +979,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 69,
+   "count": 70,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -987,7 +987,8 @@
     "2026-10-04": 7,
     "2026-10-05": 6,
     "2026-10-07": 7,
-    "2026-10-08": 16
+    "2026-10-08": 16,
+    "2026-10-09": 1
    }
   },
   {
@@ -995,9 +996,10 @@
    "path_id": 110447314,
    "title": "en",
    "event": true,
-   "count": 7,
+   "count": 8,
    "daily": {
-    "2026-10-08": 7
+    "2026-10-08": 7,
+    "2026-10-09": 1
    }
   },
   {
@@ -2120,7 +2122,7 @@
   }
  ],
  "summary": {
-  "visits": 203,
+  "visits": 205,
   "routes": 27,
   "routes_not_found": 0,
   "routes_per_visit": 0.13,
@@ -2134,7 +2136,7 @@
    "fail": 1
   },
   "visitors_new_return": {
-   "new": 7
+   "new": 8
   },
   "top_routes": [
    {
@@ -2287,7 +2289,7 @@
   "/": [
    {
     "name": "(direct or unknown)",
-    "count": 63
+    "count": 64
    },
    {
     "name": "com.reddit.frontpage",
@@ -2339,7 +2341,7 @@
   "(direct or unknown)": [
    {
     "path": "/",
-    "count": 63
+    "count": 64
    },
    {
     "path": "/tram",
@@ -2398,7 +2400,7 @@
  "toprefs": [
   {
    "name": "",
-   "count": 167,
+   "count": 169,
    "ref_scheme": "o"
   },
   {
@@ -2448,7 +2450,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 177
+   "count": 179
   },
   {
    "id": "rus",
@@ -2470,7 +2472,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 143
+   "count": 145
   },
   {
    "id": "US",
@@ -2572,7 +2574,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 95
+   "count": 97
   },
   {
    "id": "tablet",
@@ -2604,7 +2606,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 61
+   "count": 63
   },
   {
    "id": "Firefox",
@@ -2620,7 +2622,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 57
+   "count": 59
   },
   {
    "id": "macOS",
