@@ -620,8 +620,8 @@ def st_cell(sid):
 
 
 def station_ctas(sid):
-    return ('<p><a class="cta" href="%s">Show on the map</a> <a class="cta alt" href="{ROOT}#%s~~en">Plan a route from here</a> '
-            '<a class="cta alt" href="{ROOT}#~%s~en">Plan a route to here</a></p>') % (at_link(sid), sid, sid)
+    return ('<p><a class="cta" href="{ROOT}#%s~~en">Open the map from %s</a> '
+            '<a class="cta alt" href="{ROOT}#~%s~en">Plan a route to here</a></p>') % (sid, e(ST[sid]['n']), sid)
 
 
 def station_table(ids, line):
@@ -740,8 +740,8 @@ def map_page():
             '%d stations in all, with current names and every interchange.') % (red, len(G), len(set(T)), len(M), n_st)
     xs = sorted({sid for sid in ST if len(ST[sid]['lines']) > 1}, key=lambda i: ST[i]['n'])
     walks = ['%s and %s (~%d min on foot)' % (ST[w['a']]['n'], ST[w['b']]['n'], w['t']) for w in WALKS]
-    body = ['<h1>Dubai Metro map 2026: all lines and stations</h1>', '<p class="lead">%s</p>' % e(lead),
-            '<a class="cta" href="{ROOT}">Open the interactive map</a>',
+    body = ['<h1>Dubai Metro map 2026: all lines and stations</h1>',
+            '<a class="cta" href="{ROOT}">Open the interactive map</a>', '<p class="lead">%s</p>' % e(lead),
             '<figure style="margin:12px 0"><img src="{ROOT}%s" width="%d" height="%d" alt="%s" style="width:100%%;height:auto;border:1px solid var(--rule);border-radius:12px;background:#fff"><figcaption class="note">%s</figcaption></figure>' % (
                 MAP_IMG, MAP_W, MAP_H, e(MAP_ALT), 'Schematic, not to scale. Station names as of September 2026. An unofficial map, not affiliated with RTA.'),
             '<h2>How to read the map</h2><ul>',
