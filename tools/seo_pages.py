@@ -331,7 +331,7 @@ def frame(path, title, desc, body, crumbs, ld_extra=None, og_image='og-image.png
 <style>{CSS}</style>
 </head>
 <body>
-<header class="top"><nav><a class="brand" href="{root}">Dubai Metro Map</a><a href="{root}lines/red-line/">Red Line</a><a href="{root}lines/green-line/">Green Line</a><a href="{root}tram/">Tram</a><a href="{root}stations/">Stations</a><a href="{root}map/">Map image</a></nav></header>
+<header class="top"><nav><a class="brand" href="{root}">Dubai Metro Map</a><a href="{root}lines/red-line/">Red Line</a><a href="{root}lines/green-line/">Green Line</a><a href="{root}tram/">Tram</a><a href="{root}stations/">Stations</a><a href="{root}map/">Metro map</a></nav></header>
 <main>
 <div class="crumbs">{crumb_html}</div>
 {body}
