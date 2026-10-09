@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-09T08:44:19Z",
+ "generated": "2026-10-09T08:59:01Z",
  "start": "2025-10-09",
  "end": "2026-10-10",
  "total": {
-  "total": 214,
-  "total_events": 131,
-  "total_utc": 214,
+  "total": 216,
+  "total_events": 132,
+  "total_utc": 216,
   "stats": [
    {
     "day": "2025-10-09",
@@ -10748,7 +10748,7 @@
     ],
     "daily": 6,
     "weekly": 92,
-    "monthly": 214
+    "monthly": 216
    },
    {
     "day": "2026-10-02",
@@ -10959,7 +10959,7 @@
      2
     ],
     "daily": 111,
-    "weekly": 122
+    "weekly": 124
    },
    {
     "day": "2026-10-09",
@@ -10976,7 +10976,7 @@
      0,
      0,
      0,
-     0,
+     2,
      0,
      0,
      0,
@@ -10989,7 +10989,7 @@
      0,
      0
     ],
-    "daily": 11
+    "daily": 13
    },
    {
     "day": "2026-10-10",
@@ -11029,7 +11029,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 73,
+   "count": 74,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -11038,7 +11038,7 @@
     "2026-10-05": 6,
     "2026-10-07": 7,
     "2026-10-08": 16,
-    "2026-10-09": 4
+    "2026-10-09": 5
    }
   },
   {
@@ -11046,10 +11046,10 @@
    "path_id": 110447314,
    "title": "en",
    "event": true,
-   "count": 11,
+   "count": 12,
    "daily": {
     "2026-10-08": 7,
-    "2026-10-09": 4
+    "2026-10-09": 5
    }
   },
   {
@@ -12202,7 +12202,7 @@
   }
  ],
  "summary": {
-  "visits": 214,
+  "visits": 216,
   "routes": 28,
   "routes_not_found": 0,
   "routes_per_visit": 0.13,
@@ -12216,7 +12216,7 @@
    "fail": 1
   },
   "visitors_new_return": {
-   "new": 11
+   "new": 12
   },
   "top_routes": [
    {
@@ -12376,15 +12376,15 @@
     "count": 3
    },
    {
+    "name": "www.bing.com",
+    "count": 2
+   },
+   {
     "name": "Yahoo",
     "count": 1
    },
    {
     "name": "web.telegram.org",
-    "count": 1
-   },
-   {
-    "name": "www.bing.com",
     "count": 1
    },
    {
@@ -12458,6 +12458,12 @@
     "count": 3
    }
   ],
+  "www.bing.com": [
+   {
+    "path": "/",
+    "count": 2
+   }
+  ],
   "Yahoo": [
    {
     "path": "/",
@@ -12465,12 +12471,6 @@
    }
   ],
   "web.telegram.org": [
-   {
-    "path": "/",
-    "count": 1
-   }
-  ],
-  "www.bing.com": [
    {
     "path": "/",
     "count": 1
@@ -12526,6 +12526,12 @@
    "ref_scheme": "g"
   },
   {
+   "id": "www.bing.com",
+   "name": "www.bing.com",
+   "count": 4,
+   "ref_scheme": "h"
+  },
+  {
    "id": "www.facebook.com",
    "name": "www.facebook.com",
    "count": 3,
@@ -12536,12 +12542,6 @@
    "name": "Facebook",
    "count": 2,
    "ref_scheme": "c"
-  },
-  {
-   "id": "www.bing.com",
-   "name": "www.bing.com",
-   "count": 2,
-   "ref_scheme": "h"
   },
   {
    "id": "web.telegram.org",
@@ -12560,7 +12560,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 188
+   "count": 190
   },
   {
    "id": "rus",
@@ -12582,7 +12582,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 150
+   "count": 152
   },
   {
    "id": "US",
@@ -12694,7 +12694,7 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 89
+   "count": 91
   },
   {
    "id": "desktophd",
@@ -12711,7 +12711,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 145
+   "count": 147
   },
   {
    "id": "Safari",
@@ -12742,7 +12742,7 @@
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 48
+   "count": 50
   },
   {
    "id": "Android",
