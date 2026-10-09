@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-09T01:57:49Z",
+ "generated": "2026-10-09T02:56:54Z",
  "start": "2026-09-09",
  "end": "2026-10-10",
  "total": {
-  "total": 207,
+  "total": 208,
   "total_events": 128,
-  "total_utc": 207,
+  "total_utc": 208,
   "stats": [
    {
     "day": "2026-09-09",
@@ -698,7 +698,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 207
+    "monthly": 208
    },
    {
     "day": "2026-10-02",
@@ -879,7 +879,7 @@
      11
     ],
     "daily": 21,
-    "weekly": 136
+    "weekly": 137
    },
    {
     "day": "2026-10-08",
@@ -920,7 +920,7 @@
      2,
      0,
      2,
-     0,
+     1,
      0,
      0,
      0,
@@ -939,7 +939,7 @@
      0,
      0
     ],
-    "daily": 4
+    "daily": 5
    },
    {
     "day": "2026-10-10",
@@ -1128,6 +1128,16 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/destinations/atlantis-the-palm",
+   "path_id": 110602470,
+   "title": "Atlantis The Palm Tram Stop: Atlantis Aquaventure, 3 min walk",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-10-09": 1
    }
   },
   {
@@ -2122,7 +2132,7 @@
   }
  ],
  "summary": {
-  "visits": 207,
+  "visits": 208,
   "routes": 27,
   "routes_not_found": 0,
   "routes_per_visit": 0.13,
@@ -2318,6 +2328,12 @@
     "count": 2
    }
   ],
+  "/destinations/atlantis-the-palm": [
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   }
+  ],
   "/destinations/dubai-mall": [
    {
     "name": "chatgpt.com",
@@ -2342,6 +2358,10 @@
    {
     "path": "/",
     "count": 65
+   },
+   {
+    "path": "/destinations/atlantis-the-palm",
+    "count": 1
    },
    {
     "path": "/tram",
@@ -2400,7 +2420,7 @@
  "toprefs": [
   {
    "name": "",
-   "count": 171,
+   "count": 172,
    "ref_scheme": "o"
   },
   {
@@ -2450,7 +2470,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 181
+   "count": 182
   },
   {
    "id": "rus",
@@ -2472,7 +2492,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 145
+   "count": 146
   },
   {
    "id": "US",
@@ -2574,7 +2594,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 97
+   "count": 98
   },
   {
    "id": "tablet",
@@ -2606,7 +2626,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 63
+   "count": 64
   },
   {
    "id": "Firefox",
@@ -2622,7 +2642,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 59
+   "count": 60
   },
   {
    "id": "macOS",
