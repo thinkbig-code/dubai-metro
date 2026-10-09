@@ -513,7 +513,8 @@ def station(cfg):
     path = 'stations/%s/' % cfg['slug']
     lines = s['lines']
     xchg = len(lines) > 1
-    lead = '%s is %s station on the %s.' % (s['n'], 'an interchange' if xchg else 'a metro', ' and '.join(LINE_NAME[l] for l in lines))
+    kind = 'metro station' if any(l in ('red', 'green') for l in lines) else ('tram stop' if 'tram' in lines else 'monorail station')
+    lead = '%s is %s on the %s.' % (s['n'], ('an interchange station' if xchg else ('a ' + kind)), ' and '.join(LINE_NAME[l] for l in lines))
     if xchg:
         lead += ' You can change between the %s here without leaving the station.' % ' and '.join(LINE_NAME[l] for l in lines)
     for w in WALKS:
@@ -522,7 +523,9 @@ def station(cfg):
             lead += ' %s (%s) is about %d minutes away on foot.' % (ST[o]['n'], ', '.join(LINE_NAME[l] for l in ST[o]['lines']), w['t'])
     if other_names(sid):
         lead += ' Other or former names: %s.' % ', '.join(other_names(sid))
-    body = ['<h1>%s metro station</h1>' % e(s['n']), app_frame(sid, None, 'Interactive map, opened at %s. Tap another station to get a route.' % s['n']), '<p class="lead">%s</p>' % e(lead)]
+    body = ['<h1>%s %s</h1>' % (e(s['n']), kind), app_frame(sid, None, 'Interactive map, opened at %s. Tap another station to get a route.' % s['n']), '<p class="lead">%s</p>' % e(lead)]
+    if any(LINE_KIND[l] in SUSP for l in lines):
+        body.append('<div class="warn">%s The routes below show the monorail part for when it reopens; check the operator before you travel.</div>' % e(t('monoSuspended')))
     body.append('<h2>Station facts</h2>' + station_facts(sid))
     # neighbours on each line
     body.append('<h2>Next stations</h2><ul>')
@@ -561,7 +564,9 @@ def station(cfg):
     body.append(routes_table([(sid, x) for x in cfg['to']], None))
     body.append(hours_html(sorted({LINE_KIND[l] for l in lines}, key=['metro', 'tram', 'mono'].index)))
     body.append('<ul class="links">' + ''.join('<li><a href="{ROOT}%s">%s</a></li>' % (LINE_PAGE[l], e(LINE_NAME[l])) for l in lines) + '<li><a href="{ROOT}stations/">All stations and their former names</a></li></ul>')
-    title = '%s %s, Dubai: %s%s' % (s['n'], 'Tram Stop' if any(l in ('tram', 'mono') for l in lines) else 'Metro Station', short_lines(lines), (' (formerly %s)' % other_names(sid)[0]) if other_names(sid) else '')
+    title = '%s %s, Dubai: %s%s' % (s['n'], kind.title(), short_lines(lines), (' (formerly %s)' % other_names(sid)[0]) if other_names(sid) else '')
+    if len(title) > 75:
+        title = '%s %s, Dubai: %s' % (s['n'], kind.title(), short_lines(lines))      # too long for a search result: drop the old name
     desc = lead.split('. ')[0] + '. ' + ('Also called %s. ' % ', '.join(other_names(sid)) if other_names(sid) else '') + 'Routes, walking links, fare zone and hours.'
     write(path, frame(path, title, desc, '\n'.join(body), [('stations/', 'Stations'), (path, s['n'])],
                       {"@context": "https://schema.org", "@type": "SubwayStation", "name": s['n'], **({"alternateName": s['f']} if s['f'] else {}),

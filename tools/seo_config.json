@@ -1,5 +1,5 @@
 {
- "_about": "Pages built by tools/seo_pages.py. Only pages listed here exist; every fact on them comes from the app data (tools/seo_data.json). Add a page only when it passes the five INDEX gates in the SEO blueprint. Added 7 Oct 2026: 17 more destination pages from the app's places (Burj Khalifa, DIFC, DWTC, old Dubai souks, malls, media and internet cities, Etihad Rail). Added 8 Oct 2026: 56 new places with sourced positions (consulates, government offices, hospitals, malls, souks, parks, hotels, bus and ferry stations), each with its page.",
+ "_about": "Pages built by tools/seo_pages.py. Only pages listed here exist; every fact on them comes from the app data (tools/seo_data.json). Add a page only when it passes the five INDEX gates in the SEO blueprint. Added 7 Oct 2026: 17 more destination pages from the app's places (Burj Khalifa, DIFC, DWTC, old Dubai souks, malls, media and internet cities, Etihad Rail). Added 8 Oct 2026: 56 new places with sourced positions (consulates, government offices, hospitals, malls, souks, parks, hotels, bus and ferry stations), each with its page. Added 9 Oct 2026: a page for every other station, tram stop and monorail station (65), each with the same five typical destinations (airport Terminal 3, Dubai Mall, Gold Souk, Marina Walk, Burj Khalifa, Expo City) except the one it serves itself.",
  "destinations": [
   {
    "slug": "dubai-mall",
@@ -1227,6 +1227,721 @@
     "p_dubai_mall",
     "p_al_fahidi_historical_district",
     "p_city_centre_deira_mall"
+   ]
+  },
+  {
+   "id": "abubaker",
+   "slug": "abu-baker-al-siddique",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "abuhail",
+   "slug": "abu-hail",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "adcb",
+   "slug": "adcb",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "at1",
+   "slug": "airport-terminal-1",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "at3",
+   "slug": "airport-terminal-3",
+   "to": [
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa",
+    "p_expo_city_dubai"
+   ]
+  },
+  {
+   "id": "fardan",
+   "slug": "al-fardan-exchange",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "furjan",
+   "slug": "al-furjan",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "garhoud",
+   "slug": "al-garhoud",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "ghubaiba",
+   "slug": "al-ghubaiba",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "ittihad",
+   "slug": "al-ittihad-park",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "jadaf",
+   "slug": "al-jadaf",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "nahda",
+   "slug": "al-nahda",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "qiyadah",
+   "slug": "al-qiyadah",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "qusais",
+   "slug": "al-qusais",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "alras",
+   "slug": "al-ras",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "rigga",
+   "slug": "al-rigga",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "sufouh",
+   "slug": "al-sufouh",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "atlantis",
+   "slug": "atlantis-aquaventure",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "baniyas",
+   "slug": "baniyas-square",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "bk",
+   "slug": "burj-khalifa-dubai-mall",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_expo_city_dubai",
+    "p_dubai_frame"
+   ]
+  },
+  {
+   "id": "bb",
+   "slug": "business-bay",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "centrepoint",
+   "slug": "centrepoint",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "ccd",
+   "slug": "city-centre-deira",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "creek",
+   "slug": "creek",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "danube",
+   "slug": "danube",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "dg",
+   "slug": "discovery-gardens",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "dmcc",
+   "slug": "dmcc",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "dafz",
+   "slug": "dubai-airport-free-zone",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "dhcc",
+   "slug": "dubai-healthcare-city",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "dic",
+   "slug": "dubai-internet-city",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "dip",
+   "slug": "dubai-investment-park",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "dmt",
+   "slug": "dubai-marina",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_burj_khalifa",
+    "p_expo_city_dubai"
+   ]
+  },
+  {
+   "id": "dmm",
+   "slug": "dubai-marina-mall",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "eand",
+   "slug": "e-and",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "emirates",
+   "slug": "emirates",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "et",
+   "slug": "emirates-towers",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "energy",
+   "slug": "energy",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "equiti",
+   "slug": "equiti",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "expo",
+   "slug": "expo-2020",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "fc",
+   "slug": "financial-centre",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "garmin",
+   "slug": "garmin",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "goldsouq",
+   "slug": "gold-souq",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa",
+    "p_expo_city_dubai"
+   ]
+  },
+  {
+   "id": "ibn",
+   "slug": "ibn-battuta",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "im",
+   "slug": "insurancemarket",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "jbr1",
+   "slug": "jumeirah-beach-residence-1",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "jbr2",
+   "slug": "jumeirah-beach-residence-2",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "jge",
+   "slug": "jumeirah-golf-estates",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "jlt",
+   "slug": "jumeirah-lakes-towers",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "kv",
+   "slug": "knowledge-village",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "lp",
+   "slug": "life-pharmacy",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "moe",
+   "slug": "mall-of-the-emirates",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "mt",
+   "slug": "marina-towers",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "max",
+   "slug": "max",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "mc",
+   "slug": "media-city",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "ms",
+   "slug": "mina-seyahi",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "np",
+   "slug": "national-paints",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "oudmetha",
+   "slug": "oud-metha",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "palmgw",
+   "slug": "palm-gateway",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "pj",
+   "slug": "palm-jumeirah",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "pjm",
+   "slug": "palm-jumeirah-mall",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "salah",
+   "slug": "salah-al-din",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "sharafdg",
+   "slug": "sharaf-dg",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "stadium",
+   "slug": "stadium",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "gardens",
+   "slug": "the-gardens",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
+   ]
+  },
+  {
+   "id": "wtc",
+   "slug": "world-trade-centre",
+   "to": [
+    "p_dxb_airport_terminal_3",
+    "p_dubai_mall",
+    "p_gold_souk",
+    "p_dubai_marina_walk",
+    "p_burj_khalifa"
    ]
   }
  ],
