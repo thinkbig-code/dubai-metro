@@ -44,6 +44,7 @@
 <link rel="manifest" href="manifest.webmanifest">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "迪拜地铁互动线路图", "url": "https://dubaimetro.fyi/zh.html", "description": "免费的非官方迪拜地铁、有轨电车和棕榈岛单轨互动线路图。点击两个车站，即可查看行程时间、Nol 票价、换乘和步行路段。也可从机场规划前往迪拜购物中心、迪拜码头、JBR 或亚特兰蒂斯的路线，支持 10 种语言。", "applicationCategory": "TravelApplication", "operatingSystem": "Any", "isAccessibleForFree": true, "inLanguage": "zh", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "AED"}, "about": {"@type": "Place", "name": "Dubai", "address": {"@type": "PostalAddress", "addressCountry": "AE"}}}</script>
 <!-- anonymous visit counter (GoatCounter): no cookies, no personal data -->
+<script>if(window.top!==window)window.goatcounter={no_onload:true};</script>
 <script data-goatcounter="https://dubaimetro.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <style>body{margin:0}[hidden]{display:none!important}img{max-width:100%}</style>
 
@@ -2250,6 +2251,9 @@ if(SELFTEST){window.__dm={computeVariants,parseToken,ids:Object.keys(ST),places:
   // read-only data for the page generator (tools/export_data.js); nothing here changes the app
   data:{ST,SVC,LINES,PLACES,POPULAR,ZONE,FARES,MONO_FARES,HOURS,SERVICE_STATUS,WALKS,GEO,ALIAS,I18N_EN:I18N.en},legTime,headwayFor};runValidation();}
 update(true,true);
+// a link with one end (#station~~en or #~place~en): frame that station
+{const e1=(start[0]&&!start[1])?start[0]:(start[1]&&!start[0])?start[1]:null;
+ if(e1&&ST[e1.st]){const q=ST[e1.st];fitBox({x0:q.x-230,y0:q.y-260,x1:q.x+230,y1:q.y+260},false,1.1);}}
 function showStation(id){const S=ST[id];closePop();fitBox({x0:S.x-160,x1:S.x+260,y0:S.y-160,y1:S.y+160},true,1.6);setTimeout(()=>openPop(id),480);}
 if(hashAt)showStation(hashAt);
 addEventListener("resize",placePop);

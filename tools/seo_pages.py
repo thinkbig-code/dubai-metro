@@ -274,6 +274,8 @@ h3{font-size:16px;margin:18px 0 6px}
 .cta{display:inline-block;background:#E1251B;color:#fff;text-decoration:none;font-weight:600;padding:10px 16px;border-radius:999px;margin:6px 0}
 .cta.sm{font-size:14px;padding:6px 12px}
 .cta.alt{background:var(--surface);color:var(--accent);border:1px solid var(--rule)}
+.appframe{display:block;width:100%;height:min(640px,80vh);min-height:440px;border:1px solid var(--rule);border-radius:14px;background:#eef2f3;margin:8px 0 4px}
+.appnote{margin:4px 0 14px;font-size:13px}
 .mapl{font-size:12px;font-weight:600;text-decoration:none;border:1px solid var(--rule);border-radius:999px;padding:0 6px;margin-inline-start:4px;white-space:nowrap}
 .card{background:var(--surface);border:1px solid var(--rule);border-radius:12px;padding:12px 14px;margin:10px 0}
 .sum{font-weight:600}
@@ -349,6 +351,13 @@ def write(path, content):
     full = os.path.join(OUT, path, 'index.html')
     os.makedirs(os.path.dirname(full), exist_ok=True)
     open(full, 'w').write(content)
+
+
+def app_frame(frm, to, note):
+    """the real interactive map at the top of a guide page: opened on one station (From) or one place (To), the text below it"""
+    src = '{ROOT}#%s~%s~en' % (frm or '', to or '')
+    return ('<iframe class="appframe" src="%s" title="Interactive Dubai Metro map" allow="geolocation"></iframe>'
+            '<p class="note appnote">%s <a href="%s">Open full screen</a></p>') % (src, e(note), src)
 
 
 def plan(a, b, label='Open this route on the map', small=False):
@@ -460,11 +469,11 @@ def destination(d):
             lead += ' The station has also been called %s.' % ' and '.join(other_names(sid))
         if main.get('note'):
             lead += ' ' + t(main['note'], s=s['n'])
-    body = ['<h1>%s by metro: nearest station and how to get there</h1>' % e(d['title']), '<p class="lead">%s</p>' % e(lead)]
+    body = ['<h1>%s by metro: nearest station and how to get there</h1>' % e(d['title']),
+            app_frame(None, d['main'], 'Interactive map with %s as the destination. Pick where you start: tap a station or type it.' % d['title']), '<p class="lead">%s</p>' % e(lead)]
     if any(LINE_KIND[l] in SUSP for l in lines):
         body.append('<div class="warn">%s The routes below show the monorail part for when it reopens; check the operator before you travel.</div>' % e(t('monoSuspended')))
     o0 = d['origins'][0]
-    body.append(plan(*((d['main'], o0) if d.get('reverse') else (o0, d['main'])), 'Open on the interactive map'))
     # the places on this page and their walks
     allp = [d['main']] + d['also']
     body.append('<h2>Nearest stop and walking time</h2><div class="scroll"><table><tr><th>Place</th><th>Nearest stop</th><th>On foot</th></tr>')
@@ -513,7 +522,7 @@ def station(cfg):
             lead += ' %s (%s) is about %d minutes away on foot.' % (ST[o]['n'], ', '.join(LINE_NAME[l] for l in ST[o]['lines']), w['t'])
     if other_names(sid):
         lead += ' Other or former names: %s.' % ', '.join(other_names(sid))
-    body = ['<h1>%s metro station</h1>' % e(s['n']), '<p class="lead">%s</p>' % e(lead), station_ctas(sid)]
+    body = ['<h1>%s metro station</h1>' % e(s['n']), app_frame(sid, None, 'Interactive map, opened at %s. Tap another station to get a route.' % s['n']), '<p class="lead">%s</p>' % e(lead)]
     body.append('<h2>Station facts</h2>' + station_facts(sid))
     # neighbours on each line
     body.append('<h2>Next stations</h2><ul>')

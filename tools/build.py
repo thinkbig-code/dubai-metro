@@ -129,6 +129,7 @@ def page(L):
 <link rel="manifest" href="manifest.webmanifest">
 <script type="application/ld+json">{json.dumps(ld,ensure_ascii=False)}</script>
 <!-- anonymous visit counter (GoatCounter): no cookies, no personal data -->
+<script>if(window.top!==window)window.goatcounter={{no_onload:true}};</script>
 <script data-goatcounter="https://dubaimetro.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <style>body{{margin:0}}[hidden]{{display:none!important}}img{{max-width:100%}}</style>
 '''
