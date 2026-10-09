@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-09T15:00:18Z",
+ "generated": "2026-10-09T15:59:27Z",
  "start": "2025-10-09",
  "end": "2026-10-10",
  "total": {
-  "total": 218,
+  "total": 219,
   "total_events": 132,
-  "total_utc": 218,
+  "total_utc": 219,
   "stats": [
    {
     "day": "2025-10-09",
@@ -10748,7 +10748,7 @@
     ],
     "daily": 6,
     "weekly": 92,
-    "monthly": 218
+    "monthly": 219
    },
    {
     "day": "2026-10-02",
@@ -10959,7 +10959,7 @@
      2
     ],
     "daily": 111,
-    "weekly": 126
+    "weekly": 127
    },
    {
     "day": "2026-10-09",
@@ -10983,13 +10983,13 @@
      0,
      0,
      0,
-     0,
+     1,
      0,
      0,
      0,
      0
     ],
-    "daily": 15
+    "daily": 16
    },
    {
     "day": "2026-10-10",
@@ -11063,6 +11063,16 @@
    }
   },
   {
+   "path": "/destinations/atlantis-the-palm",
+   "path_id": 110602470,
+   "title": "Atlantis The Palm Tram Stop: Atlantis Aquaventure, 3 min walk",
+   "event": false,
+   "count": 3,
+   "daily": {
+    "2026-10-09": 3
+   }
+  },
+  {
    "path": "place/p_dubai_mall/from",
    "path_id": 109724714,
    "title": "ru|name",
@@ -11071,16 +11081,6 @@
    "daily": {
     "2026-10-05": 2,
     "2026-10-08": 1
-   }
-  },
-  {
-   "path": "/destinations/atlantis-the-palm",
-   "path_id": 110602470,
-   "title": "Atlantis The Palm Tram Stop: Atlantis Aquaventure, 3 min walk",
-   "event": false,
-   "count": 2,
-   "daily": {
-    "2026-10-09": 2
    }
   },
   {
@@ -12203,9 +12203,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 86,
+  "visits": 87,
   "events_total": 132,
-  "goatcounter_total_with_events": 218,
+  "goatcounter_total_with_events": 219,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -12214,7 +12214,7 @@
    "2026-10-05": 7,
    "2026-10-07": 7,
    "2026-10-08": 22,
-   "2026-10-09": 9
+   "2026-10-09": 10
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -12224,7 +12224,7 @@
   "return_rate": 0.0,
   "routes": 28,
   "routes_not_found": 0,
-  "routes_per_visit": 0.33,
+  "routes_per_visit": 0.32,
   "routes_per_visitor_day": 1.42,
   "share_rate": 0.0,
   "shares": {},
@@ -12425,7 +12425,7 @@
   "/destinations/atlantis-the-palm": [
    {
     "name": "(direct or unknown)",
-    "count": 2
+    "count": 3
    }
   ],
   "/destinations/etihad-rail-dubai": [
@@ -12461,7 +12461,7 @@
    },
    {
     "path": "/destinations/atlantis-the-palm",
-    "count": 2
+    "count": 3
    },
    {
     "path": "/destinations/etihad-rail-dubai",
@@ -12530,7 +12530,7 @@
  "toprefs": [
   {
    "name": "",
-   "count": 177,
+   "count": 178,
    "ref_scheme": "o"
   },
   {
@@ -12580,7 +12580,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 192
+   "count": 193
   },
   {
    "id": "rus",
@@ -12602,7 +12602,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 153
+   "count": 154
   },
   {
    "id": "US",
@@ -12704,7 +12704,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 99
+   "count": 100
   },
   {
    "id": "tablet",
@@ -12736,7 +12736,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 65
+   "count": 66
   },
   {
    "id": "Firefox",
@@ -12752,7 +12752,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 61
+   "count": 62
   },
   {
    "id": "macOS",
