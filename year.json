@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-09T03:58:51Z",
+ "generated": "2026-10-09T04:58:25Z",
  "start": "2025-10-09",
  "end": "2026-10-10",
  "total": {
-  "total": 208,
-  "total_events": 128,
-  "total_utc": 208,
+  "total": 214,
+  "total_events": 131,
+  "total_utc": 214,
   "stats": [
    {
     "day": "2025-10-09",
@@ -10748,7 +10748,7 @@
     ],
     "daily": 6,
     "weekly": 92,
-    "monthly": 208
+    "monthly": 214
    },
    {
     "day": "2026-10-02",
@@ -10959,7 +10959,7 @@
      2
     ],
     "daily": 111,
-    "weekly": 116
+    "weekly": 122
    },
    {
     "day": "2026-10-09",
@@ -10972,7 +10972,7 @@
      2,
      1,
      0,
-     0,
+     6,
      0,
      0,
      0,
@@ -10989,7 +10989,7 @@
      0,
      0
     ],
-    "daily": 5
+    "daily": 11
    },
    {
     "day": "2026-10-10",
@@ -11029,7 +11029,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 71,
+   "count": 73,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -11038,7 +11038,7 @@
     "2026-10-05": 6,
     "2026-10-07": 7,
     "2026-10-08": 16,
-    "2026-10-09": 2
+    "2026-10-09": 4
    }
   },
   {
@@ -11046,10 +11046,10 @@
    "path_id": 110447314,
    "title": "en",
    "event": true,
-   "count": 9,
+   "count": 11,
    "daily": {
     "2026-10-08": 7,
-    "2026-10-09": 2
+    "2026-10-09": 4
    }
   },
   {
@@ -11178,6 +11178,26 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "route/p_dxb_airport_terminal_3/p_etihad_rail_al_yalayis_station",
+   "path_id": 110626598,
+   "title": "en|landing:destinations-etihad-rail-dubai|ok|first_landing",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-09": 1
+   }
+  },
+  {
+   "path": "/destinations/etihad-rail-dubai",
+   "path_id": 110626146,
+   "title": "Etihad Rail Dubai Station (Al Yalayis) Metro Station: Jumeirah Golf Estates",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-10-09": 1
    }
   },
   {
@@ -12182,8 +12202,8 @@
   }
  ],
  "summary": {
-  "visits": 208,
-  "routes": 27,
+  "visits": 214,
+  "routes": 28,
   "routes_not_found": 0,
   "routes_per_visit": 0.13,
   "share_rate": 0.0,
@@ -12196,9 +12216,13 @@
    "fail": 1
   },
   "visitors_new_return": {
-   "new": 9
+   "new": 11
   },
   "top_routes": [
+   {
+    "name": "p_dxb_airport_terminal_3 > p_etihad_rail_al_yalayis_station",
+    "count": 1
+   },
    {
     "name": "palmgw > atlantis",
     "count": 1
@@ -12254,10 +12278,6 @@
    {
     "name": "p_dubai_mall > p_dxb_airport_terminal_3",
     "count": 1
-   },
-   {
-    "name": "alras > sobha",
-    "count": 1
    }
   ],
   "top_origins": [
@@ -12272,6 +12292,10 @@
    {
     "name": "bk",
     "count": 3
+   },
+   {
+    "name": "p_dxb_airport_terminal_3",
+    "count": 1
    },
    {
     "name": "palmgw",
@@ -12296,10 +12320,6 @@
    {
     "name": "qiyadah",
     "count": 1
-   },
-   {
-    "name": "union",
-    "count": 1
    }
   ],
   "top_destinations": [
@@ -12320,6 +12340,10 @@
     "count": 2
    },
    {
+    "name": "p_etihad_rail_al_yalayis_station",
+    "count": 1
+   },
+   {
     "name": "atlantis",
     "count": 1
    },
@@ -12338,10 +12362,6 @@
    {
     "name": "adcb",
     "count": 1
-   },
-   {
-    "name": "garhoud",
-    "count": 1
    }
   ]
  },
@@ -12349,7 +12369,7 @@
   "/": [
    {
     "name": "(direct or unknown)",
-    "count": 65
+    "count": 66
    },
    {
     "name": "com.reddit.frontpage",
@@ -12366,6 +12386,10 @@
    {
     "name": "www.bing.com",
     "count": 1
+   },
+   {
+    "name": "dubaimetro.fyi/destinations/etihad-rail-dubai",
+    "count": 1
    }
   ],
   "/tl.html": [
@@ -12376,6 +12400,12 @@
    {
     "name": "Facebook",
     "count": 2
+   }
+  ],
+  "/destinations/etihad-rail-dubai": [
+   {
+    "name": "(direct or unknown)",
+    "count": 1
    }
   ],
   "/destinations/atlantis-the-palm": [
@@ -12407,7 +12437,11 @@
   "(direct or unknown)": [
    {
     "path": "/",
-    "count": 65
+    "count": 66
+   },
+   {
+    "path": "/destinations/etihad-rail-dubai",
+    "count": 1
    },
    {
     "path": "/destinations/atlantis-the-palm",
@@ -12442,6 +12476,12 @@
     "count": 1
    }
   ],
+  "dubaimetro.fyi/destinations/etihad-rail-dubai": [
+   {
+    "path": "/",
+    "count": 1
+   }
+  ],
   "www.facebook.com": [
    {
     "path": "/tl.html",
@@ -12470,7 +12510,7 @@
  "toprefs": [
   {
    "name": "",
-   "count": 172,
+   "count": 175,
    "ref_scheme": "o"
   },
   {
@@ -12520,7 +12560,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 182
+   "count": 188
   },
   {
    "id": "rus",
@@ -12542,12 +12582,12 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 146
+   "count": 150
   },
   {
    "id": "US",
    "name": "United States",
-   "count": 28
+   "count": 30
   },
   {
    "id": "FR",
@@ -12649,12 +12689,12 @@
   {
    "id": "tablet",
    "name": "",
-   "count": 15
+   "count": 17
   },
   {
    "id": "desktop",
    "name": "",
-   "count": 85
+   "count": 89
   },
   {
    "id": "desktophd",
@@ -12671,7 +12711,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 139
+   "count": 145
   },
   {
    "id": "Safari",
@@ -12702,7 +12742,7 @@
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 42
+   "count": 48
   },
   {
    "id": "Android",
