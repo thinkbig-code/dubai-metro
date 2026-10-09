@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-09T01:36:53Z",
+ "generated": "2026-10-09T01:58:03Z",
  "start": "2025-10-09",
  "end": "2026-10-10",
  "total": {
-  "total": 205,
-  "total_events": 127,
-  "total_utc": 205,
+  "total": 207,
+  "total_events": 128,
+  "total_utc": 207,
   "stats": [
    {
     "day": "2025-10-09",
@@ -10748,7 +10748,7 @@
     ],
     "daily": 6,
     "weekly": 92,
-    "monthly": 205
+    "monthly": 207
    },
    {
     "day": "2026-10-02",
@@ -10959,13 +10959,15 @@
      2
     ],
     "daily": 111,
-    "weekly": 113
+    "weekly": 115
    },
    {
     "day": "2026-10-09",
     "hourly": [
      0,
      0,
+     0,
+     2,
      0,
      2,
      0,
@@ -10985,11 +10987,9 @@
      0,
      0,
      0,
-     0,
-     0,
      0
     ],
-    "daily": 2
+    "daily": 4
    },
    {
     "day": "2026-10-10",
@@ -11029,7 +11029,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 70,
+   "count": 71,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -11038,7 +11038,7 @@
     "2026-10-05": 6,
     "2026-10-07": 7,
     "2026-10-08": 16,
-    "2026-10-09": 1
+    "2026-10-09": 2
    }
   },
   {
@@ -11046,10 +11046,10 @@
    "path_id": 110447314,
    "title": "en",
    "event": true,
-   "count": 8,
+   "count": 9,
    "daily": {
     "2026-10-08": 7,
-    "2026-10-09": 1
+    "2026-10-09": 2
    }
   },
   {
@@ -12172,7 +12172,7 @@
   }
  ],
  "summary": {
-  "visits": 205,
+  "visits": 207,
   "routes": 27,
   "routes_not_found": 0,
   "routes_per_visit": 0.13,
@@ -12186,7 +12186,7 @@
    "fail": 1
   },
   "visitors_new_return": {
-   "new": 8
+   "new": 9
   },
   "top_routes": [
    {
@@ -12339,7 +12339,7 @@
   "/": [
    {
     "name": "(direct or unknown)",
-    "count": 64
+    "count": 65
    },
    {
     "name": "com.reddit.frontpage",
@@ -12391,7 +12391,7 @@
   "(direct or unknown)": [
    {
     "path": "/",
-    "count": 64
+    "count": 65
    },
    {
     "path": "/tram",
@@ -12450,7 +12450,7 @@
  "toprefs": [
   {
    "name": "",
-   "count": 169,
+   "count": 171,
    "ref_scheme": "o"
   },
   {
@@ -12500,7 +12500,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 179
+   "count": 181
   },
   {
    "id": "rus",
@@ -12527,7 +12527,7 @@
   {
    "id": "US",
    "name": "United States",
-   "count": 26
+   "count": 28
   },
   {
    "id": "FR",
@@ -12629,7 +12629,7 @@
   {
    "id": "tablet",
    "name": "",
-   "count": 13
+   "count": 15
   },
   {
    "id": "desktop",
@@ -12651,7 +12651,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 137
+   "count": 139
   },
   {
    "id": "Safari",
@@ -12682,7 +12682,7 @@
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 40
+   "count": 42
   },
   {
    "id": "Android",
