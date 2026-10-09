@@ -1,6 +1,6 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-09T08:58:42Z",
+ "generated": "2026-10-09T09:18:17Z",
  "start": "2026-09-09",
  "end": "2026-10-10",
  "total": {
@@ -2152,10 +2152,30 @@
   }
  ],
  "summary": {
-  "visits": 216,
+  "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
+  "visits": 84,
+  "events_total": 132,
+  "goatcounter_total_with_events": 216,
+  "page_loads_by_day": {
+   "2026-10-01": 6,
+   "2026-10-02": 24,
+   "2026-10-03": 4,
+   "2026-10-04": 7,
+   "2026-10-05": 7,
+   "2026-10-07": 7,
+   "2026-10-08": 22,
+   "2026-10-09": 7
+  },
+  "visitor_days_by_day": {
+   "2026-10-08": 7,
+   "2026-10-09": 5
+  },
+  "visitor_days": 12,
+  "return_rate": 0.0,
   "routes": 28,
   "routes_not_found": 0,
-  "routes_per_visit": 0.13,
+  "routes_per_visit": 0.33,
+  "routes_per_visitor_day": 1.42,
   "share_rate": 0.0,
   "shares": {},
   "failed_search_rate": 0.0,
