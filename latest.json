@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-10T06:59:29Z",
+ "generated": "2026-10-10T07:54:41Z",
  "start": "2026-09-10",
  "end": "2026-10-11",
  "total": {
-  "total": 232,
-  "total_events": 142,
-  "total_utc": 232,
+  "total": 234,
+  "total_events": 143,
+  "total_utc": 234,
   "stats": [
    {
     "day": "2026-09-10",
@@ -668,7 +668,7 @@
     ],
     "daily": 6,
     "weekly": 92,
-    "monthly": 232
+    "monthly": 234
    },
    {
     "day": "2026-10-02",
@@ -879,7 +879,7 @@
      2
     ],
     "daily": 111,
-    "weekly": 140
+    "weekly": 142
    },
    {
     "day": "2026-10-09",
@@ -925,7 +925,7 @@
      9,
      0,
      0,
-     0,
+     2,
      0,
      0,
      0,
@@ -939,7 +939,7 @@
      0,
      0
     ],
-    "daily": 11
+    "daily": 13
    },
    {
     "day": "2026-10-11",
@@ -979,7 +979,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 77,
+   "count": 78,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -989,7 +989,7 @@
     "2026-10-07": 7,
     "2026-10-08": 16,
     "2026-10-09": 7,
-    "2026-10-10": 1
+    "2026-10-10": 2
    }
   },
   {
@@ -1151,6 +1151,16 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "visit/return/-",
+   "path_id": 110878762,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-10": 1
    }
   },
   {
@@ -2226,9 +2236,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 90,
-  "events_total": 142,
-  "goatcounter_total_with_events": 232,
+  "visits": 91,
+  "events_total": 143,
+  "goatcounter_total_with_events": 234,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -2238,19 +2248,19 @@
    "2026-10-07": 7,
    "2026-10-08": 22,
    "2026-10-09": 11,
-   "2026-10-10": 2
+   "2026-10-10": 3
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
    "2026-10-09": 6,
-   "2026-10-10": 2
+   "2026-10-10": 3
   },
-  "visitor_days": 15,
-  "return_rate": 0.0,
+  "visitor_days": 16,
+  "return_rate": 0.062,
   "routes": 29,
   "routes_not_found": 0,
   "routes_per_visit": 0.32,
-  "routes_per_visitor_day": 1.2,
+  "routes_per_visitor_day": 1.12,
   "share_rate": 0.0,
   "shares": {},
   "failed_search_rate": 0.0,
@@ -2261,7 +2271,8 @@
    "fail": 1
   },
   "visitors_new_return": {
-   "new": 15
+   "new": 15,
+   "return": 1
   },
   "top_routes": [
    {
@@ -2422,7 +2433,7 @@
    },
    {
     "name": "www.bing.com",
-    "count": 2
+    "count": 3
    },
    {
     "name": "Yahoo",
@@ -2512,7 +2523,7 @@
   "www.bing.com": [
    {
     "path": "/",
-    "count": 2
+    "count": 3
    }
   ],
   "Yahoo": [
@@ -2585,7 +2596,7 @@
   {
    "id": "www.bing.com",
    "name": "www.bing.com",
-   "count": 4,
+   "count": 6,
    "ref_scheme": "h"
   },
   {
@@ -2623,7 +2634,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 204
+   "count": 206
   },
   {
    "id": "rus",
@@ -2650,7 +2661,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 165
+   "count": 167
   },
   {
    "id": "US",
@@ -2762,7 +2773,7 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 92
+   "count": 94
   },
   {
    "id": "desktophd",
@@ -2779,7 +2790,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 150
+   "count": 152
   },
   {
    "id": "Safari",
@@ -2810,7 +2821,7 @@
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 51
+   "count": 53
   },
   {
    "id": "Android",
