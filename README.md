@@ -159,3 +159,7 @@ The source is `src/dubai-metro.html`; after editing it, run `python3 tools/build
 - After one visit, the site opens in airplane mode and still builds routes.
 - "Add to Home screen" (Android: Chrome menu; iPhone: Safari Share) adds the map-pin icon and opens without the address bar.
 - Line names appear at the ends of each line and follow the language.
+
+## Licence
+
+Copyright (c) 2026. All rights reserved; see [LICENSE](LICENSE). The code and texts are published to be viewed, not to be copied or republished. Third-party data stays under its own licence (see the notice in LICENSE).
