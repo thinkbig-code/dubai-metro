@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-10T14:55:10Z",
+ "generated": "2026-10-10T15:55:31Z",
  "start": "2025-10-10",
  "end": "2026-10-11",
  "total": {
-  "total": 234,
-  "total_events": 143,
-  "total_utc": 234,
+  "total": 236,
+  "total_events": 144,
+  "total_utc": 236,
   "stats": [
    {
     "day": "2025-10-10",
@@ -10718,7 +10718,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 234
+    "monthly": 236
    },
    {
     "day": "2026-10-02",
@@ -10960,7 +10960,7 @@
      0
     ],
     "daily": 18,
-    "weekly": 31
+    "weekly": 33
    },
    {
     "day": "2026-10-10",
@@ -10984,13 +10984,13 @@
      0,
      0,
      0,
-     0,
+     2,
      0,
      0,
      0,
      0
     ],
-    "daily": 13
+    "daily": 15
    },
    {
     "day": "2026-10-11",
@@ -11030,7 +11030,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 78,
+   "count": 79,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -11040,7 +11040,7 @@
     "2026-10-07": 7,
     "2026-10-08": 16,
     "2026-10-09": 7,
-    "2026-10-10": 2
+    "2026-10-10": 3
    }
   },
   {
@@ -11048,11 +11048,11 @@
    "path_id": 110447314,
    "title": "en",
    "event": true,
-   "count": 15,
+   "count": 16,
    "daily": {
     "2026-10-08": 7,
     "2026-10-09": 6,
-    "2026-10-10": 2
+    "2026-10-10": 3
    }
   },
   {
@@ -12287,9 +12287,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 91,
-  "events_total": 143,
-  "goatcounter_total_with_events": 234,
+  "visits": 92,
+  "events_total": 144,
+  "goatcounter_total_with_events": 236,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -12299,19 +12299,19 @@
    "2026-10-07": 7,
    "2026-10-08": 22,
    "2026-10-09": 11,
-   "2026-10-10": 3
+   "2026-10-10": 4
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
    "2026-10-09": 6,
-   "2026-10-10": 3
+   "2026-10-10": 4
   },
-  "visitor_days": 16,
-  "return_rate": 0.062,
+  "visitor_days": 17,
+  "return_rate": 0.059,
   "routes": 29,
   "routes_not_found": 0,
   "routes_per_visit": 0.32,
-  "routes_per_visitor_day": 1.12,
+  "routes_per_visitor_day": 1.06,
   "share_rate": 0.0,
   "shares": {},
   "failed_search_rate": 0.0,
@@ -12322,7 +12322,7 @@
    "fail": 1
   },
   "visitors_new_return": {
-   "new": 15,
+   "new": 16,
    "return": 1
   },
   "top_routes": [
@@ -12479,11 +12479,11 @@
     "count": 69
    },
    {
-    "name": "com.reddit.frontpage",
-    "count": 3
+    "name": "www.bing.com",
+    "count": 4
    },
    {
-    "name": "www.bing.com",
+    "name": "com.reddit.frontpage",
     "count": 3
    },
    {
@@ -12565,13 +12565,13 @@
     "count": 1
    }
   ],
-  "com.reddit.frontpage": [
+  "www.bing.com": [
    {
     "path": "/",
-    "count": 3
+    "count": 4
    }
   ],
-  "www.bing.com": [
+  "com.reddit.frontpage": [
    {
     "path": "/",
     "count": 3
@@ -12639,16 +12639,16 @@
    "ref_scheme": "o"
   },
   {
+   "id": "www.bing.com",
+   "name": "www.bing.com",
+   "count": 8,
+   "ref_scheme": "h"
+  },
+  {
    "id": "Yahoo",
    "name": "Yahoo",
    "count": 6,
    "ref_scheme": "g"
-  },
-  {
-   "id": "www.bing.com",
-   "name": "www.bing.com",
-   "count": 6,
-   "ref_scheme": "h"
   },
   {
    "id": "www.facebook.com",
@@ -12685,7 +12685,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 206
+   "count": 208
   },
   {
    "id": "rus",
@@ -12730,14 +12730,14 @@
    "count": 4
   },
   {
-   "id": "ID",
-   "name": "Indonesia",
+   "id": "GB",
+   "name": "United Kingdom",
    "count": 4
   },
   {
-   "id": "GB",
-   "name": "United Kingdom",
-   "count": 2
+   "id": "ID",
+   "name": "Indonesia",
+   "count": 4
   },
   {
    "id": "IE",
@@ -12824,7 +12824,7 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 94
+   "count": 96
   },
   {
    "id": "desktophd",
@@ -12841,7 +12841,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 152
+   "count": 154
   },
   {
    "id": "Safari",
@@ -12865,14 +12865,14 @@
    "count": 73
   },
   {
+   "id": "Windows",
+   "name": "Windows",
+   "count": 55
+  },
+  {
    "id": "macOS",
    "name": "macOS",
    "count": 54
-  },
-  {
-   "id": "Windows",
-   "name": "Windows",
-   "count": 53
   },
   {
    "id": "Android",
