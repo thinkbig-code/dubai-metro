@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-10T21:55:13Z",
+ "generated": "2026-10-10T22:55:21Z",
  "start": "2026-09-10",
  "end": "2026-10-11",
  "total": {
-  "total": 238,
-  "total_events": 145,
-  "total_utc": 238,
+  "total": 247,
+  "total_events": 153,
+  "total_utc": 247,
   "stats": [
    {
     "day": "2026-09-10",
@@ -668,7 +668,7 @@
     ],
     "daily": 6,
     "weekly": 92,
-    "monthly": 238
+    "monthly": 247
    },
    {
     "day": "2026-10-02",
@@ -879,7 +879,7 @@
      2
     ],
     "daily": 111,
-    "weekly": 146
+    "weekly": 155
    },
    {
     "day": "2026-10-09",
@@ -946,7 +946,7 @@
     "hourly": [
      0,
      0,
-     0,
+     9,
      0,
      0,
      0,
@@ -969,7 +969,7 @@
      0,
      0
     ],
-    "daily": 0
+    "daily": 9
    }
   ]
  },
@@ -979,7 +979,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 80,
+   "count": 81,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -989,7 +989,8 @@
     "2026-10-07": 7,
     "2026-10-08": 16,
     "2026-10-09": 7,
-    "2026-10-10": 4
+    "2026-10-10": 4,
+    "2026-10-11": 1
    }
   },
   {
@@ -997,11 +998,12 @@
    "path_id": 110447314,
    "title": "en",
    "event": true,
-   "count": 17,
+   "count": 18,
    "daily": {
     "2026-10-08": 7,
     "2026-10-09": 6,
-    "2026-10-10": 4
+    "2026-10-10": 4,
+    "2026-10-11": 1
    }
   },
   {
@@ -1151,6 +1153,76 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "station_pair_route_search/qusais/pjm",
+   "path_id": 111023346,
+   "title": "en|map",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-11": 1
+   }
+  },
+  {
+   "path": "route/qusais/pjm",
+   "path_id": 111023345,
+   "title": "en|map|ok|first_map",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-11": 1
+   }
+  },
+  {
+   "path": "route_to_station_click/pjm/-",
+   "path_id": 111023344,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-11": 1
+   }
+  },
+  {
+   "path": "map_station_click/pjm/-",
+   "path_id": 111023340,
+   "title": "en|home|desktop",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-11": 1
+   }
+  },
+  {
+   "path": "route_from_station_click/qusais/-",
+   "path_id": 111023336,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-11": 1
+   }
+  },
+  {
+   "path": "map_station_click/qusais/-",
+   "path_id": 111023335,
+   "title": "en|home|desktop",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-11": 1
+   }
+  },
+  {
+   "path": "map_station_click/fc/-",
+   "path_id": 111023313,
+   "title": "en|home|desktop",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-11": 1
    }
   },
   {
@@ -2236,9 +2308,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 93,
-  "events_total": 145,
-  "goatcounter_total_with_events": 238,
+  "visits": 94,
+  "events_total": 153,
+  "goatcounter_total_with_events": 247,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -2248,18 +2320,20 @@
    "2026-10-07": 7,
    "2026-10-08": 22,
    "2026-10-09": 11,
-   "2026-10-10": 5
+   "2026-10-10": 5,
+   "2026-10-11": 1
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
    "2026-10-09": 6,
-   "2026-10-10": 5
+   "2026-10-10": 5,
+   "2026-10-11": 1
   },
-  "visitor_days": 18,
-  "return_rate": 0.056,
-  "routes": 29,
+  "visitor_days": 19,
+  "return_rate": 0.053,
+  "routes": 30,
   "routes_not_found": 0,
-  "routes_per_visit": 0.31,
+  "routes_per_visit": 0.32,
   "routes_per_visitor_day": 1.0,
   "share_rate": 0.0,
   "shares": {},
@@ -2271,10 +2345,14 @@
    "fail": 1
   },
   "visitors_new_return": {
-   "new": 17,
+   "new": 18,
    "return": 1
   },
   "top_routes": [
+   {
+    "name": "qusais > pjm",
+    "count": 1
+   },
    {
     "name": "expo > dg",
     "count": 1
@@ -2330,10 +2408,6 @@
    {
     "name": "p_gold_souk > p_atlantis_the_palm",
     "count": 1
-   },
-   {
-    "name": "furjan > p_dxb_airport_terminal_3",
-    "count": 1
    }
   ],
   "top_origins": [
@@ -2348,6 +2422,10 @@
    {
     "name": "bk",
     "count": 3
+   },
+   {
+    "name": "qusais",
+    "count": 1
    },
    {
     "name": "expo",
@@ -2372,10 +2450,6 @@
    {
     "name": "p_dubai_internet_city",
     "count": 1
-   },
-   {
-    "name": "dic",
-    "count": 1
    }
   ],
   "top_destinations": [
@@ -2396,6 +2470,10 @@
     "count": 2
    },
    {
+    "name": "pjm",
+    "count": 1
+   },
+   {
     "name": "dg",
     "count": 1
    },
@@ -2414,10 +2492,6 @@
    {
     "name": "jlt",
     "count": 1
-   },
-   {
-    "name": "p_burj_khalifa",
-    "count": 1
    }
   ]
  },
@@ -2425,7 +2499,7 @@
   "/": [
    {
     "name": "(direct or unknown)",
-    "count": 70
+    "count": 71
    },
    {
     "name": "www.bing.com",
@@ -2499,7 +2573,7 @@
   "(direct or unknown)": [
    {
     "path": "/",
-    "count": 70
+    "count": 71
    },
    {
     "path": "/destinations/atlantis-the-palm",
@@ -2578,7 +2652,7 @@
  "toprefs": [
   {
    "name": "",
-   "count": 191,
+   "count": 200,
    "ref_scheme": "o"
   },
   {
@@ -2634,7 +2708,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 210
+   "count": 219
   },
   {
    "id": "rus",
@@ -2661,7 +2735,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 169
+   "count": 178
   },
   {
    "id": "US",
@@ -2773,7 +2847,7 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 96
+   "count": 105
   },
   {
    "id": "desktophd",
@@ -2790,7 +2864,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 154
+   "count": 163
   },
   {
    "id": "Safari",
@@ -2814,14 +2888,14 @@
    "count": 75
   },
   {
+   "id": "macOS",
+   "name": "macOS",
+   "count": 63
+  },
+  {
    "id": "Windows",
    "name": "Windows",
    "count": 55
-  },
-  {
-   "id": "macOS",
-   "name": "macOS",
-   "count": 54
   },
   {
    "id": "Android",
