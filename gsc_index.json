@@ -1,11 +1,11 @@
 {
  "host": "dubaimetro.fyi",
- "generated": "2026-10-09T01:37:13Z",
- "sitemap_pages": 105,
+ "generated": "2026-10-10T01:36:06Z",
+ "sitemap_pages": 170,
  "summary": {
-  "Submitted and indexed": 20,
-  "Discovered - currently not indexed": 68,
-  "URL is unknown to Google": 17,
+  "Submitted and indexed": 40,
+  "Discovered - currently not indexed": 52,
+  "URL is unknown to Google": 78,
   "not checked yet": 0
  },
  "pages": {
@@ -14,595 +14,595 @@
    "state": "Submitted and indexed",
    "lastCrawl": "2026-10-03T22:00:29Z",
    "googleCanonical": "https://dubaimetro.fyi/",
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/hi.html": {
    "verdict": "NEUTRAL",
    "state": "Discovered - currently not indexed",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/ar.html": {
    "verdict": "NEUTRAL",
    "state": "Discovered - currently not indexed",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/ur.html": {
    "verdict": "NEUTRAL",
-   "state": "Discovered - currently not indexed",
+   "state": "URL is unknown to Google",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/ru.html": {
    "verdict": "NEUTRAL",
    "state": "Discovered - currently not indexed",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/de.html": {
    "verdict": "NEUTRAL",
-   "state": "URL is unknown to Google",
+   "state": "Discovered - currently not indexed",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/zh.html": {
    "verdict": "NEUTRAL",
    "state": "Discovered - currently not indexed",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/fr.html": {
    "verdict": "NEUTRAL",
-   "state": "URL is unknown to Google",
+   "state": "Discovered - currently not indexed",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/tl.html": {
    "verdict": "NEUTRAL",
    "state": "Discovered - currently not indexed",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/bn.html": {
    "verdict": "NEUTRAL",
-   "state": "Discovered - currently not indexed",
+   "state": "URL is unknown to Google",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/stations/": {
    "verdict": "NEUTRAL",
    "state": "Discovered - currently not indexed",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/map/": {
    "verdict": "NEUTRAL",
-   "state": "Discovered - currently not indexed",
+   "state": "URL is unknown to Google",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/lines/red-line/": {
    "verdict": "PASS",
    "state": "Submitted and indexed",
    "lastCrawl": "2026-10-08T23:55:43Z",
    "googleCanonical": "https://dubaimetro.fyi/lines/red-line/",
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/lines/green-line/": {
    "verdict": "NEUTRAL",
    "state": "Discovered - currently not indexed",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/tram/": {
    "verdict": "PASS",
    "state": "Submitted and indexed",
    "lastCrawl": "2026-10-03T09:45:53Z",
    "googleCanonical": "https://dubaimetro.fyi/tram/",
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/palm-monorail/": {
    "verdict": "PASS",
    "state": "Submitted and indexed",
    "lastCrawl": "2026-10-03T14:23:58Z",
    "googleCanonical": "https://dubaimetro.fyi/palm-monorail/",
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/dubai-mall/": {
    "verdict": "PASS",
    "state": "Submitted and indexed",
    "lastCrawl": "2026-10-03T10:19:23Z",
    "googleCanonical": "https://dubaimetro.fyi/destinations/dubai-mall/",
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/museum-of-the-future/": {
    "verdict": "PASS",
    "state": "Submitted and indexed",
    "lastCrawl": "2026-10-03T00:45:37Z",
    "googleCanonical": "https://dubaimetro.fyi/destinations/museum-of-the-future/",
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/dubai-frame/": {
    "verdict": "PASS",
    "state": "Submitted and indexed",
    "lastCrawl": "2026-10-03T02:53:18Z",
    "googleCanonical": "https://dubaimetro.fyi/destinations/dubai-frame/",
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/gold-souk/": {
    "verdict": "PASS",
    "state": "Submitted and indexed",
    "lastCrawl": "2026-10-03T14:18:12Z",
    "googleCanonical": "https://dubaimetro.fyi/destinations/gold-souk/",
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/atlantis-the-palm/": {
    "verdict": "PASS",
    "state": "Submitted and indexed",
    "lastCrawl": "2026-10-03T00:51:59Z",
    "googleCanonical": "https://dubaimetro.fyi/destinations/atlantis-the-palm/",
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/dubai-marina/": {
    "verdict": "PASS",
    "state": "Submitted and indexed",
    "lastCrawl": "2026-10-03T01:08:35Z",
    "googleCanonical": "https://dubaimetro.fyi/destinations/dubai-marina/",
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/jbr/": {
    "verdict": "PASS",
    "state": "Submitted and indexed",
    "lastCrawl": "2026-10-03T00:04:53Z",
    "googleCanonical": "https://dubaimetro.fyi/destinations/jbr/",
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/mall-of-the-emirates/": {
    "verdict": "PASS",
    "state": "Submitted and indexed",
    "lastCrawl": "2026-10-03T08:52:18Z",
    "googleCanonical": "https://dubaimetro.fyi/destinations/mall-of-the-emirates/",
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/expo-city-dubai/": {
    "verdict": "PASS",
    "state": "Submitted and indexed",
    "lastCrawl": "2026-10-03T22:14:11Z",
    "googleCanonical": "https://dubaimetro.fyi/destinations/expo-city-dubai/",
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/dubai-airport/": {
    "verdict": "PASS",
    "state": "Submitted and indexed",
    "lastCrawl": "2026-10-03T03:22:06Z",
    "googleCanonical": "https://dubaimetro.fyi/destinations/dubai-airport/",
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/burj-khalifa/": {
    "verdict": "PASS",
    "state": "Submitted and indexed",
    "lastCrawl": "2026-10-08T20:04:46Z",
    "googleCanonical": "https://dubaimetro.fyi/destinations/burj-khalifa/",
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/difc/": {
-   "verdict": "NEUTRAL",
-   "state": "Discovered - currently not indexed",
-   "lastCrawl": null,
-   "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
-  },
-  "https://dubaimetro.fyi/destinations/dubai-world-trade-centre/": {
    "verdict": "NEUTRAL",
    "state": "URL is unknown to Google",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/destinations/dubai-world-trade-centre/": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/burjuman-mall/": {
    "verdict": "NEUTRAL",
    "state": "Discovered - currently not indexed",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/al-fahidi/": {
-   "verdict": "NEUTRAL",
-   "state": "Discovered - currently not indexed",
-   "lastCrawl": null,
-   "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "lastCrawl": "2026-10-09T23:52:58Z",
+   "googleCanonical": "https://dubaimetro.fyi/destinations/al-fahidi/",
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/al-seef/": {
    "verdict": "PASS",
    "state": "Submitted and indexed",
    "lastCrawl": "2026-10-09T01:27:12Z",
    "googleCanonical": "https://dubaimetro.fyi/destinations/al-seef/",
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/spice-souk/": {
    "verdict": "PASS",
    "state": "Submitted and indexed",
    "lastCrawl": "2026-10-08T22:03:29Z",
    "googleCanonical": "https://dubaimetro.fyi/destinations/spice-souk/",
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/city-centre-deira/": {
-   "verdict": "NEUTRAL",
-   "state": "Discovered - currently not indexed",
-   "lastCrawl": null,
-   "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "lastCrawl": "2026-10-09T21:08:53Z",
+   "googleCanonical": "https://dubaimetro.fyi/destinations/city-centre-deira/",
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/wafi-city/": {
-   "verdict": "NEUTRAL",
-   "state": "Discovered - currently not indexed",
-   "lastCrawl": null,
-   "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "lastCrawl": "2026-10-09T16:49:18Z",
+   "googleCanonical": "https://dubaimetro.fyi/destinations/wafi-city/",
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/ibn-battuta-mall/": {
    "verdict": "NEUTRAL",
-   "state": "Discovered - currently not indexed",
+   "state": "URL is unknown to Google",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/palm-jumeirah-mall/": {
    "verdict": "NEUTRAL",
    "state": "Discovered - currently not indexed",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/ain-dubai/": {
    "verdict": "NEUTRAL",
-   "state": "URL is unknown to Google",
+   "state": "Discovered - currently not indexed",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/ski-dubai/": {
    "verdict": "NEUTRAL",
    "state": "Discovered - currently not indexed",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/dubai-internet-city/": {
    "verdict": "NEUTRAL",
    "state": "Discovered - currently not indexed",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/dubai-media-city/": {
    "verdict": "NEUTRAL",
    "state": "Discovered - currently not indexed",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/knowledge-park/": {
-   "verdict": "NEUTRAL",
-   "state": "Discovered - currently not indexed",
-   "lastCrawl": null,
-   "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "lastCrawl": "2026-10-09T04:20:31Z",
+   "googleCanonical": "https://dubaimetro.fyi/destinations/knowledge-park/",
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/etihad-rail-dubai/": {
    "verdict": "PASS",
    "state": "Submitted and indexed",
    "lastCrawl": "2026-10-07T17:26:41Z",
    "googleCanonical": "https://dubaimetro.fyi/destinations/etihad-rail-dubai/",
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/almas-tower/": {
    "verdict": "NEUTRAL",
    "state": "Discovered - currently not indexed",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/jebel-ali-free-zone/": {
-   "verdict": "NEUTRAL",
-   "state": "Discovered - currently not indexed",
-   "lastCrawl": null,
-   "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "lastCrawl": "2026-10-09T21:07:32Z",
+   "googleCanonical": "https://dubaimetro.fyi/destinations/jebel-ali-free-zone/",
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/egyptian-consulate-dubai/": {
    "verdict": "NEUTRAL",
    "state": "Discovered - currently not indexed",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/indian-consulate-dubai/": {
    "verdict": "PASS",
    "state": "Submitted and indexed",
    "lastCrawl": "2026-10-08T20:05:54Z",
    "googleCanonical": "https://dubaimetro.fyi/destinations/indian-consulate-dubai/",
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/pakistan-consulate-dubai/": {
-   "verdict": "NEUTRAL",
-   "state": "URL is unknown to Google",
-   "lastCrawl": null,
-   "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "lastCrawl": "2026-10-09T13:22:25Z",
+   "googleCanonical": "https://dubaimetro.fyi/destinations/pakistan-consulate-dubai/",
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/us-consulate-dubai/": {
    "verdict": "NEUTRAL",
    "state": "Discovered - currently not indexed",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/dewa-head-office/": {
    "verdict": "NEUTRAL",
    "state": "Discovered - currently not indexed",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/dubai-chamber-of-commerce/": {
-   "verdict": "NEUTRAL",
-   "state": "URL is unknown to Google",
-   "lastCrawl": null,
-   "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "lastCrawl": "2026-10-09T13:48:18Z",
+   "googleCanonical": "https://dubaimetro.fyi/destinations/dubai-chamber-of-commerce/",
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/dubai-land-department/": {
    "verdict": "NEUTRAL",
-   "state": "URL is unknown to Google",
+   "state": "Discovered - currently not indexed",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/dubai-municipality-head-office/": {
-   "verdict": "NEUTRAL",
-   "state": "Discovered - currently not indexed",
-   "lastCrawl": null,
-   "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "lastCrawl": "2026-10-09T18:36:43Z",
+   "googleCanonical": "https://dubaimetro.fyi/destinations/dubai-municipality-head-office/",
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/dubai-police-general-headquarters/": {
-   "verdict": "NEUTRAL",
-   "state": "Discovered - currently not indexed",
-   "lastCrawl": null,
-   "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "lastCrawl": "2026-10-09T20:37:05Z",
+   "googleCanonical": "https://dubaimetro.fyi/destinations/dubai-police-general-headquarters/",
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/gdrfa-immigration-al-jafiliya/": {
    "verdict": "NEUTRAL",
-   "state": "Discovered - currently not indexed",
+   "state": "URL is unknown to Google",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/al-jalila-children-s-specialty-hospital/": {
-   "verdict": "NEUTRAL",
-   "state": "Discovered - currently not indexed",
-   "lastCrawl": null,
-   "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
-  },
-  "https://dubaimetro.fyi/destinations/al-zahra-hospital-dubai/": {
    "verdict": "NEUTRAL",
    "state": "URL is unknown to Google",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/destinations/al-zahra-hospital-dubai/": {
+   "verdict": "NEUTRAL",
+   "state": "Discovered - currently not indexed",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/american-hospital-dubai/": {
    "verdict": "NEUTRAL",
    "state": "Discovered - currently not indexed",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/aster-hospital-al-qusais/": {
-   "verdict": "NEUTRAL",
-   "state": "Discovered - currently not indexed",
-   "lastCrawl": null,
-   "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "lastCrawl": "2026-10-09T16:54:15Z",
+   "googleCanonical": "https://dubaimetro.fyi/destinations/aster-hospital-al-qusais/",
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/aster-hospital-mankhool/": {
-   "verdict": "NEUTRAL",
-   "state": "Discovered - currently not indexed",
-   "lastCrawl": null,
-   "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "lastCrawl": "2026-10-09T16:15:30Z",
+   "googleCanonical": "https://dubaimetro.fyi/destinations/aster-hospital-mankhool/",
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/canadian-specialist-hospital/": {
-   "verdict": "NEUTRAL",
-   "state": "Discovered - currently not indexed",
-   "lastCrawl": null,
-   "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "lastCrawl": "2026-10-09T17:32:21Z",
+   "googleCanonical": "https://dubaimetro.fyi/destinations/canadian-specialist-hospital/",
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/dubai-hospital/": {
-   "verdict": "NEUTRAL",
-   "state": "Discovered - currently not indexed",
-   "lastCrawl": null,
-   "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "lastCrawl": "2026-10-09T17:29:46Z",
+   "googleCanonical": "https://dubaimetro.fyi/destinations/dubai-hospital/",
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/international-modern-hospital/": {
    "verdict": "NEUTRAL",
    "state": "Discovered - currently not indexed",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/iranian-hospital-dubai/": {
-   "verdict": "NEUTRAL",
-   "state": "Discovered - currently not indexed",
-   "lastCrawl": null,
-   "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "lastCrawl": "2026-10-09T13:10:10Z",
+   "googleCanonical": "https://dubaimetro.fyi/destinations/iranian-hospital-dubai/",
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/latifa-hospital/": {
    "verdict": "NEUTRAL",
    "state": "Discovered - currently not indexed",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/medeor-hospital-dubai/": {
    "verdict": "NEUTRAL",
    "state": "Discovered - currently not indexed",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/rashid-hospital/": {
    "verdict": "NEUTRAL",
    "state": "Discovered - currently not indexed",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/saudi-german-hospital-dubai/": {
    "verdict": "NEUTRAL",
    "state": "Discovered - currently not indexed",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/address-downtown/": {
    "verdict": "NEUTRAL",
-   "state": "Discovered - currently not indexed",
+   "state": "URL is unknown to Google",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/jw-marriott-marquis-dubai/": {
    "verdict": "NEUTRAL",
    "state": "Discovered - currently not indexed",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/jumeirah-emirates-towers/": {
    "verdict": "NEUTRAL",
    "state": "Discovered - currently not indexed",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/al-mulla-plaza/": {
-   "verdict": "NEUTRAL",
-   "state": "Discovered - currently not indexed",
-   "lastCrawl": null,
-   "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "lastCrawl": "2026-10-09T14:19:58Z",
+   "googleCanonical": "https://dubaimetro.fyi/destinations/al-mulla-plaza/",
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/al-nasr-leisureland/": {
    "verdict": "NEUTRAL",
    "state": "Discovered - currently not indexed",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/al-shindagha-museum/": {
    "verdict": "PASS",
    "state": "Submitted and indexed",
    "lastCrawl": "2026-10-09T00:21:04Z",
    "googleCanonical": "https://dubaimetro.fyi/destinations/al-shindagha-museum/",
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/alserkal-avenue/": {
    "verdict": "NEUTRAL",
-   "state": "URL is unknown to Google",
+   "state": "Discovered - currently not indexed",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/coca-cola-arena/": {
    "verdict": "NEUTRAL",
    "state": "Discovered - currently not indexed",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/dubai-creek-harbour/": {
-   "verdict": "NEUTRAL",
-   "state": "Discovered - currently not indexed",
-   "lastCrawl": null,
-   "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "lastCrawl": "2026-10-09T14:31:52Z",
+   "googleCanonical": "https://dubaimetro.fyi/destinations/dubai-creek-harbour/",
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/dubai-dolphinarium/": {
    "verdict": "NEUTRAL",
-   "state": "URL is unknown to Google",
+   "state": "Discovered - currently not indexed",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/dubai-garden-glow/": {
    "verdict": "NEUTRAL",
-   "state": "Discovered - currently not indexed",
-   "lastCrawl": null,
-   "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
-  },
-  "https://dubaimetro.fyi/destinations/sheikh-mohammed-centre-for-cultural-understanding/": {
-   "verdict": "NEUTRAL",
    "state": "URL is unknown to Google",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/destinations/sheikh-mohammed-centre-for-cultural-understanding/": {
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "lastCrawl": "2026-10-09T14:47:54Z",
+   "googleCanonical": "https://dubaimetro.fyi/destinations/sheikh-mohammed-centre-for-cultural-understanding/",
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/st-mary-s-catholic-church/": {
    "verdict": "NEUTRAL",
-   "state": "URL is unknown to Google",
+   "state": "Discovered - currently not indexed",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/al-ghurair-centre/": {
-   "verdict": "NEUTRAL",
-   "state": "Discovered - currently not indexed",
-   "lastCrawl": null,
-   "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "lastCrawl": "2026-10-09T20:11:23Z",
+   "googleCanonical": "https://dubaimetro.fyi/destinations/al-ghurair-centre/",
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/al-khaleej-centre/": {
-   "verdict": "NEUTRAL",
-   "state": "URL is unknown to Google",
-   "lastCrawl": null,
-   "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "lastCrawl": "2026-10-09T16:16:45Z",
+   "googleCanonical": "https://dubaimetro.fyi/destinations/al-khaleej-centre/",
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/dubai-festival-city-mall/": {
-   "verdict": "NEUTRAL",
-   "state": "Discovered - currently not indexed",
-   "lastCrawl": null,
-   "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "verdict": "PASS",
+   "state": "Submitted and indexed",
+   "lastCrawl": "2026-10-09T19:33:09Z",
+   "googleCanonical": "https://dubaimetro.fyi/destinations/dubai-festival-city-mall/",
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/reef-mall/": {
    "verdict": "NEUTRAL",
    "state": "Discovered - currently not indexed",
    "lastCrawl": null,
    "googleCanonical": null,
-   "checked": "2026-10-09T01:37:13Z"
+   "checked": "2026-10-10T01:36:06Z"
   },
   "https://dubaimetro.fyi/destinations/times-square-center/": {
    "verdict": "NEUTRAL",
@@ -743,6 +743,461 @@
    "lastCrawl": null,
    "googleCanonical": null,
    "checked": "2026-10-09T01:37:13Z"
+  },
+  "https://dubaimetro.fyi/stations/abu-baker-al-siddique/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/abu-hail/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/adcb/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/airport-terminal-1/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/airport-terminal-3/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/al-fardan-exchange/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/al-furjan/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/al-garhoud/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/al-ghubaiba/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/al-ittihad-park/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/al-jadaf/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/al-nahda/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/al-qiyadah/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/al-qusais/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/al-ras/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/al-rigga/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/al-sufouh/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/atlantis-aquaventure/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/baniyas-square/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/burj-khalifa-dubai-mall/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/business-bay/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/centrepoint/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/city-centre-deira/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/creek/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/danube/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/discovery-gardens/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/dmcc/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/dubai-airport-free-zone/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/dubai-healthcare-city/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/dubai-internet-city/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/dubai-investment-park/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/dubai-marina/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/dubai-marina-mall/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/e-and/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/emirates/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/emirates-towers/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/energy/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/equiti/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/expo-2020/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/financial-centre/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/garmin/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/gold-souq/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/ibn-battuta/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/insurancemarket/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/jumeirah-beach-residence-1/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/jumeirah-beach-residence-2/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/jumeirah-golf-estates/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/jumeirah-lakes-towers/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/knowledge-village/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/life-pharmacy/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/mall-of-the-emirates/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/marina-towers/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/max/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/media-city/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/mina-seyahi/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/national-paints/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/oud-metha/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/palm-gateway/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/palm-jumeirah/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/palm-jumeirah-mall/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/salah-al-din/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/sharaf-dg/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/stadium/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/the-gardens/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
+  },
+  "https://dubaimetro.fyi/stations/world-trade-centre/": {
+   "verdict": "NEUTRAL",
+   "state": "URL is unknown to Google",
+   "lastCrawl": null,
+   "googleCanonical": null,
+   "checked": "2026-10-10T01:36:06Z"
   }
  }
 }
