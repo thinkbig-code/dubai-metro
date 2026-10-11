@@ -1,43 +1,13 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-10T23:54:31Z",
- "start": "2026-09-10",
- "end": "2026-10-11",
+ "generated": "2026-10-11T01:02:42Z",
+ "start": "2026-09-11",
+ "end": "2026-10-12",
  "total": {
-  "total": 247,
+  "total": 248,
   "total_events": 153,
-  "total_utc": 247,
+  "total_utc": 248,
   "stats": [
-   {
-    "day": "2026-09-10",
-    "hourly": [
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0
-    ],
-    "daily": 0
-   },
    {
     "day": "2026-09-11",
     "hourly": [
@@ -486,7 +456,8 @@
      0,
      0
     ],
-    "daily": 0
+    "daily": 0,
+    "weekly": 6
    },
    {
     "day": "2026-09-26",
@@ -667,8 +638,7 @@
      5
     ],
     "daily": 6,
-    "weekly": 92,
-    "monthly": 247
+    "monthly": 248
    },
    {
     "day": "2026-10-02",
@@ -698,7 +668,8 @@
      0,
      1
     ],
-    "daily": 35
+    "daily": 35,
+    "weekly": 197
    },
    {
     "day": "2026-10-03",
@@ -878,8 +849,7 @@
      3,
      2
     ],
-    "daily": 111,
-    "weekly": 155
+    "daily": 111
    },
    {
     "day": "2026-10-09",
@@ -909,7 +879,8 @@
      2,
      0
     ],
-    "daily": 18
+    "daily": 18,
+    "weekly": 45
    },
    {
     "day": "2026-10-10",
@@ -947,6 +918,36 @@
      0,
      0,
      9,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "daily": 10
+   },
+   {
+    "day": "2026-10-12",
+    "hourly": [
+     0,
+     0,
+     0,
      0,
      0,
      0,
@@ -969,7 +970,7 @@
      0,
      0
     ],
-    "daily": 9
+    "daily": 0
    }
   ]
  },
@@ -1153,6 +1154,16 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/destinations/st-mary-s-catholic-church",
+   "path_id": 111037420,
+   "title": "St. Mary's Catholic Church Metro Station: Oud Metha, 7 min walk",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-10-11": 1
    }
   },
   {
@@ -2308,9 +2319,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 94,
+  "visits": 95,
   "events_total": 153,
-  "goatcounter_total_with_events": 247,
+  "goatcounter_total_with_events": 248,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -2321,7 +2332,7 @@
    "2026-10-08": 22,
    "2026-10-09": 11,
    "2026-10-10": 5,
-   "2026-10-11": 1
+   "2026-10-11": 2
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -2538,6 +2549,12 @@
     "count": 3
    }
   ],
+  "/destinations/st-mary-s-catholic-church": [
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   }
+  ],
   "/ar.html": [
    {
     "name": "Yandex",
@@ -2578,6 +2595,10 @@
    {
     "path": "/destinations/atlantis-the-palm",
     "count": 3
+   },
+   {
+    "path": "/destinations/st-mary-s-catholic-church",
+    "count": 1
    },
    {
     "path": "/destinations/etihad-rail-dubai",
@@ -2652,7 +2673,7 @@
  "toprefs": [
   {
    "name": "",
-   "count": 200,
+   "count": 201,
    "ref_scheme": "o"
   },
   {
@@ -2708,7 +2729,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 219
+   "count": 220
   },
   {
    "id": "rus",
@@ -2735,7 +2756,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 178
+   "count": 179
   },
   {
    "id": "US",
@@ -2837,7 +2858,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 115
+   "count": 116
   },
   {
    "id": "tablet",
@@ -2869,7 +2890,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 79
+   "count": 80
   },
   {
    "id": "Firefox",
@@ -2885,7 +2906,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 75
+   "count": 76
   },
   {
    "id": "macOS",
