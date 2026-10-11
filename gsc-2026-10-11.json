@@ -1,0 +1,897 @@
+{
+ "host": "dubaimetro.fyi",
+ "generated": "2026-10-11T01:34:25Z",
+ "property": "sc-domain:dubaimetro.fyi",
+ "properties_visible": [
+  "sc-domain:dubaimetro.fyi",
+  "sc-domain:riyadhmetro.fyi"
+ ],
+ "start": "2026-09-13",
+ "end": "2026-10-11",
+ "by_date": [
+  {
+   "date": "2026-09-30",
+   "clicks": 0,
+   "impressions": 0,
+   "ctr": 0,
+   "position": 0
+  },
+  {
+   "date": "2026-10-01",
+   "clicks": 0,
+   "impressions": 0,
+   "ctr": 0,
+   "position": 0
+  },
+  {
+   "date": "2026-10-02",
+   "clicks": 0,
+   "impressions": 4,
+   "ctr": 0,
+   "position": 6.8
+  },
+  {
+   "date": "2026-10-03",
+   "clicks": 1,
+   "impressions": 24,
+   "ctr": 0.0417,
+   "position": 13.5
+  },
+  {
+   "date": "2026-10-04",
+   "clicks": 2,
+   "impressions": 29,
+   "ctr": 0.069,
+   "position": 12
+  },
+  {
+   "date": "2026-10-05",
+   "clicks": 0,
+   "impressions": 36,
+   "ctr": 0,
+   "position": 29
+  },
+  {
+   "date": "2026-10-06",
+   "clicks": 0,
+   "impressions": 41,
+   "ctr": 0,
+   "position": 15.9
+  },
+  {
+   "date": "2026-10-07",
+   "clicks": 0,
+   "impressions": 41,
+   "ctr": 0,
+   "position": 18.1
+  },
+  {
+   "date": "2026-10-08",
+   "clicks": 1,
+   "impressions": 17,
+   "ctr": 0.0588,
+   "position": 9.7
+  }
+ ],
+ "queries": [
+  {
+   "query": "\"al yalayis medical fitness center\" -site:dubaihealth.ae -site:facebook.com -site:instagram.com -site:threads.com -site:threads.net -site:linkedin.com -site:x.com -site:twitter.com -site:tiktok.com -site:youtube.com -site:youtu.be -site:reddit.com -site:t.me -site:telegram.me -site:telegram.org -site:pinterest.com -site:vimeo.com",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 10
+  },
+  {
+   "query": "airport terminal 3 metro station",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 95
+  },
+  {
+   "query": "airport to burj khalifa metro",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 68
+  },
+  {
+   "query": "al yalayis station map",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 10
+  },
+  {
+   "query": "dubai airport metro station",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 82
+  },
+  {
+   "query": "dubai frame nearest metro station",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 12
+  },
+  {
+   "query": "dubai marina by metro",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 11
+  },
+  {
+   "query": "dubai marina mall tram station",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 82
+  },
+  {
+   "query": "dubai marina tram map",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 12.5
+  },
+  {
+   "query": "dubai metro route finder",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 28
+  },
+  {
+   "query": "dubai metro stops",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 94
+  },
+  {
+   "query": "dubai metro tram map",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 72
+  },
+  {
+   "query": "dubai tram map",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 82
+  },
+  {
+   "query": "dubai tram route",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 25
+  },
+  {
+   "query": "etihad rail dubai station",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 24
+  },
+  {
+   "query": "expo metro station",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 99
+  },
+  {
+   "query": "how to go jbr beach by metro",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 9.5
+  },
+  {
+   "query": "how to go to gold souk dubai",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 59
+  },
+  {
+   "query": "jbr dubai directions",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 48
+  },
+  {
+   "query": "jumeirah beach metro station",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 11
+  },
+  {
+   "query": "jumeirah beach residence 1 tram station",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 53
+  },
+  {
+   "query": "mall of the emirates directions",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 64
+  },
+  {
+   "query": "marina metro station dubai",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 96
+  },
+  {
+   "query": "metro station near museum of the future",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 10
+  },
+  {
+   "query": "metro station near palm jumeirah",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 90
+  },
+  {
+   "query": "moe metro station",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 85.5
+  },
+  {
+   "query": "nearest metro station to dubai mall",
+   "clicks": 0,
+   "impressions": 5,
+   "ctr": 0,
+   "position": 9.8
+  },
+  {
+   "query": "nearest metro station to gold souk",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 56
+  },
+  {
+   "query": "palm metro",
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 52.3
+  },
+  {
+   "query": "terminal 3 metro station",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 94.5
+  },
+  {
+   "query": "the pointe monorail station",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 41
+  },
+  {
+   "query": "tram stations",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 93
+  }
+ ],
+ "pages": [
+  {
+   "page": "https://dubaimetro.fyi/",
+   "clicks": 4,
+   "impressions": 64,
+   "ctr": 0.0625,
+   "position": 11.2
+  },
+  {
+   "page": "https://dubaimetro.fyi/destinations/atlantis-the-palm/",
+   "clicks": 0,
+   "impressions": 10,
+   "ctr": 0,
+   "position": 26.9
+  },
+  {
+   "page": "https://dubaimetro.fyi/destinations/dubai-airport/",
+   "clicks": 0,
+   "impressions": 11,
+   "ctr": 0,
+   "position": 43.7
+  },
+  {
+   "page": "https://dubaimetro.fyi/destinations/dubai-frame/",
+   "clicks": 0,
+   "impressions": 11,
+   "ctr": 0,
+   "position": 9.5
+  },
+  {
+   "page": "https://dubaimetro.fyi/destinations/dubai-mall/",
+   "clicks": 0,
+   "impressions": 6,
+   "ctr": 0,
+   "position": 9.2
+  },
+  {
+   "page": "https://dubaimetro.fyi/destinations/dubai-marina/",
+   "clicks": 0,
+   "impressions": 12,
+   "ctr": 0,
+   "position": 16.9
+  },
+  {
+   "page": "https://dubaimetro.fyi/destinations/etihad-rail-dubai/",
+   "clicks": 0,
+   "impressions": 11,
+   "ctr": 0,
+   "position": 10.4
+  },
+  {
+   "page": "https://dubaimetro.fyi/destinations/expo-city-dubai/",
+   "clicks": 0,
+   "impressions": 25,
+   "ctr": 0,
+   "position": 13.0
+  },
+  {
+   "page": "https://dubaimetro.fyi/destinations/gold-souk/",
+   "clicks": 0,
+   "impressions": 5,
+   "ctr": 0,
+   "position": 28.8
+  },
+  {
+   "page": "https://dubaimetro.fyi/destinations/jbr/",
+   "clicks": 0,
+   "impressions": 13,
+   "ctr": 0,
+   "position": 16.5
+  },
+  {
+   "page": "https://dubaimetro.fyi/destinations/mall-of-the-emirates/",
+   "clicks": 0,
+   "impressions": 6,
+   "ctr": 0,
+   "position": 43.7
+  },
+  {
+   "page": "https://dubaimetro.fyi/destinations/museum-of-the-future/",
+   "clicks": 0,
+   "impressions": 19,
+   "ctr": 0,
+   "position": 9.8
+  },
+  {
+   "page": "https://dubaimetro.fyi/palm-monorail/",
+   "clicks": 0,
+   "impressions": 4,
+   "ctr": 0,
+   "position": 23.2
+  },
+  {
+   "page": "https://dubaimetro.fyi/tram/",
+   "clicks": 0,
+   "impressions": 9,
+   "ctr": 0,
+   "position": 34.8
+  }
+ ],
+ "query_page": [
+  {
+   "query": "\"al yalayis medical fitness center\" -site:dubaihealth.ae -site:facebook.com -site:instagram.com -site:threads.com -site:threads.net -site:linkedin.com -site:x.com -site:twitter.com -site:tiktok.com -site:youtube.com -site:youtu.be -site:reddit.com -site:t.me -site:telegram.me -site:telegram.org -site:pinterest.com -site:vimeo.com",
+   "page": "https://dubaimetro.fyi/destinations/etihad-rail-dubai/",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 10
+  },
+  {
+   "query": "airport terminal 3 metro station",
+   "page": "https://dubaimetro.fyi/destinations/dubai-airport/",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 95
+  },
+  {
+   "query": "airport to burj khalifa metro",
+   "page": "https://dubaimetro.fyi/destinations/dubai-airport/",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 68
+  },
+  {
+   "query": "al yalayis station map",
+   "page": "https://dubaimetro.fyi/destinations/etihad-rail-dubai/",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 10
+  },
+  {
+   "query": "dubai airport metro station",
+   "page": "https://dubaimetro.fyi/destinations/dubai-airport/",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 82
+  },
+  {
+   "query": "dubai frame nearest metro station",
+   "page": "https://dubaimetro.fyi/destinations/dubai-frame/",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 12
+  },
+  {
+   "query": "dubai marina by metro",
+   "page": "https://dubaimetro.fyi/destinations/dubai-marina/",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 11
+  },
+  {
+   "query": "dubai marina mall tram station",
+   "page": "https://dubaimetro.fyi/tram/",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 82
+  },
+  {
+   "query": "dubai marina tram map",
+   "page": "https://dubaimetro.fyi/tram/",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 12.5
+  },
+  {
+   "query": "dubai metro route finder",
+   "page": "https://dubaimetro.fyi/",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 28
+  },
+  {
+   "query": "dubai metro stops",
+   "page": "https://dubaimetro.fyi/",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 94
+  },
+  {
+   "query": "dubai metro tram map",
+   "page": "https://dubaimetro.fyi/",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 72
+  },
+  {
+   "query": "dubai tram map",
+   "page": "https://dubaimetro.fyi/",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 82
+  },
+  {
+   "query": "dubai tram route",
+   "page": "https://dubaimetro.fyi/tram/",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 25
+  },
+  {
+   "query": "etihad rail dubai station",
+   "page": "https://dubaimetro.fyi/destinations/etihad-rail-dubai/",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 24
+  },
+  {
+   "query": "expo metro station",
+   "page": "https://dubaimetro.fyi/destinations/expo-city-dubai/",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 99
+  },
+  {
+   "query": "how to go jbr beach by metro",
+   "page": "https://dubaimetro.fyi/destinations/jbr/",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 9.5
+  },
+  {
+   "query": "how to go to gold souk dubai",
+   "page": "https://dubaimetro.fyi/destinations/gold-souk/",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 59
+  },
+  {
+   "query": "jbr dubai directions",
+   "page": "https://dubaimetro.fyi/destinations/jbr/",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 48
+  },
+  {
+   "query": "jumeirah beach metro station",
+   "page": "https://dubaimetro.fyi/destinations/jbr/",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 11
+  },
+  {
+   "query": "jumeirah beach residence 1 tram station",
+   "page": "https://dubaimetro.fyi/destinations/jbr/",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 74
+  },
+  {
+   "query": "jumeirah beach residence 1 tram station",
+   "page": "https://dubaimetro.fyi/tram/",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 53
+  },
+  {
+   "query": "mall of the emirates directions",
+   "page": "https://dubaimetro.fyi/destinations/mall-of-the-emirates/",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 64
+  },
+  {
+   "query": "marina metro station dubai",
+   "page": "https://dubaimetro.fyi/destinations/dubai-marina/",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 96
+  },
+  {
+   "query": "metro station near museum of the future",
+   "page": "https://dubaimetro.fyi/destinations/museum-of-the-future/",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 10
+  },
+  {
+   "query": "metro station near palm jumeirah",
+   "page": "https://dubaimetro.fyi/destinations/atlantis-the-palm/",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 90
+  },
+  {
+   "query": "moe metro station",
+   "page": "https://dubaimetro.fyi/destinations/mall-of-the-emirates/",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 85.5
+  },
+  {
+   "query": "nearest metro station to dubai mall",
+   "page": "https://dubaimetro.fyi/destinations/dubai-mall/",
+   "clicks": 0,
+   "impressions": 5,
+   "ctr": 0,
+   "position": 9.8
+  },
+  {
+   "query": "nearest metro station to gold souk",
+   "page": "https://dubaimetro.fyi/destinations/gold-souk/",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 56
+  },
+  {
+   "query": "palm metro",
+   "page": "https://dubaimetro.fyi/destinations/atlantis-the-palm/",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 71
+  },
+  {
+   "query": "palm metro",
+   "page": "https://dubaimetro.fyi/palm-monorail/",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 43
+  },
+  {
+   "query": "terminal 3 metro station",
+   "page": "https://dubaimetro.fyi/destinations/dubai-airport/",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 94.5
+  },
+  {
+   "query": "the pointe monorail station",
+   "page": "https://dubaimetro.fyi/destinations/atlantis-the-palm/",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 41
+  },
+  {
+   "query": "tram stations",
+   "page": "https://dubaimetro.fyi/tram/",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 93
+  }
+ ],
+ "countries": [
+  {
+   "country": "are",
+   "clicks": 4,
+   "impressions": 125,
+   "ctr": 0.032,
+   "position": 20.7
+  },
+  {
+   "country": "aus",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 11
+  },
+  {
+   "country": "aut",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 11
+  },
+  {
+   "country": "bgd",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 12
+  },
+  {
+   "country": "dnk",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 7
+  },
+  {
+   "country": "gbr",
+   "clicks": 0,
+   "impressions": 6,
+   "ctr": 0,
+   "position": 8.5
+  },
+  {
+   "country": "idn",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 3
+  },
+  {
+   "country": "ind",
+   "clicks": 0,
+   "impressions": 29,
+   "ctr": 0,
+   "position": 9.1
+  },
+  {
+   "country": "irq",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 9
+  },
+  {
+   "country": "ita",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 1
+  },
+  {
+   "country": "jpn",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 9
+  },
+  {
+   "country": "ken",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 6
+  },
+  {
+   "country": "khm",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 6
+  },
+  {
+   "country": "mlt",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 8
+  },
+  {
+   "country": "mus",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 10
+  },
+  {
+   "country": "omn",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 8.5
+  },
+  {
+   "country": "pak",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 10
+  },
+  {
+   "country": "phl",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 9
+  },
+  {
+   "country": "sau",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 9
+  },
+  {
+   "country": "sgp",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 9
+  },
+  {
+   "country": "swe",
+   "clicks": 0,
+   "impressions": 2,
+   "ctr": 0,
+   "position": 8
+  },
+  {
+   "country": "tha",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 10
+  },
+  {
+   "country": "usa",
+   "clicks": 0,
+   "impressions": 7,
+   "ctr": 0,
+   "position": 27.3
+  },
+  {
+   "country": "zmb",
+   "clicks": 0,
+   "impressions": 1,
+   "ctr": 0,
+   "position": 4
+  }
+ ],
+ "devices": [
+  {
+   "device": "MOBILE",
+   "clicks": 4,
+   "impressions": 128,
+   "ctr": 0.0312,
+   "position": 8.7
+  },
+  {
+   "device": "DESKTOP",
+   "clicks": 0,
+   "impressions": 61,
+   "ctr": 0,
+   "position": 35.3
+  },
+  {
+   "device": "TABLET",
+   "clicks": 0,
+   "impressions": 3,
+   "ctr": 0,
+   "position": 10.3
+  }
+ ],
+ "totals": {
+  "clicks": 4,
+  "impressions": 192
+ },
+ "sitemaps": [
+  {
+   "path": "https://dubaimetro.fyi/sitemap.xml",
+   "lastSubmitted": "2026-10-07T23:33:16.756Z",
+   "isPending": false,
+   "isSitemapsIndex": false,
+   "type": "sitemap",
+   "lastDownloaded": "2026-10-09T09:33:01.282Z",
+   "warnings": "0",
+   "errors": "0",
+   "contents": [
+    {
+     "type": "web",
+     "submitted": "105",
+     "indexed": "0"
+    },
+    {
+     "type": "image",
+     "submitted": "12",
+     "indexed": "0"
+    }
+   ]
+  }
+ ]
+}
