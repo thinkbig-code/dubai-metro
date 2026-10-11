@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-11T08:57:05Z",
+ "generated": "2026-10-11T09:56:47Z",
  "start": "2025-10-11",
  "end": "2026-10-12",
  "total": {
-  "total": 269,
-  "total_events": 167,
-  "total_utc": 269,
+  "total": 275,
+  "total_events": 172,
+  "total_utc": 275,
   "stats": [
    {
     "day": "2025-10-11",
@@ -10688,7 +10688,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 269
+    "monthly": 275
    },
    {
     "day": "2026-10-02",
@@ -10960,7 +10960,7 @@
      0
     ],
     "daily": 17,
-    "weekly": 48
+    "weekly": 54
    },
    {
     "day": "2026-10-11",
@@ -10978,7 +10978,7 @@
      0,
      0,
      9,
-     0,
+     6,
      0,
      0,
      0,
@@ -10990,7 +10990,7 @@
      0,
      0
     ],
-    "daily": 31
+    "daily": 37
    },
    {
     "day": "2026-10-12",
@@ -11030,7 +11030,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 87,
+   "count": 88,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -11041,7 +11041,7 @@
     "2026-10-08": 16,
     "2026-10-09": 7,
     "2026-10-10": 4,
-    "2026-10-11": 7
+    "2026-10-11": 8
    }
   },
   {
@@ -11049,12 +11049,12 @@
    "path_id": 110447314,
    "title": "en",
    "event": true,
-   "count": 24,
+   "count": 25,
    "daily": {
     "2026-10-08": 7,
     "2026-10-09": 6,
     "2026-10-10": 4,
-    "2026-10-11": 7
+    "2026-10-11": 8
    }
   },
   {
@@ -11226,6 +11226,46 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "view/bb/p_palm_jumeirah_mall",
+   "path_id": 111099124,
+   "title": "en|opt_2",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-11": 1
+   }
+  },
+  {
+   "path": "route/bb/p_palm_jumeirah_mall",
+   "path_id": 111099045,
+   "title": "en|search|ok|first_station_search",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-11": 1
+   }
+  },
+  {
+   "path": "place/p_palm_jumeirah_mall/to",
+   "path_id": 111099044,
+   "title": "en|name",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-11": 1
+   }
+  },
+  {
+   "path": "station/bb/from",
+   "path_id": 111098964,
+   "title": "en|name",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-11": 1
    }
   },
   {
@@ -12441,9 +12481,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 102,
-  "events_total": 167,
-  "goatcounter_total_with_events": 269,
+  "visits": 103,
+  "events_total": 172,
+  "goatcounter_total_with_events": 275,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -12454,20 +12494,20 @@
    "2026-10-08": 22,
    "2026-10-09": 11,
    "2026-10-10": 5,
-   "2026-10-11": 9
+   "2026-10-11": 10
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
    "2026-10-09": 6,
    "2026-10-10": 5,
-   "2026-10-11": 7
+   "2026-10-11": 8
   },
-  "visitor_days": 25,
-  "return_rate": 0.04,
-  "routes": 31,
+  "visitor_days": 26,
+  "return_rate": 0.038,
+  "routes": 32,
   "routes_not_found": 0,
-  "routes_per_visit": 0.3,
-  "routes_per_visitor_day": 0.8,
+  "routes_per_visit": 0.31,
+  "routes_per_visitor_day": 0.81,
   "share_rate": 0.0,
   "shares": {},
   "failed_search_rate": 0.0,
@@ -12478,10 +12518,14 @@
    "fail": 1
   },
   "visitors_new_return": {
-   "new": 24,
+   "new": 25,
    "return": 1
   },
   "top_routes": [
+   {
+    "name": "bb > p_palm_jumeirah_mall",
+    "count": 1
+   },
    {
     "name": "moe > dhcc",
     "count": 1
@@ -12537,10 +12581,6 @@
    {
     "name": "union > garhoud",
     "count": 1
-   },
-   {
-    "name": "centrepoint > creek",
-    "count": 1
    }
   ],
   "top_origins": [
@@ -12555,6 +12595,10 @@
    {
     "name": "bk",
     "count": 3
+   },
+   {
+    "name": "bb",
+    "count": 2
    },
    {
     "name": "moe",
@@ -12579,10 +12623,6 @@
    {
     "name": "pj",
     "count": 1
-   },
-   {
-    "name": "jbr1",
-    "count": 1
    }
   ],
   "top_destinations": [
@@ -12603,6 +12643,10 @@
     "count": 2
    },
    {
+    "name": "p_palm_jumeirah_mall",
+    "count": 1
+   },
+   {
     "name": "dhcc",
     "count": 1
    },
@@ -12621,10 +12665,6 @@
    {
     "name": "atlantis",
     "count": 1
-   },
-   {
-    "name": "palmgw",
-    "count": 1
    }
   ]
  },
@@ -12632,7 +12672,7 @@
   "/": [
    {
     "name": "(direct or unknown)",
-    "count": 76
+    "count": 77
    },
    {
     "name": "com.reddit.frontpage",
@@ -12718,7 +12758,7 @@
   "(direct or unknown)": [
    {
     "path": "/",
-    "count": 76
+    "count": 77
    },
    {
     "path": "/destinations/atlantis-the-palm",
@@ -12807,7 +12847,7 @@
  "toprefs": [
   {
    "name": "",
-   "count": 218,
+   "count": 224,
    "ref_scheme": "o"
   },
   {
@@ -12869,7 +12909,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 240
+   "count": 246
   },
   {
    "id": "(unknown)",
@@ -12896,7 +12936,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 197
+   "count": 203
   },
   {
    "id": "US",
@@ -13008,7 +13048,7 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 106
+   "count": 112
   },
   {
    "id": "desktophd",
@@ -13025,7 +13065,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 167
+   "count": 173
   },
   {
    "id": "Safari",
@@ -13056,7 +13096,7 @@
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 56
+   "count": 62
   },
   {
    "id": "Android",
