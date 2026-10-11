@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-11T03:47:06Z",
+ "generated": "2026-10-11T04:04:13Z",
  "start": "2025-10-11",
  "end": "2026-10-12",
  "total": {
-  "total": 250,
-  "total_events": 154,
-  "total_utc": 250,
+  "total": 253,
+  "total_events": 156,
+  "total_utc": 253,
   "stats": [
    {
     "day": "2025-10-11",
@@ -10688,7 +10688,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 250
+    "monthly": 253
    },
    {
     "day": "2026-10-02",
@@ -10960,7 +10960,7 @@
      0
     ],
     "daily": 17,
-    "weekly": 29
+    "weekly": 32
    },
    {
     "day": "2026-10-11",
@@ -10972,7 +10972,7 @@
      0,
      0,
      0,
-     2,
+     5,
      0,
      0,
      0,
@@ -10990,7 +10990,7 @@
      0,
      0
     ],
-    "daily": 12
+    "daily": 15
    },
    {
     "day": "2026-10-12",
@@ -11030,7 +11030,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 82,
+   "count": 83,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -11041,7 +11041,7 @@
     "2026-10-08": 16,
     "2026-10-09": 7,
     "2026-10-10": 4,
-    "2026-10-11": 2
+    "2026-10-11": 3
    }
   },
   {
@@ -11049,12 +11049,12 @@
    "path_id": 110447314,
    "title": "en",
    "event": true,
-   "count": 19,
+   "count": 20,
    "daily": {
     "2026-10-08": 7,
     "2026-10-09": 6,
     "2026-10-10": 4,
-    "2026-10-11": 2
+    "2026-10-11": 3
    }
   },
   {
@@ -11193,6 +11193,17 @@
    "daily": {
     "2026-10-05": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "map_station_click/bk/-",
+   "path_id": 109553304,
+   "title": "en|home|phone",
+   "event": true,
+   "count": 2,
+   "daily": {
+    "2026-10-04": 1,
+    "2026-10-11": 1
    }
   },
   {
@@ -12227,16 +12238,6 @@
    }
   },
   {
-   "path": "map_station_click/bk/-",
-   "path_id": 109553304,
-   "title": "en|home|phone",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-04": 1
-   }
-  },
-  {
    "path": "route_from_station_click/dmt/-",
    "path_id": 109553303,
    "title": "en",
@@ -12369,9 +12370,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 96,
-  "events_total": 154,
-  "goatcounter_total_with_events": 250,
+  "visits": 97,
+  "events_total": 156,
+  "goatcounter_total_with_events": 253,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -12382,20 +12383,20 @@
    "2026-10-08": 22,
    "2026-10-09": 11,
    "2026-10-10": 5,
-   "2026-10-11": 3
+   "2026-10-11": 4
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
    "2026-10-09": 6,
    "2026-10-10": 5,
-   "2026-10-11": 2
+   "2026-10-11": 3
   },
-  "visitor_days": 20,
-  "return_rate": 0.05,
+  "visitor_days": 21,
+  "return_rate": 0.048,
   "routes": 30,
   "routes_not_found": 0,
   "routes_per_visit": 0.31,
-  "routes_per_visitor_day": 0.95,
+  "routes_per_visitor_day": 0.9,
   "share_rate": 0.0,
   "shares": {},
   "failed_search_rate": 0.0,
@@ -12406,7 +12407,7 @@
    "fail": 1
   },
   "visitors_new_return": {
-   "new": 19,
+   "new": 20,
    "return": 1
   },
   "top_routes": [
@@ -12563,12 +12564,12 @@
     "count": 72
    },
    {
-    "name": "www.bing.com",
+    "name": "com.reddit.frontpage",
     "count": 4
    },
    {
-    "name": "com.reddit.frontpage",
-    "count": 3
+    "name": "www.bing.com",
+    "count": 4
    },
    {
     "name": "Yahoo",
@@ -12659,16 +12660,16 @@
     "count": 1
    }
   ],
-  "www.bing.com": [
+  "com.reddit.frontpage": [
    {
     "path": "/",
     "count": 4
    }
   ],
-  "com.reddit.frontpage": [
+  "www.bing.com": [
    {
     "path": "/",
-    "count": 3
+    "count": 4
    }
   ],
   "Yahoo": [
@@ -12729,7 +12730,7 @@
   {
    "id": "com.reddit.frontpage",
    "name": "com.reddit.frontpage",
-   "count": 20,
+   "count": 23,
    "ref_scheme": "o"
   },
   {
@@ -12779,7 +12780,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 222
+   "count": 225
   },
   {
    "id": "rus",
@@ -12806,7 +12807,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 181
+   "count": 184
   },
   {
    "id": "US",
@@ -12908,7 +12909,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 118
+   "count": 121
   },
   {
    "id": "tablet",
@@ -12935,7 +12936,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 163
+   "count": 166
   },
   {
    "id": "Safari",
@@ -12971,7 +12972,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 39
+   "count": 42
   },
   {
    "id": "Linux",
