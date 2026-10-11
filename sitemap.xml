@@ -171,6 +171,14 @@
     <image:image><image:loc>https://dubaimetro.fyi/dubai-metro-map.png</image:loc></image:image>
   </url>
   <url>
+    <loc>https://dubaimetro.fyi/nearest-station/</loc>
+    <lastmod>2026-10-11</lastmod>
+  </url>
+  <url>
+    <loc>https://dubaimetro.fyi/rules/</loc>
+    <lastmod>2026-10-11</lastmod>
+  </url>
+  <url>
     <loc>https://dubaimetro.fyi/lines/red-line/</loc>
     <lastmod>2026-10-11</lastmod>
   </url>

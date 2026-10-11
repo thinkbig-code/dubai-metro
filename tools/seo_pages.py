@@ -333,7 +333,7 @@ def frame(path, title, desc, body, crumbs, ld_extra=None, og_image='og-image.png
 <style>{CSS}</style>
 </head>
 <body>
-<header class="top"><nav><a class="brand" href="{root}">Dubai Metro Map</a><a href="{root}lines/red-line/">Red Line</a><a href="{root}lines/green-line/">Green Line</a><a href="{root}tram/">Tram</a><a href="{root}stations/">Stations</a><a href="{root}map/">Metro map</a></nav></header>
+<header class="top"><nav><a class="brand" href="{root}">Dubai Metro Map</a><a href="{root}lines/red-line/">Red Line</a><a href="{root}lines/green-line/">Green Line</a><a href="{root}tram/">Tram</a><a href="{root}stations/">Stations</a><a href="{root}map/">Metro map</a><a href="{root}nearest-station/">Nearest station</a><a href="{root}rules/">Rules and fines</a></nav></header>
 <main>
 <div class="crumbs">{crumb_html}</div>
 {body}
@@ -504,7 +504,9 @@ def destination(d):
     body.append(hours_html(kinds))
     body.append('<h2>Nearby on this map</h2>' + related_dest(d['slug']))
     title = answer_title(d['title'], kind_word, main, sid)
-    desc = answer_desc(d['title'], kind_word, main, sid, 'Travel times from the airport and other areas, Nol fare and hours.')
+    # the title already answers 'which station'; the description says what only the page gives (the live map, set up for this trip)
+    desc = 'Live map with %s as your destination: tap the station you start from to see the route, changes, travel time and Nol fare. Nearest %s: %s%s.' % (
+        d['title'], kind_word, s['n'], ', then bus or taxi' if main.get('note') else '')
     write(path, frame(path, title, desc, '\n'.join(body), [(path, d['title'])]))
 
 
@@ -568,7 +570,8 @@ def station(cfg):
     title = '%s %s, Dubai: %s%s' % (s['n'], kind.title(), short_lines(lines), (' (formerly %s)' % other_names(sid)[0]) if other_names(sid) else '')
     if len(title) > 75:
         title = '%s %s, Dubai: %s' % (s['n'], kind.title(), short_lines(lines))      # too long for a search result: drop the old name
-    desc = lead.split('. ')[0] + '. ' + ('Also called %s. ' % ', '.join(other_names(sid)) if other_names(sid) else '') + 'Routes, walking links, fare zone and hours.'
+    desc = ('Live map from %s (%s): tap any station or place to see the route, changes, travel time and Nol fare. ' % (s['n'], ', '.join(LINE_NAME[l] for l in lines))
+            + ('Also called %s. ' % ', '.join(other_names(sid)) if other_names(sid) else '') + 'Walking links, fare zone and hours.')
     write(path, frame(path, title, desc, '\n'.join(body), [('stations/', 'Stations'), (path, s['n'])],
                       {"@context": "https://schema.org", "@type": "SubwayStation", "name": s['n'], **({"alternateName": s['f']} if s['f'] else {}),
                        "geo": {"@type": "GeoCoordinates", "latitude": D['geo'][sid][0], "longitude": D['geo'][sid][1]}} if sid in D['geo'] else None))
@@ -777,10 +780,81 @@ def map_page():
     write(path, frame(path, 'Dubai Metro Map 2026: All Lines and Stations (Image and Interactive)', lead, '\n'.join(body), [(path, 'Map')], ld, og_image=MAP_IMG))
 
 
+RULE_SRC = [
+    ('Fines: Roads and Transport Authority (RTA)', 'https://www.rta.ae/wps/portal/rta/ae/home/about-rta/fines'),
+    ('Nol fares, zones, passes and discounts: RTA', 'https://rta.ae/wps/portal/rta/ae/public-transport/Nol-Fares?lang=en'),
+    ('Minimum balance to enter: RTA, About nol card (Arabic)', 'https://rta.ae/wps/portal/rta/ae/public-transport/About-Nol-Card?lang=ar'),
+    ('Bank card and phone payment at the gates is still being rolled out (Khaleej Times, July 2026)', 'https://www.khaleejtimes.com/uae/transport/dubai-nol-as-bank-card-rta-completes-72-payment-upgrade'),
+    ('Folding e-scooters allowed since October 2024 (Gulf Business)', 'https://gulfbusiness.com/en/2024/transport/rta-lifts-ban-on-e-scooters-for-metro-tram-riders'),
+    ('Luggage on the metro (Gulf News, November 2025)', 'https://gulfnews.com/uae/transport/54th-eid-al-etihad-holidays-taking-dubai-metro-to-airport-rta-clarifies-luggage-rules-1.500362687'),
+]
+
+
+def nearest_page():
+    """people search 'nearest metro station' / 'metro near me': one button that finds it from the phone's location"""
+    path = 'nearest-station/'
+    lead = ('Tap the button to find the Dubai Metro or Tram station nearest to you right now. The map uses your phone\'s location once, '
+            'puts the nearest station in the From field, and then you pick where you are going to see the route, travel time and Nol fare.')
+    body = ['<h1>Nearest Dubai Metro station to me</h1>', '<p class="lead">%s</p>' % e(lead),
+            '<a class="cta" href="{ROOT}#near">Find my nearest station</a>',
+            '<p class="note">Your coordinates stay on your phone: the nearest station is worked out in the browser. We only count which station was found, with no personal data. '
+            'If you would rather not share it, tap any station on the map or type a place.</p>',
+            app_frame(None, None, 'The interactive map: tap its location button or pick a station.'),
+            '<h2>Rather not share your location?</h2>',
+            '<p>Browse <a href="{ROOT}stations/">all stations</a> or the <a href="{ROOT}map/">metro map</a>.</p>',
+            hours_html(['metro', 'tram'])]
+    desc = 'Find the Dubai Metro or Tram station closest to you with one tap from your phone\'s location, then the route, travel time and Nol fare on a live map.'
+    write(path, frame(path, 'Nearest Metro Station to Me in Dubai: Find It by Location', desc, '\n'.join(body), [(path, 'Nearest station')]))
+
+
+def rules_page():
+    """rider guide: Nol cards and fares, paying, the RTA fines, common mistakes; every fact with its source"""
+    path = 'rules/'
+    lead = ('What a new rider needs to know: which Nol card to use, what a trip costs, what is fined and how much, '
+            'and the mistakes people make in their first week. Fines are from the RTA; check rta.ae for any change.')
+    body = ['<h1>Dubai Metro rules, fines and Nol fares</h1>', '<p class="lead">%s</p>' % e(lead),
+            '<a class="cta" href="{ROOT}">Open the interactive map</a>',
+            '<h2>Fares by Nol card</h2><table><tr><th>Card</th><th>1 zone</th><th>2 zones</th><th>3 or more zones</th></tr>']
+    for n, k in (('Silver (standard)', 'silver'), ('Gold (Gold Class cabin)', 'gold'), ('Red ticket (paper)', 'red')):
+        body.append('<tr><td>%s</td>%s</tr>' % (e(n), ''.join('<td>AED %g</td>' % x for x in FARES[k])))
+    body.append('</table><p class="note">Metro, tram and buses share 7 fare zones. A journey can last up to 180 minutes with up to 3 changes. '
+                'The fare is taken when you tap out; you need at least AED 7.50 on a Silver card to enter. Children aged 5 and under travel free; '
+                'students, seniors and Social Affairs beneficiaries get 50% off with a personal (Blue) card, and people of determination travel free.</p>')
+    body.append('<h2>How to pay</h2><ul>'
+                '<li><b>Nol card</b> (Silver, Gold or personal Blue): tap in at the gate and tap out at the end.</li>'
+                '<li><b>Red ticket</b>: a paper ticket for a few trips, sold at the ticket machines.</li>'
+                '<li><b>Digital Nol card</b> on supported Samsung and Huawei phones. iPhone, Apple Pay and bank cards cannot be used at the gates yet: '
+                'the RTA is rolling this out, with completion expected by early 2027.</li></ul>')
+    body.append('<h2>Fines</h2><table><tr><th>Violation</th><th>Fine</th></tr>')
+    for v, f in [('Riding without paying the right fare, an expired or invalid card, or someone else\'s card', 200),
+                 ('Sitting in Gold Class without a Gold card, or men in the women and children cabin', 100),
+                 ('Eating or drinking where it is not allowed', 100), ('Sleeping in stations or other prohibited places', 300),
+                 ('Smoking', 200), ('Feet on the seats', 100), ('Disturbing other passengers', 100), ('Animals (guide dogs allowed)', 100),
+                 ('Spitting or littering', 200), ('Opening the doors or trying to get off while the train moves', 100),
+                 ('Carrying alcohol', 500), ('Weapons, sharp tools or flammable items', 1000),
+                 ('Using emergency buttons or exits when there is no emergency', 2000), ('Damaging trains, seats or equipment', 2000),
+                 ('Crossing the tram tracks outside the crossings', 1000)]:
+        body.append('<tr><td>%s</td><td>AED %d</td></tr>' % (e(v), f))
+    body.append('</table><p class="note">From the RTA fines list. Folding e-scooters and folding bicycles are allowed when folded and switched off.</p>')
+    body.append('<h2>Common mistakes</h2><ul>'
+                '<li>Sitting in Gold Class with a Silver card: AED 100, and inspectors check it.</li>'
+                '<li>Too little balance: you need AED 7.50 on a Silver card to enter, and the fare is taken when you leave.</li>'
+                '<li>Drinking or eating on the train or platform.</li>'
+                '<li>Using a family member\'s discounted Blue card: it counts as using someone else\'s card (AED 200).</li>'
+                '<li>Expecting to tap an iPhone or a bank card at the gate: not possible yet.</li>'
+                '<li>Heading to Terminal 2 by metro: only Terminals 1 and 3 have Red Line stations.</li></ul>')
+    body.append('<h2>Sources</h2><ul>' + ''.join('<li><a href="%s" rel="nofollow">%s</a></li>' % (u, e(t_)) for t_, u in RULE_SRC) + '</ul>')
+    body.append('<p><a href="{ROOT}nearest-station/">Nearest station to me</a> · <a href="{ROOT}map/">Metro map</a> · <a href="{ROOT}stations/">All stations</a></p>')
+    desc = 'Dubai Metro fines from AED 100 to AED 2,000, Nol card fares by zone (Silver, Gold, Red), paying at the gates, discounts and the mistakes new riders make.'
+    write(path, frame(path, 'Dubai Metro Rules and Fines 2026: Nol Fares, Gold Class, Common Mistakes', desc, '\n'.join(body), [(path, 'Rules and fines')]))
+
+
 def build():
     PAGES.clear()
     stations_list()
     map_page()
+    nearest_page()
+    rules_page()
     line_pages()
     for d in CFG['destinations']:
         destination(d)
