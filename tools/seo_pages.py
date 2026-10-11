@@ -441,6 +441,8 @@ def answer_title(T, kind, main, sid, with_lines=True):
         return answer_title(T, kind, main, sid, False)
     if len(t) > 75 and '(' in T:     # still too long: drop the other name in brackets
         return answer_title(re.sub(r'\s*\(.*?\)', '', T), kind, main, sid, False)
+    if len(t) > 75 and ', ' in t and t.endswith('min walk'):   # last resort: the walking time is on the page anyway
+        t = t.rsplit(', ', 1)[0]
     return t
 
 

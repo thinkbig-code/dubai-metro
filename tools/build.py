@@ -16,6 +16,7 @@ s=open(os.path.join(ROOT,'src','dubai-metro.html')).read()
 # shared links point to wherever the page is hosted
 s,n=re.subn(r'const BASE_URL="[^"]*";','// On your own site, shared links point to wherever this page is hosted\nconst BASE_URL=location.origin+location.pathname;',s)
 assert n==1, "BASE_URL line not found"
+s = s.replace('#about h1{', '#about h1,#aboutH{', 1)   # the about block uses an H2 (one H1 per page)
 te=s.index('</title>')+len('</title>');rest=s[te:]
 i_map=rest.index('<div id="map"')
 
@@ -71,7 +72,7 @@ def page(L):
     other=' · '.join(f'<a href="{TX[o]["file"] if TX[o]["file"]!="index.html" else "./"}" hreflang="{o}" lang="{o}">{TX[o]["langName"]}</a>' for o in ORDER if o!=L)
     about=f'''<section id="about" aria-labelledby="aboutH" lang="{L}" dir="{X["dir"]}">
 <button id="aboutClose" aria-label="{html.escape(X["close"])}">×</button>
-<h1 id="aboutH">{html.escape(X["h1"])}</h1>
+<h2 id="aboutH">{html.escape(X["h1"])}</h2>
 <p>{html.escape(X["intro"])}</p>
 <p><a href="map/" hreflang="en"><img src="dubai-metro-map.png" width="{seo_pages.MAP_W}" height="{seo_pages.MAP_H}" alt="{html.escape(seo_pages.MAP_ALT)}" loading="lazy" style="width:100%;height:auto;border-radius:12px"></a></p>
 <h2>{html.escape(X["popular"])}</h2>
@@ -156,3 +157,9 @@ urls+='\n'+'\n'.join(f'  <url>\n    <loc>{SITE}{p}</loc>\n    <lastmod>{today}</
 open(OUT+'sitemap.xml','w').write(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n{urls}\n</urlset>\n')
 open(OUT+'robots.txt','w').write(f'User-agent: *\nAllow: /\n\nSitemap: {SITE}sitemap.xml\n')
 print("deploy built:",', '.join(TX[L]["file"] for L in ORDER),"+",len(GUIDES),"guide pages")
+
+# last step: SEO check of everything just built (stops with an error if a canonical, hreflang, sitemap URL or link is broken)
+import subprocess as _sp
+_r = _sp.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'seo_check.py'), os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')])
+if _r.returncode:
+    sys.exit('SEO check found errors: fix them before publishing')
