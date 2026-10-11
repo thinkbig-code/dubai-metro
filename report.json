@@ -1,0 +1,171 @@
+{
+ "host": "dubaimetro.fyi",
+ "generated": "2026-10-11",
+ "gsc_period": [
+  "2026-09-13",
+  "2026-10-11"
+ ],
+ "index_checked": "2026-10-11T03:47:31Z",
+ "low_ctr_queries": [
+  {
+   "query": "nearest metro station to dubai mall",
+   "impressions": 5,
+   "clicks": 0,
+   "position": 9.8,
+   "page": "/destinations/dubai-mall/",
+   "lost_clicks": 0.15
+  }
+ ],
+ "near_page_one": [
+  {
+   "query": "dubai marina tram map",
+   "impressions": 2,
+   "position": 12.5,
+   "page": "/tram/"
+  }
+ ],
+ "pages_no_clicks": [
+  {
+   "page": "/destinations/etihad-rail-dubai/",
+   "impressions": 33,
+   "position": 9
+  },
+  {
+   "page": "/destinations/expo-city-dubai/",
+   "impressions": 27,
+   "position": 12.8
+  },
+  {
+   "page": "/destinations/museum-of-the-future/",
+   "impressions": 27,
+   "position": 9.4
+  },
+  {
+   "page": "/destinations/dubai-marina/",
+   "impressions": 17,
+   "position": 17.4
+  },
+  {
+   "page": "/destinations/jbr/",
+   "impressions": 16,
+   "position": 19.2
+  },
+  {
+   "page": "/destinations/dubai-airport/",
+   "impressions": 13,
+   "position": 38.8
+  },
+  {
+   "page": "/destinations/dubai-frame/",
+   "impressions": 13,
+   "position": 9.3
+  },
+  {
+   "page": "/tram/",
+   "impressions": 12,
+   "position": 38.5
+  },
+  {
+   "page": "/destinations/atlantis-the-palm/",
+   "impressions": 11,
+   "position": 25.4
+  }
+ ],
+ "index_by_type": {
+  "ar home": {
+   "indexed": 0,
+   "not_indexed": 1,
+   "not_checked": 0
+  },
+  "en destinations": {
+   "indexed": 71,
+   "not_indexed": 12,
+   "not_checked": 0
+  },
+  "en home": {
+   "indexed": 1,
+   "not_indexed": 0,
+   "not_checked": 0
+  },
+  "en home-other-language": {
+   "indexed": 1,
+   "not_indexed": 7,
+   "not_checked": 0
+  },
+  "en lines": {
+   "indexed": 2,
+   "not_indexed": 0,
+   "not_checked": 0
+  },
+  "en map": {
+   "indexed": 1,
+   "not_indexed": 0,
+   "not_checked": 0
+  },
+  "en nearest-station": {
+   "indexed": 0,
+   "not_indexed": 1,
+   "not_checked": 0
+  },
+  "en palm-monorail": {
+   "indexed": 1,
+   "not_indexed": 0,
+   "not_checked": 0
+  },
+  "en routes": {
+   "indexed": 0,
+   "not_indexed": 3,
+   "not_checked": 0
+  },
+  "en rules": {
+   "indexed": 0,
+   "not_indexed": 1,
+   "not_checked": 0
+  },
+  "en stations": {
+   "indexed": 3,
+   "not_indexed": 66,
+   "not_checked": 0
+  },
+  "en tram": {
+   "indexed": 1,
+   "not_indexed": 0,
+   "not_checked": 0
+  }
+ },
+ "request_today": [
+  "https://dubaimetro.fyi/routes/dubai-airport-to-dubai-mall/",
+  "https://dubaimetro.fyi/routes/dubai-airport-to-dubai-marina/",
+  "https://dubaimetro.fyi/routes/dubai-marina-to-dubai-mall/",
+  "https://dubaimetro.fyi/nearest-station/",
+  "https://dubaimetro.fyi/rules/",
+  "https://dubaimetro.fyi/destinations/address-downtown/",
+  "https://dubaimetro.fyi/destinations/ain-dubai/",
+  "https://dubaimetro.fyi/destinations/al-zahra-hospital-dubai/",
+  "https://dubaimetro.fyi/destinations/almas-tower/",
+  "https://dubaimetro.fyi/stations/"
+ ],
+ "languages": {
+  "en": {
+   "impressions": 51,
+   "clicks": 0
+  },
+  "ar": {
+   "impressions": 0,
+   "clicks": 0
+  }
+ },
+ "suggested_history": {
+  "https://dubaimetro.fyi/routes/dubai-airport-to-dubai-mall/": "2026-10-11",
+  "https://dubaimetro.fyi/routes/dubai-airport-to-dubai-marina/": "2026-10-11",
+  "https://dubaimetro.fyi/routes/dubai-marina-to-dubai-mall/": "2026-10-11",
+  "https://dubaimetro.fyi/nearest-station/": "2026-10-11",
+  "https://dubaimetro.fyi/rules/": "2026-10-11",
+  "https://dubaimetro.fyi/destinations/address-downtown/": "2026-10-11",
+  "https://dubaimetro.fyi/destinations/ain-dubai/": "2026-10-11",
+  "https://dubaimetro.fyi/destinations/al-zahra-hospital-dubai/": "2026-10-11",
+  "https://dubaimetro.fyi/destinations/almas-tower/": "2026-10-11",
+  "https://dubaimetro.fyi/stations/": "2026-10-11"
+ },
+ "_about": "Built by tools/gsc_report.py from gsc.json and gsc_index.json. Positions are averages over the period; lost_clicks = impressions x typical CTR for that position - clicks (a ranking aid, not a forecast)."
+}

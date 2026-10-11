@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-11T02:57:20Z",
+ "generated": "2026-10-11T03:47:06Z",
  "start": "2025-10-11",
  "end": "2026-10-12",
  "total": {
-  "total": 248,
-  "total_events": 153,
-  "total_utc": 248,
+  "total": 250,
+  "total_events": 154,
+  "total_utc": 250,
   "stats": [
    {
     "day": "2025-10-11",
@@ -10688,7 +10688,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 248
+    "monthly": 250
    },
    {
     "day": "2026-10-02",
@@ -10960,7 +10960,7 @@
      0
     ],
     "daily": 17,
-    "weekly": 27
+    "weekly": 29
    },
    {
     "day": "2026-10-11",
@@ -10972,7 +10972,7 @@
      0,
      0,
      0,
-     0,
+     2,
      0,
      0,
      0,
@@ -10990,7 +10990,7 @@
      0,
      0
     ],
-    "daily": 10
+    "daily": 12
    },
    {
     "day": "2026-10-12",
@@ -11030,7 +11030,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 81,
+   "count": 82,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -11041,7 +11041,7 @@
     "2026-10-08": 16,
     "2026-10-09": 7,
     "2026-10-10": 4,
-    "2026-10-11": 1
+    "2026-10-11": 2
    }
   },
   {
@@ -11049,12 +11049,12 @@
    "path_id": 110447314,
    "title": "en",
    "event": true,
-   "count": 18,
+   "count": 19,
    "daily": {
     "2026-10-08": 7,
     "2026-10-09": 6,
     "2026-10-10": 4,
-    "2026-10-11": 1
+    "2026-10-11": 2
    }
   },
   {
@@ -12369,9 +12369,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 95,
-  "events_total": 153,
-  "goatcounter_total_with_events": 248,
+  "visits": 96,
+  "events_total": 154,
+  "goatcounter_total_with_events": 250,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -12382,20 +12382,20 @@
    "2026-10-08": 22,
    "2026-10-09": 11,
    "2026-10-10": 5,
-   "2026-10-11": 2
+   "2026-10-11": 3
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
    "2026-10-09": 6,
    "2026-10-10": 5,
-   "2026-10-11": 1
+   "2026-10-11": 2
   },
-  "visitor_days": 19,
-  "return_rate": 0.053,
+  "visitor_days": 20,
+  "return_rate": 0.05,
   "routes": 30,
   "routes_not_found": 0,
-  "routes_per_visit": 0.32,
-  "routes_per_visitor_day": 1.0,
+  "routes_per_visit": 0.31,
+  "routes_per_visitor_day": 0.95,
   "share_rate": 0.0,
   "shares": {},
   "failed_search_rate": 0.0,
@@ -12406,7 +12406,7 @@
    "fail": 1
   },
   "visitors_new_return": {
-   "new": 18,
+   "new": 19,
    "return": 1
   },
   "top_routes": [
@@ -12560,7 +12560,7 @@
   "/": [
    {
     "name": "(direct or unknown)",
-    "count": 71
+    "count": 72
    },
    {
     "name": "www.bing.com",
@@ -12640,7 +12640,7 @@
   "(direct or unknown)": [
    {
     "path": "/",
-    "count": 71
+    "count": 72
    },
    {
     "path": "/destinations/atlantis-the-palm",
@@ -12723,7 +12723,7 @@
  "toprefs": [
   {
    "name": "",
-   "count": 201,
+   "count": 203,
    "ref_scheme": "o"
   },
   {
@@ -12779,7 +12779,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 220
+   "count": 222
   },
   {
    "id": "rus",
@@ -12806,7 +12806,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 179
+   "count": 181
   },
   {
    "id": "US",
@@ -12908,7 +12908,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 116
+   "count": 118
   },
   {
    "id": "tablet",
@@ -12940,7 +12940,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 80
+   "count": 82
   },
   {
    "id": "Firefox",
@@ -12956,7 +12956,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 76
+   "count": 78
   },
   {
    "id": "macOS",
