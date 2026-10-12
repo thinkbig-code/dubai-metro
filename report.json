@@ -1,11 +1,11 @@
 {
  "host": "dubaimetro.fyi",
- "generated": "2026-10-11",
+ "generated": "2026-10-12",
  "gsc_period": [
-  "2026-09-13",
-  "2026-10-11"
+  "2026-09-14",
+  "2026-10-12"
  ],
- "index_checked": "2026-10-11T03:47:31Z",
+ "index_checked": "2026-10-12T01:39:12Z",
  "low_ctr_queries": [
   {
    "query": "nearest metro station to dubai mall",
@@ -14,6 +14,22 @@
    "position": 9.8,
    "page": "/destinations/dubai-mall/",
    "lost_clicks": 0.15
+  },
+  {
+   "query": "al qiyadah police station dubai",
+   "impressions": 3,
+   "clicks": 0,
+   "position": 8.3,
+   "page": "/destinations/dubai-police-general-headquarters/",
+   "lost_clicks": 0.09
+  },
+  {
+   "query": "intitle:\"dubai metro\" -site:rta.ae -site:facebook.com -site:instagram.com -site:threads.com -site:threads.net -site:linkedin.com -site:x.com -site:twitter.com -site:tiktok.com -site:youtube.com -site:youtu.be -site:reddit.com -site:t.me -site:telegram.me -site:telegram.org -site:pinterest.com -site:vimeo.com",
+   "impressions": 3,
+   "clicks": 0,
+   "position": 7.3,
+   "page": "/destinations/indian-consulate-dubai/",
+   "lost_clicks": 0.09
   }
  ],
  "near_page_one": [
@@ -22,38 +38,49 @@
    "impressions": 2,
    "position": 12.5,
    "page": "/tram/"
+  },
+  {
+   "query": "etihad rail dubai station",
+   "impressions": 2,
+   "position": 16.5,
+   "page": "/destinations/etihad-rail-dubai/"
   }
  ],
  "pages_no_clicks": [
   {
    "page": "/destinations/etihad-rail-dubai/",
-   "impressions": 33,
-   "position": 9
-  },
-  {
-   "page": "/destinations/expo-city-dubai/",
-   "impressions": 27,
-   "position": 12.8
+   "impressions": 59,
+   "position": 8.5
   },
   {
    "page": "/destinations/museum-of-the-future/",
-   "impressions": 27,
-   "position": 9.4
+   "impressions": 33,
+   "position": 9.2
+  },
+  {
+   "page": "/destinations/expo-city-dubai/",
+   "impressions": 32,
+   "position": 17.9
   },
   {
    "page": "/destinations/dubai-marina/",
-   "impressions": 17,
-   "position": 17.4
+   "impressions": 27,
+   "position": 19.1
   },
   {
    "page": "/destinations/jbr/",
-   "impressions": 16,
-   "position": 19.2
+   "impressions": 20,
+   "position": 20.4
   },
   {
    "page": "/destinations/dubai-airport/",
-   "impressions": 13,
-   "position": 38.8
+   "impressions": 15,
+   "position": 35.1
+  },
+  {
+   "page": "/tram/",
+   "impressions": 14,
+   "position": 40.7
   },
   {
    "page": "/destinations/dubai-frame/",
@@ -61,14 +88,9 @@
    "position": 9.3
   },
   {
-   "page": "/tram/",
-   "impressions": 12,
-   "position": 38.5
-  },
-  {
    "page": "/destinations/atlantis-the-palm/",
-   "impressions": 11,
-   "position": 25.4
+   "impressions": 12,
+   "position": 24.3
   }
  ],
  "index_by_type": {
@@ -78,8 +100,8 @@
    "not_checked": 0
   },
   "en destinations": {
-   "indexed": 71,
-   "not_indexed": 12,
+   "indexed": 78,
+   "not_indexed": 5,
    "not_checked": 0
   },
   "en home": {
@@ -88,8 +110,8 @@
    "not_checked": 0
   },
   "en home-other-language": {
-   "indexed": 1,
-   "not_indexed": 7,
+   "indexed": 2,
+   "not_indexed": 6,
    "not_checked": 0
   },
   "en lines": {
@@ -134,20 +156,20 @@
   }
  },
  "request_today": [
-  "https://dubaimetro.fyi/routes/dubai-airport-to-dubai-mall/",
-  "https://dubaimetro.fyi/routes/dubai-airport-to-dubai-marina/",
-  "https://dubaimetro.fyi/routes/dubai-marina-to-dubai-mall/",
-  "https://dubaimetro.fyi/nearest-station/",
-  "https://dubaimetro.fyi/rules/",
-  "https://dubaimetro.fyi/destinations/address-downtown/",
-  "https://dubaimetro.fyi/destinations/ain-dubai/",
-  "https://dubaimetro.fyi/destinations/al-zahra-hospital-dubai/",
-  "https://dubaimetro.fyi/destinations/almas-tower/",
-  "https://dubaimetro.fyi/stations/"
+  "https://dubaimetro.fyi/destinations/difc/",
+  "https://dubaimetro.fyi/destinations/ibn-battuta-bus-station/",
+  "https://dubaimetro.fyi/destinations/jumeirah-emirates-towers/",
+  "https://dubaimetro.fyi/destinations/latifa-hospital/",
+  "https://dubaimetro.fyi/stations/abu-baker-al-siddique/",
+  "https://dubaimetro.fyi/stations/abu-hail/",
+  "https://dubaimetro.fyi/stations/adcb/",
+  "https://dubaimetro.fyi/stations/airport-terminal-1/",
+  "https://dubaimetro.fyi/bn.html",
+  "https://dubaimetro.fyi/fr.html"
  ],
  "languages": {
   "en": {
-   "impressions": 51,
+   "impressions": 74,
    "clicks": 0
   },
   "ar": {
@@ -165,7 +187,17 @@
   "https://dubaimetro.fyi/destinations/ain-dubai/": "2026-10-11",
   "https://dubaimetro.fyi/destinations/al-zahra-hospital-dubai/": "2026-10-11",
   "https://dubaimetro.fyi/destinations/almas-tower/": "2026-10-11",
-  "https://dubaimetro.fyi/stations/": "2026-10-11"
+  "https://dubaimetro.fyi/stations/": "2026-10-11",
+  "https://dubaimetro.fyi/destinations/difc/": "2026-10-12",
+  "https://dubaimetro.fyi/destinations/ibn-battuta-bus-station/": "2026-10-12",
+  "https://dubaimetro.fyi/destinations/jumeirah-emirates-towers/": "2026-10-12",
+  "https://dubaimetro.fyi/destinations/latifa-hospital/": "2026-10-12",
+  "https://dubaimetro.fyi/stations/abu-baker-al-siddique/": "2026-10-12",
+  "https://dubaimetro.fyi/stations/abu-hail/": "2026-10-12",
+  "https://dubaimetro.fyi/stations/adcb/": "2026-10-12",
+  "https://dubaimetro.fyi/stations/airport-terminal-1/": "2026-10-12",
+  "https://dubaimetro.fyi/bn.html": "2026-10-12",
+  "https://dubaimetro.fyi/fr.html": "2026-10-12"
  },
  "_about": "Built by tools/gsc_report.py from gsc.json and gsc_index.json. Positions are averages over the period; lost_clicks = impressions x typical CTR for that position - clicks (a ranking aid, not a forecast)."
 }
