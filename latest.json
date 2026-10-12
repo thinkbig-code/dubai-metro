@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-12T08:02:04Z",
+ "generated": "2026-10-12T09:01:55Z",
  "start": "2026-09-12",
  "end": "2026-10-13",
  "total": {
-  "total": 277,
-  "total_events": 173,
-  "total_utc": 277,
+  "total": 285,
+  "total_events": 175,
+  "total_utc": 285,
   "stats": [
    {
     "day": "2026-09-12",
@@ -608,7 +608,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 277
+    "monthly": 285
    },
    {
     "day": "2026-10-02",
@@ -880,7 +880,7 @@
      0
     ],
     "daily": 17,
-    "weekly": 56
+    "weekly": 64
    },
    {
     "day": "2026-10-11",
@@ -927,7 +927,7 @@
      0,
      0,
      0,
-     0,
+     8,
      0,
      0,
      0,
@@ -940,7 +940,7 @@
      0,
      0
     ],
-    "daily": 0
+    "daily": 8
    },
    {
     "day": "2026-10-13",
@@ -980,7 +980,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 89,
+   "count": 90,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -991,7 +991,8 @@
     "2026-10-08": 16,
     "2026-10-09": 7,
     "2026-10-10": 4,
-    "2026-10-11": 9
+    "2026-10-11": 9,
+    "2026-10-12": 1
    }
   },
   {
@@ -999,12 +1000,13 @@
    "path_id": 110447314,
    "title": "en",
    "event": true,
-   "count": 26,
+   "count": 27,
    "daily": {
     "2026-10-08": 7,
     "2026-10-09": 6,
     "2026-10-10": 4,
-    "2026-10-11": 9
+    "2026-10-11": 9,
+    "2026-10-12": 1
    }
   },
   {
@@ -1036,6 +1038,28 @@
    "daily": {
     "2026-10-05": 2,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/lines/green-line",
+   "path_id": 111066360,
+   "title": "Dubai Metro Green Line: Stations, Map and Hours",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-10-11": 1,
+    "2026-10-12": 1
+   }
+  },
+  {
+   "path": "/destinations/etihad-rail-dubai",
+   "path_id": 110626146,
+   "title": "Etihad Rail Dubai Station (Al Yalayis) Metro Station: Jumeirah Golf Estates",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-10-09": 1,
+    "2026-10-12": 1
    }
   },
   {
@@ -1179,6 +1203,46 @@
    }
   },
   {
+   "path": "route/p_dxb_airport_terminal_3/p_dubai_municipality_head_office",
+   "path_id": 111690652,
+   "title": "en|landing:destinations-dubai-municipality-head-office|ok|first_landing",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-12": 1
+   }
+  },
+  {
+   "path": "/destinations/dubai-municipality-head-office",
+   "path_id": 111690629,
+   "title": "Dubai Municipality Head Office Metro Station: Union, 9 min walk",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-10-12": 1
+   }
+  },
+  {
+   "path": "/stations/centrepoint",
+   "path_id": 111685825,
+   "title": "Centrepoint Metro Station, Dubai: Red Line (formerly Al Rashidiya)",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-10-12": 1
+   }
+  },
+  {
+   "path": "/lines/red-line",
+   "path_id": 111681936,
+   "title": "Dubai Metro Red Line: Stations, Expo Branch, Map and Hours",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-10-12": 1
+   }
+  },
+  {
    "path": "view/bb/p_palm_jumeirah_mall",
    "path_id": 111099124,
    "title": "en|opt_2",
@@ -1273,16 +1337,6 @@
    "path_id": 111090912,
    "title": "en",
    "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-11": 1
-   }
-  },
-  {
-   "path": "/lines/green-line",
-   "path_id": 111066360,
-   "title": "Dubai Metro Green Line: Stations, Map and Hours",
-   "event": false,
    "count": 1,
    "daily": {
     "2026-10-11": 1
@@ -1453,16 +1507,6 @@
    "path_id": 110626598,
    "title": "en|landing:destinations-etihad-rail-dubai|ok|first_landing",
    "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-09": 1
-   }
-  },
-  {
-   "path": "/destinations/etihad-rail-dubai",
-   "path_id": 110626146,
-   "title": "Etihad Rail Dubai Station (Al Yalayis) Metro Station: Jumeirah Golf Estates",
-   "event": false,
    "count": 1,
    "daily": {
     "2026-10-09": 1
@@ -2431,9 +2475,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 104,
-  "events_total": 173,
-  "goatcounter_total_with_events": 277,
+  "visits": 110,
+  "events_total": 175,
+  "goatcounter_total_with_events": 285,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -2444,20 +2488,22 @@
    "2026-10-08": 22,
    "2026-10-09": 11,
    "2026-10-10": 5,
-   "2026-10-11": 11
+   "2026-10-11": 11,
+   "2026-10-12": 6
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
    "2026-10-09": 6,
    "2026-10-10": 5,
-   "2026-10-11": 9
+   "2026-10-11": 9,
+   "2026-10-12": 1
   },
-  "visitor_days": 27,
-  "return_rate": 0.037,
-  "routes": 32,
+  "visitor_days": 28,
+  "return_rate": 0.036,
+  "routes": 33,
   "routes_not_found": 0,
-  "routes_per_visit": 0.31,
-  "routes_per_visitor_day": 0.78,
+  "routes_per_visit": 0.3,
+  "routes_per_visitor_day": 0.79,
   "share_rate": 0.0,
   "shares": {},
   "failed_search_rate": 0.0,
@@ -2468,10 +2514,14 @@
    "fail": 1
   },
   "visitors_new_return": {
-   "new": 26,
+   "new": 27,
    "return": 1
   },
   "top_routes": [
+   {
+    "name": "p_dxb_airport_terminal_3 > p_dubai_municipality_head_office",
+    "count": 1
+   },
    {
     "name": "bb > p_palm_jumeirah_mall",
     "count": 1
@@ -2527,10 +2577,6 @@
    {
     "name": "qiyadah > adcb",
     "count": 1
-   },
-   {
-    "name": "union > garhoud",
-    "count": 1
    }
   ],
   "top_origins": [
@@ -2547,6 +2593,10 @@
     "count": 3
    },
    {
+    "name": "p_dxb_airport_terminal_3",
+    "count": 2
+   },
+   {
     "name": "bb",
     "count": 2
    },
@@ -2560,10 +2610,6 @@
    },
    {
     "name": "expo",
-    "count": 1
-   },
-   {
-    "name": "p_dxb_airport_terminal_3",
     "count": 1
    },
    {
@@ -2593,6 +2639,10 @@
     "count": 2
    },
    {
+    "name": "p_dubai_municipality_head_office",
+    "count": 1
+   },
+   {
     "name": "p_palm_jumeirah_mall",
     "count": 1
    },
@@ -2610,10 +2660,6 @@
    },
    {
     "name": "p_etihad_rail_al_yalayis_station",
-    "count": 1
-   },
-   {
-    "name": "atlantis",
     "count": 1
    }
   ]
@@ -2643,6 +2689,10 @@
    {
     "name": "dubaimetro.fyi/destinations/etihad-rail-dubai",
     "count": 1
+   },
+   {
+    "name": "dubaimetro.fyi/destinations/dubai-municipality-head-office",
+    "count": 1
    }
   ],
   "/tl.html": [
@@ -2665,6 +2715,38 @@
    {
     "name": "Google",
     "count": 1
+   },
+   {
+    "name": "dubaimetro.fyi/destinations/etihad-rail-dubai",
+    "count": 1
+   }
+  ],
+  "/destinations/etihad-rail-dubai": [
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   },
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
+  "/destinations/dubai-municipality-head-office": [
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
+  "/stations/centrepoint": [
+   {
+    "name": "dubaimetro.fyi/lines/red-line",
+    "count": 1
+   }
+  ],
+  "/lines/red-line": [
+   {
+    "name": "dubaimetro.fyi/lines/green-line",
+    "count": 1
    }
   ],
   "/destinations/st-mary-s-catholic-church": [
@@ -2676,12 +2758,6 @@
   "/ar.html": [
    {
     "name": "Yandex",
-    "count": 1
-   }
-  ],
-  "/destinations/etihad-rail-dubai": [
-   {
-    "name": "(direct or unknown)",
     "count": 1
    }
   ],
@@ -2715,11 +2791,11 @@
     "count": 3
    },
    {
-    "path": "/destinations/st-mary-s-catholic-church",
+    "path": "/destinations/etihad-rail-dubai",
     "count": 1
    },
    {
-    "path": "/destinations/etihad-rail-dubai",
+    "path": "/destinations/st-mary-s-catholic-church",
     "count": 1
    },
    {
@@ -2755,6 +2831,16 @@
    {
     "path": "/",
     "count": 1
+   },
+   {
+    "path": "/lines/green-line",
+    "count": 1
+   }
+  ],
+  "dubaimetro.fyi/destinations/dubai-municipality-head-office": [
+   {
+    "path": "/",
+    "count": 1
    }
   ],
   "www.facebook.com": [
@@ -2772,6 +2858,26 @@
   "Google": [
    {
     "path": "/lines/green-line",
+    "count": 1
+   },
+   {
+    "path": "/destinations/etihad-rail-dubai",
+    "count": 1
+   },
+   {
+    "path": "/destinations/dubai-municipality-head-office",
+    "count": 1
+   }
+  ],
+  "dubaimetro.fyi/lines/red-line": [
+   {
+    "path": "/stations/centrepoint",
+    "count": 1
+   }
+  ],
+  "dubaimetro.fyi/lines/green-line": [
+   {
+    "path": "/lines/red-line",
     "count": 1
    }
   ],
@@ -2819,6 +2925,12 @@
    "ref_scheme": "g"
   },
   {
+   "id": "Google",
+   "name": "Google",
+   "count": 3,
+   "ref_scheme": "g"
+  },
+  {
    "id": "www.facebook.com",
    "name": "www.facebook.com",
    "count": 3,
@@ -2834,12 +2946,6 @@
    "id": "Yandex",
    "name": "Yandex",
    "count": 2,
-   "ref_scheme": "g"
-  },
-  {
-   "id": "Google",
-   "name": "Google",
-   "count": 1,
    "ref_scheme": "g"
   },
   {
@@ -2859,7 +2965,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 248
+   "count": 256
   },
   {
    "id": "(unknown)",
@@ -2886,7 +2992,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 205
+   "count": 213
   },
   {
    "id": "US",
@@ -2988,7 +3094,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 138
+   "count": 146
   },
   {
    "id": "tablet",
@@ -3015,7 +3121,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 173
+   "count": 181
   },
   {
    "id": "Safari",
@@ -3051,7 +3157,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 42
+   "count": 50
   },
   {
    "id": "Linux",
