@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-12T10:01:45Z",
+ "generated": "2026-10-12T11:03:15Z",
  "start": "2025-10-12",
  "end": "2026-10-13",
  "total": {
-  "total": 285,
+  "total": 286,
   "total_events": 175,
-  "total_utc": 285,
+  "total_utc": 286,
   "stats": [
    {
     "day": "2025-10-12",
@@ -10658,7 +10658,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 285
+    "monthly": 286
    },
    {
     "day": "2026-10-02",
@@ -10960,7 +10960,7 @@
      0
     ],
     "daily": 39,
-    "weekly": 47
+    "weekly": 48
    },
    {
     "day": "2026-10-12",
@@ -10979,7 +10979,7 @@
      0,
      8,
      0,
-     0,
+     1,
      0,
      0,
      0,
@@ -10990,7 +10990,7 @@
      0,
      0
     ],
-    "daily": 8
+    "daily": 9
    },
    {
     "day": "2026-10-13",
@@ -11250,6 +11250,16 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/destinations/al-zahra-hospital-dubai",
+   "path_id": 111715857,
+   "title": "Al Zahra Hospital Dubai Metro Station: Dubai Internet City, 10 min walk",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-10-12": 1
    }
   },
   {
@@ -12525,9 +12535,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 110,
+  "visits": 111,
   "events_total": 175,
-  "goatcounter_total_with_events": 285,
+  "goatcounter_total_with_events": 286,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -12539,7 +12549,7 @@
    "2026-10-09": 11,
    "2026-10-10": 5,
    "2026-10-11": 11,
-   "2026-10-12": 6
+   "2026-10-12": 7
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -12781,6 +12791,12 @@
     "count": 1
    }
   ],
+  "/destinations/al-zahra-hospital-dubai": [
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
   "/destinations/dubai-municipality-head-office": [
    {
     "name": "Google",
@@ -12915,6 +12931,10 @@
     "count": 1
    },
    {
+    "path": "/destinations/al-zahra-hospital-dubai",
+    "count": 1
+   },
+   {
     "path": "/destinations/dubai-municipality-head-office",
     "count": 1
    }
@@ -12977,7 +12997,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 3,
+   "count": 4,
    "ref_scheme": "g"
   },
   {
@@ -13015,7 +13035,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 256
+   "count": 257
   },
   {
    "id": "(unknown)",
@@ -13042,7 +13062,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 213
+   "count": 214
   },
   {
    "id": "US",
@@ -13144,7 +13164,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 146
+   "count": 147
   },
   {
    "id": "tablet",
@@ -13171,7 +13191,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 181
+   "count": 182
   },
   {
    "id": "Safari",
@@ -13207,7 +13227,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 50
+   "count": 51
   },
   {
    "id": "Linux",
