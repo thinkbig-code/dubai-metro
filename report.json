@@ -1,12 +1,156 @@
 {
  "host": "dubaimetro.fyi",
- "generated": "2026-10-12",
+ "generated": "2026-10-13",
  "gsc_period": [
-  "2026-09-14",
-  "2026-10-12"
+  "2026-09-15",
+  "2026-10-13"
  ],
- "index_checked": "2026-10-12T01:39:12Z",
+ "index_checked": "2026-10-13T01:39:26Z",
  "low_ctr_queries": [
+  {
+   "query": "al yalayis station",
+   "impressions": 54,
+   "clicks": 0,
+   "position": 10.0,
+   "page": "/destinations/etihad-rail-dubai/",
+   "lost_clicks": 1.62
+  },
+  {
+   "query": "al yalayis metro station",
+   "impressions": 33,
+   "clicks": 0,
+   "position": 9.2,
+   "page": "/destinations/etihad-rail-dubai/",
+   "lost_clicks": 0.99
+  },
+  {
+   "query": "al yalayis station etihad rail nearest metro station",
+   "impressions": 15,
+   "clicks": 0,
+   "position": 4.9,
+   "page": "/destinations/etihad-rail-dubai/",
+   "lost_clicks": 0.75
+  },
+  {
+   "query": "al qiyadah police station dubai",
+   "impressions": 21,
+   "clicks": 0,
+   "position": 7.0,
+   "page": "/destinations/dubai-police-general-headquarters/",
+   "lost_clicks": 0.63
+  },
+  {
+   "query": "dubai al yalayis station",
+   "impressions": 16,
+   "clicks": 0,
+   "position": 8.8,
+   "page": "/destinations/etihad-rail-dubai/",
+   "lost_clicks": 0.48
+  },
+  {
+   "query": "indian consulate dubai nearest metro station",
+   "impressions": 7,
+   "clicks": 0,
+   "position": 5.3,
+   "page": "/destinations/indian-consulate-dubai/",
+   "lost_clicks": 0.35
+  },
+  {
+   "query": "pakistan consulate dubai nearest metro station",
+   "impressions": 4,
+   "clicks": 0,
+   "position": 4.5,
+   "page": "/destinations/pakistan-consulate-dubai/",
+   "lost_clicks": 0.28
+  },
+  {
+   "query": "al qiyadah police station",
+   "impressions": 9,
+   "clicks": 0,
+   "position": 7.2,
+   "page": "/destinations/dubai-police-general-headquarters/",
+   "lost_clicks": 0.27
+  },
+  {
+   "query": "al yalayis station location",
+   "impressions": 9,
+   "clicks": 0,
+   "position": 10,
+   "page": "/destinations/etihad-rail-dubai/",
+   "lost_clicks": 0.27
+  },
+  {
+   "query": "al yalayis station dubai",
+   "impressions": 8,
+   "clicks": 0,
+   "position": 8.5,
+   "page": "/destinations/etihad-rail-dubai/",
+   "lost_clicks": 0.24
+  },
+  {
+   "query": "al yalayis etihad rail station",
+   "impressions": 7,
+   "clicks": 0,
+   "position": 10.4,
+   "page": "/destinations/etihad-rail-dubai/",
+   "lost_clicks": 0.21
+  },
+  {
+   "query": "rashid hospital metro station",
+   "impressions": 4,
+   "clicks": 0,
+   "position": 4.8,
+   "page": "/destinations/rashid-hospital/",
+   "lost_clicks": 0.2
+  },
+  {
+   "query": "dubai al yalayis station location",
+   "impressions": 6,
+   "clicks": 0,
+   "position": 10.5,
+   "page": "/destinations/etihad-rail-dubai/",
+   "lost_clicks": 0.18
+  },
+  {
+   "query": "al yalayis railway station",
+   "impressions": 5,
+   "clicks": 0,
+   "position": 9.2,
+   "page": "/destinations/etihad-rail-dubai/",
+   "lost_clicks": 0.15
+  },
+  {
+   "query": "al yalayis station etihad rail location",
+   "impressions": 5,
+   "clicks": 0,
+   "position": 9.6,
+   "page": "/destinations/etihad-rail-dubai/",
+   "lost_clicks": 0.15
+  },
+  {
+   "query": "aster hospital mankhool near metro station",
+   "impressions": 5,
+   "clicks": 0,
+   "position": 6,
+   "page": "/destinations/aster-hospital-mankhool/",
+   "lost_clicks": 0.15
+  },
+  {
+   "query": "etihad rail yalayis station",
+   "impressions": 5,
+   "clicks": 0,
+   "position": 9,
+   "page": "/destinations/etihad-rail-dubai/",
+   "lost_clicks": 0.15
+  },
+  {
+   "query": "meena bazar nearest metro station",
+   "impressions": 5,
+   "clicks": 0,
+   "position": 8.8,
+   "page": "/destinations/meena-bazaar/",
+   "lost_clicks": 0.15
+  },
   {
    "query": "nearest metro station to dubai mall",
    "impressions": 5,
@@ -16,81 +160,151 @@
    "lost_clicks": 0.15
   },
   {
-   "query": "al qiyadah police station dubai",
+   "query": "pakistan embassy dubai near metro station",
    "impressions": 3,
    "clicks": 0,
-   "position": 8.3,
-   "page": "/destinations/dubai-police-general-headquarters/",
-   "lost_clicks": 0.09
-  },
-  {
-   "query": "intitle:\"dubai metro\" -site:rta.ae -site:facebook.com -site:instagram.com -site:threads.com -site:threads.net -site:linkedin.com -site:x.com -site:twitter.com -site:tiktok.com -site:youtube.com -site:youtu.be -site:reddit.com -site:t.me -site:telegram.me -site:telegram.org -site:pinterest.com -site:vimeo.com",
-   "impressions": 3,
-   "clicks": 0,
-   "position": 7.3,
-   "page": "/destinations/indian-consulate-dubai/",
-   "lost_clicks": 0.09
+   "position": 5.3,
+   "page": "/destinations/pakistan-consulate-dubai/",
+   "lost_clicks": 0.15
   }
  ],
  "near_page_one": [
   {
-   "query": "dubai marina tram map",
+   "query": "dubai municipality head office",
+   "impressions": 13,
+   "position": 11.4,
+   "page": "/destinations/dubai-municipality-head-office/"
+  },
+  {
+   "query": "dubai marina metro station",
+   "impressions": 5,
+   "position": 19.8,
+   "page": "/destinations/dubai-marina/"
+  },
+  {
+   "query": "meena bazaar dubai metro station",
+   "impressions": 5,
+   "position": 11.2,
+   "page": "/destinations/meena-bazaar/"
+  },
+  {
+   "query": "dfc metro station",
+   "impressions": 3,
+   "position": 12,
+   "page": "/destinations/dubai-festival-city-mall/"
+  },
+  {
+   "query": "what is the metro station near jw marriot hotel deira",
+   "impressions": 3,
+   "position": 12,
+   "page": "/destinations/jw-marriott-marquis-dubai/"
+  },
+  {
+   "query": "al yalayis train station",
    "impressions": 2,
-   "position": 12.5,
-   "page": "/tram/"
+   "position": 12,
+   "page": "/destinations/etihad-rail-dubai/"
+  },
+  {
+   "query": "dubai marina metro",
+   "impressions": 2,
+   "position": 11,
+   "page": "/destinations/dubai-marina/"
   },
   {
    "query": "etihad rail dubai station",
    "impressions": 2,
    "position": 16.5,
    "page": "/destinations/etihad-rail-dubai/"
+  },
+  {
+   "query": "pakistan embassy dubai location map",
+   "impressions": 2,
+   "position": 12,
+   "page": "/destinations/pakistan-consulate-dubai/"
+  },
+  {
+   "query": "times square center dubai nearest metro station",
+   "impressions": 2,
+   "position": 11,
+   "page": "/destinations/times-square-center/"
   }
  ],
  "pages_no_clicks": [
   {
-   "page": "/destinations/etihad-rail-dubai/",
-   "impressions": 59,
-   "position": 8.5
-  },
-  {
-   "page": "/destinations/museum-of-the-future/",
-   "impressions": 33,
-   "position": 9.2
-  },
-  {
    "page": "/destinations/expo-city-dubai/",
-   "impressions": 32,
-   "position": 17.9
+   "impressions": 65,
+   "position": 17.2
+  },
+  {
+   "page": "/destinations/pakistan-consulate-dubai/",
+   "impressions": 58,
+   "position": 6.4
+  },
+  {
+   "page": "/destinations/meena-bazaar/",
+   "impressions": 51,
+   "position": 8.7
+  },
+  {
+   "page": "/destinations/dubai-police-general-headquarters/",
+   "impressions": 46,
+   "position": 7.5
+  },
+  {
+   "page": "/destinations/aster-hospital-mankhool/",
+   "impressions": 41,
+   "position": 7.0
+  },
+  {
+   "page": "/destinations/indian-consulate-dubai/",
+   "impressions": 41,
+   "position": 6.3
   },
   {
    "page": "/destinations/dubai-marina/",
-   "impressions": 27,
-   "position": 19.1
+   "impressions": 40,
+   "position": 18.1
+  },
+  {
+   "page": "/destinations/museum-of-the-future/",
+   "impressions": 40,
+   "position": 8.9
+  },
+  {
+   "page": "/destinations/al-ghurair-centre/",
+   "impressions": 32,
+   "position": 9.6
+  },
+  {
+   "page": "/destinations/dubai-festival-city-mall/",
+   "impressions": 32,
+   "position": 9.4
+  },
+  {
+   "page": "/destinations/dubai-mall/",
+   "impressions": 32,
+   "position": 15.2
+  },
+  {
+   "page": "/destinations/coca-cola-arena/",
+   "impressions": 31,
+   "position": 9.5
+  },
+  {
+   "page": "/destinations/rashid-hospital/",
+   "impressions": 29,
+   "position": 7.1
+  },
+  {
+   "page": "/destinations/canadian-specialist-hospital/",
+   "impressions": 24,
+   "position": 6.1
   },
   {
    "page": "/destinations/jbr/",
-   "impressions": 20,
-   "position": 20.4
-  },
-  {
-   "page": "/destinations/dubai-airport/",
-   "impressions": 15,
-   "position": 35.1
-  },
-  {
-   "page": "/tram/",
-   "impressions": 14,
-   "position": 40.7
-  },
-  {
-   "page": "/destinations/dubai-frame/",
-   "impressions": 13,
-   "position": 9.3
-  },
-  {
-   "page": "/destinations/atlantis-the-palm/",
-   "impressions": 12,
-   "position": 24.3
+   "impressions": 23,
+   "position": 24.8
   }
  ],
  "index_by_type": {
@@ -145,8 +359,8 @@
    "not_checked": 0
   },
   "en stations": {
-   "indexed": 3,
-   "not_indexed": 66,
+   "indexed": 5,
+   "not_indexed": 64,
    "not_checked": 0
   },
   "en tram": {
@@ -156,24 +370,24 @@
   }
  },
  "request_today": [
-  "https://dubaimetro.fyi/destinations/difc/",
-  "https://dubaimetro.fyi/destinations/ibn-battuta-bus-station/",
-  "https://dubaimetro.fyi/destinations/jumeirah-emirates-towers/",
-  "https://dubaimetro.fyi/destinations/latifa-hospital/",
-  "https://dubaimetro.fyi/stations/abu-baker-al-siddique/",
-  "https://dubaimetro.fyi/stations/abu-hail/",
-  "https://dubaimetro.fyi/stations/adcb/",
-  "https://dubaimetro.fyi/stations/airport-terminal-1/",
-  "https://dubaimetro.fyi/bn.html",
-  "https://dubaimetro.fyi/fr.html"
+  "https://dubaimetro.fyi/destinations/medeor-hospital-dubai/",
+  "https://dubaimetro.fyi/stations/airport-terminal-3/",
+  "https://dubaimetro.fyi/stations/al-fardan-exchange/",
+  "https://dubaimetro.fyi/stations/al-furjan/",
+  "https://dubaimetro.fyi/stations/al-garhoud/",
+  "https://dubaimetro.fyi/hi.html",
+  "https://dubaimetro.fyi/tl.html",
+  "https://dubaimetro.fyi/ur.html",
+  "https://dubaimetro.fyi/zh.html",
+  "https://dubaimetro.fyi/ar.html"
  ],
  "languages": {
   "en": {
-   "impressions": 74,
+   "impressions": 486,
    "clicks": 0
   },
   "ar": {
-   "impressions": 0,
+   "impressions": 2,
    "clicks": 0
   }
  },
@@ -197,7 +411,17 @@
   "https://dubaimetro.fyi/stations/adcb/": "2026-10-12",
   "https://dubaimetro.fyi/stations/airport-terminal-1/": "2026-10-12",
   "https://dubaimetro.fyi/bn.html": "2026-10-12",
-  "https://dubaimetro.fyi/fr.html": "2026-10-12"
+  "https://dubaimetro.fyi/fr.html": "2026-10-12",
+  "https://dubaimetro.fyi/destinations/medeor-hospital-dubai/": "2026-10-13",
+  "https://dubaimetro.fyi/stations/airport-terminal-3/": "2026-10-13",
+  "https://dubaimetro.fyi/stations/al-fardan-exchange/": "2026-10-13",
+  "https://dubaimetro.fyi/stations/al-furjan/": "2026-10-13",
+  "https://dubaimetro.fyi/stations/al-garhoud/": "2026-10-13",
+  "https://dubaimetro.fyi/hi.html": "2026-10-13",
+  "https://dubaimetro.fyi/tl.html": "2026-10-13",
+  "https://dubaimetro.fyi/ur.html": "2026-10-13",
+  "https://dubaimetro.fyi/zh.html": "2026-10-13",
+  "https://dubaimetro.fyi/ar.html": "2026-10-13"
  },
  "_about": "Built by tools/gsc_report.py from gsc.json and gsc_index.json. Positions are averages over the period; lost_clicks = impressions x typical CTR for that position - clicks (a ranking aid, not a forecast)."
 }
