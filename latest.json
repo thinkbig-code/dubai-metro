@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-13T16:01:13Z",
+ "generated": "2026-10-13T17:00:09Z",
  "start": "2026-09-13",
  "end": "2026-10-14",
  "total": {
-  "total": 290,
+  "total": 291,
   "total_events": 176,
-  "total_utc": 290,
+  "total_utc": 291,
   "stats": [
    {
     "day": "2026-09-13",
@@ -578,7 +578,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 290
+    "monthly": 291
    },
    {
     "day": "2026-10-02",
@@ -880,7 +880,7 @@
      0
     ],
     "daily": 39,
-    "weekly": 52
+    "weekly": 53
    },
    {
     "day": "2026-10-12",
@@ -935,12 +935,12 @@
      0,
      0,
      0,
-     0,
+     1,
      0,
      0,
      0
     ],
-    "daily": 4
+    "daily": 5
    },
    {
     "day": "2026-10-14",
@@ -1022,6 +1022,18 @@
    }
   },
   {
+   "path": "/destinations/etihad-rail-dubai",
+   "path_id": 110626146,
+   "title": "Etihad Rail Dubai Station (Al Yalayis) Metro Station: Jumeirah Golf Estates",
+   "event": false,
+   "count": 3,
+   "daily": {
+    "2026-10-09": 1,
+    "2026-10-12": 1,
+    "2026-10-13": 1
+   }
+  },
+  {
    "path": "/destinations/atlantis-the-palm",
    "path_id": 110602470,
    "title": "Atlantis The Palm Tram Stop: Atlantis Aquaventure, 3 min walk",
@@ -1050,17 +1062,6 @@
    "count": 2,
    "daily": {
     "2026-10-11": 1,
-    "2026-10-12": 1
-   }
-  },
-  {
-   "path": "/destinations/etihad-rail-dubai",
-   "path_id": 110626146,
-   "title": "Etihad Rail Dubai Station (Al Yalayis) Metro Station: Jumeirah Golf Estates",
-   "event": false,
-   "count": 2,
-   "daily": {
-    "2026-10-09": 1,
     "2026-10-12": 1
    }
   },
@@ -2507,9 +2508,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 114,
+  "visits": 115,
   "events_total": 176,
-  "goatcounter_total_with_events": 290,
+  "goatcounter_total_with_events": 291,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -2522,7 +2523,7 @@
    "2026-10-10": 5,
    "2026-10-11": 11,
    "2026-10-12": 7,
-   "2026-10-13": 3
+   "2026-10-13": 4
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -2739,6 +2740,16 @@
     "count": 2
    }
   ],
+  "/destinations/etihad-rail-dubai": [
+   {
+    "name": "(direct or unknown)",
+    "count": 2
+   },
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
   "/destinations/atlantis-the-palm": [
    {
     "name": "(direct or unknown)",
@@ -2752,16 +2763,6 @@
    },
    {
     "name": "dubaimetro.fyi/destinations/etihad-rail-dubai",
-    "count": 1
-   }
-  ],
-  "/destinations/etihad-rail-dubai": [
-   {
-    "name": "(direct or unknown)",
-    "count": 1
-   },
-   {
-    "name": "Google",
     "count": 1
    }
   ],
@@ -2844,7 +2845,7 @@
    },
    {
     "path": "/destinations/etihad-rail-dubai",
-    "count": 1
+    "count": 2
    },
    {
     "path": "/destinations/st-mary-s-catholic-church",
@@ -2909,11 +2910,11 @@
   ],
   "Google": [
    {
-    "path": "/lines/green-line",
+    "path": "/destinations/etihad-rail-dubai",
     "count": 1
    },
    {
-    "path": "/destinations/etihad-rail-dubai",
+    "path": "/lines/green-line",
     "count": 1
    },
    {
@@ -2967,7 +2968,7 @@
  "toprefs": [
   {
    "name": "",
-   "count": 226,
+   "count": 227,
    "ref_scheme": "o"
   },
   {
@@ -3029,7 +3030,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 261
+   "count": 262
   },
   {
    "id": "(unknown)",
@@ -3056,7 +3057,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 216
+   "count": 217
   },
   {
    "id": "US",
@@ -3158,7 +3159,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 150
+   "count": 151
   },
   {
    "id": "tablet",
@@ -3190,7 +3191,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 99
+   "count": 100
   },
   {
    "id": "Firefox",
@@ -3206,7 +3207,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 95
+   "count": 96
   },
   {
    "id": "macOS",
