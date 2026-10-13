@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-13T12:00:18Z",
+ "generated": "2026-10-13T13:09:28Z",
  "start": "2025-10-13",
  "end": "2026-10-14",
  "total": {
-  "total": 289,
+  "total": 290,
   "total_events": 176,
-  "total_utc": 289,
+  "total_utc": 290,
   "stats": [
    {
     "day": "2025-10-13",
@@ -10628,7 +10628,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 289
+    "monthly": 290
    },
    {
     "day": "2026-10-02",
@@ -10960,7 +10960,7 @@
      0
     ],
     "daily": 9,
-    "weekly": 12
+    "weekly": 13
    },
    {
     "day": "2026-10-13",
@@ -10981,7 +10981,7 @@
      0,
      0,
      0,
-     0,
+     1,
      0,
      0,
      0,
@@ -10990,7 +10990,7 @@
      0,
      0
     ],
-    "daily": 3
+    "daily": 4
    },
    {
     "day": "2026-10-14",
@@ -11252,6 +11252,16 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/destinations/dubai-police-general-headquarters",
+   "path_id": 111896140,
+   "title": "Dubai Police General Headquarters Metro Station: Al Qiyadah, 7 min walk",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-10-13": 1
    }
   },
   {
@@ -12547,9 +12557,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 113,
+  "visits": 114,
   "events_total": 176,
-  "goatcounter_total_with_events": 289,
+  "goatcounter_total_with_events": 290,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -12562,7 +12572,7 @@
    "2026-10-10": 5,
    "2026-10-11": 11,
    "2026-10-12": 7,
-   "2026-10-13": 2
+   "2026-10-13": 3
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -12805,6 +12815,12 @@
     "count": 1
    }
   ],
+  "/destinations/dubai-police-general-headquarters": [
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
   "/destinations/american-hospital-dubai": [
    {
     "name": "chatgpt.com",
@@ -12951,6 +12967,10 @@
     "count": 1
    },
    {
+    "path": "/destinations/dubai-police-general-headquarters",
+    "count": 1
+   },
+   {
     "path": "/destinations/al-zahra-hospital-dubai",
     "count": 1
    },
@@ -13021,7 +13041,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 4,
+   "count": 5,
    "ref_scheme": "g"
   },
   {
@@ -13059,7 +13079,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 260
+   "count": 261
   },
   {
    "id": "(unknown)",
@@ -13086,7 +13106,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 215
+   "count": 216
   },
   {
    "id": "US",
@@ -13198,7 +13218,7 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 112
+   "count": 113
   },
   {
    "id": "desktophd",
@@ -13215,7 +13235,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 185
+   "count": 186
   },
   {
    "id": "Safari",
@@ -13246,7 +13266,7 @@
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 62
+   "count": 63
   },
   {
    "id": "Android",
