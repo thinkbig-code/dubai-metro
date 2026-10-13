@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-13T08:01:06Z",
+ "generated": "2026-10-13T08:59:59Z",
  "start": "2026-09-13",
  "end": "2026-10-14",
  "total": {
-  "total": 288,
+  "total": 289,
   "total_events": 176,
-  "total_utc": 288,
+  "total_utc": 289,
   "stats": [
    {
     "day": "2026-09-13",
@@ -578,7 +578,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 288
+    "monthly": 289
    },
    {
     "day": "2026-10-02",
@@ -880,7 +880,7 @@
      0
     ],
     "daily": 39,
-    "weekly": 50
+    "weekly": 51
    },
    {
     "day": "2026-10-12",
@@ -927,7 +927,7 @@
      2,
      0,
      0,
-     0,
+     1,
      0,
      0,
      0,
@@ -940,7 +940,7 @@
      0,
      0
     ],
-    "daily": 2
+    "daily": 3
    },
    {
     "day": "2026-10-14",
@@ -1202,6 +1202,16 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/destinations/american-hospital-dubai",
+   "path_id": 111868353,
+   "title": "American Hospital Dubai Metro Station: Oud Metha (Green Line), 17 min walk",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-10-13": 1
    }
   },
   {
@@ -2487,9 +2497,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 112,
+  "visits": 113,
   "events_total": 176,
-  "goatcounter_total_with_events": 288,
+  "goatcounter_total_with_events": 289,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -2502,7 +2512,7 @@
    "2026-10-10": 5,
    "2026-10-11": 11,
    "2026-10-12": 7,
-   "2026-10-13": 1
+   "2026-10-13": 2
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -2745,6 +2755,12 @@
     "count": 1
    }
   ],
+  "/destinations/american-hospital-dubai": [
+   {
+    "name": "chatgpt.com",
+    "count": 1
+   }
+  ],
   "/destinations/al-zahra-hospital-dubai": [
    {
     "name": "Google",
@@ -2893,6 +2909,16 @@
     "count": 1
    }
   ],
+  "chatgpt.com": [
+   {
+    "path": "/destinations/american-hospital-dubai",
+    "count": 1
+   },
+   {
+    "path": "/destinations/dubai-mall",
+    "count": 1
+   }
+  ],
   "dubaimetro.fyi/lines/red-line": [
    {
     "path": "/stations/centrepoint",
@@ -2908,12 +2934,6 @@
   "Yandex": [
    {
     "path": "/ar.html",
-    "count": 1
-   }
-  ],
-  "chatgpt.com": [
-   {
-    "path": "/destinations/dubai-mall",
     "count": 1
    }
   ],
@@ -2967,6 +2987,12 @@
    "ref_scheme": "c"
   },
   {
+   "id": "chatgpt.com",
+   "name": "chatgpt.com",
+   "count": 2,
+   "ref_scheme": "c"
+  },
+  {
    "id": "Yandex",
    "name": "Yandex",
    "count": 2,
@@ -2977,19 +3003,13 @@
    "name": "web.telegram.org",
    "count": 1,
    "ref_scheme": "h"
-  },
-  {
-   "id": "chatgpt.com",
-   "name": "chatgpt.com",
-   "count": 1,
-   "ref_scheme": "c"
   }
  ],
  "languages": [
   {
    "id": "eng",
    "name": "English",
-   "count": 259
+   "count": 260
   },
   {
    "id": "(unknown)",
@@ -3016,7 +3036,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 214
+   "count": 215
   },
   {
    "id": "US",
@@ -3118,7 +3138,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 149
+   "count": 150
   },
   {
    "id": "tablet",
@@ -3145,7 +3165,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 184
+   "count": 185
   },
   {
    "id": "Safari",
@@ -3181,7 +3201,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 53
+   "count": 54
   },
   {
    "id": "Linux",
