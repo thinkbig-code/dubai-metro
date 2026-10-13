@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-13T17:59:25Z",
+ "generated": "2026-10-13T19:12:27Z",
  "start": "2025-10-13",
  "end": "2026-10-14",
  "total": {
-  "total": 291,
+  "total": 293,
   "total_events": 176,
-  "total_utc": 291,
+  "total_utc": 293,
   "stats": [
    {
     "day": "2025-10-13",
@@ -10628,7 +10628,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 291
+    "monthly": 293
    },
    {
     "day": "2026-10-02",
@@ -10960,7 +10960,7 @@
      0
     ],
     "daily": 9,
-    "weekly": 14
+    "weekly": 16
    },
    {
     "day": "2026-10-13",
@@ -10987,10 +10987,10 @@
      0,
      1,
      0,
-     0,
+     2,
      0
     ],
-    "daily": 5
+    "daily": 7
    },
    {
     "day": "2026-10-14",
@@ -11253,6 +11253,26 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/destinations/museum-of-the-future",
+   "path_id": 111942261,
+   "title": "Museum of the Future Metro Station: Emirates Towers (Red Line), 5 min walk",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-10-13": 1
+   }
+  },
+  {
+   "path": "/destinations/palm-jumeirah-mall",
+   "path_id": 111939146,
+   "title": "Palm Jumeirah Mall and The View at The Palm Tram Stop: Palm Jumeirah Mall",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-10-13": 1
    }
   },
   {
@@ -12558,9 +12578,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 115,
+  "visits": 117,
   "events_total": 176,
-  "goatcounter_total_with_events": 291,
+  "goatcounter_total_with_events": 293,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -12573,7 +12593,7 @@
    "2026-10-10": 5,
    "2026-10-11": 11,
    "2026-10-12": 7,
-   "2026-10-13": 4
+   "2026-10-13": 6
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -12587,7 +12607,7 @@
   "return_rate": 0.034,
   "routes": 33,
   "routes_not_found": 0,
-  "routes_per_visit": 0.29,
+  "routes_per_visit": 0.28,
   "routes_per_visitor_day": 0.76,
   "share_rate": 0.0,
   "shares": {},
@@ -12816,6 +12836,18 @@
     "count": 1
    }
   ],
+  "/destinations/museum-of-the-future": [
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   }
+  ],
+  "/destinations/palm-jumeirah-mall": [
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   }
+  ],
   "/destinations/dubai-police-general-headquarters": [
    {
     "name": "Google",
@@ -12896,6 +12928,14 @@
    {
     "path": "/destinations/etihad-rail-dubai",
     "count": 2
+   },
+   {
+    "path": "/destinations/museum-of-the-future",
+    "count": 1
+   },
+   {
+    "path": "/destinations/palm-jumeirah-mall",
+    "count": 1
    },
    {
     "path": "/destinations/st-mary-s-catholic-church",
@@ -13018,7 +13058,7 @@
  "toprefs": [
   {
    "name": "",
-   "count": 227,
+   "count": 229,
    "ref_scheme": "o"
   },
   {
@@ -13101,6 +13141,16 @@
    "id": "deu",
    "name": "German",
    "count": 1
+  },
+  {
+   "id": "pol",
+   "name": "Polish",
+   "count": 1
+  },
+  {
+   "id": "por",
+   "name": "Portuguese",
+   "count": 1
   }
  ],
  "locations": [
@@ -13150,6 +13200,11 @@
    "count": 2
   },
   {
+   "id": "PL",
+   "name": "Poland",
+   "count": 2
+  },
+  {
    "id": "RU",
    "name": "Russia",
    "count": 2
@@ -13190,8 +13245,8 @@
    "count": 1
   },
   {
-   "id": "PL",
-   "name": "Poland",
+   "id": "PT",
+   "name": "Portugal",
    "count": 1
   },
   {
@@ -13209,7 +13264,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 151
+   "count": 152
   },
   {
    "id": "tablet",
@@ -13224,7 +13279,7 @@
   {
    "id": "desktophd",
    "name": "",
-   "count": 10
+   "count": 11
   },
   {
    "id": "unknown",
@@ -13236,12 +13291,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 186
+   "count": 187
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 100
+   "count": 101
   },
   {
    "id": "Firefox",
@@ -13257,16 +13312,16 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 96
-  },
-  {
-   "id": "macOS",
-   "name": "macOS",
-   "count": 63
+   "count": 97
   },
   {
    "id": "Windows",
    "name": "Windows",
+   "count": 64
+  },
+  {
+   "id": "macOS",
+   "name": "macOS",
    "count": 63
   },
   {
