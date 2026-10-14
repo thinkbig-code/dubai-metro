@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-14T02:07:33Z",
+ "generated": "2026-10-14T03:09:22Z",
  "start": "2026-09-14",
  "end": "2026-10-15",
  "total": {
-  "total": 300,
-  "total_events": 182,
-  "total_utc": 300,
+  "total": 308,
+  "total_events": 189,
+  "total_utc": 308,
   "stats": [
    {
     "day": "2026-09-14",
@@ -548,7 +548,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 300
+    "monthly": 308
    },
    {
     "day": "2026-10-02",
@@ -880,7 +880,7 @@
      0
     ],
     "daily": 9,
-    "weekly": 23
+    "weekly": 31
    },
    {
     "day": "2026-10-13",
@@ -921,7 +921,7 @@
      0,
      0,
      7,
-     0,
+     8,
      0,
      0,
      0,
@@ -940,7 +940,7 @@
      0,
      0
     ],
-    "daily": 7
+    "daily": 15
    },
    {
     "day": "2026-10-15",
@@ -980,7 +980,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 92,
+   "count": 93,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -994,7 +994,7 @@
     "2026-10-11": 9,
     "2026-10-12": 1,
     "2026-10-13": 1,
-    "2026-10-14": 1
+    "2026-10-14": 2
    }
   },
   {
@@ -1002,7 +1002,7 @@
    "path_id": 110447314,
    "title": "en",
    "event": true,
-   "count": 29,
+   "count": 30,
    "daily": {
     "2026-10-08": 7,
     "2026-10-09": 6,
@@ -1010,7 +1010,7 @@
     "2026-10-11": 9,
     "2026-10-12": 1,
     "2026-10-13": 1,
-    "2026-10-14": 1
+    "2026-10-14": 2
    }
   },
   {
@@ -1217,6 +1217,66 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "view/mc/p_burjuman_mall",
+   "path_id": 111993608,
+   "title": "en|details",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-14": 1
+   }
+  },
+  {
+   "path": "route/mc/p_burjuman_mall",
+   "path_id": 111993601,
+   "title": "en|search|ok|first_map",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-14": 1
+   }
+  },
+  {
+   "path": "place/p_burjuman_mall/to",
+   "path_id": 111993600,
+   "title": "en|name",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-14": 1
+   }
+  },
+  {
+   "path": "route_from_station_click/mc/-",
+   "path_id": 111993587,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-14": 1
+   }
+  },
+  {
+   "path": "map_station_click/mc/-",
+   "path_id": 111993586,
+   "title": "en|home|phone",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-14": 1
+   }
+  },
+  {
+   "path": "map_station_click/adcb/-",
+   "path_id": 111993562,
+   "title": "en|home|phone",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-14": 1
    }
   },
   {
@@ -2562,9 +2622,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 118,
-  "events_total": 182,
-  "goatcounter_total_with_events": 300,
+  "visits": 119,
+  "events_total": 189,
+  "goatcounter_total_with_events": 308,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -2578,7 +2638,7 @@
    "2026-10-11": 11,
    "2026-10-12": 7,
    "2026-10-13": 6,
-   "2026-10-14": 1
+   "2026-10-14": 2
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -2587,11 +2647,11 @@
    "2026-10-11": 9,
    "2026-10-12": 1,
    "2026-10-13": 1,
-   "2026-10-14": 1
+   "2026-10-14": 2
   },
-  "visitor_days": 30,
-  "return_rate": 0.033,
-  "routes": 34,
+  "visitor_days": 31,
+  "return_rate": 0.032,
+  "routes": 35,
   "routes_not_found": 0,
   "routes_per_visit": 0.29,
   "routes_per_visitor_day": 0.77,
@@ -2605,10 +2665,14 @@
    "fail": 1
   },
   "visitors_new_return": {
-   "new": 29,
+   "new": 30,
    "return": 1
   },
   "top_routes": [
+   {
+    "name": "mc > p_burjuman_mall",
+    "count": 1
+   },
    {
     "name": "p_dubai_marina_walk > p_burj_khalifa",
     "count": 1
@@ -2664,10 +2728,6 @@
    {
     "name": "p_dubai_internet_city > p_jbr_the_walk",
     "count": 1
-   },
-   {
-    "name": "dic > p_burj_khalifa",
-    "count": 1
    }
   ],
   "top_origins": [
@@ -2696,6 +2756,10 @@
     "count": 2
    },
    {
+    "name": "mc",
+    "count": 1
+   },
+   {
     "name": "p_dubai_marina_walk",
     "count": 1
    },
@@ -2705,10 +2769,6 @@
    },
    {
     "name": "expo",
-    "count": 1
-   },
-   {
-    "name": "palmgw",
     "count": 1
    }
   ],
@@ -2734,6 +2794,10 @@
     "count": 2
    },
    {
+    "name": "p_burjuman_mall",
+    "count": 1
+   },
+   {
     "name": "p_dubai_municipality_head_office",
     "count": 1
    },
@@ -2748,10 +2812,6 @@
    {
     "name": "pjm",
     "count": 1
-   },
-   {
-    "name": "dg",
-    "count": 1
    }
   ]
  },
@@ -2759,7 +2819,7 @@
   "/": [
    {
     "name": "(direct or unknown)",
-    "count": 78
+    "count": 79
    },
    {
     "name": "com.reddit.frontpage",
@@ -2905,7 +2965,7 @@
   "(direct or unknown)": [
    {
     "path": "/",
-    "count": 78
+    "count": 79
    },
    {
     "path": "/destinations/atlantis-the-palm",
@@ -3044,7 +3104,7 @@
  "toprefs": [
   {
    "name": "",
-   "count": 229,
+   "count": 237,
    "ref_scheme": "o"
   },
   {
@@ -3106,7 +3166,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 269
+   "count": 277
   },
   {
    "id": "(unknown)",
@@ -3143,7 +3203,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 224
+   "count": 232
   },
   {
    "id": "US",
@@ -3250,7 +3310,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 159
+   "count": 167
   },
   {
    "id": "tablet",
@@ -3282,7 +3342,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 101
+   "count": 109
   },
   {
    "id": "Firefox",
@@ -3298,7 +3358,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 97
+   "count": 105
   },
   {
    "id": "Windows",
