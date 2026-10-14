@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-14T12:11:30Z",
+ "generated": "2026-10-14T13:19:00Z",
  "start": "2025-10-14",
  "end": "2026-10-15",
  "total": {
-  "total": 309,
-  "total_events": 189,
-  "total_utc": 309,
+  "total": 311,
+  "total_events": 190,
+  "total_utc": 311,
   "stats": [
    {
     "day": "2025-10-14",
@@ -10598,7 +10598,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 309
+    "monthly": 311
    },
    {
     "day": "2026-10-02",
@@ -10960,7 +10960,7 @@
      0
     ],
     "daily": 7,
-    "weekly": 23
+    "weekly": 25
    },
    {
     "day": "2026-10-14",
@@ -10981,7 +10981,7 @@
      0,
      0,
      0,
-     0,
+     2,
      0,
      0,
      0,
@@ -10990,7 +10990,7 @@
      0,
      0
     ],
-    "daily": 16
+    "daily": 18
    },
    {
     "day": "2026-10-15",
@@ -11030,7 +11030,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 93,
+   "count": 94,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -11044,7 +11044,7 @@
     "2026-10-11": 9,
     "2026-10-12": 1,
     "2026-10-13": 1,
-    "2026-10-14": 2
+    "2026-10-14": 3
    }
   },
   {
@@ -11052,7 +11052,7 @@
    "path_id": 110447314,
    "title": "en",
    "event": true,
-   "count": 30,
+   "count": 31,
    "daily": {
     "2026-10-08": 7,
     "2026-10-09": 6,
@@ -11060,7 +11060,7 @@
     "2026-10-11": 9,
     "2026-10-12": 1,
     "2026-10-13": 1,
-    "2026-10-14": 2
+    "2026-10-14": 3
    }
   },
   {
@@ -12682,9 +12682,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 120,
-  "events_total": 189,
-  "goatcounter_total_with_events": 309,
+  "visits": 121,
+  "events_total": 190,
+  "goatcounter_total_with_events": 311,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -12698,7 +12698,7 @@
    "2026-10-11": 11,
    "2026-10-12": 7,
    "2026-10-13": 6,
-   "2026-10-14": 3
+   "2026-10-14": 4
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -12707,14 +12707,14 @@
    "2026-10-11": 9,
    "2026-10-12": 1,
    "2026-10-13": 1,
-   "2026-10-14": 2
+   "2026-10-14": 3
   },
-  "visitor_days": 31,
-  "return_rate": 0.032,
+  "visitor_days": 32,
+  "return_rate": 0.031,
   "routes": 35,
   "routes_not_found": 0,
   "routes_per_visit": 0.29,
-  "routes_per_visitor_day": 0.77,
+  "routes_per_visitor_day": 0.75,
   "share_rate": 0.0,
   "shares": {},
   "failed_search_rate": 0.0,
@@ -12725,7 +12725,7 @@
    "fail": 1
   },
   "visitors_new_return": {
-   "new": 30,
+   "new": 31,
    "return": 1
   },
   "top_routes": [
@@ -12879,7 +12879,7 @@
   "/": [
    {
     "name": "(direct or unknown)",
-    "count": 79
+    "count": 80
    },
    {
     "name": "com.reddit.frontpage",
@@ -13031,7 +13031,7 @@
   "(direct or unknown)": [
    {
     "path": "/",
-    "count": 79
+    "count": 80
    },
    {
     "path": "/destinations/atlantis-the-palm",
@@ -13174,7 +13174,7 @@
  "toprefs": [
   {
    "name": "",
-   "count": 237,
+   "count": 239,
    "ref_scheme": "o"
   },
   {
@@ -13236,7 +13236,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 278
+   "count": 280
   },
   {
    "id": "(unknown)",
@@ -13273,7 +13273,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 233
+   "count": 235
   },
   {
    "id": "US",
@@ -13390,7 +13390,7 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 113
+   "count": 115
   },
   {
    "id": "desktophd",
@@ -13407,7 +13407,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 195
+   "count": 197
   },
   {
    "id": "Safari",
@@ -13433,7 +13433,7 @@
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 64
+   "count": 66
   },
   {
    "id": "macOS",
