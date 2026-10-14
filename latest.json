@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-14T04:13:09Z",
+ "generated": "2026-10-14T05:11:09Z",
  "start": "2026-09-14",
  "end": "2026-10-15",
  "total": {
-  "total": 308,
+  "total": 309,
   "total_events": 189,
-  "total_utc": 308,
+  "total_utc": 309,
   "stats": [
    {
     "day": "2026-09-14",
@@ -548,7 +548,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 308
+    "monthly": 309
    },
    {
     "day": "2026-10-02",
@@ -880,7 +880,7 @@
      0
     ],
     "daily": 9,
-    "weekly": 31
+    "weekly": 32
    },
    {
     "day": "2026-10-13",
@@ -923,7 +923,7 @@
      7,
      8,
      0,
-     0,
+     1,
      0,
      0,
      0,
@@ -940,7 +940,7 @@
      0,
      0
     ],
-    "daily": 15
+    "daily": 16
    },
    {
     "day": "2026-10-15",
@@ -1217,6 +1217,16 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/destinations/pakistan-consulate-dubai",
+   "path_id": 112004545,
+   "title": "Pakistan Consulate Dubai Metro Station: Sharaf DG (Green Line), 5 min walk",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-10-14": 1
    }
   },
   {
@@ -2622,9 +2632,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 119,
+  "visits": 120,
   "events_total": 189,
-  "goatcounter_total_with_events": 308,
+  "goatcounter_total_with_events": 309,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -2638,7 +2648,7 @@
    "2026-10-11": 11,
    "2026-10-12": 7,
    "2026-10-13": 6,
-   "2026-10-14": 2
+   "2026-10-14": 3
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -2882,6 +2892,12 @@
     "count": 1
    }
   ],
+  "/destinations/pakistan-consulate-dubai": [
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
   "/destinations/museum-of-the-future": [
    {
     "name": "(direct or unknown)",
@@ -3054,6 +3070,10 @@
     "count": 1
    },
    {
+    "path": "/destinations/pakistan-consulate-dubai",
+    "count": 1
+   },
+   {
     "path": "/destinations/dubai-police-general-headquarters",
     "count": 1
    },
@@ -3120,15 +3140,15 @@
    "ref_scheme": "h"
   },
   {
-   "id": "Yahoo",
-   "name": "Yahoo",
+   "id": "Google",
+   "name": "Google",
    "count": 6,
    "ref_scheme": "g"
   },
   {
-   "id": "Google",
-   "name": "Google",
-   "count": 5,
+   "id": "Yahoo",
+   "name": "Yahoo",
+   "count": 6,
    "ref_scheme": "g"
   },
   {
@@ -3166,7 +3186,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 277
+   "count": 278
   },
   {
    "id": "(unknown)",
@@ -3203,7 +3223,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 232
+   "count": 233
   },
   {
    "id": "US",
@@ -3310,7 +3330,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 167
+   "count": 168
   },
   {
    "id": "tablet",
@@ -3337,7 +3357,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 194
+   "count": 195
   },
   {
    "id": "Safari",
@@ -3373,7 +3393,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 61
+   "count": 62
   },
   {
    "id": "Linux",
