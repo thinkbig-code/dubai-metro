@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-14T17:13:49Z",
+ "generated": "2026-10-14T18:13:07Z",
  "start": "2025-10-14",
  "end": "2026-10-15",
  "total": {
-  "total": 311,
-  "total_events": 190,
-  "total_utc": 311,
+  "total": 313,
+  "total_events": 191,
+  "total_utc": 313,
   "stats": [
    {
     "day": "2025-10-14",
@@ -10598,7 +10598,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 311
+    "monthly": 313
    },
    {
     "day": "2026-10-02",
@@ -10960,7 +10960,7 @@
      0
     ],
     "daily": 7,
-    "weekly": 25
+    "weekly": 27
    },
    {
     "day": "2026-10-14",
@@ -10986,11 +10986,11 @@
      0,
      0,
      0,
-     0,
+     2,
      0,
      0
     ],
-    "daily": 18
+    "daily": 20
    },
    {
     "day": "2026-10-15",
@@ -11030,7 +11030,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 94,
+   "count": 95,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -11044,7 +11044,7 @@
     "2026-10-11": 9,
     "2026-10-12": 1,
     "2026-10-13": 1,
-    "2026-10-14": 3
+    "2026-10-14": 4
    }
   },
   {
@@ -11052,7 +11052,7 @@
    "path_id": 110447314,
    "title": "en",
    "event": true,
-   "count": 31,
+   "count": 32,
    "daily": {
     "2026-10-08": 7,
     "2026-10-09": 6,
@@ -11060,7 +11060,7 @@
     "2026-10-11": 9,
     "2026-10-12": 1,
     "2026-10-13": 1,
-    "2026-10-14": 3
+    "2026-10-14": 4
    }
   },
   {
@@ -12682,9 +12682,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 121,
-  "events_total": 190,
-  "goatcounter_total_with_events": 311,
+  "visits": 122,
+  "events_total": 191,
+  "goatcounter_total_with_events": 313,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -12698,7 +12698,7 @@
    "2026-10-11": 11,
    "2026-10-12": 7,
    "2026-10-13": 6,
-   "2026-10-14": 4
+   "2026-10-14": 5
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -12707,14 +12707,14 @@
    "2026-10-11": 9,
    "2026-10-12": 1,
    "2026-10-13": 1,
-   "2026-10-14": 3
+   "2026-10-14": 4
   },
-  "visitor_days": 32,
-  "return_rate": 0.031,
+  "visitor_days": 33,
+  "return_rate": 0.03,
   "routes": 35,
   "routes_not_found": 0,
   "routes_per_visit": 0.29,
-  "routes_per_visitor_day": 0.75,
+  "routes_per_visitor_day": 0.73,
   "share_rate": 0.0,
   "shares": {},
   "failed_search_rate": 0.0,
@@ -12725,7 +12725,7 @@
    "fail": 1
   },
   "visitors_new_return": {
-   "new": 31,
+   "new": 32,
    "return": 1
   },
   "top_routes": [
@@ -12883,7 +12883,7 @@
    },
    {
     "name": "com.reddit.frontpage",
-    "count": 6
+    "count": 7
    },
    {
     "name": "www.bing.com",
@@ -13061,7 +13061,7 @@
   "com.reddit.frontpage": [
    {
     "path": "/",
-    "count": 6
+    "count": 7
    }
   ],
   "www.bing.com": [
@@ -13180,7 +13180,7 @@
   {
    "id": "com.reddit.frontpage",
    "name": "com.reddit.frontpage",
-   "count": 32,
+   "count": 34,
    "ref_scheme": "o"
   },
   {
@@ -13236,7 +13236,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 280
+   "count": 282
   },
   {
    "id": "(unknown)",
@@ -13306,13 +13306,13 @@
    "count": 4
   },
   {
-   "id": "IE",
-   "name": "Ireland",
-   "count": 2
-  },
-  {
    "id": "NL",
    "name": "Netherlands",
+   "count": 4
+  },
+  {
+   "id": "IE",
+   "name": "Ireland",
    "count": 2
   },
   {
@@ -13380,7 +13380,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 168
+   "count": 170
   },
   {
    "id": "tablet",
@@ -13407,7 +13407,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 197
+   "count": 199
   },
   {
    "id": "Safari",
@@ -13436,14 +13436,14 @@
    "count": 66
   },
   {
+   "id": "Android",
+   "name": "Android",
+   "count": 64
+  },
+  {
    "id": "macOS",
    "name": "macOS",
    "count": 63
-  },
-  {
-   "id": "Android",
-   "name": "Android",
-   "count": 62
   },
   {
    "id": "Linux",
