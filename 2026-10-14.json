@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-14T19:16:10Z",
+ "generated": "2026-10-14T20:11:02Z",
  "start": "2026-09-14",
  "end": "2026-10-15",
  "total": {
-  "total": 313,
+  "total": 314,
   "total_events": 191,
-  "total_utc": 313,
+  "total_utc": 314,
   "stats": [
    {
     "day": "2026-09-14",
@@ -548,7 +548,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 313
+    "monthly": 314
    },
    {
     "day": "2026-10-02",
@@ -880,7 +880,7 @@
      0
     ],
     "daily": 9,
-    "weekly": 36
+    "weekly": 37
    },
    {
     "day": "2026-10-13",
@@ -938,9 +938,9 @@
      0,
      2,
      0,
-     0
+     1
     ],
-    "daily": 20
+    "daily": 21
    },
    {
     "day": "2026-10-15",
@@ -1217,6 +1217,16 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/destinations/us-consulate-dubai",
+   "path_id": 112091077,
+   "title": "US Consulate Dubai Metro Station: BurJuman (Red/Green lines), 12 min walk",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-10-14": 1
    }
   },
   {
@@ -2632,9 +2642,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 122,
+  "visits": 123,
   "events_total": 191,
-  "goatcounter_total_with_events": 313,
+  "goatcounter_total_with_events": 314,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -2648,7 +2658,7 @@
    "2026-10-11": 11,
    "2026-10-12": 7,
    "2026-10-13": 6,
-   "2026-10-14": 5
+   "2026-10-14": 6
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -2663,7 +2673,7 @@
   "return_rate": 0.03,
   "routes": 35,
   "routes_not_found": 0,
-  "routes_per_visit": 0.29,
+  "routes_per_visit": 0.28,
   "routes_per_visitor_day": 0.73,
   "share_rate": 0.0,
   "shares": {},
@@ -2892,6 +2902,12 @@
     "count": 1
    }
   ],
+  "/destinations/us-consulate-dubai": [
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   }
+  ],
   "/destinations/pakistan-consulate-dubai": [
    {
     "name": "Google",
@@ -2990,6 +3006,10 @@
    {
     "path": "/destinations/etihad-rail-dubai",
     "count": 2
+   },
+   {
+    "path": "/destinations/us-consulate-dubai",
+    "count": 1
    },
    {
     "path": "/destinations/museum-of-the-future",
@@ -3124,7 +3144,7 @@
  "toprefs": [
   {
    "name": "",
-   "count": 239,
+   "count": 240,
    "ref_scheme": "o"
   },
   {
@@ -3186,7 +3206,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 282
+   "count": 283
   },
   {
    "id": "(unknown)",
@@ -3223,7 +3243,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 235
+   "count": 236
   },
   {
    "id": "US",
@@ -3330,7 +3350,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 170
+   "count": 171
   },
   {
    "id": "tablet",
@@ -3362,7 +3382,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 109
+   "count": 110
   },
   {
    "id": "Firefox",
@@ -3378,7 +3398,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 105
+   "count": 106
   },
   {
    "id": "Windows",
