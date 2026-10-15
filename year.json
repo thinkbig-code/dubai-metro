@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-15T10:14:30Z",
+ "generated": "2026-10-15T11:11:42Z",
  "start": "2025-10-15",
  "end": "2026-10-16",
  "total": {
-  "total": 314,
-  "total_events": 191,
-  "total_utc": 314,
+  "total": 319,
+  "total_events": 195,
+  "total_utc": 319,
   "stats": [
    {
     "day": "2025-10-15",
@@ -10568,7 +10568,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 314
+    "monthly": 319
    },
    {
     "day": "2026-10-02",
@@ -10960,7 +10960,7 @@
      1
     ],
     "daily": 21,
-    "weekly": 21
+    "weekly": 26
    },
    {
     "day": "2026-10-15",
@@ -10979,7 +10979,7 @@
      0,
      0,
      0,
-     0,
+     5,
      0,
      0,
      0,
@@ -10990,7 +10990,7 @@
      0,
      0
     ],
-    "daily": 0
+    "daily": 5
    },
    {
     "day": "2026-10-16",
@@ -11030,7 +11030,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 95,
+   "count": 96,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -11044,7 +11044,8 @@
     "2026-10-11": 9,
     "2026-10-12": 1,
     "2026-10-13": 1,
-    "2026-10-14": 4
+    "2026-10-14": 4,
+    "2026-10-15": 1
    }
   },
   {
@@ -11052,7 +11053,7 @@
    "path_id": 110447314,
    "title": "en",
    "event": true,
-   "count": 32,
+   "count": 33,
    "daily": {
     "2026-10-08": 7,
     "2026-10-09": 6,
@@ -11060,7 +11061,8 @@
     "2026-10-11": 9,
     "2026-10-12": 1,
     "2026-10-13": 1,
-    "2026-10-14": 4
+    "2026-10-14": 4,
+    "2026-10-15": 1
    }
   },
   {
@@ -11071,6 +11073,18 @@
    "count": 5,
    "daily": {
     "2026-10-08": 5
+   }
+  },
+  {
+   "path": "place/p_dubai_mall/from",
+   "path_id": 109724714,
+   "title": "ru|name",
+   "event": true,
+   "count": 4,
+   "daily": {
+    "2026-10-05": 2,
+    "2026-10-08": 1,
+    "2026-10-15": 1
    }
   },
   {
@@ -11105,17 +11119,6 @@
     "2026-10-07": 1,
     "2026-10-08": 1,
     "2026-10-14": 1
-   }
-  },
-  {
-   "path": "place/p_dubai_mall/from",
-   "path_id": 109724714,
-   "title": "ru|name",
-   "event": true,
-   "count": 3,
-   "daily": {
-    "2026-10-05": 2,
-    "2026-10-08": 1
    }
   },
   {
@@ -11159,6 +11162,28 @@
    "count": 2,
    "daily": {
     "2026-10-08": 2
+   }
+  },
+  {
+   "path": "route/p_dubai_mall/p_dxb_airport_terminal_3",
+   "path_id": 110326900,
+   "title": "en|search|ok|first_place_search",
+   "event": true,
+   "count": 2,
+   "daily": {
+    "2026-10-08": 1,
+    "2026-10-15": 1
+   }
+  },
+  {
+   "path": "place/p_dxb_airport_terminal_3/to",
+   "path_id": 110326886,
+   "title": "en|name",
+   "event": true,
+   "count": 2,
+   "daily": {
+    "2026-10-08": 1,
+    "2026-10-15": 1
    }
   },
   {
@@ -12250,26 +12275,6 @@
    }
   },
   {
-   "path": "route/p_dubai_mall/p_dxb_airport_terminal_3",
-   "path_id": 110326900,
-   "title": "en|search|ok|first_place_search",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-08": 1
-   }
-  },
-  {
-   "path": "place/p_dxb_airport_terminal_3/to",
-   "path_id": 110326886,
-   "title": "en|name",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-08": 1
-   }
-  },
-  {
    "path": "station_pair_route_search/alras/sobha",
    "path_id": 110320372,
    "title": "en|map",
@@ -12692,9 +12697,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 123,
-  "events_total": 191,
-  "goatcounter_total_with_events": 314,
+  "visits": 124,
+  "events_total": 195,
+  "goatcounter_total_with_events": 319,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -12708,7 +12713,8 @@
    "2026-10-11": 11,
    "2026-10-12": 7,
    "2026-10-13": 6,
-   "2026-10-14": 6
+   "2026-10-14": 6,
+   "2026-10-15": 1
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -12717,14 +12723,15 @@
    "2026-10-11": 9,
    "2026-10-12": 1,
    "2026-10-13": 1,
-   "2026-10-14": 4
+   "2026-10-14": 4,
+   "2026-10-15": 1
   },
-  "visitor_days": 33,
-  "return_rate": 0.03,
-  "routes": 35,
+  "visitor_days": 34,
+  "return_rate": 0.029,
+  "routes": 36,
   "routes_not_found": 0,
-  "routes_per_visit": 0.28,
-  "routes_per_visitor_day": 0.73,
+  "routes_per_visit": 0.29,
+  "routes_per_visitor_day": 0.74,
   "share_rate": 0.0,
   "shares": {},
   "failed_search_rate": 0.0,
@@ -12735,10 +12742,14 @@
    "fail": 1
   },
   "visitors_new_return": {
-   "new": 32,
+   "new": 33,
    "return": 1
   },
   "top_routes": [
+   {
+    "name": "p_dubai_mall > p_dxb_airport_terminal_3",
+    "count": 2
+   },
    {
     "name": "mc > p_burjuman_mall",
     "count": 1
@@ -12794,19 +12805,15 @@
    {
     "name": "dmm > p_jbr_the_walk",
     "count": 1
-   },
-   {
-    "name": "p_dubai_internet_city > p_jbr_the_walk",
-    "count": 1
    }
   ],
   "top_origins": [
    {
-    "name": "dmm",
-    "count": 3
+    "name": "p_dubai_mall",
+    "count": 4
    },
    {
-    "name": "p_dubai_mall",
+    "name": "dmm",
     "count": 3
    },
    {
@@ -12845,7 +12852,7 @@
   "top_destinations": [
    {
     "name": "p_dxb_airport_terminal_3",
-    "count": 4
+    "count": 5
    },
    {
     "name": "p_jbr_the_walk",
@@ -12885,11 +12892,47 @@
    }
   ]
  },
- "page_refs_error": {
-  "error": "HTTP 503",
-  "body": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>503 Backend fetch failed</title>\n  </head>\n  <body>\n    <h1>Error 503 Backend fetch failed</h1>\n    <p>Backend fetch failed</p>\n    <h3>Guru Meditation:</h3>\n    <p>XID: 36733074</p>\n    <hr>\n    <p>Vinyl Cache server</p>\n  </body>\n</html>\n"
- },
  "page_refs": {
+  "/": [
+   {
+    "name": "(direct or unknown)",
+    "count": 81
+   },
+   {
+    "name": "com.reddit.frontpage",
+    "count": 7
+   },
+   {
+    "name": "www.bing.com",
+    "count": 4
+   },
+   {
+    "name": "Yahoo",
+    "count": 1
+   },
+   {
+    "name": "web.telegram.org",
+    "count": 1
+   },
+   {
+    "name": "dubaimetro.fyi/destinations/etihad-rail-dubai",
+    "count": 1
+   },
+   {
+    "name": "dubaimetro.fyi/destinations/dubai-municipality-head-office",
+    "count": 1
+   }
+  ],
+  "/tl.html": [
+   {
+    "name": "www.facebook.com",
+    "count": 3
+   },
+   {
+    "name": "Facebook",
+    "count": 2
+   }
+  ],
   "/destinations/etihad-rail-dubai": [
    {
     "name": "(direct or unknown)",
@@ -13010,6 +13053,10 @@
  "ref_pages": {
   "(direct or unknown)": [
    {
+    "path": "/",
+    "count": 81
+   },
+   {
     "path": "/destinations/atlantis-the-palm",
     "count": 3
    },
@@ -13038,6 +13085,58 @@
     "count": 1
    }
   ],
+  "com.reddit.frontpage": [
+   {
+    "path": "/",
+    "count": 7
+   }
+  ],
+  "www.bing.com": [
+   {
+    "path": "/",
+    "count": 4
+   }
+  ],
+  "Yahoo": [
+   {
+    "path": "/",
+    "count": 1
+   }
+  ],
+  "web.telegram.org": [
+   {
+    "path": "/",
+    "count": 1
+   }
+  ],
+  "dubaimetro.fyi/destinations/etihad-rail-dubai": [
+   {
+    "path": "/",
+    "count": 1
+   },
+   {
+    "path": "/lines/green-line",
+    "count": 1
+   }
+  ],
+  "dubaimetro.fyi/destinations/dubai-municipality-head-office": [
+   {
+    "path": "/",
+    "count": 1
+   }
+  ],
+  "www.facebook.com": [
+   {
+    "path": "/tl.html",
+    "count": 3
+   }
+  ],
+  "Facebook": [
+   {
+    "path": "/tl.html",
+    "count": 2
+   }
+  ],
   "Google": [
    {
     "path": "/destinations/etihad-rail-dubai",
@@ -13061,12 +13160,6 @@
    },
    {
     "path": "/destinations/dubai-municipality-head-office",
-    "count": 1
-   }
-  ],
-  "dubaimetro.fyi/destinations/etihad-rail-dubai": [
-   {
-    "path": "/lines/green-line",
     "count": 1
    }
   ],
@@ -13108,7 +13201,7 @@
  "toprefs": [
   {
    "name": "",
-   "count": 240,
+   "count": 245,
    "ref_scheme": "o"
   },
   {
@@ -13170,7 +13263,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 283
+   "count": 288
   },
   {
    "id": "(unknown)",
@@ -13207,7 +13300,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 236
+   "count": 241
   },
   {
    "id": "US",
@@ -13324,7 +13417,7 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 115
+   "count": 120
   },
   {
    "id": "desktophd",
@@ -13341,7 +13434,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 199
+   "count": 204
   },
   {
    "id": "Safari",
@@ -13367,7 +13460,7 @@
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 66
+   "count": 71
   },
   {
    "id": "Android",
