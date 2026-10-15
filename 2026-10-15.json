@@ -1,6 +1,6 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-15T02:10:35Z",
+ "generated": "2026-10-15T03:10:19Z",
  "start": "2026-09-15",
  "end": "2026-10-16",
  "total": {
@@ -2869,20 +2869,14 @@
     "count": 1
    }
   ],
-  "/tl.html": [
-   {
-    "name": "www.facebook.com",
-    "count": 3
-   },
-   {
-    "name": "Facebook",
-    "count": 2
-   }
-  ],
-  "/destinations/atlantis-the-palm": [
+  "/destinations/etihad-rail-dubai": [
    {
     "name": "(direct or unknown)",
-    "count": 3
+    "count": 2
+   },
+   {
+    "name": "Google",
+    "count": 1
    }
   ],
   "/lines/green-line": [
@@ -2895,6 +2889,18 @@
     "count": 1
    }
   ],
+  "/destinations/us-consulate-dubai": [
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   }
+  ],
+  "/destinations/pakistan-consulate-dubai": [
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
   "/destinations/palm-jumeirah-mall": [
    {
     "name": "(direct or unknown)",
@@ -2904,12 +2910,6 @@
   "/destinations/dubai-police-general-headquarters": [
    {
     "name": "Google",
-    "count": 1
-   }
-  ],
-  "/destinations/american-hospital-dubai": [
-   {
-    "name": "chatgpt.com",
     "count": 1
    }
   ],
@@ -2937,9 +2937,27 @@
     "count": 1
    }
   ],
-  "/destinations/st-mary-s-catholic-church": [
+  "/ar.html": [
+   {
+    "name": "Yandex",
+    "count": 1
+   }
+  ],
+  "/destinations/dubai-mall": [
+   {
+    "name": "chatgpt.com",
+    "count": 1
+   }
+  ],
+  "/tram": [
    {
     "name": "(direct or unknown)",
+    "count": 1
+   }
+  ],
+  "/ru.html": [
+   {
+    "name": "dubaimetro.fyi",
     "count": 1
    }
   ]
@@ -2951,15 +2969,19 @@
     "count": 80
    },
    {
-    "path": "/destinations/atlantis-the-palm",
-    "count": 3
+    "path": "/destinations/etihad-rail-dubai",
+    "count": 2
+   },
+   {
+    "path": "/destinations/us-consulate-dubai",
+    "count": 1
    },
    {
     "path": "/destinations/palm-jumeirah-mall",
     "count": 1
    },
    {
-    "path": "/destinations/st-mary-s-catholic-church",
+    "path": "/tram",
     "count": 1
    }
   ],
@@ -3003,21 +3025,17 @@
     "count": 1
    }
   ],
-  "www.facebook.com": [
-   {
-    "path": "/tl.html",
-    "count": 3
-   }
-  ],
-  "Facebook": [
-   {
-    "path": "/tl.html",
-    "count": 2
-   }
-  ],
   "Google": [
    {
+    "path": "/destinations/etihad-rail-dubai",
+    "count": 1
+   },
+   {
     "path": "/lines/green-line",
+    "count": 1
+   },
+   {
+    "path": "/destinations/pakistan-consulate-dubai",
     "count": 1
    },
    {
@@ -3033,12 +3051,6 @@
     "count": 1
    }
   ],
-  "chatgpt.com": [
-   {
-    "path": "/destinations/american-hospital-dubai",
-    "count": 1
-   }
-  ],
   "dubaimetro.fyi/lines/red-line": [
    {
     "path": "/stations/centrepoint",
@@ -3050,141 +3062,171 @@
     "path": "/lines/red-line",
     "count": 1
    }
+  ],
+  "Yandex": [
+   {
+    "path": "/ar.html",
+    "count": 1
+   }
+  ],
+  "chatgpt.com": [
+   {
+    "path": "/destinations/dubai-mall",
+    "count": 1
+   }
+  ],
+  "dubaimetro.fyi": [
+   {
+    "path": "/ru.html",
+    "count": 1
+   }
   ]
  },
- "toprefs": [
+ "toprefs": {
+  "error": "<urlopen error [Errno 104] Connection reset by peer>"
+ },
+ "languages": {
+  "error": "<urlopen error [Errno 104] Connection reset by peer>"
+ },
+ "locations": [
   {
-   "name": "",
-   "count": 240,
-   "ref_scheme": "o"
+   "id": "AE",
+   "name": "United Arab Emirates",
+   "count": 236
   },
   {
-   "id": "com.reddit.frontpage",
-   "name": "com.reddit.frontpage",
-   "count": 34,
-   "ref_scheme": "o"
+   "id": "US",
+   "name": "United States",
+   "count": 33
   },
   {
-   "id": "www.bing.com",
-   "name": "www.bing.com",
-   "count": 8,
-   "ref_scheme": "h"
+   "id": "IN",
+   "name": "India",
+   "count": 6
   },
   {
-   "id": "Google",
-   "name": "Google",
-   "count": 6,
-   "ref_scheme": "g"
+   "id": "DE",
+   "name": "Germany",
+   "count": 5
   },
   {
-   "id": "Yahoo",
-   "name": "Yahoo",
-   "count": 6,
-   "ref_scheme": "g"
+   "id": "FR",
+   "name": "France",
+   "count": 5
   },
   {
-   "id": "www.facebook.com",
-   "name": "www.facebook.com",
-   "count": 3,
-   "ref_scheme": "h"
+   "id": "GB",
+   "name": "United Kingdom",
+   "count": 4
   },
   {
-   "id": "Facebook",
-   "name": "Facebook",
-   "count": 2,
-   "ref_scheme": "c"
+   "id": "ID",
+   "name": "Indonesia",
+   "count": 4
   },
   {
-   "id": "chatgpt.com",
-   "name": "chatgpt.com",
-   "count": 2,
-   "ref_scheme": "c"
+   "id": "NL",
+   "name": "Netherlands",
+   "count": 4
   },
   {
-   "id": "Yandex",
-   "name": "Yandex",
-   "count": 2,
-   "ref_scheme": "g"
-  },
-  {
-   "id": "web.telegram.org",
-   "name": "web.telegram.org",
-   "count": 1,
-   "ref_scheme": "h"
-  }
- ],
- "languages": [
-  {
-   "id": "eng",
-   "name": "English",
-   "count": 283
-  },
-  {
-   "id": "(unknown)",
-   "name": "(unknown)",
-   "count": 13
-  },
-  {
-   "id": "rus",
-   "name": "Russian",
-   "count": 13
-  },
-  {
-   "id": "ara",
-   "name": "Arabic",
+   "id": "IE",
+   "name": "Ireland",
    "count": 2
   },
   {
-   "id": "deu",
-   "name": "German",
+   "id": "PL",
+   "name": "Poland",
+   "count": 2
+  },
+  {
+   "id": "RU",
+   "name": "Russia",
+   "count": 2
+  },
+  {
+   "id": "UZ",
+   "name": "Uzbekistan",
+   "count": 2
+  },
+  {
+   "id": "AR",
+   "name": "Argentina",
    "count": 1
   },
   {
-   "id": "pol",
-   "name": "Polish",
+   "id": "BR",
+   "name": "Brazil",
    "count": 1
   },
   {
-   "id": "por",
-   "name": "Portuguese",
+   "id": "CA",
+   "name": "Canada",
+   "count": 1
+  },
+  {
+   "id": "CL",
+   "name": "Chile",
+   "count": 1
+  },
+  {
+   "id": "KR",
+   "name": "South Korea",
+   "count": 1
+  },
+  {
+   "id": "LT",
+   "name": "Republic of Lithuania",
+   "count": 1
+  },
+  {
+   "id": "PT",
+   "name": "Portugal",
+   "count": 1
+  },
+  {
+   "id": "SE",
+   "name": "Sweden",
+   "count": 1
+  },
+  {
+   "id": "TW",
+   "name": "Taiwan",
    "count": 1
   }
  ],
- "locations": {
-  "error": "<urlopen error [Errno 104] Connection reset by peer>"
- },
- "sizes": {
-  "error": "<urlopen error [Errno 104] Connection reset by peer>"
- },
+ "sizes": [
+  {
+   "id": "phone",
+   "name": "",
+   "count": 171
+  },
+  {
+   "id": "tablet",
+   "name": "",
+   "count": 17
+  },
+  {
+   "id": "desktop",
+   "name": "",
+   "count": 115
+  },
+  {
+   "id": "desktophd",
+   "name": "",
+   "count": 11
+  },
+  {
+   "id": "unknown",
+   "name": "",
+   "count": 0
+  }
+ ],
  "browsers": {
   "error": "<urlopen error [Errno 104] Connection reset by peer>"
  },
- "systems": [
-  {
-   "id": "iOS",
-   "name": "iOS",
-   "count": 106
-  },
-  {
-   "id": "Windows",
-   "name": "Windows",
-   "count": 66
-  },
-  {
-   "id": "Android",
-   "name": "Android",
-   "count": 64
-  },
-  {
-   "id": "macOS",
-   "name": "macOS",
-   "count": 63
-  },
-  {
-   "id": "Linux",
-   "name": "Linux",
-   "count": 15
-  }
- ],
+ "systems": {
+  "error": "<urlopen error [Errno 104] Connection reset by peer>"
+ },
  "campaigns": []
 }
