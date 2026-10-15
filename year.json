@@ -1,6 +1,6 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-15T00:02:03Z",
+ "generated": "2026-10-15T10:14:30Z",
  "start": "2025-10-15",
  "end": "2026-10-16",
  "total": {
@@ -12885,47 +12885,11 @@
    }
   ]
  },
+ "page_refs_error": {
+  "error": "HTTP 503",
+  "body": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>503 Backend fetch failed</title>\n  </head>\n  <body>\n    <h1>Error 503 Backend fetch failed</h1>\n    <p>Backend fetch failed</p>\n    <h3>Guru Meditation:</h3>\n    <p>XID: 36733074</p>\n    <hr>\n    <p>Vinyl Cache server</p>\n  </body>\n</html>\n"
+ },
  "page_refs": {
-  "/": [
-   {
-    "name": "(direct or unknown)",
-    "count": 80
-   },
-   {
-    "name": "com.reddit.frontpage",
-    "count": 7
-   },
-   {
-    "name": "www.bing.com",
-    "count": 4
-   },
-   {
-    "name": "Yahoo",
-    "count": 1
-   },
-   {
-    "name": "web.telegram.org",
-    "count": 1
-   },
-   {
-    "name": "dubaimetro.fyi/destinations/etihad-rail-dubai",
-    "count": 1
-   },
-   {
-    "name": "dubaimetro.fyi/destinations/dubai-municipality-head-office",
-    "count": 1
-   }
-  ],
-  "/tl.html": [
-   {
-    "name": "www.facebook.com",
-    "count": 3
-   },
-   {
-    "name": "Facebook",
-    "count": 2
-   }
-  ],
   "/destinations/etihad-rail-dubai": [
    {
     "name": "(direct or unknown)",
@@ -13046,10 +13010,6 @@
  "ref_pages": {
   "(direct or unknown)": [
    {
-    "path": "/",
-    "count": 80
-   },
-   {
     "path": "/destinations/atlantis-the-palm",
     "count": 3
    },
@@ -13078,58 +13038,6 @@
     "count": 1
    }
   ],
-  "com.reddit.frontpage": [
-   {
-    "path": "/",
-    "count": 7
-   }
-  ],
-  "www.bing.com": [
-   {
-    "path": "/",
-    "count": 4
-   }
-  ],
-  "Yahoo": [
-   {
-    "path": "/",
-    "count": 1
-   }
-  ],
-  "web.telegram.org": [
-   {
-    "path": "/",
-    "count": 1
-   }
-  ],
-  "dubaimetro.fyi/destinations/etihad-rail-dubai": [
-   {
-    "path": "/",
-    "count": 1
-   },
-   {
-    "path": "/lines/green-line",
-    "count": 1
-   }
-  ],
-  "dubaimetro.fyi/destinations/dubai-municipality-head-office": [
-   {
-    "path": "/",
-    "count": 1
-   }
-  ],
-  "www.facebook.com": [
-   {
-    "path": "/tl.html",
-    "count": 3
-   }
-  ],
-  "Facebook": [
-   {
-    "path": "/tl.html",
-    "count": 2
-   }
-  ],
   "Google": [
    {
     "path": "/destinations/etihad-rail-dubai",
@@ -13153,6 +13061,12 @@
    },
    {
     "path": "/destinations/dubai-municipality-head-office",
+    "count": 1
+   }
+  ],
+  "dubaimetro.fyi/destinations/etihad-rail-dubai": [
+   {
+    "path": "/lines/green-line",
     "count": 1
    }
   ],

@@ -1,6 +1,6 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-15T08:14:46Z",
+ "generated": "2026-10-15T10:12:43Z",
  "start": "2026-09-15",
  "end": "2026-10-16",
  "total": {
@@ -2835,9 +2835,6 @@
    }
   ]
  },
- "page_refs_error": {
-  "error": "<urlopen error [Errno 104] Connection reset by peer>"
- },
  "page_refs": {
   "/": [
    {
@@ -2869,7 +2866,61 @@
     "count": 1
    }
   ],
+  "/tl.html": [
+   {
+    "name": "www.facebook.com",
+    "count": 3
+   },
+   {
+    "name": "Facebook",
+    "count": 2
+   }
+  ],
+  "/destinations/etihad-rail-dubai": [
+   {
+    "name": "(direct or unknown)",
+    "count": 2
+   },
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
+  "/destinations/atlantis-the-palm": [
+   {
+    "name": "(direct or unknown)",
+    "count": 3
+   }
+  ],
+  "/lines/green-line": [
+   {
+    "name": "Google",
+    "count": 1
+   },
+   {
+    "name": "dubaimetro.fyi/destinations/etihad-rail-dubai",
+    "count": 1
+   }
+  ],
+  "/destinations/us-consulate-dubai": [
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   }
+  ],
+  "/destinations/pakistan-consulate-dubai": [
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
   "/destinations/museum-of-the-future": [
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   }
+  ],
+  "/destinations/palm-jumeirah-mall": [
    {
     "name": "(direct or unknown)",
     "count": 1
@@ -2878,6 +2929,12 @@
   "/destinations/dubai-police-general-headquarters": [
    {
     "name": "Google",
+    "count": 1
+   }
+  ],
+  "/destinations/american-hospital-dubai": [
+   {
+    "name": "chatgpt.com",
     "count": 1
    }
   ],
@@ -2890,6 +2947,12 @@
   "/destinations/dubai-municipality-head-office": [
    {
     "name": "Google",
+    "count": 1
+   }
+  ],
+  "/stations/centrepoint": [
+   {
+    "name": "dubaimetro.fyi/lines/red-line",
     "count": 1
    }
   ],
@@ -2922,6 +2985,12 @@
     "name": "(direct or unknown)",
     "count": 1
    }
+  ],
+  "/ru.html": [
+   {
+    "name": "dubaimetro.fyi",
+    "count": 1
+   }
   ]
  },
  "ref_pages": {
@@ -2931,7 +3000,23 @@
     "count": 80
    },
    {
+    "path": "/destinations/atlantis-the-palm",
+    "count": 3
+   },
+   {
+    "path": "/destinations/etihad-rail-dubai",
+    "count": 2
+   },
+   {
+    "path": "/destinations/us-consulate-dubai",
+    "count": 1
+   },
+   {
     "path": "/destinations/museum-of-the-future",
+    "count": 1
+   },
+   {
+    "path": "/destinations/palm-jumeirah-mall",
     "count": 1
    },
    {
@@ -2971,6 +3056,10 @@
    {
     "path": "/",
     "count": 1
+   },
+   {
+    "path": "/lines/green-line",
+    "count": 1
    }
   ],
   "dubaimetro.fyi/destinations/dubai-municipality-head-office": [
@@ -2979,7 +3068,31 @@
     "count": 1
    }
   ],
+  "www.facebook.com": [
+   {
+    "path": "/tl.html",
+    "count": 3
+   }
+  ],
+  "Facebook": [
+   {
+    "path": "/tl.html",
+    "count": 2
+   }
+  ],
   "Google": [
+   {
+    "path": "/destinations/etihad-rail-dubai",
+    "count": 1
+   },
+   {
+    "path": "/lines/green-line",
+    "count": 1
+   },
+   {
+    "path": "/destinations/pakistan-consulate-dubai",
+    "count": 1
+   },
    {
     "path": "/destinations/dubai-police-general-headquarters",
     "count": 1
@@ -2990,6 +3103,22 @@
    },
    {
     "path": "/destinations/dubai-municipality-head-office",
+    "count": 1
+   }
+  ],
+  "chatgpt.com": [
+   {
+    "path": "/destinations/american-hospital-dubai",
+    "count": 1
+   },
+   {
+    "path": "/destinations/dubai-mall",
+    "count": 1
+   }
+  ],
+  "dubaimetro.fyi/lines/red-line": [
+   {
+    "path": "/stations/centrepoint",
     "count": 1
    }
   ],
@@ -3005,9 +3134,9 @@
     "count": 1
    }
   ],
-  "chatgpt.com": [
+  "dubaimetro.fyi": [
    {
-    "path": "/destinations/dubai-mall",
+    "path": "/ru.html",
     "count": 1
    }
   ]
