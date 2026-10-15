@@ -1,6 +1,6 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-15T01:48:45Z",
+ "generated": "2026-10-15T02:12:58Z",
  "start": "2025-10-15",
  "end": "2026-10-16",
  "total": {
@@ -11114,9 +11114,43 @@
    "ref_scheme": "h"
   }
  ],
- "languages": {
-  "error": "<urlopen error [Errno 104] Connection reset by peer>"
- },
+ "languages": [
+  {
+   "id": "eng",
+   "name": "English",
+   "count": 283
+  },
+  {
+   "id": "(unknown)",
+   "name": "(unknown)",
+   "count": 13
+  },
+  {
+   "id": "rus",
+   "name": "Russian",
+   "count": 13
+  },
+  {
+   "id": "ara",
+   "name": "Arabic",
+   "count": 2
+  },
+  {
+   "id": "deu",
+   "name": "German",
+   "count": 1
+  },
+  {
+   "id": "pol",
+   "name": "Polish",
+   "count": 1
+  },
+  {
+   "id": "por",
+   "name": "Portuguese",
+   "count": 1
+  }
+ ],
  "locations": [
   {
    "id": "AE",
@@ -11227,11 +11261,53 @@
  "sizes": {
   "error": "<urlopen error [Errno 104] Connection reset by peer>"
  },
- "browsers": {
-  "error": "<urlopen error [Errno 104] Connection reset by peer>"
- },
- "systems": {
-  "error": "<urlopen error [Errno 104] Connection reset by peer>"
- },
+ "browsers": [
+  {
+   "id": "Chrome",
+   "name": "Chrome",
+   "count": 199
+  },
+  {
+   "id": "Safari",
+   "name": "Safari",
+   "count": 110
+  },
+  {
+   "id": "Firefox",
+   "name": "Firefox",
+   "count": 4
+  },
+  {
+   "name": "",
+   "count": 1
+  }
+ ],
+ "systems": [
+  {
+   "id": "iOS",
+   "name": "iOS",
+   "count": 106
+  },
+  {
+   "id": "Windows",
+   "name": "Windows",
+   "count": 66
+  },
+  {
+   "id": "Android",
+   "name": "Android",
+   "count": 64
+  },
+  {
+   "id": "macOS",
+   "name": "macOS",
+   "count": 63
+  },
+  {
+   "id": "Linux",
+   "name": "Linux",
+   "count": 15
+  }
+ ],
  "campaigns": []
 }
