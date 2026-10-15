@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-15T11:11:13Z",
+ "generated": "2026-10-15T12:10:52Z",
  "start": "2026-09-15",
  "end": "2026-10-16",
  "total": {
-  "total": 319,
+  "total": 320,
   "total_events": 195,
-  "total_utc": 319,
+  "total_utc": 320,
   "stats": [
    {
     "day": "2026-09-15",
@@ -518,7 +518,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 319
+    "monthly": 320
    },
    {
     "day": "2026-10-02",
@@ -880,7 +880,7 @@
      0
     ],
     "daily": 7,
-    "weekly": 33
+    "weekly": 34
    },
    {
     "day": "2026-10-14",
@@ -930,7 +930,7 @@
      0,
      0,
      5,
-     0,
+     1,
      0,
      0,
      0,
@@ -940,7 +940,7 @@
      0,
      0
     ],
-    "daily": 5
+    "daily": 6
    },
    {
     "day": "2026-10-16",
@@ -1026,6 +1026,19 @@
    }
   },
   {
+   "path": "/destinations/etihad-rail-dubai",
+   "path_id": 110626146,
+   "title": "Etihad Rail Dubai Station (Al Yalayis) Metro Station: Jumeirah Golf Estates",
+   "event": false,
+   "count": 4,
+   "daily": {
+    "2026-10-09": 1,
+    "2026-10-12": 1,
+    "2026-10-13": 1,
+    "2026-10-15": 1
+   }
+  },
+  {
    "path": "place/p_dubai_mall/from",
    "path_id": 109724714,
    "title": "ru|name",
@@ -1035,18 +1048,6 @@
     "2026-10-05": 2,
     "2026-10-08": 1,
     "2026-10-15": 1
-   }
-  },
-  {
-   "path": "/destinations/etihad-rail-dubai",
-   "path_id": 110626146,
-   "title": "Etihad Rail Dubai Station (Al Yalayis) Metro Station: Jumeirah Golf Estates",
-   "event": false,
-   "count": 3,
-   "daily": {
-    "2026-10-09": 1,
-    "2026-10-12": 1,
-    "2026-10-13": 1
    }
   },
   {
@@ -2647,9 +2648,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 124,
+  "visits": 125,
   "events_total": 195,
-  "goatcounter_total_with_events": 319,
+  "goatcounter_total_with_events": 320,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -2664,7 +2665,7 @@
    "2026-10-12": 7,
    "2026-10-13": 6,
    "2026-10-14": 6,
-   "2026-10-15": 1
+   "2026-10-15": 2
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -2886,7 +2887,7 @@
   "/destinations/etihad-rail-dubai": [
    {
     "name": "(direct or unknown)",
-    "count": 2
+    "count": 3
    },
    {
     "name": "Google",
@@ -3007,12 +3008,12 @@
     "count": 81
    },
    {
-    "path": "/destinations/atlantis-the-palm",
+    "path": "/destinations/etihad-rail-dubai",
     "count": 3
    },
    {
-    "path": "/destinations/etihad-rail-dubai",
-    "count": 2
+    "path": "/destinations/atlantis-the-palm",
+    "count": 3
    },
    {
     "path": "/destinations/us-consulate-dubai",
@@ -3151,7 +3152,7 @@
  "toprefs": [
   {
    "name": "",
-   "count": 245,
+   "count": 246,
    "ref_scheme": "o"
   },
   {
@@ -3213,7 +3214,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 288
+   "count": 289
   },
   {
    "id": "(unknown)",
@@ -3250,7 +3251,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 241
+   "count": 242
   },
   {
    "id": "US",
@@ -3357,7 +3358,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 171
+   "count": 172
   },
   {
    "id": "tablet",
@@ -3389,7 +3390,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 110
+   "count": 111
   },
   {
    "id": "Firefox",
@@ -3405,7 +3406,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 106
+   "count": 107
   },
   {
    "id": "Windows",
