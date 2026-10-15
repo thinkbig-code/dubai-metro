@@ -1,6 +1,6 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-15T05:10:14Z",
+ "generated": "2026-10-15T00:01:33Z",
  "start": "2026-09-15",
  "end": "2026-10-16",
  "total": {
@@ -973,9 +973,6 @@
     "daily": 0
    }
   ]
- },
- "hits_error": {
-  "error": "<urlopen error [Errno 104] Connection reset by peer>"
  },
  "hits": [
   {
@@ -2011,19 +2008,649 @@
    "daily": {
     "2026-10-08": 1
    }
+  },
+  {
+   "path": "route/qiyadah/adcb",
+   "path_id": 110447955,
+   "title": "en|search|ok|first_station_search",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "station/adcb/to",
+   "path_id": 110447954,
+   "title": "en|name",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "station/qiyadah/from",
+   "path_id": 110447934,
+   "title": "en|name",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "geo/ok/dhcc",
+   "path_id": 110447415,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "geo/fail/-",
+   "path_id": 110447348,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "station_pair_route_search/union/garhoud",
+   "path_id": 110390897,
+   "title": "en|place_search",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "route/union/garhoud",
+   "path_id": 110390896,
+   "title": "en|search|ok|first_place_search",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "station/garhoud/to",
+   "path_id": 110390895,
+   "title": "en|name",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "station/union/from",
+   "path_id": 110390878,
+   "title": "en|name",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "view/centrepoint/creek",
+   "path_id": 110382482,
+   "title": "en|opt_2",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "route_to_station_click/creek/-",
+   "path_id": 110382477,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "route/centrepoint/creek",
+   "path_id": 110382476,
+   "title": "en|map|ok|first_map",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "station_pair_route_search/centrepoint/creek",
+   "path_id": 110382475,
+   "title": "en|map",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "route_from_station_click/centrepoint/-",
+   "path_id": 110382473,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "route/p_gold_souk/p_atlantis_the_palm",
+   "path_id": 110330350,
+   "title": "en|search|ok|first_geo",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "place/p_gold_souk/from",
+   "path_id": 110330338,
+   "title": "en|name",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "route/furjan/p_dxb_airport_terminal_3",
+   "path_id": 110326931,
+   "title": "en|map|ok|first_place_search",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "route_from_station_click/furjan/-",
+   "path_id": 110326930,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "map_station_click/furjan/-",
+   "path_id": 110326925,
+   "title": "en|home|desktop",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "route/p_dubai_mall/p_dxb_airport_terminal_3",
+   "path_id": 110326900,
+   "title": "en|search|ok|first_place_search",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "place/p_dxb_airport_terminal_3/to",
+   "path_id": 110326886,
+   "title": "en|name",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "station_pair_route_search/alras/sobha",
+   "path_id": 110320372,
+   "title": "en|map",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "route/alras/sobha",
+   "path_id": 110320371,
+   "title": "en|map|ok|first_map",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "route_to_station_click/sobha/-",
+   "path_id": 110320370,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "route_from_station_click/alras/-",
+   "path_id": 110320357,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "map_station_click/alras/-",
+   "path_id": 110320345,
+   "title": "en|home|desktop",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "view/baniyas/rigga",
+   "path_id": 110318173,
+   "title": "en|details",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "station_pair_route_search/baniyas/rigga",
+   "path_id": 110318165,
+   "title": "en|place_search",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "route/baniyas/rigga",
+   "path_id": 110318164,
+   "title": "en|map|ok|first_place_search",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "route_from_station_click/baniyas/-",
+   "path_id": 110318158,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "map_station_click/baniyas/-",
+   "path_id": 110318154,
+   "title": "en|home|phone",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "noresult/from/-",
+   "path_id": 110317711,
+   "title": "en|w on",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "station/bk/to",
+   "path_id": 110317669,
+   "title": "en|name",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "place/p_dubai_mall/to",
+   "path_id": 110317659,
+   "title": "en|name",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "route_from_station_click/rigga/-",
+   "path_id": 110317446,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-08": 1
+   }
+  },
+  {
+   "path": "station_pair_route_search/creek/moe",
+   "path_id": 110313002,
+   "title": "en|map",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-07": 1
+   }
+  },
+  {
+   "path": "route/creek/moe",
+   "path_id": 110313001,
+   "title": "en|map|ok|first_map",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-07": 1
+   }
+  },
+  {
+   "path": "route_to_station_click/moe/-",
+   "path_id": 110313000,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-07": 1
+   }
+  },
+  {
+   "path": "route_from_station_click/creek/-",
+   "path_id": 110312982,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-07": 1
+   }
+  },
+  {
+   "path": "station_pair_route_search/sobha/centrepoint",
+   "path_id": 110294750,
+   "title": "en|map",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-07": 1
+   }
+  },
+  {
+   "path": "route/sobha/centrepoint",
+   "path_id": 110294749,
+   "title": "en|map|ok|first_map",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-07": 1
+   }
+  },
+  {
+   "path": "route_to_station_click/centrepoint/-",
+   "path_id": 110294748,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-07": 1
+   }
+  },
+  {
+   "path": "route_from_station_click/sobha/-",
+   "path_id": 110294730,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-07": 1
+   }
+  },
+  {
+   "path": "/tram",
+   "path_id": 109752598,
+   "title": "Dubai Tram: Stops, JBR Loop, Metro Links and Hours",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-10-05": 1
+   }
+  },
+  {
+   "path": "route/p_dubai_mall/et",
+   "path_id": 109748383,
+   "title": "en|search|ok|first_place_search",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-05": 1
+   }
+  },
+  {
+   "path": "station/et/to",
+   "path_id": 109748382,
+   "title": "en|name",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-05": 1
+   }
+  },
+  {
+   "path": "route/p_dubai_mall/p_jbr_the_walk",
+   "path_id": 109724730,
+   "title": "ru|search|ok|first_place_search",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-05": 1
+   }
+  },
+  {
+   "path": "station_pair_route_search/dmt/bk",
+   "path_id": 109553312,
+   "title": "en|map",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-04": 1
+   }
+  },
+  {
+   "path": "route/dmt/bk",
+   "path_id": 109553311,
+   "title": "en|map|ok|first_map",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-04": 1
+   }
+  },
+  {
+   "path": "route_to_station_click/bk/-",
+   "path_id": 109553310,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-04": 1
+   }
+  },
+  {
+   "path": "route_from_station_click/dmt/-",
+   "path_id": 109553303,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-04": 1
+   }
+  },
+  {
+   "path": "map_station_click/dmt/-",
+   "path_id": 109553298,
+   "title": "en|home|phone",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-04": 1
+   }
+  },
+  {
+   "path": "map_station_click/dic/-",
+   "path_id": 109247471,
+   "title": "en|home|desktop",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-02": 1
+   }
+  },
+  {
+   "path": "view/p_atlantis_the_palm/p_dxb_airport_terminal_3",
+   "path_id": 109223206,
+   "title": "ru|details",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-02": 1
+   }
+  },
+  {
+   "path": "route/p_atlantis_the_palm/p_dxb_airport_terminal_3",
+   "path_id": 109223190,
+   "title": "ru|search|ok",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-02": 1
+   }
+  },
+  {
+   "path": "view/bk/p_dxb_airport_terminal_3",
+   "path_id": 109221730,
+   "title": "en|details",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-02": 1
+   }
+  },
+  {
+   "path": "station/bk/from",
+   "path_id": 109221708,
+   "title": "en|name",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-02": 1
+   }
+  },
+  {
+   "path": "route/bk/p_dxb_airport_terminal_3",
+   "path_id": 109221707,
+   "title": "en|search|ok",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-02": 1
+   }
+  },
+  {
+   "path": "/ru.html",
+   "path_id": 109203485,
+   "title": "Карта метро Дубая и планировщик маршрутов: метро, трамвай, монорельс",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-10-02": 1
+   }
+  },
+  {
+   "path": "route/bb/moe",
+   "path_id": 109178054,
+   "title": "ru|map|ok",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-02": 1
+   }
+  },
+  {
+   "path": "route/moe/bb",
+   "path_id": 109178005,
+   "title": "ru|map|ok",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-02": 1
+   }
+  },
+  {
+   "path": "route/bk/jge",
+   "path_id": 109172116,
+   "title": "en|map|ok",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-02": 1
+   }
+  },
+  {
+   "path": "route/bk/emirates",
+   "path_id": 109171170,
+   "title": "en|map|ok",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-02": 1
+   }
   }
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 121,
-  "events_total": 130,
+  "visits": 123,
+  "events_total": 191,
   "goatcounter_total_with_events": 314,
   "page_loads_by_day": {
    "2026-10-01": 6,
-   "2026-10-02": 23,
+   "2026-10-02": 24,
    "2026-10-03": 4,
    "2026-10-04": 7,
-   "2026-10-05": 6,
+   "2026-10-05": 7,
    "2026-10-07": 7,
    "2026-10-08": 22,
    "2026-10-09": 11,
@@ -2044,17 +2671,18 @@
   },
   "visitor_days": 33,
   "return_rate": 0.03,
-  "routes": 16,
+  "routes": 35,
   "routes_not_found": 0,
-  "routes_per_visit": 0.13,
-  "routes_per_visitor_day": 0.48,
+  "routes_per_visit": 0.28,
+  "routes_per_visitor_day": 0.73,
   "share_rate": 0.0,
   "shares": {},
   "failed_search_rate": 0.0,
   "failed_searches": [],
   "nearest_station": {
    "denied": 3,
-   "ok": 1
+   "ok": 2,
+   "fail": 1
   },
   "visitors_new_return": {
    "new": 32,
@@ -2128,7 +2756,23 @@
     "count": 3
    },
    {
+    "name": "p_dubai_mall",
+    "count": 3
+   },
+   {
+    "name": "bk",
+    "count": 3
+   },
+   {
     "name": "p_dxb_airport_terminal_3",
+    "count": 2
+   },
+   {
+    "name": "bb",
+    "count": 2
+   },
+   {
+    "name": "moe",
     "count": 2
    },
    {
@@ -2140,31 +2784,23 @@
     "count": 1
    },
    {
-    "name": "bb",
-    "count": 1
-   },
-   {
-    "name": "moe",
-    "count": 1
-   },
-   {
     "name": "qusais",
     "count": 1
    },
    {
     "name": "expo",
     "count": 1
-   },
-   {
-    "name": "palmgw",
-    "count": 1
-   },
-   {
-    "name": "pj",
-    "count": 1
    }
   ],
   "top_destinations": [
+   {
+    "name": "p_dxb_airport_terminal_3",
+    "count": 4
+   },
+   {
+    "name": "p_jbr_the_walk",
+    "count": 3
+   },
    {
     "name": "p_burj_khalifa",
     "count": 2
@@ -2174,7 +2810,7 @@
     "count": 2
    },
    {
-    "name": "p_jbr_the_walk",
+    "name": "moe",
     "count": 2
    },
    {
@@ -2196,21 +2832,50 @@
    {
     "name": "pjm",
     "count": 1
-   },
-   {
-    "name": "dg",
-    "count": 1
-   },
-   {
-    "name": "p_etihad_rail_al_yalayis_station",
-    "count": 1
    }
   ]
  },
- "page_refs_error": {
-  "error": "<urlopen error [Errno 104] Connection reset by peer>"
- },
  "page_refs": {
+  "/": [
+   {
+    "name": "(direct or unknown)",
+    "count": 80
+   },
+   {
+    "name": "com.reddit.frontpage",
+    "count": 7
+   },
+   {
+    "name": "www.bing.com",
+    "count": 4
+   },
+   {
+    "name": "Yahoo",
+    "count": 1
+   },
+   {
+    "name": "web.telegram.org",
+    "count": 1
+   },
+   {
+    "name": "dubaimetro.fyi/destinations/etihad-rail-dubai",
+    "count": 1
+   },
+   {
+    "name": "dubaimetro.fyi/destinations/dubai-municipality-head-office",
+    "count": 1
+   }
+  ],
+  "/tl.html": [
+   {
+    "name": "www.facebook.com",
+    "count": 3
+   },
+   {
+    "name": "Facebook",
+    "count": 2
+   }
+  ],
   "/destinations/etihad-rail-dubai": [
    {
     "name": "(direct or unknown)",
@@ -2243,9 +2908,45 @@
     "count": 1
    }
   ],
+  "/destinations/pakistan-consulate-dubai": [
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
+  "/destinations/museum-of-the-future": [
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   }
+  ],
+  "/destinations/palm-jumeirah-mall": [
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   }
+  ],
+  "/destinations/dubai-police-general-headquarters": [
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
   "/destinations/american-hospital-dubai": [
    {
     "name": "chatgpt.com",
+    "count": 1
+   }
+  ],
+  "/destinations/al-zahra-hospital-dubai": [
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
+  "/destinations/dubai-municipality-head-office": [
+   {
+    "name": "Google",
     "count": 1
    }
   ],
@@ -2255,9 +2956,21 @@
     "count": 1
    }
   ],
+  "/lines/red-line": [
+   {
+    "name": "dubaimetro.fyi/lines/green-line",
+    "count": 1
+   }
+  ],
   "/destinations/st-mary-s-catholic-church": [
    {
     "name": "(direct or unknown)",
+    "count": 1
+   }
+  ],
+  "/ar.html": [
+   {
+    "name": "Yandex",
     "count": 1
    }
   ],
@@ -2266,10 +2979,26 @@
     "name": "chatgpt.com",
     "count": 1
    }
+  ],
+  "/tram": [
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   }
+  ],
+  "/ru.html": [
+   {
+    "name": "dubaimetro.fyi",
+    "count": 1
+   }
   ]
  },
  "ref_pages": {
   "(direct or unknown)": [
+   {
+    "path": "/",
+    "count": 80
+   },
    {
     "path": "/destinations/atlantis-the-palm",
     "count": 3
@@ -2283,8 +3012,72 @@
     "count": 1
    },
    {
+    "path": "/destinations/museum-of-the-future",
+    "count": 1
+   },
+   {
+    "path": "/destinations/palm-jumeirah-mall",
+    "count": 1
+   },
+   {
     "path": "/destinations/st-mary-s-catholic-church",
     "count": 1
+   },
+   {
+    "path": "/tram",
+    "count": 1
+   }
+  ],
+  "com.reddit.frontpage": [
+   {
+    "path": "/",
+    "count": 7
+   }
+  ],
+  "www.bing.com": [
+   {
+    "path": "/",
+    "count": 4
+   }
+  ],
+  "Yahoo": [
+   {
+    "path": "/",
+    "count": 1
+   }
+  ],
+  "web.telegram.org": [
+   {
+    "path": "/",
+    "count": 1
+   }
+  ],
+  "dubaimetro.fyi/destinations/etihad-rail-dubai": [
+   {
+    "path": "/",
+    "count": 1
+   },
+   {
+    "path": "/lines/green-line",
+    "count": 1
+   }
+  ],
+  "dubaimetro.fyi/destinations/dubai-municipality-head-office": [
+   {
+    "path": "/",
+    "count": 1
+   }
+  ],
+  "www.facebook.com": [
+   {
+    "path": "/tl.html",
+    "count": 3
+   }
+  ],
+  "Facebook": [
+   {
+    "path": "/tl.html",
+    "count": 2
    }
   ],
   "Google": [
@@ -2295,11 +3088,21 @@
    {
     "path": "/lines/green-line",
     "count": 1
-   }
-  ],
-  "dubaimetro.fyi/destinations/etihad-rail-dubai": [
+   },
    {
-    "path": "/lines/green-line",
+    "path": "/destinations/pakistan-consulate-dubai",
+    "count": 1
+   },
+   {
+    "path": "/destinations/dubai-police-general-headquarters",
+    "count": 1
+   },
+   {
+    "path": "/destinations/al-zahra-hospital-dubai",
+    "count": 1
+   },
+   {
+    "path": "/destinations/dubai-municipality-head-office",
     "count": 1
    }
   ],
@@ -2316,6 +3119,24 @@
   "dubaimetro.fyi/lines/red-line": [
    {
     "path": "/stations/centrepoint",
+    "count": 1
+   }
+  ],
+  "dubaimetro.fyi/lines/green-line": [
+   {
+    "path": "/lines/red-line",
+    "count": 1
+   }
+  ],
+  "Yandex": [
+   {
+    "path": "/ar.html",
+    "count": 1
+   }
+  ],
+  "dubaimetro.fyi": [
+   {
+    "path": "/ru.html",
     "count": 1
    }
   ]
@@ -2525,9 +3346,33 @@
    "count": 1
   }
  ],
- "sizes": {
-  "error": "<urlopen error [Errno 104] Connection reset by peer>"
- },
+ "sizes": [
+  {
+   "id": "phone",
+   "name": "",
+   "count": 171
+  },
+  {
+   "id": "tablet",
+   "name": "",
+   "count": 17
+  },
+  {
+   "id": "desktop",
+   "name": "",
+   "count": 115
+  },
+  {
+   "id": "desktophd",
+   "name": "",
+   "count": 11
+  },
+  {
+   "id": "unknown",
+   "name": "",
+   "count": 0
+  }
+ ],
  "browsers": [
   {
    "id": "Chrome",
@@ -2549,10 +3394,32 @@
    "count": 1
   }
  ],
- "systems": {
-  "error": "<urlopen error [Errno 104] Connection reset by peer>"
- },
- "campaigns": {
-  "error": "<urlopen error [Errno 104] Connection reset by peer>"
- }
+ "systems": [
+  {
+   "id": "iOS",
+   "name": "iOS",
+   "count": 106
+  },
+  {
+   "id": "Windows",
+   "name": "Windows",
+   "count": 66
+  },
+  {
+   "id": "Android",
+   "name": "Android",
+   "count": 64
+  },
+  {
+   "id": "macOS",
+   "name": "macOS",
+   "count": 63
+  },
+  {
+   "id": "Linux",
+   "name": "Linux",
+   "count": 15
+  }
+ ],
+ "campaigns": []
 }
