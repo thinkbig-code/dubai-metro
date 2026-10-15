@@ -1,6 +1,6 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-15T00:01:33Z",
+ "generated": "2026-10-15T01:16:37Z",
  "start": "2026-09-15",
  "end": "2026-10-16",
  "total": {
@@ -2835,6 +2835,9 @@
    }
   ]
  },
+ "page_refs_error": {
+  "error": "<urlopen error [Errno 104] Connection reset by peer>"
+ },
  "page_refs": {
   "/": [
    {
@@ -2892,16 +2895,6 @@
     "count": 3
    }
   ],
-  "/lines/green-line": [
-   {
-    "name": "Google",
-    "count": 1
-   },
-   {
-    "name": "dubaimetro.fyi/destinations/etihad-rail-dubai",
-    "count": 1
-   }
-  ],
   "/destinations/us-consulate-dubai": [
    {
     "name": "(direct or unknown)",
@@ -2920,21 +2913,9 @@
     "count": 1
    }
   ],
-  "/destinations/palm-jumeirah-mall": [
-   {
-    "name": "(direct or unknown)",
-    "count": 1
-   }
-  ],
   "/destinations/dubai-police-general-headquarters": [
    {
     "name": "Google",
-    "count": 1
-   }
-  ],
-  "/destinations/american-hospital-dubai": [
-   {
-    "name": "chatgpt.com",
     "count": 1
    }
   ],
@@ -2959,30 +2940,6 @@
   "/lines/red-line": [
    {
     "name": "dubaimetro.fyi/lines/green-line",
-    "count": 1
-   }
-  ],
-  "/destinations/st-mary-s-catholic-church": [
-   {
-    "name": "(direct or unknown)",
-    "count": 1
-   }
-  ],
-  "/ar.html": [
-   {
-    "name": "Yandex",
-    "count": 1
-   }
-  ],
-  "/destinations/dubai-mall": [
-   {
-    "name": "chatgpt.com",
-    "count": 1
-   }
-  ],
-  "/tram": [
-   {
-    "name": "(direct or unknown)",
     "count": 1
    }
   ],
@@ -3014,18 +2971,6 @@
    {
     "path": "/destinations/museum-of-the-future",
     "count": 1
-   },
-   {
-    "path": "/destinations/palm-jumeirah-mall",
-    "count": 1
-   },
-   {
-    "path": "/destinations/st-mary-s-catholic-church",
-    "count": 1
-   },
-   {
-    "path": "/tram",
-    "count": 1
    }
   ],
   "com.reddit.frontpage": [
@@ -3056,10 +3001,6 @@
    {
     "path": "/",
     "count": 1
-   },
-   {
-    "path": "/lines/green-line",
-    "count": 1
    }
   ],
   "dubaimetro.fyi/destinations/dubai-municipality-head-office": [
@@ -3086,10 +3027,6 @@
     "count": 1
    },
    {
-    "path": "/lines/green-line",
-    "count": 1
-   },
-   {
     "path": "/destinations/pakistan-consulate-dubai",
     "count": 1
    },
@@ -3106,16 +3043,6 @@
     "count": 1
    }
   ],
-  "chatgpt.com": [
-   {
-    "path": "/destinations/american-hospital-dubai",
-    "count": 1
-   },
-   {
-    "path": "/destinations/dubai-mall",
-    "count": 1
-   }
-  ],
   "dubaimetro.fyi/lines/red-line": [
    {
     "path": "/stations/centrepoint",
@@ -3125,12 +3052,6 @@
   "dubaimetro.fyi/lines/green-line": [
    {
     "path": "/lines/red-line",
-    "count": 1
-   }
-  ],
-  "Yandex": [
-   {
-    "path": "/ar.html",
     "count": 1
    }
   ],
@@ -3202,150 +3123,12 @@
    "ref_scheme": "h"
   }
  ],
- "languages": [
-  {
-   "id": "eng",
-   "name": "English",
-   "count": 283
-  },
-  {
-   "id": "(unknown)",
-   "name": "(unknown)",
-   "count": 13
-  },
-  {
-   "id": "rus",
-   "name": "Russian",
-   "count": 13
-  },
-  {
-   "id": "ara",
-   "name": "Arabic",
-   "count": 2
-  },
-  {
-   "id": "deu",
-   "name": "German",
-   "count": 1
-  },
-  {
-   "id": "pol",
-   "name": "Polish",
-   "count": 1
-  },
-  {
-   "id": "por",
-   "name": "Portuguese",
-   "count": 1
-  }
- ],
- "locations": [
-  {
-   "id": "AE",
-   "name": "United Arab Emirates",
-   "count": 236
-  },
-  {
-   "id": "US",
-   "name": "United States",
-   "count": 33
-  },
-  {
-   "id": "IN",
-   "name": "India",
-   "count": 6
-  },
-  {
-   "id": "DE",
-   "name": "Germany",
-   "count": 5
-  },
-  {
-   "id": "FR",
-   "name": "France",
-   "count": 5
-  },
-  {
-   "id": "GB",
-   "name": "United Kingdom",
-   "count": 4
-  },
-  {
-   "id": "ID",
-   "name": "Indonesia",
-   "count": 4
-  },
-  {
-   "id": "NL",
-   "name": "Netherlands",
-   "count": 4
-  },
-  {
-   "id": "IE",
-   "name": "Ireland",
-   "count": 2
-  },
-  {
-   "id": "PL",
-   "name": "Poland",
-   "count": 2
-  },
-  {
-   "id": "RU",
-   "name": "Russia",
-   "count": 2
-  },
-  {
-   "id": "UZ",
-   "name": "Uzbekistan",
-   "count": 2
-  },
-  {
-   "id": "AR",
-   "name": "Argentina",
-   "count": 1
-  },
-  {
-   "id": "BR",
-   "name": "Brazil",
-   "count": 1
-  },
-  {
-   "id": "CA",
-   "name": "Canada",
-   "count": 1
-  },
-  {
-   "id": "CL",
-   "name": "Chile",
-   "count": 1
-  },
-  {
-   "id": "KR",
-   "name": "South Korea",
-   "count": 1
-  },
-  {
-   "id": "LT",
-   "name": "Republic of Lithuania",
-   "count": 1
-  },
-  {
-   "id": "PT",
-   "name": "Portugal",
-   "count": 1
-  },
-  {
-   "id": "SE",
-   "name": "Sweden",
-   "count": 1
-  },
-  {
-   "id": "TW",
-   "name": "Taiwan",
-   "count": 1
-  }
- ],
+ "languages": {
+  "error": "<urlopen error [Errno 104] Connection reset by peer>"
+ },
+ "locations": {
+  "error": "<urlopen error [Errno 104] Connection reset by peer>"
+ },
  "sizes": [
   {
    "id": "phone",
@@ -3373,27 +3156,9 @@
    "count": 0
   }
  ],
- "browsers": [
-  {
-   "id": "Chrome",
-   "name": "Chrome",
-   "count": 199
-  },
-  {
-   "id": "Safari",
-   "name": "Safari",
-   "count": 110
-  },
-  {
-   "id": "Firefox",
-   "name": "Firefox",
-   "count": 4
-  },
-  {
-   "name": "",
-   "count": 1
-  }
- ],
+ "browsers": {
+  "error": "<urlopen error [Errno 104] Connection reset by peer>"
+ },
  "systems": [
   {
    "id": "iOS",
