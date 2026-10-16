@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-16T18:08:01Z",
+ "generated": "2026-10-16T19:13:02Z",
  "start": "2026-09-16",
  "end": "2026-10-17",
  "total": {
-  "total": 323,
+  "total": 324,
   "total_events": 195,
-  "total_utc": 323,
+  "total_utc": 324,
   "stats": [
    {
     "day": "2026-09-16",
@@ -488,7 +488,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 323
+    "monthly": 324
    },
    {
     "day": "2026-10-02",
@@ -880,7 +880,7 @@
      1
     ],
     "daily": 21,
-    "weekly": 30
+    "weekly": 31
    },
    {
     "day": "2026-10-15",
@@ -938,9 +938,9 @@
      0,
      0,
      0,
-     0
+     1
     ],
-    "daily": 3
+    "daily": 4
    },
    {
     "day": "2026-10-17",
@@ -1081,6 +1081,17 @@
    "count": 2,
    "daily": {
     "2026-10-13": 1,
+    "2026-10-16": 1
+   }
+  },
+  {
+   "path": "/lines/red-line",
+   "path_id": 111681936,
+   "title": "Dubai Metro Red Line: Stations, Expo Branch, Map and Hours",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-10-12": 1,
     "2026-10-16": 1
    }
   },
@@ -1441,16 +1452,6 @@
    "path": "/stations/centrepoint",
    "path_id": 111685825,
    "title": "Centrepoint Metro Station, Dubai: Red Line (formerly Al Rashidiya)",
-   "event": false,
-   "count": 1,
-   "daily": {
-    "2026-10-12": 1
-   }
-  },
-  {
-   "path": "/lines/red-line",
-   "path_id": 111681936,
-   "title": "Dubai Metro Red Line: Stations, Expo Branch, Map and Hours",
    "event": false,
    "count": 1,
    "daily": {
@@ -2660,9 +2661,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 128,
+  "visits": 129,
   "events_total": 195,
-  "goatcounter_total_with_events": 323,
+  "goatcounter_total_with_events": 324,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -2678,7 +2679,7 @@
    "2026-10-13": 6,
    "2026-10-14": 6,
    "2026-10-15": 2,
-   "2026-10-16": 3
+   "2026-10-16": 4
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -2923,6 +2924,16 @@
     "count": 1
    }
   ],
+  "/lines/red-line": [
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   },
+   {
+    "name": "dubaimetro.fyi/lines/green-line",
+    "count": 1
+   }
+  ],
   "/lines/green-line": [
    {
     "name": "Google",
@@ -2987,12 +2998,6 @@
     "count": 1
    }
   ],
-  "/lines/red-line": [
-   {
-    "name": "dubaimetro.fyi/lines/green-line",
-    "count": 1
-   }
-  ],
   "/destinations/st-mary-s-catholic-church": [
    {
     "name": "(direct or unknown)",
@@ -3040,6 +3045,10 @@
    },
    {
     "path": "/destinations/palm-jumeirah-mall",
+    "count": 1
+   },
+   {
+    "path": "/lines/red-line",
     "count": 1
    },
    {
@@ -3155,15 +3164,15 @@
     "count": 1
    }
   ],
-  "dubaimetro.fyi/lines/red-line": [
-   {
-    "path": "/stations/centrepoint",
-    "count": 1
-   }
-  ],
   "dubaimetro.fyi/lines/green-line": [
    {
     "path": "/lines/red-line",
+    "count": 1
+   }
+  ],
+  "dubaimetro.fyi/lines/red-line": [
+   {
+    "path": "/stations/centrepoint",
     "count": 1
    }
   ],
@@ -3183,7 +3192,7 @@
  "toprefs": [
   {
    "name": "",
-   "count": 246,
+   "count": 247,
    "ref_scheme": "o"
   },
   {
@@ -3245,7 +3254,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 291
+   "count": 292
   },
   {
    "id": "(unknown)",
@@ -3282,7 +3291,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 245
+   "count": 246
   },
   {
    "id": "US",
@@ -3389,7 +3398,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 175
+   "count": 176
   },
   {
    "id": "tablet",
@@ -3421,7 +3430,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 112
+   "count": 113
   },
   {
    "id": "Firefox",
@@ -3437,7 +3446,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 108
+   "count": 109
   },
   {
    "id": "Windows",
