@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-16T04:11:58Z",
+ "generated": "2026-10-16T05:11:43Z",
  "start": "2026-09-16",
  "end": "2026-10-17",
  "total": {
-  "total": 320,
+  "total": 321,
   "total_events": 195,
-  "total_utc": 320,
+  "total_utc": 321,
   "stats": [
    {
     "day": "2026-09-16",
@@ -488,7 +488,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 320
+    "monthly": 321
    },
    {
     "day": "2026-10-02",
@@ -880,7 +880,7 @@
      1
     ],
     "daily": 21,
-    "weekly": 27
+    "weekly": 28
    },
    {
     "day": "2026-10-15",
@@ -923,7 +923,7 @@
      0,
      0,
      0,
-     0,
+     1,
      0,
      0,
      0,
@@ -940,7 +940,7 @@
      0,
      0
     ],
-    "daily": 0
+    "daily": 1
    },
    {
     "day": "2026-10-17",
@@ -1016,6 +1016,20 @@
    }
   },
   {
+   "path": "/destinations/etihad-rail-dubai",
+   "path_id": 110626146,
+   "title": "Etihad Rail Dubai Station (Al Yalayis) Metro Station: Jumeirah Golf Estates",
+   "event": false,
+   "count": 5,
+   "daily": {
+    "2026-10-09": 1,
+    "2026-10-12": 1,
+    "2026-10-13": 1,
+    "2026-10-15": 1,
+    "2026-10-16": 1
+   }
+  },
+  {
    "path": "/tl.html",
    "path_id": 110332677,
    "title": "Interactive na Mapa ng Dubai Metro: Metro, Tram, Palm Monorail",
@@ -1023,19 +1037,6 @@
    "count": 5,
    "daily": {
     "2026-10-08": 5
-   }
-  },
-  {
-   "path": "/destinations/etihad-rail-dubai",
-   "path_id": 110626146,
-   "title": "Etihad Rail Dubai Station (Al Yalayis) Metro Station: Jumeirah Golf Estates",
-   "event": false,
-   "count": 4,
-   "daily": {
-    "2026-10-09": 1,
-    "2026-10-12": 1,
-    "2026-10-13": 1,
-    "2026-10-15": 1
    }
   },
   {
@@ -2648,9 +2649,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 125,
+  "visits": 126,
   "events_total": 195,
-  "goatcounter_total_with_events": 320,
+  "goatcounter_total_with_events": 321,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -2665,7 +2666,8 @@
    "2026-10-12": 7,
    "2026-10-13": 6,
    "2026-10-14": 6,
-   "2026-10-15": 2
+   "2026-10-15": 2,
+   "2026-10-16": 1
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -2874,6 +2876,16 @@
     "count": 1
    }
   ],
+  "/destinations/etihad-rail-dubai": [
+   {
+    "name": "(direct or unknown)",
+    "count": 3
+   },
+   {
+    "name": "Google",
+    "count": 2
+   }
+  ],
   "/tl.html": [
    {
     "name": "www.facebook.com",
@@ -2882,16 +2894,6 @@
    {
     "name": "Facebook",
     "count": 2
-   }
-  ],
-  "/destinations/etihad-rail-dubai": [
-   {
-    "name": "(direct or unknown)",
-    "count": 3
-   },
-   {
-    "name": "Google",
-    "count": 1
    }
   ],
   "/destinations/atlantis-the-palm": [
@@ -3076,22 +3078,10 @@
     "count": 1
    }
   ],
-  "www.facebook.com": [
-   {
-    "path": "/tl.html",
-    "count": 3
-   }
-  ],
-  "Facebook": [
-   {
-    "path": "/tl.html",
-    "count": 2
-   }
-  ],
   "Google": [
    {
     "path": "/destinations/etihad-rail-dubai",
-    "count": 1
+    "count": 2
    },
    {
     "path": "/lines/green-line",
@@ -3112,6 +3102,18 @@
    {
     "path": "/destinations/dubai-municipality-head-office",
     "count": 1
+   }
+  ],
+  "www.facebook.com": [
+   {
+    "path": "/tl.html",
+    "count": 3
+   }
+  ],
+  "Facebook": [
+   {
+    "path": "/tl.html",
+    "count": 2
    }
   ],
   "chatgpt.com": [
@@ -3170,7 +3172,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 6,
+   "count": 7,
    "ref_scheme": "g"
   },
   {
@@ -3214,7 +3216,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 289
+   "count": 290
   },
   {
    "id": "(unknown)",
@@ -3251,7 +3253,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 242
+   "count": 243
   },
   {
    "id": "US",
@@ -3358,7 +3360,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 172
+   "count": 173
   },
   {
    "id": "tablet",
@@ -3385,7 +3387,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 204
+   "count": 205
   },
   {
    "id": "Safari",
@@ -3416,7 +3418,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 64
+   "count": 65
   },
   {
    "id": "macOS",
