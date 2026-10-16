@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-16T07:21:40Z",
+ "generated": "2026-10-16T08:13:00Z",
  "start": "2025-10-16",
  "end": "2026-10-17",
  "total": {
-  "total": 322,
+  "total": 323,
   "total_events": 195,
-  "total_utc": 322,
+  "total_utc": 323,
   "stats": [
    {
     "day": "2025-10-16",
@@ -10538,7 +10538,7 @@
     ],
     "daily": 6,
     "weekly": 92,
-    "monthly": 322
+    "monthly": 323
    },
    {
     "day": "2026-10-02",
@@ -10960,7 +10960,7 @@
      0
     ],
     "daily": 6,
-    "weekly": 8
+    "weekly": 9
    },
    {
     "day": "2026-10-16",
@@ -10977,7 +10977,7 @@
      0,
      0,
      1,
-     0,
+     1,
      0,
      0,
      0,
@@ -10990,7 +10990,7 @@
      0,
      0
     ],
-    "daily": 2
+    "daily": 3
    },
    {
     "day": "2026-10-17",
@@ -11121,6 +11121,17 @@
     "2026-10-07": 1,
     "2026-10-08": 1,
     "2026-10-14": 1
+   }
+  },
+  {
+   "path": "/destinations/palm-jumeirah-mall",
+   "path_id": 111939146,
+   "title": "Palm Jumeirah Mall and The View at The Palm Tram Stop: Palm Jumeirah Mall",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-10-13": 1,
+    "2026-10-16": 1
    }
   },
   {
@@ -11420,16 +11431,6 @@
    "path": "/destinations/museum-of-the-future",
    "path_id": 111942261,
    "title": "Museum of the Future Metro Station: Emirates Towers (Red Line), 5 min walk",
-   "event": false,
-   "count": 1,
-   "daily": {
-    "2026-10-13": 1
-   }
-  },
-  {
-   "path": "/destinations/palm-jumeirah-mall",
-   "path_id": 111939146,
-   "title": "Palm Jumeirah Mall and The View at The Palm Tram Stop: Palm Jumeirah Mall",
    "event": false,
    "count": 1,
    "daily": {
@@ -12709,9 +12710,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 127,
+  "visits": 128,
   "events_total": 195,
-  "goatcounter_total_with_events": 322,
+  "goatcounter_total_with_events": 323,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -12727,7 +12728,7 @@
    "2026-10-13": 6,
    "2026-10-14": 6,
    "2026-10-15": 2,
-   "2026-10-16": 2
+   "2026-10-16": 3
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -12962,6 +12963,16 @@
     "count": 3
    }
   ],
+  "/destinations/palm-jumeirah-mall": [
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   },
+   {
+    "name": "chatgpt.com",
+    "count": 1
+   }
+  ],
   "/lines/green-line": [
    {
     "name": "Google",
@@ -12991,12 +13002,6 @@
    }
   ],
   "/destinations/museum-of-the-future": [
-   {
-    "name": "(direct or unknown)",
-    "count": 1
-   }
-  ],
-  "/destinations/palm-jumeirah-mall": [
    {
     "name": "(direct or unknown)",
     "count": 1
@@ -13084,15 +13089,15 @@
     "count": 3
    },
    {
+    "path": "/destinations/palm-jumeirah-mall",
+    "count": 1
+   },
+   {
     "path": "/destinations/us-consulate-dubai",
     "count": 1
    },
    {
     "path": "/destinations/museum-of-the-future",
-    "count": 1
-   },
-   {
-    "path": "/destinations/palm-jumeirah-mall",
     "count": 1
    },
    {
@@ -13188,6 +13193,10 @@
   ],
   "chatgpt.com": [
    {
+    "path": "/destinations/palm-jumeirah-mall",
+    "count": 1
+   },
+   {
     "path": "/destinations/american-hospital-dubai",
     "count": 1
    },
@@ -13258,14 +13267,14 @@
    "ref_scheme": "h"
   },
   {
-   "id": "Facebook",
-   "name": "Facebook",
-   "count": 2,
+   "id": "chatgpt.com",
+   "name": "chatgpt.com",
+   "count": 3,
    "ref_scheme": "c"
   },
   {
-   "id": "chatgpt.com",
-   "name": "chatgpt.com",
+   "id": "Facebook",
+   "name": "Facebook",
    "count": 2,
    "ref_scheme": "c"
   },
@@ -13306,7 +13315,7 @@
   {
    "id": "deu",
    "name": "German",
-   "count": 1
+   "count": 2
   },
   {
    "id": "pol",
@@ -13323,7 +13332,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 244
+   "count": 245
   },
   {
    "id": "US",
@@ -13430,7 +13439,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 174
+   "count": 175
   },
   {
    "id": "tablet",
@@ -13462,7 +13471,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 111
+   "count": 112
   },
   {
    "id": "Firefox",
@@ -13478,7 +13487,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 107
+   "count": 108
   },
   {
    "id": "Windows",
