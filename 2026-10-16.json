@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-16T06:09:41Z",
+ "generated": "2026-10-16T07:21:06Z",
  "start": "2026-09-16",
  "end": "2026-10-17",
  "total": {
-  "total": 321,
+  "total": 322,
   "total_events": 195,
-  "total_utc": 321,
+  "total_utc": 322,
   "stats": [
    {
     "day": "2026-09-16",
@@ -488,7 +488,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 321
+    "monthly": 322
    },
    {
     "day": "2026-10-02",
@@ -880,7 +880,7 @@
      1
     ],
     "daily": 21,
-    "weekly": 28
+    "weekly": 29
    },
    {
     "day": "2026-10-15",
@@ -926,7 +926,7 @@
      1,
      0,
      0,
-     0,
+     1,
      0,
      0,
      0,
@@ -940,7 +940,7 @@
      0,
      0
     ],
-    "daily": 1
+    "daily": 2
    },
    {
     "day": "2026-10-17",
@@ -1244,6 +1244,16 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/destinations/indian-consulate-dubai",
+   "path_id": 112289662,
+   "title": "Indian Consulate Dubai Metro Station: BurJuman, 7 min walk",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-10-16": 1
    }
   },
   {
@@ -2649,9 +2659,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 126,
+  "visits": 127,
   "events_total": 195,
-  "goatcounter_total_with_events": 321,
+  "goatcounter_total_with_events": 322,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -2667,7 +2677,7 @@
    "2026-10-13": 6,
    "2026-10-14": 6,
    "2026-10-15": 2,
-   "2026-10-16": 1
+   "2026-10-16": 2
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -2683,7 +2693,7 @@
   "return_rate": 0.029,
   "routes": 36,
   "routes_not_found": 0,
-  "routes_per_visit": 0.29,
+  "routes_per_visit": 0.28,
   "routes_per_visitor_day": 0.74,
   "share_rate": 0.0,
   "shares": {},
@@ -2912,6 +2922,12 @@
     "count": 1
    }
   ],
+  "/destinations/indian-consulate-dubai": [
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
   "/destinations/us-consulate-dubai": [
    {
     "name": "(direct or unknown)",
@@ -3088,6 +3104,10 @@
     "count": 1
    },
    {
+    "path": "/destinations/indian-consulate-dubai",
+    "count": 1
+   },
+   {
     "path": "/destinations/pakistan-consulate-dubai",
     "count": 1
    },
@@ -3164,16 +3184,16 @@
    "ref_scheme": "o"
   },
   {
+   "id": "Google",
+   "name": "Google",
+   "count": 8,
+   "ref_scheme": "g"
+  },
+  {
    "id": "www.bing.com",
    "name": "www.bing.com",
    "count": 8,
    "ref_scheme": "h"
-  },
-  {
-   "id": "Google",
-   "name": "Google",
-   "count": 7,
-   "ref_scheme": "g"
   },
   {
    "id": "Yahoo",
@@ -3216,7 +3236,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 290
+   "count": 291
   },
   {
    "id": "(unknown)",
@@ -3253,7 +3273,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 243
+   "count": 244
   },
   {
    "id": "US",
@@ -3360,7 +3380,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 173
+   "count": 174
   },
   {
    "id": "tablet",
@@ -3387,7 +3407,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 205
+   "count": 206
   },
   {
    "id": "Safari",
@@ -3418,7 +3438,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 65
+   "count": 66
   },
   {
    "id": "macOS",
