@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-17T18:00:39Z",
+ "generated": "2026-10-17T19:06:58Z",
  "start": "2025-10-17",
  "end": "2026-10-18",
  "total": {
-  "total": 328,
+  "total": 329,
   "total_events": 197,
-  "total_utc": 328,
+  "total_utc": 329,
   "stats": [
    {
     "day": "2025-10-17",
@@ -10508,7 +10508,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 328
+    "monthly": 329
    },
    {
     "day": "2026-10-02",
@@ -10961,7 +10961,7 @@
      1
     ],
     "daily": 4,
-    "weekly": 8
+    "weekly": 9
    },
    {
     "day": "2026-10-17",
@@ -10989,9 +10989,9 @@
      0,
      0,
      0,
-     0
+     1
     ],
-    "daily": 4
+    "daily": 5
    },
    {
     "day": "2026-10-18",
@@ -11105,6 +11105,18 @@
    }
   },
   {
+   "path": "/destinations/palm-jumeirah-mall",
+   "path_id": 111939146,
+   "title": "Palm Jumeirah Mall and The View at The Palm Tram Stop: Palm Jumeirah Mall",
+   "event": false,
+   "count": 3,
+   "daily": {
+    "2026-10-13": 1,
+    "2026-10-16": 1,
+    "2026-10-17": 1
+   }
+  },
+  {
    "path": "/destinations/atlantis-the-palm",
    "path_id": 110602470,
    "title": "Atlantis The Palm Tram Stop: Atlantis Aquaventure, 3 min walk",
@@ -11136,17 +11148,6 @@
     "2026-10-04": 1,
     "2026-10-11": 1,
     "2026-10-17": 1
-   }
-  },
-  {
-   "path": "/destinations/palm-jumeirah-mall",
-   "path_id": 111939146,
-   "title": "Palm Jumeirah Mall and The View at The Palm Tram Stop: Palm Jumeirah Mall",
-   "event": false,
-   "count": 2,
-   "daily": {
-    "2026-10-13": 1,
-    "2026-10-16": 1
    }
   },
   {
@@ -12725,9 +12726,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 131,
+  "visits": 132,
   "events_total": 197,
-  "goatcounter_total_with_events": 328,
+  "goatcounter_total_with_events": 329,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -12744,7 +12745,7 @@
    "2026-10-14": 6,
    "2026-10-15": 2,
    "2026-10-16": 4,
-   "2026-10-17": 2
+   "2026-10-17": 3
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -12974,20 +12975,20 @@
     "count": 2
    }
   ],
+  "/destinations/palm-jumeirah-mall": [
+   {
+    "name": "chatgpt.com",
+    "count": 2
+   },
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   }
+  ],
   "/destinations/atlantis-the-palm": [
    {
     "name": "(direct or unknown)",
     "count": 3
-   }
-  ],
-  "/destinations/palm-jumeirah-mall": [
-   {
-    "name": "(direct or unknown)",
-    "count": 1
-   },
-   {
-    "name": "chatgpt.com",
-    "count": 1
    }
   ],
   "/lines/red-line": [
@@ -13229,7 +13230,7 @@
   "chatgpt.com": [
    {
     "path": "/destinations/palm-jumeirah-mall",
-    "count": 1
+    "count": 2
    },
    {
     "path": "/destinations/american-hospital-dubai",
@@ -13296,16 +13297,16 @@
    "ref_scheme": "g"
   },
   {
+   "id": "chatgpt.com",
+   "name": "chatgpt.com",
+   "count": 4,
+   "ref_scheme": "c"
+  },
+  {
    "id": "www.facebook.com",
    "name": "www.facebook.com",
    "count": 3,
    "ref_scheme": "h"
-  },
-  {
-   "id": "chatgpt.com",
-   "name": "chatgpt.com",
-   "count": 3,
-   "ref_scheme": "c"
   },
   {
    "id": "Facebook",
@@ -13330,7 +13331,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 293
+   "count": 294
   },
   {
    "id": "rus",
@@ -13367,7 +13368,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 250
+   "count": 251
   },
   {
    "id": "US",
@@ -13474,7 +13475,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 177
+   "count": 178
   },
   {
    "id": "tablet",
@@ -13506,7 +13507,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 114
+   "count": 115
   },
   {
    "id": "Firefox",
@@ -13522,7 +13523,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 110
+   "count": 111
   },
   {
    "id": "Windows",

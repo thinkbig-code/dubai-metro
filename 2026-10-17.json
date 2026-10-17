@@ -1,6 +1,6 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-17T18:00:05Z",
+ "generated": "2026-10-17T19:06:29Z",
  "start": "2026-09-17",
  "end": "2026-10-18",
  "total": {
@@ -3245,16 +3245,16 @@
    "ref_scheme": "g"
   },
   {
+   "id": "chatgpt.com",
+   "name": "chatgpt.com",
+   "count": 4,
+   "ref_scheme": "c"
+  },
+  {
    "id": "www.facebook.com",
    "name": "www.facebook.com",
    "count": 3,
    "ref_scheme": "h"
-  },
-  {
-   "id": "chatgpt.com",
-   "name": "chatgpt.com",
-   "count": 3,
-   "ref_scheme": "c"
   },
   {
    "id": "Facebook",
@@ -3279,7 +3279,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 293
+   "count": 294
   },
   {
    "id": "rus",
@@ -3316,7 +3316,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 250
+   "count": 251
   },
   {
    "id": "US",
@@ -3423,7 +3423,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 177
+   "count": 178
   },
   {
    "id": "tablet",
@@ -3455,7 +3455,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 114
+   "count": 115
   },
   {
    "id": "Firefox",
@@ -3471,7 +3471,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 110
+   "count": 111
   },
   {
    "id": "Windows",
