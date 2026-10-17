@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-17T11:04:29Z",
+ "generated": "2026-10-17T12:03:15Z",
  "start": "2025-10-17",
  "end": "2026-10-18",
  "total": {
-  "total": 324,
+  "total": 325,
   "total_events": 195,
-  "total_utc": 324,
+  "total_utc": 325,
   "stats": [
    {
     "day": "2025-10-17",
@@ -10508,7 +10508,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 324
+    "monthly": 325
    },
    {
     "day": "2026-10-02",
@@ -10961,7 +10961,7 @@
      1
     ],
     "daily": 4,
-    "weekly": 4
+    "weekly": 5
    },
    {
     "day": "2026-10-17",
@@ -10981,7 +10981,7 @@
      0,
      0,
      0,
-     0,
+     1,
      0,
      0,
      0,
@@ -10991,7 +10991,7 @@
      0,
      0
     ],
-    "daily": 0
+    "daily": 1
    },
    {
     "day": "2026-10-18",
@@ -11317,6 +11317,16 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/destinations/dubai-land-department",
+   "path_id": 112493634,
+   "title": "Dubai Land Department Metro Station: Union (Red/Green lines), 8 min walk",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-10-17": 1
    }
   },
   {
@@ -12712,9 +12722,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 129,
+  "visits": 130,
   "events_total": 195,
-  "goatcounter_total_with_events": 324,
+  "goatcounter_total_with_events": 325,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -12730,7 +12740,8 @@
    "2026-10-13": 6,
    "2026-10-14": 6,
    "2026-10-15": 2,
-   "2026-10-16": 4
+   "2026-10-16": 4,
+   "2026-10-17": 1
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -12995,6 +13006,12 @@
     "count": 1
    }
   ],
+  "/destinations/dubai-land-department": [
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
   "/destinations/indian-consulate-dubai": [
    {
     "name": "Google",
@@ -13169,6 +13186,10 @@
     "count": 1
    },
    {
+    "path": "/destinations/dubai-land-department",
+    "count": 1
+   },
+   {
     "path": "/destinations/indian-consulate-dubai",
     "count": 1
    },
@@ -13255,7 +13276,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 8,
+   "count": 9,
    "ref_scheme": "g"
   },
   {
@@ -13305,7 +13326,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 292
+   "count": 293
   },
   {
    "id": "(unknown)",
@@ -13342,7 +13363,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 246
+   "count": 247
   },
   {
    "id": "US",
@@ -13449,7 +13470,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 176
+   "count": 177
   },
   {
    "id": "tablet",
@@ -13481,7 +13502,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 113
+   "count": 114
   },
   {
    "id": "Firefox",
@@ -13497,7 +13518,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 109
+   "count": 110
   },
   {
    "id": "Windows",
