@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-18T09:06:25Z",
+ "generated": "2026-10-18T10:05:41Z",
  "start": "2026-09-18",
  "end": "2026-10-19",
  "total": {
-  "total": 329,
+  "total": 330,
   "total_events": 197,
-  "total_utc": 329,
+  "total_utc": 330,
   "stats": [
    {
     "day": "2026-09-18",
@@ -428,7 +428,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 329
+    "monthly": 330
    },
    {
     "day": "2026-10-02",
@@ -881,7 +881,7 @@
      1
     ],
     "daily": 4,
-    "weekly": 9
+    "weekly": 10
    },
    {
     "day": "2026-10-17",
@@ -929,7 +929,7 @@
      0,
      0,
      0,
-     0,
+     1,
      0,
      0,
      0,
@@ -941,7 +941,7 @@
      0,
      0
     ],
-    "daily": 0
+    "daily": 1
    },
    {
     "day": "2026-10-19",
@@ -1098,6 +1098,17 @@
     "2026-10-04": 1,
     "2026-10-11": 1,
     "2026-10-17": 1
+   }
+  },
+  {
+   "path": "/destinations/al-zahra-hospital-dubai",
+   "path_id": 111715857,
+   "title": "Al Zahra Hospital Dubai Metro Station: Dubai Internet City, 10 min walk",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-10-12": 1,
+    "2026-10-18": 1
    }
   },
   {
@@ -1431,16 +1442,6 @@
    "count": 1,
    "daily": {
     "2026-10-13": 1
-   }
-  },
-  {
-   "path": "/destinations/al-zahra-hospital-dubai",
-   "path_id": 111715857,
-   "title": "Al Zahra Hospital Dubai Metro Station: Dubai Internet City, 10 min walk",
-   "event": false,
-   "count": 1,
-   "daily": {
-    "2026-10-12": 1
    }
   },
   {
@@ -2676,9 +2677,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 132,
+  "visits": 133,
   "events_total": 197,
-  "goatcounter_total_with_events": 329,
+  "goatcounter_total_with_events": 330,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -2695,7 +2696,8 @@
    "2026-10-14": 6,
    "2026-10-15": 2,
    "2026-10-16": 4,
-   "2026-10-17": 3
+   "2026-10-17": 3,
+   "2026-10-18": 1
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -2941,6 +2943,12 @@
     "count": 3
    }
   ],
+  "/destinations/al-zahra-hospital-dubai": [
+   {
+    "name": "Google",
+    "count": 2
+   }
+  ],
   "/lines/red-line": [
    {
     "name": "(direct or unknown)",
@@ -3000,12 +3008,6 @@
   "/destinations/american-hospital-dubai": [
    {
     "name": "chatgpt.com",
-    "count": 1
-   }
-  ],
-  "/destinations/al-zahra-hospital-dubai": [
-   {
-    "name": "Google",
     "count": 1
    }
   ],
@@ -3137,6 +3139,10 @@
     "count": 2
    },
    {
+    "path": "/destinations/al-zahra-hospital-dubai",
+    "count": 2
+   },
+   {
     "path": "/lines/green-line",
     "count": 1
    },
@@ -3154,10 +3160,6 @@
    },
    {
     "path": "/destinations/dubai-police-general-headquarters",
-    "count": 1
-   },
-   {
-    "path": "/destinations/al-zahra-hospital-dubai",
     "count": 1
    },
    {
@@ -3231,7 +3233,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 9,
+   "count": 10,
    "ref_scheme": "g"
   },
   {
@@ -3281,7 +3283,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 294
+   "count": 295
   },
   {
    "id": "rus",
@@ -3318,7 +3320,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 251
+   "count": 252
   },
   {
    "id": "US",
@@ -3425,7 +3427,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 178
+   "count": 179
   },
   {
    "id": "tablet",
@@ -3457,7 +3459,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 115
+   "count": 116
   },
   {
    "id": "Firefox",
@@ -3473,7 +3475,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 111
+   "count": 112
   },
   {
    "id": "Windows",
