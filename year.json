@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-19T08:23:00Z",
+ "generated": "2026-10-19T09:18:13Z",
  "start": "2025-10-19",
  "end": "2026-10-20",
  "total": {
-  "total": 340,
+  "total": 341,
   "total_events": 202,
-  "total_utc": 340,
+  "total_utc": 341,
   "stats": [
    {
     "day": "2025-10-19",
@@ -10448,7 +10448,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 340
+    "monthly": 341
    },
    {
     "day": "2026-10-02",
@@ -10961,7 +10961,7 @@
      0
     ],
     "daily": 6,
-    "weekly": 11
+    "weekly": 12
    },
    {
     "day": "2026-10-19",
@@ -10978,7 +10978,7 @@
      0,
      0,
      0,
-     0,
+     1,
      0,
      0,
      0,
@@ -10991,7 +10991,7 @@
      0,
      0
     ],
-    "daily": 5
+    "daily": 6
    },
    {
     "day": "2026-10-20",
@@ -11164,6 +11164,17 @@
    "daily": {
     "2026-10-16": 1,
     "2026-10-18": 1
+   }
+  },
+  {
+   "path": "/destinations/us-consulate-dubai",
+   "path_id": 112091077,
+   "title": "US Consulate Dubai Metro Station: BurJuman (Red/Green lines), 12 min walk",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-10-14": 1,
+    "2026-10-19": 1
    }
   },
   {
@@ -11400,16 +11411,6 @@
    "count": 1,
    "daily": {
     "2026-10-17": 1
-   }
-  },
-  {
-   "path": "/destinations/us-consulate-dubai",
-   "path_id": 112091077,
-   "title": "US Consulate Dubai Metro Station: BurJuman (Red/Green lines), 12 min walk",
-   "event": false,
-   "count": 1,
-   "daily": {
-    "2026-10-14": 1
    }
   },
   {
@@ -12755,9 +12756,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 138,
+  "visits": 139,
   "events_total": 202,
-  "goatcounter_total_with_events": 340,
+  "goatcounter_total_with_events": 341,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -12776,7 +12777,7 @@
    "2026-10-16": 4,
    "2026-10-17": 3,
    "2026-10-18": 4,
-   "2026-10-19": 2
+   "2026-10-19": 3
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -13038,6 +13039,16 @@
     "count": 2
    }
   ],
+  "/destinations/us-consulate-dubai": [
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   },
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
   "/destinations/al-zahra-hospital-dubai": [
    {
     "name": "Google",
@@ -13073,12 +13084,6 @@
   "/destinations/dubai-land-department": [
    {
     "name": "Google",
-    "count": 1
-   }
-  ],
-  "/destinations/us-consulate-dubai": [
-   {
-    "name": "(direct or unknown)",
     "count": 1
    }
   ],
@@ -13168,11 +13173,11 @@
     "count": 1
    },
    {
-    "path": "/lines/red-line",
+    "path": "/destinations/us-consulate-dubai",
     "count": 1
    },
    {
-    "path": "/destinations/us-consulate-dubai",
+    "path": "/lines/red-line",
     "count": 1
    },
    {
@@ -13246,6 +13251,10 @@
    {
     "path": "/destinations/al-zahra-hospital-dubai",
     "count": 2
+   },
+   {
+    "path": "/destinations/us-consulate-dubai",
+    "count": 1
    },
    {
     "path": "/lines/green-line",
@@ -13342,7 +13351,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 11,
+   "count": 12,
    "ref_scheme": "g"
   },
   {
@@ -13398,7 +13407,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 305
+   "count": 306
   },
   {
    "id": "rus",
@@ -13435,7 +13444,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 258
+   "count": 259
   },
   {
    "id": "US",
@@ -13542,7 +13551,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 184
+   "count": 185
   },
   {
    "id": "tablet",
@@ -13569,7 +13578,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 218
+   "count": 219
   },
   {
    "id": "Safari",
@@ -13600,7 +13609,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 70
+   "count": 71
   },
   {
    "id": "macOS",
