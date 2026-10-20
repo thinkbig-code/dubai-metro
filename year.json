@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-20T12:11:15Z",
+ "generated": "2026-10-20T13:24:13Z",
  "start": "2025-10-20",
  "end": "2026-10-21",
  "total": {
-  "total": 344,
+  "total": 345,
   "total_events": 202,
-  "total_utc": 344,
+  "total_utc": 345,
   "stats": [
    {
     "day": "2025-10-20",
@@ -10418,7 +10418,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 344
+    "monthly": 345
    },
    {
     "day": "2026-10-02",
@@ -10961,7 +10961,7 @@
      0
     ],
     "daily": 7,
-    "weekly": 9
+    "weekly": 10
    },
    {
     "day": "2026-10-20",
@@ -10982,7 +10982,7 @@
      1,
      1,
      0,
-     0,
+     1,
      0,
      0,
      0,
@@ -10991,7 +10991,7 @@
      0,
      0
     ],
-    "daily": 2
+    "daily": 3
    },
    {
     "day": "2026-10-21",
@@ -11077,7 +11077,7 @@
    "path_id": 110626146,
    "title": "Etihad Rail Dubai Station (Al Yalayis) Metro Station: Jumeirah Golf Estates",
    "event": false,
-   "count": 7,
+   "count": 8,
    "daily": {
     "2026-10-09": 1,
     "2026-10-12": 1,
@@ -11085,7 +11085,7 @@
     "2026-10-15": 1,
     "2026-10-16": 1,
     "2026-10-18": 1,
-    "2026-10-20": 1
+    "2026-10-20": 2
    }
   },
   {
@@ -12768,9 +12768,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 142,
+  "visits": 143,
   "events_total": 202,
-  "goatcounter_total_with_events": 344,
+  "goatcounter_total_with_events": 345,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -12790,7 +12790,7 @@
    "2026-10-17": 3,
    "2026-10-18": 4,
    "2026-10-19": 4,
-   "2026-10-20": 2
+   "2026-10-20": 3
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -13017,7 +13017,7 @@
    },
    {
     "name": "chatgpt.com",
-    "count": 1
+    "count": 2
    }
   ],
   "/tl.html": [
@@ -13302,12 +13302,12 @@
   ],
   "chatgpt.com": [
    {
-    "path": "/destinations/palm-jumeirah-mall",
+    "path": "/destinations/etihad-rail-dubai",
     "count": 2
    },
    {
-    "path": "/destinations/etihad-rail-dubai",
-    "count": 1
+    "path": "/destinations/palm-jumeirah-mall",
+    "count": 2
    },
    {
     "path": "/destinations/dubai-police-general-headquarters",
@@ -13386,16 +13386,16 @@
    "ref_scheme": "g"
   },
   {
+   "id": "chatgpt.com",
+   "name": "chatgpt.com",
+   "count": 9,
+   "ref_scheme": "c"
+  },
+  {
    "id": "www.bing.com",
    "name": "www.bing.com",
    "count": 8,
    "ref_scheme": "h"
-  },
-  {
-   "id": "chatgpt.com",
-   "name": "chatgpt.com",
-   "count": 8,
-   "ref_scheme": "c"
   },
   {
    "id": "Yahoo",
@@ -13438,7 +13438,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 309
+   "count": 310
   },
   {
    "id": "rus",
@@ -13475,7 +13475,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 262
+   "count": 263
   },
   {
    "id": "US",
@@ -13582,7 +13582,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 188
+   "count": 189
   },
   {
    "id": "tablet",
@@ -13614,7 +13614,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 120
+   "count": 121
   },
   {
    "id": "Firefox",
@@ -13630,7 +13630,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 116
+   "count": 117
   },
   {
    "id": "Windows",
