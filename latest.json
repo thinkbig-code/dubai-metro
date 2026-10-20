@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-20T18:10:45Z",
+ "generated": "2026-10-20T19:18:30Z",
  "start": "2026-09-20",
  "end": "2026-10-21",
  "total": {
-  "total": 354,
+  "total": 355,
   "total_events": 209,
-  "total_utc": 354,
+  "total_utc": 355,
   "stats": [
    {
     "day": "2026-09-20",
@@ -368,7 +368,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 354
+    "monthly": 355
    },
    {
     "day": "2026-10-02",
@@ -881,7 +881,7 @@
      0
     ],
     "daily": 6,
-    "weekly": 25
+    "weekly": 26
    },
    {
     "day": "2026-10-19",
@@ -938,10 +938,10 @@
      8,
      0,
      0,
-     0,
+     1,
      0
     ],
-    "daily": 12
+    "daily": 13
    },
    {
     "day": "2026-10-21",
@@ -1346,6 +1346,16 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/destinations/canadian-specialist-hospital",
+   "path_id": 113313760,
+   "title": "Canadian Specialist Hospital Metro Station: Abu Hail, 6 min walk",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-10-20": 1
    }
   },
   {
@@ -2781,9 +2791,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 145,
+  "visits": 146,
   "events_total": 209,
-  "goatcounter_total_with_events": 354,
+  "goatcounter_total_with_events": 355,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -2803,7 +2813,7 @@
    "2026-10-17": 3,
    "2026-10-18": 4,
    "2026-10-19": 4,
-   "2026-10-20": 5
+   "2026-10-20": 6
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -3117,6 +3127,12 @@
     "count": 1
    }
   ],
+  "/destinations/canadian-specialist-hospital": [
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
   "/destinations/dubai-creek-harbour": [
    {
     "name": "chatgpt.com",
@@ -3313,6 +3329,10 @@
     "count": 1
    },
    {
+    "path": "/destinations/canadian-specialist-hospital",
+    "count": 1
+   },
+   {
     "path": "/destinations/dubai-land-department",
     "count": 1
    },
@@ -3411,7 +3431,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 13,
+   "count": 14,
    "ref_scheme": "g"
   },
   {
@@ -3467,7 +3487,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 319
+   "count": 320
   },
   {
    "id": "rus",
@@ -3504,7 +3524,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 272
+   "count": 273
   },
   {
    "id": "US",
@@ -3611,7 +3631,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 198
+   "count": 199
   },
   {
    "id": "tablet",
@@ -3638,7 +3658,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 227
+   "count": 228
   },
   {
    "id": "Safari",
@@ -3664,7 +3684,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 79
+   "count": 80
   },
   {
    "id": "Windows",
