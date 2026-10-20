@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-20T10:11:53Z",
+ "generated": "2026-10-20T11:13:00Z",
  "start": "2025-10-20",
  "end": "2026-10-21",
  "total": {
-  "total": 343,
+  "total": 344,
   "total_events": 202,
-  "total_utc": 343,
+  "total_utc": 344,
   "stats": [
    {
     "day": "2025-10-20",
@@ -10418,7 +10418,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 343
+    "monthly": 344
    },
    {
     "day": "2026-10-02",
@@ -10961,7 +10961,7 @@
      0
     ],
     "daily": 7,
-    "weekly": 8
+    "weekly": 9
    },
    {
     "day": "2026-10-20",
@@ -10980,7 +10980,7 @@
      0,
      0,
      1,
-     0,
+     1,
      0,
      0,
      0,
@@ -10991,7 +10991,7 @@
      0,
      0
     ],
-    "daily": 1
+    "daily": 2
    },
    {
     "day": "2026-10-21",
@@ -11176,6 +11176,17 @@
    "daily": {
     "2026-10-14": 1,
     "2026-10-19": 1
+   }
+  },
+  {
+   "path": "/destinations/dubai-police-general-headquarters",
+   "path_id": 111896140,
+   "title": "Dubai Police General Headquarters Metro Station: Al Qiyadah, 7 min walk",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-10-13": 1,
+    "2026-10-20": 1
    }
   },
   {
@@ -11528,16 +11539,6 @@
    "path": "/destinations/museum-of-the-future",
    "path_id": 111942261,
    "title": "Museum of the Future Metro Station: Emirates Towers (Red Line), 5 min walk",
-   "event": false,
-   "count": 1,
-   "daily": {
-    "2026-10-13": 1
-   }
-  },
-  {
-   "path": "/destinations/dubai-police-general-headquarters",
-   "path_id": 111896140,
-   "title": "Dubai Police General Headquarters Metro Station: Al Qiyadah, 7 min walk",
    "event": false,
    "count": 1,
    "daily": {
@@ -12767,9 +12768,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 141,
+  "visits": 142,
   "events_total": 202,
-  "goatcounter_total_with_events": 343,
+  "goatcounter_total_with_events": 344,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -12789,7 +12790,7 @@
    "2026-10-17": 3,
    "2026-10-18": 4,
    "2026-10-19": 4,
-   "2026-10-20": 1
+   "2026-10-20": 2
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -12808,7 +12809,7 @@
   "return_rate": 0.027,
   "routes": 36,
   "routes_not_found": 0,
-  "routes_per_visit": 0.26,
+  "routes_per_visit": 0.25,
   "routes_per_visitor_day": 0.68,
   "share_rate": 0.0,
   "shares": {},
@@ -13061,6 +13062,16 @@
     "count": 1
    }
   ],
+  "/destinations/dubai-police-general-headquarters": [
+   {
+    "name": "Google",
+    "count": 1
+   },
+   {
+    "name": "chatgpt.com",
+    "count": 1
+   }
+  ],
   "/destinations/al-zahra-hospital-dubai": [
    {
     "name": "Google",
@@ -13114,12 +13125,6 @@
   "/destinations/museum-of-the-future": [
    {
     "name": "(direct or unknown)",
-    "count": 1
-   }
-  ],
-  "/destinations/dubai-police-general-headquarters": [
-   {
-    "name": "Google",
     "count": 1
    }
   ],
@@ -13275,6 +13280,10 @@
     "count": 1
    },
    {
+    "path": "/destinations/dubai-police-general-headquarters",
+    "count": 1
+   },
+   {
     "path": "/lines/green-line",
     "count": 1
    },
@@ -13284,10 +13293,6 @@
    },
    {
     "path": "/destinations/pakistan-consulate-dubai",
-    "count": 1
-   },
-   {
-    "path": "/destinations/dubai-police-general-headquarters",
     "count": 1
    },
    {
@@ -13302,6 +13307,10 @@
    },
    {
     "path": "/destinations/etihad-rail-dubai",
+    "count": 1
+   },
+   {
+    "path": "/destinations/dubai-police-general-headquarters",
     "count": 1
    },
    {
@@ -13385,7 +13394,7 @@
   {
    "id": "chatgpt.com",
    "name": "chatgpt.com",
-   "count": 7,
+   "count": 8,
    "ref_scheme": "c"
   },
   {
@@ -13429,7 +13438,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 308
+   "count": 309
   },
   {
    "id": "rus",
@@ -13466,7 +13475,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 261
+   "count": 262
   },
   {
    "id": "US",
@@ -13573,7 +13582,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 187
+   "count": 188
   },
   {
    "id": "tablet",
@@ -13605,7 +13614,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 119
+   "count": 120
   },
   {
    "id": "Firefox",
@@ -13621,7 +13630,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 115
+   "count": 116
   },
   {
    "id": "Windows",
