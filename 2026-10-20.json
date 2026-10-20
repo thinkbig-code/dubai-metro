@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-20T15:16:11Z",
+ "generated": "2026-10-20T16:16:34Z",
  "start": "2026-09-20",
  "end": "2026-10-21",
  "total": {
-  "total": 346,
-  "total_events": 202,
-  "total_utc": 346,
+  "total": 354,
+  "total_events": 209,
+  "total_utc": 354,
   "stats": [
    {
     "day": "2026-09-20",
@@ -368,7 +368,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 346
+    "monthly": 354
    },
    {
     "day": "2026-10-02",
@@ -881,7 +881,7 @@
      0
     ],
     "daily": 6,
-    "weekly": 17
+    "weekly": 25
    },
    {
     "day": "2026-10-19",
@@ -935,13 +935,13 @@
      1,
      0,
      1,
-     0,
+     8,
      0,
      0,
      0,
      0
     ],
-    "daily": 4
+    "daily": 12
    },
    {
     "day": "2026-10-21",
@@ -981,7 +981,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 99,
+   "count": 100,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -999,7 +999,8 @@
     "2026-10-15": 1,
     "2026-10-17": 1,
     "2026-10-18": 1,
-    "2026-10-19": 1
+    "2026-10-19": 1,
+    "2026-10-20": 1
    }
   },
   {
@@ -1007,7 +1008,7 @@
    "path_id": 110447314,
    "title": "en",
    "event": true,
-   "count": 36,
+   "count": 37,
    "daily": {
     "2026-10-08": 7,
     "2026-10-09": 6,
@@ -1019,7 +1020,8 @@
     "2026-10-15": 1,
     "2026-10-17": 1,
     "2026-10-18": 1,
-    "2026-10-19": 1
+    "2026-10-19": 1,
+    "2026-10-20": 1
    }
   },
   {
@@ -1080,6 +1082,18 @@
    "count": 3,
    "daily": {
     "2026-10-09": 3
+   }
+  },
+  {
+   "path": "place/p_burj_khalifa/to",
+   "path_id": 110476414,
+   "title": "en|name",
+   "event": true,
+   "count": 3,
+   "daily": {
+    "2026-10-08": 1,
+    "2026-10-14": 1,
+    "2026-10-20": 1
    }
   },
   {
@@ -1192,17 +1206,6 @@
    "daily": {
     "2026-10-08": 1,
     "2026-10-10": 1
-   }
-  },
-  {
-   "path": "place/p_burj_khalifa/to",
-   "path_id": 110476414,
-   "title": "en|name",
-   "event": true,
-   "count": 2,
-   "daily": {
-    "2026-10-08": 1,
-    "2026-10-14": 1
    }
   },
   {
@@ -1343,6 +1346,56 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "route/lp/p_dubai_creek_harbour",
+   "path_id": 113285885,
+   "title": "en|search|ok|first_place_search",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-20": 1
+   }
+  },
+  {
+   "path": "place/p_dubai_creek_harbour/to",
+   "path_id": 113285884,
+   "title": "en|name",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-20": 1
+   }
+  },
+  {
+   "path": "route/lp/p_burj_khalifa",
+   "path_id": 113285675,
+   "title": "en|search|ok|first_place_search",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-20": 1
+   }
+  },
+  {
+   "path": "station/lp/from",
+   "path_id": 113285674,
+   "title": "en|name",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-20": 1
+   }
+  },
+  {
+   "path": "noresult/jvc",
+   "path_id": 113285584,
+   "title": "en|jvc",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-20": 1
    }
   },
   {
@@ -2728,9 +2781,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 144,
-  "events_total": 202,
-  "goatcounter_total_with_events": 346,
+  "visits": 145,
+  "events_total": 209,
+  "goatcounter_total_with_events": 354,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -2750,7 +2803,7 @@
    "2026-10-17": 3,
    "2026-10-18": 4,
    "2026-10-19": 4,
-   "2026-10-20": 4
+   "2026-10-20": 5
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -2763,31 +2816,45 @@
    "2026-10-15": 1,
    "2026-10-17": 1,
    "2026-10-18": 1,
-   "2026-10-19": 1
+   "2026-10-19": 1,
+   "2026-10-20": 1
   },
-  "visitor_days": 37,
-  "return_rate": 0.027,
-  "routes": 36,
+  "visitor_days": 38,
+  "return_rate": 0.026,
+  "routes": 38,
   "routes_not_found": 0,
-  "routes_per_visit": 0.25,
-  "routes_per_visitor_day": 0.68,
+  "routes_per_visit": 0.26,
+  "routes_per_visitor_day": 0.71,
   "share_rate": 0.0,
   "shares": {},
-  "failed_search_rate": 0.0,
-  "failed_searches": [],
+  "failed_search_rate": 0.03,
+  "failed_searches": [
+   {
+    "name": "jvc",
+    "count": 1
+   }
+  ],
   "nearest_station": {
    "denied": 3,
    "ok": 2,
    "fail": 1
   },
   "visitors_new_return": {
-   "new": 36,
+   "new": 37,
    "return": 1
   },
   "top_routes": [
    {
     "name": "p_dubai_mall > p_dxb_airport_terminal_3",
     "count": 2
+   },
+   {
+    "name": "lp > p_dubai_creek_harbour",
+    "count": 1
+   },
+   {
+    "name": "lp > p_burj_khalifa",
+    "count": 1
    },
    {
     "name": "mc > p_burjuman_mall",
@@ -2836,14 +2903,6 @@
    {
     "name": "dmm > dmcc",
     "count": 1
-   },
-   {
-    "name": "dmm > jlt",
-    "count": 1
-   },
-   {
-    "name": "dmm > p_jbr_the_walk",
-    "count": 1
    }
   ],
   "top_origins": [
@@ -2858,6 +2917,10 @@
    {
     "name": "bk",
     "count": 3
+   },
+   {
+    "name": "lp",
+    "count": 2
    },
    {
     "name": "p_dxb_airport_terminal_3",
@@ -2882,10 +2945,6 @@
    {
     "name": "qusais",
     "count": 1
-   },
-   {
-    "name": "expo",
-    "count": 1
    }
   ],
   "top_destinations": [
@@ -2894,12 +2953,12 @@
     "count": 5
    },
    {
-    "name": "p_jbr_the_walk",
+    "name": "p_burj_khalifa",
     "count": 3
    },
    {
-    "name": "p_burj_khalifa",
-    "count": 2
+    "name": "p_jbr_the_walk",
+    "count": 3
    },
    {
     "name": "dmcc",
@@ -2908,6 +2967,10 @@
    {
     "name": "moe",
     "count": 2
+   },
+   {
+    "name": "p_dubai_creek_harbour",
+    "count": 1
    },
    {
     "name": "p_burjuman_mall",
@@ -2924,10 +2987,6 @@
    {
     "name": "dhcc",
     "count": 1
-   },
-   {
-    "name": "pjm",
-    "count": 1
    }
   ]
  },
@@ -2939,7 +2998,7 @@
    },
    {
     "name": "com.reddit.frontpage",
-    "count": 8
+    "count": 9
    },
    {
     "name": "www.bing.com",
@@ -3185,7 +3244,7 @@
   "com.reddit.frontpage": [
    {
     "path": "/",
-    "count": 8
+    "count": 9
    }
   ],
   "www.bing.com": [
@@ -3346,7 +3405,7 @@
   {
    "id": "com.reddit.frontpage",
    "name": "com.reddit.frontpage",
-   "count": 37,
+   "count": 45,
    "ref_scheme": "o"
   },
   {
@@ -3408,7 +3467,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 311
+   "count": 319
   },
   {
    "id": "rus",
@@ -3445,7 +3504,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 264
+   "count": 272
   },
   {
    "id": "US",
@@ -3552,7 +3611,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 190
+   "count": 198
   },
   {
    "id": "tablet",
@@ -3579,7 +3638,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 219
+   "count": 227
   },
   {
    "id": "Safari",
@@ -3603,14 +3662,14 @@
    "count": 118
   },
   {
+   "id": "Android",
+   "name": "Android",
+   "count": 79
+  },
+  {
    "id": "Windows",
    "name": "Windows",
    "count": 74
-  },
-  {
-   "id": "Android",
-   "name": "Android",
-   "count": 71
   },
   {
    "id": "macOS",
