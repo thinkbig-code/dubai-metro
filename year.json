@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-20T14:17:43Z",
+ "generated": "2026-10-20T15:16:42Z",
  "start": "2025-10-20",
  "end": "2026-10-21",
  "total": {
-  "total": 345,
+  "total": 346,
   "total_events": 202,
-  "total_utc": 345,
+  "total_utc": 346,
   "stats": [
    {
     "day": "2025-10-20",
@@ -10418,7 +10418,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 345
+    "monthly": 346
    },
    {
     "day": "2026-10-02",
@@ -10961,7 +10961,7 @@
      0
     ],
     "daily": 7,
-    "weekly": 10
+    "weekly": 11
    },
    {
     "day": "2026-10-20",
@@ -10984,14 +10984,14 @@
      0,
      1,
      0,
-     0,
+     1,
      0,
      0,
      0,
      0,
      0
     ],
-    "daily": 3
+    "daily": 4
    },
    {
     "day": "2026-10-21",
@@ -11393,6 +11393,16 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/destinations/dubai-creek-harbour",
+   "path_id": 113271576,
+   "title": "Dubai Creek Harbour Metro Station: Creek (Green Line)",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-10-20": 1
    }
   },
   {
@@ -12768,9 +12778,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 143,
+  "visits": 144,
   "events_total": 202,
-  "goatcounter_total_with_events": 345,
+  "goatcounter_total_with_events": 346,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -12790,7 +12800,7 @@
    "2026-10-17": 3,
    "2026-10-18": 4,
    "2026-10-19": 4,
-   "2026-10-20": 3
+   "2026-10-20": 4
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -13098,6 +13108,12 @@
     "count": 1
    }
   ],
+  "/destinations/dubai-creek-harbour": [
+   {
+    "name": "chatgpt.com",
+    "count": 1
+   }
+  ],
   "/destinations/gdrfa-immigration-al-jafiliya": [
    {
     "name": "chatgpt.com",
@@ -13314,6 +13330,10 @@
     "count": 1
    },
    {
+    "path": "/destinations/dubai-creek-harbour",
+    "count": 1
+   },
+   {
     "path": "/destinations/gdrfa-immigration-al-jafiliya",
     "count": 1
    },
@@ -13388,7 +13408,7 @@
   {
    "id": "chatgpt.com",
    "name": "chatgpt.com",
-   "count": 9,
+   "count": 10,
    "ref_scheme": "c"
   },
   {
@@ -13438,7 +13458,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 310
+   "count": 311
   },
   {
    "id": "rus",
@@ -13475,7 +13495,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 263
+   "count": 264
   },
   {
    "id": "US",
@@ -13582,7 +13602,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 189
+   "count": 190
   },
   {
    "id": "tablet",
@@ -13614,7 +13634,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 121
+   "count": 122
   },
   {
    "id": "Firefox",
@@ -13630,7 +13650,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 117
+   "count": 118
   },
   {
    "id": "Windows",
