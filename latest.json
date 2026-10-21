@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-21T03:13:31Z",
+ "generated": "2026-10-21T04:15:30Z",
  "start": "2026-09-21",
  "end": "2026-10-22",
  "total": {
-  "total": 355,
+  "total": 356,
   "total_events": 209,
-  "total_utc": 355,
+  "total_utc": 356,
   "stats": [
    {
     "day": "2026-09-21",
@@ -338,7 +338,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 355
+    "monthly": 356
    },
    {
     "day": "2026-10-02",
@@ -881,7 +881,7 @@
      0
     ],
     "daily": 7,
-    "weekly": 20
+    "weekly": 21
    },
    {
     "day": "2026-10-20",
@@ -924,7 +924,7 @@
      0,
      0,
      0,
-     0,
+     1,
      0,
      0,
      0,
@@ -941,7 +941,7 @@
      0,
      0
     ],
-    "daily": 0
+    "daily": 1
    },
    {
     "day": "2026-10-22",
@@ -1346,6 +1346,16 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/destinations/jw-marriott-marquis-dubai",
+   "path_id": 113368505,
+   "title": "JW Marriott Marquis Dubai Metro Station: Business Bay, 12 min walk",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-10-21": 1
    }
   },
   {
@@ -2791,9 +2801,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 146,
+  "visits": 147,
   "events_total": 209,
-  "goatcounter_total_with_events": 355,
+  "goatcounter_total_with_events": 356,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -2813,7 +2823,8 @@
    "2026-10-17": 3,
    "2026-10-18": 4,
    "2026-10-19": 4,
-   "2026-10-20": 6
+   "2026-10-20": 6,
+   "2026-10-21": 1
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -3127,6 +3138,12 @@
     "count": 1
    }
   ],
+  "/destinations/jw-marriott-marquis-dubai": [
+   {
+    "name": "chatgpt.com",
+    "count": 1
+   }
+  ],
   "/destinations/canadian-specialist-hospital": [
    {
     "name": "Google",
@@ -3359,6 +3376,10 @@
     "count": 1
    },
    {
+    "path": "/destinations/jw-marriott-marquis-dubai",
+    "count": 1
+   },
+   {
     "path": "/destinations/dubai-creek-harbour",
     "count": 1
    },
@@ -3437,7 +3458,7 @@
   {
    "id": "chatgpt.com",
    "name": "chatgpt.com",
-   "count": 10,
+   "count": 11,
    "ref_scheme": "c"
   },
   {
@@ -3487,7 +3508,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 320
+   "count": 321
   },
   {
    "id": "rus",
@@ -3524,7 +3545,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 273
+   "count": 274
   },
   {
    "id": "US",
@@ -3631,7 +3652,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 199
+   "count": 200
   },
   {
    "id": "tablet",
@@ -3663,7 +3684,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 122
+   "count": 123
   },
   {
    "id": "Firefox",
@@ -3679,7 +3700,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 118
+   "count": 119
   },
   {
    "id": "Android",
