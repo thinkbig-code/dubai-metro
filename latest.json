@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-22T03:13:26Z",
+ "generated": "2026-10-22T04:16:23Z",
  "start": "2026-09-22",
  "end": "2026-10-23",
  "total": {
-  "total": 359,
+  "total": 360,
   "total_events": 209,
-  "total_utc": 359,
+  "total_utc": 360,
   "stats": [
    {
     "day": "2026-09-22",
@@ -308,7 +308,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 359
+    "monthly": 360
    },
    {
     "day": "2026-10-02",
@@ -881,7 +881,7 @@
      0
     ],
     "daily": 13,
-    "weekly": 17
+    "weekly": 18
    },
    {
     "day": "2026-10-21",
@@ -923,7 +923,7 @@
      0,
      0,
      0,
-     0,
+     1,
      0,
      0,
      0,
@@ -941,7 +941,7 @@
      0,
      0
     ],
-    "daily": 1
+    "daily": 2
    },
    {
     "day": "2026-10-23",
@@ -1348,6 +1348,16 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/destinations/expo-city-dubai",
+   "path_id": 113971428,
+   "title": "Expo City Dubai Metro Station: Expo 2020 (Red Line)",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-10-22": 1
    }
   },
   {
@@ -2803,9 +2813,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 150,
+  "visits": 151,
   "events_total": 209,
-  "goatcounter_total_with_events": 359,
+  "goatcounter_total_with_events": 360,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -2827,7 +2837,7 @@
    "2026-10-19": 4,
    "2026-10-20": 6,
    "2026-10-21": 3,
-   "2026-10-22": 1
+   "2026-10-22": 2
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -3141,6 +3151,12 @@
     "count": 1
    }
   ],
+  "/destinations/expo-city-dubai": [
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
   "/destinations/jw-marriott-marquis-dubai": [
    {
     "name": "chatgpt.com",
@@ -3349,6 +3365,10 @@
     "count": 1
    },
    {
+    "path": "/destinations/expo-city-dubai",
+    "count": 1
+   },
+   {
     "path": "/destinations/canadian-specialist-hospital",
     "count": 1
    },
@@ -3455,7 +3475,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 16,
+   "count": 17,
    "ref_scheme": "g"
   },
   {
@@ -3511,7 +3531,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 324
+   "count": 325
   },
   {
    "id": "rus",
@@ -3548,7 +3568,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 276
+   "count": 277
   },
   {
    "id": "US",
@@ -3655,7 +3675,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 200
+   "count": 201
   },
   {
    "id": "tablet",
@@ -3682,7 +3702,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 231
+   "count": 232
   },
   {
    "id": "Safari",
@@ -3708,7 +3728,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 80
+   "count": 81
   },
   {
    "id": "Windows",
