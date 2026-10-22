@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-22T18:09:09Z",
+ "generated": "2026-10-22T19:19:25Z",
  "start": "2026-09-22",
  "end": "2026-10-23",
  "total": {
-  "total": 361,
-  "total_events": 209,
-  "total_utc": 361,
+  "total": 367,
+  "total_events": 213,
+  "total_utc": 367,
   "stats": [
    {
     "day": "2026-09-22",
@@ -308,7 +308,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 361
+    "monthly": 367
    },
    {
     "day": "2026-10-02",
@@ -881,7 +881,7 @@
      0
     ],
     "daily": 13,
-    "weekly": 19
+    "weekly": 25
    },
    {
     "day": "2026-10-21",
@@ -938,10 +938,10 @@
      0,
      0,
      0,
-     0,
+     6,
      0
     ],
-    "daily": 3
+    "daily": 9
    },
    {
     "day": "2026-10-23",
@@ -981,7 +981,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 100,
+   "count": 102,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -1000,7 +1000,8 @@
     "2026-10-17": 1,
     "2026-10-18": 1,
     "2026-10-19": 1,
-    "2026-10-20": 1
+    "2026-10-20": 1,
+    "2026-10-22": 2
    }
   },
   {
@@ -1008,7 +1009,7 @@
    "path_id": 110447314,
    "title": "en",
    "event": true,
-   "count": 37,
+   "count": 39,
    "daily": {
     "2026-10-08": 7,
     "2026-10-09": 6,
@@ -1021,7 +1022,8 @@
     "2026-10-17": 1,
     "2026-10-18": 1,
     "2026-10-19": 1,
-    "2026-10-20": 1
+    "2026-10-20": 1,
+    "2026-10-22": 2
    }
   },
   {
@@ -1348,6 +1350,26 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "map_station_click/burjuman/-",
+   "path_id": 114086554,
+   "title": "en|home|phone",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-22": 1
+   }
+  },
+  {
+   "path": "map_station_click/dafz/-",
+   "path_id": 114086532,
+   "title": "en|home|phone",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-22": 1
    }
   },
   {
@@ -2823,9 +2845,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 152,
-  "events_total": 209,
-  "goatcounter_total_with_events": 361,
+  "visits": 154,
+  "events_total": 213,
+  "goatcounter_total_with_events": 367,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -2847,7 +2869,7 @@
    "2026-10-19": 4,
    "2026-10-20": 6,
    "2026-10-21": 3,
-   "2026-10-22": 3
+   "2026-10-22": 5
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -2861,14 +2883,15 @@
    "2026-10-17": 1,
    "2026-10-18": 1,
    "2026-10-19": 1,
-   "2026-10-20": 1
+   "2026-10-20": 1,
+   "2026-10-22": 2
   },
-  "visitor_days": 38,
-  "return_rate": 0.026,
+  "visitor_days": 40,
+  "return_rate": 0.025,
   "routes": 38,
   "routes_not_found": 0,
   "routes_per_visit": 0.25,
-  "routes_per_visitor_day": 0.71,
+  "routes_per_visitor_day": 0.68,
   "share_rate": 0.0,
   "shares": {},
   "failed_search_rate": 0.03,
@@ -2884,7 +2907,7 @@
    "fail": 1
   },
   "visitors_new_return": {
-   "new": 37,
+   "new": 39,
    "return": 1
   },
   "top_routes": [
@@ -3038,7 +3061,7 @@
   "/": [
    {
     "name": "(direct or unknown)",
-    "count": 82
+    "count": 84
    },
    {
     "name": "com.reddit.frontpage",
@@ -3274,7 +3297,7 @@
   "(direct or unknown)": [
    {
     "path": "/",
-    "count": 82
+    "count": 84
    },
    {
     "path": "/destinations/etihad-rail-dubai",
@@ -3483,7 +3506,7 @@
  "toprefs": [
   {
    "name": "",
-   "count": 251,
+   "count": 257,
    "ref_scheme": "o"
   },
   {
@@ -3551,7 +3574,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 326
+   "count": 332
   },
   {
    "id": "rus",
@@ -3593,7 +3616,7 @@
   {
    "id": "US",
    "name": "United States",
-   "count": 34
+   "count": 40
   },
   {
    "id": "GB",
@@ -3695,7 +3718,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 202
+   "count": 208
   },
   {
    "id": "tablet",
@@ -3727,7 +3750,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 123
+   "count": 129
   },
   {
    "id": "Firefox",
@@ -3743,7 +3766,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 119
+   "count": 125
   },
   {
    "id": "Android",
