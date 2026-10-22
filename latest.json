@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-22T08:21:34Z",
+ "generated": "2026-10-22T09:16:33Z",
  "start": "2026-09-22",
  "end": "2026-10-23",
  "total": {
-  "total": 360,
+  "total": 361,
   "total_events": 209,
-  "total_utc": 360,
+  "total_utc": 361,
   "stats": [
    {
     "day": "2026-09-22",
@@ -308,7 +308,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 360
+    "monthly": 361
    },
    {
     "day": "2026-10-02",
@@ -881,7 +881,7 @@
      0
     ],
     "daily": 13,
-    "weekly": 18
+    "weekly": 19
    },
    {
     "day": "2026-10-21",
@@ -928,7 +928,7 @@
      0,
      0,
      0,
-     0,
+     1,
      0,
      0,
      0,
@@ -941,7 +941,7 @@
      0,
      0
     ],
-    "daily": 2
+    "daily": 3
    },
    {
     "day": "2026-10-23",
@@ -1348,6 +1348,16 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/destinations/al-mulla-plaza",
+   "path_id": 114013835,
+   "title": "Al Mulla Plaza Metro Station: Al Qiyadah (Green Line), 7 min walk",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-10-22": 1
    }
   },
   {
@@ -2813,9 +2823,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 151,
+  "visits": 152,
   "events_total": 209,
-  "goatcounter_total_with_events": 360,
+  "goatcounter_total_with_events": 361,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -2837,7 +2847,7 @@
    "2026-10-19": 4,
    "2026-10-20": 6,
    "2026-10-21": 3,
-   "2026-10-22": 2
+   "2026-10-22": 3
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -3151,6 +3161,12 @@
     "count": 1
    }
   ],
+  "/destinations/al-mulla-plaza": [
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
   "/destinations/expo-city-dubai": [
    {
     "name": "Google",
@@ -3365,6 +3381,10 @@
     "count": 1
    },
    {
+    "path": "/destinations/al-mulla-plaza",
+    "count": 1
+   },
+   {
     "path": "/destinations/expo-city-dubai",
     "count": 1
    },
@@ -3475,7 +3495,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 17,
+   "count": 18,
    "ref_scheme": "g"
   },
   {
@@ -3531,7 +3551,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 325
+   "count": 326
   },
   {
    "id": "rus",
@@ -3568,7 +3588,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 277
+   "count": 278
   },
   {
    "id": "US",
@@ -3675,7 +3695,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 201
+   "count": 202
   },
   {
    "id": "tablet",
@@ -3702,7 +3722,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 232
+   "count": 233
   },
   {
    "id": "Safari",
@@ -3728,7 +3748,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 81
+   "count": 82
   },
   {
    "id": "Windows",
