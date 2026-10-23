@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-23T09:16:52Z",
+ "generated": "2026-10-23T10:15:11Z",
  "start": "2025-10-23",
  "end": "2026-10-24",
  "total": {
-  "total": 369,
+  "total": 370,
   "total_events": 213,
-  "total_utc": 369,
+  "total_utc": 370,
   "stats": [
    {
     "day": "2025-10-23",
@@ -10328,7 +10328,7 @@
     ],
     "daily": 6,
     "weekly": 92,
-    "monthly": 369
+    "monthly": 370
    },
    {
     "day": "2026-10-02",
@@ -10961,7 +10961,7 @@
      0
     ],
     "daily": 9,
-    "weekly": 11
+    "weekly": 12
    },
    {
     "day": "2026-10-23",
@@ -10979,7 +10979,7 @@
      1,
      0,
      0,
-     0,
+     1,
      0,
      0,
      0,
@@ -10991,7 +10991,7 @@
      0,
      0
     ],
-    "daily": 2
+    "daily": 3
    },
    {
     "day": "2026-10-24",
@@ -11116,6 +11116,18 @@
    }
   },
   {
+   "path": "/destinations/indian-consulate-dubai",
+   "path_id": 112289662,
+   "title": "Indian Consulate Dubai Metro Station: BurJuman, 7 min walk",
+   "event": false,
+   "count": 3,
+   "daily": {
+    "2026-10-16": 1,
+    "2026-10-18": 1,
+    "2026-10-23": 1
+   }
+  },
+  {
    "path": "/destinations/palm-jumeirah-mall",
    "path_id": 111939146,
    "title": "Palm Jumeirah Mall and The View at The Palm Tram Stop: Palm Jumeirah Mall",
@@ -11183,17 +11195,6 @@
     "2026-10-04": 1,
     "2026-10-11": 1,
     "2026-10-17": 1
-   }
-  },
-  {
-   "path": "/destinations/indian-consulate-dubai",
-   "path_id": 112289662,
-   "title": "Indian Consulate Dubai Metro Station: BurJuman, 7 min walk",
-   "event": false,
-   "count": 2,
-   "daily": {
-    "2026-10-16": 1,
-    "2026-10-18": 1
    }
   },
   {
@@ -12915,9 +12916,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 156,
+  "visits": 157,
   "events_total": 213,
-  "goatcounter_total_with_events": 369,
+  "goatcounter_total_with_events": 370,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -12940,7 +12941,7 @@
    "2026-10-20": 6,
    "2026-10-21": 3,
    "2026-10-22": 5,
-   "2026-10-23": 2
+   "2026-10-23": 3
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -13187,6 +13188,12 @@
     "count": 2
    }
   ],
+  "/destinations/indian-consulate-dubai": [
+   {
+    "name": "Google",
+    "count": 3
+   }
+  ],
   "/destinations/palm-jumeirah-mall": [
    {
     "name": "chatgpt.com",
@@ -13211,12 +13218,6 @@
    {
     "name": "(direct or unknown)",
     "count": 3
-   }
-  ],
-  "/destinations/indian-consulate-dubai": [
-   {
-    "name": "Google",
-    "count": 2
    }
   ],
   "/destinations/us-consulate-dubai": [
@@ -13468,7 +13469,7 @@
    },
    {
     "path": "/destinations/indian-consulate-dubai",
-    "count": 2
+    "count": 3
    },
    {
     "path": "/destinations/al-zahra-hospital-dubai",
@@ -13609,7 +13610,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 19,
+   "count": 20,
    "ref_scheme": "g"
   },
   {
@@ -13665,7 +13666,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 334
+   "count": 335
   },
   {
    "id": "rus",
@@ -13702,7 +13703,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 280
+   "count": 281
   },
   {
    "id": "US",
@@ -13809,7 +13810,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 210
+   "count": 211
   },
   {
    "id": "tablet",
@@ -13836,7 +13837,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 233
+   "count": 234
   },
   {
    "id": "Safari",
@@ -13862,7 +13863,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 82
+   "count": 83
   },
   {
    "id": "Windows",
