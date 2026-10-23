@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-23T05:13:49Z",
+ "generated": "2026-10-23T06:13:41Z",
  "start": "2025-10-23",
  "end": "2026-10-24",
  "total": {
-  "total": 367,
+  "total": 368,
   "total_events": 213,
-  "total_utc": 367,
+  "total_utc": 368,
   "stats": [
    {
     "day": "2025-10-23",
@@ -10328,7 +10328,7 @@
     ],
     "daily": 6,
     "weekly": 92,
-    "monthly": 367
+    "monthly": 368
    },
    {
     "day": "2026-10-02",
@@ -10961,7 +10961,7 @@
      0
     ],
     "daily": 9,
-    "weekly": 9
+    "weekly": 10
    },
    {
     "day": "2026-10-23",
@@ -10975,7 +10975,7 @@
      0,
      0,
      0,
-     0,
+     1,
      0,
      0,
      0,
@@ -10991,7 +10991,7 @@
      0,
      0
     ],
-    "daily": 0
+    "daily": 1
    },
    {
     "day": "2026-10-24",
@@ -11400,6 +11400,16 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/destinations/times-square-center",
+   "path_id": 114208930,
+   "title": "Times Square Center Metro Station: Equiti (Red Line)",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-10-23": 1
    }
   },
   {
@@ -12895,9 +12905,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 154,
+  "visits": 155,
   "events_total": 213,
-  "goatcounter_total_with_events": 367,
+  "goatcounter_total_with_events": 368,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -12919,7 +12929,8 @@
    "2026-10-19": 4,
    "2026-10-20": 6,
    "2026-10-21": 3,
-   "2026-10-22": 5
+   "2026-10-22": 5,
+   "2026-10-23": 1
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -13234,6 +13245,12 @@
     "count": 1
    }
   ],
+  "/destinations/times-square-center": [
+   {
+    "name": "chatgpt.com",
+    "count": 1
+   }
+  ],
   "/destinations/al-mulla-plaza": [
    {
     "name": "Google",
@@ -13492,6 +13509,10 @@
     "count": 1
    },
    {
+    "path": "/destinations/times-square-center",
+    "count": 1
+   },
+   {
     "path": "/destinations/jw-marriott-marquis-dubai",
     "count": 1
    },
@@ -13574,7 +13595,7 @@
   {
    "id": "chatgpt.com",
    "name": "chatgpt.com",
-   "count": 11,
+   "count": 12,
    "ref_scheme": "c"
   },
   {
@@ -13624,7 +13645,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 332
+   "count": 333
   },
   {
    "id": "rus",
@@ -13661,7 +13682,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 278
+   "count": 279
   },
   {
    "id": "US",
@@ -13768,7 +13789,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 208
+   "count": 209
   },
   {
    "id": "tablet",
@@ -13800,7 +13821,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 129
+   "count": 130
   },
   {
    "id": "Firefox",
@@ -13816,7 +13837,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 125
+   "count": 126
   },
   {
    "id": "Android",
