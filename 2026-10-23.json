@@ -1,6 +1,6 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-23T21:12:08Z",
+ "generated": "2026-10-23T22:11:17Z",
  "start": "2026-09-23",
  "end": "2026-10-24",
  "total": {
@@ -3836,8 +3836,5 @@
    "count": 4
   }
  ],
- "campaigns": {
-  "error": "HTTP 404",
-  "body": "{\"error\":\"not found\"}"
- }
+ "campaigns": []
 }
