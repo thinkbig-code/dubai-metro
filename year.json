@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-24T08:08:22Z",
+ "generated": "2026-10-24T09:09:38Z",
  "start": "2025-10-24",
  "end": "2026-10-25",
  "total": {
-  "total": 373,
-  "total_events": 213,
-  "total_utc": 373,
+  "total": 375,
+  "total_events": 214,
+  "total_utc": 375,
   "stats": [
    {
     "day": "2025-10-24",
@@ -10298,7 +10298,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 373
+    "monthly": 375
    },
    {
     "day": "2026-10-02",
@@ -10962,7 +10962,7 @@
      0
     ],
     "daily": 3,
-    "weekly": 6
+    "weekly": 8
    },
    {
     "day": "2026-10-24",
@@ -10980,7 +10980,7 @@
      2,
      0,
      0,
-     0,
+     2,
      0,
      0,
      0,
@@ -10992,7 +10992,7 @@
      0,
      0
     ],
-    "daily": 3
+    "daily": 5
    },
    {
     "day": "2026-10-25",
@@ -11032,7 +11032,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 102,
+   "count": 103,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -11052,7 +11052,8 @@
     "2026-10-18": 1,
     "2026-10-19": 1,
     "2026-10-20": 1,
-    "2026-10-22": 2
+    "2026-10-22": 2,
+    "2026-10-24": 1
    }
   },
   {
@@ -11060,7 +11061,7 @@
    "path_id": 110447314,
    "title": "en",
    "event": true,
-   "count": 39,
+   "count": 40,
    "daily": {
     "2026-10-08": 7,
     "2026-10-09": 6,
@@ -11074,7 +11075,8 @@
     "2026-10-18": 1,
     "2026-10-19": 1,
     "2026-10-20": 1,
-    "2026-10-22": 2
+    "2026-10-22": 2,
+    "2026-10-24": 1
    }
   },
   {
@@ -12920,9 +12922,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 160,
-  "events_total": 213,
-  "goatcounter_total_with_events": 373,
+  "visits": 161,
+  "events_total": 214,
+  "goatcounter_total_with_events": 375,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -12946,7 +12948,7 @@
    "2026-10-21": 3,
    "2026-10-22": 5,
    "2026-10-23": 3,
-   "2026-10-24": 3
+   "2026-10-24": 4
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -12961,14 +12963,15 @@
    "2026-10-18": 1,
    "2026-10-19": 1,
    "2026-10-20": 1,
-   "2026-10-22": 2
+   "2026-10-22": 2,
+   "2026-10-24": 1
   },
-  "visitor_days": 40,
-  "return_rate": 0.025,
+  "visitor_days": 41,
+  "return_rate": 0.024,
   "routes": 38,
   "routes_not_found": 0,
   "routes_per_visit": 0.24,
-  "routes_per_visitor_day": 0.68,
+  "routes_per_visitor_day": 0.66,
   "share_rate": 0.0,
   "shares": {},
   "failed_search_rate": 0.03,
@@ -12984,7 +12987,7 @@
    "fail": 1
   },
   "visitors_new_return": {
-   "new": 39,
+   "new": 40,
    "return": 1
   },
   "top_routes": [
@@ -13158,6 +13161,10 @@
    },
    {
     "name": "web.telegram.org",
+    "count": 1
+   },
+   {
+    "name": "chatgpt.com",
     "count": 1
    },
    {
@@ -13455,6 +13462,52 @@
     "count": 1
    }
   ],
+  "chatgpt.com": [
+   {
+    "path": "/destinations/etihad-rail-dubai",
+    "count": 2
+   },
+   {
+    "path": "/destinations/palm-jumeirah-mall",
+    "count": 2
+   },
+   {
+    "path": "/",
+    "count": 1
+   },
+   {
+    "path": "/destinations/dubai-police-general-headquarters",
+    "count": 1
+   },
+   {
+    "path": "/destinations/american-hospital-dubai",
+    "count": 1
+   },
+   {
+    "path": "/destinations/times-square-center",
+    "count": 1
+   },
+   {
+    "path": "/destinations/jw-marriott-marquis-dubai",
+    "count": 1
+   },
+   {
+    "path": "/destinations/dubai-creek-harbour",
+    "count": 1
+   },
+   {
+    "path": "/destinations/gdrfa-immigration-al-jafiliya",
+    "count": 1
+   },
+   {
+    "path": "/destinations/rashid-hospital",
+    "count": 1
+   },
+   {
+    "path": "/destinations/dubai-mall",
+    "count": 1
+   }
+  ],
   "dubaimetro.fyi/destinations/etihad-rail-dubai": [
    {
     "path": "/",
@@ -13529,48 +13582,6 @@
     "count": 1
    }
   ],
-  "chatgpt.com": [
-   {
-    "path": "/destinations/etihad-rail-dubai",
-    "count": 2
-   },
-   {
-    "path": "/destinations/palm-jumeirah-mall",
-    "count": 2
-   },
-   {
-    "path": "/destinations/dubai-police-general-headquarters",
-    "count": 1
-   },
-   {
-    "path": "/destinations/american-hospital-dubai",
-    "count": 1
-   },
-   {
-    "path": "/destinations/times-square-center",
-    "count": 1
-   },
-   {
-    "path": "/destinations/jw-marriott-marquis-dubai",
-    "count": 1
-   },
-   {
-    "path": "/destinations/dubai-creek-harbour",
-    "count": 1
-   },
-   {
-    "path": "/destinations/gdrfa-immigration-al-jafiliya",
-    "count": 1
-   },
-   {
-    "path": "/destinations/rashid-hospital",
-    "count": 1
-   },
-   {
-    "path": "/destinations/dubai-mall",
-    "count": 1
-   }
-  ],
   "www.facebook.com": [
    {
     "path": "/tl.html",
@@ -13611,7 +13622,7 @@
  "toprefs": [
   {
    "name": "",
-   "count": 257,
+   "count": 258,
    "ref_scheme": "o"
   },
   {
@@ -13629,7 +13640,7 @@
   {
    "id": "chatgpt.com",
    "name": "chatgpt.com",
-   "count": 12,
+   "count": 13,
    "ref_scheme": "c"
   },
   {
@@ -13679,7 +13690,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 338
+   "count": 340
   },
   {
    "id": "rus",
@@ -13716,7 +13727,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 284
+   "count": 286
   },
   {
    "id": "US",
@@ -13823,7 +13834,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 214
+   "count": 216
   },
   {
    "id": "tablet",
@@ -13855,7 +13866,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 132
+   "count": 134
   },
   {
    "id": "Firefox",
@@ -13871,7 +13882,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 128
+   "count": 130
   },
   {
    "id": "Android",
