@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-24T20:01:18Z",
+ "generated": "2026-10-24T21:04:45Z",
  "start": "2026-09-24",
  "end": "2026-10-25",
  "total": {
-  "total": 382,
+  "total": 383,
   "total_events": 216,
-  "total_utc": 382,
+  "total_utc": 383,
   "stats": [
    {
     "day": "2026-09-24",
@@ -248,7 +248,7 @@
     ],
     "daily": 6,
     "weekly": 92,
-    "monthly": 382
+    "monthly": 383
    },
    {
     "day": "2026-10-02",
@@ -881,7 +881,7 @@
      0
     ],
     "daily": 9,
-    "weekly": 24
+    "weekly": 25
    },
    {
     "day": "2026-10-23",
@@ -946,7 +946,7 @@
    {
     "day": "2026-10-25",
     "hourly": [
-     0,
+     1,
      0,
      0,
      0,
@@ -971,7 +971,7 @@
      0,
      0
     ],
-    "daily": 0
+    "daily": 1
    }
   ]
  },
@@ -1377,6 +1377,16 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/map",
+   "path_id": 114750763,
+   "title": "Dubai Metro Map 2026: All Lines and Stations (Image and Interactive)",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-10-25": 1
    }
   },
   {
@@ -2872,9 +2882,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 166,
+  "visits": 167,
   "events_total": 216,
-  "goatcounter_total_with_events": 382,
+  "goatcounter_total_with_events": 383,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -2898,7 +2908,8 @@
    "2026-10-21": 3,
    "2026-10-22": 5,
    "2026-10-23": 3,
-   "2026-10-24": 9
+   "2026-10-24": 9,
+   "2026-10-25": 1
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -3242,6 +3253,12 @@
     "count": 1
    }
   ],
+  "/map": [
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
   "/destinations/coca-cola-arena": [
    {
     "name": "Google",
@@ -3440,6 +3457,10 @@
     "count": 1
    },
    {
+    "path": "/map",
+    "count": 1
+   },
+   {
     "path": "/destinations/coca-cola-arena",
     "count": 1
    },
@@ -3600,7 +3621,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 28,
+   "count": 29,
    "ref_scheme": "g"
   },
   {
@@ -3677,6 +3698,11 @@
    "id": "deu",
    "name": "German",
    "count": 2
+  },
+  {
+   "id": "ita",
+   "name": "Italian",
+   "count": 1
   },
   {
    "id": "pol",
@@ -3776,6 +3802,11 @@
    "count": 1
   },
   {
+   "id": "IT",
+   "name": "Italy",
+   "count": 1
+  },
+  {
    "id": "KR",
    "name": "South Korea",
    "count": 1
@@ -3805,7 +3836,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 221
+   "count": 222
   },
   {
    "id": "tablet",
@@ -3837,7 +3868,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 135
+   "count": 136
   },
   {
    "id": "Firefox",
@@ -3853,7 +3884,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 131
+   "count": 132
   },
   {
    "id": "Android",
