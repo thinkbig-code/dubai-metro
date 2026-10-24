@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-24T14:06:55Z",
+ "generated": "2026-10-24T15:07:47Z",
  "start": "2025-10-24",
  "end": "2026-10-25",
  "total": {
-  "total": 377,
-  "total_events": 214,
-  "total_utc": 377,
+  "total": 379,
+  "total_events": 215,
+  "total_utc": 379,
   "stats": [
    {
     "day": "2025-10-24",
@@ -10298,7 +10298,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 377
+    "monthly": 379
    },
    {
     "day": "2026-10-02",
@@ -10962,7 +10962,7 @@
      0
     ],
     "daily": 3,
-    "weekly": 10
+    "weekly": 12
    },
    {
     "day": "2026-10-24",
@@ -10985,14 +10985,14 @@
      0,
      0,
      1,
-     0,
+     2,
      0,
      0,
      0,
      0,
      0
     ],
-    "daily": 7
+    "daily": 9
    },
    {
     "day": "2026-10-25",
@@ -11032,7 +11032,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 103,
+   "count": 104,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -11053,7 +11053,7 @@
     "2026-10-19": 1,
     "2026-10-20": 1,
     "2026-10-22": 2,
-    "2026-10-24": 1
+    "2026-10-24": 2
    }
   },
   {
@@ -11061,7 +11061,7 @@
    "path_id": 110447314,
    "title": "en",
    "event": true,
-   "count": 40,
+   "count": 41,
    "daily": {
     "2026-10-08": 7,
     "2026-10-09": 6,
@@ -11076,7 +11076,7 @@
     "2026-10-19": 1,
     "2026-10-20": 1,
     "2026-10-22": 2,
-    "2026-10-24": 1
+    "2026-10-24": 2
    }
   },
   {
@@ -12922,9 +12922,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 163,
-  "events_total": 214,
-  "goatcounter_total_with_events": 377,
+  "visits": 164,
+  "events_total": 215,
+  "goatcounter_total_with_events": 379,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -12948,7 +12948,7 @@
    "2026-10-21": 3,
    "2026-10-22": 5,
    "2026-10-23": 3,
-   "2026-10-24": 6
+   "2026-10-24": 7
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -12964,14 +12964,14 @@
    "2026-10-19": 1,
    "2026-10-20": 1,
    "2026-10-22": 2,
-   "2026-10-24": 1
+   "2026-10-24": 2
   },
-  "visitor_days": 41,
+  "visitor_days": 42,
   "return_rate": 0.024,
   "routes": 38,
   "routes_not_found": 0,
   "routes_per_visit": 0.23,
-  "routes_per_visitor_day": 0.66,
+  "routes_per_visitor_day": 0.64,
   "share_rate": 0.0,
   "shares": {},
   "failed_search_rate": 0.03,
@@ -12987,7 +12987,7 @@
    "fail": 1
   },
   "visitors_new_return": {
-   "new": 40,
+   "new": 41,
    "return": 1
   },
   "top_routes": [
@@ -13150,6 +13150,10 @@
    {
     "name": "www.bing.com",
     "count": 4
+   },
+   {
+    "name": "Google",
+    "count": 1
    },
    {
     "name": "Yahoo",
@@ -13444,6 +13448,68 @@
     "count": 4
    }
   ],
+  "Google": [
+   {
+    "path": "/destinations/etihad-rail-dubai",
+    "count": 8
+   },
+   {
+    "path": "/destinations/indian-consulate-dubai",
+    "count": 3
+   },
+   {
+    "path": "/destinations/al-zahra-hospital-dubai",
+    "count": 3
+   },
+   {
+    "path": "/",
+    "count": 1
+   },
+   {
+    "path": "/destinations/us-consulate-dubai",
+    "count": 1
+   },
+   {
+    "path": "/destinations/dubai-police-general-headquarters",
+    "count": 1
+   },
+   {
+    "path": "/destinations/american-hospital-dubai",
+    "count": 1
+   },
+   {
+    "path": "/lines/green-line",
+    "count": 1
+   },
+   {
+    "path": "/destinations/coca-cola-arena",
+    "count": 1
+   },
+   {
+    "path": "/destinations/al-mulla-plaza",
+    "count": 1
+   },
+   {
+    "path": "/destinations/expo-city-dubai",
+    "count": 1
+   },
+   {
+    "path": "/destinations/canadian-specialist-hospital",
+    "count": 1
+   },
+   {
+    "path": "/destinations/dubai-land-department",
+    "count": 1
+   },
+   {
+    "path": "/destinations/pakistan-consulate-dubai",
+    "count": 1
+   },
+   {
+    "path": "/destinations/dubai-municipality-head-office",
+    "count": 1
+   }
+  ],
   "Yahoo": [
    {
     "path": "/",
@@ -13524,64 +13590,6 @@
     "count": 1
    }
   ],
-  "Google": [
-   {
-    "path": "/destinations/etihad-rail-dubai",
-    "count": 8
-   },
-   {
-    "path": "/destinations/indian-consulate-dubai",
-    "count": 3
-   },
-   {
-    "path": "/destinations/al-zahra-hospital-dubai",
-    "count": 3
-   },
-   {
-    "path": "/destinations/us-consulate-dubai",
-    "count": 1
-   },
-   {
-    "path": "/destinations/dubai-police-general-headquarters",
-    "count": 1
-   },
-   {
-    "path": "/destinations/american-hospital-dubai",
-    "count": 1
-   },
-   {
-    "path": "/lines/green-line",
-    "count": 1
-   },
-   {
-    "path": "/destinations/coca-cola-arena",
-    "count": 1
-   },
-   {
-    "path": "/destinations/al-mulla-plaza",
-    "count": 1
-   },
-   {
-    "path": "/destinations/expo-city-dubai",
-    "count": 1
-   },
-   {
-    "path": "/destinations/canadian-specialist-hospital",
-    "count": 1
-   },
-   {
-    "path": "/destinations/dubai-land-department",
-    "count": 1
-   },
-   {
-    "path": "/destinations/pakistan-consulate-dubai",
-    "count": 1
-   },
-   {
-    "path": "/destinations/dubai-municipality-head-office",
-    "count": 1
-   }
-  ],
   "www.facebook.com": [
    {
     "path": "/tl.html",
@@ -13634,7 +13642,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 25,
+   "count": 27,
    "ref_scheme": "g"
   },
   {
@@ -13690,7 +13698,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 342
+   "count": 344
   },
   {
    "id": "rus",
@@ -13727,7 +13735,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 287
+   "count": 289
   },
   {
    "id": "US",
@@ -13839,7 +13847,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 218
+   "count": 220
   },
   {
    "id": "tablet",
@@ -13866,7 +13874,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 238
+   "count": 240
   },
   {
    "id": "Safari",
@@ -13892,7 +13900,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 87
+   "count": 89
   },
   {
    "id": "Windows",
