@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-24T18:04:43Z",
+ "generated": "2026-10-24T19:11:46Z",
  "start": "2025-10-24",
  "end": "2026-10-25",
  "total": {
-  "total": 380,
-  "total_events": 215,
-  "total_utc": 380,
+  "total": 382,
+  "total_events": 216,
+  "total_utc": 382,
   "stats": [
    {
     "day": "2025-10-24",
@@ -10298,7 +10298,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 380
+    "monthly": 382
    },
    {
     "day": "2026-10-02",
@@ -10962,7 +10962,7 @@
      0
     ],
     "daily": 3,
-    "weekly": 13
+    "weekly": 15
    },
    {
     "day": "2026-10-24",
@@ -10989,10 +10989,10 @@
      0,
      0,
      1,
-     0,
+     2,
      0
     ],
-    "daily": 10
+    "daily": 12
    },
    {
     "day": "2026-10-25",
@@ -11061,7 +11061,7 @@
    "path_id": 110447314,
    "title": "en",
    "event": true,
-   "count": 41,
+   "count": 42,
    "daily": {
     "2026-10-08": 7,
     "2026-10-09": 6,
@@ -11076,7 +11076,7 @@
     "2026-10-19": 1,
     "2026-10-20": 1,
     "2026-10-22": 2,
-    "2026-10-24": 2
+    "2026-10-24": 3
    }
   },
   {
@@ -11255,6 +11255,17 @@
    "daily": {
     "2026-10-11": 1,
     "2026-10-12": 1
+   }
+  },
+  {
+   "path": "/ar.html",
+   "path_id": 110830469,
+   "title": "خريطة مترو دبي التفاعلية: المترو والترام ومونوريل النخلة",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-10-10": 1,
+    "2026-10-24": 1
    }
   },
   {
@@ -11984,16 +11995,6 @@
    "path_id": 110852506,
    "title": "en|home|phone",
    "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-10": 1
-   }
-  },
-  {
-   "path": "/ar.html",
-   "path_id": 110830469,
-   "title": "خريطة مترو دبي التفاعلية: المترو والترام ومونوريل النخلة",
-   "event": false,
    "count": 1,
    "daily": {
     "2026-10-10": 1
@@ -12922,9 +12923,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 165,
-  "events_total": 215,
-  "goatcounter_total_with_events": 380,
+  "visits": 166,
+  "events_total": 216,
+  "goatcounter_total_with_events": 382,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -12948,7 +12949,7 @@
    "2026-10-21": 3,
    "2026-10-22": 5,
    "2026-10-23": 3,
-   "2026-10-24": 8
+   "2026-10-24": 9
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -12964,14 +12965,14 @@
    "2026-10-19": 1,
    "2026-10-20": 1,
    "2026-10-22": 2,
-   "2026-10-24": 2
+   "2026-10-24": 3
   },
-  "visitor_days": 42,
-  "return_rate": 0.024,
+  "visitor_days": 43,
+  "return_rate": 0.023,
   "routes": 38,
   "routes_not_found": 0,
   "routes_per_visit": 0.23,
-  "routes_per_visitor_day": 0.64,
+  "routes_per_visitor_day": 0.63,
   "share_rate": 0.0,
   "shares": {},
   "failed_search_rate": 0.03,
@@ -12987,7 +12988,7 @@
    "fail": 1
   },
   "visitors_new_return": {
-   "new": 41,
+   "new": 42,
    "return": 1
   },
   "top_routes": [
@@ -13282,6 +13283,16 @@
     "count": 1
    }
   ],
+  "/ar.html": [
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   },
+   {
+    "name": "Yandex",
+    "count": 1
+   }
+  ],
   "/destinations/coca-cola-arena": [
    {
     "name": "Google",
@@ -13372,16 +13383,6 @@
     "count": 1
    }
   ],
-  "/ar.html": [
-   {
-    "name": "(direct or unknown)",
-    "count": 1
-   },
-   {
-    "name": "Yandex",
-    "count": 1
-   }
-  ],
   "/destinations/dubai-mall": [
    {
     "name": "chatgpt.com",
@@ -13428,15 +13429,15 @@
     "count": 1
    },
    {
+    "path": "/ar.html",
+    "count": 1
+   },
+   {
     "path": "/destinations/museum-of-the-future",
     "count": 1
    },
    {
     "path": "/destinations/st-mary-s-catholic-church",
-    "count": 1
-   },
-   {
-    "path": "/ar.html",
     "count": 1
    },
    {
@@ -13616,15 +13617,15 @@
     "count": 1
    }
   ],
-  "dubaimetro.fyi/lines/red-line": [
-   {
-    "path": "/stations/centrepoint",
-    "count": 1
-   }
-  ],
   "Yandex": [
    {
     "path": "/ar.html",
+    "count": 1
+   }
+  ],
+  "dubaimetro.fyi/lines/red-line": [
+   {
+    "path": "/stations/centrepoint",
     "count": 1
    }
   ],
