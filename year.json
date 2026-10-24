@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-24T06:09:38Z",
+ "generated": "2026-10-24T07:21:58Z",
  "start": "2025-10-24",
  "end": "2026-10-25",
  "total": {
-  "total": 371,
+  "total": 373,
   "total_events": 213,
-  "total_utc": 371,
+  "total_utc": 373,
   "stats": [
    {
     "day": "2025-10-24",
@@ -10298,7 +10298,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 371
+    "monthly": 373
    },
    {
     "day": "2026-10-02",
@@ -10962,7 +10962,7 @@
      0
     ],
     "daily": 3,
-    "weekly": 4
+    "weekly": 6
    },
    {
     "day": "2026-10-24",
@@ -10977,7 +10977,7 @@
      0,
      0,
      1,
-     0,
+     2,
      0,
      0,
      0,
@@ -10992,7 +10992,7 @@
      0,
      0
     ],
-    "daily": 1
+    "daily": 3
    },
    {
     "day": "2026-10-25",
@@ -11142,6 +11142,18 @@
    }
   },
   {
+   "path": "/destinations/al-zahra-hospital-dubai",
+   "path_id": 111715857,
+   "title": "Al Zahra Hospital Dubai Metro Station: Dubai Internet City, 10 min walk",
+   "event": false,
+   "count": 3,
+   "daily": {
+    "2026-10-12": 1,
+    "2026-10-18": 1,
+    "2026-10-24": 1
+   }
+  },
+  {
    "path": "/lines/red-line",
    "path_id": 111681936,
    "title": "Dubai Metro Red Line: Stations, Expo Branch, Map and Hours",
@@ -11222,14 +11234,14 @@
    }
   },
   {
-   "path": "/destinations/al-zahra-hospital-dubai",
-   "path_id": 111715857,
-   "title": "Al Zahra Hospital Dubai Metro Station: Dubai Internet City, 10 min walk",
+   "path": "/destinations/american-hospital-dubai",
+   "path_id": 111868353,
+   "title": "American Hospital Dubai Metro Station: Oud Metha (Green Line), 17 min walk",
    "event": false,
    "count": 2,
    "daily": {
-    "2026-10-12": 1,
-    "2026-10-18": 1
+    "2026-10-13": 1,
+    "2026-10-24": 1
    }
   },
   {
@@ -11689,16 +11701,6 @@
    "path": "/destinations/museum-of-the-future",
    "path_id": 111942261,
    "title": "Museum of the Future Metro Station: Emirates Towers (Red Line), 5 min walk",
-   "event": false,
-   "count": 1,
-   "daily": {
-    "2026-10-13": 1
-   }
-  },
-  {
-   "path": "/destinations/american-hospital-dubai",
-   "path_id": 111868353,
-   "title": "American Hospital Dubai Metro Station: Oud Metha (Green Line), 17 min walk",
    "event": false,
    "count": 1,
    "daily": {
@@ -12918,9 +12920,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 158,
+  "visits": 160,
   "events_total": 213,
-  "goatcounter_total_with_events": 371,
+  "goatcounter_total_with_events": 373,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -12944,7 +12946,7 @@
    "2026-10-21": 3,
    "2026-10-22": 5,
    "2026-10-23": 3,
-   "2026-10-24": 1
+   "2026-10-24": 3
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -13207,6 +13209,12 @@
     "count": 1
    }
   ],
+  "/destinations/al-zahra-hospital-dubai": [
+   {
+    "name": "Google",
+    "count": 3
+   }
+  ],
   "/lines/red-line": [
    {
     "name": "(direct or unknown)",
@@ -13243,10 +13251,14 @@
     "count": 1
    }
   ],
-  "/destinations/al-zahra-hospital-dubai": [
+  "/destinations/american-hospital-dubai": [
    {
     "name": "Google",
-    "count": 2
+    "count": 1
+   },
+   {
+    "name": "chatgpt.com",
+    "count": 1
    }
   ],
   "/lines/green-line": [
@@ -13328,12 +13340,6 @@
   "/destinations/museum-of-the-future": [
    {
     "name": "(direct or unknown)",
-    "count": 1
-   }
-  ],
-  "/destinations/american-hospital-dubai": [
-   {
-    "name": "chatgpt.com",
     "count": 1
    }
   ],
@@ -13476,7 +13482,7 @@
    },
    {
     "path": "/destinations/al-zahra-hospital-dubai",
-    "count": 2
+    "count": 3
    },
    {
     "path": "/destinations/us-consulate-dubai",
@@ -13484,6 +13490,10 @@
    },
    {
     "path": "/destinations/dubai-police-general-headquarters",
+    "count": 1
+   },
+   {
+    "path": "/destinations/american-hospital-dubai",
     "count": 1
    },
    {
@@ -13533,6 +13543,10 @@
     "count": 1
    },
    {
+    "path": "/destinations/american-hospital-dubai",
+    "count": 1
+   },
+   {
     "path": "/destinations/times-square-center",
     "count": 1
    },
@@ -13550,10 +13564,6 @@
    },
    {
     "path": "/destinations/rashid-hospital",
-    "count": 1
-   },
-   {
-    "path": "/destinations/american-hospital-dubai",
     "count": 1
    },
    {
@@ -13613,7 +13623,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 21,
+   "count": 23,
    "ref_scheme": "g"
   },
   {
@@ -13669,7 +13679,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 336
+   "count": 338
   },
   {
    "id": "rus",
@@ -13706,7 +13716,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 282
+   "count": 284
   },
   {
    "id": "US",
@@ -13813,7 +13823,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 212
+   "count": 214
   },
   {
    "id": "tablet",
@@ -13840,12 +13850,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 235
+   "count": 236
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 131
+   "count": 132
   },
   {
    "id": "Firefox",
@@ -13861,12 +13871,12 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 127
+   "count": 128
   },
   {
    "id": "Android",
    "name": "Android",
-   "count": 84
+   "count": 85
   },
   {
    "id": "Windows",
