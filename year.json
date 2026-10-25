@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-25T12:06:46Z",
+ "generated": "2026-10-25T13:18:48Z",
  "start": "2025-10-25",
  "end": "2026-10-26",
  "total": {
-  "total": 399,
-  "total_events": 225,
-  "total_utc": 399,
+  "total": 402,
+  "total_events": 228,
+  "total_utc": 402,
   "stats": [
    {
     "day": "2025-10-25",
@@ -10268,7 +10268,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 399
+    "monthly": 402
    },
    {
     "day": "2026-10-02",
@@ -10962,7 +10962,7 @@
      0
     ],
     "daily": 12,
-    "weekly": 29
+    "weekly": 32
    },
    {
     "day": "2026-10-25",
@@ -10983,7 +10983,7 @@
      0,
      0,
      5,
-     2,
+     5,
      0,
      0,
      0,
@@ -10992,7 +10992,7 @@
      0,
      0
     ],
-    "daily": 17
+    "daily": 20
    },
    {
     "day": "2026-10-26",
@@ -11454,6 +11454,36 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "share/qr/p_mall_of_the_emirates/union",
+   "path_id": 115033125,
+   "title": "ar|qr",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-25": 1
+   }
+  },
+  {
+   "path": "share/copy/p_mall_of_the_emirates/union",
+   "path_id": 115033104,
+   "title": "ar|copy",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-25": 1
+   }
+  },
+  {
+   "path": "share/whatsapp/p_mall_of_the_emirates/union",
+   "path_id": 115032953,
+   "title": "ar|whatsapp",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-25": 1
    }
   },
   {
@@ -13020,8 +13050,8 @@
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
   "visits": 174,
-  "events_total": 225,
-  "goatcounter_total_with_events": 399,
+  "events_total": 228,
+  "goatcounter_total_with_events": 402,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -13071,8 +13101,12 @@
   "routes_not_found": 0,
   "routes_per_visit": 0.23,
   "routes_per_visitor_day": 0.64,
-  "share_rate": 0.0,
-  "shares": {},
+  "share_rate": 0.075,
+  "shares": {
+   "qr": 1,
+   "copy": 1,
+   "whatsapp": 1
+  },
   "failed_search_rate": 0.029,
   "failed_searches": [
    {
@@ -13809,7 +13843,7 @@
   {
    "id": "www.bing.com",
    "name": "www.bing.com",
-   "count": 13,
+   "count": 16,
    "ref_scheme": "h"
   },
   {
@@ -13859,7 +13893,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 363
+   "count": 366
   },
   {
    "id": "rus",
@@ -13901,7 +13935,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 302
+   "count": 305
   },
   {
    "id": "US",
@@ -14038,7 +14072,7 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 136
+   "count": 139
   },
   {
    "id": "desktophd",
@@ -14055,7 +14089,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 251
+   "count": 254
   },
   {
    "id": "Safari",
@@ -14086,7 +14120,7 @@
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 83
+   "count": 86
   },
   {
    "id": "macOS",
