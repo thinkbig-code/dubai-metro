@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-25T02:10:44Z",
+ "generated": "2026-10-25T03:11:25Z",
  "start": "2026-09-25",
  "end": "2026-10-26",
  "total": {
-  "total": 389,
-  "total_events": 220,
-  "total_utc": 389,
+  "total": 391,
+  "total_events": 221,
+  "total_utc": 391,
   "stats": [
    {
     "day": "2026-09-25",
@@ -218,7 +218,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 389
+    "monthly": 391
    },
    {
     "day": "2026-10-02",
@@ -882,7 +882,7 @@
      0
     ],
     "daily": 3,
-    "weekly": 22
+    "weekly": 24
    },
    {
     "day": "2026-10-24",
@@ -924,7 +924,7 @@
      0,
      6,
      0,
-     0,
+     2,
      0,
      0,
      0,
@@ -942,7 +942,7 @@
      0,
      0
     ],
-    "daily": 7
+    "daily": 9
    },
    {
     "day": "2026-10-26",
@@ -982,7 +982,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 105,
+   "count": 106,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -1004,7 +1004,7 @@
     "2026-10-20": 1,
     "2026-10-22": 2,
     "2026-10-24": 2,
-    "2026-10-25": 1
+    "2026-10-25": 2
    }
   },
   {
@@ -1012,7 +1012,7 @@
    "path_id": 110447314,
    "title": "en",
    "event": true,
-   "count": 42,
+   "count": 43,
    "daily": {
     "2026-10-08": 7,
     "2026-10-09": 6,
@@ -1027,7 +1027,8 @@
     "2026-10-19": 1,
     "2026-10-20": 1,
     "2026-10-22": 2,
-    "2026-10-24": 3
+    "2026-10-24": 3,
+    "2026-10-25": 1
    }
   },
   {
@@ -2925,9 +2926,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 169,
-  "events_total": 220,
-  "goatcounter_total_with_events": 389,
+  "visits": 170,
+  "events_total": 221,
+  "goatcounter_total_with_events": 391,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -2952,7 +2953,7 @@
    "2026-10-22": 5,
    "2026-10-23": 3,
    "2026-10-24": 9,
-   "2026-10-25": 3
+   "2026-10-25": 4
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -2968,14 +2969,15 @@
    "2026-10-19": 1,
    "2026-10-20": 1,
    "2026-10-22": 2,
-   "2026-10-24": 3
+   "2026-10-24": 3,
+   "2026-10-25": 1
   },
-  "visitor_days": 43,
+  "visitor_days": 44,
   "return_rate": 0.023,
   "routes": 39,
   "routes_not_found": 0,
   "routes_per_visit": 0.23,
-  "routes_per_visitor_day": 0.63,
+  "routes_per_visitor_day": 0.64,
   "share_rate": 0.0,
   "shares": {},
   "failed_search_rate": 0.03,
@@ -2991,7 +2993,7 @@
    "fail": 1
   },
   "visitors_new_return": {
-   "new": 42,
+   "new": 43,
    "return": 1
   },
   "top_routes": [
@@ -3145,7 +3147,7 @@
   "/": [
    {
     "name": "(direct or unknown)",
-    "count": 84
+    "count": 85
    },
    {
     "name": "com.reddit.frontpage",
@@ -3423,7 +3425,7 @@
   "(direct or unknown)": [
    {
     "path": "/",
-    "count": 84
+    "count": 85
    },
    {
     "path": "/destinations/etihad-rail-dubai",
@@ -3670,7 +3672,7 @@
  "toprefs": [
   {
    "name": "",
-   "count": 260,
+   "count": 262,
    "ref_scheme": "o"
   },
   {
@@ -3738,7 +3740,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 353
+   "count": 355
   },
   {
    "id": "rus",
@@ -3785,7 +3787,7 @@
   {
    "id": "US",
    "name": "United States",
-   "count": 42
+   "count": 44
   },
   {
    "id": "GB",
@@ -3902,7 +3904,7 @@
   {
    "id": "tablet",
    "name": "",
-   "count": 25
+   "count": 27
   },
   {
    "id": "desktop",
@@ -3924,7 +3926,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 242
+   "count": 244
   },
   {
    "id": "Safari",
@@ -3955,7 +3957,7 @@
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 76
+   "count": 78
   },
   {
    "id": "macOS",
