@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-25T05:12:21Z",
+ "generated": "2026-10-25T06:09:08Z",
  "start": "2026-09-25",
  "end": "2026-10-26",
  "total": {
-  "total": 391,
+  "total": 392,
   "total_events": 221,
-  "total_utc": 391,
+  "total_utc": 392,
   "stats": [
    {
     "day": "2026-09-25",
@@ -218,7 +218,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 391
+    "monthly": 392
    },
    {
     "day": "2026-10-02",
@@ -882,7 +882,7 @@
      0
     ],
     "daily": 3,
-    "weekly": 24
+    "weekly": 25
    },
    {
     "day": "2026-10-24",
@@ -926,7 +926,7 @@
      0,
      2,
      0,
-     0,
+     1,
      0,
      0,
      0,
@@ -942,7 +942,7 @@
      0,
      0
     ],
-    "daily": 9
+    "daily": 10
    },
    {
     "day": "2026-10-26",
@@ -1163,6 +1163,17 @@
     "2026-10-04": 1,
     "2026-10-11": 1,
     "2026-10-17": 1
+   }
+  },
+  {
+   "path": "/destinations/times-square-center",
+   "path_id": 114208930,
+   "title": "Times Square Center Metro Station: Equiti (Red Line)",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-10-23": 1,
+    "2026-10-25": 1
    }
   },
   {
@@ -1447,16 +1458,6 @@
    "path": "/destinations/coca-cola-arena",
    "path_id": 114216387,
    "title": "Coca-Cola Arena Metro Station: Burj Khalifa/Dubai Mall, 7 min walk",
-   "event": false,
-   "count": 1,
-   "daily": {
-    "2026-10-23": 1
-   }
-  },
-  {
-   "path": "/destinations/times-square-center",
-   "path_id": 114208930,
-   "title": "Times Square Center Metro Station: Equiti (Red Line)",
    "event": false,
    "count": 1,
    "daily": {
@@ -2926,9 +2927,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 170,
+  "visits": 171,
   "events_total": 221,
-  "goatcounter_total_with_events": 391,
+  "goatcounter_total_with_events": 392,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -2953,7 +2954,7 @@
    "2026-10-22": 5,
    "2026-10-23": 3,
    "2026-10-24": 9,
-   "2026-10-25": 4
+   "2026-10-25": 5
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -3252,6 +3253,16 @@
     "count": 3
    }
   ],
+  "/destinations/times-square-center": [
+   {
+    "name": "Google",
+    "count": 1
+   },
+   {
+    "name": "chatgpt.com",
+    "count": 1
+   }
+  ],
   "/destinations/us-consulate-dubai": [
    {
     "name": "(direct or unknown)",
@@ -3321,12 +3332,6 @@
   "/destinations/coca-cola-arena": [
    {
     "name": "Google",
-    "count": 1
-   }
-  ],
-  "/destinations/times-square-center": [
-   {
-    "name": "chatgpt.com",
     "count": 1
    }
   ],
@@ -3494,6 +3499,10 @@
     "count": 1
    },
    {
+    "path": "/destinations/times-square-center",
+    "count": 1
+   },
+   {
     "path": "/destinations/us-consulate-dubai",
     "count": 1
    },
@@ -3578,15 +3587,15 @@
     "count": 1
    },
    {
+    "path": "/destinations/times-square-center",
+    "count": 1
+   },
+   {
     "path": "/destinations/dubai-police-general-headquarters",
     "count": 1
    },
    {
     "path": "/destinations/american-hospital-dubai",
-    "count": 1
-   },
-   {
-    "path": "/destinations/times-square-center",
     "count": 1
    },
    {
@@ -3684,7 +3693,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 30,
+   "count": 31,
    "ref_scheme": "g"
   },
   {
@@ -3740,7 +3749,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 355
+   "count": 356
   },
   {
    "id": "rus",
@@ -3880,6 +3889,11 @@
    "count": 1
   },
   {
+   "id": "MY",
+   "name": "Malaysia",
+   "count": 1
+  },
+  {
    "id": "PT",
    "name": "Portugal",
    "count": 1
@@ -3899,7 +3913,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 222
+   "count": 223
   },
   {
    "id": "tablet",
@@ -3926,7 +3940,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 244
+   "count": 245
   },
   {
    "id": "Safari",
@@ -3952,7 +3966,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 89
+   "count": 90
   },
   {
    "id": "Windows",
