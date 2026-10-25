@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-25T22:05:02Z",
+ "generated": "2026-10-25T23:04:32Z",
  "start": "2025-10-25",
  "end": "2026-10-26",
  "total": {
-  "total": 403,
+  "total": 404,
   "total_events": 228,
-  "total_utc": 403,
+  "total_utc": 404,
   "stats": [
    {
     "day": "2025-10-25",
@@ -10268,7 +10268,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 403
+    "monthly": 404
    },
    {
     "day": "2026-10-02",
@@ -10962,7 +10962,7 @@
      0
     ],
     "daily": 12,
-    "weekly": 33
+    "weekly": 34
    },
    {
     "day": "2026-10-25",
@@ -10999,7 +10999,7 @@
     "hourly": [
      0,
      0,
-     0,
+     1,
      0,
      0,
      0,
@@ -11022,7 +11022,7 @@
      0,
      0
     ],
-    "daily": 0
+    "daily": 1
    }
   ]
  },
@@ -11454,6 +11454,16 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/destinations/meena-bazaar",
+   "path_id": 115183314,
+   "title": "Meena Bazaar Metro Station: Sharaf DG (Green Line), 9 min walk",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-10-26": 1
    }
   },
   {
@@ -13049,9 +13059,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 175,
+  "visits": 176,
   "events_total": 228,
-  "goatcounter_total_with_events": 403,
+  "goatcounter_total_with_events": 404,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -13076,7 +13086,8 @@
    "2026-10-22": 5,
    "2026-10-23": 3,
    "2026-10-24": 9,
-   "2026-10-25": 9
+   "2026-10-25": 9,
+   "2026-10-26": 1
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -13453,6 +13464,12 @@
     "count": 1
    }
   ],
+  "/destinations/meena-bazaar": [
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
   "/stations": [
    {
     "name": "Yahoo",
@@ -13663,6 +13680,10 @@
     "count": 1
    },
    {
+    "path": "/destinations/meena-bazaar",
+    "count": 1
+   },
+   {
     "path": "/map",
     "count": 1
    },
@@ -13837,7 +13858,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 33,
+   "count": 34,
    "ref_scheme": "g"
   },
   {
@@ -13893,7 +13914,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 367
+   "count": 368
   },
   {
    "id": "rus",
@@ -13935,7 +13956,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 305
+   "count": 306
   },
   {
    "id": "US",
@@ -14072,7 +14093,7 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 139
+   "count": 140
   },
   {
    "id": "desktophd",
@@ -14089,7 +14110,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 255
+   "count": 256
   },
   {
    "id": "Safari",
@@ -14120,7 +14141,7 @@
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 86
+   "count": 87
   },
   {
    "id": "macOS",
