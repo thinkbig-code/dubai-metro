@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-25T00:00:35Z",
+ "generated": "2026-10-25T01:19:04Z",
  "start": "2025-10-25",
  "end": "2026-10-26",
  "total": {
-  "total": 383,
-  "total_events": 216,
-  "total_utc": 383,
+  "total": 389,
+  "total_events": 220,
+  "total_utc": 389,
   "stats": [
    {
     "day": "2025-10-25",
@@ -10268,7 +10268,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 383
+    "monthly": 389
    },
    {
     "day": "2026-10-02",
@@ -10962,7 +10962,7 @@
      0
     ],
     "daily": 12,
-    "weekly": 13
+    "weekly": 19
    },
    {
     "day": "2026-10-25",
@@ -10972,7 +10972,7 @@
      0,
      0,
      0,
-     0,
+     6,
      0,
      0,
      0,
@@ -10992,7 +10992,7 @@
      0,
      0
     ],
-    "daily": 1
+    "daily": 7
    },
    {
     "day": "2026-10-26",
@@ -11032,7 +11032,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 104,
+   "count": 105,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -11053,7 +11053,8 @@
     "2026-10-19": 1,
     "2026-10-20": 1,
     "2026-10-22": 2,
-    "2026-10-24": 2
+    "2026-10-24": 2,
+    "2026-10-25": 1
    }
   },
   {
@@ -11258,6 +11259,17 @@
    }
   },
   {
+   "path": "/destinations/st-mary-s-catholic-church",
+   "path_id": 111037420,
+   "title": "St. Mary's Catholic Church Metro Station: Oud Metha, 7 min walk",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-10-11": 1,
+    "2026-10-25": 1
+   }
+  },
+  {
    "path": "/ar.html",
    "path_id": 110830469,
    "title": "خريطة مترو دبي التفاعلية: المترو والترام ومونوريل النخلة",
@@ -11428,6 +11440,46 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "route/wtc/p_st_mary_s_catholic_church",
+   "path_id": 114803661,
+   "title": "en|map|ok|first_landing",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-25": 1
+   }
+  },
+  {
+   "path": "route_from_station_click/wtc/-",
+   "path_id": 114803659,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-25": 1
+   }
+  },
+  {
+   "path": "map_station_click/wtc/-",
+   "path_id": 114803647,
+   "title": "en|landing:destinations-st-mary-s-catholic-church|desktop",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-25": 1
+   }
+  },
+  {
+   "path": "station_link/to/p_st_mary_s_catholic_church",
+   "path_id": 114803605,
+   "title": "en|landing:destinations-st-mary-s-catholic-church",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-25": 1
    }
   },
   {
@@ -11855,16 +11907,6 @@
    "path_id": 111090912,
    "title": "en",
    "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-11": 1
-   }
-  },
-  {
-   "path": "/destinations/st-mary-s-catholic-church",
-   "path_id": 111037420,
-   "title": "St. Mary's Catholic Church Metro Station: Oud Metha, 7 min walk",
-   "event": false,
    "count": 1,
    "daily": {
     "2026-10-11": 1
@@ -12933,9 +12975,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 167,
-  "events_total": 216,
-  "goatcounter_total_with_events": 383,
+  "visits": 169,
+  "events_total": 220,
+  "goatcounter_total_with_events": 389,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -12960,7 +13002,7 @@
    "2026-10-22": 5,
    "2026-10-23": 3,
    "2026-10-24": 9,
-   "2026-10-25": 1
+   "2026-10-25": 3
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -12980,7 +13022,7 @@
   },
   "visitor_days": 43,
   "return_rate": 0.023,
-  "routes": 38,
+  "routes": 39,
   "routes_not_found": 0,
   "routes_per_visit": 0.23,
   "routes_per_visitor_day": 0.63,
@@ -13006,6 +13048,10 @@
    {
     "name": "p_dubai_mall > p_dxb_airport_terminal_3",
     "count": 2
+   },
+   {
+    "name": "wtc > p_st_mary_s_catholic_church",
+    "count": 1
    },
    {
     "name": "lp > p_dubai_creek_harbour",
@@ -13058,10 +13104,6 @@
    {
     "name": "jbr1 > dmcc",
     "count": 1
-   },
-   {
-    "name": "dmm > dmcc",
-    "count": 1
    }
   ],
   "top_origins": [
@@ -13094,15 +13136,15 @@
     "count": 2
    },
    {
+    "name": "wtc",
+    "count": 1
+   },
+   {
     "name": "mc",
     "count": 1
    },
    {
     "name": "p_dubai_marina_walk",
-    "count": 1
-   },
-   {
-    "name": "qusais",
     "count": 1
    }
   ],
@@ -13128,6 +13170,10 @@
     "count": 2
    },
    {
+    "name": "p_st_mary_s_catholic_church",
+    "count": 1
+   },
+   {
     "name": "p_dubai_creek_harbour",
     "count": 1
    },
@@ -13141,10 +13187,6 @@
    },
    {
     "name": "p_palm_jumeirah_mall",
-    "count": 1
-   },
-   {
-    "name": "dhcc",
     "count": 1
    }
   ]
@@ -13189,6 +13231,10 @@
    },
    {
     "name": "dubaimetro.fyi/destinations/dubai-municipality-head-office",
+    "count": 1
+   },
+   {
+    "name": "dubaimetro.fyi/destinations/st-mary-s-catholic-church",
     "count": 1
    }
   ],
@@ -13294,6 +13340,16 @@
     "count": 1
    }
   ],
+  "/destinations/st-mary-s-catholic-church": [
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   },
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
   "/ar.html": [
    {
     "name": "(direct or unknown)",
@@ -13394,12 +13450,6 @@
     "count": 1
    }
   ],
-  "/destinations/st-mary-s-catholic-church": [
-   {
-    "name": "(direct or unknown)",
-    "count": 1
-   }
-  ],
   "/destinations/dubai-mall": [
    {
     "name": "chatgpt.com",
@@ -13446,15 +13496,15 @@
     "count": 1
    },
    {
+    "path": "/destinations/st-mary-s-catholic-church",
+    "count": 1
+   },
+   {
     "path": "/ar.html",
     "count": 1
    },
    {
     "path": "/destinations/museum-of-the-future",
-    "count": 1
-   },
-   {
-    "path": "/destinations/st-mary-s-catholic-church",
     "count": 1
    },
    {
@@ -13505,6 +13555,10 @@
    },
    {
     "path": "/lines/green-line",
+    "count": 1
+   },
+   {
+    "path": "/destinations/st-mary-s-catholic-church",
     "count": 1
    },
    {
@@ -13620,6 +13674,12 @@
     "count": 1
    }
   ],
+  "dubaimetro.fyi/destinations/st-mary-s-catholic-church": [
+   {
+    "path": "/",
+    "count": 1
+   }
+  ],
   "www.facebook.com": [
    {
     "path": "/tl.html",
@@ -13672,7 +13732,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 29,
+   "count": 30,
    "ref_scheme": "g"
   },
   {
@@ -13728,7 +13788,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 347
+   "count": 353
   },
   {
    "id": "rus",
@@ -13770,7 +13830,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 290
+   "count": 296
   },
   {
    "id": "US",
@@ -13892,7 +13952,7 @@
   {
    "id": "tablet",
    "name": "",
-   "count": 19
+   "count": 25
   },
   {
    "id": "desktop",
@@ -13919,7 +13979,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 136
+   "count": 142
   },
   {
    "id": "Firefox",
@@ -13935,7 +13995,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 132
+   "count": 138
   },
   {
    "id": "Android",
