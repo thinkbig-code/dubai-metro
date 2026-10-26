@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-26T17:25:07Z",
+ "generated": "2026-10-26T18:18:21Z",
  "start": "2026-09-26",
  "end": "2026-10-27",
  "total": {
-  "total": 414,
+  "total": 416,
   "total_events": 228,
-  "total_utc": 414,
+  "total_utc": 416,
   "stats": [
    {
     "day": "2026-09-26",
@@ -188,7 +188,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 414
+    "monthly": 416
    },
    {
     "day": "2026-10-02",
@@ -882,7 +882,7 @@
      0
     ],
     "daily": 12,
-    "weekly": 44
+    "weekly": 46
    },
    {
     "day": "2026-10-25",
@@ -938,11 +938,11 @@
      1,
      1,
      0,
-     0,
-     0,
+     1,
+     1,
      0
     ],
-    "daily": 11
+    "daily": 13
    },
    {
     "day": "2026-10-27",
@@ -1037,7 +1037,7 @@
    "path_id": 110626146,
    "title": "Etihad Rail Dubai Station (Al Yalayis) Metro Station: Jumeirah Golf Estates",
    "event": false,
-   "count": 18,
+   "count": 19,
    "daily": {
     "2026-10-09": 1,
     "2026-10-12": 1,
@@ -1049,7 +1049,7 @@
     "2026-10-21": 2,
     "2026-10-24": 4,
     "2026-10-25": 2,
-    "2026-10-26": 2
+    "2026-10-26": 3
    }
   },
   {
@@ -1098,6 +1098,17 @@
     "2026-10-05": 2,
     "2026-10-08": 1,
     "2026-10-15": 1
+   }
+  },
+  {
+   "path": "/destinations/rashid-hospital",
+   "path_id": 112804201,
+   "title": "Rashid Hospital Metro Station: Oud Metha (Green Line), 5 min walk",
+   "event": false,
+   "count": 3,
+   "daily": {
+    "2026-10-19": 1,
+    "2026-10-26": 2
    }
   },
   {
@@ -1191,17 +1202,6 @@
    "daily": {
     "2026-10-23": 1,
     "2026-10-25": 1
-   }
-  },
-  {
-   "path": "/destinations/rashid-hospital",
-   "path_id": 112804201,
-   "title": "Rashid Hospital Metro Station: Oud Metha (Green Line), 5 min walk",
-   "event": false,
-   "count": 2,
-   "daily": {
-    "2026-10-19": 1,
-    "2026-10-26": 1
    }
   },
   {
@@ -3035,9 +3035,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 186,
+  "visits": 188,
   "events_total": 228,
-  "goatcounter_total_with_events": 414,
+  "goatcounter_total_with_events": 416,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -3063,7 +3063,7 @@
    "2026-10-23": 3,
    "2026-10-24": 9,
    "2026-10-25": 9,
-   "2026-10-26": 11
+   "2026-10-26": 13
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -3086,7 +3086,7 @@
   "return_rate": 0.022,
   "routes": 40,
   "routes_not_found": 0,
-  "routes_per_visit": 0.22,
+  "routes_per_visit": 0.21,
   "routes_per_visitor_day": 0.64,
   "share_rate": 0.075,
   "shares": {
@@ -3311,7 +3311,7 @@
   "/destinations/etihad-rail-dubai": [
    {
     "name": "Google",
-    "count": 13
+    "count": 14
    },
    {
     "name": "(direct or unknown)",
@@ -3346,6 +3346,16 @@
    {
     "name": "Google",
     "count": 4
+   }
+  ],
+  "/destinations/rashid-hospital": [
+   {
+    "name": "Google",
+    "count": 2
+   },
+   {
+    "name": "chatgpt.com",
+    "count": 1
    }
   ],
   "/destinations/palm-jumeirah-mall": [
@@ -3389,16 +3399,6 @@
    }
   ],
   "/destinations/times-square-center": [
-   {
-    "name": "Google",
-    "count": 1
-   },
-   {
-    "name": "chatgpt.com",
-    "count": 1
-   }
-  ],
-  "/destinations/rashid-hospital": [
    {
     "name": "Google",
     "count": 1
@@ -3645,7 +3645,7 @@
   "Google": [
    {
     "path": "/destinations/etihad-rail-dubai",
-    "count": 13
+    "count": 14
    },
    {
     "path": "/destinations/al-zahra-hospital-dubai",
@@ -3656,15 +3656,15 @@
     "count": 4
    },
    {
+    "path": "/destinations/rashid-hospital",
+    "count": 2
+   },
+   {
     "path": "/",
     "count": 1
    },
    {
     "path": "/destinations/times-square-center",
-    "count": 1
-   },
-   {
-    "path": "/destinations/rashid-hospital",
     "count": 1
    },
    {
@@ -3772,11 +3772,11 @@
     "count": 1
    },
    {
-    "path": "/destinations/times-square-center",
+    "path": "/destinations/rashid-hospital",
     "count": 1
    },
    {
-    "path": "/destinations/rashid-hospital",
+    "path": "/destinations/times-square-center",
     "count": 1
    },
    {
@@ -3888,7 +3888,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 41,
+   "count": 43,
    "ref_scheme": "g"
   },
   {
@@ -3944,7 +3944,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 378
+   "count": 379
   },
   {
    "id": "rus",
@@ -3959,7 +3959,7 @@
   {
    "id": "ara",
    "name": "Arabic",
-   "count": 2
+   "count": 3
   },
   {
    "id": "deu",
@@ -3986,7 +3986,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 311
+   "count": 312
   },
   {
    "id": "US",
@@ -4024,14 +4024,14 @@
    "count": 4
   },
   {
-   "id": "KR",
-   "name": "South Korea",
+   "id": "CN",
+   "name": "China",
    "count": 3
   },
   {
-   "id": "CN",
-   "name": "China",
-   "count": 2
+   "id": "KR",
+   "name": "South Korea",
+   "count": 3
   },
   {
    "id": "IE",
@@ -4113,7 +4113,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 232
+   "count": 234
   },
   {
    "id": "tablet",
@@ -4140,12 +4140,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 263
+   "count": 264
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 146
+   "count": 147
   },
   {
    "id": "Firefox",
@@ -4161,12 +4161,12 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 142
+   "count": 143
   },
   {
    "id": "Android",
    "name": "Android",
-   "count": 95
+   "count": 96
   },
   {
    "id": "Windows",

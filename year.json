@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-26T17:25:51Z",
+ "generated": "2026-10-26T18:19:05Z",
  "start": "2025-10-26",
  "end": "2026-10-27",
  "total": {
-  "total": 415,
+  "total": 416,
   "total_events": 228,
-  "total_utc": 415,
+  "total_utc": 416,
   "stats": [
    {
     "day": "2025-10-26",
@@ -10238,7 +10238,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 415
+    "monthly": 416
    },
    {
     "day": "2026-10-02",
@@ -10962,7 +10962,7 @@
      0
     ],
     "daily": 21,
-    "weekly": 33
+    "weekly": 34
    },
    {
     "day": "2026-10-26",
@@ -10989,10 +10989,10 @@
      1,
      0,
      1,
-     0,
+     1,
      0
     ],
-    "daily": 12
+    "daily": 13
    },
    {
     "day": "2026-10-27",
@@ -11151,6 +11151,17 @@
    }
   },
   {
+   "path": "/destinations/rashid-hospital",
+   "path_id": 112804201,
+   "title": "Rashid Hospital Metro Station: Oud Metha (Green Line), 5 min walk",
+   "event": false,
+   "count": 3,
+   "daily": {
+    "2026-10-19": 1,
+    "2026-10-26": 2
+   }
+  },
+  {
    "path": "/destinations/palm-jumeirah-mall",
    "path_id": 111939146,
    "title": "Palm Jumeirah Mall and The View at The Palm Tram Stop: Palm Jumeirah Mall",
@@ -11241,17 +11252,6 @@
    "daily": {
     "2026-10-23": 1,
     "2026-10-25": 1
-   }
-  },
-  {
-   "path": "/destinations/rashid-hospital",
-   "path_id": 112804201,
-   "title": "Rashid Hospital Metro Station: Oud Metha (Green Line), 5 min walk",
-   "event": false,
-   "count": 2,
-   "daily": {
-    "2026-10-19": 1,
-    "2026-10-26": 1
    }
   },
   {
@@ -13085,9 +13085,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 187,
+  "visits": 188,
   "events_total": 228,
-  "goatcounter_total_with_events": 415,
+  "goatcounter_total_with_events": 416,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -13113,7 +13113,7 @@
    "2026-10-23": 3,
    "2026-10-24": 9,
    "2026-10-25": 9,
-   "2026-10-26": 12
+   "2026-10-26": 13
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -13398,6 +13398,16 @@
     "count": 4
    }
   ],
+  "/destinations/rashid-hospital": [
+   {
+    "name": "Google",
+    "count": 2
+   },
+   {
+    "name": "chatgpt.com",
+    "count": 1
+   }
+  ],
   "/destinations/palm-jumeirah-mall": [
    {
     "name": "chatgpt.com",
@@ -13439,16 +13449,6 @@
    }
   ],
   "/destinations/times-square-center": [
-   {
-    "name": "Google",
-    "count": 1
-   },
-   {
-    "name": "chatgpt.com",
-    "count": 1
-   }
-  ],
-  "/destinations/rashid-hospital": [
    {
     "name": "Google",
     "count": 1
@@ -13706,15 +13706,15 @@
     "count": 4
    },
    {
+    "path": "/destinations/rashid-hospital",
+    "count": 2
+   },
+   {
     "path": "/",
     "count": 1
    },
    {
     "path": "/destinations/times-square-center",
-    "count": 1
-   },
-   {
-    "path": "/destinations/rashid-hospital",
     "count": 1
    },
    {
@@ -13822,11 +13822,11 @@
     "count": 1
    },
    {
-    "path": "/destinations/times-square-center",
+    "path": "/destinations/rashid-hospital",
     "count": 1
    },
    {
-    "path": "/destinations/rashid-hospital",
+    "path": "/destinations/times-square-center",
     "count": 1
    },
    {
@@ -13938,7 +13938,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 42,
+   "count": 43,
    "ref_scheme": "g"
   },
   {
@@ -14009,7 +14009,7 @@
   {
    "id": "ara",
    "name": "Arabic",
-   "count": 2
+   "count": 3
   },
   {
    "id": "deu",
@@ -14036,7 +14036,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 311
+   "count": 312
   },
   {
    "id": "US",
@@ -14163,7 +14163,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 233
+   "count": 234
   },
   {
    "id": "tablet",
@@ -14195,7 +14195,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 146
+   "count": 147
   },
   {
    "id": "Firefox",
@@ -14211,7 +14211,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 142
+   "count": 143
   },
   {
    "id": "Android",
