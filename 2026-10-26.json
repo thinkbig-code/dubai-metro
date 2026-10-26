@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-26T18:18:21Z",
+ "generated": "2026-10-26T19:25:23Z",
  "start": "2026-09-26",
  "end": "2026-10-27",
  "total": {
-  "total": 416,
+  "total": 417,
   "total_events": 228,
-  "total_utc": 416,
+  "total_utc": 417,
   "stats": [
    {
     "day": "2026-09-26",
@@ -188,7 +188,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 416
+    "monthly": 417
    },
    {
     "day": "2026-10-02",
@@ -882,7 +882,7 @@
      0
     ],
     "daily": 12,
-    "weekly": 46
+    "weekly": 47
    },
    {
     "day": "2026-10-25",
@@ -939,10 +939,10 @@
      1,
      0,
      1,
-     1,
+     2,
      0
     ],
-    "daily": 13
+    "daily": 14
    },
    {
     "day": "2026-10-27",
@@ -1053,6 +1053,19 @@
    }
   },
   {
+   "path": "/destinations/indian-consulate-dubai",
+   "path_id": 112289662,
+   "title": "Indian Consulate Dubai Metro Station: BurJuman, 7 min walk",
+   "event": false,
+   "count": 5,
+   "daily": {
+    "2026-10-16": 1,
+    "2026-10-18": 1,
+    "2026-10-23": 1,
+    "2026-10-26": 2
+   }
+  },
+  {
    "path": "/destinations/al-zahra-hospital-dubai",
    "path_id": 111715857,
    "title": "Al Zahra Hospital Dubai Metro Station: Dubai Internet City, 10 min walk",
@@ -1073,19 +1086,6 @@
    "count": 5,
    "daily": {
     "2026-10-08": 5
-   }
-  },
-  {
-   "path": "/destinations/indian-consulate-dubai",
-   "path_id": 112289662,
-   "title": "Indian Consulate Dubai Metro Station: BurJuman, 7 min walk",
-   "event": false,
-   "count": 4,
-   "daily": {
-    "2026-10-16": 1,
-    "2026-10-18": 1,
-    "2026-10-23": 1,
-    "2026-10-26": 1
    }
   },
   {
@@ -3035,9 +3035,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 188,
+  "visits": 189,
   "events_total": 228,
-  "goatcounter_total_with_events": 416,
+  "goatcounter_total_with_events": 417,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -3063,7 +3063,7 @@
    "2026-10-23": 3,
    "2026-10-24": 9,
    "2026-10-25": 9,
-   "2026-10-26": 13
+   "2026-10-26": 14
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -3322,6 +3322,12 @@
     "count": 2
    }
   ],
+  "/destinations/indian-consulate-dubai": [
+   {
+    "name": "Google",
+    "count": 5
+   }
+  ],
   "/destinations/al-zahra-hospital-dubai": [
    {
     "name": "Google",
@@ -3340,12 +3346,6 @@
    {
     "name": "Facebook",
     "count": 2
-   }
-  ],
-  "/destinations/indian-consulate-dubai": [
-   {
-    "name": "Google",
-    "count": 4
    }
   ],
   "/destinations/rashid-hospital": [
@@ -3648,11 +3648,11 @@
     "count": 14
    },
    {
-    "path": "/destinations/al-zahra-hospital-dubai",
-    "count": 4
+    "path": "/destinations/indian-consulate-dubai",
+    "count": 5
    },
    {
-    "path": "/destinations/indian-consulate-dubai",
+    "path": "/destinations/al-zahra-hospital-dubai",
     "count": 4
    },
    {
@@ -3888,7 +3888,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 43,
+   "count": 44,
    "ref_scheme": "g"
   },
   {
@@ -3944,7 +3944,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 379
+   "count": 380
   },
   {
    "id": "rus",
@@ -4029,14 +4029,14 @@
    "count": 3
   },
   {
-   "id": "KR",
-   "name": "South Korea",
+   "id": "IE",
+   "name": "Ireland",
    "count": 3
   },
   {
-   "id": "IE",
-   "name": "Ireland",
-   "count": 2
+   "id": "KR",
+   "name": "South Korea",
+   "count": 3
   },
   {
    "id": "PK",
@@ -4113,7 +4113,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 234
+   "count": 235
   },
   {
    "id": "tablet",
@@ -4140,7 +4140,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 264
+   "count": 265
   },
   {
    "id": "Safari",
@@ -4166,7 +4166,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 96
+   "count": 97
   },
   {
    "id": "Windows",
