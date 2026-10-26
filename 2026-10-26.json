@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-26T08:27:29Z",
+ "generated": "2026-10-26T09:23:43Z",
  "start": "2026-09-26",
  "end": "2026-10-27",
  "total": {
-  "total": 404,
+  "total": 406,
   "total_events": 228,
-  "total_utc": 404,
+  "total_utc": 406,
   "stats": [
    {
     "day": "2026-09-26",
@@ -188,7 +188,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 404
+    "monthly": 406
    },
    {
     "day": "2026-10-02",
@@ -882,7 +882,7 @@
      0
     ],
     "daily": 12,
-    "weekly": 34
+    "weekly": 36
    },
    {
     "day": "2026-10-25",
@@ -929,8 +929,8 @@
      0,
      0,
      0,
-     0,
-     0,
+     1,
+     1,
      0,
      0,
      0,
@@ -942,7 +942,7 @@
      0,
      0
     ],
-    "daily": 1
+    "daily": 3
    },
    {
     "day": "2026-10-27",
@@ -1036,7 +1036,7 @@
    "path_id": 110626146,
    "title": "Etihad Rail Dubai Station (Al Yalayis) Metro Station: Jumeirah Golf Estates",
    "event": false,
-   "count": 16,
+   "count": 17,
    "daily": {
     "2026-10-09": 1,
     "2026-10-12": 1,
@@ -1047,7 +1047,8 @@
     "2026-10-20": 2,
     "2026-10-21": 2,
     "2026-10-24": 4,
-    "2026-10-25": 2
+    "2026-10-25": 2,
+    "2026-10-26": 1
    }
   },
   {
@@ -1061,6 +1062,19 @@
    }
   },
   {
+   "path": "/destinations/indian-consulate-dubai",
+   "path_id": 112289662,
+   "title": "Indian Consulate Dubai Metro Station: BurJuman, 7 min walk",
+   "event": false,
+   "count": 4,
+   "daily": {
+    "2026-10-16": 1,
+    "2026-10-18": 1,
+    "2026-10-23": 1,
+    "2026-10-26": 1
+   }
+  },
+  {
    "path": "place/p_dubai_mall/from",
    "path_id": 109724714,
    "title": "ru|name",
@@ -1070,18 +1084,6 @@
     "2026-10-05": 2,
     "2026-10-08": 1,
     "2026-10-15": 1
-   }
-  },
-  {
-   "path": "/destinations/indian-consulate-dubai",
-   "path_id": 112289662,
-   "title": "Indian Consulate Dubai Metro Station: BurJuman, 7 min walk",
-   "event": false,
-   "count": 3,
-   "daily": {
-    "2026-10-16": 1,
-    "2026-10-18": 1,
-    "2026-10-23": 1
    }
   },
   {
@@ -3009,9 +3011,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 176,
+  "visits": 178,
   "events_total": 228,
-  "goatcounter_total_with_events": 404,
+  "goatcounter_total_with_events": 406,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -3037,7 +3039,7 @@
    "2026-10-23": 3,
    "2026-10-24": 9,
    "2026-10-25": 9,
-   "2026-10-26": 1
+   "2026-10-26": 3
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -3060,7 +3062,7 @@
   "return_rate": 0.022,
   "routes": 40,
   "routes_not_found": 0,
-  "routes_per_visit": 0.23,
+  "routes_per_visit": 0.22,
   "routes_per_visitor_day": 0.64,
   "share_rate": 0.075,
   "shares": {
@@ -3281,7 +3283,7 @@
   "/destinations/etihad-rail-dubai": [
    {
     "name": "Google",
-    "count": 11
+    "count": 12
    },
    {
     "name": "(direct or unknown)",
@@ -3305,7 +3307,7 @@
   "/destinations/indian-consulate-dubai": [
    {
     "name": "Google",
-    "count": 3
+    "count": 4
    }
   ],
   "/destinations/palm-jumeirah-mall": [
@@ -3591,11 +3593,11 @@
   "Google": [
    {
     "path": "/destinations/etihad-rail-dubai",
-    "count": 11
+    "count": 12
    },
    {
     "path": "/destinations/indian-consulate-dubai",
-    "count": 3
+    "count": 4
    },
    {
     "path": "/destinations/al-zahra-hospital-dubai",
@@ -3808,7 +3810,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 34,
+   "count": 36,
    "ref_scheme": "g"
   },
   {
@@ -3864,7 +3866,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 368
+   "count": 370
   },
   {
    "id": "rus",
@@ -3906,7 +3908,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 306
+   "count": 308
   },
   {
    "id": "US",
@@ -4033,7 +4035,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 226
+   "count": 227
   },
   {
    "id": "tablet",
@@ -4048,7 +4050,7 @@
   {
    "id": "desktophd",
    "name": "",
-   "count": 11
+   "count": 12
   },
   {
    "id": "unknown",
@@ -4060,7 +4062,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 256
+   "count": 258
   },
   {
    "id": "Safari",
@@ -4086,12 +4088,12 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 92
+   "count": 93
   },
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 87
+   "count": 88
   },
   {
    "id": "macOS",
