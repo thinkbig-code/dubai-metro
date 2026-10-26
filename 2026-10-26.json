@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-26T14:04:04Z",
+ "generated": "2026-10-26T15:52:20Z",
  "start": "2026-09-26",
  "end": "2026-10-27",
  "total": {
-  "total": 412,
+  "total": 414,
   "total_events": 228,
-  "total_utc": 412,
+  "total_utc": 414,
   "stats": [
    {
     "day": "2026-09-26",
@@ -188,7 +188,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 412
+    "monthly": 414
    },
    {
     "day": "2026-10-02",
@@ -882,7 +882,7 @@
      0
     ],
     "daily": 12,
-    "weekly": 42
+    "weekly": 44
    },
    {
     "day": "2026-10-25",
@@ -935,14 +935,14 @@
      0,
      4,
      0,
-     0,
-     0,
+     1,
+     1,
      0,
      0,
      0,
      0
     ],
-    "daily": 9
+    "daily": 11
    },
    {
     "day": "2026-10-27",
@@ -1037,7 +1037,7 @@
    "path_id": 110626146,
    "title": "Etihad Rail Dubai Station (Al Yalayis) Metro Station: Jumeirah Golf Estates",
    "event": false,
-   "count": 17,
+   "count": 18,
    "daily": {
     "2026-10-09": 1,
     "2026-10-12": 1,
@@ -1049,7 +1049,20 @@
     "2026-10-21": 2,
     "2026-10-24": 4,
     "2026-10-25": 2,
-    "2026-10-26": 1
+    "2026-10-26": 2
+   }
+  },
+  {
+   "path": "/destinations/al-zahra-hospital-dubai",
+   "path_id": 111715857,
+   "title": "Al Zahra Hospital Dubai Metro Station: Dubai Internet City, 10 min walk",
+   "event": false,
+   "count": 5,
+   "daily": {
+    "2026-10-12": 1,
+    "2026-10-18": 1,
+    "2026-10-24": 1,
+    "2026-10-26": 2
    }
   },
   {
@@ -1072,19 +1085,6 @@
     "2026-10-16": 1,
     "2026-10-18": 1,
     "2026-10-23": 1,
-    "2026-10-26": 1
-   }
-  },
-  {
-   "path": "/destinations/al-zahra-hospital-dubai",
-   "path_id": 111715857,
-   "title": "Al Zahra Hospital Dubai Metro Station: Dubai Internet City, 10 min walk",
-   "event": false,
-   "count": 4,
-   "daily": {
-    "2026-10-12": 1,
-    "2026-10-18": 1,
-    "2026-10-24": 1,
     "2026-10-26": 1
    }
   },
@@ -3035,9 +3035,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 184,
+  "visits": 186,
   "events_total": 228,
-  "goatcounter_total_with_events": 412,
+  "goatcounter_total_with_events": 414,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -3063,7 +3063,7 @@
    "2026-10-23": 3,
    "2026-10-24": 9,
    "2026-10-25": 9,
-   "2026-10-26": 9
+   "2026-10-26": 11
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -3311,7 +3311,7 @@
   "/destinations/etihad-rail-dubai": [
    {
     "name": "Google",
-    "count": 12
+    "count": 13
    },
    {
     "name": "(direct or unknown)",
@@ -3320,6 +3320,16 @@
    {
     "name": "chatgpt.com",
     "count": 2
+   }
+  ],
+  "/destinations/al-zahra-hospital-dubai": [
+   {
+    "name": "Google",
+    "count": 4
+   },
+   {
+    "name": "chatgpt.com",
+    "count": 1
    }
   ],
   "/tl.html": [
@@ -3336,16 +3346,6 @@
    {
     "name": "Google",
     "count": 4
-   }
-  ],
-  "/destinations/al-zahra-hospital-dubai": [
-   {
-    "name": "Google",
-    "count": 3
-   },
-   {
-    "name": "chatgpt.com",
-    "count": 1
    }
   ],
   "/destinations/palm-jumeirah-mall": [
@@ -3645,15 +3645,15 @@
   "Google": [
    {
     "path": "/destinations/etihad-rail-dubai",
-    "count": 12
+    "count": 13
+   },
+   {
+    "path": "/destinations/al-zahra-hospital-dubai",
+    "count": 4
    },
    {
     "path": "/destinations/indian-consulate-dubai",
     "count": 4
-   },
-   {
-    "path": "/destinations/al-zahra-hospital-dubai",
-    "count": 3
    },
    {
     "path": "/",
@@ -3888,7 +3888,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 39,
+   "count": 41,
    "ref_scheme": "g"
   },
   {
@@ -3944,7 +3944,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 376
+   "count": 378
   },
   {
    "id": "rus",
@@ -3986,7 +3986,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 310
+   "count": 311
   },
   {
    "id": "US",
@@ -4001,7 +4001,7 @@
   {
    "id": "IN",
    "name": "India",
-   "count": 6
+   "count": 7
   },
   {
    "id": "DE",
@@ -4113,7 +4113,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 230
+   "count": 232
   },
   {
    "id": "tablet",
@@ -4140,7 +4140,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 261
+   "count": 263
   },
   {
    "id": "Safari",
@@ -4166,7 +4166,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 93
+   "count": 95
   },
   {
    "id": "Windows",
