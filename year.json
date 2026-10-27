@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-27T15:29:37Z",
+ "generated": "2026-10-27T16:29:26Z",
  "start": "2025-10-27",
  "end": "2026-10-28",
  "total": {
-  "total": 426,
+  "total": 427,
   "total_events": 231,
-  "total_utc": 426,
+  "total_utc": 427,
   "stats": [
    {
     "day": "2025-10-27",
@@ -10208,7 +10208,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 426
+    "monthly": 427
    },
    {
     "day": "2026-10-02",
@@ -10962,7 +10962,7 @@
      0
     ],
     "daily": 14,
-    "weekly": 23
+    "weekly": 24
    },
    {
     "day": "2026-10-27",
@@ -10986,13 +10986,13 @@
      1,
      0,
      1,
-     0,
+     1,
      0,
      0,
      0,
      0
     ],
-    "daily": 9
+    "daily": 10
    },
    {
     "day": "2026-10-28",
@@ -11508,6 +11508,16 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/destinations/aster-hospital-mankhool",
+   "path_id": 115758732,
+   "title": "Aster Hospital Mankhool Metro Station: Sharaf DG (Green Line), 18 min walk",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-10-27": 1
    }
   },
   {
@@ -13103,9 +13113,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 195,
+  "visits": 196,
   "events_total": 231,
-  "goatcounter_total_with_events": 426,
+  "goatcounter_total_with_events": 427,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -13132,7 +13142,7 @@
    "2026-10-24": 9,
    "2026-10-25": 9,
    "2026-10-26": 14,
-   "2026-10-27": 6
+   "2026-10-27": 7
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -13156,7 +13166,7 @@
   "return_rate": 0.022,
   "routes": 40,
   "routes_not_found": 0,
-  "routes_per_visit": 0.21,
+  "routes_per_visit": 0.2,
   "routes_per_visitor_day": 0.63,
   "share_rate": 0.075,
   "shares": {
@@ -13544,6 +13554,12 @@
     "count": 1
    }
   ],
+  "/destinations/aster-hospital-mankhool": [
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   }
+  ],
   "/destinations/al-khaleej-centre": [
    {
     "name": "Google",
@@ -13691,6 +13707,10 @@
    },
    {
     "path": "/destinations/st-mary-s-catholic-church",
+    "count": 1
+   },
+   {
+    "path": "/destinations/aster-hospital-mankhool",
     "count": 1
    },
    {
@@ -13956,7 +13976,7 @@
  "toprefs": [
   {
    "name": "",
-   "count": 266,
+   "count": 267,
    "ref_scheme": "o"
   },
   {
@@ -14024,7 +14044,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 389
+   "count": 390
   },
   {
    "id": "rus",
@@ -14066,7 +14086,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 316
+   "count": 317
   },
   {
    "id": "US",
@@ -14193,7 +14213,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 244
+   "count": 245
   },
   {
    "id": "tablet",
@@ -14220,7 +14240,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 267
+   "count": 268
   },
   {
    "id": "Safari",
@@ -14246,7 +14266,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 99
+   "count": 100
   },
   {
    "id": "Windows",
