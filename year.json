@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-27T10:22:04Z",
+ "generated": "2026-10-27T11:19:40Z",
  "start": "2025-10-27",
  "end": "2026-10-28",
  "total": {
-  "total": 423,
+  "total": 424,
   "total_events": 231,
-  "total_utc": 423,
+  "total_utc": 424,
   "stats": [
    {
     "day": "2025-10-27",
@@ -10208,7 +10208,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 423
+    "monthly": 424
    },
    {
     "day": "2026-10-02",
@@ -10962,7 +10962,7 @@
      0
     ],
     "daily": 14,
-    "weekly": 20
+    "weekly": 21
    },
    {
     "day": "2026-10-27",
@@ -10981,7 +10981,7 @@
      0,
      1,
      0,
-     0,
+     1,
      0,
      0,
      0,
@@ -10992,7 +10992,7 @@
      0,
      0
     ],
-    "daily": 6
+    "daily": 7
    },
    {
     "day": "2026-10-28",
@@ -11141,6 +11141,18 @@
    }
   },
   {
+   "path": "/destinations/rashid-hospital",
+   "path_id": 112804201,
+   "title": "Rashid Hospital Metro Station: Oud Metha (Green Line), 5 min walk",
+   "event": false,
+   "count": 4,
+   "daily": {
+    "2026-10-19": 1,
+    "2026-10-26": 2,
+    "2026-10-27": 1
+   }
+  },
+  {
    "path": "place/p_dubai_mall/from",
    "path_id": 109724714,
    "title": "ru|name",
@@ -11150,17 +11162,6 @@
     "2026-10-05": 2,
     "2026-10-08": 1,
     "2026-10-15": 1
-   }
-  },
-  {
-   "path": "/destinations/rashid-hospital",
-   "path_id": 112804201,
-   "title": "Rashid Hospital Metro Station: Oud Metha (Green Line), 5 min walk",
-   "event": false,
-   "count": 3,
-   "daily": {
-    "2026-10-19": 1,
-    "2026-10-26": 2
    }
   },
   {
@@ -13091,9 +13092,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 192,
+  "visits": 193,
   "events_total": 231,
-  "goatcounter_total_with_events": 423,
+  "goatcounter_total_with_events": 424,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -13120,7 +13121,7 @@
    "2026-10-24": 9,
    "2026-10-25": 9,
    "2026-10-26": 14,
-   "2026-10-27": 3
+   "2026-10-27": 4
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -13409,7 +13410,7 @@
   "/destinations/rashid-hospital": [
    {
     "name": "Google",
-    "count": 2
+    "count": 3
    },
    {
     "name": "chatgpt.com",
@@ -13715,7 +13716,7 @@
    },
    {
     "path": "/destinations/rashid-hospital",
-    "count": 2
+    "count": 3
    },
    {
     "path": "/destinations/dubai-mall",
@@ -13940,7 +13941,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 46,
+   "count": 47,
    "ref_scheme": "g"
   },
   {
@@ -14002,7 +14003,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 386
+   "count": 387
   },
   {
    "id": "rus",
@@ -14044,7 +14045,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 313
+   "count": 314
   },
   {
    "id": "US",
@@ -14171,7 +14172,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 241
+   "count": 242
   },
   {
    "id": "tablet",
@@ -14198,7 +14199,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 265
+   "count": 266
   },
   {
    "id": "Safari",
@@ -14224,7 +14225,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 97
+   "count": 98
   },
   {
    "id": "Windows",
