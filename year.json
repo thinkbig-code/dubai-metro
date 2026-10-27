@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-27T05:16:37Z",
+ "generated": "2026-10-27T06:16:48Z",
  "start": "2025-10-27",
  "end": "2026-10-28",
  "total": {
-  "total": 421,
+  "total": 422,
   "total_events": 231,
-  "total_utc": 421,
+  "total_utc": 422,
   "stats": [
    {
     "day": "2025-10-27",
@@ -10208,7 +10208,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 421
+    "monthly": 422
    },
    {
     "day": "2026-10-02",
@@ -10962,7 +10962,7 @@
      0
     ],
     "daily": 14,
-    "weekly": 18
+    "weekly": 19
    },
    {
     "day": "2026-10-27",
@@ -10976,7 +10976,7 @@
      0,
      0,
      4,
-     0,
+     1,
      0,
      0,
      0,
@@ -10992,7 +10992,7 @@
      0,
      0
     ],
-    "daily": 4
+    "daily": 5
    },
    {
     "day": "2026-10-28",
@@ -11210,6 +11210,18 @@
    }
   },
   {
+   "path": "/destinations/dubai-mall",
+   "path_id": 110484997,
+   "title": "Dubai Mall Metro Station: Burj Khalifa/Dubai Mall (Red Line), 12 min walk",
+   "event": false,
+   "count": 3,
+   "daily": {
+    "2026-10-08": 1,
+    "2026-10-26": 1,
+    "2026-10-27": 1
+   }
+  },
+  {
    "path": "place/p_burj_khalifa/to",
    "path_id": 110476414,
    "title": "en|name",
@@ -11320,17 +11332,6 @@
    "daily": {
     "2026-10-11": 1,
     "2026-10-25": 1
-   }
-  },
-  {
-   "path": "/destinations/dubai-mall",
-   "path_id": 110484997,
-   "title": "Dubai Mall Metro Station: Burj Khalifa/Dubai Mall (Red Line), 12 min walk",
-   "event": false,
-   "count": 2,
-   "daily": {
-    "2026-10-08": 1,
-    "2026-10-26": 1
    }
   },
   {
@@ -13089,9 +13090,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 190,
+  "visits": 191,
   "events_total": 231,
-  "goatcounter_total_with_events": 421,
+  "goatcounter_total_with_events": 422,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -13118,7 +13119,7 @@
    "2026-10-24": 9,
    "2026-10-25": 9,
    "2026-10-26": 14,
-   "2026-10-27": 1
+   "2026-10-27": 2
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -13454,6 +13455,16 @@
     "count": 3
    }
   ],
+  "/destinations/dubai-mall": [
+   {
+    "name": "Google",
+    "count": 2
+   },
+   {
+    "name": "chatgpt.com",
+    "count": 1
+   }
+  ],
   "/destinations/times-square-center": [
    {
     "name": "Google",
@@ -13511,16 +13522,6 @@
    },
    {
     "name": "Google",
-    "count": 1
-   }
-  ],
-  "/destinations/dubai-mall": [
-   {
-    "name": "Google",
-    "count": 1
-   },
-   {
-    "name": "chatgpt.com",
     "count": 1
    }
   ],
@@ -13716,6 +13717,10 @@
     "count": 2
    },
    {
+    "path": "/destinations/dubai-mall",
+    "count": 2
+   },
+   {
     "path": "/",
     "count": 1
    },
@@ -13741,10 +13746,6 @@
    },
    {
     "path": "/destinations/st-mary-s-catholic-church",
-    "count": 1
-   },
-   {
-    "path": "/destinations/dubai-mall",
     "count": 1
    },
    {
@@ -13832,6 +13833,10 @@
     "count": 1
    },
    {
+    "path": "/destinations/dubai-mall",
+    "count": 1
+   },
+   {
     "path": "/destinations/times-square-center",
     "count": 1
    },
@@ -13841,10 +13846,6 @@
    },
    {
     "path": "/destinations/american-hospital-dubai",
-    "count": 1
-   },
-   {
-    "path": "/destinations/dubai-mall",
     "count": 1
    },
    {
@@ -13936,16 +13937,16 @@
    "ref_scheme": "o"
   },
   {
+   "id": "Google",
+   "name": "Google",
+   "count": 45,
+   "ref_scheme": "g"
+  },
+  {
    "id": "com.reddit.frontpage",
    "name": "com.reddit.frontpage",
    "count": 45,
    "ref_scheme": "o"
-  },
-  {
-   "id": "Google",
-   "name": "Google",
-   "count": 44,
-   "ref_scheme": "g"
   },
   {
    "id": "www.bing.com",
@@ -14000,7 +14001,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 384
+   "count": 385
   },
   {
    "id": "rus",
@@ -14042,7 +14043,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 312
+   "count": 313
   },
   {
    "id": "US",
@@ -14169,7 +14170,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 239
+   "count": 240
   },
   {
    "id": "tablet",
@@ -14201,7 +14202,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 151
+   "count": 152
   },
   {
    "id": "Firefox",
@@ -14217,7 +14218,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 147
+   "count": 148
   },
   {
    "id": "Android",
