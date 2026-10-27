@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-27T13:33:40Z",
+ "generated": "2026-10-27T14:31:09Z",
  "start": "2026-09-27",
  "end": "2026-10-28",
  "total": {
-  "total": 425,
+  "total": 426,
   "total_events": 231,
-  "total_utc": 425,
+  "total_utc": 426,
   "stats": [
    {
     "day": "2026-09-27",
@@ -158,7 +158,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 425
+    "monthly": 426
    },
    {
     "day": "2026-10-02",
@@ -882,7 +882,7 @@
      0
     ],
     "daily": 21,
-    "weekly": 43
+    "weekly": 44
    },
    {
     "day": "2026-10-26",
@@ -935,14 +935,14 @@
      0,
      1,
      0,
-     0,
+     1,
      0,
      0,
      0,
      0,
      0
     ],
-    "daily": 8
+    "daily": 9
    },
    {
     "day": "2026-10-28",
@@ -1458,6 +1458,16 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/destinations/al-khaleej-centre",
+   "path_id": 115737347,
+   "title": "Al Khaleej Centre Metro Station: Sharaf DG (Green Line), 4 min walk",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-10-27": 1
    }
   },
   {
@@ -3043,9 +3053,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 194,
+  "visits": 195,
   "events_total": 231,
-  "goatcounter_total_with_events": 425,
+  "goatcounter_total_with_events": 426,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -3072,7 +3082,7 @@
    "2026-10-24": 9,
    "2026-10-25": 9,
    "2026-10-26": 14,
-   "2026-10-27": 5
+   "2026-10-27": 6
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -3484,6 +3494,12 @@
     "count": 1
    }
   ],
+  "/destinations/al-khaleej-centre": [
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
   "/destinations/burj-khalifa": [
    {
     "name": "Google",
@@ -3706,6 +3722,10 @@
     "count": 1
    },
    {
+    "path": "/destinations/al-khaleej-centre",
+    "count": 1
+   },
+   {
     "path": "/destinations/burj-khalifa",
     "count": 1
    },
@@ -3892,7 +3912,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 48,
+   "count": 49,
    "ref_scheme": "g"
   },
   {
@@ -3954,7 +3974,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 388
+   "count": 389
   },
   {
    "id": "rus",
@@ -3996,7 +4016,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 315
+   "count": 316
   },
   {
    "id": "US",
@@ -4123,7 +4143,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 243
+   "count": 244
   },
   {
    "id": "tablet",
@@ -4155,7 +4175,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 153
+   "count": 154
   },
   {
    "id": "Firefox",
@@ -4171,7 +4191,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 149
+   "count": 150
   },
   {
    "id": "Android",
