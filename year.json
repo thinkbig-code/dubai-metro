@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-27T08:23:24Z",
+ "generated": "2026-10-27T09:20:45Z",
  "start": "2025-10-27",
  "end": "2026-10-28",
  "total": {
-  "total": 422,
+  "total": 423,
   "total_events": 231,
-  "total_utc": 422,
+  "total_utc": 423,
   "stats": [
    {
     "day": "2025-10-27",
@@ -10208,7 +10208,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 422
+    "monthly": 423
    },
    {
     "day": "2026-10-02",
@@ -10962,7 +10962,7 @@
      0
     ],
     "daily": 14,
-    "weekly": 19
+    "weekly": 20
    },
    {
     "day": "2026-10-27",
@@ -10979,7 +10979,7 @@
      1,
      0,
      0,
-     0,
+     1,
      0,
      0,
      0,
@@ -10992,7 +10992,7 @@
      0,
      0
     ],
-    "daily": 5
+    "daily": 6
    },
    {
     "day": "2026-10-28",
@@ -11269,6 +11269,17 @@
    }
   },
   {
+   "path": "/destinations/meena-bazaar",
+   "path_id": 115183314,
+   "title": "Meena Bazaar Metro Station: Sharaf DG (Green Line), 9 min walk",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-10-26": 1,
+    "2026-10-27": 1
+   }
+  },
+  {
    "path": "/destinations/times-square-center",
    "path_id": 114208930,
    "title": "Times Square Center Metro Station: Equiti (Red Line)",
@@ -11511,16 +11522,6 @@
    "path": "/destinations/al-fahidi",
    "path_id": 115333901,
    "title": "Al Fahidi Historical District (Al Bastakiya) Metro Station: Sharaf DG",
-   "event": false,
-   "count": 1,
-   "daily": {
-    "2026-10-26": 1
-   }
-  },
-  {
-   "path": "/destinations/meena-bazaar",
-   "path_id": 115183314,
-   "title": "Meena Bazaar Metro Station: Sharaf DG (Green Line), 9 min walk",
    "event": false,
    "count": 1,
    "daily": {
@@ -13090,9 +13091,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 191,
+  "visits": 192,
   "events_total": 231,
-  "goatcounter_total_with_events": 422,
+  "goatcounter_total_with_events": 423,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -13119,7 +13120,7 @@
    "2026-10-24": 9,
    "2026-10-25": 9,
    "2026-10-26": 14,
-   "2026-10-27": 2
+   "2026-10-27": 3
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -13465,6 +13466,12 @@
     "count": 1
    }
   ],
+  "/destinations/meena-bazaar": [
+   {
+    "name": "Google",
+    "count": 2
+   }
+  ],
   "/destinations/times-square-center": [
    {
     "name": "Google",
@@ -13534,12 +13541,6 @@
   "/destinations/al-fahidi": [
    {
     "name": "chatgpt.com",
-    "count": 1
-   }
-  ],
-  "/destinations/meena-bazaar": [
-   {
-    "name": "Google",
     "count": 1
    }
   ],
@@ -13721,6 +13722,10 @@
     "count": 2
    },
    {
+    "path": "/destinations/meena-bazaar",
+    "count": 2
+   },
+   {
     "path": "/",
     "count": 1
    },
@@ -13750,10 +13755,6 @@
    },
    {
     "path": "/destinations/burj-khalifa",
-    "count": 1
-   },
-   {
-    "path": "/destinations/meena-bazaar",
     "count": 1
    },
    {
@@ -13939,7 +13940,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 45,
+   "count": 46,
    "ref_scheme": "g"
   },
   {
@@ -14001,7 +14002,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 385
+   "count": 386
   },
   {
    "id": "rus",
@@ -14053,7 +14054,7 @@
   {
    "id": "IN",
    "name": "India",
-   "count": 11
+   "count": 12
   },
   {
    "id": "GB",
@@ -14170,7 +14171,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 240
+   "count": 241
   },
   {
    "id": "tablet",
@@ -14202,7 +14203,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 152
+   "count": 153
   },
   {
    "id": "Firefox",
@@ -14218,7 +14219,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 148
+   "count": 149
   },
   {
    "id": "Android",
