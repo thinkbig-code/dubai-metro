@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-28T06:18:29Z",
+ "generated": "2026-10-28T07:39:58Z",
  "start": "2026-09-28",
  "end": "2026-10-29",
  "total": {
-  "total": 430,
+  "total": 431,
   "total_events": 231,
-  "total_utc": 430,
+  "total_utc": 431,
   "stats": [
    {
     "day": "2026-09-28",
@@ -128,7 +128,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 430
+    "monthly": 431
    },
    {
     "day": "2026-10-02",
@@ -882,7 +882,7 @@
      0
     ],
     "daily": 14,
-    "weekly": 27
+    "weekly": 28
    },
    {
     "day": "2026-10-27",
@@ -928,7 +928,7 @@
      0,
      0,
      0,
-     0,
+     1,
      0,
      0,
      0,
@@ -942,7 +942,7 @@
      0,
      0
     ],
-    "daily": 2
+    "daily": 3
    },
    {
     "day": "2026-10-29",
@@ -1061,12 +1061,13 @@
    "path_id": 112289662,
    "title": "Indian Consulate Dubai Metro Station: BurJuman, 7 min walk",
    "event": false,
-   "count": 5,
+   "count": 6,
    "daily": {
     "2026-10-16": 1,
     "2026-10-18": 1,
     "2026-10-23": 1,
-    "2026-10-26": 2
+    "2026-10-26": 2,
+    "2026-10-28": 1
    }
   },
   {
@@ -3064,9 +3065,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 199,
+  "visits": 200,
   "events_total": 231,
-  "goatcounter_total_with_events": 430,
+  "goatcounter_total_with_events": 431,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -3094,7 +3095,7 @@
    "2026-10-25": 9,
    "2026-10-26": 14,
    "2026-10-27": 8,
-   "2026-10-28": 2
+   "2026-10-28": 3
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -3357,7 +3358,7 @@
   "/destinations/indian-consulate-dubai": [
    {
     "name": "Google",
-    "count": 5
+    "count": 6
    }
   ],
   "/destinations/al-zahra-hospital-dubai": [
@@ -3697,7 +3698,7 @@
    },
    {
     "path": "/destinations/indian-consulate-dubai",
-    "count": 5
+    "count": 6
    },
    {
     "path": "/destinations/al-zahra-hospital-dubai",
@@ -3934,7 +3935,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 52,
+   "count": 53,
    "ref_scheme": "g"
   },
   {
@@ -3996,7 +3997,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 393
+   "count": 394
   },
   {
    "id": "rus",
@@ -4038,7 +4039,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 319
+   "count": 320
   },
   {
    "id": "US",
@@ -4165,7 +4166,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 247
+   "count": 248
   },
   {
    "id": "tablet",
@@ -4192,7 +4193,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 271
+   "count": 272
   },
   {
    "id": "Safari",
@@ -4218,7 +4219,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 102
+   "count": 103
   },
   {
    "id": "Windows",
