@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-28T15:33:42Z",
+ "generated": "2026-10-28T16:32:31Z",
  "start": "2025-10-28",
  "end": "2026-10-29",
  "total": {
-  "total": 435,
+  "total": 436,
   "total_events": 231,
-  "total_utc": 435,
+  "total_utc": 436,
   "stats": [
    {
     "day": "2025-10-28",
@@ -10178,7 +10178,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 435
+    "monthly": 436
    },
    {
     "day": "2026-10-02",
@@ -10962,7 +10962,7 @@
      0
     ],
     "daily": 11,
-    "weekly": 18
+    "weekly": 19
    },
    {
     "day": "2026-10-28",
@@ -10986,13 +10986,13 @@
      0,
      0,
      0,
-     0,
+     1,
      0,
      0,
      0,
      0
     ],
-    "daily": 7
+    "daily": 8
    },
    {
     "day": "2026-10-29",
@@ -11510,6 +11510,16 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/destinations/aster-hospital-al-qusais",
+   "path_id": 116157918,
+   "title": "Aster Hospital Al Qusais Metro Station: Dubai Airport Free Zone",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-10-28": 1
    }
   },
   {
@@ -13125,9 +13135,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 204,
+  "visits": 205,
   "events_total": 231,
-  "goatcounter_total_with_events": 435,
+  "goatcounter_total_with_events": 436,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -13155,7 +13165,7 @@
    "2026-10-25": 9,
    "2026-10-26": 14,
    "2026-10-27": 8,
-   "2026-10-28": 7
+   "2026-10-28": 8
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -13567,6 +13577,12 @@
     "count": 1
    }
   ],
+  "/destinations/aster-hospital-al-qusais": [
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
   "/nearest-station": [
    {
     "name": "Google",
@@ -13811,6 +13827,10 @@
     "count": 1
    },
    {
+    "path": "/destinations/aster-hospital-al-qusais",
+    "count": 1
+   },
+   {
     "path": "/nearest-station",
     "count": 1
    },
@@ -14005,7 +14025,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 57,
+   "count": 58,
    "ref_scheme": "g"
   },
   {
@@ -14067,7 +14087,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 398
+   "count": 399
   },
   {
    "id": "rus",
@@ -14109,7 +14129,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 322
+   "count": 323
   },
   {
    "id": "US",
@@ -14236,7 +14256,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 252
+   "count": 253
   },
   {
    "id": "tablet",
@@ -14268,7 +14288,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 155
+   "count": 156
   },
   {
    "id": "Firefox",
@@ -14284,7 +14304,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 151
+   "count": 152
   },
   {
    "id": "Android",
