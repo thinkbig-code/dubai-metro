@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-28T08:28:36Z",
+ "generated": "2026-10-28T09:28:28Z",
  "start": "2026-09-28",
  "end": "2026-10-29",
  "total": {
-  "total": 431,
+  "total": 433,
   "total_events": 231,
-  "total_utc": 431,
+  "total_utc": 433,
   "stats": [
    {
     "day": "2026-09-28",
@@ -128,7 +128,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 431
+    "monthly": 433
    },
    {
     "day": "2026-10-02",
@@ -882,7 +882,7 @@
      0
     ],
     "daily": 14,
-    "weekly": 28
+    "weekly": 30
    },
    {
     "day": "2026-10-27",
@@ -929,8 +929,8 @@
      0,
      0,
      1,
-     0,
-     0,
+     1,
+     1,
      0,
      0,
      0,
@@ -942,7 +942,7 @@
      0,
      0
     ],
-    "daily": 3
+    "daily": 5
    },
    {
     "day": "2026-10-29",
@@ -1039,7 +1039,7 @@
    "path_id": 110626146,
    "title": "Etihad Rail Dubai Station (Al Yalayis) Metro Station: Jumeirah Golf Estates",
    "event": false,
-   "count": 23,
+   "count": 25,
    "daily": {
     "2026-10-09": 1,
     "2026-10-12": 1,
@@ -1053,7 +1053,7 @@
     "2026-10-25": 2,
     "2026-10-26": 3,
     "2026-10-27": 2,
-    "2026-10-28": 2
+    "2026-10-28": 4
    }
   },
   {
@@ -3065,9 +3065,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 200,
+  "visits": 202,
   "events_total": 231,
-  "goatcounter_total_with_events": 431,
+  "goatcounter_total_with_events": 433,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -3095,7 +3095,7 @@
    "2026-10-25": 9,
    "2026-10-26": 14,
    "2026-10-27": 8,
-   "2026-10-28": 3
+   "2026-10-28": 5
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -3344,7 +3344,7 @@
   "/destinations/etihad-rail-dubai": [
    {
     "name": "Google",
-    "count": 18
+    "count": 20
    },
    {
     "name": "(direct or unknown)",
@@ -3694,7 +3694,7 @@
   "Google": [
    {
     "path": "/destinations/etihad-rail-dubai",
-    "count": 18
+    "count": 20
    },
    {
     "path": "/destinations/indian-consulate-dubai",
@@ -3935,7 +3935,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 53,
+   "count": 55,
    "ref_scheme": "g"
   },
   {
@@ -3997,7 +3997,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 394
+   "count": 396
   },
   {
    "id": "rus",
@@ -4039,7 +4039,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 320
+   "count": 321
   },
   {
    "id": "US",
@@ -4072,14 +4072,14 @@
    "count": 5
   },
   {
-   "id": "ID",
-   "name": "Indonesia",
+   "id": "CN",
+   "name": "China",
    "count": 4
   },
   {
-   "id": "CN",
-   "name": "China",
-   "count": 3
+   "id": "ID",
+   "name": "Indonesia",
+   "count": 4
   },
   {
    "id": "IE",
@@ -4166,7 +4166,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 248
+   "count": 250
   },
   {
    "id": "tablet",
@@ -4193,7 +4193,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 272
+   "count": 274
   },
   {
    "id": "Safari",
@@ -4219,7 +4219,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 103
+   "count": 105
   },
   {
    "id": "Windows",
