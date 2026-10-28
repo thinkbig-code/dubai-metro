@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-28T11:22:59Z",
+ "generated": "2026-10-28T12:20:46Z",
  "start": "2025-10-28",
  "end": "2026-10-29",
  "total": {
-  "total": 433,
+  "total": 435,
   "total_events": 231,
-  "total_utc": 433,
+  "total_utc": 435,
   "stats": [
    {
     "day": "2025-10-28",
@@ -10178,7 +10178,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 433
+    "monthly": 435
    },
    {
     "day": "2026-10-02",
@@ -10962,7 +10962,7 @@
      0
     ],
     "daily": 11,
-    "weekly": 16
+    "weekly": 18
    },
    {
     "day": "2026-10-28",
@@ -10982,7 +10982,7 @@
      1,
      1,
      0,
-     0,
+     2,
      0,
      0,
      0,
@@ -10992,7 +10992,7 @@
      0,
      0
     ],
-    "daily": 5
+    "daily": 7
    },
    {
     "day": "2026-10-29",
@@ -11089,7 +11089,7 @@
    "path_id": 110626146,
    "title": "Etihad Rail Dubai Station (Al Yalayis) Metro Station: Jumeirah Golf Estates",
    "event": false,
-   "count": 25,
+   "count": 26,
    "daily": {
     "2026-10-09": 1,
     "2026-10-12": 1,
@@ -11103,7 +11103,7 @@
     "2026-10-25": 2,
     "2026-10-26": 3,
     "2026-10-27": 2,
-    "2026-10-28": 4
+    "2026-10-28": 5
    }
   },
   {
@@ -11510,6 +11510,16 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/nearest-station",
+   "path_id": 116082941,
+   "title": "Nearest Metro Station to Me in Dubai: Find It by Location",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-10-28": 1
    }
   },
   {
@@ -13115,9 +13125,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 202,
+  "visits": 204,
   "events_total": 231,
-  "goatcounter_total_with_events": 433,
+  "goatcounter_total_with_events": 435,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -13145,7 +13155,7 @@
    "2026-10-25": 9,
    "2026-10-26": 14,
    "2026-10-27": 8,
-   "2026-10-28": 5
+   "2026-10-28": 7
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -13394,7 +13404,7 @@
   "/destinations/etihad-rail-dubai": [
    {
     "name": "Google",
-    "count": 20
+    "count": 21
    },
    {
     "name": "(direct or unknown)",
@@ -13552,6 +13562,12 @@
     "name": "(direct or unknown)",
     "count": 1
    },
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
+  "/nearest-station": [
    {
     "name": "Google",
     "count": 1
@@ -13744,7 +13760,7 @@
   "Google": [
    {
     "path": "/destinations/etihad-rail-dubai",
-    "count": 20
+    "count": 21
    },
    {
     "path": "/destinations/indian-consulate-dubai",
@@ -13792,6 +13808,10 @@
    },
    {
     "path": "/destinations/st-mary-s-catholic-church",
+    "count": 1
+   },
+   {
+    "path": "/nearest-station",
     "count": 1
    },
    {
@@ -13985,7 +14005,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 55,
+   "count": 57,
    "ref_scheme": "g"
   },
   {
@@ -14047,7 +14067,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 396
+   "count": 398
   },
   {
    "id": "rus",
@@ -14089,7 +14109,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 321
+   "count": 322
   },
   {
    "id": "US",
@@ -14107,6 +14127,11 @@
    "count": 8
   },
   {
+   "id": "CN",
+   "name": "China",
+   "count": 5
+  },
+  {
    "id": "DE",
    "name": "Germany",
    "count": 5
@@ -14120,11 +14145,6 @@
    "id": "NL",
    "name": "Netherlands",
    "count": 5
-  },
-  {
-   "id": "CN",
-   "name": "China",
-   "count": 4
   },
   {
    "id": "ID",
@@ -14216,7 +14236,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 250
+   "count": 252
   },
   {
    "id": "tablet",
@@ -14243,12 +14263,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 274
+   "count": 275
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 154
+   "count": 155
   },
   {
    "id": "Firefox",
@@ -14264,12 +14284,12 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 150
+   "count": 151
   },
   {
    "id": "Android",
    "name": "Android",
-   "count": 105
+   "count": 106
   },
   {
    "id": "Windows",
