@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-29T03:25:09Z",
+ "generated": "2026-10-29T04:26:23Z",
  "start": "2026-09-29",
  "end": "2026-10-30",
  "total": {
-  "total": 436,
+  "total": 438,
   "total_events": 231,
-  "total_utc": 436,
+  "total_utc": 438,
   "stats": [
    {
     "day": "2026-09-29",
@@ -98,7 +98,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 436
+    "monthly": 438
    },
    {
     "day": "2026-10-02",
@@ -882,7 +882,7 @@
      0
     ],
     "daily": 11,
-    "weekly": 19
+    "weekly": 21
    },
    {
     "day": "2026-10-28",
@@ -924,7 +924,7 @@
      0,
      0,
      0,
-     0,
+     2,
      0,
      0,
      0,
@@ -942,7 +942,7 @@
      0,
      0
     ],
-    "daily": 0
+    "daily": 2
    },
    {
     "day": "2026-10-30",
@@ -1223,6 +1223,17 @@
    }
   },
   {
+   "path": "/destinations/aster-hospital-al-qusais",
+   "path_id": 116157918,
+   "title": "Aster Hospital Al Qusais Metro Station: Dubai Airport Free Zone",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-10-28": 1,
+    "2026-10-29": 1
+   }
+  },
+  {
    "path": "/destinations/meena-bazaar",
    "path_id": 115183314,
    "title": "Meena Bazaar Metro Station: Sharaf DG (Green Line), 9 min walk",
@@ -1275,6 +1286,17 @@
    "daily": {
     "2026-10-13": 1,
     "2026-10-24": 1
+   }
+  },
+  {
+   "path": "/destinations/dubai-municipality-head-office",
+   "path_id": 111690629,
+   "title": "Dubai Municipality Head Office Metro Station: Union, 9 min walk",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-10-12": 1,
+    "2026-10-29": 1
    }
   },
   {
@@ -1460,16 +1482,6 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
-   }
-  },
-  {
-   "path": "/destinations/aster-hospital-al-qusais",
-   "path_id": 116157918,
-   "title": "Aster Hospital Al Qusais Metro Station: Dubai Airport Free Zone",
-   "event": false,
-   "count": 1,
-   "daily": {
-    "2026-10-28": 1
    }
   },
   {
@@ -1917,16 +1929,6 @@
    "path_id": 111690652,
    "title": "en|landing:destinations-dubai-municipality-head-office|ok|first_landing",
    "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-12": 1
-   }
-  },
-  {
-   "path": "/destinations/dubai-municipality-head-office",
-   "path_id": 111690629,
-   "title": "Dubai Municipality Head Office Metro Station: Union, 9 min walk",
-   "event": false,
    "count": 1,
    "daily": {
     "2026-10-12": 1
@@ -3085,9 +3087,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 205,
+  "visits": 207,
   "events_total": 231,
-  "goatcounter_total_with_events": 436,
+  "goatcounter_total_with_events": 438,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -3115,7 +3117,8 @@
    "2026-10-25": 9,
    "2026-10-26": 14,
    "2026-10-27": 8,
-   "2026-10-28": 8
+   "2026-10-28": 8,
+   "2026-10-29": 2
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -3139,7 +3142,7 @@
   "return_rate": 0.022,
   "routes": 40,
   "routes_not_found": 0,
-  "routes_per_visit": 0.2,
+  "routes_per_visit": 0.19,
   "routes_per_visitor_day": 0.63,
   "share_rate": 0.075,
   "shares": {
@@ -3461,6 +3464,12 @@
     "count": 1
    }
   ],
+  "/destinations/aster-hospital-al-qusais": [
+   {
+    "name": "Google",
+    "count": 2
+   }
+  ],
   "/destinations/meena-bazaar": [
    {
     "name": "Google",
@@ -3507,6 +3516,12 @@
     "count": 1
    }
   ],
+  "/destinations/dubai-municipality-head-office": [
+   {
+    "name": "Google",
+    "count": 2
+   }
+  ],
   "/lines/green-line": [
    {
     "name": "Google",
@@ -3522,12 +3537,6 @@
     "name": "(direct or unknown)",
     "count": 1
    },
-   {
-    "name": "Google",
-    "count": 1
-   }
-  ],
-  "/destinations/aster-hospital-al-qusais": [
    {
     "name": "Google",
     "count": 1
@@ -3635,12 +3644,6 @@
     "count": 1
    }
   ],
-  "/destinations/dubai-municipality-head-office": [
-   {
-    "name": "Google",
-    "count": 1
-   }
-  ],
   "/stations/centrepoint": [
    {
     "name": "dubaimetro.fyi/lines/red-line",
@@ -3745,7 +3748,15 @@
     "count": 2
    },
    {
+    "path": "/destinations/aster-hospital-al-qusais",
+    "count": 2
+   },
+   {
     "path": "/destinations/meena-bazaar",
+    "count": 2
+   },
+   {
+    "path": "/destinations/dubai-municipality-head-office",
     "count": 2
    },
    {
@@ -3774,10 +3785,6 @@
    },
    {
     "path": "/destinations/st-mary-s-catholic-church",
-    "count": 1
-   },
-   {
-    "path": "/destinations/aster-hospital-al-qusais",
     "count": 1
    },
    {
@@ -3818,10 +3825,6 @@
    },
    {
     "path": "/destinations/pakistan-consulate-dubai",
-    "count": 1
-   },
-   {
-    "path": "/destinations/dubai-municipality-head-office",
     "count": 1
    }
   ],
@@ -3975,7 +3978,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 58,
+   "count": 60,
    "ref_scheme": "g"
   },
   {
@@ -4037,7 +4040,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 399
+   "count": 401
   },
   {
    "id": "rus",
@@ -4079,7 +4082,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 323
+   "count": 325
   },
   {
    "id": "US",
@@ -4206,7 +4209,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 253
+   "count": 255
   },
   {
    "id": "tablet",
@@ -4233,12 +4236,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 275
+   "count": 276
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 156
+   "count": 157
   },
   {
    "id": "Firefox",
@@ -4254,12 +4257,12 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 152
+   "count": 153
   },
   {
    "id": "Android",
    "name": "Android",
-   "count": 106
+   "count": 107
   },
   {
    "id": "Windows",
