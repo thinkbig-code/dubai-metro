@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-29T06:21:24Z",
+ "generated": "2026-10-29T07:42:42Z",
  "start": "2026-09-29",
  "end": "2026-10-30",
  "total": {
-  "total": 438,
+  "total": 439,
   "total_events": 231,
-  "total_utc": 438,
+  "total_utc": 439,
   "stats": [
    {
     "day": "2026-09-29",
@@ -98,7 +98,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 438
+    "monthly": 439
    },
    {
     "day": "2026-10-02",
@@ -882,7 +882,7 @@
      0
     ],
     "daily": 11,
-    "weekly": 21
+    "weekly": 22
    },
    {
     "day": "2026-10-28",
@@ -928,7 +928,7 @@
      0,
      0,
      0,
-     0,
+     1,
      0,
      0,
      0,
@@ -942,7 +942,7 @@
      0,
      0
     ],
-    "daily": 2
+    "daily": 3
    },
    {
     "day": "2026-10-30",
@@ -1482,6 +1482,16 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/destinations/almas-tower",
+   "path_id": 116363768,
+   "title": "Almas Tower (DMCC HQ) Metro Station: DMCC (Red Line), 6 min walk",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-10-29": 1
    }
   },
   {
@@ -3087,9 +3097,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 207,
+  "visits": 208,
   "events_total": 231,
-  "goatcounter_total_with_events": 438,
+  "goatcounter_total_with_events": 439,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -3118,7 +3128,7 @@
    "2026-10-26": 14,
    "2026-10-27": 8,
    "2026-10-28": 8,
-   "2026-10-29": 2
+   "2026-10-29": 3
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -3542,6 +3552,12 @@
     "count": 1
    }
   ],
+  "/destinations/almas-tower": [
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
   "/nearest-station": [
    {
     "name": "Google",
@@ -3788,6 +3804,10 @@
     "count": 1
    },
    {
+    "path": "/destinations/almas-tower",
+    "count": 1
+   },
+   {
     "path": "/nearest-station",
     "count": 1
    },
@@ -3978,7 +3998,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 60,
+   "count": 61,
    "ref_scheme": "g"
   },
   {
@@ -4040,7 +4060,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 401
+   "count": 402
   },
   {
    "id": "rus",
@@ -4082,7 +4102,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 325
+   "count": 326
   },
   {
    "id": "US",
@@ -4209,7 +4229,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 255
+   "count": 256
   },
   {
    "id": "tablet",
@@ -4236,7 +4256,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 276
+   "count": 277
   },
   {
    "id": "Safari",
@@ -4262,7 +4282,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 107
+   "count": 108
   },
   {
    "id": "Windows",
