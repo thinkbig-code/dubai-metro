@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-29T12:21:03Z",
+ "generated": "2026-10-29T13:42:57Z",
  "start": "2025-10-29",
  "end": "2026-10-30",
  "total": {
-  "total": 439,
-  "total_events": 231,
-  "total_utc": 439,
+  "total": 441,
+  "total_events": 232,
+  "total_utc": 441,
   "stats": [
    {
     "day": "2025-10-29",
@@ -10148,7 +10148,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 439
+    "monthly": 441
    },
    {
     "day": "2026-10-02",
@@ -10962,7 +10962,7 @@
      0
     ],
     "daily": 8,
-    "weekly": 11
+    "weekly": 13
    },
    {
     "day": "2026-10-29",
@@ -10984,7 +10984,7 @@
      0,
      0,
      0,
-     0,
+     2,
      0,
      0,
      0,
@@ -10992,7 +10992,7 @@
      0,
      0
     ],
-    "daily": 3
+    "daily": 5
    },
    {
     "day": "2026-10-30",
@@ -11032,7 +11032,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 108,
+   "count": 109,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -11056,7 +11056,8 @@
     "2026-10-24": 2,
     "2026-10-25": 2,
     "2026-10-26": 1,
-    "2026-10-27": 1
+    "2026-10-27": 1,
+    "2026-10-29": 1
    }
   },
   {
@@ -11064,7 +11065,7 @@
    "path_id": 110447314,
    "title": "en",
    "event": true,
-   "count": 45,
+   "count": 46,
    "daily": {
     "2026-10-08": 7,
     "2026-10-09": 6,
@@ -11081,7 +11082,8 @@
     "2026-10-22": 2,
     "2026-10-24": 3,
     "2026-10-25": 2,
-    "2026-10-27": 1
+    "2026-10-27": 1,
+    "2026-10-29": 1
    }
   },
   {
@@ -13147,9 +13149,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 208,
-  "events_total": 231,
-  "goatcounter_total_with_events": 439,
+  "visits": 209,
+  "events_total": 232,
+  "goatcounter_total_with_events": 441,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -13178,7 +13180,7 @@
    "2026-10-26": 14,
    "2026-10-27": 8,
    "2026-10-28": 8,
-   "2026-10-29": 3
+   "2026-10-29": 4
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -13196,14 +13198,15 @@
    "2026-10-22": 2,
    "2026-10-24": 3,
    "2026-10-25": 2,
-   "2026-10-27": 1
+   "2026-10-27": 1,
+   "2026-10-29": 1
   },
-  "visitor_days": 46,
-  "return_rate": 0.022,
+  "visitor_days": 47,
+  "return_rate": 0.021,
   "routes": 40,
   "routes_not_found": 0,
   "routes_per_visit": 0.19,
-  "routes_per_visitor_day": 0.63,
+  "routes_per_visitor_day": 0.62,
   "share_rate": 0.075,
   "shares": {
    "qr": 1,
@@ -13223,7 +13226,7 @@
    "fail": 1
   },
   "visitors_new_return": {
-   "new": 45,
+   "new": 46,
    "return": 1
   },
   "top_routes": [
@@ -13377,7 +13380,7 @@
   "/": [
    {
     "name": "(direct or unknown)",
-    "count": 86
+    "count": 87
    },
    {
     "name": "com.reddit.frontpage",
@@ -13733,7 +13736,7 @@
   "(direct or unknown)": [
    {
     "path": "/",
-    "count": 86
+    "count": 87
    },
    {
     "path": "/destinations/etihad-rail-dubai",
@@ -14042,7 +14045,7 @@
  "toprefs": [
   {
    "name": "",
-   "count": 267,
+   "count": 269,
    "ref_scheme": "o"
   },
   {
@@ -14110,7 +14113,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 402
+   "count": 404
   },
   {
    "id": "rus",
@@ -14152,7 +14155,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 326
+   "count": 328
   },
   {
    "id": "US",
@@ -14279,7 +14282,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 256
+   "count": 258
   },
   {
    "id": "tablet",
@@ -14306,7 +14309,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 277
+   "count": 279
   },
   {
    "id": "Safari",
@@ -14332,7 +14335,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 108
+   "count": 110
   },
   {
    "id": "Windows",
