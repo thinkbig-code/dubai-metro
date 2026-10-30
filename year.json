@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-30T02:28:39Z",
+ "generated": "2026-10-30T03:25:41Z",
  "start": "2025-10-30",
  "end": "2026-10-31",
  "total": {
-  "total": 441,
+  "total": 442,
   "total_events": 232,
-  "total_utc": 441,
+  "total_utc": 442,
   "stats": [
    {
     "day": "2025-10-30",
@@ -10118,7 +10118,7 @@
     ],
     "daily": 6,
     "weekly": 92,
-    "monthly": 441
+    "monthly": 442
    },
    {
     "day": "2026-10-02",
@@ -10962,7 +10962,7 @@
      0
     ],
     "daily": 5,
-    "weekly": 5
+    "weekly": 6
    },
    {
     "day": "2026-10-30",
@@ -10973,7 +10973,7 @@
      0,
      0,
      0,
-     0,
+     1,
      0,
      0,
      0,
@@ -10992,7 +10992,7 @@
      0,
      0
     ],
-    "daily": 0
+    "daily": 1
    },
    {
     "day": "2026-10-31",
@@ -11534,6 +11534,16 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/destinations/wafi-city",
+   "path_id": 116627826,
+   "title": "Wafi City Metro Station: Dubai Healthcare City (Green Line)",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-10-30": 1
    }
   },
   {
@@ -13149,9 +13159,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 209,
+  "visits": 210,
   "events_total": 232,
-  "goatcounter_total_with_events": 441,
+  "goatcounter_total_with_events": 442,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -13180,7 +13190,8 @@
    "2026-10-26": 14,
    "2026-10-27": 8,
    "2026-10-28": 8,
-   "2026-10-29": 4
+   "2026-10-29": 4,
+   "2026-10-30": 1
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -13605,6 +13616,12 @@
     "count": 1
    }
   ],
+  "/destinations/wafi-city": [
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
   "/destinations/almas-tower": [
    {
     "name": "Google",
@@ -13857,6 +13874,10 @@
     "count": 1
    },
    {
+    "path": "/destinations/wafi-city",
+    "count": 1
+   },
+   {
     "path": "/destinations/almas-tower",
     "count": 1
    },
@@ -14051,7 +14072,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 61,
+   "count": 62,
    "ref_scheme": "g"
   },
   {
@@ -14118,7 +14139,7 @@
   {
    "id": "rus",
    "name": "Russian",
-   "count": 16
+   "count": 17
   },
   {
    "id": "(unknown)",
@@ -14155,7 +14176,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 328
+   "count": 329
   },
   {
    "id": "US",
@@ -14282,7 +14303,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 258
+   "count": 259
   },
   {
    "id": "tablet",
@@ -14314,7 +14335,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 157
+   "count": 158
   },
   {
    "id": "Firefox",
@@ -14330,7 +14351,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 153
+   "count": 154
   },
   {
    "id": "Android",
