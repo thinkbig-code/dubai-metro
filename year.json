@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-31T02:28:43Z",
+ "generated": "2026-10-31T03:26:03Z",
  "start": "2025-10-31",
  "end": "2026-11-01",
  "total": {
-  "total": 444,
+  "total": 445,
   "total_events": 232,
-  "total_utc": 444,
+  "total_utc": 445,
   "stats": [
    {
     "day": "2025-10-31",
@@ -10088,7 +10088,7 @@
      5
     ],
     "daily": 6,
-    "monthly": 444
+    "monthly": 445
    },
    {
     "day": "2026-10-02",
@@ -10963,7 +10963,7 @@
      0
     ],
     "daily": 3,
-    "weekly": 3
+    "weekly": 4
    },
    {
     "day": "2026-10-31",
@@ -10974,7 +10974,7 @@
      0,
      0,
      0,
-     0,
+     1,
      0,
      0,
      0,
@@ -10993,7 +10993,7 @@
      0,
      0
     ],
-    "daily": 0
+    "daily": 1
    },
    {
     "day": "2026-11-01",
@@ -11536,6 +11536,16 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/destinations/american-university-in-dubai",
+   "path_id": 116983456,
+   "title": "American University in Dubai Metro Station: Al Fardan Exchange, 5 min walk",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-10-31": 1
    }
   },
   {
@@ -13161,9 +13171,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 212,
+  "visits": 213,
   "events_total": 232,
-  "goatcounter_total_with_events": 444,
+  "goatcounter_total_with_events": 445,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -13193,7 +13203,8 @@
    "2026-10-27": 8,
    "2026-10-28": 8,
    "2026-10-29": 4,
-   "2026-10-30": 3
+   "2026-10-30": 3,
+   "2026-10-31": 1
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -13618,6 +13629,12 @@
     "count": 1
    }
   ],
+  "/destinations/american-university-in-dubai": [
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
   "/destinations/wafi-city": [
    {
     "name": "Google",
@@ -13876,6 +13893,10 @@
     "count": 1
    },
    {
+    "path": "/destinations/american-university-in-dubai",
+    "count": 1
+   },
+   {
     "path": "/destinations/wafi-city",
     "count": 1
    },
@@ -14074,7 +14095,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 64,
+   "count": 65,
    "ref_scheme": "g"
   },
   {
@@ -14136,7 +14157,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 406
+   "count": 407
   },
   {
    "id": "rus",
@@ -14178,7 +14199,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 331
+   "count": 332
   },
   {
    "id": "US",
@@ -14305,7 +14326,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 260
+   "count": 261
   },
   {
    "id": "tablet",
@@ -14337,7 +14358,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 158
+   "count": 159
   },
   {
    "id": "Firefox",
@@ -14353,7 +14374,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 154
+   "count": 155
   },
   {
    "id": "Android",
