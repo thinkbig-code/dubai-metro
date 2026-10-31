@@ -1,6 +1,6 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-31T05:22:24Z",
+ "generated": "2026-10-31T06:19:31Z",
  "start": "2025-10-31",
  "end": "2026-11-01",
  "total": {
@@ -14115,7 +14115,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 66,
+   "count": 67,
    "ref_scheme": "g"
   },
   {
@@ -14177,7 +14177,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 408
+   "count": 409
   },
   {
    "id": "rus",
@@ -14219,7 +14219,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 333
+   "count": 334
   },
   {
    "id": "US",
@@ -14346,7 +14346,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 261
+   "count": 262
   },
   {
    "id": "tablet",
@@ -14373,7 +14373,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 282
+   "count": 283
   },
   {
    "id": "Safari",
@@ -14399,7 +14399,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 111
+   "count": 112
   },
   {
    "id": "Windows",
