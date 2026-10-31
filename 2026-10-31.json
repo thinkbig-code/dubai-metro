@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-31T04:23:17Z",
+ "generated": "2026-10-31T05:21:31Z",
  "start": "2026-10-01",
  "end": "2026-11-01",
  "total": {
-  "total": 445,
+  "total": 446,
   "total_events": 232,
-  "total_utc": 445,
+  "total_utc": 446,
   "stats": [
    {
     "day": "2026-10-01",
@@ -38,7 +38,7 @@
     ],
     "daily": 6,
     "weekly": 92,
-    "monthly": 445
+    "monthly": 446
    },
    {
     "day": "2026-10-02",
@@ -882,7 +882,7 @@
      0
     ],
     "daily": 5,
-    "weekly": 9
+    "weekly": 10
    },
    {
     "day": "2026-10-30",
@@ -926,7 +926,7 @@
      1,
      0,
      0,
-     0,
+     1,
      0,
      0,
      0,
@@ -942,7 +942,7 @@
      0,
      0
     ],
-    "daily": 1
+    "daily": 2
    },
    {
     "day": "2026-11-01",
@@ -1485,6 +1485,16 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/destinations/al-ghurair-centre",
+   "path_id": 117012967,
+   "title": "Al Ghurair Centre Metro Station: Union (Red/Green lines), 6 min walk",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-10-31": 1
    }
   },
   {
@@ -3120,9 +3130,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 213,
+  "visits": 214,
   "events_total": 232,
-  "goatcounter_total_with_events": 445,
+  "goatcounter_total_with_events": 446,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -3153,7 +3163,7 @@
    "2026-10-28": 8,
    "2026-10-29": 4,
    "2026-10-30": 3,
-   "2026-10-31": 1
+   "2026-10-31": 2
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -3578,6 +3588,12 @@
     "count": 1
    }
   ],
+  "/destinations/al-ghurair-centre": [
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
   "/destinations/american-university-in-dubai": [
    {
     "name": "Google",
@@ -3842,6 +3858,10 @@
     "count": 1
    },
    {
+    "path": "/destinations/al-ghurair-centre",
+    "count": 1
+   },
+   {
     "path": "/destinations/american-university-in-dubai",
     "count": 1
    },
@@ -4044,7 +4064,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 65,
+   "count": 66,
    "ref_scheme": "g"
   },
   {
@@ -4106,7 +4126,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 407
+   "count": 408
   },
   {
    "id": "rus",
@@ -4148,7 +4168,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 332
+   "count": 333
   },
   {
    "id": "US",
@@ -4285,7 +4305,7 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 145
+   "count": 146
   },
   {
    "id": "desktophd",
@@ -4302,7 +4322,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 281
+   "count": 282
   },
   {
    "id": "Safari",
@@ -4333,7 +4353,7 @@
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 91
+   "count": 92
   },
   {
    "id": "macOS",
