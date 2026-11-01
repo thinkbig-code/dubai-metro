@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-01T02:36:01Z",
+ "generated": "2026-11-01T09:45:13Z",
  "start": "2026-10-02",
  "end": "2026-11-02",
  "total": {
-  "total": 441,
-  "total_events": 231,
-  "total_utc": 436,
+  "total": 451,
+  "total_events": 237,
+  "total_utc": 446,
   "stats": [
    {
     "day": "2026-10-02",
@@ -882,7 +882,7 @@
      0
     ],
     "daily": 3,
-    "weekly": 14
+    "weekly": 24
    },
    {
     "day": "2026-10-31",
@@ -927,10 +927,10 @@
      0,
      0,
      0,
+     1,
+     7,
      0,
-     0,
-     0,
-     0,
+     2,
      0,
      0,
      0,
@@ -942,7 +942,8 @@
      0,
      0
     ],
-    "daily": 0
+    "daily": 10,
+    "monthly": 10
    },
    {
     "day": "2026-11-02",
@@ -982,7 +983,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 101,
+   "count": 102,
    "daily": {
     "2026-10-02": 19,
     "2026-10-03": 4,
@@ -1007,7 +1008,8 @@
     "2026-10-26": 1,
     "2026-10-27": 1,
     "2026-10-29": 1,
-    "2026-10-31": 2
+    "2026-10-31": 2,
+    "2026-11-01": 1
    }
   },
   {
@@ -1042,7 +1044,7 @@
    "path_id": 110626146,
    "title": "Etihad Rail Dubai Station (Al Yalayis) Metro Station: Jumeirah Golf Estates",
    "event": false,
-   "count": 29,
+   "count": 30,
    "daily": {
     "2026-10-09": 1,
     "2026-10-12": 1,
@@ -1058,7 +1060,8 @@
     "2026-10-27": 2,
     "2026-10-28": 5,
     "2026-10-30": 2,
-    "2026-10-31": 1
+    "2026-10-31": 1,
+    "2026-11-01": 1
    }
   },
   {
@@ -1263,6 +1266,17 @@
    }
   },
   {
+   "path": "/map",
+   "path_id": 114750763,
+   "title": "Dubai Metro Map 2026: All Lines and Stations (Image and Interactive)",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-10-25": 1,
+    "2026-11-01": 1
+   }
+  },
+  {
    "path": "/destinations/times-square-center",
    "path_id": 114208930,
    "title": "Times Square Center Metro Station: Equiti (Red Line)",
@@ -1271,6 +1285,17 @@
    "daily": {
     "2026-10-23": 1,
     "2026-10-25": 1
+   }
+  },
+  {
+   "path": "/destinations/al-mulla-plaza",
+   "path_id": 114013835,
+   "title": "Al Mulla Plaza Metro Station: Al Qiyadah (Green Line), 7 min walk",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-10-22": 1,
+    "2026-11-01": 1
    }
   },
   {
@@ -1351,6 +1376,17 @@
    }
   },
   {
+   "path": "visit/return/-",
+   "path_id": 110878762,
+   "title": "en",
+   "event": true,
+   "count": 2,
+   "daily": {
+    "2026-10-10": 1,
+    "2026-11-01": 1
+   }
+  },
+  {
    "path": "map_station_click/atlantis/-",
    "path_id": 110484435,
    "title": "en|home|desktop",
@@ -1381,6 +1417,17 @@
    "daily": {
     "2026-10-08": 1,
     "2026-10-27": 1
+   }
+  },
+  {
+   "path": "place/p_dubai_internet_city/from",
+   "path_id": 110483974,
+   "title": "en|name",
+   "event": true,
+   "count": 2,
+   "daily": {
+    "2026-10-08": 1,
+    "2026-11-01": 1
    }
   },
   {
@@ -1511,6 +1558,46 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "view/p_dubai_internet_city/p_etihad_rail_al_yalayis_station",
+   "path_id": 117429629,
+   "title": "en|details",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-01": 1
+   }
+  },
+  {
+   "path": "route/p_dubai_internet_city/p_etihad_rail_al_yalayis_station",
+   "path_id": 117429588,
+   "title": "en|search|ok|first_landing",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-01": 1
+   }
+  },
+  {
+   "path": "place/p_etihad_rail_al_yalayis_station/to",
+   "path_id": 117429587,
+   "title": "en|alias",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-01": 1
+   }
+  },
+  {
+   "path": "station_link/to/p_etihad_rail_al_yalayis_station",
+   "path_id": 117429329,
+   "title": "en|landing:destinations-etihad-rail-dubai",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-01": 1
    }
   },
   {
@@ -1714,16 +1801,6 @@
    }
   },
   {
-   "path": "/map",
-   "path_id": 114750763,
-   "title": "Dubai Metro Map 2026: All Lines and Stations (Image and Interactive)",
-   "event": false,
-   "count": 1,
-   "daily": {
-    "2026-10-25": 1
-   }
-  },
-  {
    "path": "/destinations/coca-cola-arena",
    "path_id": 114216387,
    "title": "Coca-Cola Arena Metro Station: Burj Khalifa/Dubai Mall, 7 min walk",
@@ -1748,16 +1825,6 @@
    "path_id": 114086532,
    "title": "en|home|phone",
    "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-22": 1
-   }
-  },
-  {
-   "path": "/destinations/al-mulla-plaza",
-   "path_id": 114013835,
-   "title": "Al Mulla Plaza Metro Station: Al Qiyadah (Green Line), 7 min walk",
-   "event": false,
    "count": 1,
    "daily": {
     "2026-10-22": 1
@@ -2174,16 +2241,6 @@
    }
   },
   {
-   "path": "visit/return/-",
-   "path_id": 110878762,
-   "title": "en",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-10": 1
-   }
-  },
-  {
    "path": "route/expo/dg",
    "path_id": 110852527,
    "title": "en|map|ok|first_map",
@@ -2487,16 +2544,6 @@
    "path": "route/p_dubai_internet_city/p_jbr_the_walk",
    "path_id": 110483985,
    "title": "en|search|ok|first_place_search",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-08": 1
-   }
-  },
-  {
-   "path": "place/p_dubai_internet_city/from",
-   "path_id": 110483974,
-   "title": "en|name",
    "event": true,
    "count": 1,
    "daily": {
@@ -3106,9 +3153,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 210,
-  "events_total": 231,
-  "goatcounter_total_with_events": 441,
+  "visits": 214,
+  "events_total": 237,
+  "goatcounter_total_with_events": 451,
   "page_loads_by_day": {
    "2026-10-02": 20,
    "2026-10-03": 4,
@@ -3138,7 +3185,8 @@
    "2026-10-28": 8,
    "2026-10-29": 4,
    "2026-10-30": 3,
-   "2026-10-31": 8
+   "2026-10-31": 8,
+   "2026-11-01": 4
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -3158,21 +3206,22 @@
    "2026-10-25": 2,
    "2026-10-27": 1,
    "2026-10-29": 1,
-   "2026-10-31": 1
+   "2026-10-31": 1,
+   "2026-11-01": 1
   },
-  "visitor_days": 48,
-  "return_rate": 0.021,
-  "routes": 36,
+  "visitor_days": 49,
+  "return_rate": 0.041,
+  "routes": 37,
   "routes_not_found": 0,
   "routes_per_visit": 0.17,
-  "routes_per_visitor_day": 0.6,
-  "share_rate": 0.083,
+  "routes_per_visitor_day": 0.61,
+  "share_rate": 0.081,
   "shares": {
    "qr": 1,
    "copy": 1,
    "whatsapp": 1
   },
-  "failed_search_rate": 0.029,
+  "failed_search_rate": 0.027,
   "failed_searches": [
    {
     "name": "jvc",
@@ -3186,12 +3235,16 @@
   },
   "visitors_new_return": {
    "new": 47,
-   "return": 1
+   "return": 2
   },
   "top_routes": [
    {
     "name": "p_dubai_mall > p_dxb_airport_terminal_3",
     "count": 2
+   },
+   {
+    "name": "p_dubai_internet_city > p_etihad_rail_al_yalayis_station",
+    "count": 1
    },
    {
     "name": "p_mall_of_the_emirates > union",
@@ -3244,10 +3297,6 @@
    {
     "name": "palmgw > atlantis",
     "count": 1
-   },
-   {
-    "name": "pj > palmgw",
-    "count": 1
    }
   ],
   "top_origins": [
@@ -3258,6 +3307,10 @@
    {
     "name": "dmm",
     "count": 3
+   },
+   {
+    "name": "p_dubai_internet_city",
+    "count": 2
    },
    {
     "name": "lp",
@@ -3286,10 +3339,6 @@
    {
     "name": "bb",
     "count": 1
-   },
-   {
-    "name": "moe",
-    "count": 1
    }
   ],
   "top_destinations": [
@@ -3304,6 +3353,10 @@
    {
     "name": "p_jbr_the_walk",
     "count": 3
+   },
+   {
+    "name": "p_etihad_rail_al_yalayis_station",
+    "count": 2
    },
    {
     "name": "dmcc",
@@ -3328,10 +3381,6 @@
    {
     "name": "p_dubai_municipality_head_office",
     "count": 1
-   },
-   {
-    "name": "p_palm_jumeirah_mall",
-    "count": 1
    }
   ]
  },
@@ -3348,6 +3397,10 @@
    {
     "name": "www.bing.com",
     "count": 4
+   },
+   {
+    "name": "dubaimetro.fyi/destinations/etihad-rail-dubai",
+    "count": 2
    },
    {
     "name": "Google",
@@ -3374,10 +3427,6 @@
     "count": 1
    },
    {
-    "name": "dubaimetro.fyi/destinations/etihad-rail-dubai",
-    "count": 1
-   },
-   {
     "name": "dubaimetro.fyi/destinations/dubai-municipality-head-office",
     "count": 1
    },
@@ -3397,7 +3446,7 @@
   "/destinations/etihad-rail-dubai": [
    {
     "name": "Google",
-    "count": 24
+    "count": 25
    },
    {
     "name": "(direct or unknown)",
@@ -3512,6 +3561,12 @@
     "count": 2
    }
   ],
+  "/map": [
+   {
+    "name": "Google",
+    "count": 2
+   }
+  ],
   "/destinations/times-square-center": [
    {
     "name": "Google",
@@ -3520,6 +3575,12 @@
    {
     "name": "chatgpt.com",
     "count": 1
+   }
+  ],
+  "/destinations/al-mulla-plaza": [
+   {
+    "name": "Google",
+    "count": 2
    }
   ],
   "/destinations/canadian-specialist-hospital": [
@@ -3638,19 +3699,7 @@
     "count": 1
    }
   ],
-  "/map": [
-   {
-    "name": "Google",
-    "count": 1
-   }
-  ],
   "/destinations/coca-cola-arena": [
-   {
-    "name": "Google",
-    "count": 1
-   }
-  ],
-  "/destinations/al-mulla-plaza": [
    {
     "name": "Google",
     "count": 1
@@ -3780,10 +3829,20 @@
     "count": 1
    }
   ],
+  "dubaimetro.fyi/destinations/etihad-rail-dubai": [
+   {
+    "path": "/",
+    "count": 2
+   },
+   {
+    "path": "/lines/green-line",
+    "count": 1
+   }
+  ],
   "Google": [
    {
     "path": "/destinations/etihad-rail-dubai",
-    "count": 24
+    "count": 25
    },
    {
     "path": "/destinations/indian-consulate-dubai",
@@ -3811,6 +3870,14 @@
    },
    {
     "path": "/nearest-station",
+    "count": 2
+   },
+   {
+    "path": "/map",
+    "count": 2
+   },
+   {
+    "path": "/destinations/al-mulla-plaza",
     "count": 2
    },
    {
@@ -3874,15 +3941,7 @@
     "count": 1
    },
    {
-    "path": "/map",
-    "count": 1
-   },
-   {
     "path": "/destinations/coca-cola-arena",
-    "count": 1
-   },
-   {
-    "path": "/destinations/al-mulla-plaza",
     "count": 1
    },
    {
@@ -3984,16 +4043,6 @@
     "count": 1
    }
   ],
-  "dubaimetro.fyi/destinations/etihad-rail-dubai": [
-   {
-    "path": "/",
-    "count": 1
-   },
-   {
-    "path": "/lines/green-line",
-    "count": 1
-   }
-  ],
   "dubaimetro.fyi/destinations/dubai-municipality-head-office": [
    {
     "path": "/",
@@ -4052,13 +4101,13 @@
  "toprefs": [
   {
    "name": "",
-   "count": 255,
+   "count": 256,
    "ref_scheme": "o"
   },
   {
    "id": "Google",
    "name": "Google",
-   "count": 70,
+   "count": 73,
    "ref_scheme": "g"
   },
   {
@@ -4120,7 +4169,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 415
+   "count": 425
   },
   {
    "id": "rus",
@@ -4162,7 +4211,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 332
+   "count": 342
   },
   {
    "id": "US",
@@ -4279,7 +4328,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 262
+   "count": 272
   },
   {
    "id": "tablet",
@@ -4306,7 +4355,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 273
+   "count": 283
   },
   {
    "id": "Safari",
@@ -4332,7 +4381,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 107
+   "count": 117
   },
   {
    "id": "Windows",
