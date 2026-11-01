@@ -1,50 +1,18 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-10-31T22:50:06Z",
- "start": "2026-10-01",
- "end": "2026-11-01",
+ "generated": "2026-11-01T02:12:54Z",
+ "start": "2026-10-02",
+ "end": "2026-11-02",
  "total": {
-  "total": 455,
-  "total_events": 235,
-  "total_utc": 455,
+  "total": 441,
+  "total_events": 231,
+  "total_utc": 436,
   "stats": [
-   {
-    "day": "2026-10-01",
-    "hourly": [
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     1,
-     5
-    ],
-    "daily": 6,
-    "weekly": 92,
-    "monthly": 455
-   },
    {
     "day": "2026-10-02",
     "hourly": [
-     2,
-     6,
+     0,
+     0,
      0,
      0,
      0,
@@ -68,7 +36,9 @@
      0,
      1
     ],
-    "daily": 35
+    "daily": 27,
+    "weekly": 189,
+    "monthly": 441
    },
    {
     "day": "2026-10-03",
@@ -248,8 +218,7 @@
      3,
      2
     ],
-    "daily": 111,
-    "weekly": 222
+    "daily": 111
    },
    {
     "day": "2026-10-09",
@@ -279,7 +248,8 @@
      2,
      0
     ],
-    "daily": 18
+    "daily": 18,
+    "weekly": 117
    },
    {
     "day": "2026-10-10",
@@ -459,8 +429,7 @@
      0,
      0
     ],
-    "daily": 6,
-    "weekly": 44
+    "daily": 6
    },
    {
     "day": "2026-10-16",
@@ -490,7 +459,8 @@
      0,
      1
     ],
-    "daily": 4
+    "daily": 4,
+    "weekly": 47
    },
    {
     "day": "2026-10-17",
@@ -670,8 +640,7 @@
      6,
      0
     ],
-    "daily": 9,
-    "weekly": 78
+    "daily": 9
    },
    {
     "day": "2026-10-23",
@@ -701,7 +670,8 @@
      0,
      0
     ],
-    "daily": 3
+    "daily": 3,
+    "weekly": 74
    },
    {
     "day": "2026-10-24",
@@ -881,8 +851,7 @@
      0,
      0
     ],
-    "daily": 5,
-    "weekly": 19
+    "daily": 5
    },
    {
     "day": "2026-10-30",
@@ -912,7 +881,8 @@
      0,
      0
     ],
-    "daily": 3
+    "daily": 3,
+    "weekly": 14
    },
    {
     "day": "2026-10-31",
@@ -973,6 +943,36 @@
      0
     ],
     "daily": 0
+   },
+   {
+    "day": "2026-11-02",
+    "hourly": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "daily": 0
    }
   ]
  },
@@ -982,10 +982,9 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 111,
+   "count": 101,
    "daily": {
-    "2026-10-01": 6,
-    "2026-10-02": 23,
+    "2026-10-02": 19,
     "2026-10-03": 4,
     "2026-10-04": 7,
     "2026-10-05": 6,
@@ -3103,56 +3102,15 @@
    "daily": {
     "2026-10-02": 1
    }
-  },
-  {
-   "path": "route/bb/moe",
-   "path_id": 109178054,
-   "title": "ru|map|ok",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-02": 1
-   }
-  },
-  {
-   "path": "route/moe/bb",
-   "path_id": 109178005,
-   "title": "ru|map|ok",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-02": 1
-   }
-  },
-  {
-   "path": "route/bk/jge",
-   "path_id": 109172116,
-   "title": "en|map|ok",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-02": 1
-   }
-  },
-  {
-   "path": "route/bk/emirates",
-   "path_id": 109171170,
-   "title": "en|map|ok",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-02": 1
-   }
   }
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 220,
-  "events_total": 235,
-  "goatcounter_total_with_events": 455,
+  "visits": 210,
+  "events_total": 231,
+  "goatcounter_total_with_events": 441,
   "page_loads_by_day": {
-   "2026-10-01": 6,
-   "2026-10-02": 24,
+   "2026-10-02": 20,
    "2026-10-03": 4,
    "2026-10-04": 7,
    "2026-10-05": 7,
@@ -3204,11 +3162,11 @@
   },
   "visitor_days": 48,
   "return_rate": 0.021,
-  "routes": 40,
+  "routes": 36,
   "routes_not_found": 0,
-  "routes_per_visit": 0.18,
+  "routes_per_visit": 0.17,
   "routes_per_visitor_day": 0.6,
-  "share_rate": 0.075,
+  "share_rate": 0.083,
   "shares": {
    "qr": 1,
    "copy": 1,
@@ -3302,23 +3260,11 @@
     "count": 3
    },
    {
-    "name": "bk",
-    "count": 3
-   },
-   {
     "name": "lp",
     "count": 2
    },
    {
     "name": "p_dxb_airport_terminal_3",
-    "count": 2
-   },
-   {
-    "name": "bb",
-    "count": 2
-   },
-   {
-    "name": "moe",
     "count": 2
    },
    {
@@ -3331,6 +3277,18 @@
    },
    {
     "name": "mc",
+    "count": 1
+   },
+   {
+    "name": "p_dubai_marina_walk",
+    "count": 1
+   },
+   {
+    "name": "bb",
+    "count": 1
+   },
+   {
+    "name": "moe",
     "count": 1
    }
   ],
@@ -3352,10 +3310,6 @@
     "count": 2
    },
    {
-    "name": "moe",
-    "count": 2
-   },
-   {
     "name": "union",
     "count": 1
    },
@@ -3374,6 +3328,10 @@
    {
     "name": "p_dubai_municipality_head_office",
     "count": 1
+   },
+   {
+    "name": "p_palm_jumeirah_mall",
+    "count": 1
    }
   ]
  },
@@ -3381,7 +3339,7 @@
   "/": [
    {
     "name": "(direct or unknown)",
-    "count": 87
+    "count": 77
    },
    {
     "name": "com.reddit.frontpage",
@@ -3763,7 +3721,7 @@
   "(direct or unknown)": [
    {
     "path": "/",
-    "count": 87
+    "count": 77
    },
    {
     "path": "/destinations/etihad-rail-dubai",
@@ -4094,7 +4052,7 @@
  "toprefs": [
   {
    "name": "",
-   "count": 269,
+   "count": 255,
    "ref_scheme": "o"
   },
   {
@@ -4162,17 +4120,17 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 417
+   "count": 415
   },
   {
    "id": "rus",
    "name": "Russian",
-   "count": 17
+   "count": 13
   },
   {
    "id": "(unknown)",
    "name": "(unknown)",
-   "count": 13
+   "count": 6
   },
   {
    "id": "ara",
@@ -4182,7 +4140,7 @@
   {
    "id": "deu",
    "name": "German",
-   "count": 2
+   "count": 1
   },
   {
    "id": "ita",
@@ -4204,12 +4162,12 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 341
+   "count": 332
   },
   {
    "id": "US",
    "name": "United States",
-   "count": 45
+   "count": 42
   },
   {
    "id": "IN",
@@ -4302,11 +4260,6 @@
    "count": 1
   },
   {
-   "id": "LT",
-   "name": "Republic of Lithuania",
-   "count": 1
-  },
-  {
    "id": "MY",
    "name": "Malaysia",
    "count": 1
@@ -4314,11 +4267,6 @@
   {
    "id": "PT",
    "name": "Portugal",
-   "count": 1
-  },
-  {
-   "id": "SE",
-   "name": "Sweden",
    "count": 1
   },
   {
@@ -4331,7 +4279,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 270
+   "count": 262
   },
   {
    "id": "tablet",
@@ -4341,12 +4289,12 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 146
+   "count": 141
   },
   {
    "id": "desktophd",
    "name": "",
-   "count": 12
+   "count": 11
   },
   {
    "id": "unknown",
@@ -4358,17 +4306,17 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 283
+   "count": 273
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 167
+   "count": 164
   },
   {
    "id": "Firefox",
    "name": "Firefox",
-   "count": 4
+   "count": 3
   },
   {
    "name": "",
@@ -4379,27 +4327,27 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 163
+   "count": 160
   },
   {
    "id": "Android",
    "name": "Android",
-   "count": 112
+   "count": 107
   },
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 92
+   "count": 88
   },
   {
    "id": "macOS",
    "name": "macOS",
-   "count": 64
+   "count": 63
   },
   {
    "id": "Linux",
    "name": "Linux",
-   "count": 20
+   "count": 19
   },
   {
    "id": "Chrome OS",
