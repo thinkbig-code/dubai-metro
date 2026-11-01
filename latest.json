@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-01T09:45:13Z",
+ "generated": "2026-11-01T16:26:48Z",
  "start": "2026-10-02",
  "end": "2026-11-02",
  "total": {
-  "total": 451,
+  "total": 453,
   "total_events": 237,
-  "total_utc": 446,
+  "total_utc": 448,
   "stats": [
    {
     "day": "2026-10-02",
@@ -882,7 +882,7 @@
      0
     ],
     "daily": 3,
-    "weekly": 24
+    "weekly": 26
    },
    {
     "day": "2026-10-31",
@@ -932,18 +932,18 @@
      0,
      2,
      0,
+     1,
      0,
      0,
-     0,
-     0,
+     1,
      0,
      0,
      0,
      0,
      0
     ],
-    "daily": 10,
-    "monthly": 10
+    "daily": 12,
+    "monthly": 12
    },
    {
     "day": "2026-11-02",
@@ -1044,7 +1044,7 @@
    "path_id": 110626146,
    "title": "Etihad Rail Dubai Station (Al Yalayis) Metro Station: Jumeirah Golf Estates",
    "event": false,
-   "count": 30,
+   "count": 31,
    "daily": {
     "2026-10-09": 1,
     "2026-10-12": 1,
@@ -1061,7 +1061,7 @@
     "2026-10-28": 5,
     "2026-10-30": 2,
     "2026-10-31": 1,
-    "2026-11-01": 1
+    "2026-11-01": 2
    }
   },
   {
@@ -1558,6 +1558,16 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/destinations/dubai-garden-glow",
+   "path_id": 117509790,
+   "title": "Dubai Garden Glow Metro Station: Max (Red Line), 13 min walk",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-11-01": 1
    }
   },
   {
@@ -3153,9 +3163,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 214,
+  "visits": 216,
   "events_total": 237,
-  "goatcounter_total_with_events": 451,
+  "goatcounter_total_with_events": 453,
   "page_loads_by_day": {
    "2026-10-02": 20,
    "2026-10-03": 4,
@@ -3186,7 +3196,7 @@
    "2026-10-29": 4,
    "2026-10-30": 3,
    "2026-10-31": 8,
-   "2026-11-01": 4
+   "2026-11-01": 6
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -3446,7 +3456,7 @@
   "/destinations/etihad-rail-dubai": [
    {
     "name": "Google",
-    "count": 25
+    "count": 26
    },
    {
     "name": "(direct or unknown)",
@@ -3640,6 +3650,12 @@
     "name": "(direct or unknown)",
     "count": 1
    },
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
+  "/destinations/dubai-garden-glow": [
    {
     "name": "Google",
     "count": 1
@@ -3842,7 +3858,7 @@
   "Google": [
    {
     "path": "/destinations/etihad-rail-dubai",
-    "count": 25
+    "count": 26
    },
    {
     "path": "/destinations/indian-consulate-dubai",
@@ -3914,6 +3930,10 @@
    },
    {
     "path": "/destinations/st-mary-s-catholic-church",
+    "count": 1
+   },
+   {
+    "path": "/destinations/dubai-garden-glow",
     "count": 1
    },
    {
@@ -4107,7 +4127,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 73,
+   "count": 75,
    "ref_scheme": "g"
   },
   {
@@ -4169,7 +4189,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 425
+   "count": 426
   },
   {
    "id": "rus",
@@ -4189,6 +4209,11 @@
   {
    "id": "deu",
    "name": "German",
+   "count": 1
+  },
+  {
+   "id": "fra",
+   "name": "French",
    "count": 1
   },
   {
@@ -4309,6 +4334,11 @@
    "count": 1
   },
   {
+   "id": "MA",
+   "name": "Morocco",
+   "count": 1
+  },
+  {
    "id": "MY",
    "name": "Malaysia",
    "count": 1
@@ -4316,6 +4346,11 @@
   {
    "id": "PT",
    "name": "Portugal",
+   "count": 1
+  },
+  {
+   "id": "SA",
+   "name": "Saudi Arabia",
    "count": 1
   },
   {
@@ -4328,7 +4363,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 272
+   "count": 273
   },
   {
    "id": "tablet",
@@ -4338,7 +4373,7 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 141
+   "count": 142
   },
   {
    "id": "desktophd",
@@ -4355,7 +4390,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 283
+   "count": 285
   },
   {
    "id": "Safari",
@@ -4381,12 +4416,12 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 117
+   "count": 118
   },
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 88
+   "count": 89
   },
   {
    "id": "macOS",
