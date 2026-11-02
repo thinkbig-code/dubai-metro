@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-02T01:03:02Z",
+ "generated": "2026-11-02T07:45:49Z",
  "start": "2025-11-02",
  "end": "2026-11-03",
  "total": {
-  "total": 467,
-  "total_events": 241,
-  "total_utc": 467,
+  "total": 470,
+  "total_events": 242,
+  "total_utc": 470,
   "stats": [
    {
     "day": "2025-11-02",
@@ -10963,8 +10963,8 @@
      0
     ],
     "daily": 12,
-    "weekly": 12,
-    "monthly": 12
+    "weekly": 15,
+    "monthly": 15
    },
    {
     "day": "2026-11-02",
@@ -10977,8 +10977,8 @@
      0,
      0,
      0,
-     0,
-     0,
+     2,
+     1,
      0,
      0,
      0,
@@ -10994,7 +10994,7 @@
      0,
      0
     ],
-    "daily": 0
+    "daily": 3
    },
    {
     "day": "2026-11-03",
@@ -11069,7 +11069,7 @@
    "path_id": 110447314,
    "title": "en",
    "event": true,
-   "count": 47,
+   "count": 48,
    "daily": {
     "2026-10-08": 7,
     "2026-10-09": 6,
@@ -11088,7 +11088,8 @@
     "2026-10-25": 2,
     "2026-10-27": 1,
     "2026-10-29": 1,
-    "2026-10-31": 1
+    "2026-10-31": 1,
+    "2026-11-02": 1
    }
   },
   {
@@ -11188,6 +11189,18 @@
     "2026-10-05": 2,
     "2026-10-08": 1,
     "2026-10-15": 1
+   }
+  },
+  {
+   "path": "/nearest-station",
+   "path_id": 116082941,
+   "title": "Nearest Metro Station to Me in Dubai: Find It by Location",
+   "event": false,
+   "count": 3,
+   "daily": {
+    "2026-10-28": 1,
+    "2026-10-31": 1,
+    "2026-11-02": 1
    }
   },
   {
@@ -11304,17 +11317,6 @@
    "daily": {
     "2026-10-28": 1,
     "2026-10-29": 1
-   }
-  },
-  {
-   "path": "/nearest-station",
-   "path_id": 116082941,
-   "title": "Nearest Metro Station to Me in Dubai: Find It by Location",
-   "event": false,
-   "count": 2,
-   "daily": {
-    "2026-10-28": 1,
-    "2026-10-31": 1
    }
   },
   {
@@ -11610,6 +11612,17 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/ru.html",
+   "path_id": 109203485,
+   "title": "Карта метро Дубая и планировщик маршрутов: метро, трамвай, монорельс",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-10-02": 1,
+    "2026-11-02": 1
    }
   },
   {
@@ -13203,16 +13216,6 @@
    }
   },
   {
-   "path": "/ru.html",
-   "path_id": 109203485,
-   "title": "Карта метро Дубая и планировщик маршрутов: метро, трамвай, монорельс",
-   "event": false,
-   "count": 1,
-   "daily": {
-    "2026-10-02": 1
-   }
-  },
-  {
    "path": "route/bb/moe",
    "path_id": 109178054,
    "title": "ru|map|ok",
@@ -13255,9 +13258,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 226,
-  "events_total": 241,
-  "goatcounter_total_with_events": 467,
+  "visits": 228,
+  "events_total": 242,
+  "goatcounter_total_with_events": 470,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -13289,7 +13292,8 @@
    "2026-10-29": 4,
    "2026-10-30": 3,
    "2026-10-31": 8,
-   "2026-11-01": 6
+   "2026-11-01": 6,
+   "2026-11-02": 2
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -13310,14 +13314,15 @@
    "2026-10-27": 1,
    "2026-10-29": 1,
    "2026-10-31": 1,
-   "2026-11-01": 1
+   "2026-11-01": 1,
+   "2026-11-02": 1
   },
-  "visitor_days": 49,
-  "return_rate": 0.041,
+  "visitor_days": 50,
+  "return_rate": 0.04,
   "routes": 41,
   "routes_not_found": 0,
   "routes_per_visit": 0.18,
-  "routes_per_visitor_day": 0.61,
+  "routes_per_visitor_day": 0.6,
   "share_rate": 0.073,
   "shares": {
    "qr": 1,
@@ -13337,7 +13342,7 @@
    "fail": 1
   },
   "visitors_new_return": {
-   "new": 47,
+   "new": 48,
    "return": 2
   },
   "top_routes": [
@@ -13596,6 +13601,12 @@
     "count": 1
    }
   ],
+  "/nearest-station": [
+   {
+    "name": "Google",
+    "count": 3
+   }
+  ],
   "/destinations/meena-bazaar": [
    {
     "name": "Google",
@@ -13653,12 +13664,6 @@
    }
   ],
   "/destinations/aster-hospital-al-qusais": [
-   {
-    "name": "Google",
-    "count": 2
-   }
-  ],
-  "/nearest-station": [
    {
     "name": "Google",
     "count": 2
@@ -13745,6 +13750,16 @@
    },
    {
     "name": "Google",
+    "count": 1
+   }
+  ],
+  "/ru.html": [
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   },
+   {
+    "name": "dubaimetro.fyi",
     "count": 1
    }
   ],
@@ -13867,12 +13882,6 @@
     "name": "(direct or unknown)",
     "count": 1
    }
-  ],
-  "/ru.html": [
-   {
-    "name": "dubaimetro.fyi",
-    "count": 1
-   }
   ]
  },
  "ref_pages": {
@@ -13907,6 +13916,10 @@
    },
    {
     "path": "/destinations/st-mary-s-catholic-church",
+    "count": 1
+   },
+   {
+    "path": "/ru.html",
     "count": 1
    },
    {
@@ -13966,6 +13979,10 @@
     "count": 3
    },
    {
+    "path": "/nearest-station",
+    "count": 3
+   },
+   {
     "path": "/destinations/meena-bazaar",
     "count": 3
    },
@@ -13975,10 +13992,6 @@
    },
    {
     "path": "/destinations/aster-hospital-al-qusais",
-    "count": 2
-   },
-   {
-    "path": "/nearest-station",
     "count": 2
    },
    {
@@ -14214,13 +14227,13 @@
  "toprefs": [
   {
    "name": "",
-   "count": 270,
+   "count": 272,
    "ref_scheme": "o"
   },
   {
    "id": "Google",
    "name": "Google",
-   "count": 75,
+   "count": 76,
    "ref_scheme": "g"
   },
   {
@@ -14282,7 +14295,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 428
+   "count": 429
   },
   {
    "id": "rus",
@@ -14292,7 +14305,7 @@
   {
    "id": "(unknown)",
    "name": "(unknown)",
-   "count": 13
+   "count": 15
   },
   {
    "id": "ara",
@@ -14329,7 +14342,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 351
+   "count": 352
   },
   {
    "id": "US",
@@ -14380,6 +14393,11 @@
    "id": "KR",
    "name": "South Korea",
    "count": 3
+  },
+  {
+   "id": "CO",
+   "name": "Colombia",
+   "count": 2
   },
   {
    "id": "PK",
@@ -14466,12 +14484,12 @@
   {
    "id": "phone",
    "name": "",
-   "count": 281
+   "count": 282
   },
   {
    "id": "tablet",
    "name": "",
-   "count": 27
+   "count": 29
   },
   {
    "id": "desktop",
@@ -14493,7 +14511,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 295
+   "count": 298
   },
   {
    "id": "Safari",
@@ -14519,7 +14537,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 123
+   "count": 124
   },
   {
    "id": "Windows",
@@ -14529,7 +14547,7 @@
   {
    "id": "macOS",
    "name": "macOS",
-   "count": 64
+   "count": 66
   },
   {
    "id": "Linux",
