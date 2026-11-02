@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-02T08:19:22Z",
+ "generated": "2026-11-02T18:50:39Z",
  "start": "2026-10-03",
  "end": "2026-11-03",
  "total": {
-  "total": 431,
-  "total_events": 232,
-  "total_utc": 431,
+  "total": 443,
+  "total_events": 235,
+  "total_utc": 443,
   "stats": [
    {
     "day": "2026-10-03",
@@ -882,7 +882,7 @@
      0
     ],
     "daily": 11,
-    "weekly": 28
+    "weekly": 40
    },
    {
     "day": "2026-11-01",
@@ -913,7 +913,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 17
+    "monthly": 29
    },
    {
     "day": "2026-11-02",
@@ -930,20 +930,20 @@
      1,
      0,
      2,
+     2,
+     0,
+     7,
      0,
      0,
+     1,
      0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
+     1,
+     1,
      0,
      0,
      0
     ],
-    "daily": 5
+    "daily": 17
    },
    {
     "day": "2026-11-03",
@@ -983,7 +983,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 83,
+   "count": 84,
    "daily": {
     "2026-10-03": 4,
     "2026-10-04": 7,
@@ -1008,7 +1008,8 @@
     "2026-10-27": 1,
     "2026-10-29": 1,
     "2026-10-31": 2,
-    "2026-11-01": 1
+    "2026-11-01": 1,
+    "2026-11-02": 1
    }
   },
   {
@@ -1044,7 +1045,7 @@
    "path_id": 110626146,
    "title": "Etihad Rail Dubai Station (Al Yalayis) Metro Station: Jumeirah Golf Estates",
    "event": false,
-   "count": 31,
+   "count": 32,
    "daily": {
     "2026-10-09": 1,
     "2026-10-12": 1,
@@ -1061,7 +1062,8 @@
     "2026-10-28": 5,
     "2026-10-30": 2,
     "2026-10-31": 1,
-    "2026-11-01": 2
+    "2026-11-01": 2,
+    "2026-11-02": 1
    }
   },
   {
@@ -1102,6 +1104,18 @@
    }
   },
   {
+   "path": "/nearest-station",
+   "path_id": 116082941,
+   "title": "Nearest Metro Station to Me in Dubai: Find It by Location",
+   "event": false,
+   "count": 4,
+   "daily": {
+    "2026-10-28": 1,
+    "2026-10-31": 1,
+    "2026-11-02": 2
+   }
+  },
+  {
    "path": "/destinations/rashid-hospital",
    "path_id": 112804201,
    "title": "Rashid Hospital Metro Station: Oud Metha (Green Line), 5 min walk",
@@ -1111,6 +1125,19 @@
     "2026-10-19": 1,
     "2026-10-26": 2,
     "2026-10-27": 1
+   }
+  },
+  {
+   "path": "/destinations/dubai-mall",
+   "path_id": 110484997,
+   "title": "Dubai Mall Metro Station: Burj Khalifa/Dubai Mall (Red Line), 12 min walk",
+   "event": false,
+   "count": 4,
+   "daily": {
+    "2026-10-08": 1,
+    "2026-10-26": 1,
+    "2026-10-27": 1,
+    "2026-11-02": 1
    }
   },
   {
@@ -1139,18 +1166,6 @@
    }
   },
   {
-   "path": "/nearest-station",
-   "path_id": 116082941,
-   "title": "Nearest Metro Station to Me in Dubai: Find It by Location",
-   "event": false,
-   "count": 3,
-   "daily": {
-    "2026-10-28": 1,
-    "2026-10-31": 1,
-    "2026-11-02": 1
-   }
-  },
-  {
    "path": "/destinations/meena-bazaar",
    "path_id": 115183314,
    "title": "Meena Bazaar Metro Station: Sharaf DG (Green Line), 9 min walk",
@@ -1160,6 +1175,18 @@
     "2026-10-26": 1,
     "2026-10-27": 1,
     "2026-10-31": 1
+   }
+  },
+  {
+   "path": "/map",
+   "path_id": 114750763,
+   "title": "Dubai Metro Map 2026: All Lines and Stations (Image and Interactive)",
+   "event": false,
+   "count": 3,
+   "daily": {
+    "2026-10-25": 1,
+    "2026-11-01": 1,
+    "2026-11-02": 1
    }
   },
   {
@@ -1187,6 +1214,18 @@
    }
   },
   {
+   "path": "visit/return/-",
+   "path_id": 110878762,
+   "title": "en",
+   "event": true,
+   "count": 3,
+   "daily": {
+    "2026-10-10": 1,
+    "2026-11-01": 1,
+    "2026-11-02": 1
+   }
+  },
+  {
    "path": "/ar.html",
    "path_id": 110830469,
    "title": "خريطة مترو دبي التفاعلية: المترو والترام ومونوريل النخلة",
@@ -1206,18 +1245,6 @@
    "count": 3,
    "daily": {
     "2026-10-09": 3
-   }
-  },
-  {
-   "path": "/destinations/dubai-mall",
-   "path_id": 110484997,
-   "title": "Dubai Mall Metro Station: Burj Khalifa/Dubai Mall (Red Line), 12 min walk",
-   "event": false,
-   "count": 3,
-   "daily": {
-    "2026-10-08": 1,
-    "2026-10-26": 1,
-    "2026-10-27": 1
    }
   },
   {
@@ -1264,17 +1291,6 @@
    "daily": {
     "2026-10-28": 1,
     "2026-10-29": 1
-   }
-  },
-  {
-   "path": "/map",
-   "path_id": 114750763,
-   "title": "Dubai Metro Map 2026: All Lines and Stations (Image and Interactive)",
-   "event": false,
-   "count": 2,
-   "daily": {
-    "2026-10-25": 1,
-    "2026-11-01": 1
    }
   },
   {
@@ -1374,17 +1390,6 @@
    "daily": {
     "2026-10-11": 1,
     "2026-10-25": 1
-   }
-  },
-  {
-   "path": "visit/return/-",
-   "path_id": 110878762,
-   "title": "en",
-   "event": true,
-   "count": 2,
-   "daily": {
-    "2026-10-10": 1,
-    "2026-11-01": 1
    }
   },
   {
@@ -1547,6 +1552,66 @@
    "count": 2,
    "daily": {
     "2026-11-02": 2
+   }
+  },
+  {
+   "path": "/stations/al-ras",
+   "path_id": 117806534,
+   "title": "Al Ras Metro Station, Dubai: Green Line",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-11-02": 1
+   }
+  },
+  {
+   "path": "noresult/indigo",
+   "path_id": 117752318,
+   "title": "en|indigo",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-02": 1
+   }
+  },
+  {
+   "path": "geo/ok/bk",
+   "path_id": 117752054,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-02": 1
+   }
+  },
+  {
+   "path": "/destinations/al-jalila-children-s-specialty-hospital",
+   "path_id": 117749447,
+   "title": "Al Jalila Children's Specialty Hospital Metro Station: Dubai Healthcare City",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-11-02": 1
+   }
+  },
+  {
+   "path": "/stations/city-centre-deira",
+   "path_id": 117728351,
+   "title": "City Centre Deira Metro Station, Dubai: Red Line",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-11-02": 1
+   }
+  },
+  {
+   "path": "/destinations/dubai-chamber-of-commerce",
+   "path_id": 117725044,
+   "title": "Dubai Chamber of Commerce Metro Station: Union, 11 min walk",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-11-02": 1
    }
   },
   {
@@ -3112,9 +3177,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 199,
-  "events_total": 232,
-  "goatcounter_total_with_events": 431,
+  "visits": 208,
+  "events_total": 235,
+  "goatcounter_total_with_events": 443,
   "page_loads_by_day": {
    "2026-10-03": 4,
    "2026-10-04": 7,
@@ -3145,7 +3210,7 @@
    "2026-10-30": 3,
    "2026-10-31": 8,
    "2026-11-01": 6,
-   "2026-11-02": 3
+   "2026-11-02": 12
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -3167,22 +3232,26 @@
    "2026-10-29": 1,
    "2026-10-31": 1,
    "2026-11-01": 1,
-   "2026-11-02": 2
+   "2026-11-02": 3
   },
-  "visitor_days": 51,
-  "return_rate": 0.039,
+  "visitor_days": 52,
+  "return_rate": 0.058,
   "routes": 35,
   "routes_not_found": 0,
-  "routes_per_visit": 0.18,
-  "routes_per_visitor_day": 0.59,
+  "routes_per_visit": 0.17,
+  "routes_per_visitor_day": 0.58,
   "share_rate": 0.086,
   "shares": {
    "qr": 1,
    "copy": 1,
    "whatsapp": 1
   },
-  "failed_search_rate": 0.029,
+  "failed_search_rate": 0.056,
   "failed_searches": [
+   {
+    "name": "indigo",
+    "count": 1
+   },
    {
     "name": "jvc",
     "count": 1
@@ -3190,12 +3259,12 @@
   ],
   "nearest_station": {
    "denied": 4,
-   "ok": 3,
+   "ok": 4,
    "fail": 1
   },
   "visitors_new_return": {
    "new": 49,
-   "return": 2
+   "return": 3
   },
   "top_routes": [
    {
@@ -3363,6 +3432,10 @@
     "count": 2
    },
    {
+    "name": "dubaimetro.fyi/nearest-station",
+    "count": 2
+   },
+   {
     "name": "Google",
     "count": 1
    },
@@ -3393,16 +3466,12 @@
    {
     "name": "dubaimetro.fyi/destinations/al-fahidi",
     "count": 1
-   },
-   {
-    "name": "dubaimetro.fyi/nearest-station",
-    "count": 1
    }
   ],
   "/destinations/etihad-rail-dubai": [
    {
     "name": "Google",
-    "count": 26
+    "count": 27
    },
    {
     "name": "(direct or unknown)",
@@ -3439,6 +3508,12 @@
     "count": 2
    }
   ],
+  "/nearest-station": [
+   {
+    "name": "Google",
+    "count": 4
+   }
+  ],
   "/destinations/rashid-hospital": [
    {
     "name": "Google",
@@ -3449,16 +3524,30 @@
     "count": 1
    }
   ],
-  "/nearest-station": [
+  "/destinations/dubai-mall": [
    {
     "name": "Google",
     "count": 3
+   },
+   {
+    "name": "chatgpt.com",
+    "count": 1
    }
   ],
   "/destinations/meena-bazaar": [
    {
     "name": "Google",
     "count": 3
+   }
+  ],
+  "/map": [
+   {
+    "name": "Google",
+    "count": 2
+   },
+   {
+    "name": "dubaimetro.fyi/nearest-station",
+    "count": 1
    }
   ],
   "/destinations/palm-jumeirah-mall": [
@@ -3501,23 +3590,7 @@
     "count": 3
    }
   ],
-  "/destinations/dubai-mall": [
-   {
-    "name": "Google",
-    "count": 2
-   },
-   {
-    "name": "chatgpt.com",
-    "count": 1
-   }
-  ],
   "/destinations/aster-hospital-al-qusais": [
-   {
-    "name": "Google",
-    "count": 2
-   }
-  ],
-  "/map": [
    {
     "name": "Google",
     "count": 2
@@ -3605,6 +3678,30 @@
    {
     "name": "(direct or unknown)",
     "count": 2
+   }
+  ],
+  "/stations/al-ras": [
+   {
+    "name": "chatgpt.com",
+    "count": 1
+   }
+  ],
+  "/destinations/al-jalila-children-s-specialty-hospital": [
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   }
+  ],
+  "/stations/city-centre-deira": [
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
+  "/destinations/dubai-chamber-of-commerce": [
+   {
+    "name": "(direct or unknown)",
+    "count": 1
    }
   ],
   "/destinations/dubai-garden-glow": [
@@ -3767,6 +3864,14 @@
     "count": 1
    },
    {
+    "path": "/destinations/al-jalila-children-s-specialty-hospital",
+    "count": 1
+   },
+   {
+    "path": "/destinations/dubai-chamber-of-commerce",
+    "count": 1
+   },
+   {
     "path": "/destinations/aster-hospital-mankhool",
     "count": 1
    },
@@ -3805,10 +3910,20 @@
     "count": 1
    }
   ],
+  "dubaimetro.fyi/nearest-station": [
+   {
+    "path": "/",
+    "count": 2
+   },
+   {
+    "path": "/map",
+    "count": 1
+   }
+  ],
   "Google": [
    {
     "path": "/destinations/etihad-rail-dubai",
-    "count": 26
+    "count": 27
    },
    {
     "path": "/destinations/indian-consulate-dubai",
@@ -3819,11 +3934,15 @@
     "count": 4
    },
    {
+    "path": "/nearest-station",
+    "count": 4
+   },
+   {
     "path": "/destinations/rashid-hospital",
     "count": 3
    },
    {
-    "path": "/nearest-station",
+    "path": "/destinations/dubai-mall",
     "count": 3
    },
    {
@@ -3831,15 +3950,11 @@
     "count": 3
    },
    {
-    "path": "/destinations/dubai-mall",
+    "path": "/map",
     "count": 2
    },
    {
     "path": "/destinations/aster-hospital-al-qusais",
-    "count": 2
-   },
-   {
-    "path": "/map",
     "count": 2
    },
    {
@@ -3880,6 +3995,10 @@
    },
    {
     "path": "/destinations/st-mary-s-catholic-church",
+    "count": 1
+   },
+   {
+    "path": "/stations/city-centre-deira",
     "count": 1
    },
    {
@@ -3981,6 +4100,10 @@
     "count": 1
    },
    {
+    "path": "/stations/al-ras",
+    "count": 1
+   },
+   {
     "path": "/destinations/al-fahidi",
     "count": 1
    },
@@ -4021,12 +4144,6 @@
     "count": 1
    }
   ],
-  "dubaimetro.fyi/nearest-station": [
-   {
-    "path": "/",
-    "count": 1
-   }
-  ],
   "www.facebook.com": [
    {
     "path": "/tl.html",
@@ -4061,13 +4178,13 @@
  "toprefs": [
   {
    "name": "",
-   "count": 237,
+   "count": 240,
    "ref_scheme": "o"
   },
   {
    "id": "Google",
    "name": "Google",
-   "count": 76,
+   "count": 80,
    "ref_scheme": "g"
   },
   {
@@ -4079,7 +4196,7 @@
   {
    "id": "chatgpt.com",
    "name": "chatgpt.com",
-   "count": 15,
+   "count": 16,
    "ref_scheme": "c"
   },
   {
@@ -4123,7 +4240,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 405
+   "count": 417
   },
   {
    "id": "(unknown)",
@@ -4170,17 +4287,17 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 336
+   "count": 346
   },
   {
    "id": "US",
    "name": "United States",
-   "count": 38
+   "count": 39
   },
   {
    "id": "IN",
    "name": "India",
-   "count": 10
+   "count": 11
   },
   {
    "id": "GB",
@@ -4277,7 +4394,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 260
+   "count": 271
   },
   {
    "id": "tablet",
@@ -4287,7 +4404,7 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 134
+   "count": 135
   },
   {
    "id": "desktophd",
@@ -4304,12 +4421,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 273
+   "count": 283
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 155
+   "count": 157
   },
   {
    "id": "Firefox",
@@ -4321,12 +4438,12 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 151
+   "count": 153
   },
   {
    "id": "Android",
    "name": "Android",
-   "count": 114
+   "count": 123
   },
   {
    "id": "Windows",
@@ -4341,7 +4458,7 @@
   {
    "id": "Linux",
    "name": "Linux",
-   "count": 12
+   "count": 13
   },
   {
    "id": "Chrome OS",
