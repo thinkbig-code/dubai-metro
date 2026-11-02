@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-02T07:44:52Z",
+ "generated": "2026-11-02T08:19:22Z",
  "start": "2026-10-03",
  "end": "2026-11-03",
  "total": {
-  "total": 429,
-  "total_events": 231,
-  "total_utc": 429,
+  "total": 431,
+  "total_events": 232,
+  "total_utc": 431,
   "stats": [
    {
     "day": "2026-10-03",
@@ -882,7 +882,7 @@
      0
     ],
     "daily": 11,
-    "weekly": 26
+    "weekly": 28
    },
    {
     "day": "2026-11-01",
@@ -913,7 +913,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 15
+    "monthly": 17
    },
    {
     "day": "2026-11-02",
@@ -929,7 +929,7 @@
      2,
      1,
      0,
-     0,
+     2,
      0,
      0,
      0,
@@ -943,7 +943,7 @@
      0,
      0
     ],
-    "daily": 3
+    "daily": 5
    },
    {
     "day": "2026-11-03",
@@ -1016,7 +1016,7 @@
    "path_id": 110447314,
    "title": "en",
    "event": true,
-   "count": 48,
+   "count": 49,
    "daily": {
     "2026-10-08": 7,
     "2026-10-09": 6,
@@ -1036,7 +1036,7 @@
     "2026-10-27": 1,
     "2026-10-29": 1,
     "2026-10-31": 1,
-    "2026-11-02": 1
+    "2026-11-02": 2
    }
   },
   {
@@ -1537,6 +1537,16 @@
    "daily": {
     "2026-10-05": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/ru.html",
+   "path_id": 109203485,
+   "title": "Карта метро Дубая и планировщик маршрутов: метро, трамвай, монорельс",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-11-02": 2
    }
   },
   {
@@ -3098,23 +3108,13 @@
    "daily": {
     "2026-10-08": 1
    }
-  },
-  {
-   "path": "/ru.html",
-   "path_id": 109203485,
-   "title": "Карта метро Дубая и планировщик маршрутов: метро, трамвай, монорельс",
-   "event": false,
-   "count": 1,
-   "daily": {
-    "2026-11-02": 1
-   }
   }
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 198,
-  "events_total": 231,
-  "goatcounter_total_with_events": 429,
+  "visits": 199,
+  "events_total": 232,
+  "goatcounter_total_with_events": 431,
   "page_loads_by_day": {
    "2026-10-03": 4,
    "2026-10-04": 7,
@@ -3145,7 +3145,7 @@
    "2026-10-30": 3,
    "2026-10-31": 8,
    "2026-11-01": 6,
-   "2026-11-02": 2
+   "2026-11-02": 3
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -3167,14 +3167,14 @@
    "2026-10-29": 1,
    "2026-10-31": 1,
    "2026-11-01": 1,
-   "2026-11-02": 1
+   "2026-11-02": 2
   },
-  "visitor_days": 50,
-  "return_rate": 0.04,
+  "visitor_days": 51,
+  "return_rate": 0.039,
   "routes": 35,
   "routes_not_found": 0,
   "routes_per_visit": 0.18,
-  "routes_per_visitor_day": 0.6,
+  "routes_per_visitor_day": 0.59,
   "share_rate": 0.086,
   "shares": {
    "qr": 1,
@@ -3194,7 +3194,7 @@
    "fail": 1
   },
   "visitors_new_return": {
-   "new": 48,
+   "new": 49,
    "return": 2
   },
   "top_routes": [
@@ -3601,6 +3601,12 @@
     "count": 1
    }
   ],
+  "/ru.html": [
+   {
+    "name": "(direct or unknown)",
+    "count": 2
+   }
+  ],
   "/destinations/dubai-garden-glow": [
    {
     "name": "Google",
@@ -3720,12 +3726,6 @@
     "name": "(direct or unknown)",
     "count": 1
    }
-  ],
-  "/ru.html": [
-   {
-    "name": "(direct or unknown)",
-    "count": 1
-   }
   ]
  },
  "ref_pages": {
@@ -3744,6 +3744,10 @@
    },
    {
     "path": "/lines/red-line",
+    "count": 2
+   },
+   {
+    "path": "/ru.html",
     "count": 2
    },
    {
@@ -3772,10 +3776,6 @@
    },
    {
     "path": "/tram",
-    "count": 1
-   },
-   {
-    "path": "/ru.html",
     "count": 1
    }
   ],
@@ -4061,7 +4061,7 @@
  "toprefs": [
   {
    "name": "",
-   "count": 235,
+   "count": 237,
    "ref_scheme": "o"
   },
   {
@@ -4128,7 +4128,7 @@
   {
    "id": "(unknown)",
    "name": "(unknown)",
-   "count": 8
+   "count": 10
   },
   {
    "id": "rus",
@@ -4218,6 +4218,11 @@
    "count": 3
   },
   {
+   "id": "BR",
+   "name": "Brazil",
+   "count": 2
+  },
+  {
    "id": "CO",
    "name": "Colombia",
    "count": 2
@@ -4277,7 +4282,7 @@
   {
    "id": "tablet",
    "name": "",
-   "count": 24
+   "count": 26
   },
   {
    "id": "desktop",
@@ -4299,7 +4304,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 271
+   "count": 273
   },
   {
    "id": "Safari",
@@ -4331,7 +4336,7 @@
   {
    "id": "macOS",
    "name": "macOS",
-   "count": 65
+   "count": 67
   },
   {
    "id": "Linux",
