@@ -1,43 +1,13 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-03T23:43:11Z",
- "start": "2025-11-03",
- "end": "2026-11-04",
+ "generated": "2026-11-04T03:20:20Z",
+ "start": "2025-11-04",
+ "end": "2026-11-05",
  "total": {
-  "total": 495,
-  "total_events": 249,
-  "total_utc": 495,
+  "total": 497,
+  "total_events": 250,
+  "total_utc": 497,
   "stats": [
-   {
-    "day": "2025-11-03",
-    "hourly": [
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0
-    ],
-    "daily": 0
-   },
    {
     "day": "2025-11-04",
     "hourly": [
@@ -9906,8 +9876,7 @@
      0,
      0
     ],
-    "daily": 0,
-    "weekly": 58
+    "daily": 0
    },
    {
     "day": "2026-09-29",
@@ -9937,7 +9906,8 @@
      0,
      0
     ],
-    "daily": 0
+    "daily": 0,
+    "weekly": 71
    },
    {
     "day": "2026-09-30",
@@ -10118,8 +10088,7 @@
      0,
      0
     ],
-    "daily": 13,
-    "weekly": 219
+    "daily": 13
    },
    {
     "day": "2026-10-06",
@@ -10149,7 +10118,8 @@
      0,
      0
     ],
-    "daily": 0
+    "daily": 0,
+    "weekly": 215
    },
    {
     "day": "2026-10-07",
@@ -10329,8 +10299,7 @@
      0,
      0
     ],
-    "daily": 9,
-    "weekly": 58
+    "daily": 9
    },
    {
     "day": "2026-10-13",
@@ -10360,7 +10329,8 @@
      2,
      0
     ],
-    "daily": 7
+    "daily": 7,
+    "weekly": 56
    },
    {
     "day": "2026-10-14",
@@ -10540,8 +10510,7 @@
      0,
      0
     ],
-    "daily": 7,
-    "weekly": 68
+    "daily": 7
    },
    {
     "day": "2026-10-20",
@@ -10571,7 +10540,8 @@
      1,
      0
     ],
-    "daily": 13
+    "daily": 13,
+    "weekly": 75
    },
    {
     "day": "2026-10-21",
@@ -10751,8 +10721,7 @@
      2,
      0
     ],
-    "daily": 14,
-    "weekly": 64
+    "daily": 14
    },
    {
     "day": "2026-10-27",
@@ -10782,7 +10751,8 @@
      0,
      0
     ],
-    "daily": 11
+    "daily": 11,
+    "weekly": 67
    },
    {
     "day": "2026-10-28",
@@ -10933,7 +10903,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 40
+    "monthly": 42
    },
    {
     "day": "2026-11-02",
@@ -10963,8 +10933,7 @@
      0,
      0
     ],
-    "daily": 17,
-    "weekly": 28
+    "daily": 17
    },
    {
     "day": "2026-11-03",
@@ -10994,10 +10963,41 @@
      0,
      0
     ],
-    "daily": 11
+    "daily": 11,
+    "weekly": 13
    },
    {
     "day": "2026-11-04",
+    "hourly": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     2,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "daily": 2
+   },
+   {
+    "day": "2026-11-05",
     "hourly": [
      0,
      0,
@@ -11034,7 +11034,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 116,
+   "count": 117,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -11063,7 +11063,8 @@
     "2026-10-31": 2,
     "2026-11-01": 1,
     "2026-11-02": 1,
-    "2026-11-03": 3
+    "2026-11-03": 3,
+    "2026-11-04": 1
    }
   },
   {
@@ -11071,7 +11072,7 @@
    "path_id": 110447314,
    "title": "en",
    "event": true,
-   "count": 50,
+   "count": 51,
    "daily": {
     "2026-10-08": 7,
     "2026-10-09": 6,
@@ -11092,7 +11093,8 @@
     "2026-10-29": 1,
     "2026-10-31": 1,
     "2026-11-02": 2,
-    "2026-11-03": 1
+    "2026-11-03": 1,
+    "2026-11-04": 1
    }
   },
   {
@@ -13350,9 +13352,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 246,
-  "events_total": 249,
-  "goatcounter_total_with_events": 495,
+  "visits": 247,
+  "events_total": 250,
+  "goatcounter_total_with_events": 497,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -13386,7 +13388,8 @@
    "2026-10-31": 8,
    "2026-11-01": 6,
    "2026-11-02": 12,
-   "2026-11-03": 8
+   "2026-11-03": 8,
+   "2026-11-04": 1
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -13409,14 +13412,15 @@
    "2026-10-31": 1,
    "2026-11-01": 1,
    "2026-11-02": 3,
-   "2026-11-03": 2
+   "2026-11-03": 2,
+   "2026-11-04": 1
   },
-  "visitor_days": 54,
-  "return_rate": 0.074,
+  "visitor_days": 55,
+  "return_rate": 0.073,
   "routes": 41,
   "routes_not_found": 0,
   "routes_per_visit": 0.17,
-  "routes_per_visitor_day": 0.56,
+  "routes_per_visitor_day": 0.55,
   "share_rate": 0.073,
   "shares": {
    "qr": 1,
@@ -13440,7 +13444,7 @@
    "fail": 1
   },
   "visitors_new_return": {
-   "new": 50,
+   "new": 51,
    "return": 4
   },
   "top_routes": [
@@ -13594,7 +13598,7 @@
   "/": [
    {
     "name": "(direct or unknown)",
-    "count": 89
+    "count": 90
    },
    {
     "name": "com.reddit.frontpage",
@@ -14024,7 +14028,7 @@
   "(direct or unknown)": [
    {
     "path": "/",
-    "count": 89
+    "count": 90
    },
    {
     "path": "/destinations/etihad-rail-dubai",
@@ -14391,7 +14395,7 @@
  "toprefs": [
   {
    "name": "",
-   "count": 280,
+   "count": 282,
    "ref_scheme": "o"
   },
   {
@@ -14459,7 +14463,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 452
+   "count": 454
   },
   {
    "id": "(unknown)",
@@ -14519,14 +14523,14 @@
    "count": 13
   },
   {
-   "id": "GB",
-   "name": "United Kingdom",
+   "id": "FR",
+   "name": "France",
    "count": 8
   },
   {
-   "id": "FR",
-   "name": "France",
-   "count": 6
+   "id": "GB",
+   "name": "United Kingdom",
+   "count": 8
   },
   {
    "id": "CN",
@@ -14653,7 +14657,7 @@
   {
    "id": "tablet",
    "name": "",
-   "count": 33
+   "count": 35
   },
   {
    "id": "desktop",
@@ -14675,7 +14679,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 319
+   "count": 321
   },
   {
    "id": "Safari",
@@ -14716,7 +14720,7 @@
   {
    "id": "Linux",
    "name": "Linux",
-   "count": 21
+   "count": 23
   },
   {
    "id": "Chrome OS",
