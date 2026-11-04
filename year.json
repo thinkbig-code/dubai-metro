@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-04T11:37:13Z",
+ "generated": "2026-11-04T18:53:36Z",
  "start": "2025-11-04",
  "end": "2026-11-05",
  "total": {
-  "total": 513,
+  "total": 514,
   "total_events": 256,
-  "total_utc": 513,
+  "total_utc": 514,
   "stats": [
    {
     "day": "2025-11-04",
@@ -10903,7 +10903,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 58
+    "monthly": 59
    },
    {
     "day": "2026-11-02",
@@ -10964,7 +10964,7 @@
      0
     ],
     "daily": 11,
-    "weekly": 29
+    "weekly": 30
    },
    {
     "day": "2026-11-04",
@@ -10984,7 +10984,7 @@
      3,
      0,
      3,
-     0,
+     1,
      0,
      0,
      0,
@@ -10994,7 +10994,7 @@
      0,
      0
     ],
-    "daily": 18
+    "daily": 19
    },
    {
     "day": "2026-11-05",
@@ -11661,6 +11661,16 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/destinations/jebel-ali-free-zone",
+   "path_id": 118293825,
+   "title": "Jebel Ali Free Zone (JAFZA) Metro Station: Life Pharmacy, 14 min walk",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-11-04": 1
    }
   },
   {
@@ -13386,9 +13396,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 257,
+  "visits": 258,
   "events_total": 256,
-  "goatcounter_total_with_events": 513,
+  "goatcounter_total_with_events": 514,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -13423,7 +13433,7 @@
    "2026-11-01": 6,
    "2026-11-02": 12,
    "2026-11-03": 8,
-   "2026-11-04": 11
+   "2026-11-04": 12
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -13917,6 +13927,12 @@
     "count": 1
    }
   ],
+  "/destinations/jebel-ali-free-zone": [
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
   "/destinations/al-barsha-pond-park": [
    {
     "name": "Google",
@@ -14313,6 +14329,10 @@
     "count": 1
    },
    {
+    "path": "/destinations/jebel-ali-free-zone",
+    "count": 1
+   },
+   {
     "path": "/destinations/al-barsha-pond-park",
     "count": 1
    },
@@ -14465,7 +14485,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 89,
+   "count": 90,
    "ref_scheme": "g"
   },
   {
@@ -14527,7 +14547,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 470
+   "count": 471
   },
   {
    "id": "(unknown)",
@@ -14574,7 +14594,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 379
+   "count": 380
   },
   {
    "id": "US",
@@ -14721,7 +14741,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 305
+   "count": 306
   },
   {
    "id": "tablet",
@@ -14748,7 +14768,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 334
+   "count": 335
   },
   {
    "id": "Safari",
@@ -14774,7 +14794,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 140
+   "count": 141
   },
   {
    "id": "Windows",
