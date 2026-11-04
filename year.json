@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-04T03:20:20Z",
+ "generated": "2026-11-04T07:34:28Z",
  "start": "2025-11-04",
  "end": "2026-11-05",
  "total": {
-  "total": 497,
-  "total_events": 250,
-  "total_utc": 497,
+  "total": 507,
+  "total_events": 254,
+  "total_utc": 507,
   "stats": [
    {
     "day": "2025-11-04",
@@ -10903,7 +10903,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 42
+    "monthly": 52
    },
    {
     "day": "2026-11-02",
@@ -10964,7 +10964,7 @@
      0
     ],
     "daily": 11,
-    "weekly": 13
+    "weekly": 23
    },
    {
     "day": "2026-11-04",
@@ -10977,8 +10977,8 @@
      0,
      0,
      2,
-     0,
-     0,
+     7,
+     3,
      0,
      0,
      0,
@@ -10994,7 +10994,7 @@
      0,
      0
     ],
-    "daily": 2
+    "daily": 12
    },
    {
     "day": "2026-11-05",
@@ -11034,7 +11034,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 117,
+   "count": 120,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -11064,7 +11064,7 @@
     "2026-11-01": 1,
     "2026-11-02": 1,
     "2026-11-03": 3,
-    "2026-11-04": 1
+    "2026-11-04": 4
    }
   },
   {
@@ -11072,7 +11072,7 @@
    "path_id": 110447314,
    "title": "en",
    "event": true,
-   "count": 51,
+   "count": 54,
    "daily": {
     "2026-10-08": 7,
     "2026-10-09": 6,
@@ -11094,7 +11094,7 @@
     "2026-10-31": 1,
     "2026-11-02": 2,
     "2026-11-03": 1,
-    "2026-11-04": 1
+    "2026-11-04": 4
    }
   },
   {
@@ -11128,14 +11128,15 @@
    "path_id": 112289662,
    "title": "Indian Consulate Dubai Metro Station: BurJuman, 7 min walk",
    "event": false,
-   "count": 7,
+   "count": 8,
    "daily": {
     "2026-10-16": 1,
     "2026-10-18": 1,
     "2026-10-23": 1,
     "2026-10-26": 2,
     "2026-10-28": 1,
-    "2026-11-03": 1
+    "2026-11-03": 1,
+    "2026-11-04": 1
    }
   },
   {
@@ -11454,6 +11455,17 @@
    }
   },
   {
+   "path": "map_station_click/dhcc/-",
+   "path_id": 111090916,
+   "title": "en|home|phone",
+   "event": true,
+   "count": 2,
+   "daily": {
+    "2026-10-11": 1,
+    "2026-11-04": 1
+   }
+  },
+  {
    "path": "/lines/green-line",
    "path_id": 111066360,
    "title": "Dubai Metro Green Line: Stations, Map and Hours",
@@ -11647,6 +11659,26 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/destinations/al-barsha-pond-park",
+   "path_id": 118207314,
+   "title": "Al Barsha Pond Park Metro Station: InsuranceMarket (Red Line)",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-11-04": 1
+   }
+  },
+  {
+   "path": "/destinations/jumeirah-emirates-towers",
+   "path_id": 118205428,
+   "title": "Jumeirah Emirates Towers Metro Station: Emirates Towers, 4 min walk",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-11-04": 1
    }
   },
   {
@@ -12313,16 +12345,6 @@
    "path": "route_to_station_click/dhcc/-",
    "path_id": 111090921,
    "title": "en",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-11": 1
-   }
-  },
-  {
-   "path": "map_station_click/dhcc/-",
-   "path_id": 111090916,
-   "title": "en|home|phone",
    "event": true,
    "count": 1,
    "daily": {
@@ -13352,9 +13374,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 247,
-  "events_total": 250,
-  "goatcounter_total_with_events": 497,
+  "visits": 253,
+  "events_total": 254,
+  "goatcounter_total_with_events": 507,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -13389,7 +13411,7 @@
    "2026-11-01": 6,
    "2026-11-02": 12,
    "2026-11-03": 8,
-   "2026-11-04": 1
+   "2026-11-04": 7
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -13413,14 +13435,14 @@
    "2026-11-01": 1,
    "2026-11-02": 3,
    "2026-11-03": 2,
-   "2026-11-04": 1
+   "2026-11-04": 4
   },
-  "visitor_days": 55,
-  "return_rate": 0.073,
+  "visitor_days": 58,
+  "return_rate": 0.069,
   "routes": 41,
   "routes_not_found": 0,
-  "routes_per_visit": 0.17,
-  "routes_per_visitor_day": 0.55,
+  "routes_per_visit": 0.16,
+  "routes_per_visitor_day": 0.52,
   "share_rate": 0.073,
   "shares": {
    "qr": 1,
@@ -13444,7 +13466,7 @@
    "fail": 1
   },
   "visitors_new_return": {
-   "new": 51,
+   "new": 54,
    "return": 4
   },
   "top_routes": [
@@ -13598,7 +13620,7 @@
   "/": [
    {
     "name": "(direct or unknown)",
-    "count": 90
+    "count": 92
    },
    {
     "name": "com.reddit.frontpage",
@@ -13611,6 +13633,10 @@
    {
     "name": "dubaimetro.fyi/nearest-station",
     "count": 3
+   },
+   {
+    "name": "chatgpt.com",
+    "count": 2
    },
    {
     "name": "dubaimetro.fyi/destinations/etihad-rail-dubai",
@@ -13630,10 +13656,6 @@
    },
    {
     "name": "web.telegram.org",
-    "count": 1
-   },
-   {
-    "name": "chatgpt.com",
     "count": 1
    },
    {
@@ -13670,7 +13692,7 @@
   "/destinations/indian-consulate-dubai": [
    {
     "name": "Google",
-    "count": 7
+    "count": 8
    }
   ],
   "/nearest-station": [
@@ -13879,6 +13901,18 @@
     "count": 1
    }
   ],
+  "/destinations/al-barsha-pond-park": [
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
+  "/destinations/jumeirah-emirates-towers": [
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   }
+  ],
   "/destinations/international-modern-hospital": [
    {
     "name": "Google",
@@ -14028,7 +14062,7 @@
   "(direct or unknown)": [
    {
     "path": "/",
-    "count": 90
+    "count": 92
    },
    {
     "path": "/destinations/etihad-rail-dubai",
@@ -14060,6 +14094,10 @@
    },
    {
     "path": "/destinations/st-mary-s-catholic-church",
+    "count": 1
+   },
+   {
+    "path": "/destinations/jumeirah-emirates-towers",
     "count": 1
    },
    {
@@ -14109,6 +14147,64 @@
     "count": 1
    }
   ],
+  "chatgpt.com": [
+   {
+    "path": "/",
+    "count": 2
+   },
+   {
+    "path": "/destinations/etihad-rail-dubai",
+    "count": 2
+   },
+   {
+    "path": "/destinations/palm-jumeirah-mall",
+    "count": 2
+   },
+   {
+    "path": "/destinations/al-zahra-hospital-dubai",
+    "count": 1
+   },
+   {
+    "path": "/destinations/rashid-hospital",
+    "count": 1
+   },
+   {
+    "path": "/destinations/dubai-mall",
+    "count": 1
+   },
+   {
+    "path": "/destinations/times-square-center",
+    "count": 1
+   },
+   {
+    "path": "/destinations/gdrfa-immigration-al-jafiliya",
+    "count": 1
+   },
+   {
+    "path": "/destinations/dubai-police-general-headquarters",
+    "count": 1
+   },
+   {
+    "path": "/destinations/american-hospital-dubai",
+    "count": 1
+   },
+   {
+    "path": "/stations/al-ras",
+    "count": 1
+   },
+   {
+    "path": "/destinations/al-fahidi",
+    "count": 1
+   },
+   {
+    "path": "/destinations/jw-marriott-marquis-dubai",
+    "count": 1
+   },
+   {
+    "path": "/destinations/dubai-creek-harbour",
+    "count": 1
+   }
+  ],
   "dubaimetro.fyi/destinations/etihad-rail-dubai": [
    {
     "path": "/",
@@ -14126,7 +14222,7 @@
    },
    {
     "path": "/destinations/indian-consulate-dubai",
-    "count": 7
+    "count": 8
    },
    {
     "path": "/nearest-station",
@@ -14198,6 +14294,10 @@
    },
    {
     "path": "/destinations/st-mary-s-catholic-church",
+    "count": 1
+   },
+   {
+    "path": "/destinations/al-barsha-pond-park",
     "count": 1
    },
    {
@@ -14275,64 +14375,6 @@
     "count": 1
    }
   ],
-  "chatgpt.com": [
-   {
-    "path": "/destinations/etihad-rail-dubai",
-    "count": 2
-   },
-   {
-    "path": "/destinations/palm-jumeirah-mall",
-    "count": 2
-   },
-   {
-    "path": "/",
-    "count": 1
-   },
-   {
-    "path": "/destinations/al-zahra-hospital-dubai",
-    "count": 1
-   },
-   {
-    "path": "/destinations/rashid-hospital",
-    "count": 1
-   },
-   {
-    "path": "/destinations/dubai-mall",
-    "count": 1
-   },
-   {
-    "path": "/destinations/times-square-center",
-    "count": 1
-   },
-   {
-    "path": "/destinations/gdrfa-immigration-al-jafiliya",
-    "count": 1
-   },
-   {
-    "path": "/destinations/dubai-police-general-headquarters",
-    "count": 1
-   },
-   {
-    "path": "/destinations/american-hospital-dubai",
-    "count": 1
-   },
-   {
-    "path": "/stations/al-ras",
-    "count": 1
-   },
-   {
-    "path": "/destinations/al-fahidi",
-    "count": 1
-   },
-   {
-    "path": "/destinations/jw-marriott-marquis-dubai",
-    "count": 1
-   },
-   {
-    "path": "/destinations/dubai-creek-harbour",
-    "count": 1
-   }
-  ],
   "dubaimetro.fyi": [
    {
     "path": "/",
@@ -14395,13 +14437,13 @@
  "toprefs": [
   {
    "name": "",
-   "count": 282,
+   "count": 289,
    "ref_scheme": "o"
   },
   {
    "id": "Google",
    "name": "Google",
-   "count": 85,
+   "count": 87,
    "ref_scheme": "g"
   },
   {
@@ -14411,16 +14453,16 @@
    "ref_scheme": "o"
   },
   {
+   "id": "chatgpt.com",
+   "name": "chatgpt.com",
+   "count": 17,
+   "ref_scheme": "c"
+  },
+  {
    "id": "www.bing.com",
    "name": "www.bing.com",
    "count": 16,
    "ref_scheme": "h"
-  },
-  {
-   "id": "chatgpt.com",
-   "name": "chatgpt.com",
-   "count": 16,
-   "ref_scheme": "c"
   },
   {
    "id": "Yahoo",
@@ -14463,7 +14505,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 454
+   "count": 464
   },
   {
    "id": "(unknown)",
@@ -14510,12 +14552,12 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 370
+   "count": 375
   },
   {
    "id": "US",
    "name": "United States",
-   "count": 49
+   "count": 53
   },
   {
    "id": "IN",
@@ -14583,6 +14625,11 @@
    "count": 2
   },
   {
+   "id": "PT",
+   "name": "Portugal",
+   "count": 2
+  },
+  {
    "id": "RU",
    "name": "Russia",
    "count": 2
@@ -14628,11 +14675,6 @@
    "count": 1
   },
   {
-   "id": "PT",
-   "name": "Portugal",
-   "count": 1
-  },
-  {
    "id": "SA",
    "name": "Saudi Arabia",
    "count": 1
@@ -14652,17 +14694,17 @@
   {
    "id": "phone",
    "name": "",
-   "count": 301
+   "count": 304
   },
   {
    "id": "tablet",
    "name": "",
-   "count": 35
+   "count": 39
   },
   {
    "id": "desktop",
    "name": "",
-   "count": 149
+   "count": 152
   },
   {
    "id": "desktophd",
@@ -14679,12 +14721,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 321
+   "count": 329
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 171
+   "count": 173
   },
   {
    "id": "Firefox",
@@ -14700,17 +14742,17 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 167
+   "count": 169
   },
   {
    "id": "Android",
    "name": "Android",
-   "count": 139
+   "count": 140
   },
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 96
+   "count": 103
   },
   {
    "id": "macOS",
