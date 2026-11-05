@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-05T15:50:22Z",
+ "generated": "2026-11-05T22:19:55Z",
  "start": "2025-11-05",
  "end": "2026-11-06",
  "total": {
-  "total": 521,
-  "total_events": 257,
-  "total_utc": 521,
+  "total": 526,
+  "total_events": 258,
+  "total_utc": 526,
   "stats": [
    {
     "day": "2025-11-05",
@@ -10873,7 +10873,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 66
+    "monthly": 71
    },
    {
     "day": "2026-11-02",
@@ -10964,7 +10964,7 @@
      0
     ],
     "daily": 19,
-    "weekly": 26
+    "weekly": 31
    },
    {
     "day": "2026-11-05",
@@ -10989,12 +10989,12 @@
      1,
      2,
      0,
-     0,
-     0,
+     3,
+     2,
      0,
      0
     ],
-    "daily": 7
+    "daily": 12
    },
    {
     "day": "2026-11-06",
@@ -11034,7 +11034,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 122,
+   "count": 124,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -11064,7 +11064,8 @@
     "2026-11-01": 1,
     "2026-11-02": 1,
     "2026-11-03": 3,
-    "2026-11-04": 6
+    "2026-11-04": 6,
+    "2026-11-05": 2
    }
   },
   {
@@ -11145,12 +11146,13 @@
    "path_id": 116082941,
    "title": "Nearest Metro Station to Me in Dubai: Find It by Location",
    "event": false,
-   "count": 5,
+   "count": 6,
    "daily": {
     "2026-10-28": 1,
     "2026-10-31": 1,
     "2026-11-02": 2,
-    "2026-11-03": 1
+    "2026-11-03": 1,
+    "2026-11-05": 1
    }
   },
   {
@@ -11194,6 +11196,20 @@
    }
   },
   {
+   "path": "/destinations/dubai-mall",
+   "path_id": 110484997,
+   "title": "Dubai Mall Metro Station: Burj Khalifa/Dubai Mall (Red Line), 12 min walk",
+   "event": false,
+   "count": 5,
+   "daily": {
+    "2026-10-08": 1,
+    "2026-10-26": 1,
+    "2026-10-27": 1,
+    "2026-11-02": 1,
+    "2026-11-05": 1
+   }
+  },
+  {
    "path": "/tl.html",
    "path_id": 110332677,
    "title": "Interactive na Mapa ng Dubai Metro: Metro, Tram, Palm Monorail",
@@ -11214,19 +11230,6 @@
     "2026-10-27": 1,
     "2026-10-31": 1,
     "2026-11-03": 1
-   }
-  },
-  {
-   "path": "/destinations/dubai-mall",
-   "path_id": 110484997,
-   "title": "Dubai Mall Metro Station: Burj Khalifa/Dubai Mall (Red Line), 12 min walk",
-   "event": false,
-   "count": 4,
-   "daily": {
-    "2026-10-08": 1,
-    "2026-10-26": 1,
-    "2026-10-27": 1,
-    "2026-11-02": 1
    }
   },
   {
@@ -11676,6 +11679,16 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "geo/ok/fc",
+   "path_id": 119255504,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-05": 1
    }
   },
   {
@@ -13421,9 +13434,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 264,
-  "events_total": 257,
-  "goatcounter_total_with_events": 521,
+  "visits": 268,
+  "events_total": 258,
+  "goatcounter_total_with_events": 526,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -13459,7 +13472,7 @@
    "2026-11-02": 12,
    "2026-11-03": 8,
    "2026-11-04": 12,
-   "2026-11-05": 6
+   "2026-11-05": 10
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -13511,7 +13524,7 @@
   ],
   "nearest_station": {
    "denied": 4,
-   "ok": 5,
+   "ok": 6,
    "fail": 1
   },
   "visitors_new_return": {
@@ -13680,6 +13693,10 @@
     "count": 4
    },
    {
+    "name": "dubaimetro.fyi",
+    "count": 3
+   },
+   {
     "name": "dubaimetro.fyi/nearest-station",
     "count": 3
    },
@@ -13705,10 +13722,6 @@
    },
    {
     "name": "web.telegram.org",
-    "count": 1
-   },
-   {
-    "name": "dubaimetro.fyi",
     "count": 1
    },
    {
@@ -13751,7 +13764,7 @@
   "/nearest-station": [
    {
     "name": "Google",
-    "count": 5
+    "count": 6
    }
   ],
   "/destinations/rashid-hospital": [
@@ -13765,6 +13778,16 @@
    }
   ],
   "/destinations/al-zahra-hospital-dubai": [
+   {
+    "name": "Google",
+    "count": 4
+   },
+   {
+    "name": "chatgpt.com",
+    "count": 1
+   }
+  ],
+  "/destinations/dubai-mall": [
    {
     "name": "Google",
     "count": 4
@@ -13788,16 +13811,6 @@
    {
     "name": "Google",
     "count": 4
-   }
-  ],
-  "/destinations/dubai-mall": [
-   {
-    "name": "Google",
-    "count": 3
-   },
-   {
-    "name": "chatgpt.com",
-    "count": 1
    }
   ],
   "/destinations/aster-hospital-al-qusais": [
@@ -14208,6 +14221,16 @@
     "count": 1
    }
   ],
+  "dubaimetro.fyi": [
+   {
+    "path": "/",
+    "count": 3
+   },
+   {
+    "path": "/ru.html",
+    "count": 1
+   }
+  ],
   "dubaimetro.fyi/nearest-station": [
    {
     "path": "/",
@@ -14297,7 +14320,7 @@
    },
    {
     "path": "/nearest-station",
-    "count": 5
+    "count": 6
    },
    {
     "path": "/destinations/rashid-hospital",
@@ -14308,12 +14331,12 @@
     "count": 4
    },
    {
-    "path": "/destinations/meena-bazaar",
+    "path": "/destinations/dubai-mall",
     "count": 4
    },
    {
-    "path": "/destinations/dubai-mall",
-    "count": 3
+    "path": "/destinations/meena-bazaar",
+    "count": 4
    },
    {
     "path": "/destinations/aster-hospital-al-qusais",
@@ -14458,16 +14481,6 @@
     "count": 1
    }
   ],
-  "dubaimetro.fyi": [
-   {
-    "path": "/",
-    "count": 1
-   },
-   {
-    "path": "/ru.html",
-    "count": 1
-   }
-  ],
   "dubaimetro.fyi/destinations/dubai-municipality-head-office": [
    {
     "path": "/",
@@ -14532,7 +14545,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 95,
+   "count": 97,
    "ref_scheme": "g"
   },
   {
@@ -14594,7 +14607,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 478
+   "count": 483
   },
   {
    "id": "(unknown)",
@@ -14641,12 +14654,12 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 387
+   "count": 391
   },
   {
    "id": "US",
    "name": "United States",
-   "count": 53
+   "count": 54
   },
   {
    "id": "IN",
@@ -14788,7 +14801,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 311
+   "count": 315
   },
   {
    "id": "tablet",
@@ -14798,7 +14811,7 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 159
+   "count": 160
   },
   {
    "id": "desktophd",
@@ -14815,12 +14828,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 342
+   "count": 343
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 174
+   "count": 178
   },
   {
    "id": "Firefox",
@@ -14836,7 +14849,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 170
+   "count": 174
   },
   {
    "id": "Android",
@@ -14856,7 +14869,7 @@
   {
    "id": "Linux",
    "name": "Linux",
-   "count": 23
+   "count": 24
   },
   {
    "id": "Chrome OS",
