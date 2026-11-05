@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-05T07:58:04Z",
+ "generated": "2026-11-05T15:50:22Z",
  "start": "2025-11-05",
  "end": "2026-11-06",
  "total": {
-  "total": 517,
-  "total_events": 256,
-  "total_utc": 517,
+  "total": 521,
+  "total_events": 257,
+  "total_utc": 521,
   "stats": [
    {
     "day": "2025-11-05",
@@ -10873,7 +10873,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 62
+    "monthly": 66
    },
    {
     "day": "2026-11-02",
@@ -10964,7 +10964,7 @@
      0
     ],
     "daily": 19,
-    "weekly": 22
+    "weekly": 26
    },
    {
     "day": "2026-11-05",
@@ -10985,16 +10985,16 @@
      0,
      0,
      0,
-     0,
-     0,
-     0,
+     1,
+     1,
+     2,
      0,
      0,
      0,
      0,
      0
     ],
-    "daily": 3
+    "daily": 7
    },
    {
     "day": "2026-11-06",
@@ -11180,6 +11180,20 @@
    }
   },
   {
+   "path": "visit/return/-",
+   "path_id": 110878762,
+   "title": "en",
+   "event": true,
+   "count": 5,
+   "daily": {
+    "2026-10-10": 1,
+    "2026-11-01": 1,
+    "2026-11-02": 1,
+    "2026-11-03": 1,
+    "2026-11-05": 1
+   }
+  },
+  {
    "path": "/tl.html",
    "path_id": 110332677,
    "title": "Interactive na Mapa ng Dubai Metro: Metro, Tram, Palm Monorail",
@@ -11199,19 +11213,6 @@
     "2026-10-26": 1,
     "2026-10-27": 1,
     "2026-10-31": 1,
-    "2026-11-03": 1
-   }
-  },
-  {
-   "path": "visit/return/-",
-   "path_id": 110878762,
-   "title": "en",
-   "event": true,
-   "count": 4,
-   "daily": {
-    "2026-10-10": 1,
-    "2026-11-01": 1,
-    "2026-11-02": 1,
     "2026-11-03": 1
    }
   },
@@ -11287,6 +11288,18 @@
     "2026-10-13": 1,
     "2026-10-16": 1,
     "2026-10-17": 1
+   }
+  },
+  {
+   "path": "/destinations/dubai-police-general-headquarters",
+   "path_id": 111896140,
+   "title": "Dubai Police General Headquarters Metro Station: Al Qiyadah, 7 min walk",
+   "event": false,
+   "count": 3,
+   "daily": {
+    "2026-10-13": 1,
+    "2026-10-20": 1,
+    "2026-11-05": 1
    }
   },
   {
@@ -11445,17 +11458,6 @@
    "daily": {
     "2026-10-14": 1,
     "2026-11-05": 1
-   }
-  },
-  {
-   "path": "/destinations/dubai-police-general-headquarters",
-   "path_id": 111896140,
-   "title": "Dubai Police General Headquarters Metro Station: Al Qiyadah, 7 min walk",
-   "event": false,
-   "count": 2,
-   "daily": {
-    "2026-10-13": 1,
-    "2026-10-20": 1
    }
   },
   {
@@ -11674,6 +11676,26 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/destinations/reef-mall",
+   "path_id": 119231973,
+   "title": "Reef Mall Metro Station: Salah Al Din (Green Line), 2 min walk",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-11-05": 1
+   }
+  },
+  {
+   "path": "/destinations/egyptian-consulate-dubai",
+   "path_id": 119206104,
+   "title": "Egyptian Consulate Dubai Metro Station: BurJuman, 5 min walk",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-11-05": 1
    }
   },
   {
@@ -13399,9 +13421,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 261,
-  "events_total": 256,
-  "goatcounter_total_with_events": 517,
+  "visits": 264,
+  "events_total": 257,
+  "goatcounter_total_with_events": 521,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -13437,7 +13459,7 @@
    "2026-11-02": 12,
    "2026-11-03": 8,
    "2026-11-04": 12,
-   "2026-11-05": 3
+   "2026-11-05": 6
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -13461,14 +13483,15 @@
    "2026-11-01": 1,
    "2026-11-02": 3,
    "2026-11-03": 2,
-   "2026-11-04": 5
+   "2026-11-04": 5,
+   "2026-11-05": 1
   },
-  "visitor_days": 59,
-  "return_rate": 0.068,
+  "visitor_days": 60,
+  "return_rate": 0.083,
   "routes": 42,
   "routes_not_found": 0,
   "routes_per_visit": 0.16,
-  "routes_per_visitor_day": 0.53,
+  "routes_per_visitor_day": 0.52,
   "share_rate": 0.071,
   "shares": {
    "qr": 1,
@@ -13493,7 +13516,7 @@
   },
   "visitors_new_return": {
    "new": 55,
-   "return": 4
+   "return": 5
   },
   "top_routes": [
    {
@@ -13803,6 +13826,16 @@
     "count": 1
    }
   ],
+  "/destinations/dubai-police-general-headquarters": [
+   {
+    "name": "Google",
+    "count": 2
+   },
+   {
+    "name": "chatgpt.com",
+    "count": 1
+   }
+  ],
   "/destinations/american-hospital-dubai": [
    {
     "name": "Google",
@@ -13901,16 +13934,6 @@
     "count": 2
    }
   ],
-  "/destinations/dubai-police-general-headquarters": [
-   {
-    "name": "Google",
-    "count": 1
-   },
-   {
-    "name": "chatgpt.com",
-    "count": 1
-   }
-  ],
   "/destinations/dubai-municipality-head-office": [
    {
     "name": "Google",
@@ -13932,6 +13955,18 @@
     "name": "(direct or unknown)",
     "count": 1
    },
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
+  "/destinations/reef-mall": [
+   {
+    "name": "Yahoo",
+    "count": 1
+   }
+  ],
+  "/destinations/egyptian-consulate-dubai": [
    {
     "name": "Google",
     "count": 1
@@ -14209,6 +14244,10 @@
     "count": 1
    },
    {
+    "path": "/destinations/dubai-police-general-headquarters",
+    "count": 1
+   },
+   {
     "path": "/destinations/american-hospital-dubai",
     "count": 1
    },
@@ -14218,10 +14257,6 @@
    },
    {
     "path": "/destinations/gdrfa-immigration-al-jafiliya",
-    "count": 1
-   },
-   {
-    "path": "/destinations/dubai-police-general-headquarters",
     "count": 1
    },
    {
@@ -14289,6 +14324,10 @@
     "count": 2
    },
    {
+    "path": "/destinations/dubai-police-general-headquarters",
+    "count": 2
+   },
+   {
     "path": "/destinations/american-hospital-dubai",
     "count": 2
    },
@@ -14325,15 +14364,15 @@
     "count": 1
    },
    {
-    "path": "/destinations/dubai-police-general-headquarters",
-    "count": 1
-   },
-   {
     "path": "/lines/green-line",
     "count": 1
    },
    {
     "path": "/destinations/st-mary-s-catholic-church",
+    "count": 1
+   },
+   {
+    "path": "/destinations/egyptian-consulate-dubai",
     "count": 1
    },
    {
@@ -14396,6 +14435,10 @@
   "Yahoo": [
    {
     "path": "/",
+    "count": 1
+   },
+   {
+    "path": "/destinations/reef-mall",
     "count": 1
    },
    {
@@ -14483,13 +14526,13 @@
  "toprefs": [
   {
    "name": "",
-   "count": 291,
+   "count": 292,
    "ref_scheme": "o"
   },
   {
    "id": "Google",
    "name": "Google",
-   "count": 93,
+   "count": 95,
    "ref_scheme": "g"
   },
   {
@@ -14513,7 +14556,7 @@
   {
    "id": "Yahoo",
    "name": "Yahoo",
-   "count": 7,
+   "count": 8,
    "ref_scheme": "g"
   },
   {
@@ -14551,7 +14594,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 474
+   "count": 478
   },
   {
    "id": "(unknown)",
@@ -14598,7 +14641,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 383
+   "count": 387
   },
   {
    "id": "US",
@@ -14745,7 +14788,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 309
+   "count": 311
   },
   {
    "id": "tablet",
@@ -14755,7 +14798,7 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 157
+   "count": 159
   },
   {
    "id": "desktophd",
@@ -14772,7 +14815,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 338
+   "count": 342
   },
   {
    "id": "Safari",
@@ -14798,12 +14841,12 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 144
+   "count": 146
   },
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 108
+   "count": 110
   },
   {
    "id": "macOS",
