@@ -1,43 +1,13 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-05T22:19:55Z",
- "start": "2025-11-05",
- "end": "2026-11-06",
+ "generated": "2026-11-06T02:51:35Z",
+ "start": "2025-11-06",
+ "end": "2026-11-07",
  "total": {
-  "total": 526,
+  "total": 527,
   "total_events": 258,
-  "total_utc": 526,
+  "total_utc": 527,
   "stats": [
-   {
-    "day": "2025-11-05",
-    "hourly": [
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0
-    ],
-    "daily": 0
-   },
    {
     "day": "2025-11-06",
     "hourly": [
@@ -9906,8 +9876,7 @@
      0,
      0
     ],
-    "daily": 0,
-    "weekly": 71
+    "daily": 0
    },
    {
     "day": "2026-10-01",
@@ -9938,6 +9907,7 @@
      5
     ],
     "daily": 6,
+    "weekly": 92,
     "monthly": 455
    },
    {
@@ -10118,8 +10088,7 @@
      0,
      11
     ],
-    "daily": 21,
-    "weekly": 222
+    "daily": 21
    },
    {
     "day": "2026-10-08",
@@ -10149,7 +10118,8 @@
      3,
      2
     ],
-    "daily": 111
+    "daily": 111,
+    "weekly": 222
    },
    {
     "day": "2026-10-09",
@@ -10329,8 +10299,7 @@
      0,
      1
     ],
-    "daily": 21,
-    "weekly": 62
+    "daily": 21
    },
    {
     "day": "2026-10-15",
@@ -10360,7 +10329,8 @@
      0,
      0
     ],
-    "daily": 6
+    "daily": 6,
+    "weekly": 44
    },
    {
     "day": "2026-10-16",
@@ -10540,8 +10510,7 @@
      0,
      0
     ],
-    "daily": 3,
-    "weekly": 73
+    "daily": 3
    },
    {
     "day": "2026-10-22",
@@ -10571,7 +10540,8 @@
      6,
      0
     ],
-    "daily": 9
+    "daily": 9,
+    "weekly": 78
    },
    {
     "day": "2026-10-23",
@@ -10751,8 +10721,7 @@
      0,
      0
     ],
-    "daily": 8,
-    "weekly": 67
+    "daily": 8
    },
    {
     "day": "2026-10-29",
@@ -10782,7 +10751,8 @@
      0,
      0
     ],
-    "daily": 5
+    "daily": 5,
+    "weekly": 78
    },
    {
     "day": "2026-10-30",
@@ -10873,7 +10843,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 71
+    "monthly": 72
    },
    {
     "day": "2026-11-02",
@@ -10963,8 +10933,7 @@
      0,
      0
     ],
-    "daily": 19,
-    "weekly": 31
+    "daily": 19
    },
    {
     "day": "2026-11-05",
@@ -10994,10 +10963,41 @@
      0,
      0
     ],
-    "daily": 12
+    "daily": 12,
+    "weekly": 13
    },
    {
     "day": "2026-11-06",
+    "hourly": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "daily": 1
+   },
+   {
+    "day": "2026-11-07",
     "hourly": [
      0,
      0,
@@ -11679,6 +11679,16 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/destinations/saudi-german-hospital-dubai",
+   "path_id": 119409679,
+   "title": "Saudi German Hospital Dubai Metro Station: Dubai Internet City, 14 min walk",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-11-06": 1
    }
   },
   {
@@ -13434,9 +13444,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 268,
+  "visits": 269,
   "events_total": 258,
-  "goatcounter_total_with_events": 526,
+  "goatcounter_total_with_events": 527,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -13472,7 +13482,8 @@
    "2026-11-02": 12,
    "2026-11-03": 8,
    "2026-11-04": 12,
-   "2026-11-05": 10
+   "2026-11-05": 10,
+   "2026-11-06": 1
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -13973,6 +13984,12 @@
     "count": 1
    }
   ],
+  "/destinations/saudi-german-hospital-dubai": [
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
   "/destinations/reef-mall": [
    {
     "name": "Yahoo",
@@ -14395,6 +14412,10 @@
     "count": 1
    },
    {
+    "path": "/destinations/saudi-german-hospital-dubai",
+    "count": 1
+   },
+   {
     "path": "/destinations/egyptian-consulate-dubai",
     "count": 1
    },
@@ -14545,7 +14566,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 97,
+   "count": 98,
    "ref_scheme": "g"
   },
   {
@@ -14607,7 +14628,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 483
+   "count": 484
   },
   {
    "id": "(unknown)",
@@ -14654,7 +14675,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 391
+   "count": 392
   },
   {
    "id": "US",
@@ -14801,7 +14822,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 315
+   "count": 316
   },
   {
    "id": "tablet",
@@ -14828,7 +14849,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 343
+   "count": 344
   },
   {
    "id": "Safari",
@@ -14854,7 +14875,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 146
+   "count": 147
   },
   {
    "id": "Windows",

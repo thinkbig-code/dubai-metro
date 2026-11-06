@@ -1,45 +1,13 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-05T22:18:53Z",
- "start": "2026-10-06",
- "end": "2026-11-06",
+ "generated": "2026-11-06T02:50:26Z",
+ "start": "2026-10-07",
+ "end": "2026-11-07",
  "total": {
-  "total": 455,
+  "total": 456,
   "total_events": 235,
-  "total_utc": 455,
+  "total_utc": 454,
   "stats": [
-   {
-    "day": "2026-10-06",
-    "hourly": [
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0
-    ],
-    "daily": 0,
-    "weekly": 215,
-    "monthly": 384
-   },
    {
     "day": "2026-10-07",
     "hourly": [
@@ -68,7 +36,9 @@
      0,
      11
     ],
-    "daily": 21
+    "daily": 21,
+    "weekly": 222,
+    "monthly": 384
    },
    {
     "day": "2026-10-08",
@@ -248,8 +218,7 @@
      2,
      0
     ],
-    "daily": 7,
-    "weekly": 56
+    "daily": 7
    },
    {
     "day": "2026-10-14",
@@ -279,7 +248,8 @@
      0,
      1
     ],
-    "daily": 21
+    "daily": 21,
+    "weekly": 62
    },
    {
     "day": "2026-10-15",
@@ -459,8 +429,7 @@
      1,
      0
     ],
-    "daily": 13,
-    "weekly": 75
+    "daily": 13
    },
    {
     "day": "2026-10-21",
@@ -490,7 +459,8 @@
      0,
      0
     ],
-    "daily": 3
+    "daily": 3,
+    "weekly": 73
    },
    {
     "day": "2026-10-22",
@@ -670,8 +640,7 @@
      0,
      0
     ],
-    "daily": 11,
-    "weekly": 67
+    "daily": 11
    },
    {
     "day": "2026-10-28",
@@ -701,7 +670,8 @@
      0,
      0
     ],
-    "daily": 8
+    "daily": 8,
+    "weekly": 67
    },
    {
     "day": "2026-10-29",
@@ -822,7 +792,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 71
+    "monthly": 72
    },
    {
     "day": "2026-11-02",
@@ -882,8 +852,7 @@
      0,
      0
     ],
-    "daily": 11,
-    "weekly": 42
+    "daily": 11
    },
    {
     "day": "2026-11-04",
@@ -913,7 +882,8 @@
      0,
      0
     ],
-    "daily": 19
+    "daily": 19,
+    "weekly": 32
    },
    {
     "day": "2026-11-05",
@@ -947,6 +917,36 @@
    },
    {
     "day": "2026-11-06",
+    "hourly": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "daily": 1
+   },
+   {
+    "day": "2026-11-07",
     "hourly": [
      0,
      0,
@@ -1587,6 +1587,16 @@
    "count": 2,
    "daily": {
     "2026-11-02": 2
+   }
+  },
+  {
+   "path": "/destinations/saudi-german-hospital-dubai",
+   "path_id": 119409679,
+   "title": "Saudi German Hospital Dubai Metro Station: Dubai Internet City, 14 min walk",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-11-06": 1
    }
   },
   {
@@ -3192,9 +3202,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 220,
+  "visits": 221,
   "events_total": 235,
-  "goatcounter_total_with_events": 455,
+  "goatcounter_total_with_events": 456,
   "page_loads_by_day": {
    "2026-10-07": 7,
    "2026-10-08": 22,
@@ -3225,7 +3235,8 @@
    "2026-11-02": 12,
    "2026-11-03": 8,
    "2026-11-04": 12,
-   "2026-11-05": 10
+   "2026-11-05": 10,
+   "2026-11-06": 1
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -3718,6 +3729,12 @@
     "count": 2
    }
   ],
+  "/destinations/saudi-german-hospital-dubai": [
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
   "/destinations/reef-mall": [
    {
     "name": "Yahoo",
@@ -4126,6 +4143,10 @@
     "count": 1
    },
    {
+    "path": "/destinations/saudi-german-hospital-dubai",
+    "count": 1
+   },
+   {
     "path": "/destinations/egyptian-consulate-dubai",
     "count": 1
    },
@@ -4270,7 +4291,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 97,
+   "count": 98,
    "ref_scheme": "g"
   },
   {
@@ -4326,7 +4347,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 436
+   "count": 437
   },
   {
    "id": "(unknown)",
@@ -4373,7 +4394,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 363
+   "count": 364
   },
   {
    "id": "US",
@@ -4485,7 +4506,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 284
+   "count": 285
   },
   {
    "id": "tablet",
@@ -4512,7 +4533,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 298
+   "count": 299
   },
   {
    "id": "Safari",
@@ -4534,7 +4555,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 136
+   "count": 137
   },
   {
    "id": "Windows",
