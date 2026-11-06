@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-06T11:32:17Z",
+ "generated": "2026-11-06T18:30:53Z",
  "start": "2025-11-06",
  "end": "2026-11-07",
  "total": {
-  "total": 529,
-  "total_events": 258,
-  "total_utc": 529,
+  "total": 545,
+  "total_events": 263,
+  "total_utc": 545,
   "stats": [
    {
     "day": "2025-11-06",
@@ -10843,7 +10843,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 74
+    "monthly": 90
    },
    {
     "day": "2026-11-02",
@@ -10964,7 +10964,7 @@
      0
     ],
     "daily": 12,
-    "weekly": 15
+    "weekly": 31
    },
    {
     "day": "2026-11-06",
@@ -10985,16 +10985,16 @@
      0,
      0,
      0,
+     2,
+     1,
      0,
-     0,
-     0,
-     0,
-     0,
-     0,
+     4,
+     1,
+     8,
      0,
      0
     ],
-    "daily": 3
+    "daily": 19
    },
    {
     "day": "2026-11-07",
@@ -11034,7 +11034,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 124,
+   "count": 126,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -11065,7 +11065,8 @@
     "2026-11-02": 1,
     "2026-11-03": 3,
     "2026-11-04": 6,
-    "2026-11-05": 2
+    "2026-11-05": 2,
+    "2026-11-06": 2
    }
   },
   {
@@ -11073,7 +11074,7 @@
    "path_id": 110447314,
    "title": "en",
    "event": true,
-   "count": 55,
+   "count": 56,
    "daily": {
     "2026-10-08": 7,
     "2026-10-09": 6,
@@ -11095,7 +11096,8 @@
     "2026-10-31": 1,
     "2026-11-02": 2,
     "2026-11-03": 1,
-    "2026-11-04": 5
+    "2026-11-04": 5,
+    "2026-11-06": 1
    }
   },
   {
@@ -11103,7 +11105,7 @@
    "path_id": 110626146,
    "title": "Etihad Rail Dubai Station (Al Yalayis) Metro Station: Jumeirah Golf Estates",
    "event": false,
-   "count": 33,
+   "count": 34,
    "daily": {
     "2026-10-09": 1,
     "2026-10-12": 1,
@@ -11122,7 +11124,8 @@
     "2026-10-31": 1,
     "2026-11-01": 2,
     "2026-11-02": 1,
-    "2026-11-04": 1
+    "2026-11-04": 1,
+    "2026-11-06": 1
    }
   },
   {
@@ -11130,7 +11133,7 @@
    "path_id": 112289662,
    "title": "Indian Consulate Dubai Metro Station: BurJuman, 7 min walk",
    "event": false,
-   "count": 8,
+   "count": 10,
    "daily": {
     "2026-10-16": 1,
     "2026-10-18": 1,
@@ -11138,7 +11141,8 @@
     "2026-10-26": 2,
     "2026-10-28": 1,
     "2026-11-03": 1,
-    "2026-11-04": 1
+    "2026-11-04": 1,
+    "2026-11-06": 2
    }
   },
   {
@@ -11146,13 +11150,28 @@
    "path_id": 116082941,
    "title": "Nearest Metro Station to Me in Dubai: Find It by Location",
    "event": false,
-   "count": 6,
+   "count": 9,
    "daily": {
     "2026-10-28": 1,
     "2026-10-31": 1,
     "2026-11-02": 2,
     "2026-11-03": 1,
-    "2026-11-05": 1
+    "2026-11-05": 1,
+    "2026-11-06": 3
+   }
+  },
+  {
+   "path": "/destinations/meena-bazaar",
+   "path_id": 115183314,
+   "title": "Meena Bazaar Metro Station: Sharaf DG (Green Line), 9 min walk",
+   "event": false,
+   "count": 5,
+   "daily": {
+    "2026-10-26": 1,
+    "2026-10-27": 1,
+    "2026-10-31": 1,
+    "2026-11-03": 1,
+    "2026-11-06": 1
    }
   },
   {
@@ -11220,19 +11239,6 @@
    }
   },
   {
-   "path": "/destinations/meena-bazaar",
-   "path_id": 115183314,
-   "title": "Meena Bazaar Metro Station: Sharaf DG (Green Line), 9 min walk",
-   "event": false,
-   "count": 4,
-   "daily": {
-    "2026-10-26": 1,
-    "2026-10-27": 1,
-    "2026-10-31": 1,
-    "2026-11-03": 1
-   }
-  },
-  {
    "path": "geo/denied/-",
    "path_id": 110313382,
    "title": "en",
@@ -11279,6 +11285,18 @@
     "2026-10-25": 1,
     "2026-11-01": 1,
     "2026-11-02": 1
+   }
+  },
+  {
+   "path": "/destinations/times-square-center",
+   "path_id": 114208930,
+   "title": "Times Square Center Metro Station: Equiti (Red Line)",
+   "event": false,
+   "count": 3,
+   "daily": {
+    "2026-10-23": 1,
+    "2026-10-25": 1,
+    "2026-11-06": 1
    }
   },
   {
@@ -11375,6 +11393,18 @@
    }
   },
   {
+   "path": "map_station_click/moe/-",
+   "path_id": 110312988,
+   "title": "en|home|phone",
+   "event": true,
+   "count": 3,
+   "daily": {
+    "2026-10-07": 1,
+    "2026-10-11": 1,
+    "2026-11-06": 1
+   }
+  },
+  {
    "path": "map_station_click/bk/-",
    "path_id": 109553304,
    "title": "en|home|phone",
@@ -11420,14 +11450,14 @@
    }
   },
   {
-   "path": "/destinations/times-square-center",
-   "path_id": 114208930,
-   "title": "Times Square Center Metro Station: Equiti (Red Line)",
-   "event": false,
+   "path": "map_station_click/burjuman/-",
+   "path_id": 114086554,
+   "title": "en|home|phone",
+   "event": true,
    "count": 2,
    "daily": {
-    "2026-10-23": 1,
-    "2026-10-25": 1
+    "2026-10-22": 1,
+    "2026-11-06": 1
    }
   },
   {
@@ -11627,17 +11657,6 @@
    }
   },
   {
-   "path": "map_station_click/moe/-",
-   "path_id": 110312988,
-   "title": "en|home|phone",
-   "event": true,
-   "count": 2,
-   "daily": {
-    "2026-10-07": 1,
-    "2026-10-11": 1
-   }
-  },
-  {
    "path": "map_station_click/creek/-",
    "path_id": 110312977,
    "title": "en|home|phone",
@@ -11701,6 +11720,36 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/zh.html",
+   "path_id": 119628872,
+   "title": "迪拜地铁互动线路图：地铁、有轨电车、棕榈岛单轨",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-11-06": 1
+   }
+  },
+  {
+   "path": "geo/ok/et",
+   "path_id": 119624844,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-06": 1
+   }
+  },
+  {
+   "path": "geo/ok/garmin",
+   "path_id": 119596593,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-06": 1
    }
   },
   {
@@ -12101,16 +12150,6 @@
    "count": 1,
    "daily": {
     "2026-10-23": 1
-   }
-  },
-  {
-   "path": "map_station_click/burjuman/-",
-   "path_id": 114086554,
-   "title": "en|home|phone",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-22": 1
    }
   },
   {
@@ -13446,9 +13485,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 271,
-  "events_total": 258,
-  "goatcounter_total_with_events": 529,
+  "visits": 282,
+  "events_total": 263,
+  "goatcounter_total_with_events": 545,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -13485,7 +13524,7 @@
    "2026-11-03": 8,
    "2026-11-04": 12,
    "2026-11-05": 10,
-   "2026-11-06": 3
+   "2026-11-06": 14
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -13510,14 +13549,15 @@
    "2026-11-02": 3,
    "2026-11-03": 2,
    "2026-11-04": 5,
-   "2026-11-05": 1
+   "2026-11-05": 1,
+   "2026-11-06": 1
   },
-  "visitor_days": 60,
-  "return_rate": 0.083,
+  "visitor_days": 61,
+  "return_rate": 0.082,
   "routes": 42,
   "routes_not_found": 0,
   "routes_per_visit": 0.15,
-  "routes_per_visitor_day": 0.52,
+  "routes_per_visitor_day": 0.51,
   "share_rate": 0.071,
   "shares": {
    "qr": 1,
@@ -13537,11 +13577,11 @@
   ],
   "nearest_station": {
    "denied": 4,
-   "ok": 6,
+   "ok": 8,
    "fail": 1
   },
   "visitors_new_return": {
-   "new": 55,
+   "new": 56,
    "return": 5
   },
   "top_routes": [
@@ -13707,11 +13747,11 @@
    },
    {
     "name": "dubaimetro.fyi",
-    "count": 3
+    "count": 4
    },
    {
     "name": "dubaimetro.fyi/nearest-station",
-    "count": 3
+    "count": 4
    },
    {
     "name": "chatgpt.com",
@@ -13757,7 +13797,7 @@
   "/destinations/etihad-rail-dubai": [
    {
     "name": "Google",
-    "count": 28
+    "count": 29
    },
    {
     "name": "(direct or unknown)",
@@ -13771,13 +13811,19 @@
   "/destinations/indian-consulate-dubai": [
    {
     "name": "Google",
-    "count": 8
+    "count": 10
    }
   ],
   "/nearest-station": [
    {
     "name": "Google",
-    "count": 6
+    "count": 9
+   }
+  ],
+  "/destinations/meena-bazaar": [
+   {
+    "name": "Google",
+    "count": 5
    }
   ],
   "/destinations/rashid-hospital": [
@@ -13820,12 +13866,6 @@
     "count": 2
    }
   ],
-  "/destinations/meena-bazaar": [
-   {
-    "name": "Google",
-    "count": 4
-   }
-  ],
   "/destinations/aster-hospital-al-qusais": [
    {
     "name": "Google",
@@ -13839,6 +13879,16 @@
    },
    {
     "name": "dubaimetro.fyi/nearest-station",
+    "count": 1
+   }
+  ],
+  "/destinations/times-square-center": [
+   {
+    "name": "Google",
+    "count": 2
+   },
+   {
+    "name": "chatgpt.com",
     "count": 1
    }
   ],
@@ -13928,16 +13978,6 @@
     "count": 2
    }
   ],
-  "/destinations/times-square-center": [
-   {
-    "name": "Google",
-    "count": 1
-   },
-   {
-    "name": "chatgpt.com",
-    "count": 1
-   }
-  ],
   "/destinations/al-mulla-plaza": [
    {
     "name": "Google",
@@ -13999,6 +14039,12 @@
    },
    {
     "name": "Google",
+    "count": 1
+   }
+  ],
+  "/zh.html": [
+   {
+    "name": "www.bing.com",
     "count": 1
    }
   ],
@@ -14242,12 +14288,16 @@
    {
     "path": "/ar.html",
     "count": 1
+   },
+   {
+    "path": "/zh.html",
+    "count": 1
    }
   ],
   "dubaimetro.fyi": [
    {
     "path": "/",
-    "count": 3
+    "count": 4
    },
    {
     "path": "/ru.html",
@@ -14257,7 +14307,7 @@
   "dubaimetro.fyi/nearest-station": [
    {
     "path": "/",
-    "count": 3
+    "count": 4
    },
    {
     "path": "/map",
@@ -14290,15 +14340,15 @@
     "count": 1
    },
    {
+    "path": "/destinations/times-square-center",
+    "count": 1
+   },
+   {
     "path": "/destinations/dubai-police-general-headquarters",
     "count": 1
    },
    {
     "path": "/destinations/american-hospital-dubai",
-    "count": 1
-   },
-   {
-    "path": "/destinations/times-square-center",
     "count": 1
    },
    {
@@ -14335,15 +14385,19 @@
   "Google": [
    {
     "path": "/destinations/etihad-rail-dubai",
-    "count": 28
+    "count": 29
    },
    {
     "path": "/destinations/indian-consulate-dubai",
-    "count": 8
+    "count": 10
    },
    {
     "path": "/nearest-station",
-    "count": 6
+    "count": 9
+   },
+   {
+    "path": "/destinations/meena-bazaar",
+    "count": 5
    },
    {
     "path": "/destinations/rashid-hospital",
@@ -14358,15 +14412,15 @@
     "count": 4
    },
    {
-    "path": "/destinations/meena-bazaar",
-    "count": 4
-   },
-   {
     "path": "/destinations/aster-hospital-al-qusais",
     "count": 3
    },
    {
     "path": "/map",
+    "count": 2
+   },
+   {
+    "path": "/destinations/times-square-center",
     "count": 2
    },
    {
@@ -14403,10 +14457,6 @@
    },
    {
     "path": "/destinations/reef-mall",
-    "count": 1
-   },
-   {
-    "path": "/destinations/times-square-center",
     "count": 1
    },
    {
@@ -14576,7 +14626,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 100,
+   "count": 108,
    "ref_scheme": "g"
   },
   {
@@ -14586,16 +14636,16 @@
    "ref_scheme": "o"
   },
   {
+   "id": "www.bing.com",
+   "name": "www.bing.com",
+   "count": 20,
+   "ref_scheme": "h"
+  },
+  {
    "id": "chatgpt.com",
    "name": "chatgpt.com",
    "count": 17,
    "ref_scheme": "c"
-  },
-  {
-   "id": "www.bing.com",
-   "name": "www.bing.com",
-   "count": 16,
-   "ref_scheme": "h"
   },
   {
    "id": "Yahoo",
@@ -14638,7 +14688,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 486
+   "count": 498
   },
   {
    "id": "(unknown)",
@@ -14649,6 +14699,11 @@
    "id": "rus",
    "name": "Russian",
    "count": 17
+  },
+  {
+   "id": "zho",
+   "name": "Chinese",
+   "count": 4
   },
   {
    "id": "ara",
@@ -14685,7 +14740,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 394
+   "count": 410
   },
   {
    "id": "US",
@@ -14832,7 +14887,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 318
+   "count": 329
   },
   {
    "id": "tablet",
@@ -14842,7 +14897,7 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 160
+   "count": 165
   },
   {
    "id": "desktophd",
@@ -14859,12 +14914,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 344
+   "count": 356
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 180
+   "count": 184
   },
   {
    "id": "Firefox",
@@ -14880,17 +14935,17 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 176
+   "count": 180
   },
   {
    "id": "Android",
    "name": "Android",
-   "count": 147
+   "count": 154
   },
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 110
+   "count": 115
   },
   {
    "id": "macOS",
