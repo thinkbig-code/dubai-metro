@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-06T02:50:26Z",
+ "generated": "2026-11-06T07:58:36Z",
  "start": "2026-10-07",
  "end": "2026-11-07",
  "total": {
-  "total": 456,
+  "total": 457,
   "total_events": 235,
-  "total_utc": 454,
+  "total_utc": 455,
   "stats": [
    {
     "day": "2026-10-07",
@@ -792,7 +792,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 72
+    "monthly": 73
    },
    {
     "day": "2026-11-02",
@@ -883,7 +883,7 @@
      0
     ],
     "daily": 19,
-    "weekly": 32
+    "weekly": 33
    },
    {
     "day": "2026-11-05",
@@ -927,7 +927,7 @@
      1,
      0,
      0,
-     0,
+     1,
      0,
      0,
      0,
@@ -943,7 +943,7 @@
      0,
      0
     ],
-    "daily": 1
+    "daily": 2
    },
    {
     "day": "2026-11-07",
@@ -1307,6 +1307,17 @@
    }
   },
   {
+   "path": "/destinations/al-barsha-pond-park",
+   "path_id": 118207314,
+   "title": "Al Barsha Pond Park Metro Station: InsuranceMarket (Red Line)",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-11-04": 1,
+    "2026-11-06": 1
+   }
+  },
+  {
    "path": "/destinations/times-square-center",
    "path_id": 114208930,
    "title": "Times Square Center Metro Station: Equiti (Red Line)",
@@ -1644,16 +1655,6 @@
    "path_id": 118276700,
    "title": "en|landing:destinations-american-hospital-dubai|ok|first_landing",
    "event": true,
-   "count": 1,
-   "daily": {
-    "2026-11-04": 1
-   }
-  },
-  {
-   "path": "/destinations/al-barsha-pond-park",
-   "path_id": 118207314,
-   "title": "Al Barsha Pond Park Metro Station: InsuranceMarket (Red Line)",
-   "event": false,
    "count": 1,
    "daily": {
     "2026-11-04": 1
@@ -3202,9 +3203,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 221,
+  "visits": 222,
   "events_total": 235,
-  "goatcounter_total_with_events": 456,
+  "goatcounter_total_with_events": 457,
   "page_loads_by_day": {
    "2026-10-07": 7,
    "2026-10-08": 22,
@@ -3236,7 +3237,7 @@
    "2026-11-03": 8,
    "2026-11-04": 12,
    "2026-11-05": 10,
-   "2026-11-06": 1
+   "2026-11-06": 2
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -3649,6 +3650,12 @@
     "count": 3
    }
   ],
+  "/destinations/al-barsha-pond-park": [
+   {
+    "name": "Google",
+    "count": 2
+   }
+  ],
   "/destinations/times-square-center": [
    {
     "name": "Google",
@@ -3748,12 +3755,6 @@
    }
   ],
   "/destinations/jebel-ali-free-zone": [
-   {
-    "name": "Google",
-    "count": 1
-   }
-  ],
-  "/destinations/al-barsha-pond-park": [
    {
     "name": "Google",
     "count": 1
@@ -4103,6 +4104,10 @@
     "count": 2
    },
    {
+    "path": "/destinations/al-barsha-pond-park",
+    "count": 2
+   },
+   {
     "path": "/destinations/al-mulla-plaza",
     "count": 2
    },
@@ -4152,10 +4157,6 @@
    },
    {
     "path": "/destinations/jebel-ali-free-zone",
-    "count": 1
-   },
-   {
-    "path": "/destinations/al-barsha-pond-park",
     "count": 1
    },
    {
@@ -4291,7 +4292,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 98,
+   "count": 99,
    "ref_scheme": "g"
   },
   {
@@ -4347,7 +4348,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 437
+   "count": 438
   },
   {
    "id": "(unknown)",
@@ -4394,7 +4395,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 364
+   "count": 365
   },
   {
    "id": "US",
@@ -4506,7 +4507,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 285
+   "count": 286
   },
   {
    "id": "tablet",
@@ -4538,7 +4539,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 154
+   "count": 155
   },
   {
    "id": "Firefox",
@@ -4550,7 +4551,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 154
+   "count": 155
   },
   {
    "id": "Android",
