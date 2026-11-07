@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-07T10:41:44Z",
+ "generated": "2026-11-07T16:37:56Z",
  "start": "2026-10-08",
  "end": "2026-11-08",
  "total": {
-  "total": 429,
-  "total_events": 204,
-  "total_utc": 420,
+  "total": 434,
+  "total_events": 205,
+  "total_utc": 425,
   "stats": [
    {
     "day": "2026-10-08",
@@ -762,7 +762,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 108
+    "monthly": 113
    },
    {
     "day": "2026-11-02",
@@ -883,7 +883,7 @@
      0
     ],
     "daily": 12,
-    "weekly": 49
+    "weekly": 54
    },
    {
     "day": "2026-11-06",
@@ -934,16 +934,16 @@
      1,
      0,
      0,
+     4,
      0,
      0,
-     0,
-     0,
+     1,
      0,
      0,
      0,
      0
     ],
-    "daily": 18
+    "daily": 23
    },
    {
     "day": "2026-11-08",
@@ -1018,7 +1018,7 @@
    "path_id": 110447314,
    "title": "en",
    "event": true,
-   "count": 56,
+   "count": 57,
    "daily": {
     "2026-10-08": 7,
     "2026-10-09": 6,
@@ -1041,7 +1041,8 @@
     "2026-11-02": 2,
     "2026-11-03": 1,
     "2026-11-04": 5,
-    "2026-11-06": 1
+    "2026-11-06": 1,
+    "2026-11-07": 1
    }
   },
   {
@@ -1177,6 +1178,17 @@
    }
   },
   {
+   "path": "/ru.html",
+   "path_id": 109203485,
+   "title": "Карта метро Дубая и планировщик маршрутов: метро, трамвай, монорельс",
+   "event": false,
+   "count": 4,
+   "daily": {
+    "2026-11-02": 2,
+    "2026-11-07": 2
+   }
+  },
+  {
    "path": "/destinations/aster-hospital-al-qusais",
    "path_id": 116157918,
    "title": "Aster Hospital Al Qusais Metro Station: Dubai Airport Free Zone",
@@ -1210,6 +1222,18 @@
     "2026-10-23": 1,
     "2026-10-25": 1,
     "2026-11-06": 1
+   }
+  },
+  {
+   "path": "/destinations/pakistan-consulate-dubai",
+   "path_id": 112004545,
+   "title": "Pakistan Consulate Dubai Metro Station: Sharaf DG (Green Line), 5 min walk",
+   "event": false,
+   "count": 3,
+   "daily": {
+    "2026-10-14": 1,
+    "2026-11-05": 1,
+    "2026-11-07": 1
    }
   },
   {
@@ -1406,17 +1430,6 @@
    }
   },
   {
-   "path": "/destinations/pakistan-consulate-dubai",
-   "path_id": 112004545,
-   "title": "Pakistan Consulate Dubai Metro Station: Sharaf DG (Green Line), 5 min walk",
-   "event": false,
-   "count": 2,
-   "daily": {
-    "2026-10-14": 1,
-    "2026-11-05": 1
-   }
-  },
-  {
    "path": "/destinations/dubai-municipality-head-office",
    "path_id": 111690629,
    "title": "Dubai Municipality Head Office Metro Station: Union, 9 min walk",
@@ -1527,13 +1540,13 @@
    }
   },
   {
-   "path": "/ru.html",
-   "path_id": 109203485,
-   "title": "Карта метро Дубая и планировщик маршрутов: метро, трамвай, монорельс",
+   "path": "/destinations/gold-souk",
+   "path_id": 119878633,
+   "title": "Gold Souk Metro Station: Gold Souq (Green Line)",
    "event": false,
-   "count": 2,
+   "count": 1,
    "daily": {
-    "2026-11-02": 2
+    "2026-11-07": 1
    }
   },
   {
@@ -2969,9 +2982,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 225,
-  "events_total": 204,
-  "goatcounter_total_with_events": 429,
+  "visits": 229,
+  "events_total": 205,
+  "goatcounter_total_with_events": 434,
   "page_loads_by_day": {
    "2026-10-08": 9,
    "2026-10-09": 11,
@@ -3003,7 +3016,7 @@
    "2026-11-04": 12,
    "2026-11-05": 10,
    "2026-11-06": 14,
-   "2026-11-07": 11
+   "2026-11-07": 15
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -3030,14 +3043,14 @@
    "2026-11-04": 5,
    "2026-11-05": 1,
    "2026-11-06": 1,
-   "2026-11-07": 2
+   "2026-11-07": 3
   },
-  "visitor_days": 63,
-  "return_rate": 0.111,
+  "visitor_days": 64,
+  "return_rate": 0.109,
   "routes": 27,
   "routes_not_found": 0,
   "routes_per_visit": 0.12,
-  "routes_per_visitor_day": 0.43,
+  "routes_per_visitor_day": 0.42,
   "share_rate": 0.111,
   "shares": {
    "qr": 1,
@@ -3062,7 +3075,7 @@
    "fail": 1
   },
   "visitors_new_return": {
-   "new": 56,
+   "new": 57,
    "return": 7
   },
   "top_routes": [
@@ -3337,6 +3350,16 @@
     "count": 1
    }
   ],
+  "/ru.html": [
+   {
+    "name": "(direct or unknown)",
+    "count": 2
+   },
+   {
+    "name": "chatgpt.com",
+    "count": 2
+   }
+  ],
   "/destinations/aster-hospital-al-qusais": [
    {
     "name": "Google",
@@ -3361,6 +3384,12 @@
    {
     "name": "chatgpt.com",
     "count": 1
+   }
+  ],
+  "/destinations/pakistan-consulate-dubai": [
+   {
+    "name": "Google",
+    "count": 3
    }
   ],
   "/destinations/palm-jumeirah-mall": [
@@ -3481,12 +3510,6 @@
     "count": 1
    }
   ],
-  "/destinations/pakistan-consulate-dubai": [
-   {
-    "name": "Google",
-    "count": 2
-   }
-  ],
   "/destinations/dubai-municipality-head-office": [
    {
     "name": "Google",
@@ -3513,10 +3536,10 @@
     "count": 1
    }
   ],
-  "/ru.html": [
+  "/destinations/gold-souk": [
    {
-    "name": "(direct or unknown)",
-    "count": 2
+    "name": "Google",
+    "count": 1
    }
   ],
   "/stations/al-qiyadah": [
@@ -3697,11 +3720,11 @@
     "count": 3
    },
    {
-    "path": "/lines/red-line",
+    "path": "/ru.html",
     "count": 2
    },
    {
-    "path": "/ru.html",
+    "path": "/lines/red-line",
     "count": 2
    },
    {
@@ -3784,6 +3807,10 @@
    },
    {
     "path": "/destinations/etihad-rail-dubai",
+    "count": 2
+   },
+   {
+    "path": "/ru.html",
     "count": 2
    },
    {
@@ -3883,6 +3910,10 @@
     "count": 3
    },
    {
+    "path": "/destinations/pakistan-consulate-dubai",
+    "count": 3
+   },
+   {
     "path": "/map",
     "count": 2
    },
@@ -3911,10 +3942,6 @@
     "count": 2
    },
    {
-    "path": "/destinations/pakistan-consulate-dubai",
-    "count": 2
-   },
-   {
     "path": "/destinations/dubai-municipality-head-office",
     "count": 2
    },
@@ -3940,6 +3967,10 @@
    },
    {
     "path": "/destinations/st-mary-s-catholic-church",
+    "count": 1
+   },
+   {
+    "path": "/destinations/gold-souk",
     "count": 1
    },
    {
@@ -4079,13 +4110,13 @@
  "toprefs": [
   {
    "name": "",
-   "count": 181,
+   "count": 182,
    "ref_scheme": "o"
   },
   {
    "id": "Google",
    "name": "Google",
-   "count": 115,
+   "count": 117,
    "ref_scheme": "g"
   },
   {
@@ -4095,16 +4126,16 @@
    "ref_scheme": "o"
   },
   {
+   "id": "chatgpt.com",
+   "name": "chatgpt.com",
+   "count": 20,
+   "ref_scheme": "c"
+  },
+  {
    "id": "www.bing.com",
    "name": "www.bing.com",
    "count": 18,
    "ref_scheme": "h"
-  },
-  {
-   "id": "chatgpt.com",
-   "name": "chatgpt.com",
-   "count": 18,
-   "ref_scheme": "c"
   },
   {
    "id": "Yahoo",
@@ -4129,17 +4160,17 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 407
+   "count": 409
+  },
+  {
+   "id": "rus",
+   "name": "Russian",
+   "count": 7
   },
   {
    "id": "(unknown)",
    "name": "(unknown)",
    "count": 5
-  },
-  {
-   "id": "rus",
-   "name": "Russian",
-   "count": 4
   },
   {
    "id": "zho",
@@ -4181,7 +4212,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 347
+   "count": 348
   },
   {
    "id": "US",
@@ -4192,6 +4223,11 @@
    "id": "IN",
    "name": "India",
    "count": 11
+  },
+  {
+   "id": "NL",
+   "name": "Netherlands",
+   "count": 7
   },
   {
    "id": "GB",
@@ -4211,11 +4247,6 @@
   {
    "id": "KR",
    "name": "South Korea",
-   "count": 3
-  },
-  {
-   "id": "NL",
-   "name": "Netherlands",
    "count": 3
   },
   {
@@ -4283,7 +4314,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 281
+   "count": 286
   },
   {
    "id": "tablet",
@@ -4310,7 +4341,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 279
+   "count": 284
   },
   {
    "id": "Safari",
@@ -4332,7 +4363,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 136
+   "count": 141
   },
   {
    "id": "Windows",
