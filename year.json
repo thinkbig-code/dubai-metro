@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-07T07:17:37Z",
+ "generated": "2026-11-07T10:42:54Z",
  "start": "2025-11-07",
  "end": "2026-11-08",
  "total": {
-  "total": 560,
+  "total": 563,
   "total_events": 270,
-  "total_utc": 560,
+  "total_utc": 563,
   "stats": [
    {
     "day": "2025-11-07",
@@ -10814,7 +10814,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 105
+    "monthly": 108
    },
    {
     "day": "2026-11-02",
@@ -10965,7 +10965,7 @@
      0
     ],
     "daily": 19,
-    "weekly": 34
+    "weekly": 37
    },
    {
     "day": "2026-11-07",
@@ -10982,8 +10982,8 @@
      1,
      5,
      0,
-     0,
-     0,
+     2,
+     1,
      0,
      0,
      0,
@@ -10995,7 +10995,7 @@
      0,
      0
     ],
-    "daily": 15
+    "daily": 18
    },
    {
     "day": "2026-11-08",
@@ -11135,7 +11135,7 @@
    "path_id": 116082941,
    "title": "Nearest Metro Station to Me in Dubai: Find It by Location",
    "event": false,
-   "count": 11,
+   "count": 13,
    "daily": {
     "2026-10-28": 1,
     "2026-10-31": 1,
@@ -11143,7 +11143,7 @@
     "2026-11-03": 1,
     "2026-11-05": 1,
     "2026-11-06": 3,
-    "2026-11-07": 2
+    "2026-11-07": 4
    }
   },
   {
@@ -11198,12 +11198,13 @@
    "path_id": 112804201,
    "title": "Rashid Hospital Metro Station: Oud Metha (Green Line), 5 min walk",
    "event": false,
-   "count": 5,
+   "count": 6,
    "daily": {
     "2026-10-19": 1,
     "2026-10-26": 2,
     "2026-10-27": 1,
-    "2026-11-05": 1
+    "2026-11-05": 1,
+    "2026-11-07": 1
    }
   },
   {
@@ -13542,9 +13543,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 290,
+  "visits": 293,
   "events_total": 270,
-  "goatcounter_total_with_events": 560,
+  "goatcounter_total_with_events": 563,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -13582,7 +13583,7 @@
    "2026-11-04": 12,
    "2026-11-05": 10,
    "2026-11-06": 14,
-   "2026-11-07": 8
+   "2026-11-07": 11
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -13875,7 +13876,7 @@
   "/nearest-station": [
    {
     "name": "Google",
-    "count": 11
+    "count": 13
    }
   ],
   "/destinations/indian-consulate-dubai": [
@@ -13893,7 +13894,7 @@
   "/destinations/rashid-hospital": [
    {
     "name": "Google",
-    "count": 4
+    "count": 5
    },
    {
     "name": "chatgpt.com",
@@ -14467,7 +14468,7 @@
    },
    {
     "path": "/nearest-station",
-    "count": 11
+    "count": 13
    },
    {
     "path": "/destinations/indian-consulate-dubai",
@@ -14479,7 +14480,7 @@
    },
    {
     "path": "/destinations/rashid-hospital",
-    "count": 4
+    "count": 5
    },
    {
     "path": "/destinations/al-zahra-hospital-dubai",
@@ -14714,7 +14715,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 112,
+   "count": 115,
    "ref_scheme": "g"
   },
   {
@@ -14776,7 +14777,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 512
+   "count": 515
   },
   {
    "id": "(unknown)",
@@ -14828,7 +14829,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 424
+   "count": 427
   },
   {
    "id": "US",
@@ -14975,7 +14976,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 342
+   "count": 345
   },
   {
    "id": "tablet",
@@ -15002,12 +15003,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 366
+   "count": 368
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 189
+   "count": 190
   },
   {
    "id": "Firefox",
@@ -15023,12 +15024,12 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 185
+   "count": 186
   },
   {
    "id": "Android",
    "name": "Android",
-   "count": 159
+   "count": 161
   },
   {
    "id": "Windows",
