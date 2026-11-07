@@ -1,67 +1,83 @@
 {
  "host": "dubaimetro.fyi",
- "generated": "2026-11-06",
+ "generated": "2026-11-07",
  "gsc_period": [
-  "2026-10-09",
-  "2026-11-06"
+  "2026-10-10",
+  "2026-11-07"
  ],
- "index_checked": "2026-11-06T08:00:58Z",
+ "index_checked": "2026-11-07T07:18:52Z",
  "low_ctr_queries": [
   {
    "query": "nearest metro station",
-   "impressions": 3376,
-   "clicks": 1,
-   "position": 9.0,
+   "impressions": 3629,
+   "clicks": 2,
+   "position": 8.9,
    "page": "/nearest-station/",
-   "lost_clicks": 100.28
+   "lost_clicks": 106.87
   },
   {
    "query": "near metro station to me",
-   "impressions": 1300,
-   "clicks": 1,
-   "position": 7.6,
+   "impressions": 1365,
+   "clicks": 2,
+   "position": 7.5,
    "page": "/nearest-station/",
-   "lost_clicks": 38.0
+   "lost_clicks": 38.95
   },
   {
    "query": "metro near me",
-   "impressions": 465,
+   "impressions": 487,
    "clicks": 0,
-   "position": 10.2,
+   "position": 10.1,
    "page": "/nearest-station/",
-   "lost_clicks": 13.95
+   "lost_clicks": 14.61
   },
   {
-   "query": "nearest metro",
-   "impressions": 196,
+   "query": "near me metro station",
+   "impressions": 118,
    "clicks": 0,
-   "position": 9.4,
+   "position": 10.2,
    "page": "/",
-   "lost_clicks": 5.88
+   "lost_clicks": 3.54
   },
   {
    "query": "metro near me now",
-   "impressions": 105,
+   "impressions": 113,
    "clicks": 0,
-   "position": 9.1,
+   "position": 8.9,
    "page": "/nearest-station/",
-   "lost_clicks": 3.15
+   "lost_clicks": 3.39
   },
   {
    "query": "which metro station is near to me",
-   "impressions": 131,
+   "impressions": 140,
    "clicks": 1,
-   "position": 8.6,
+   "position": 8.5,
    "page": "/nearest-station/",
-   "lost_clicks": 2.93
+   "lost_clicks": 3.2
+  },
+  {
+   "query": "metro station near me",
+   "impressions": 308,
+   "clicks": 0,
+   "position": 10.7,
+   "page": "/nearest-station/",
+   "lost_clicks": 3.08
+  },
+  {
+   "query": "al ghurair metro station",
+   "impressions": 101,
+   "clicks": 0,
+   "position": 7.8,
+   "page": "/destinations/al-ghurair-centre/",
+   "lost_clicks": 3.03
   },
   {
    "query": "near metro station",
-   "impressions": 97,
+   "impressions": 101,
    "clicks": 0,
    "position": 10.3,
    "page": "/",
-   "lost_clicks": 2.91
+   "lost_clicks": 3.03
   },
   {
    "query": "al yalayis station",
@@ -72,14 +88,6 @@
    "lost_clicks": 2.88
   },
   {
-   "query": "al ghurair metro station",
-   "impressions": 95,
-   "clicks": 0,
-   "position": 7.8,
-   "page": "/destinations/al-ghurair-centre/",
-   "lost_clicks": 2.85
-  },
-  {
    "query": "al yalayis metro station",
    "impressions": 95,
    "clicks": 0,
@@ -88,20 +96,12 @@
    "lost_clicks": 2.85
   },
   {
-   "query": "metro station near me",
-   "impressions": 266,
-   "clicks": 0,
-   "position": 11.1,
-   "page": "/nearest-station/",
-   "lost_clicks": 2.66
-  },
-  {
    "query": "closest metro station to me",
-   "impressions": 85,
+   "impressions": 92,
    "clicks": 0,
    "position": 7.3,
    "page": "/nearest-station/",
-   "lost_clicks": 2.55
+   "lost_clicks": 2.76
   },
   {
    "query": "dubai al yalayis station",
@@ -113,109 +113,103 @@
   },
   {
    "query": "meena bazar nearest metro station",
-   "impressions": 81,
+   "impressions": 82,
    "clicks": 0,
    "position": 7.2,
    "page": "/destinations/meena-bazaar/",
-   "lost_clicks": 2.43
+   "lost_clicks": 2.46
   },
   {
    "query": "near metro station me",
-   "impressions": 74,
+   "impressions": 81,
    "clicks": 0,
-   "position": 8.1,
+   "position": 7.8,
    "page": "/",
-   "lost_clicks": 2.22
+   "lost_clicks": 2.43
   },
   {
    "query": "meena bazaar metro station",
-   "impressions": 73,
+   "impressions": 78,
    "clicks": 0,
    "position": 5.9,
    "page": "/destinations/meena-bazaar/",
-   "lost_clicks": 2.19
+   "lost_clicks": 2.34
   },
   {
    "query": "al qiyadah police station",
-   "impressions": 62,
+   "impressions": 69,
    "clicks": 0,
-   "position": 8.6,
+   "position": 8.7,
    "page": "/destinations/dubai-police-general-headquarters/",
-   "lost_clicks": 1.86
-  },
-  {
-   "query": "al qiyadah police station dubai",
-   "impressions": 59,
-   "clicks": 0,
-   "position": 7.5,
-   "page": "/destinations/dubai-police-general-headquarters/",
-   "lost_clicks": 1.77
+   "lost_clicks": 2.07
   },
   {
    "query": "deira metro station",
-   "impressions": 172,
+   "impressions": 190,
    "clicks": 0,
-   "position": 12.1,
+   "position": 12.0,
    "page": "/stations/city-centre-deira/",
-   "lost_clicks": 1.72
+   "lost_clicks": 1.9
   },
   {
-   "query": "meena bazaar bur dubai nearest metro station",
-   "impressions": 53,
+   "query": "al qiyadah police station dubai",
+   "impressions": 57,
    "clicks": 0,
-   "position": 7.3,
-   "page": "/destinations/meena-bazaar/",
-   "lost_clicks": 1.59
+   "position": 7.5,
+   "page": "/destinations/dubai-police-general-headquarters/",
+   "lost_clicks": 1.71
+  },
+  {
+   "query": "naif metro station",
+   "impressions": 56,
+   "clicks": 0,
+   "position": 8.7,
+   "page": "/",
+   "lost_clicks": 1.68
   }
  ],
  "near_page_one": [
   {
    "query": "metro station near me",
-   "impressions": 266,
-   "position": 11.1,
+   "impressions": 308,
+   "position": 10.7,
    "page": "/nearest-station/"
   },
   {
    "query": "deira metro station",
-   "impressions": 172,
-   "position": 12.1,
+   "impressions": 190,
+   "position": 12.0,
    "page": "/stations/city-centre-deira/"
   },
   {
    "query": "nearby metro station",
-   "impressions": 105,
-   "position": 10.6,
-   "page": "/"
-  },
-  {
-   "query": "near me metro station",
-   "impressions": 96,
-   "position": 10.6,
+   "impressions": 114,
+   "position": 10.7,
    "page": "/"
   },
   {
    "query": "dubai municipality head office",
-   "impressions": 95,
+   "impressions": 96,
    "position": 10.6,
    "page": "/destinations/dubai-municipality-head-office/"
   },
   {
    "query": "closest metro station",
-   "impressions": 41,
-   "position": 11.0,
+   "impressions": 47,
+   "position": 10.8,
+   "page": "/nearest-station/"
+  },
+  {
+   "query": "dubai metro station near me",
+   "impressions": 35,
+   "position": 17.6,
    "page": "/nearest-station/"
   },
   {
    "query": "metro station near meena bazaar dubai",
-   "impressions": 32,
-   "position": 10.9,
+   "impressions": 34,
+   "position": 10.7,
    "page": "/destinations/meena-bazaar/"
-  },
-  {
-   "query": "dubai metro station near me",
-   "impressions": 31,
-   "position": 19.4,
-   "page": "/nearest-station/"
   },
   {
    "query": "dubai marina tram map",
@@ -231,110 +225,116 @@
   },
   {
    "query": "dubai festival city metro station",
-   "impressions": 19,
-   "position": 17,
+   "impressions": 23,
+   "position": 15.8,
    "page": "/destinations/dubai-festival-city-mall/"
   },
   {
-   "query": "closest metro to me",
-   "impressions": 17,
-   "position": 10.8,
-   "page": "/nearest-station/"
-  },
-  {
-   "query": "metro bus station near me",
-   "impressions": 13,
+   "query": "metro station near by me",
+   "impressions": 19,
    "position": 10.6,
    "page": "/nearest-station/"
   },
   {
    "query": "dubai festival city mall nearest metro",
-   "impressions": 12,
-   "position": 10.9,
+   "impressions": 16,
+   "position": 10.6,
    "page": "/destinations/dubai-festival-city-mall/"
   },
   {
-   "query": "dubai land nearest metro station",
-   "impressions": 12,
-   "position": 13.5,
-   "page": "/destinations/dubai-land-department/"
+   "query": "dubai creek harbour metro station",
+   "impressions": 13,
+   "position": 16.8,
+   "page": "/destinations/dubai-creek-harbour/"
+  },
+  {
+   "query": "festival city mall nearest metro",
+   "impressions": 13,
+   "position": 14.9,
+   "page": "/destinations/dubai-festival-city-mall/"
+  },
+  {
+   "query": "festival city metro station",
+   "impressions": 13,
+   "position": 11.2,
+   "page": "/destinations/dubai-festival-city-mall/"
   }
  ],
  "pages_no_clicks": [
   {
    "page": "/destinations/dubai-festival-city-mall/",
-   "impressions": 836,
-   "position": 10.5
+   "impressions": 907,
+   "position": 10.4
   },
   {
    "page": "/destinations/expo-city-dubai/",
-   "impressions": 520,
-   "position": 11.9
+   "impressions": 518,
+   "position": 11.5
   },
   {
    "page": "/destinations/naif-souk/",
-   "impressions": 483,
+   "impressions": 503,
    "position": 9.4
   },
   {
    "page": "/destinations/reef-mall/",
-   "impressions": 467,
-   "position": 8.2
+   "impressions": 496,
+   "position": 8.1
   },
   {
    "page": "/destinations/museum-of-the-future/",
-   "impressions": 394,
-   "position": 9.7
+   "impressions": 413,
+   "position": 9.6
   },
   {
    "page": "/destinations/jw-marriott-marquis-dubai/",
-   "impressions": 379,
+   "impressions": 387,
    "position": 8.4
   },
   {
-   "page": "/destinations/saudi-german-hospital-dubai/",
-   "impressions": 370,
-   "position": 6.5
-  },
-  {
    "page": "/destinations/dubai-media-city/",
-   "impressions": 329,
+   "impressions": 343,
    "position": 8.8
   },
   {
    "page": "/destinations/dubai-mall/",
-   "impressions": 316,
+   "impressions": 314,
    "position": 13.5
   },
   {
    "page": "/destinations/gold-souk/",
-   "impressions": 279,
-   "position": 13.0
+   "impressions": 292,
+   "position": 12.9
   },
   {
    "page": "/destinations/dubai-hospital/",
-   "impressions": 225,
+   "impressions": 235,
    "position": 7.9
   },
   {
    "page": "/destinations/dubai-creek-harbour/",
-   "impressions": 224,
-   "position": 17.3
+   "impressions": 234,
+   "position": 16.9
   },
   {
    "page": "/destinations/dubai-airport/",
-   "impressions": 220,
-   "position": 23.1
+   "impressions": 219,
+   "position": 23.2
   },
   {
    "page": "/lines/red-line/",
-   "impressions": 213,
-   "position": 37.0
+   "impressions": 217,
+   "position": 36.0
   },
   {
    "page": "/stations/al-sufouh/",
-   "impressions": 192,
-   "position": 10.0
+   "impressions": 207,
+   "position": 9.8
+  },
+  {
+   "page": "/destinations/safa-park/",
+   "impressions": 196,
+   "position": 10.1
   }
  ],
  "index_by_type": {
@@ -400,15 +400,15 @@
   }
  },
  "request_today": [
-  "https://dubaimetro.fyi/stations/jumeirah-golf-estates/",
-  "https://dubaimetro.fyi/stations/jumeirah-lakes-towers/",
-  "https://dubaimetro.fyi/stations/knowledge-village/",
-  "https://dubaimetro.fyi/stations/life-pharmacy/"
+  "https://dubaimetro.fyi/stations/marina-towers/",
+  "https://dubaimetro.fyi/stations/max/",
+  "https://dubaimetro.fyi/stations/media-city/",
+  "https://dubaimetro.fyi/stations/mina-seyahi/"
  ],
  "languages": {
   "en": {
-   "impressions": 11516,
-   "clicks": 22
+   "impressions": 11973,
+   "clicks": 25
   },
   "ar": {
    "impressions": 39,
@@ -487,10 +487,10 @@
   "https://dubaimetro.fyi/stations/jumeirah-lakes-towers/": "2026-11-06",
   "https://dubaimetro.fyi/stations/knowledge-village/": "2026-11-06",
   "https://dubaimetro.fyi/stations/life-pharmacy/": "2026-11-06",
-  "https://dubaimetro.fyi/stations/marina-towers/": "2026-10-24",
-  "https://dubaimetro.fyi/stations/max/": "2026-10-24",
-  "https://dubaimetro.fyi/stations/media-city/": "2026-10-24",
-  "https://dubaimetro.fyi/stations/mina-seyahi/": "2026-10-24",
+  "https://dubaimetro.fyi/stations/marina-towers/": "2026-11-07",
+  "https://dubaimetro.fyi/stations/max/": "2026-11-07",
+  "https://dubaimetro.fyi/stations/media-city/": "2026-11-07",
+  "https://dubaimetro.fyi/stations/mina-seyahi/": "2026-11-07",
   "https://dubaimetro.fyi/stations/national-paints/": "2026-10-25",
   "https://dubaimetro.fyi/stations/palm-gateway/": "2026-10-25",
   "https://dubaimetro.fyi/stations/palm-jumeirah-mall/": "2026-10-25"
