@@ -1,51 +1,19 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-06T23:31:28Z",
- "start": "2026-10-07",
- "end": "2026-11-07",
+ "generated": "2026-11-07T03:13:32Z",
+ "start": "2026-10-08",
+ "end": "2026-11-08",
  "total": {
-  "total": 478,
-  "total_events": 241,
-  "total_utc": 476,
+  "total": 415,
+  "total_events": 198,
+  "total_utc": 406,
   "stats": [
-   {
-    "day": "2026-10-07",
-    "hourly": [
-     0,
-     0,
-     0,
-     0,
-     1,
-     0,
-     1,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     1,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     7,
-     0,
-     11
-    ],
-    "daily": 21,
-    "weekly": 222,
-    "monthly": 384
-   },
    {
     "day": "2026-10-08",
     "hourly": [
-     24,
-     17,
-     1,
+     0,
+     0,
+     0,
      0,
      0,
      0,
@@ -68,7 +36,9 @@
      3,
      2
     ],
-    "daily": 111
+    "daily": 69,
+    "weekly": 180,
+    "monthly": 321
    },
    {
     "day": "2026-10-09",
@@ -248,8 +218,7 @@
      0,
      1
     ],
-    "daily": 21,
-    "weekly": 62
+    "daily": 21
    },
    {
     "day": "2026-10-15",
@@ -279,7 +248,8 @@
      0,
      0
     ],
-    "daily": 6
+    "daily": 6,
+    "weekly": 44
    },
    {
     "day": "2026-10-16",
@@ -459,8 +429,7 @@
      0,
      0
     ],
-    "daily": 3,
-    "weekly": 73
+    "daily": 3
    },
    {
     "day": "2026-10-22",
@@ -490,7 +459,8 @@
      6,
      0
     ],
-    "daily": 9
+    "daily": 9,
+    "weekly": 78
    },
    {
     "day": "2026-10-23",
@@ -670,8 +640,7 @@
      0,
      0
     ],
-    "daily": 8,
-    "weekly": 67
+    "daily": 8
    },
    {
     "day": "2026-10-29",
@@ -701,7 +670,8 @@
      0,
      0
     ],
-    "daily": 5
+    "daily": 5,
+    "weekly": 78
    },
    {
     "day": "2026-10-30",
@@ -882,8 +852,7 @@
      0,
      0
     ],
-    "daily": 19,
-    "weekly": 54
+    "daily": 19
    },
    {
     "day": "2026-11-05",
@@ -913,7 +882,8 @@
      0,
      0
     ],
-    "daily": 12
+    "daily": 12,
+    "weekly": 35
    },
    {
     "day": "2026-11-06",
@@ -974,6 +944,36 @@
      0
     ],
     "daily": 4
+   },
+   {
+    "day": "2026-11-08",
+    "hourly": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "daily": 0
    }
   ]
  },
@@ -983,10 +983,9 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 81,
+   "count": 66,
    "daily": {
-    "2026-10-07": 7,
-    "2026-10-08": 16,
+    "2026-10-08": 8,
     "2026-10-09": 7,
     "2026-10-10": 4,
     "2026-10-11": 9,
@@ -1175,30 +1174,6 @@
    }
   },
   {
-   "path": "/tl.html",
-   "path_id": 110332677,
-   "title": "Interactive na Mapa ng Dubai Metro: Metro, Tram, Palm Monorail",
-   "event": false,
-   "count": 5,
-   "daily": {
-    "2026-10-08": 5
-   }
-  },
-  {
-   "path": "geo/denied/-",
-   "path_id": 110313382,
-   "title": "en",
-   "event": true,
-   "count": 5,
-   "daily": {
-    "2026-10-07": 1,
-    "2026-10-08": 1,
-    "2026-10-14": 1,
-    "2026-10-31": 1,
-    "2026-11-07": 1
-   }
-  },
-  {
    "path": "/destinations/aster-hospital-al-qusais",
    "path_id": 116157918,
    "title": "Aster Hospital Al Qusais Metro Station: Dubai Airport Free Zone",
@@ -1328,15 +1303,15 @@
    }
   },
   {
-   "path": "map_station_click/moe/-",
-   "path_id": 110312988,
-   "title": "en|home|phone",
+   "path": "geo/denied/-",
+   "path_id": 110313382,
+   "title": "en",
    "event": true,
    "count": 3,
    "daily": {
-    "2026-10-07": 1,
-    "2026-10-11": 1,
-    "2026-11-06": 1
+    "2026-10-14": 1,
+    "2026-10-31": 1,
+    "2026-11-07": 1
    }
   },
   {
@@ -1516,100 +1491,14 @@
    }
   },
   {
-   "path": "route/p_dubai_mall/p_dxb_airport_terminal_3",
-   "path_id": 110326900,
-   "title": "en|search|ok|first_place_search",
-   "event": true,
-   "count": 2,
-   "daily": {
-    "2026-10-08": 1,
-    "2026-10-15": 1
-   }
-  },
-  {
-   "path": "place/p_dxb_airport_terminal_3/to",
-   "path_id": 110326886,
-   "title": "en|name",
-   "event": true,
-   "count": 2,
-   "daily": {
-    "2026-10-08": 1,
-    "2026-10-15": 1
-   }
-  },
-  {
-   "path": "route_to_station_click/rigga/-",
-   "path_id": 110317467,
-   "title": "en",
-   "event": true,
-   "count": 2,
-   "daily": {
-    "2026-10-08": 2
-   }
-  },
-  {
-   "path": "map_station_click/rigga/-",
-   "path_id": 110317437,
+   "path": "map_station_click/moe/-",
+   "path_id": 110312988,
    "title": "en|home|phone",
    "event": true,
    "count": 2,
    "daily": {
-    "2026-10-08": 2
-   }
-  },
-  {
-   "path": "place/p_atlantis_the_palm/to",
-   "path_id": 110313388,
-   "title": "en|name",
-   "event": true,
-   "count": 2,
-   "daily": {
-    "2026-10-07": 1,
-    "2026-10-08": 1
-   }
-  },
-  {
-   "path": "map_station_click/creek/-",
-   "path_id": 110312977,
-   "title": "en|home|phone",
-   "event": true,
-   "count": 2,
-   "daily": {
-    "2026-10-07": 1,
-    "2026-10-08": 1
-   }
-  },
-  {
-   "path": "map_station_click/centrepoint/-",
-   "path_id": 110294742,
-   "title": "en|home|desktop",
-   "event": true,
-   "count": 2,
-   "daily": {
-    "2026-10-07": 1,
-    "2026-10-08": 1
-   }
-  },
-  {
-   "path": "map_station_click/sobha/-",
-   "path_id": 110294723,
-   "title": "en|home|desktop",
-   "event": true,
-   "count": 2,
-   "daily": {
-    "2026-10-07": 1,
-    "2026-10-08": 1
-   }
-  },
-  {
-   "path": "place/p_dubai_mall/from",
-   "path_id": 109724714,
-   "title": "ru|name",
-   "event": true,
-   "count": 2,
-   "daily": {
-    "2026-10-08": 1,
-    "2026-10-15": 1
+    "2026-10-11": 1,
+    "2026-11-06": 1
    }
   },
   {
@@ -2954,148 +2843,28 @@
    }
   },
   {
-   "path": "route/p_gold_souk/p_atlantis_the_palm",
-   "path_id": 110330350,
-   "title": "en|search|ok|first_geo",
+   "path": "route/p_dubai_mall/p_dxb_airport_terminal_3",
+   "path_id": 110326900,
+   "title": "en|search|ok|first_place_search",
    "event": true,
    "count": 1,
    "daily": {
-    "2026-10-08": 1
+    "2026-10-15": 1
    }
   },
   {
-   "path": "place/p_gold_souk/from",
-   "path_id": 110330338,
+   "path": "place/p_dxb_airport_terminal_3/to",
+   "path_id": 110326886,
    "title": "en|name",
    "event": true,
    "count": 1,
    "daily": {
-    "2026-10-08": 1
+    "2026-10-15": 1
    }
   },
   {
-   "path": "route/furjan/p_dxb_airport_terminal_3",
-   "path_id": 110326931,
-   "title": "en|map|ok|first_place_search",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-08": 1
-   }
-  },
-  {
-   "path": "route_from_station_click/furjan/-",
-   "path_id": 110326930,
-   "title": "en",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-08": 1
-   }
-  },
-  {
-   "path": "map_station_click/furjan/-",
-   "path_id": 110326925,
-   "title": "en|home|desktop",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-08": 1
-   }
-  },
-  {
-   "path": "station_pair_route_search/alras/sobha",
-   "path_id": 110320372,
-   "title": "en|map",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-08": 1
-   }
-  },
-  {
-   "path": "route/alras/sobha",
-   "path_id": 110320371,
-   "title": "en|map|ok|first_map",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-08": 1
-   }
-  },
-  {
-   "path": "route_to_station_click/sobha/-",
-   "path_id": 110320370,
-   "title": "en",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-08": 1
-   }
-  },
-  {
-   "path": "route_from_station_click/alras/-",
-   "path_id": 110320357,
-   "title": "en",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-08": 1
-   }
-  },
-  {
-   "path": "map_station_click/alras/-",
-   "path_id": 110320345,
-   "title": "en|home|desktop",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-08": 1
-   }
-  },
-  {
-   "path": "view/baniyas/rigga",
-   "path_id": 110318173,
-   "title": "en|details",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-08": 1
-   }
-  },
-  {
-   "path": "station_pair_route_search/baniyas/rigga",
-   "path_id": 110318165,
-   "title": "en|place_search",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-08": 1
-   }
-  },
-  {
-   "path": "route/baniyas/rigga",
-   "path_id": 110318164,
-   "title": "en|map|ok|first_place_search",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-08": 1
-   }
-  },
-  {
-   "path": "route_from_station_click/baniyas/-",
-   "path_id": 110318158,
-   "title": "en",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-08": 1
-   }
-  },
-  {
-   "path": "map_station_click/baniyas/-",
-   "path_id": 110318154,
+   "path": "map_station_click/creek/-",
+   "path_id": 110312977,
    "title": "en|home|phone",
    "event": true,
    "count": 1,
@@ -3104,123 +2873,13 @@
    }
   },
   {
-   "path": "noresult/from/-",
-   "path_id": 110317711,
-   "title": "en|w on",
+   "path": "map_station_click/centrepoint/-",
+   "path_id": 110294742,
+   "title": "en|home|desktop",
    "event": true,
    "count": 1,
    "daily": {
     "2026-10-08": 1
-   }
-  },
-  {
-   "path": "station/bk/to",
-   "path_id": 110317669,
-   "title": "en|name",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-08": 1
-   }
-  },
-  {
-   "path": "place/p_dubai_mall/to",
-   "path_id": 110317659,
-   "title": "en|name",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-08": 1
-   }
-  },
-  {
-   "path": "route_from_station_click/rigga/-",
-   "path_id": 110317446,
-   "title": "en",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-08": 1
-   }
-  },
-  {
-   "path": "station_pair_route_search/creek/moe",
-   "path_id": 110313002,
-   "title": "en|map",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-07": 1
-   }
-  },
-  {
-   "path": "route/creek/moe",
-   "path_id": 110313001,
-   "title": "en|map|ok|first_map",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-07": 1
-   }
-  },
-  {
-   "path": "route_to_station_click/moe/-",
-   "path_id": 110313000,
-   "title": "en",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-07": 1
-   }
-  },
-  {
-   "path": "route_from_station_click/creek/-",
-   "path_id": 110312982,
-   "title": "en",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-07": 1
-   }
-  },
-  {
-   "path": "station_pair_route_search/sobha/centrepoint",
-   "path_id": 110294750,
-   "title": "en|map",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-07": 1
-   }
-  },
-  {
-   "path": "route/sobha/centrepoint",
-   "path_id": 110294749,
-   "title": "en|map|ok|first_map",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-07": 1
-   }
-  },
-  {
-   "path": "route_to_station_click/centrepoint/-",
-   "path_id": 110294748,
-   "title": "en",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-07": 1
-   }
-  },
-  {
-   "path": "route_from_station_click/sobha/-",
-   "path_id": 110294730,
-   "title": "en",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-07": 1
    }
   },
   {
@@ -3231,6 +2890,16 @@
    "count": 1,
    "daily": {
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "place/p_dubai_mall/from",
+   "path_id": 109724714,
+   "title": "ru|name",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-15": 1
    }
   },
   {
@@ -3256,12 +2925,11 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 237,
-  "events_total": 241,
-  "goatcounter_total_with_events": 478,
+  "visits": 217,
+  "events_total": 198,
+  "goatcounter_total_with_events": 415,
   "page_loads_by_day": {
-   "2026-10-07": 7,
-   "2026-10-08": 22,
+   "2026-10-08": 9,
    "2026-10-09": 11,
    "2026-10-10": 5,
    "2026-10-11": 11,
@@ -3321,17 +2989,17 @@
   },
   "visitor_days": 61,
   "return_rate": 0.082,
-  "routes": 33,
+  "routes": 26,
   "routes_not_found": 0,
-  "routes_per_visit": 0.14,
-  "routes_per_visitor_day": 0.51,
-  "share_rate": 0.091,
+  "routes_per_visit": 0.12,
+  "routes_per_visitor_day": 0.43,
+  "share_rate": 0.115,
   "shares": {
    "qr": 1,
    "copy": 1,
    "whatsapp": 1
   },
-  "failed_search_rate": 0.062,
+  "failed_search_rate": 0.08,
   "failed_searches": [
    {
     "name": "indigo",
@@ -3343,7 +3011,7 @@
    }
   ],
   "nearest_station": {
-   "denied": 5,
+   "denied": 3,
    "ok": 8,
    "fail": 1
   },
@@ -3352,10 +3020,6 @@
    "return": 5
   },
   "top_routes": [
-   {
-    "name": "p_dubai_mall > p_dxb_airport_terminal_3",
-    "count": 2
-   },
    {
     "name": "p_dxb_airport_terminal_3 > p_american_hospital_dubai",
     "count": 1
@@ -3411,6 +3075,10 @@
    {
     "name": "p_dxb_airport_terminal_3 > p_etihad_rail_al_yalayis_station",
     "count": 1
+   },
+   {
+    "name": "palmgw > atlantis",
+    "count": 1
    }
   ],
   "top_origins": [
@@ -3421,10 +3089,6 @@
    {
     "name": "dmm",
     "count": 3
-   },
-   {
-    "name": "p_dubai_mall",
-    "count": 2
    },
    {
     "name": "p_dubai_internet_city",
@@ -3453,13 +3117,13 @@
    {
     "name": "bb",
     "count": 1
+   },
+   {
+    "name": "moe",
+    "count": 1
    }
   ],
   "top_destinations": [
-   {
-    "name": "p_dxb_airport_terminal_3",
-    "count": 3
-   },
    {
     "name": "p_burj_khalifa",
     "count": 3
@@ -3495,6 +3159,10 @@
    {
     "name": "p_burjuman_mall",
     "count": 1
+   },
+   {
+    "name": "p_dubai_municipality_head_office",
+    "count": 1
    }
   ]
  },
@@ -3502,11 +3170,11 @@
   "/": [
    {
     "name": "(direct or unknown)",
-    "count": 49
+    "count": 36
    },
    {
     "name": "com.reddit.frontpage",
-    "count": 9
+    "count": 7
    },
    {
     "name": "dubaimetro.fyi",
@@ -3617,16 +3285,6 @@
    {
     "name": "chatgpt.com",
     "count": 1
-   }
-  ],
-  "/tl.html": [
-   {
-    "name": "www.facebook.com",
-    "count": 3
-   },
-   {
-    "name": "Facebook",
-    "count": 2
    }
   ],
   "/destinations/aster-hospital-al-qusais": [
@@ -3974,7 +3632,7 @@
   "(direct or unknown)": [
    {
     "path": "/",
-    "count": 49
+    "count": 36
    },
    {
     "path": "/destinations/etihad-rail-dubai",
@@ -4032,7 +3690,7 @@
   "com.reddit.frontpage": [
    {
     "path": "/",
-    "count": 9
+    "count": 7
    }
   ],
   "dubaimetro.fyi": [
@@ -4335,18 +3993,6 @@
     "count": 1
    }
   ],
-  "www.facebook.com": [
-   {
-    "path": "/tl.html",
-    "count": 3
-   }
-  ],
-  "Facebook": [
-   {
-    "path": "/tl.html",
-    "count": 2
-   }
-  ],
   "dubaimetro.fyi/lines/green-line": [
    {
     "path": "/lines/red-line",
@@ -4369,7 +4015,7 @@
  "toprefs": [
   {
    "name": "",
-   "count": 225,
+   "count": 181,
    "ref_scheme": "o"
   },
   {
@@ -4381,7 +4027,7 @@
   {
    "id": "com.reddit.frontpage",
    "name": "com.reddit.frontpage",
-   "count": 45,
+   "count": 31,
    "ref_scheme": "o"
   },
   {
@@ -4409,18 +4055,6 @@
    "ref_scheme": "h"
   },
   {
-   "id": "www.facebook.com",
-   "name": "www.facebook.com",
-   "count": 3,
-   "ref_scheme": "h"
-  },
-  {
-   "id": "Facebook",
-   "name": "Facebook",
-   "count": 2,
-   "ref_scheme": "c"
-  },
-  {
    "id": "Yandex",
    "name": "Yandex",
    "count": 2,
@@ -4431,12 +4065,12 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 454
+   "count": 393
   },
   {
    "id": "(unknown)",
    "name": "(unknown)",
-   "count": 7
+   "count": 5
   },
   {
    "id": "rus",
@@ -4483,12 +4117,12 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 385
+   "count": 333
   },
   {
    "id": "US",
    "name": "United States",
-   "count": 38
+   "count": 33
   },
   {
    "id": "IN",
@@ -4506,23 +4140,18 @@
    "count": 5
   },
   {
-   "id": "NL",
-   "name": "Netherlands",
-   "count": 4
-  },
-  {
    "id": "FR",
    "name": "France",
    "count": 3
   },
   {
-   "id": "IE",
-   "name": "Ireland",
+   "id": "KR",
+   "name": "South Korea",
    "count": 3
   },
   {
-   "id": "KR",
-   "name": "South Korea",
+   "id": "NL",
+   "name": "Netherlands",
    "count": 3
   },
   {
@@ -4551,11 +4180,6 @@
    "count": 2
   },
   {
-   "id": "PL",
-   "name": "Poland",
-   "count": 2
-  },
-  {
    "id": "PT",
    "name": "Portugal",
    "count": 2
@@ -4563,6 +4187,11 @@
   {
    "id": "DE",
    "name": "Germany",
+   "count": 1
+  },
+  {
+   "id": "IE",
+   "name": "Ireland",
    "count": 1
   },
   {
@@ -4576,18 +4205,13 @@
    "count": 1
   },
   {
-   "id": "RU",
-   "name": "Russia",
+   "id": "PL",
+   "name": "Poland",
    "count": 1
   },
   {
    "id": "SA",
    "name": "Saudi Arabia",
-   "count": 1
-  },
-  {
-   "id": "TW",
-   "name": "Taiwan",
    "count": 1
   }
  ],
@@ -4595,22 +4219,22 @@
   {
    "id": "phone",
    "name": "",
-   "count": 301
+   "count": 268
   },
   {
    "id": "tablet",
    "name": "",
-   "count": 27
+   "count": 26
   },
   {
    "id": "desktop",
    "name": "",
-   "count": 143
+   "count": 119
   },
   {
    "id": "desktophd",
    "name": "",
-   "count": 7
+   "count": 2
   },
   {
    "id": "unknown",
@@ -4622,44 +4246,44 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 312
+   "count": 268
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 163
+   "count": 145
   },
   {
    "id": "Firefox",
    "name": "Firefox",
-   "count": 3
+   "count": 2
   }
  ],
  "systems": [
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 163
+   "count": 145
   },
   {
    "id": "Android",
    "name": "Android",
-   "count": 144
+   "count": 129
   },
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 95
+   "count": 82
   },
   {
    "id": "macOS",
    "name": "macOS",
-   "count": 58
+   "count": 44
   },
   {
    "id": "Linux",
    "name": "Linux",
-   "count": 14
+   "count": 11
   },
   {
    "id": "Chrome OS",
