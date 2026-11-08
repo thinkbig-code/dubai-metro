@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-08T06:43:17Z",
+ "generated": "2026-11-08T07:27:25Z",
  "start": "2026-10-09",
  "end": "2026-11-09",
  "total": {
-  "total": 380,
+  "total": 381,
   "total_events": 150,
-  "total_utc": 377,
+  "total_utc": 378,
   "stats": [
    {
     "day": "2026-10-09",
@@ -732,7 +732,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 130
+    "monthly": 131
    },
    {
     "day": "2026-11-02",
@@ -883,7 +883,7 @@
      0
     ],
     "daily": 19,
-    "weekly": 59
+    "weekly": 60
    },
    {
     "day": "2026-11-07",
@@ -929,7 +929,7 @@
      0,
      0,
      5,
-     0,
+     1,
      0,
      0,
      0,
@@ -943,7 +943,7 @@
      0,
      0
     ],
-    "daily": 8
+    "daily": 9
    },
    {
     "day": "2026-11-09",
@@ -1493,6 +1493,16 @@
    "daily": {
     "2026-10-11": 1,
     "2026-10-17": 1
+   }
+  },
+  {
+   "path": "/stations/dmcc",
+   "path_id": 120136030,
+   "title": "DMCC Metro Station, Dubai: Red Line (formerly Jumeirah Lakes Towers)",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-11-08": 1
    }
   },
   {
@@ -2548,9 +2558,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 230,
+  "visits": 231,
   "events_total": 150,
-  "goatcounter_total_with_events": 380,
+  "goatcounter_total_with_events": 381,
   "page_loads_by_day": {
    "2026-10-09": 10,
    "2026-10-10": 5,
@@ -2582,7 +2592,7 @@
    "2026-11-05": 10,
    "2026-11-06": 14,
    "2026-11-07": 21,
-   "2026-11-08": 5
+   "2026-11-08": 6
   },
   "visitor_days_by_day": {
    "2026-10-09": 5,
@@ -3095,6 +3105,12 @@
     "count": 1
    }
   ],
+  "/stations/dmcc": [
+   {
+    "name": "chatgpt.com",
+    "count": 1
+   }
+  ],
   "/destinations/gold-souk": [
    {
     "name": "Google",
@@ -3405,6 +3421,10 @@
     "count": 1
    },
    {
+    "path": "/stations/dmcc",
+    "count": 1
+   },
+   {
     "path": "/stations/al-ras",
     "count": 1
    },
@@ -3679,7 +3699,7 @@
   {
    "id": "chatgpt.com",
    "name": "chatgpt.com",
-   "count": 19,
+   "count": 20,
    "ref_scheme": "c"
   },
   {
@@ -3711,7 +3731,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 352
+   "count": 353
   },
   {
    "id": "rus",
@@ -3763,7 +3783,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 300
+   "count": 301
   },
   {
    "id": "US",
@@ -3865,7 +3885,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 270
+   "count": 271
   },
   {
    "id": "tablet",
@@ -3892,7 +3912,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 245
+   "count": 246
   },
   {
    "id": "Safari",
@@ -3904,7 +3924,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 138
+   "count": 139
   },
   {
    "id": "iOS",

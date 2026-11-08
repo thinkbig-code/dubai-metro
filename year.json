@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-08T06:44:16Z",
+ "generated": "2026-11-08T07:28:36Z",
  "start": "2025-11-08",
  "end": "2026-11-09",
  "total": {
-  "total": 585,
+  "total": 586,
   "total_events": 277,
-  "total_utc": 585,
+  "total_utc": 586,
   "stats": [
    {
     "day": "2025-11-08",
@@ -10784,7 +10784,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 130
+    "monthly": 131
    },
    {
     "day": "2026-11-02",
@@ -10965,7 +10965,7 @@
      0
     ],
     "daily": 32,
-    "weekly": 40
+    "weekly": 41
    },
    {
     "day": "2026-11-08",
@@ -10981,7 +10981,7 @@
      0,
      0,
      5,
-     0,
+     1,
      0,
      0,
      0,
@@ -10995,7 +10995,7 @@
      0,
      0
     ],
-    "daily": 8
+    "daily": 9
    },
    {
     "day": "2026-11-09",
@@ -11767,6 +11767,16 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/stations/dmcc",
+   "path_id": 120136030,
+   "title": "DMCC Metro Station, Dubai: Red Line (formerly Jumeirah Lakes Towers)",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-11-08": 1
    }
   },
   {
@@ -13582,9 +13592,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 308,
+  "visits": 309,
   "events_total": 277,
-  "goatcounter_total_with_events": 585,
+  "goatcounter_total_with_events": 586,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -13623,7 +13633,7 @@
    "2026-11-05": 10,
    "2026-11-06": 14,
    "2026-11-07": 21,
-   "2026-11-08": 5
+   "2026-11-08": 6
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -14163,6 +14173,12 @@
     "count": 1
    }
   ],
+  "/stations/dmcc": [
+   {
+    "name": "chatgpt.com",
+    "count": 1
+   }
+  ],
   "/destinations/gold-souk": [
    {
     "name": "Google",
@@ -14491,6 +14507,10 @@
     "count": 1
    },
    {
+    "path": "/stations/dmcc",
+    "count": 1
+   },
+   {
     "path": "/stations/al-ras",
     "count": 1
    },
@@ -14785,16 +14805,16 @@
    "ref_scheme": "o"
   },
   {
+   "id": "chatgpt.com",
+   "name": "chatgpt.com",
+   "count": 21,
+   "ref_scheme": "c"
+  },
+  {
    "id": "www.bing.com",
    "name": "www.bing.com",
    "count": 20,
    "ref_scheme": "h"
-  },
-  {
-   "id": "chatgpt.com",
-   "name": "chatgpt.com",
-   "count": 20,
-   "ref_scheme": "c"
   },
   {
    "id": "Yahoo",
@@ -14837,7 +14857,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 531
+   "count": 532
   },
   {
    "id": "rus",
@@ -14889,7 +14909,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 445
+   "count": 446
   },
   {
    "id": "US",
@@ -15036,7 +15056,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 367
+   "count": 368
   },
   {
    "id": "tablet",
@@ -15063,7 +15083,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 382
+   "count": 383
   },
   {
    "id": "Safari",
@@ -15089,7 +15109,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 175
+   "count": 176
   },
   {
    "id": "Windows",
