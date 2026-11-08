@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-08T07:28:36Z",
+ "generated": "2026-11-08T13:54:05Z",
  "start": "2025-11-08",
  "end": "2026-11-09",
  "total": {
-  "total": 586,
-  "total_events": 277,
-  "total_utc": 586,
+  "total": 591,
+  "total_events": 278,
+  "total_utc": 591,
   "stats": [
    {
     "day": "2025-11-08",
@@ -10784,7 +10784,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 131
+    "monthly": 136
    },
    {
     "day": "2026-11-02",
@@ -10965,7 +10965,7 @@
      0
     ],
     "daily": 32,
-    "weekly": 41
+    "weekly": 46
    },
    {
     "day": "2026-11-08",
@@ -10981,11 +10981,11 @@
      0,
      0,
      5,
+     4,
      1,
      0,
      0,
-     0,
-     0,
+     1,
      0,
      0,
      0,
@@ -10995,7 +10995,7 @@
      0,
      0
     ],
-    "daily": 9
+    "daily": 14
    },
    {
     "day": "2026-11-09",
@@ -11035,7 +11035,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 134,
+   "count": 135,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -11069,7 +11069,7 @@
     "2026-11-05": 2,
     "2026-11-06": 2,
     "2026-11-07": 6,
-    "2026-11-08": 2
+    "2026-11-08": 3
    }
   },
   {
@@ -11138,7 +11138,7 @@
    "path_id": 116082941,
    "title": "Nearest Metro Station to Me in Dubai: Find It by Location",
    "event": false,
-   "count": 19,
+   "count": 21,
    "daily": {
     "2026-10-28": 1,
     "2026-10-31": 1,
@@ -11147,7 +11147,7 @@
     "2026-11-05": 1,
     "2026-11-06": 3,
     "2026-11-07": 7,
-    "2026-11-08": 3
+    "2026-11-08": 5
    }
   },
   {
@@ -11168,6 +11168,22 @@
    }
   },
   {
+   "path": "/destinations/meena-bazaar",
+   "path_id": 115183314,
+   "title": "Meena Bazaar Metro Station: Sharaf DG (Green Line), 9 min walk",
+   "event": false,
+   "count": 7,
+   "daily": {
+    "2026-10-26": 1,
+    "2026-10-27": 1,
+    "2026-10-31": 1,
+    "2026-11-03": 1,
+    "2026-11-06": 1,
+    "2026-11-07": 1,
+    "2026-11-08": 1
+   }
+  },
+  {
    "path": "visit/return/-",
    "path_id": 110878762,
    "title": "en",
@@ -11180,21 +11196,6 @@
     "2026-11-03": 1,
     "2026-11-05": 1,
     "2026-11-07": 2
-   }
-  },
-  {
-   "path": "/destinations/meena-bazaar",
-   "path_id": 115183314,
-   "title": "Meena Bazaar Metro Station: Sharaf DG (Green Line), 9 min walk",
-   "event": false,
-   "count": 6,
-   "daily": {
-    "2026-10-26": 1,
-    "2026-10-27": 1,
-    "2026-10-31": 1,
-    "2026-11-03": 1,
-    "2026-11-06": 1,
-    "2026-11-07": 1
    }
   },
   {
@@ -11637,6 +11638,17 @@
    "daily": {
     "2026-10-08": 1,
     "2026-11-01": 1
+   }
+  },
+  {
+   "path": "geo/ok/dic",
+   "path_id": 110476418,
+   "title": "en",
+   "event": true,
+   "count": 2,
+   "daily": {
+    "2026-10-08": 1,
+    "2026-11-08": 1
    }
   },
   {
@@ -12980,16 +12992,6 @@
    }
   },
   {
-   "path": "geo/ok/dic",
-   "path_id": 110476418,
-   "title": "en",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-08": 1
-   }
-  },
-  {
    "path": "place/p_burj_khalifa/from",
    "path_id": 110476379,
    "title": "en|name",
@@ -13592,9 +13594,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 309,
-  "events_total": 277,
-  "goatcounter_total_with_events": 586,
+  "visits": 313,
+  "events_total": 278,
+  "goatcounter_total_with_events": 591,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -13633,7 +13635,7 @@
    "2026-11-05": 10,
    "2026-11-06": 14,
    "2026-11-07": 21,
-   "2026-11-08": 6
+   "2026-11-08": 10
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -13688,7 +13690,7 @@
   ],
   "nearest_station": {
    "denied": 6,
-   "ok": 10,
+   "ok": 11,
    "fail": 2,
    "far": 1,
    "outside": 1
@@ -13860,7 +13862,7 @@
    },
    {
     "name": "dubaimetro.fyi",
-    "count": 6
+    "count": 7
    },
    {
     "name": "www.bing.com",
@@ -13928,7 +13930,7 @@
   "/nearest-station": [
    {
     "name": "Google",
-    "count": 19
+    "count": 21
    }
   ],
   "/destinations/indian-consulate-dubai": [
@@ -13940,7 +13942,7 @@
   "/destinations/meena-bazaar": [
    {
     "name": "Google",
-    "count": 6
+    "count": 7
    }
   ],
   "/destinations/rashid-hospital": [
@@ -14436,7 +14438,7 @@
   "dubaimetro.fyi": [
    {
     "path": "/",
-    "count": 6
+    "count": 7
    },
    {
     "path": "/ru.html",
@@ -14544,7 +14546,7 @@
    },
    {
     "path": "/nearest-station",
-    "count": 19
+    "count": 21
    },
    {
     "path": "/destinations/indian-consulate-dubai",
@@ -14552,7 +14554,7 @@
    },
    {
     "path": "/destinations/meena-bazaar",
-    "count": 6
+    "count": 7
    },
    {
     "path": "/destinations/rashid-hospital",
@@ -14795,7 +14797,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 123,
+   "count": 126,
    "ref_scheme": "g"
   },
   {
@@ -14857,7 +14859,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 532
+   "count": 537
   },
   {
    "id": "rus",
@@ -14909,7 +14911,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 446
+   "count": 451
   },
   {
    "id": "US",
@@ -15056,7 +15058,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 368
+   "count": 373
   },
   {
    "id": "tablet",
@@ -15083,12 +15085,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 383
+   "count": 385
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 198
+   "count": 201
   },
   {
    "id": "Firefox",
@@ -15104,12 +15106,12 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 194
+   "count": 197
   },
   {
    "id": "Android",
    "name": "Android",
-   "count": 176
+   "count": 178
   },
   {
    "id": "Windows",

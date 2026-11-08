@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-08T07:27:25Z",
+ "generated": "2026-11-08T13:52:54Z",
  "start": "2026-10-09",
  "end": "2026-11-09",
  "total": {
-  "total": 381,
-  "total_events": 150,
-  "total_utc": 378,
+  "total": 386,
+  "total_events": 151,
+  "total_utc": 383,
   "stats": [
    {
     "day": "2026-10-09",
@@ -732,7 +732,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 131
+    "monthly": 136
    },
    {
     "day": "2026-11-02",
@@ -883,7 +883,7 @@
      0
     ],
     "daily": 19,
-    "weekly": 60
+    "weekly": 65
    },
    {
     "day": "2026-11-07",
@@ -929,11 +929,11 @@
      0,
      0,
      5,
+     4,
      1,
      0,
      0,
-     0,
-     0,
+     1,
      0,
      0,
      0,
@@ -943,7 +943,7 @@
      0,
      0
     ],
-    "daily": 9
+    "daily": 14
    },
    {
     "day": "2026-11-09",
@@ -983,7 +983,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 64,
+   "count": 65,
    "daily": {
     "2026-10-09": 6,
     "2026-10-10": 4,
@@ -1010,7 +1010,7 @@
     "2026-11-05": 2,
     "2026-11-06": 2,
     "2026-11-07": 6,
-    "2026-11-08": 2
+    "2026-11-08": 3
    }
   },
   {
@@ -1078,7 +1078,7 @@
    "path_id": 116082941,
    "title": "Nearest Metro Station to Me in Dubai: Find It by Location",
    "event": false,
-   "count": 19,
+   "count": 21,
    "daily": {
     "2026-10-28": 1,
     "2026-10-31": 1,
@@ -1087,7 +1087,7 @@
     "2026-11-05": 1,
     "2026-11-06": 3,
     "2026-11-07": 7,
-    "2026-11-08": 3
+    "2026-11-08": 5
    }
   },
   {
@@ -1108,6 +1108,22 @@
    }
   },
   {
+   "path": "/destinations/meena-bazaar",
+   "path_id": 115183314,
+   "title": "Meena Bazaar Metro Station: Sharaf DG (Green Line), 9 min walk",
+   "event": false,
+   "count": 7,
+   "daily": {
+    "2026-10-26": 1,
+    "2026-10-27": 1,
+    "2026-10-31": 1,
+    "2026-11-03": 1,
+    "2026-11-06": 1,
+    "2026-11-07": 1,
+    "2026-11-08": 1
+   }
+  },
+  {
    "path": "visit/return/-",
    "path_id": 110878762,
    "title": "en",
@@ -1120,21 +1136,6 @@
     "2026-11-03": 1,
     "2026-11-05": 1,
     "2026-11-07": 2
-   }
-  },
-  {
-   "path": "/destinations/meena-bazaar",
-   "path_id": 115183314,
-   "title": "Meena Bazaar Metro Station: Sharaf DG (Green Line), 9 min walk",
-   "event": false,
-   "count": 6,
-   "daily": {
-    "2026-10-26": 1,
-    "2026-10-27": 1,
-    "2026-10-31": 1,
-    "2026-11-03": 1,
-    "2026-11-06": 1,
-    "2026-11-07": 1
    }
   },
   {
@@ -2496,6 +2497,16 @@
    }
   },
   {
+   "path": "geo/ok/dic",
+   "path_id": 110476418,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-08": 1
+   }
+  },
+  {
    "path": "geo/fail/-",
    "path_id": 110447348,
    "title": "en",
@@ -2558,9 +2569,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 231,
-  "events_total": 150,
-  "goatcounter_total_with_events": 381,
+  "visits": 235,
+  "events_total": 151,
+  "goatcounter_total_with_events": 386,
   "page_loads_by_day": {
    "2026-10-09": 10,
    "2026-10-10": 5,
@@ -2592,7 +2603,7 @@
    "2026-11-05": 10,
    "2026-11-06": 14,
    "2026-11-07": 21,
-   "2026-11-08": 6
+   "2026-11-08": 10
   },
   "visitor_days_by_day": {
    "2026-10-09": 5,
@@ -2646,7 +2657,7 @@
   ],
   "nearest_station": {
    "denied": 4,
-   "ok": 8,
+   "ok": 9,
    "far": 1,
    "outside": 1,
    "fail": 1
@@ -2813,11 +2824,11 @@
     "count": 9
    },
    {
-    "name": "com.reddit.frontpage",
-    "count": 6
+    "name": "dubaimetro.fyi",
+    "count": 7
    },
    {
-    "name": "dubaimetro.fyi",
+    "name": "com.reddit.frontpage",
     "count": 6
    },
    {
@@ -2878,7 +2889,7 @@
   "/nearest-station": [
    {
     "name": "Google",
-    "count": 19
+    "count": 21
    }
   ],
   "/destinations/indian-consulate-dubai": [
@@ -2890,7 +2901,7 @@
   "/destinations/meena-bazaar": [
    {
     "name": "Google",
-    "count": 6
+    "count": 7
    }
   ],
   "/destinations/rashid-hospital": [
@@ -3349,13 +3360,13 @@
     "count": 1
    }
   ],
-  "com.reddit.frontpage": [
+  "dubaimetro.fyi": [
    {
     "path": "/",
-    "count": 6
+    "count": 7
    }
   ],
-  "dubaimetro.fyi": [
+  "com.reddit.frontpage": [
    {
     "path": "/",
     "count": 6
@@ -3458,7 +3469,7 @@
    },
    {
     "path": "/nearest-station",
-    "count": 19
+    "count": 21
    },
    {
     "path": "/destinations/indian-consulate-dubai",
@@ -3466,7 +3477,7 @@
    },
    {
     "path": "/destinations/meena-bazaar",
-    "count": 6
+    "count": 7
    },
    {
     "path": "/destinations/rashid-hospital",
@@ -3680,15 +3691,15 @@
  },
  "toprefs": [
   {
+   "id": "Google",
+   "name": "Google",
+   "count": 126,
+   "ref_scheme": "g"
+  },
+  {
    "name": "",
    "count": 124,
    "ref_scheme": "o"
-  },
-  {
-   "id": "Google",
-   "name": "Google",
-   "count": 123,
-   "ref_scheme": "g"
   },
   {
    "id": "com.reddit.frontpage",
@@ -3731,7 +3742,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 353
+   "count": 358
   },
   {
    "id": "rus",
@@ -3783,7 +3794,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 301
+   "count": 306
   },
   {
    "id": "US",
@@ -3885,7 +3896,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 271
+   "count": 276
   },
   {
    "id": "tablet",
@@ -3912,24 +3923,24 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 246
+   "count": 248
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 135
+   "count": 138
   }
  ],
  "systems": [
   {
    "id": "Android",
    "name": "Android",
-   "count": 139
+   "count": 141
   },
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 135
+   "count": 138
   },
   {
    "id": "Windows",
