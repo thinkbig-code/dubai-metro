@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-08T13:54:05Z",
+ "generated": "2026-11-08T19:11:05Z",
  "start": "2025-11-08",
  "end": "2026-11-09",
  "total": {
-  "total": 591,
-  "total_events": 278,
-  "total_utc": 591,
+  "total": 600,
+  "total_events": 280,
+  "total_utc": 600,
   "stats": [
    {
     "day": "2025-11-08",
@@ -10784,7 +10784,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 136
+    "monthly": 145
    },
    {
     "day": "2026-11-02",
@@ -10965,7 +10965,7 @@
      0
     ],
     "daily": 32,
-    "weekly": 46
+    "weekly": 55
    },
    {
     "day": "2026-11-08",
@@ -10987,15 +10987,15 @@
      0,
      1,
      0,
+     1,
+     1,
      0,
      0,
-     0,
-     0,
-     0,
-     0,
+     4,
+     3,
      0
     ],
-    "daily": 14
+    "daily": 23
    },
    {
     "day": "2026-11-09",
@@ -11035,7 +11035,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 135,
+   "count": 137,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -11069,7 +11069,7 @@
     "2026-11-05": 2,
     "2026-11-06": 2,
     "2026-11-07": 6,
-    "2026-11-08": 3
+    "2026-11-08": 5
    }
   },
   {
@@ -11138,7 +11138,7 @@
    "path_id": 116082941,
    "title": "Nearest Metro Station to Me in Dubai: Find It by Location",
    "event": false,
-   "count": 21,
+   "count": 25,
    "daily": {
     "2026-10-28": 1,
     "2026-10-31": 1,
@@ -11147,7 +11147,7 @@
     "2026-11-05": 1,
     "2026-11-06": 3,
     "2026-11-07": 7,
-    "2026-11-08": 5
+    "2026-11-08": 9
    }
   },
   {
@@ -11498,6 +11498,17 @@
    }
   },
   {
+   "path": "/destinations/al-ghurair-centre",
+   "path_id": 117012967,
+   "title": "Al Ghurair Centre Metro Station: Union (Red/Green lines), 6 min walk",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-10-31": 1,
+    "2026-11-08": 1
+   }
+  },
+  {
    "path": "map_station_click/burjuman/-",
    "path_id": 114086554,
    "title": "en|home|phone",
@@ -11779,6 +11790,26 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "geo/ok/bb",
+   "path_id": 120276447,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-08": 1
+   }
+  },
+  {
+   "path": "geo/ok/jbr2",
+   "path_id": 120261772,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-08": 1
    }
   },
   {
@@ -12076,16 +12107,6 @@
    "path_id": 117213271,
    "title": "en",
    "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-31": 1
-   }
-  },
-  {
-   "path": "/destinations/al-ghurair-centre",
-   "path_id": 117012967,
-   "title": "Al Ghurair Centre Metro Station: Union (Red/Green lines), 6 min walk",
-   "event": false,
    "count": 1,
    "daily": {
     "2026-10-31": 1
@@ -13594,9 +13615,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 313,
-  "events_total": 278,
-  "goatcounter_total_with_events": 591,
+  "visits": 320,
+  "events_total": 280,
+  "goatcounter_total_with_events": 600,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -13635,7 +13656,7 @@
    "2026-11-05": 10,
    "2026-11-06": 14,
    "2026-11-07": 21,
-   "2026-11-08": 10
+   "2026-11-08": 17
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -13669,7 +13690,7 @@
   "return_rate": 0.108,
   "routes": 43,
   "routes_not_found": 0,
-  "routes_per_visit": 0.14,
+  "routes_per_visit": 0.13,
   "routes_per_visitor_day": 0.49,
   "share_rate": 0.07,
   "shares": {
@@ -13690,7 +13711,7 @@
   ],
   "nearest_station": {
    "denied": 6,
-   "ok": 11,
+   "ok": 13,
    "fail": 2,
    "far": 1,
    "outside": 1
@@ -13853,11 +13874,11 @@
     "count": 93
    },
    {
-    "name": "com.reddit.frontpage",
-    "count": 9
+    "name": "dubaimetro.fyi/nearest-station",
+    "count": 11
    },
    {
-    "name": "dubaimetro.fyi/nearest-station",
+    "name": "com.reddit.frontpage",
     "count": 9
    },
    {
@@ -13930,7 +13951,7 @@
   "/nearest-station": [
    {
     "name": "Google",
-    "count": 21
+    "count": 25
    }
   ],
   "/destinations/indian-consulate-dubai": [
@@ -14117,6 +14138,12 @@
     "count": 1
    }
   ],
+  "/destinations/al-ghurair-centre": [
+   {
+    "name": "Google",
+    "count": 2
+   }
+  ],
   "/destinations/al-mulla-plaza": [
    {
     "name": "Google",
@@ -14248,12 +14275,6 @@
    }
   ],
   "/destinations/dubai-garden-glow": [
-   {
-    "name": "Google",
-    "count": 1
-   }
-  ],
-  "/destinations/al-ghurair-centre": [
    {
     "name": "Google",
     "count": 1
@@ -14419,20 +14440,20 @@
     "count": 1
    }
   ],
-  "com.reddit.frontpage": [
-   {
-    "path": "/",
-    "count": 9
-   }
-  ],
   "dubaimetro.fyi/nearest-station": [
    {
     "path": "/",
-    "count": 9
+    "count": 11
    },
    {
     "path": "/map",
     "count": 1
+   }
+  ],
+  "com.reddit.frontpage": [
+   {
+    "path": "/",
+    "count": 9
    }
   ],
   "dubaimetro.fyi": [
@@ -14546,7 +14567,7 @@
    },
    {
     "path": "/nearest-station",
-    "count": 21
+    "count": 25
    },
    {
     "path": "/destinations/indian-consulate-dubai",
@@ -14594,6 +14615,10 @@
    },
    {
     "path": "/destinations/al-barsha-pond-park",
+    "count": 2
+   },
+   {
+    "path": "/destinations/al-ghurair-centre",
     "count": 2
    },
    {
@@ -14662,10 +14687,6 @@
    },
    {
     "path": "/destinations/dubai-garden-glow",
-    "count": 1
-   },
-   {
-    "path": "/destinations/al-ghurair-centre",
     "count": 1
    },
    {
@@ -14797,7 +14818,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 126,
+   "count": 131,
    "ref_scheme": "g"
   },
   {
@@ -14859,7 +14880,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 537
+   "count": 546
   },
   {
    "id": "rus",
@@ -14911,7 +14932,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 451
+   "count": 460
   },
   {
    "id": "US",
@@ -15058,7 +15079,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 373
+   "count": 382
   },
   {
    "id": "tablet",
@@ -15090,7 +15111,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 201
+   "count": 210
   },
   {
    "id": "Firefox",
@@ -15106,7 +15127,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 197
+   "count": 206
   },
   {
    "id": "Android",
