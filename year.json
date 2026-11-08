@@ -1,43 +1,13 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-07T23:59:47Z",
- "start": "2025-11-07",
- "end": "2026-11-08",
+ "generated": "2026-11-08T06:44:16Z",
+ "start": "2025-11-08",
+ "end": "2026-11-09",
  "total": {
-  "total": 577,
-  "total_events": 274,
-  "total_utc": 577,
+  "total": 585,
+  "total_events": 277,
+  "total_utc": 585,
   "stats": [
-   {
-    "day": "2025-11-07",
-    "hourly": [
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0
-    ],
-    "daily": 0
-   },
    {
     "day": "2025-11-08",
     "hourly": [
@@ -9696,8 +9666,7 @@
      0,
      0
     ],
-    "daily": 0,
-    "weekly": 6
+    "daily": 0
    },
    {
     "day": "2026-09-26",
@@ -9727,7 +9696,8 @@
      0,
      0
     ],
-    "daily": 0
+    "daily": 0,
+    "weekly": 41
    },
    {
     "day": "2026-09-27",
@@ -9908,8 +9878,7 @@
      0,
      1
     ],
-    "daily": 35,
-    "weekly": 197
+    "daily": 35
    },
    {
     "day": "2026-10-03",
@@ -9939,7 +9908,8 @@
      0,
      0
     ],
-    "daily": 4
+    "daily": 4,
+    "weekly": 180
    },
    {
     "day": "2026-10-04",
@@ -10119,8 +10089,7 @@
      2,
      0
     ],
-    "daily": 18,
-    "weekly": 117
+    "daily": 18
    },
    {
     "day": "2026-10-10",
@@ -10150,7 +10119,8 @@
      0,
      0
     ],
-    "daily": 17
+    "daily": 17,
+    "weekly": 103
    },
    {
     "day": "2026-10-11",
@@ -10330,8 +10300,7 @@
      0,
      1
     ],
-    "daily": 4,
-    "weekly": 47
+    "daily": 4
    },
    {
     "day": "2026-10-17",
@@ -10361,7 +10330,8 @@
      0,
      1
     ],
-    "daily": 5
+    "daily": 5,
+    "weekly": 46
    },
    {
     "day": "2026-10-18",
@@ -10541,8 +10511,7 @@
      0,
      0
     ],
-    "daily": 3,
-    "weekly": 74
+    "daily": 3
    },
    {
     "day": "2026-10-24",
@@ -10572,7 +10541,8 @@
      2,
      0
     ],
-    "daily": 12
+    "daily": 12,
+    "weekly": 74
    },
    {
     "day": "2026-10-25",
@@ -10752,8 +10722,7 @@
      0,
      0
     ],
-    "daily": 3,
-    "weekly": 85
+    "daily": 3
    },
    {
     "day": "2026-10-31",
@@ -10783,7 +10752,8 @@
      1,
      0
     ],
-    "daily": 11
+    "daily": 11,
+    "weekly": 101
    },
    {
     "day": "2026-11-01",
@@ -10814,7 +10784,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 122
+    "monthly": 130
    },
    {
     "day": "2026-11-02",
@@ -10964,8 +10934,7 @@
      0,
      0
     ],
-    "daily": 19,
-    "weekly": 51
+    "daily": 19
    },
    {
     "day": "2026-11-07",
@@ -10995,10 +10964,41 @@
      6,
      0
     ],
-    "daily": 32
+    "daily": 32,
+    "weekly": 40
    },
    {
     "day": "2026-11-08",
+    "hourly": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     3,
+     0,
+     0,
+     5,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "daily": 8
+   },
+   {
+    "day": "2026-11-09",
     "hourly": [
      0,
      0,
@@ -11035,7 +11035,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 132,
+   "count": 134,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -11068,7 +11068,8 @@
     "2026-11-04": 6,
     "2026-11-05": 2,
     "2026-11-06": 2,
-    "2026-11-07": 6
+    "2026-11-07": 6,
+    "2026-11-08": 2
    }
   },
   {
@@ -11076,7 +11077,7 @@
    "path_id": 110447314,
    "title": "en",
    "event": true,
-   "count": 57,
+   "count": 58,
    "daily": {
     "2026-10-08": 7,
     "2026-10-09": 6,
@@ -11100,7 +11101,8 @@
     "2026-11-03": 1,
     "2026-11-04": 5,
     "2026-11-06": 1,
-    "2026-11-07": 1
+    "2026-11-07": 1,
+    "2026-11-08": 1
    }
   },
   {
@@ -11136,7 +11138,7 @@
    "path_id": 116082941,
    "title": "Nearest Metro Station to Me in Dubai: Find It by Location",
    "event": false,
-   "count": 16,
+   "count": 19,
    "daily": {
     "2026-10-28": 1,
     "2026-10-31": 1,
@@ -11144,7 +11146,8 @@
     "2026-11-03": 1,
     "2026-11-05": 1,
     "2026-11-06": 3,
-    "2026-11-07": 7
+    "2026-11-07": 7,
+    "2026-11-08": 3
    }
   },
   {
@@ -11209,6 +11212,21 @@
    }
   },
   {
+   "path": "geo/denied/-",
+   "path_id": 110313382,
+   "title": "en",
+   "event": true,
+   "count": 6,
+   "daily": {
+    "2026-10-07": 1,
+    "2026-10-08": 1,
+    "2026-10-14": 1,
+    "2026-10-31": 1,
+    "2026-11-07": 1,
+    "2026-11-08": 1
+   }
+  },
+  {
    "path": "/destinations/al-zahra-hospital-dubai",
    "path_id": 111715857,
    "title": "Al Zahra Hospital Dubai Metro Station: Dubai Internet City, 10 min walk",
@@ -11243,20 +11261,6 @@
    "count": 5,
    "daily": {
     "2026-10-08": 5
-   }
-  },
-  {
-   "path": "geo/denied/-",
-   "path_id": 110313382,
-   "title": "en",
-   "event": true,
-   "count": 5,
-   "daily": {
-    "2026-10-07": 1,
-    "2026-10-08": 1,
-    "2026-10-14": 1,
-    "2026-10-31": 1,
-    "2026-11-07": 1
    }
   },
   {
@@ -11468,6 +11472,17 @@
    "daily": {
     "2026-11-04": 1,
     "2026-11-06": 1
+   }
+  },
+  {
+   "path": "geo/ok/equiti",
+   "path_id": 117954536,
+   "title": "en",
+   "event": true,
+   "count": 2,
+   "daily": {
+    "2026-11-03": 1,
+    "2026-11-08": 1
    }
   },
   {
@@ -11929,16 +11944,6 @@
    "path_id": 118056711,
    "title": "International Modern Hospital Metro Station: ADCB (Red Line)",
    "event": false,
-   "count": 1,
-   "daily": {
-    "2026-11-03": 1
-   }
-  },
-  {
-   "path": "geo/ok/equiti",
-   "path_id": 117954536,
-   "title": "en",
-   "event": true,
    "count": 1,
    "daily": {
     "2026-11-03": 1
@@ -13577,9 +13582,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 303,
-  "events_total": 274,
-  "goatcounter_total_with_events": 577,
+  "visits": 308,
+  "events_total": 277,
+  "goatcounter_total_with_events": 585,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -13617,7 +13622,8 @@
    "2026-11-04": 12,
    "2026-11-05": 10,
    "2026-11-06": 14,
-   "2026-11-07": 21
+   "2026-11-07": 21,
+   "2026-11-08": 5
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -13644,14 +13650,15 @@
    "2026-11-04": 5,
    "2026-11-05": 1,
    "2026-11-06": 1,
-   "2026-11-07": 3
+   "2026-11-07": 3,
+   "2026-11-08": 1
   },
-  "visitor_days": 64,
-  "return_rate": 0.109,
+  "visitor_days": 65,
+  "return_rate": 0.108,
   "routes": 43,
   "routes_not_found": 0,
   "routes_per_visit": 0.14,
-  "routes_per_visitor_day": 0.5,
+  "routes_per_visitor_day": 0.49,
   "share_rate": 0.07,
   "shares": {
    "qr": 1,
@@ -13670,14 +13677,14 @@
    }
   ],
   "nearest_station": {
-   "denied": 5,
+   "denied": 6,
+   "ok": 10,
    "fail": 2,
    "far": 1,
-   "ok": 9,
    "outside": 1
   },
   "visitors_new_return": {
-   "new": 57,
+   "new": 58,
    "return": 7
   },
   "top_routes": [
@@ -13839,11 +13846,11 @@
    },
    {
     "name": "dubaimetro.fyi/nearest-station",
-    "count": 8
+    "count": 9
    },
    {
     "name": "dubaimetro.fyi",
-    "count": 5
+    "count": 6
    },
    {
     "name": "www.bing.com",
@@ -13911,7 +13918,7 @@
   "/nearest-station": [
    {
     "name": "Google",
-    "count": 16
+    "count": 19
    }
   ],
   "/destinations/indian-consulate-dubai": [
@@ -14403,7 +14410,7 @@
   "dubaimetro.fyi/nearest-station": [
    {
     "path": "/",
-    "count": 8
+    "count": 9
    },
    {
     "path": "/map",
@@ -14413,7 +14420,7 @@
   "dubaimetro.fyi": [
    {
     "path": "/",
-    "count": 5
+    "count": 6
    },
    {
     "path": "/ru.html",
@@ -14517,7 +14524,7 @@
    },
    {
     "path": "/nearest-station",
-    "count": 16
+    "count": 19
    },
    {
     "path": "/destinations/indian-consulate-dubai",
@@ -14768,7 +14775,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 120,
+   "count": 123,
    "ref_scheme": "g"
   },
   {
@@ -14830,7 +14837,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 523
+   "count": 531
   },
   {
    "id": "rus",
@@ -14882,7 +14889,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 437
+   "count": 445
   },
   {
    "id": "US",
@@ -15029,7 +15036,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 359
+   "count": 367
   },
   {
    "id": "tablet",
@@ -15056,12 +15063,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 377
+   "count": 382
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 195
+   "count": 198
   },
   {
    "id": "Firefox",
@@ -15077,12 +15084,12 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 191
+   "count": 194
   },
   {
    "id": "Android",
    "name": "Android",
-   "count": 170
+   "count": 175
   },
   {
    "id": "Windows",
