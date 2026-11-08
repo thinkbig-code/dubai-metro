@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-08T19:11:05Z",
+ "generated": "2026-11-08T23:10:44Z",
  "start": "2025-11-08",
  "end": "2026-11-09",
  "total": {
-  "total": 600,
+  "total": 601,
   "total_events": 280,
-  "total_utc": 600,
+  "total_utc": 601,
   "stats": [
    {
     "day": "2025-11-08",
@@ -10784,7 +10784,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 145
+    "monthly": 146
    },
    {
     "day": "2026-11-02",
@@ -10965,7 +10965,7 @@
      0
     ],
     "daily": 32,
-    "weekly": 55
+    "weekly": 56
    },
    {
     "day": "2026-11-08",
@@ -10993,9 +10993,9 @@
      0,
      4,
      3,
-     0
+     1
     ],
-    "daily": 23
+    "daily": 24
    },
    {
     "day": "2026-11-09",
@@ -11790,6 +11790,16 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/destinations/knowledge-park",
+   "path_id": 120289423,
+   "title": "Knowledge Park Tram Stop: Knowledge Village (Dubai Tram)",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-11-08": 1
    }
   },
   {
@@ -13615,9 +13625,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 320,
+  "visits": 321,
   "events_total": 280,
-  "goatcounter_total_with_events": 600,
+  "goatcounter_total_with_events": 601,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -13656,7 +13666,7 @@
    "2026-11-05": 10,
    "2026-11-06": 14,
    "2026-11-07": 21,
-   "2026-11-08": 17
+   "2026-11-08": 18
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -14202,6 +14212,12 @@
     "count": 1
    }
   ],
+  "/destinations/knowledge-park": [
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
   "/stations/dmcc": [
    {
     "name": "chatgpt.com",
@@ -14369,12 +14385,6 @@
     "name": "dubaimetro.fyi/lines/red-line",
     "count": 1
    }
-  ],
-  "/tram": [
-   {
-    "name": "(direct or unknown)",
-    "count": 1
-   }
   ]
  },
  "ref_pages": {
@@ -14433,10 +14443,6 @@
    },
    {
     "path": "/destinations/museum-of-the-future",
-    "count": 1
-   },
-   {
-    "path": "/tram",
     "count": 1
    }
   ],
@@ -14658,6 +14664,10 @@
     "count": 1
    },
    {
+    "path": "/destinations/knowledge-park",
+    "count": 1
+   },
+   {
     "path": "/destinations/gold-souk",
     "count": 1
    },
@@ -14818,7 +14828,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 131,
+   "count": 132,
    "ref_scheme": "g"
   },
   {
@@ -14880,7 +14890,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 546
+   "count": 547
   },
   {
    "id": "rus",
@@ -14932,7 +14942,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 460
+   "count": 461
   },
   {
    "id": "US",
@@ -15079,7 +15089,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 382
+   "count": 383
   },
   {
    "id": "tablet",
@@ -15111,7 +15121,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 210
+   "count": 211
   },
   {
    "id": "Firefox",
@@ -15127,7 +15137,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 206
+   "count": 207
   },
   {
    "id": "Android",

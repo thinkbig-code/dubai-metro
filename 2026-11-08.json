@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-08T19:10:04Z",
+ "generated": "2026-11-08T23:09:32Z",
  "start": "2026-10-09",
  "end": "2026-11-09",
  "total": {
-  "total": 395,
+  "total": 396,
   "total_events": 153,
-  "total_utc": 392,
+  "total_utc": 393,
   "stats": [
    {
     "day": "2026-10-09",
@@ -732,7 +732,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 145
+    "monthly": 146
    },
    {
     "day": "2026-11-02",
@@ -883,7 +883,7 @@
      0
     ],
     "daily": 19,
-    "weekly": 74
+    "weekly": 75
    },
    {
     "day": "2026-11-07",
@@ -941,9 +941,9 @@
      0,
      4,
      3,
-     0
+     1
     ],
-    "daily": 23
+    "daily": 24
    },
    {
     "day": "2026-11-09",
@@ -1505,6 +1505,16 @@
    "daily": {
     "2026-10-11": 1,
     "2026-10-17": 1
+   }
+  },
+  {
+   "path": "/destinations/knowledge-park",
+   "path_id": 120289423,
+   "title": "Knowledge Park Tram Stop: Knowledge Village (Dubai Tram)",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-11-08": 1
    }
   },
   {
@@ -2590,9 +2600,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 242,
+  "visits": 243,
   "events_total": 153,
-  "goatcounter_total_with_events": 395,
+  "goatcounter_total_with_events": 396,
   "page_loads_by_day": {
    "2026-10-09": 10,
    "2026-10-10": 5,
@@ -2624,7 +2634,7 @@
    "2026-11-05": 10,
    "2026-11-06": 14,
    "2026-11-07": 21,
-   "2026-11-08": 17
+   "2026-11-08": 18
   },
   "visitor_days_by_day": {
    "2026-10-09": 5,
@@ -3143,6 +3153,12 @@
     "count": 1
    }
   ],
+  "/destinations/knowledge-park": [
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
   "/stations/dmcc": [
    {
     "name": "chatgpt.com",
@@ -3581,6 +3597,10 @@
     "count": 1
    },
    {
+    "path": "/destinations/knowledge-park",
+    "count": 1
+   },
+   {
     "path": "/destinations/gold-souk",
     "count": 1
    },
@@ -3714,7 +3734,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 131,
+   "count": 132,
    "ref_scheme": "g"
   },
   {
@@ -3763,7 +3783,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 367
+   "count": 368
   },
   {
    "id": "rus",
@@ -3815,7 +3835,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 315
+   "count": 316
   },
   {
    "id": "US",
@@ -3917,7 +3937,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 285
+   "count": 286
   },
   {
    "id": "tablet",
@@ -3949,14 +3969,14 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 147
+   "count": 148
   }
  ],
  "systems": [
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 147
+   "count": 148
   },
   {
    "id": "Android",
