@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-09T08:04:13Z",
+ "generated": "2026-11-09T12:09:27Z",
  "start": "2026-10-10",
  "end": "2026-11-10",
  "total": {
-  "total": 383,
-  "total_events": 147,
-  "total_utc": 381,
+  "total": 392,
+  "total_events": 151,
+  "total_utc": 390,
   "stats": [
    {
     "day": "2026-10-10",
@@ -702,7 +702,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 149
+    "monthly": 158
    },
    {
     "day": "2026-11-02",
@@ -883,7 +883,7 @@
      0
     ],
     "daily": 32,
-    "weekly": 59
+    "weekly": 68
    },
    {
     "day": "2026-11-08",
@@ -931,10 +931,10 @@
      0,
      0,
      0,
+     2,
+     3,
      0,
-     0,
-     0,
-     0,
+     4,
      0,
      0,
      0,
@@ -943,7 +943,7 @@
      0,
      0
     ],
-    "daily": 3
+    "daily": 12
    },
    {
     "day": "2026-11-10",
@@ -983,7 +983,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 61,
+   "count": 64,
    "daily": {
     "2026-10-10": 4,
     "2026-10-11": 9,
@@ -1009,7 +1009,8 @@
     "2026-11-05": 2,
     "2026-11-06": 2,
     "2026-11-07": 6,
-    "2026-11-08": 5
+    "2026-11-08": 5,
+    "2026-11-09": 3
    }
   },
   {
@@ -1017,7 +1018,7 @@
    "path_id": 110447314,
    "title": "en",
    "event": true,
-   "count": 45,
+   "count": 47,
    "daily": {
     "2026-10-10": 4,
     "2026-10-11": 9,
@@ -1040,7 +1041,8 @@
     "2026-11-04": 5,
     "2026-11-06": 1,
     "2026-11-07": 1,
-    "2026-11-08": 1
+    "2026-11-08": 1,
+    "2026-11-09": 2
    }
   },
   {
@@ -1076,7 +1078,7 @@
    "path_id": 116082941,
    "title": "Nearest Metro Station to Me in Dubai: Find It by Location",
    "event": false,
-   "count": 25,
+   "count": 27,
    "daily": {
     "2026-10-28": 1,
     "2026-10-31": 1,
@@ -1085,7 +1087,8 @@
     "2026-11-05": 1,
     "2026-11-06": 3,
     "2026-11-07": 7,
-    "2026-11-08": 9
+    "2026-11-08": 9,
+    "2026-11-09": 2
    }
   },
   {
@@ -1151,6 +1154,20 @@
    }
   },
   {
+   "path": "geo/denied/-",
+   "path_id": 110313382,
+   "title": "en",
+   "event": true,
+   "count": 6,
+   "daily": {
+    "2026-10-14": 1,
+    "2026-10-31": 1,
+    "2026-11-07": 1,
+    "2026-11-08": 1,
+    "2026-11-09": 2
+   }
+  },
+  {
    "path": "/destinations/al-zahra-hospital-dubai",
    "path_id": 111715857,
    "title": "Al Zahra Hospital Dubai Metro Station: Dubai Internet City, 10 min walk",
@@ -1187,19 +1204,6 @@
     "2026-10-27": 1,
     "2026-11-02": 1,
     "2026-11-05": 1
-   }
-  },
-  {
-   "path": "geo/denied/-",
-   "path_id": 110313382,
-   "title": "en",
-   "event": true,
-   "count": 4,
-   "daily": {
-    "2026-10-14": 1,
-    "2026-10-31": 1,
-    "2026-11-07": 1,
-    "2026-11-08": 1
    }
   },
   {
@@ -2580,9 +2584,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 236,
-  "events_total": 147,
-  "goatcounter_total_with_events": 383,
+  "visits": 241,
+  "events_total": 151,
+  "goatcounter_total_with_events": 392,
   "page_loads_by_day": {
    "2026-10-10": 5,
    "2026-10-11": 11,
@@ -2614,7 +2618,7 @@
    "2026-11-06": 14,
    "2026-11-07": 21,
    "2026-11-08": 18,
-   "2026-11-09": 3
+   "2026-11-09": 8
   },
   "visitor_days_by_day": {
    "2026-10-10": 5,
@@ -2640,14 +2644,15 @@
    "2026-11-05": 1,
    "2026-11-06": 1,
    "2026-11-07": 3,
-   "2026-11-08": 1
+   "2026-11-08": 1,
+   "2026-11-09": 2
   },
-  "visitor_days": 52,
-  "return_rate": 0.135,
+  "visitor_days": 54,
+  "return_rate": 0.13,
   "routes": 15,
   "routes_not_found": 0,
   "routes_per_visit": 0.06,
-  "routes_per_visitor_day": 0.29,
+  "routes_per_visitor_day": 0.28,
   "share_rate": 0.2,
   "shares": {
    "qr": 1,
@@ -2666,14 +2671,14 @@
    }
   ],
   "nearest_station": {
-   "denied": 4,
+   "denied": 6,
    "ok": 11,
    "far": 1,
    "outside": 1,
    "fail": 1
   },
   "visitors_new_return": {
-   "new": 45,
+   "new": 47,
    "return": 7
   },
   "top_routes": [
@@ -2827,15 +2832,15 @@
   "/": [
    {
     "name": "(direct or unknown)",
-    "count": 25
+    "count": 26
    },
    {
     "name": "dubaimetro.fyi/nearest-station",
-    "count": 11
+    "count": 12
    },
    {
     "name": "dubaimetro.fyi",
-    "count": 7
+    "count": 8
    },
    {
     "name": "com.reddit.frontpage",
@@ -2899,7 +2904,7 @@
   "/nearest-station": [
    {
     "name": "Google",
-    "count": 25
+    "count": 27
    }
   ],
   "/destinations/indian-consulate-dubai": [
@@ -3305,7 +3310,7 @@
   "(direct or unknown)": [
    {
     "path": "/",
-    "count": 25
+    "count": 26
    },
    {
     "path": "/destinations/etihad-rail-dubai",
@@ -3359,7 +3364,7 @@
   "dubaimetro.fyi/nearest-station": [
    {
     "path": "/",
-    "count": 11
+    "count": 12
    },
    {
     "path": "/map",
@@ -3369,7 +3374,7 @@
   "dubaimetro.fyi": [
    {
     "path": "/",
-    "count": 7
+    "count": 8
    }
   ],
   "com.reddit.frontpage": [
@@ -3465,7 +3470,7 @@
    },
    {
     "path": "/nearest-station",
-    "count": 25
+    "count": 27
    },
    {
     "path": "/destinations/indian-consulate-dubai",
@@ -3703,12 +3708,12 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 135,
+   "count": 137,
    "ref_scheme": "g"
   },
   {
    "name": "",
-   "count": 113,
+   "count": 115,
    "ref_scheme": "o"
   },
   {
@@ -3752,7 +3757,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 354
+   "count": 363
   },
   {
    "id": "ara",
@@ -3804,12 +3809,12 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 310
+   "count": 317
   },
   {
    "id": "US",
    "name": "United States",
-   "count": 21
+   "count": 23
   },
   {
    "id": "IN",
@@ -3906,7 +3911,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 284
+   "count": 291
   },
   {
    "id": "tablet",
@@ -3916,7 +3921,7 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 74
+   "count": 76
   },
   {
    "id": "desktophd",
@@ -3933,24 +3938,24 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 240
+   "count": 242
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 143
+   "count": 150
   }
  ],
  "systems": [
   {
+   "id": "iOS",
+   "name": "iOS",
+   "count": 150
+  },
+  {
    "id": "Android",
    "name": "Android",
    "count": 144
-  },
-  {
-   "id": "iOS",
-   "name": "iOS",
-   "count": 143
   },
   {
    "id": "Windows",
@@ -3965,7 +3970,7 @@
   {
    "id": "Linux",
    "name": "Linux",
-   "count": 9
+   "count": 11
   },
   {
    "id": "Chrome OS",
