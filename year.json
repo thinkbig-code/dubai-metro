@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-09T03:00:16Z",
+ "generated": "2026-11-09T08:05:18Z",
  "start": "2025-11-09",
  "end": "2026-11-10",
  "total": {
-  "total": 602,
+  "total": 604,
   "total_events": 280,
-  "total_utc": 602,
+  "total_utc": 604,
   "stats": [
    {
     "day": "2025-11-09",
@@ -10754,7 +10754,7 @@
     ],
     "daily": 12,
     "weekly": 122,
-    "monthly": 147
+    "monthly": 149
    },
    {
     "day": "2026-11-02",
@@ -10965,7 +10965,7 @@
      1
     ],
     "daily": 24,
-    "weekly": 25
+    "weekly": 27
    },
    {
     "day": "2026-11-09",
@@ -10975,6 +10975,9 @@
      0,
      0,
      0,
+     0,
+     1,
+     1,
      0,
      1,
      0,
@@ -10990,12 +10993,9 @@
      0,
      0,
      0,
-     0,
-     0,
-     0,
      0
     ],
-    "daily": 1
+    "daily": 3
    },
    {
     "day": "2026-11-10",
@@ -11110,7 +11110,7 @@
    "path_id": 110626146,
    "title": "Etihad Rail Dubai Station (Al Yalayis) Metro Station: Jumeirah Golf Estates",
    "event": false,
-   "count": 34,
+   "count": 35,
    "daily": {
     "2026-10-09": 1,
     "2026-10-12": 1,
@@ -11130,7 +11130,8 @@
     "2026-11-01": 2,
     "2026-11-02": 1,
     "2026-11-04": 1,
-    "2026-11-06": 1
+    "2026-11-06": 1,
+    "2026-11-09": 1
    }
   },
   {
@@ -11277,6 +11278,19 @@
    }
   },
   {
+   "path": "/destinations/dubai-police-general-headquarters",
+   "path_id": 111896140,
+   "title": "Dubai Police General Headquarters Metro Station: Al Qiyadah, 7 min walk",
+   "event": false,
+   "count": 4,
+   "daily": {
+    "2026-10-13": 1,
+    "2026-10-20": 1,
+    "2026-11-05": 1,
+    "2026-11-09": 1
+   }
+  },
+  {
    "path": "place/p_dubai_mall/from",
    "path_id": 109724714,
    "title": "ru|name",
@@ -11346,18 +11360,6 @@
     "2026-10-13": 1,
     "2026-10-16": 1,
     "2026-10-17": 1
-   }
-  },
-  {
-   "path": "/destinations/dubai-police-general-headquarters",
-   "path_id": 111896140,
-   "title": "Dubai Police General Headquarters Metro Station: Al Qiyadah, 7 min walk",
-   "event": false,
-   "count": 3,
-   "daily": {
-    "2026-10-13": 1,
-    "2026-10-20": 1,
-    "2026-11-05": 1
    }
   },
   {
@@ -13626,9 +13628,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 322,
+  "visits": 324,
   "events_total": 280,
-  "goatcounter_total_with_events": 602,
+  "goatcounter_total_with_events": 604,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -13668,7 +13670,7 @@
    "2026-11-06": 14,
    "2026-11-07": 21,
    "2026-11-08": 18,
-   "2026-11-09": 1
+   "2026-11-09": 3
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -13949,7 +13951,7 @@
   "/destinations/etihad-rail-dubai": [
    {
     "name": "Google",
-    "count": 29
+    "count": 30
    },
    {
     "name": "(direct or unknown)",
@@ -14032,6 +14034,16 @@
     "count": 1
    }
   ],
+  "/destinations/dubai-police-general-headquarters": [
+   {
+    "name": "Google",
+    "count": 3
+   },
+   {
+    "name": "chatgpt.com",
+    "count": 1
+   }
+  ],
   "/destinations/aster-hospital-al-qusais": [
    {
     "name": "Google",
@@ -14071,16 +14083,6 @@
    },
    {
     "name": "(direct or unknown)",
-    "count": 1
-   }
-  ],
-  "/destinations/dubai-police-general-headquarters": [
-   {
-    "name": "Google",
-    "count": 2
-   },
-   {
-    "name": "chatgpt.com",
     "count": 1
    }
   ],
@@ -14518,11 +14520,11 @@
     "count": 1
    },
    {
-    "path": "/destinations/times-square-center",
+    "path": "/destinations/dubai-police-general-headquarters",
     "count": 1
    },
    {
-    "path": "/destinations/dubai-police-general-headquarters",
+    "path": "/destinations/times-square-center",
     "count": 1
    },
    {
@@ -14571,7 +14573,7 @@
   "Google": [
    {
     "path": "/destinations/etihad-rail-dubai",
-    "count": 29
+    "count": 30
    },
    {
     "path": "/nearest-station",
@@ -14598,6 +14600,10 @@
     "count": 4
    },
    {
+    "path": "/destinations/dubai-police-general-headquarters",
+    "count": 3
+   },
+   {
     "path": "/destinations/aster-hospital-al-qusais",
     "count": 3
    },
@@ -14611,10 +14617,6 @@
    },
    {
     "path": "/destinations/times-square-center",
-    "count": 2
-   },
-   {
-    "path": "/destinations/dubai-police-general-headquarters",
     "count": 2
    },
    {
@@ -14830,7 +14832,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 133,
+   "count": 135,
    "ref_scheme": "g"
   },
   {
@@ -14892,7 +14894,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 548
+   "count": 549
   },
   {
    "id": "rus",
@@ -14907,7 +14909,7 @@
   {
    "id": "ara",
    "name": "Arabic",
-   "count": 6
+   "count": 7
   },
   {
    "id": "zho",
@@ -14944,7 +14946,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 462
+   "count": 464
   },
   {
    "id": "US",
@@ -15091,7 +15093,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 384
+   "count": 386
   },
   {
    "id": "tablet",
@@ -15118,7 +15120,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 386
+   "count": 388
   },
   {
    "id": "Safari",
@@ -15144,7 +15146,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 179
+   "count": 181
   },
   {
    "id": "Windows",
