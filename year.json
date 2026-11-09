@@ -1,43 +1,13 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-08T23:10:44Z",
- "start": "2025-11-08",
- "end": "2026-11-09",
+ "generated": "2026-11-09T03:00:16Z",
+ "start": "2025-11-09",
+ "end": "2026-11-10",
  "total": {
-  "total": 601,
+  "total": 602,
   "total_events": 280,
-  "total_utc": 601,
+  "total_utc": 602,
   "stats": [
-   {
-    "day": "2025-11-08",
-    "hourly": [
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0
-    ],
-    "daily": 0
-   },
    {
     "day": "2025-11-09",
     "hourly": [
@@ -9696,8 +9666,7 @@
      0,
      0
     ],
-    "daily": 0,
-    "weekly": 41
+    "daily": 0
    },
    {
     "day": "2026-09-27",
@@ -9727,7 +9696,8 @@
      0,
      0
     ],
-    "daily": 0
+    "daily": 0,
+    "weekly": 45
    },
    {
     "day": "2026-09-28",
@@ -9908,8 +9878,7 @@
      0,
      0
     ],
-    "daily": 4,
-    "weekly": 180
+    "daily": 4
    },
    {
     "day": "2026-10-04",
@@ -9939,7 +9908,8 @@
      0,
      0
     ],
-    "daily": 13
+    "daily": 13,
+    "weekly": 193
    },
    {
     "day": "2026-10-05",
@@ -10119,8 +10089,7 @@
      0,
      0
     ],
-    "daily": 17,
-    "weekly": 103
+    "daily": 17
    },
    {
     "day": "2026-10-11",
@@ -10150,7 +10119,8 @@
      2,
      0
     ],
-    "daily": 39
+    "daily": 39,
+    "weekly": 91
    },
    {
     "day": "2026-10-12",
@@ -10330,8 +10300,7 @@
      0,
      1
     ],
-    "daily": 5,
-    "weekly": 46
+    "daily": 5
    },
    {
     "day": "2026-10-18",
@@ -10361,7 +10330,8 @@
      0,
      0
     ],
-    "daily": 6
+    "daily": 6,
+    "weekly": 53
    },
    {
     "day": "2026-10-19",
@@ -10541,8 +10511,7 @@
      2,
      0
     ],
-    "daily": 12,
-    "weekly": 74
+    "daily": 12
    },
    {
     "day": "2026-10-25",
@@ -10572,7 +10541,8 @@
      0,
      0
     ],
-    "daily": 21
+    "daily": 21,
+    "weekly": 73
    },
    {
     "day": "2026-10-26",
@@ -10752,8 +10722,7 @@
      1,
      0
     ],
-    "daily": 11,
-    "weekly": 101
+    "daily": 11
    },
    {
     "day": "2026-11-01",
@@ -10784,7 +10753,8 @@
      0
     ],
     "daily": 12,
-    "monthly": 146
+    "weekly": 122,
+    "monthly": 147
    },
    {
     "day": "2026-11-02",
@@ -10964,8 +10934,7 @@
      6,
      0
     ],
-    "daily": 32,
-    "weekly": 56
+    "daily": 32
    },
    {
     "day": "2026-11-08",
@@ -10995,10 +10964,41 @@
      3,
      1
     ],
-    "daily": 24
+    "daily": 24,
+    "weekly": 25
    },
    {
     "day": "2026-11-09",
+    "hourly": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "daily": 1
+   },
+   {
+    "day": "2026-11-10",
     "hourly": [
      0,
      0,
@@ -11506,6 +11506,17 @@
    "daily": {
     "2026-10-31": 1,
     "2026-11-08": 1
+   }
+  },
+  {
+   "path": "/destinations/al-khaleej-centre",
+   "path_id": 115737347,
+   "title": "Al Khaleej Centre Metro Station: Sharaf DG (Green Line), 4 min walk",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-10-27": 1,
+    "2026-11-09": 1
    }
   },
   {
@@ -12156,16 +12167,6 @@
    "path": "/destinations/aster-hospital-mankhool",
    "path_id": 115758732,
    "title": "Aster Hospital Mankhool Metro Station: Sharaf DG (Green Line), 18 min walk",
-   "event": false,
-   "count": 1,
-   "daily": {
-    "2026-10-27": 1
-   }
-  },
-  {
-   "path": "/destinations/al-khaleej-centre",
-   "path_id": 115737347,
-   "title": "Al Khaleej Centre Metro Station: Sharaf DG (Green Line), 4 min walk",
    "event": false,
    "count": 1,
    "daily": {
@@ -13625,9 +13626,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 321,
+  "visits": 322,
   "events_total": 280,
-  "goatcounter_total_with_events": 601,
+  "goatcounter_total_with_events": 602,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -13666,7 +13667,8 @@
    "2026-11-05": 10,
    "2026-11-06": 14,
    "2026-11-07": 21,
-   "2026-11-08": 18
+   "2026-11-08": 18,
+   "2026-11-09": 1
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -14154,6 +14156,12 @@
     "count": 2
    }
   ],
+  "/destinations/al-khaleej-centre": [
+   {
+    "name": "Google",
+    "count": 2
+   }
+  ],
   "/destinations/al-mulla-plaza": [
    {
     "name": "Google",
@@ -14317,12 +14325,6 @@
   "/destinations/aster-hospital-mankhool": [
    {
     "name": "(direct or unknown)",
-    "count": 1
-   }
-  ],
-  "/destinations/al-khaleej-centre": [
-   {
-    "name": "Google",
     "count": 1
    }
   ],
@@ -14628,6 +14630,10 @@
     "count": 2
    },
    {
+    "path": "/destinations/al-khaleej-centre",
+    "count": 2
+   },
+   {
     "path": "/destinations/al-mulla-plaza",
     "count": 2
    },
@@ -14709,10 +14715,6 @@
    },
    {
     "path": "/destinations/almas-tower",
-    "count": 1
-   },
-   {
-    "path": "/destinations/al-khaleej-centre",
     "count": 1
    },
    {
@@ -14828,7 +14830,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 132,
+   "count": 133,
    "ref_scheme": "g"
   },
   {
@@ -14890,7 +14892,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 547
+   "count": 548
   },
   {
    "id": "rus",
@@ -14942,7 +14944,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 461
+   "count": 462
   },
   {
    "id": "US",
@@ -15089,7 +15091,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 383
+   "count": 384
   },
   {
    "id": "tablet",
@@ -15116,7 +15118,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 385
+   "count": 386
   },
   {
    "id": "Safari",
@@ -15142,7 +15144,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 178
+   "count": 179
   },
   {
    "id": "Windows",
