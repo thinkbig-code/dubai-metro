@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-10T08:29:38Z",
+ "generated": "2026-11-10T13:01:26Z",
  "start": "2025-11-10",
  "end": "2026-11-11",
  "total": {
-  "total": 654,
-  "total_events": 299,
-  "total_utc": 654,
+  "total": 670,
+  "total_events": 303,
+  "total_utc": 670,
   "stats": [
    {
     "day": "2025-11-10",
@@ -10723,7 +10723,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 199
+    "monthly": 215
    },
    {
     "day": "2026-11-02",
@@ -10965,7 +10965,7 @@
      0
     ],
     "daily": 28,
-    "weekly": 53
+    "weekly": 69
    },
    {
     "day": "2026-11-10",
@@ -10983,10 +10983,10 @@
      2,
      0,
      16,
-     0,
-     0,
-     0,
-     0,
+     3,
+     3,
+     5,
+     5,
      0,
      0,
      0,
@@ -10995,7 +10995,7 @@
      0,
      0
     ],
-    "daily": 25
+    "daily": 41
    },
    {
     "day": "2026-11-11",
@@ -11035,7 +11035,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 145,
+   "count": 150,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -11071,7 +11071,7 @@
     "2026-11-07": 6,
     "2026-11-08": 5,
     "2026-11-09": 6,
-    "2026-11-10": 2
+    "2026-11-10": 7
    }
   },
   {
@@ -11109,11 +11109,30 @@
    }
   },
   {
+   "path": "/nearest-station",
+   "path_id": 116082941,
+   "title": "Nearest Metro Station to Me in Dubai: Find It by Location",
+   "event": false,
+   "count": 40,
+   "daily": {
+    "2026-10-28": 1,
+    "2026-10-31": 1,
+    "2026-11-02": 2,
+    "2026-11-03": 1,
+    "2026-11-05": 1,
+    "2026-11-06": 3,
+    "2026-11-07": 7,
+    "2026-11-08": 9,
+    "2026-11-09": 8,
+    "2026-11-10": 7
+   }
+  },
+  {
    "path": "/destinations/etihad-rail-dubai",
    "path_id": 110626146,
    "title": "Etihad Rail Dubai Station (Al Yalayis) Metro Station: Jumeirah Golf Estates",
    "event": false,
-   "count": 37,
+   "count": 39,
    "daily": {
     "2026-10-09": 1,
     "2026-10-12": 1,
@@ -11135,25 +11154,6 @@
     "2026-11-04": 1,
     "2026-11-06": 1,
     "2026-11-09": 2,
-    "2026-11-10": 1
-   }
-  },
-  {
-   "path": "/nearest-station",
-   "path_id": 116082941,
-   "title": "Nearest Metro Station to Me in Dubai: Find It by Location",
-   "event": false,
-   "count": 36,
-   "daily": {
-    "2026-10-28": 1,
-    "2026-10-31": 1,
-    "2026-11-02": 2,
-    "2026-11-03": 1,
-    "2026-11-05": 1,
-    "2026-11-06": 3,
-    "2026-11-07": 7,
-    "2026-11-08": 9,
-    "2026-11-09": 8,
     "2026-11-10": 3
    }
   },
@@ -11180,7 +11180,7 @@
    "path_id": 110313382,
    "title": "en",
    "event": true,
-   "count": 9,
+   "count": 11,
    "daily": {
     "2026-10-07": 1,
     "2026-10-08": 1,
@@ -11189,7 +11189,7 @@
     "2026-11-07": 1,
     "2026-11-08": 1,
     "2026-11-09": 2,
-    "2026-11-10": 1
+    "2026-11-10": 3
    }
   },
   {
@@ -11904,6 +11904,36 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "geo/far/centrepoint",
+   "path_id": 120799654,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-10": 1
+   }
+  },
+  {
+   "path": "/destinations/dubai-hospital",
+   "path_id": 120769817,
+   "title": "Dubai Hospital Metro Station: Salah Al Din (Green Line)",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-11-10": 1
+   }
+  },
+  {
+   "path": "geo/ok/burjuman",
+   "path_id": 120760054,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-10": 1
    }
   },
   {
@@ -13749,9 +13779,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 355,
-  "events_total": 299,
-  "goatcounter_total_with_events": 654,
+  "visits": 367,
+  "events_total": 303,
+  "goatcounter_total_with_events": 670,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -13792,7 +13822,7 @@
    "2026-11-07": 21,
    "2026-11-08": 18,
    "2026-11-09": 21,
-   "2026-11-10": 13
+   "2026-11-10": 25
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -13847,10 +13877,10 @@
    }
   ],
   "nearest_station": {
-   "denied": 9,
-   "ok": 16,
+   "denied": 11,
+   "ok": 17,
    "fail": 2,
-   "far": 1,
+   "far": 2,
    "outside": 1
   },
   "visitors_new_return": {
@@ -14012,14 +14042,14 @@
    },
    {
     "name": "dubaimetro.fyi/nearest-station",
-    "count": 15
-   },
-   {
-    "name": "com.reddit.frontpage",
-    "count": 9
+    "count": 16
    },
    {
     "name": "dubaimetro.fyi",
+    "count": 13
+   },
+   {
+    "name": "com.reddit.frontpage",
     "count": 9
    },
    {
@@ -14071,24 +14101,24 @@
     "count": 1
    }
   ],
+  "/nearest-station": [
+   {
+    "name": "Google",
+    "count": 40
+   }
+  ],
   "/destinations/etihad-rail-dubai": [
    {
     "name": "Google",
-    "count": 32
+    "count": 33
    },
    {
     "name": "(direct or unknown)",
-    "count": 3
+    "count": 4
    },
    {
     "name": "chatgpt.com",
     "count": 2
-   }
-  ],
-  "/nearest-station": [
-   {
-    "name": "Google",
-    "count": 36
    }
   ],
   "/destinations/indian-consulate-dubai": [
@@ -14373,6 +14403,12 @@
     "count": 1
    }
   ],
+  "/destinations/dubai-hospital": [
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
   "/destinations/naif-souk": [
    {
     "name": "Google",
@@ -14510,12 +14546,6 @@
     "name": "Google",
     "count": 1
    }
-  ],
-  "/destinations/jw-marriott-marquis-dubai": [
-   {
-    "name": "chatgpt.com",
-    "count": 1
-   }
   ]
  },
  "ref_pages": {
@@ -14526,7 +14556,7 @@
    },
    {
     "path": "/destinations/etihad-rail-dubai",
-    "count": 3
+    "count": 4
    },
    {
     "path": "/destinations/atlantis-the-palm",
@@ -14580,23 +14610,17 @@
   "dubaimetro.fyi/nearest-station": [
    {
     "path": "/",
-    "count": 15
+    "count": 16
    },
    {
     "path": "/map",
     "count": 1
    }
   ],
-  "com.reddit.frontpage": [
-   {
-    "path": "/",
-    "count": 9
-   }
-  ],
   "dubaimetro.fyi": [
    {
     "path": "/",
-    "count": 9
+    "count": 13
    },
    {
     "path": "/ru.html",
@@ -14605,6 +14629,12 @@
    {
     "path": "/tram",
     "count": 1
+   }
+  ],
+  "com.reddit.frontpage": [
+   {
+    "path": "/",
+    "count": 9
    }
   ],
   "www.bing.com": [
@@ -14681,10 +14711,6 @@
    {
     "path": "/destinations/al-fahidi",
     "count": 1
-   },
-   {
-    "path": "/destinations/jw-marriott-marquis-dubai",
-    "count": 1
    }
   ],
   "dubaimetro.fyi/destinations/etihad-rail-dubai": [
@@ -14700,11 +14726,11 @@
   "Google": [
    {
     "path": "/nearest-station",
-    "count": 36
+    "count": 40
    },
    {
     "path": "/destinations/etihad-rail-dubai",
-    "count": 32
+    "count": 33
    },
    {
     "path": "/destinations/indian-consulate-dubai",
@@ -14808,6 +14834,10 @@
    },
    {
     "path": "/destinations/st-mary-s-catholic-church",
+    "count": 1
+   },
+   {
+    "path": "/destinations/dubai-hospital",
     "count": 1
    },
    {
@@ -14955,13 +14985,13 @@
  "toprefs": [
   {
    "name": "",
-   "count": 297,
+   "count": 298,
    "ref_scheme": "o"
   },
   {
    "id": "Google",
    "name": "Google",
-   "count": 157,
+   "count": 163,
    "ref_scheme": "g"
   },
   {
@@ -15023,7 +15053,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 598
+   "count": 614
   },
   {
    "id": "rus",
@@ -15075,12 +15105,12 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 507
+   "count": 522
   },
   {
    "id": "US",
    "name": "United States",
-   "count": 57
+   "count": 58
   },
   {
    "id": "IN",
@@ -15227,7 +15257,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 430
+   "count": 445
   },
   {
    "id": "tablet",
@@ -15237,7 +15267,7 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 172
+   "count": 173
   },
   {
    "id": "desktophd",
@@ -15254,12 +15284,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 411
+   "count": 417
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 238
+   "count": 248
   },
   {
    "id": "Firefox",
@@ -15275,12 +15305,12 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 234
+   "count": 244
   },
   {
    "id": "Android",
    "name": "Android",
-   "count": 198
+   "count": 203
   },
   {
    "id": "Windows",
@@ -15295,7 +15325,7 @@
   {
    "id": "Linux",
    "name": "Linux",
-   "count": 27
+   "count": 28
   },
   {
    "id": "Chrome OS",
