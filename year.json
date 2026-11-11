@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-11T00:56:10Z",
+ "generated": "2026-11-11T07:48:16Z",
  "start": "2025-11-11",
  "end": "2026-11-12",
  "total": {
-  "total": 680,
-  "total_events": 305,
-  "total_utc": 680,
+  "total": 690,
+  "total_events": 308,
+  "total_utc": 690,
   "stats": [
    {
     "day": "2025-11-11",
@@ -10693,7 +10693,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 225
+    "monthly": 235
    },
    {
     "day": "2026-11-02",
@@ -10965,7 +10965,7 @@
      0
     ],
     "daily": 48,
-    "weekly": 51
+    "weekly": 61
    },
    {
     "day": "2026-11-11",
@@ -10978,10 +10978,10 @@
      0,
      0,
      0,
+     6,
+     1,
      0,
-     0,
-     0,
-     0,
+     3,
      0,
      0,
      0,
@@ -10995,7 +10995,7 @@
      0,
      0
     ],
-    "daily": 3
+    "daily": 13
    },
    {
     "day": "2026-11-12",
@@ -11035,7 +11035,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 153,
+   "count": 156,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -11072,7 +11072,7 @@
     "2026-11-08": 5,
     "2026-11-09": 6,
     "2026-11-10": 9,
-    "2026-11-11": 1
+    "2026-11-11": 4
    }
   },
   {
@@ -11114,7 +11114,7 @@
    "path_id": 116082941,
    "title": "Nearest Metro Station to Me in Dubai: Find It by Location",
    "event": false,
-   "count": 43,
+   "count": 47,
    "daily": {
     "2026-10-28": 1,
     "2026-10-31": 1,
@@ -11125,7 +11125,8 @@
     "2026-11-07": 7,
     "2026-11-08": 9,
     "2026-11-09": 8,
-    "2026-11-10": 10
+    "2026-11-10": 10,
+    "2026-11-11": 4
    }
   },
   {
@@ -11329,6 +11330,17 @@
    }
   },
   {
+   "path": "geo/far/centrepoint",
+   "path_id": 120799654,
+   "title": "en",
+   "event": true,
+   "count": 3,
+   "daily": {
+    "2026-11-10": 1,
+    "2026-11-11": 2
+   }
+  },
+  {
    "path": "/destinations/international-modern-hospital",
    "path_id": 118056711,
    "title": "International Modern Hospital Metro Station: ADCB (Red Line)",
@@ -11513,6 +11525,17 @@
    "daily": {
     "2026-11-08": 1,
     "2026-11-09": 1
+   }
+  },
+  {
+   "path": "geo/far/creek",
+   "path_id": 119969626,
+   "title": "en",
+   "event": true,
+   "count": 2,
+   "daily": {
+    "2026-11-07": 1,
+    "2026-11-11": 1
    }
   },
   {
@@ -11930,16 +11953,6 @@
    }
   },
   {
-   "path": "geo/far/centrepoint",
-   "path_id": 120799654,
-   "title": "en",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-11-10": 1
-   }
-  },
-  {
    "path": "/destinations/dubai-hospital",
    "path_id": 120769817,
    "title": "Dubai Hospital Metro Station: Salah Al Din (Green Line)",
@@ -12087,16 +12100,6 @@
    "count": 1,
    "daily": {
     "2026-11-08": 1
-   }
-  },
-  {
-   "path": "geo/far/creek",
-   "path_id": 119969626,
-   "title": "en",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-11-07": 1
    }
   },
   {
@@ -13802,9 +13805,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 375,
-  "events_total": 305,
-  "goatcounter_total_with_events": 680,
+  "visits": 382,
+  "events_total": 308,
+  "goatcounter_total_with_events": 690,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -13846,7 +13849,7 @@
    "2026-11-08": 18,
    "2026-11-09": 21,
    "2026-11-10": 30,
-   "2026-11-11": 3
+   "2026-11-11": 10
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -13902,9 +13905,9 @@
   ],
   "nearest_station": {
    "denied": 11,
+   "far": 5,
    "ok": 19,
    "fail": 2,
-   "far": 2,
    "outside": 1
   },
   "visitors_new_return": {
@@ -14066,11 +14069,11 @@
    },
    {
     "name": "dubaimetro.fyi/nearest-station",
-    "count": 18
+    "count": 19
    },
    {
     "name": "dubaimetro.fyi",
-    "count": 13
+    "count": 15
    },
    {
     "name": "com.reddit.frontpage",
@@ -14128,7 +14131,7 @@
   "/nearest-station": [
    {
     "name": "Google",
-    "count": 43
+    "count": 47
    }
   ],
   "/destinations/etihad-rail-dubai": [
@@ -14634,7 +14637,7 @@
   "dubaimetro.fyi/nearest-station": [
    {
     "path": "/",
-    "count": 18
+    "count": 19
    },
    {
     "path": "/map",
@@ -14644,7 +14647,7 @@
   "dubaimetro.fyi": [
    {
     "path": "/",
-    "count": 13
+    "count": 15
    },
    {
     "path": "/ru.html",
@@ -14678,7 +14681,7 @@
   "Google": [
    {
     "path": "/nearest-station",
-    "count": 43
+    "count": 47
    },
    {
     "path": "/destinations/etihad-rail-dubai",
@@ -15015,7 +15018,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 169,
+   "count": 173,
    "ref_scheme": "g"
   },
   {
@@ -15077,7 +15080,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 624
+   "count": 634
   },
   {
    "id": "rus",
@@ -15129,7 +15132,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 529
+   "count": 539
   },
   {
    "id": "US",
@@ -15281,7 +15284,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 455
+   "count": 465
   },
   {
    "id": "tablet",
@@ -15313,7 +15316,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 248
+   "count": 258
   },
   {
    "id": "Firefox",
@@ -15329,7 +15332,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 244
+   "count": 254
   },
   {
    "id": "Android",
