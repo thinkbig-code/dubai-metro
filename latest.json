@@ -1,45 +1,13 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-10T20:36:47Z",
- "start": "2026-10-11",
- "end": "2026-11-11",
+ "generated": "2026-11-11T00:55:05Z",
+ "start": "2026-10-12",
+ "end": "2026-11-12",
  "total": {
-  "total": 429,
-  "total_events": 152,
-  "total_utc": 424,
+  "total": 403,
+  "total_events": 132,
+  "total_utc": 403,
   "stats": [
-   {
-    "day": "2026-10-11",
-    "hourly": [
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     5,
-     7,
-     0,
-     0,
-     0,
-     9,
-     6,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     2,
-     0
-    ],
-    "daily": 29,
-    "weekly": 81,
-    "monthly": 207
-   },
    {
     "day": "2026-10-12",
     "hourly": [
@@ -68,7 +36,9 @@
      0,
      0
     ],
-    "daily": 9
+    "daily": 9,
+    "weekly": 58,
+    "monthly": 178
    },
    {
     "day": "2026-10-13",
@@ -248,8 +218,7 @@
      0,
      0
     ],
-    "daily": 6,
-    "weekly": 53
+    "daily": 6
    },
    {
     "day": "2026-10-19",
@@ -279,7 +248,8 @@
      0,
      0
     ],
-    "daily": 7
+    "daily": 7,
+    "weekly": 68
    },
    {
     "day": "2026-10-20",
@@ -459,8 +429,7 @@
      0,
      0
     ],
-    "daily": 21,
-    "weekly": 73
+    "daily": 21
    },
    {
     "day": "2026-10-26",
@@ -490,7 +459,8 @@
      2,
      0
     ],
-    "daily": 14
+    "daily": 14,
+    "weekly": 64
    },
    {
     "day": "2026-10-27",
@@ -671,8 +641,7 @@
      0
     ],
     "daily": 12,
-    "weekly": 122,
-    "monthly": 222
+    "monthly": 225
    },
    {
     "day": "2026-11-02",
@@ -702,7 +671,8 @@
      0,
      0
     ],
-    "daily": 17
+    "daily": 17,
+    "weekly": 134
    },
    {
     "day": "2026-11-03",
@@ -882,8 +852,7 @@
      3,
      1
     ],
-    "daily": 24,
-    "weekly": 100
+    "daily": 24
    },
    {
     "day": "2026-11-09",
@@ -913,7 +882,8 @@
      0,
      0
     ],
-    "daily": 28
+    "daily": 28,
+    "weekly": 79
    },
    {
     "day": "2026-11-10",
@@ -947,6 +917,36 @@
    },
    {
     "day": "2026-11-11",
+    "hourly": [
+     0,
+     1,
+     0,
+     2,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "daily": 3
+   },
+   {
+    "day": "2026-11-12",
     "hourly": [
      0,
      0,
@@ -983,9 +983,8 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 71,
+   "count": 64,
    "daily": {
-    "2026-10-11": 8,
     "2026-10-12": 1,
     "2026-10-13": 1,
     "2026-10-14": 4,
@@ -1010,7 +1009,8 @@
     "2026-11-07": 6,
     "2026-11-08": 5,
     "2026-11-09": 6,
-    "2026-11-10": 9
+    "2026-11-10": 9,
+    "2026-11-11": 1
    }
   },
   {
@@ -1030,37 +1030,6 @@
     "2026-11-08": 9,
     "2026-11-09": 8,
     "2026-11-10": 10
-   }
-  },
-  {
-   "path": "visit/new/-",
-   "path_id": 110447314,
-   "title": "en",
-   "event": true,
-   "count": 42,
-   "daily": {
-    "2026-10-11": 8,
-    "2026-10-12": 1,
-    "2026-10-13": 1,
-    "2026-10-14": 4,
-    "2026-10-15": 1,
-    "2026-10-17": 1,
-    "2026-10-18": 1,
-    "2026-10-19": 1,
-    "2026-10-20": 1,
-    "2026-10-22": 2,
-    "2026-10-24": 3,
-    "2026-10-25": 2,
-    "2026-10-27": 1,
-    "2026-10-29": 1,
-    "2026-10-31": 1,
-    "2026-11-02": 2,
-    "2026-11-03": 1,
-    "2026-11-04": 5,
-    "2026-11-06": 1,
-    "2026-11-07": 1,
-    "2026-11-08": 1,
-    "2026-11-09": 2
    }
   },
   {
@@ -1090,6 +1059,36 @@
     "2026-11-06": 1,
     "2026-11-09": 2,
     "2026-11-10": 3
+   }
+  },
+  {
+   "path": "visit/new/-",
+   "path_id": 110447314,
+   "title": "en",
+   "event": true,
+   "count": 34,
+   "daily": {
+    "2026-10-12": 1,
+    "2026-10-13": 1,
+    "2026-10-14": 4,
+    "2026-10-15": 1,
+    "2026-10-17": 1,
+    "2026-10-18": 1,
+    "2026-10-19": 1,
+    "2026-10-20": 1,
+    "2026-10-22": 2,
+    "2026-10-24": 3,
+    "2026-10-25": 2,
+    "2026-10-27": 1,
+    "2026-10-29": 1,
+    "2026-10-31": 1,
+    "2026-11-02": 2,
+    "2026-11-03": 1,
+    "2026-11-04": 5,
+    "2026-11-06": 1,
+    "2026-11-07": 1,
+    "2026-11-08": 1,
+    "2026-11-09": 2
    }
   },
   {
@@ -1130,7 +1129,7 @@
    "path_id": 115183314,
    "title": "Meena Bazaar Metro Station: Sharaf DG (Green Line), 9 min walk",
    "event": false,
-   "count": 7,
+   "count": 8,
    "daily": {
     "2026-10-26": 1,
     "2026-10-27": 1,
@@ -1138,7 +1137,8 @@
     "2026-11-03": 1,
     "2026-11-06": 1,
     "2026-11-07": 1,
-    "2026-11-08": 1
+    "2026-11-08": 1,
+    "2026-11-11": 1
    }
   },
   {
@@ -1235,6 +1235,18 @@
    }
   },
   {
+   "path": "/destinations/international-modern-hospital",
+   "path_id": 118056711,
+   "title": "International Modern Hospital Metro Station: ADCB (Red Line)",
+   "event": false,
+   "count": 3,
+   "daily": {
+    "2026-11-03": 1,
+    "2026-11-09": 1,
+    "2026-11-11": 1
+   }
+  },
+  {
    "path": "/destinations/wafi-city",
    "path_id": 116627826,
    "title": "Wafi City Metro Station: Dubai Healthcare City (Green Line)",
@@ -1318,18 +1330,6 @@
    }
   },
   {
-   "path": "map_station_click/dhcc/-",
-   "path_id": 111090916,
-   "title": "en|home|phone",
-   "event": true,
-   "count": 3,
-   "daily": {
-    "2026-10-11": 1,
-    "2026-11-04": 1,
-    "2026-11-10": 1
-   }
-  },
-  {
    "path": "geo/ok/jbr2",
    "path_id": 120261772,
    "title": "en",
@@ -1371,17 +1371,6 @@
    "daily": {
     "2026-11-04": 1,
     "2026-11-06": 1
-   }
-  },
-  {
-   "path": "/destinations/international-modern-hospital",
-   "path_id": 118056711,
-   "title": "International Modern Hospital Metro Station: ADCB (Red Line)",
-   "event": false,
-   "count": 2,
-   "daily": {
-    "2026-11-03": 1,
-    "2026-11-09": 1
    }
   },
   {
@@ -1517,14 +1506,14 @@
    }
   },
   {
-   "path": "/lines/green-line",
-   "path_id": 111066360,
-   "title": "Dubai Metro Green Line: Stations, Map and Hours",
-   "event": false,
+   "path": "map_station_click/dhcc/-",
+   "path_id": 111090916,
+   "title": "en|home|phone",
+   "event": true,
    "count": 2,
    "daily": {
-    "2026-10-11": 1,
-    "2026-10-12": 1
+    "2026-11-04": 1,
+    "2026-11-10": 1
    }
   },
   {
@@ -1547,28 +1536,6 @@
    "daily": {
     "2026-10-14": 1,
     "2026-10-20": 1
-   }
-  },
-  {
-   "path": "map_station_click/moe/-",
-   "path_id": 110312988,
-   "title": "en|home|phone",
-   "event": true,
-   "count": 2,
-   "daily": {
-    "2026-10-11": 1,
-    "2026-11-06": 1
-   }
-  },
-  {
-   "path": "map_station_click/bk/-",
-   "path_id": 109553304,
-   "title": "en|home|phone",
-   "event": true,
-   "count": 2,
-   "daily": {
-    "2026-10-11": 1,
-    "2026-10-17": 1
    }
   },
   {
@@ -2402,93 +2369,13 @@
    }
   },
   {
-   "path": "view/bb/p_palm_jumeirah_mall",
-   "path_id": 111099124,
-   "title": "en|opt_2",
-   "event": true,
+   "path": "/lines/green-line",
+   "path_id": 111066360,
+   "title": "Dubai Metro Green Line: Stations, Map and Hours",
+   "event": false,
    "count": 1,
    "daily": {
-    "2026-10-11": 1
-   }
-  },
-  {
-   "path": "route/bb/p_palm_jumeirah_mall",
-   "path_id": 111099045,
-   "title": "en|search|ok|first_station_search",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-11": 1
-   }
-  },
-  {
-   "path": "place/p_palm_jumeirah_mall/to",
-   "path_id": 111099044,
-   "title": "en|name",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-11": 1
-   }
-  },
-  {
-   "path": "station/bb/from",
-   "path_id": 111098964,
-   "title": "en|name",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-11": 1
-   }
-  },
-  {
-   "path": "view/moe/dhcc",
-   "path_id": 111090931,
-   "title": "en|details",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-11": 1
-   }
-  },
-  {
-   "path": "station_pair_route_search/moe/dhcc",
-   "path_id": 111090923,
-   "title": "en|map",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-11": 1
-   }
-  },
-  {
-   "path": "route/moe/dhcc",
-   "path_id": 111090922,
-   "title": "en|map|ok|first_map",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-11": 1
-   }
-  },
-  {
-   "path": "route_to_station_click/dhcc/-",
-   "path_id": 111090921,
-   "title": "en",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-11": 1
-   }
-  },
-  {
-   "path": "route_from_station_click/moe/-",
-   "path_id": 111090912,
-   "title": "en",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-11": 1
+    "2026-10-12": 1
    }
   },
   {
@@ -2592,6 +2479,16 @@
    }
   },
   {
+   "path": "map_station_click/moe/-",
+   "path_id": 110312988,
+   "title": "en|home|phone",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-06": 1
+   }
+  },
+  {
    "path": "/tram",
    "path_id": 109752598,
    "title": "Dubai Tram: Stops, JBR Loop, Metro Links and Hours",
@@ -2612,6 +2509,16 @@
    }
   },
   {
+   "path": "map_station_click/bk/-",
+   "path_id": 109553304,
+   "title": "en|home|phone",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-10-17": 1
+   }
+  },
+  {
    "path": "map_station_click/dic/-",
    "path_id": 109247471,
    "title": "en|home|desktop",
@@ -2624,11 +2531,10 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 277,
-  "events_total": 152,
-  "goatcounter_total_with_events": 429,
+  "visits": 271,
+  "events_total": 132,
+  "goatcounter_total_with_events": 403,
   "page_loads_by_day": {
-   "2026-10-11": 9,
    "2026-10-12": 7,
    "2026-10-13": 6,
    "2026-10-14": 6,
@@ -2658,10 +2564,10 @@
    "2026-11-07": 21,
    "2026-11-08": 18,
    "2026-11-09": 21,
-   "2026-11-10": 30
+   "2026-11-10": 30,
+   "2026-11-11": 3
   },
   "visitor_days_by_day": {
-   "2026-10-11": 8,
    "2026-10-12": 1,
    "2026-10-13": 1,
    "2026-10-14": 4,
@@ -2686,19 +2592,19 @@
    "2026-11-08": 1,
    "2026-11-09": 3
   },
-  "visitor_days": 49,
-  "return_rate": 0.143,
-  "routes": 16,
+  "visitor_days": 41,
+  "return_rate": 0.171,
+  "routes": 14,
   "routes_not_found": 0,
-  "routes_per_visit": 0.06,
+  "routes_per_visit": 0.05,
   "routes_per_visitor_day": 0.27,
-  "share_rate": 0.188,
+  "share_rate": 0.214,
   "shares": {
    "qr": 1,
    "copy": 1,
    "whatsapp": 1
   },
-  "failed_search_rate": 0.1,
+  "failed_search_rate": 0.111,
   "failed_searches": [
    {
     "name": "indigo",
@@ -2717,7 +2623,7 @@
    "fail": 1
   },
   "visitors_new_return": {
-   "new": 42,
+   "new": 34,
    "return": 7
   },
   "top_routes": [
@@ -2774,11 +2680,7 @@
     "count": 1
    },
    {
-    "name": "bb > p_palm_jumeirah_mall",
-    "count": 1
-   },
-   {
-    "name": "moe > dhcc",
+    "name": "p_dubai_mall > p_dxb_airport_terminal_3",
     "count": 1
    }
   ],
@@ -2816,11 +2718,7 @@
     "count": 1
    },
    {
-    "name": "bb",
-    "count": 1
-   },
-   {
-    "name": "moe",
+    "name": "p_dubai_mall",
     "count": 1
    }
   ],
@@ -2870,12 +2768,12 @@
  "page_refs": {
   "/": [
    {
-    "name": "(direct or unknown)",
-    "count": 24
-   },
-   {
     "name": "dubaimetro.fyi/nearest-station",
     "count": 18
+   },
+   {
+    "name": "(direct or unknown)",
+    "count": 17
    },
    {
     "name": "dubaimetro.fyi",
@@ -2883,15 +2781,15 @@
    },
    {
     "name": "com.reddit.frontpage",
-    "count": 6
+    "count": 5
+   },
+   {
+    "name": "Google",
+    "count": 2
    },
    {
     "name": "chatgpt.com",
     "count": 2
-   },
-   {
-    "name": "Google",
-    "count": 1
    },
    {
     "name": "duckduckgo.com",
@@ -2951,7 +2849,7 @@
   "/destinations/meena-bazaar": [
    {
     "name": "Google",
-    "count": 7
+    "count": 8
    }
   ],
   "/destinations/rashid-hospital": [
@@ -3004,6 +2902,12 @@
    {
     "name": "chatgpt.com",
     "count": 2
+   }
+  ],
+  "/destinations/international-modern-hospital": [
+   {
+    "name": "Google",
+    "count": 3
    }
   ],
   "/destinations/wafi-city": [
@@ -3084,12 +2988,6 @@
     "count": 2
    }
   ],
-  "/destinations/international-modern-hospital": [
-   {
-    "name": "Google",
-    "count": 2
-   }
-  ],
   "/destinations/al-jalila-children-s-specialty-hospital": [
    {
     "name": "(direct or unknown)",
@@ -3154,16 +3052,6 @@
    {
     "name": "Google",
     "count": 2
-   }
-  ],
-  "/lines/green-line": [
-   {
-    "name": "Google",
-    "count": 1
-   },
-   {
-    "name": "dubaimetro.fyi/destinations/etihad-rail-dubai",
-    "count": 1
    }
   ],
   "/ar.html": [
@@ -3343,13 +3231,29 @@
     "name": "dubaimetro.fyi/lines/red-line",
     "count": 1
    }
+  ],
+  "/lines/green-line": [
+   {
+    "name": "dubaimetro.fyi/destinations/etihad-rail-dubai",
+    "count": 1
+   }
   ]
  },
  "ref_pages": {
+  "dubaimetro.fyi/nearest-station": [
+   {
+    "path": "/",
+    "count": 18
+   },
+   {
+    "path": "/map",
+    "count": 1
+   }
+  ],
   "(direct or unknown)": [
    {
     "path": "/",
-    "count": 24
+    "count": 17
    },
    {
     "path": "/destinations/etihad-rail-dubai",
@@ -3396,16 +3300,6 @@
     "count": 1
    }
   ],
-  "dubaimetro.fyi/nearest-station": [
-   {
-    "path": "/",
-    "count": 18
-   },
-   {
-    "path": "/map",
-    "count": 1
-   }
-  ],
   "dubaimetro.fyi": [
    {
     "path": "/",
@@ -3415,7 +3309,177 @@
   "com.reddit.frontpage": [
    {
     "path": "/",
+    "count": 5
+   }
+  ],
+  "Google": [
+   {
+    "path": "/nearest-station",
+    "count": 43
+   },
+   {
+    "path": "/destinations/etihad-rail-dubai",
+    "count": 33
+   },
+   {
+    "path": "/destinations/indian-consulate-dubai",
+    "count": 11
+   },
+   {
+    "path": "/destinations/meena-bazaar",
+    "count": 8
+   },
+   {
+    "path": "/destinations/rashid-hospital",
     "count": 6
+   },
+   {
+    "path": "/destinations/al-zahra-hospital-dubai",
+    "count": 4
+   },
+   {
+    "path": "/destinations/pakistan-consulate-dubai",
+    "count": 4
+   },
+   {
+    "path": "/destinations/dubai-mall",
+    "count": 4
+   },
+   {
+    "path": "/destinations/dubai-police-general-headquarters",
+    "count": 3
+   },
+   {
+    "path": "/destinations/international-modern-hospital",
+    "count": 3
+   },
+   {
+    "path": "/destinations/wafi-city",
+    "count": 3
+   },
+   {
+    "path": "/destinations/aster-hospital-al-qusais",
+    "count": 3
+   },
+   {
+    "path": "/",
+    "count": 2
+   },
+   {
+    "path": "/map",
+    "count": 2
+   },
+   {
+    "path": "/destinations/times-square-center",
+    "count": 2
+   },
+   {
+    "path": "/destinations/american-hospital-dubai",
+    "count": 2
+   },
+   {
+    "path": "/destinations/al-barsha-pond-park",
+    "count": 2
+   },
+   {
+    "path": "/destinations/al-ghurair-centre",
+    "count": 2
+   },
+   {
+    "path": "/destinations/al-khaleej-centre",
+    "count": 2
+   },
+   {
+    "path": "/destinations/al-mulla-plaza",
+    "count": 2
+   },
+   {
+    "path": "/destinations/canadian-specialist-hospital",
+    "count": 2
+   },
+   {
+    "path": "/destinations/dubai-land-department",
+    "count": 2
+   },
+   {
+    "path": "/destinations/dubai-municipality-head-office",
+    "count": 2
+   },
+   {
+    "path": "/destinations/reef-mall",
+    "count": 1
+   },
+   {
+    "path": "/destinations/gdrfa-immigration-al-jafiliya",
+    "count": 1
+   },
+   {
+    "path": "/destinations/us-consulate-dubai",
+    "count": 1
+   },
+   {
+    "path": "/destinations/dubai-hospital",
+    "count": 1
+   },
+   {
+    "path": "/destinations/naif-souk",
+    "count": 1
+   },
+   {
+    "path": "/destinations/city-centre-deira",
+    "count": 1
+   },
+   {
+    "path": "/destinations/knowledge-park",
+    "count": 1
+   },
+   {
+    "path": "/destinations/gold-souk",
+    "count": 1
+   },
+   {
+    "path": "/stations/al-qiyadah",
+    "count": 1
+   },
+   {
+    "path": "/destinations/saudi-german-hospital-dubai",
+    "count": 1
+   },
+   {
+    "path": "/destinations/egyptian-consulate-dubai",
+    "count": 1
+   },
+   {
+    "path": "/destinations/jebel-ali-free-zone",
+    "count": 1
+   },
+   {
+    "path": "/stations/city-centre-deira",
+    "count": 1
+   },
+   {
+    "path": "/destinations/dubai-garden-glow",
+    "count": 1
+   },
+   {
+    "path": "/destinations/american-university-in-dubai",
+    "count": 1
+   },
+   {
+    "path": "/destinations/almas-tower",
+    "count": 1
+   },
+   {
+    "path": "/destinations/burj-khalifa",
+    "count": 1
+   },
+   {
+    "path": "/destinations/coca-cola-arena",
+    "count": 1
+   },
+   {
+    "path": "/destinations/expo-city-dubai",
+    "count": 1
    }
   ],
   "chatgpt.com": [
@@ -3481,180 +3545,6 @@
    },
    {
     "path": "/destinations/dubai-creek-harbour",
-    "count": 1
-   }
-  ],
-  "Google": [
-   {
-    "path": "/nearest-station",
-    "count": 43
-   },
-   {
-    "path": "/destinations/etihad-rail-dubai",
-    "count": 33
-   },
-   {
-    "path": "/destinations/indian-consulate-dubai",
-    "count": 11
-   },
-   {
-    "path": "/destinations/meena-bazaar",
-    "count": 7
-   },
-   {
-    "path": "/destinations/rashid-hospital",
-    "count": 6
-   },
-   {
-    "path": "/destinations/al-zahra-hospital-dubai",
-    "count": 4
-   },
-   {
-    "path": "/destinations/pakistan-consulate-dubai",
-    "count": 4
-   },
-   {
-    "path": "/destinations/dubai-mall",
-    "count": 4
-   },
-   {
-    "path": "/destinations/dubai-police-general-headquarters",
-    "count": 3
-   },
-   {
-    "path": "/destinations/wafi-city",
-    "count": 3
-   },
-   {
-    "path": "/destinations/aster-hospital-al-qusais",
-    "count": 3
-   },
-   {
-    "path": "/map",
-    "count": 2
-   },
-   {
-    "path": "/destinations/times-square-center",
-    "count": 2
-   },
-   {
-    "path": "/destinations/american-hospital-dubai",
-    "count": 2
-   },
-   {
-    "path": "/destinations/al-barsha-pond-park",
-    "count": 2
-   },
-   {
-    "path": "/destinations/international-modern-hospital",
-    "count": 2
-   },
-   {
-    "path": "/destinations/al-ghurair-centre",
-    "count": 2
-   },
-   {
-    "path": "/destinations/al-khaleej-centre",
-    "count": 2
-   },
-   {
-    "path": "/destinations/al-mulla-plaza",
-    "count": 2
-   },
-   {
-    "path": "/destinations/canadian-specialist-hospital",
-    "count": 2
-   },
-   {
-    "path": "/destinations/dubai-land-department",
-    "count": 2
-   },
-   {
-    "path": "/destinations/dubai-municipality-head-office",
-    "count": 2
-   },
-   {
-    "path": "/",
-    "count": 1
-   },
-   {
-    "path": "/destinations/reef-mall",
-    "count": 1
-   },
-   {
-    "path": "/destinations/gdrfa-immigration-al-jafiliya",
-    "count": 1
-   },
-   {
-    "path": "/destinations/us-consulate-dubai",
-    "count": 1
-   },
-   {
-    "path": "/lines/green-line",
-    "count": 1
-   },
-   {
-    "path": "/destinations/dubai-hospital",
-    "count": 1
-   },
-   {
-    "path": "/destinations/naif-souk",
-    "count": 1
-   },
-   {
-    "path": "/destinations/city-centre-deira",
-    "count": 1
-   },
-   {
-    "path": "/destinations/knowledge-park",
-    "count": 1
-   },
-   {
-    "path": "/destinations/gold-souk",
-    "count": 1
-   },
-   {
-    "path": "/stations/al-qiyadah",
-    "count": 1
-   },
-   {
-    "path": "/destinations/saudi-german-hospital-dubai",
-    "count": 1
-   },
-   {
-    "path": "/destinations/egyptian-consulate-dubai",
-    "count": 1
-   },
-   {
-    "path": "/destinations/jebel-ali-free-zone",
-    "count": 1
-   },
-   {
-    "path": "/stations/city-centre-deira",
-    "count": 1
-   },
-   {
-    "path": "/destinations/dubai-garden-glow",
-    "count": 1
-   },
-   {
-    "path": "/destinations/american-university-in-dubai",
-    "count": 1
-   },
-   {
-    "path": "/destinations/almas-tower",
-    "count": 1
-   },
-   {
-    "path": "/destinations/burj-khalifa",
-    "count": 1
-   },
-   {
-    "path": "/destinations/coca-cola-arena",
-    "count": 1
-   },
-   {
-    "path": "/destinations/expo-city-dubai",
     "count": 1
    }
   ],
@@ -3741,18 +3631,18 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 166,
+   "count": 168,
    "ref_scheme": "g"
   },
   {
    "name": "",
-   "count": 97,
+   "count": 72,
    "ref_scheme": "o"
   },
   {
    "id": "com.reddit.frontpage",
    "name": "com.reddit.frontpage",
-   "count": 25,
+   "count": 22,
    "ref_scheme": "o"
   },
   {
@@ -3784,7 +3674,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 401
+   "count": 376
   },
   {
    "id": "rus",
@@ -3792,14 +3682,14 @@
    "count": 7
   },
   {
-   "id": "(unknown)",
-   "name": "(unknown)",
-   "count": 5
-  },
-  {
    "id": "ara",
    "name": "Arabic",
    "count": 5
+  },
+  {
+   "id": "(unknown)",
+   "name": "(unknown)",
+   "count": 4
   },
   {
    "id": "zho",
@@ -3836,7 +3726,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 347
+   "count": 324
   },
   {
    "id": "US",
@@ -3846,7 +3736,7 @@
   {
    "id": "IN",
    "name": "India",
-   "count": 15
+   "count": 13
   },
   {
    "id": "NL",
@@ -3876,11 +3766,6 @@
   {
    "id": "CO",
    "name": "Colombia",
-   "count": 2
-  },
-  {
-   "id": "DE",
-   "name": "Germany",
    "count": 2
   },
   {
@@ -3914,6 +3799,11 @@
    "count": 2
   },
   {
+   "id": "DE",
+   "name": "Germany",
+   "count": 1
+  },
+  {
    "id": "IE",
    "name": "Ireland",
    "count": 1
@@ -3943,7 +3833,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 336
+   "count": 317
   },
   {
    "id": "tablet",
@@ -3953,7 +3843,7 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 68
+   "count": 61
   },
   {
    "id": "desktophd",
@@ -3970,12 +3860,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 261
+   "count": 254
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 168
+   "count": 149
   }
  ],
  "systems": [
@@ -3987,12 +3877,12 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 168
+   "count": 149
   },
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 68
+   "count": 61
   },
   {
    "id": "Linux",
