@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-11T08:24:18Z",
+ "generated": "2026-11-11T16:37:17Z",
  "start": "2026-10-12",
  "end": "2026-11-12",
  "total": {
-  "total": 413,
-  "total_events": 135,
-  "total_utc": 413,
+  "total": 437,
+  "total_events": 144,
+  "total_utc": 437,
   "stats": [
    {
     "day": "2026-10-12",
@@ -641,7 +641,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 235
+    "monthly": 259
    },
    {
     "day": "2026-11-02",
@@ -883,7 +883,7 @@
      0
     ],
     "daily": 28,
-    "weekly": 89
+    "weekly": 113
    },
    {
     "day": "2026-11-10",
@@ -930,20 +930,20 @@
      1,
      0,
      3,
+     2,
      0,
+     4,
+     4,
+     1,
      0,
+     6,
      0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
+     7,
      0,
      0,
      0
     ],
-    "daily": 13
+    "daily": 37
    },
    {
     "day": "2026-11-12",
@@ -983,7 +983,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 67,
+   "count": 72,
    "daily": {
     "2026-10-12": 1,
     "2026-10-13": 1,
@@ -1010,7 +1010,7 @@
     "2026-11-08": 5,
     "2026-11-09": 6,
     "2026-11-10": 9,
-    "2026-11-11": 4
+    "2026-11-11": 9
    }
   },
   {
@@ -1018,7 +1018,7 @@
    "path_id": 116082941,
    "title": "Nearest Metro Station to Me in Dubai: Find It by Location",
    "event": false,
-   "count": 47,
+   "count": 54,
    "daily": {
     "2026-10-28": 1,
     "2026-10-31": 1,
@@ -1030,7 +1030,7 @@
     "2026-11-08": 9,
     "2026-11-09": 8,
     "2026-11-10": 10,
-    "2026-11-11": 4
+    "2026-11-11": 11
    }
   },
   {
@@ -1115,14 +1115,15 @@
    "path_id": 110313382,
    "title": "en",
    "event": true,
-   "count": 9,
+   "count": 10,
    "daily": {
     "2026-10-14": 1,
     "2026-10-31": 1,
     "2026-11-07": 1,
     "2026-11-08": 1,
     "2026-11-09": 2,
-    "2026-11-10": 3
+    "2026-11-10": 3,
+    "2026-11-11": 1
    }
   },
   {
@@ -1130,7 +1131,7 @@
    "path_id": 115183314,
    "title": "Meena Bazaar Metro Station: Sharaf DG (Green Line), 9 min walk",
    "event": false,
-   "count": 8,
+   "count": 9,
    "daily": {
     "2026-10-26": 1,
     "2026-10-27": 1,
@@ -1139,7 +1140,7 @@
     "2026-11-06": 1,
     "2026-11-07": 1,
     "2026-11-08": 1,
-    "2026-11-11": 1
+    "2026-11-11": 2
    }
   },
   {
@@ -1170,6 +1171,18 @@
     "2026-11-05": 1,
     "2026-11-07": 2,
     "2026-11-09": 1
+   }
+  },
+  {
+   "path": "/destinations/wafi-city",
+   "path_id": 116627826,
+   "title": "Wafi City Metro Station: Dubai Healthcare City (Green Line)",
+   "event": false,
+   "count": 5,
+   "daily": {
+    "2026-10-30": 1,
+    "2026-11-10": 2,
+    "2026-11-11": 2
    }
   },
   {
@@ -1256,17 +1269,6 @@
     "2026-11-03": 1,
     "2026-11-09": 1,
     "2026-11-11": 1
-   }
-  },
-  {
-   "path": "/destinations/wafi-city",
-   "path_id": 116627826,
-   "title": "Wafi City Metro Station: Dubai Healthcare City (Green Line)",
-   "event": false,
-   "count": 3,
-   "daily": {
-    "2026-10-30": 1,
-    "2026-11-10": 2
    }
   },
   {
@@ -1559,6 +1561,77 @@
    "daily": {
     "2026-10-14": 1,
     "2026-10-20": 1
+   }
+  },
+  {
+   "path": "geo/fail/-",
+   "path_id": 110447348,
+   "title": "en",
+   "event": true,
+   "count": 2,
+   "daily": {
+    "2026-11-07": 1,
+    "2026-11-11": 1
+   }
+  },
+  {
+   "path": "station_pair_route_search/jge/et",
+   "path_id": 121166484,
+   "title": "en|geo",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-11": 1
+   }
+  },
+  {
+   "path": "route/jge/et",
+   "path_id": 121166483,
+   "title": "en|search|ok|first_geo",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-11": 1
+   }
+  },
+  {
+   "path": "station/jge/from",
+   "path_id": 121166407,
+   "title": "en|name",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-11": 1
+   }
+  },
+  {
+   "path": "geo/far/jge",
+   "path_id": 121166360,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-11": 1
+   }
+  },
+  {
+   "path": "geo/ok/adcb",
+   "path_id": 121131925,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-11": 1
+   }
+  },
+  {
+   "path": "geo/far/stadium",
+   "path_id": 121126343,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-11": 1
    }
   },
   {
@@ -2442,16 +2515,6 @@
    }
   },
   {
-   "path": "geo/fail/-",
-   "path_id": 110447348,
-   "title": "en",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-11-07": 1
-   }
-  },
-  {
    "path": "map_station_click/dmm/-",
    "path_id": 110382397,
    "title": "en|home|phone",
@@ -2502,6 +2565,16 @@
    }
   },
   {
+   "path": "station/et/to",
+   "path_id": 109748382,
+   "title": "en|name",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-11": 1
+   }
+  },
+  {
    "path": "place/p_dubai_mall/from",
    "path_id": 109724714,
    "title": "ru|name",
@@ -2534,9 +2607,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 278,
-  "events_total": 135,
-  "goatcounter_total_with_events": 413,
+  "visits": 293,
+  "events_total": 144,
+  "goatcounter_total_with_events": 437,
   "page_loads_by_day": {
    "2026-10-12": 7,
    "2026-10-13": 6,
@@ -2568,7 +2641,7 @@
    "2026-11-08": 18,
    "2026-11-09": 21,
    "2026-11-10": 30,
-   "2026-11-11": 10
+   "2026-11-11": 25
   },
   "visitor_days_by_day": {
    "2026-10-12": 1,
@@ -2597,17 +2670,17 @@
   },
   "visitor_days": 41,
   "return_rate": 0.171,
-  "routes": 14,
+  "routes": 15,
   "routes_not_found": 0,
   "routes_per_visit": 0.05,
   "routes_per_visitor_day": 0.27,
-  "share_rate": 0.214,
+  "share_rate": 0.2,
   "shares": {
    "qr": 1,
    "copy": 1,
    "whatsapp": 1
   },
-  "failed_search_rate": 0.111,
+  "failed_search_rate": 0.1,
   "failed_searches": [
    {
     "name": "indigo",
@@ -2619,17 +2692,21 @@
    }
   ],
   "nearest_station": {
-   "denied": 9,
-   "far": 5,
-   "ok": 17,
-   "outside": 1,
-   "fail": 1
+   "denied": 10,
+   "far": 7,
+   "ok": 18,
+   "fail": 2,
+   "outside": 1
   },
   "visitors_new_return": {
    "new": 34,
    "return": 7
   },
   "top_routes": [
+   {
+    "name": "jge > et",
+    "count": 1
+   },
    {
     "name": "stadium > union",
     "count": 1
@@ -2701,6 +2778,10 @@
     "count": 2
    },
    {
+    "name": "jge",
+    "count": 1
+   },
+   {
     "name": "p_dubai_internet_city",
     "count": 1
    },
@@ -2735,6 +2816,10 @@
     "count": 2
    },
    {
+    "name": "et",
+    "count": 1
+   },
+   {
     "name": "p_spice_souk",
     "count": 1
    },
@@ -2761,10 +2846,6 @@
    {
     "name": "p_dubai_creek_harbour",
     "count": 1
-   },
-   {
-    "name": "p_burjuman_mall",
-    "count": 1
    }
   ]
  },
@@ -2772,7 +2853,7 @@
   "/": [
    {
     "name": "dubaimetro.fyi/nearest-station",
-    "count": 19
+    "count": 23
    },
    {
     "name": "(direct or unknown)",
@@ -2780,7 +2861,7 @@
    },
    {
     "name": "dubaimetro.fyi",
-    "count": 15
+    "count": 16
    },
    {
     "name": "com.reddit.frontpage",
@@ -2826,7 +2907,7 @@
   "/nearest-station": [
    {
     "name": "Google",
-    "count": 47
+    "count": 54
    }
   ],
   "/destinations/etihad-rail-dubai": [
@@ -2853,6 +2934,10 @@
    {
     "name": "Google",
     "count": 8
+   },
+   {
+    "name": "chatgpt.com",
+    "count": 1
    }
   ],
   "/destinations/rashid-hospital": [
@@ -2863,6 +2948,12 @@
    {
     "name": "chatgpt.com",
     "count": 1
+   }
+  ],
+  "/destinations/wafi-city": [
+   {
+    "name": "Google",
+    "count": 5
    }
   ],
   "/destinations/al-zahra-hospital-dubai": [
@@ -2908,12 +2999,6 @@
    }
   ],
   "/destinations/international-modern-hospital": [
-   {
-    "name": "Google",
-    "count": 3
-   }
-  ],
-  "/destinations/wafi-city": [
    {
     "name": "Google",
     "count": 3
@@ -3246,7 +3331,7 @@
   "dubaimetro.fyi/nearest-station": [
    {
     "path": "/",
-    "count": 19
+    "count": 23
    },
    {
     "path": "/map",
@@ -3306,7 +3391,7 @@
   "dubaimetro.fyi": [
    {
     "path": "/",
-    "count": 15
+    "count": 16
    }
   ],
   "com.reddit.frontpage": [
@@ -3318,7 +3403,7 @@
   "Google": [
    {
     "path": "/nearest-station",
-    "count": 47
+    "count": 54
    },
    {
     "path": "/destinations/etihad-rail-dubai",
@@ -3335,6 +3420,10 @@
    {
     "path": "/destinations/rashid-hospital",
     "count": 6
+   },
+   {
+    "path": "/destinations/wafi-city",
+    "count": 5
    },
    {
     "path": "/destinations/al-zahra-hospital-dubai",
@@ -3354,10 +3443,6 @@
    },
    {
     "path": "/destinations/international-modern-hospital",
-    "count": 3
-   },
-   {
-    "path": "/destinations/wafi-city",
     "count": 3
    },
    {
@@ -3503,6 +3588,10 @@
     "count": 2
    },
    {
+    "path": "/destinations/meena-bazaar",
+    "count": 1
+   },
+   {
     "path": "/destinations/rashid-hospital",
     "count": 1
    },
@@ -3634,7 +3723,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 172,
+   "count": 181,
    "ref_scheme": "g"
   },
   {
@@ -3651,7 +3740,7 @@
   {
    "id": "chatgpt.com",
    "name": "chatgpt.com",
-   "count": 20,
+   "count": 21,
    "ref_scheme": "c"
   },
   {
@@ -3677,7 +3766,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 386
+   "count": 410
   },
   {
    "id": "rus",
@@ -3729,7 +3818,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 334
+   "count": 356
   },
   {
    "id": "US",
@@ -3739,7 +3828,7 @@
   {
    "id": "IN",
    "name": "India",
-   "count": 13
+   "count": 15
   },
   {
    "id": "NL",
@@ -3836,7 +3925,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 327
+   "count": 351
   },
   {
    "id": "tablet",
@@ -3863,24 +3952,24 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 254
+   "count": 270
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 159
+   "count": 167
   }
  ],
  "systems": [
   {
    "id": "Android",
    "name": "Android",
-   "count": 171
+   "count": 187
   },
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 159
+   "count": 167
   },
   {
    "id": "Windows",
