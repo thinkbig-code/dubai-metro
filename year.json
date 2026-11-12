@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-12T04:18:57Z",
+ "generated": "2026-11-12T08:25:49Z",
  "start": "2025-11-12",
  "end": "2026-11-13",
  "total": {
-  "total": 731,
-  "total_events": 323,
-  "total_utc": 731,
+  "total": 736,
+  "total_events": 324,
+  "total_utc": 736,
   "stats": [
    {
     "day": "2025-11-12",
@@ -10663,7 +10663,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 276
+    "monthly": 281
    },
    {
     "day": "2026-11-02",
@@ -10965,7 +10965,7 @@
      1
     ],
     "daily": 45,
-    "weekly": 54
+    "weekly": 59
    },
    {
     "day": "2026-11-12",
@@ -10978,10 +10978,10 @@
      0,
      5,
      1,
+     5,
+     0,
+     0,
      3,
-     0,
-     0,
-     0,
      0,
      0,
      0,
@@ -10995,7 +10995,7 @@
      0,
      0
     ],
-    "daily": 9
+    "daily": 14
    },
    {
     "day": "2026-11-13",
@@ -11035,7 +11035,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 166,
+   "count": 168,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -11073,7 +11073,7 @@
     "2026-11-09": 6,
     "2026-11-10": 9,
     "2026-11-11": 11,
-    "2026-11-12": 3
+    "2026-11-12": 5
    }
   },
   {
@@ -11115,7 +11115,7 @@
    "path_id": 116082941,
    "title": "Nearest Metro Station to Me in Dubai: Find It by Location",
    "event": false,
-   "count": 57,
+   "count": 58,
    "daily": {
     "2026-10-28": 1,
     "2026-10-31": 1,
@@ -11128,7 +11128,7 @@
     "2026-11-09": 8,
     "2026-11-10": 10,
     "2026-11-11": 12,
-    "2026-11-12": 2
+    "2026-11-12": 3
    }
   },
   {
@@ -11394,6 +11394,18 @@
    }
   },
   {
+   "path": "geo/ok/equiti",
+   "path_id": 117954536,
+   "title": "en",
+   "event": true,
+   "count": 3,
+   "daily": {
+    "2026-11-03": 1,
+    "2026-11-08": 1,
+    "2026-11-12": 1
+   }
+  },
+  {
    "path": "/destinations/aster-hospital-al-qusais",
    "path_id": 116157918,
    "title": "Aster Hospital Al Qusais Metro Station: Dubai Airport Free Zone",
@@ -11631,17 +11643,6 @@
    "daily": {
     "2026-11-04": 1,
     "2026-11-06": 1
-   }
-  },
-  {
-   "path": "geo/ok/equiti",
-   "path_id": 117954536,
-   "title": "en",
-   "event": true,
-   "count": 2,
-   "daily": {
-    "2026-11-03": 1,
-    "2026-11-08": 1
    }
   },
   {
@@ -11981,6 +11982,16 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/stations/insurancemarket",
+   "path_id": 121322993,
+   "title": "InsuranceMarket Metro Station, Dubai: Red Line (formerly Mashreq)",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-11-12": 1
    }
   },
   {
@@ -13244,16 +13255,6 @@
    }
   },
   {
-   "path": "/stations/insurancemarket",
-   "path_id": 121322993,
-   "title": "InsuranceMarket Metro Station, Dubai: Red Line (formerly Mashreq)",
-   "event": false,
-   "count": 1,
-   "daily": {
-    "2026-11-12": 1
-   }
-  },
-  {
    "path": "route/dmm/jlt",
    "path_id": 110484214,
    "title": "en|map|ok|first_place_search",
@@ -13886,9 +13887,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 409,
-  "events_total": 323,
-  "goatcounter_total_with_events": 731,
+  "visits": 412,
+  "events_total": 324,
+  "goatcounter_total_with_events": 736,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -13931,7 +13932,7 @@
    "2026-11-09": 21,
    "2026-11-10": 30,
    "2026-11-11": 30,
-   "2026-11-12": 7
+   "2026-11-12": 10
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -13988,7 +13989,7 @@
   "nearest_station": {
    "denied": 13,
    "fail": 4,
-   "ok": 22,
+   "ok": 23,
    "far": 7,
    "outside": 1
   },
@@ -14151,7 +14152,7 @@
    },
    {
     "name": "dubaimetro.fyi/nearest-station",
-    "count": 25
+    "count": 26
    },
    {
     "name": "dubaimetro.fyi",
@@ -14208,12 +14209,16 @@
    {
     "name": "dubaimetro.fyi/destinations/al-jalila-children-s-specialty-hospital",
     "count": 1
+   },
+   {
+    "name": "dubaimetro.fyi/stations/insurancemarket",
+    "count": 1
    }
   ],
   "/nearest-station": [
    {
     "name": "Google",
-    "count": 57
+    "count": 58
    }
   ],
   "/destinations/etihad-rail-dubai": [
@@ -14516,6 +14521,12 @@
     "count": 1
    }
   ],
+  "/stations/insurancemarket": [
+   {
+    "name": "chatgpt.com",
+    "count": 1
+   }
+  ],
   "/destinations/dubai-hospital": [
    {
     "name": "Google",
@@ -14653,12 +14664,6 @@
     "name": "Google",
     "count": 1
    }
-  ],
-  "/destinations/expo-city-dubai": [
-   {
-    "name": "Google",
-    "count": 1
-   }
   ]
  },
  "ref_pages": {
@@ -14723,7 +14728,7 @@
   "dubaimetro.fyi/nearest-station": [
    {
     "path": "/",
-    "count": 25
+    "count": 26
    },
    {
     "path": "/map",
@@ -14767,7 +14772,7 @@
   "Google": [
    {
     "path": "/nearest-station",
-    "count": 57
+    "count": 58
    },
    {
     "path": "/destinations/etihad-rail-dubai",
@@ -14936,10 +14941,6 @@
    {
     "path": "/destinations/coca-cola-arena",
     "count": 1
-   },
-   {
-    "path": "/destinations/expo-city-dubai",
-    "count": 1
    }
   ],
   "chatgpt.com": [
@@ -14993,6 +14994,10 @@
    },
    {
     "path": "/destinations/gdrfa-immigration-al-jafiliya",
+    "count": 1
+   },
+   {
+    "path": "/stations/insurancemarket",
     "count": 1
    },
    {
@@ -15074,6 +15079,12 @@
     "count": 1
    }
   ],
+  "dubaimetro.fyi/stations/insurancemarket": [
+   {
+    "path": "/",
+    "count": 1
+   }
+  ],
   "www.facebook.com": [
    {
     "path": "/tl.html",
@@ -15108,7 +15119,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 188,
+   "count": 189,
    "ref_scheme": "g"
   },
   {
@@ -15170,7 +15181,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 675
+   "count": 678
   },
   {
    "id": "rus",
@@ -15203,6 +15214,11 @@
    "count": 2
   },
   {
+   "id": "ron",
+   "name": "Romanian",
+   "count": 2
+  },
+  {
    "id": "ita",
    "name": "Italian",
    "count": 1
@@ -15216,18 +15232,13 @@
    "id": "por",
    "name": "Portuguese",
    "count": 1
-  },
-  {
-   "id": "ron",
-   "name": "Romanian",
-   "count": 1
   }
  ],
  "locations": [
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 578
+   "count": 581
   },
   {
    "id": "US",
@@ -15315,6 +15326,11 @@
    "count": 2
   },
   {
+   "id": "RO",
+   "name": "Romania",
+   "count": 2
+  },
+  {
    "id": "RU",
    "name": "Russia",
    "count": 2
@@ -15360,11 +15376,6 @@
    "count": 1
   },
   {
-   "id": "RO",
-   "name": "Romania",
-   "count": 1
-  },
-  {
    "id": "SE",
    "name": "Sweden",
    "count": 1
@@ -15384,7 +15395,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 507
+   "count": 511
   },
   {
    "id": "tablet",
@@ -15411,7 +15422,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 451
+   "count": 455
   },
   {
    "id": "Safari",
@@ -15437,7 +15448,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 237
+   "count": 241
   },
   {
    "id": "Windows",

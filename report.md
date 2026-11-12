@@ -1,50 +1,50 @@
 # Search opportunities: dubaimetro.fyi
 
-Updated 2026-11-11. Search data 2026-10-14 to 2026-11-11 (about 2 days behind). Index statuses checked up to 2026-11-11.
+Updated 2026-11-12. Search data 2026-10-15 to 2026-11-12 (about 2 days behind). Index statuses checked up to 2026-11-12.
 
 ## 1. Fewer clicks than the position should bring
 Improve the title or description of the page, or the page itself.
 
 | Query | Impr. | Clicks | Pos. | Page |
 |---|---|---|---|---|
-| nearest metro station | 4650 | 5 | 8.7 | /nearest-station/ |
-| nearest metro station to me | 1994 | 5 | 7.3 | /nearest-station/ |
-| near metro station to me | 1750 | 10 | 6.9 | /nearest-station/ |
-| metro near me | 694 | 0 | 9.8 | /nearest-station/ |
-| metro station near me | 447 | 4 | 9.4 | /nearest-station/ |
-| near me metro station | 258 | 1 | 8.3 | /nearest-station/ |
-| meena bazaar metro station | 102 | 0 | 5.4 | /destinations/meena-bazaar/ |
-| metro near me now | 151 | 0 | 8.4 | /nearest-station/ |
-| closest metro station to me | 127 | 0 | 7.3 | /nearest-station/ |
-| which metro station is near to me | 181 | 2 | 8.0 | /nearest-station/ |
-| nearby metro station | 143 | 1 | 10.5 | /nearest-station/ |
-| meena bazar nearest metro station | 96 | 0 | 7.0 | /destinations/meena-bazaar/ |
-| deira metro station | 286 | 0 | 11.5 | /stations/city-centre-deira/ |
-| dubai municipality head office | 91 | 0 | 10.3 | /destinations/dubai-municipality-head-office/ |
-| international modern hospital nearest metro station | 50 | 0 | 5.5 | /destinations/international-modern-hospital/ |
-| metro station near me now | 79 | 0 | 7.9 | / |
-| closest metro station near me | 108 | 1 | 9.2 | /nearest-station/ |
-| al qiyadah police station | 71 | 0 | 9.1 | /destinations/dubai-police-general-headquarters/ |
-| dubai al yalayis station | 71 | 0 | 8.8 | /destinations/etihad-rail-dubai/ |
-| al ghurair metro station | 102 | 1 | 7.3 | /destinations/al-ghurair-centre/ |
+| nearest metro station | 4732 | 7 | 8.7 | /nearest-station/ |
+| nearest metro station to me | 2085 | 7 | 7.3 | /nearest-station/ |
+| near metro station to me | 1841 | 12 | 6.8 | /nearest-station/ |
+| metro near me | 730 | 0 | 9.9 | /nearest-station/ |
+| metro station near me | 451 | 4 | 9.4 | /nearest-station/ |
+| near me metro station | 276 | 1 | 8.2 | /nearest-station/ |
+| meena bazaar metro station | 105 | 0 | 5.4 | /destinations/meena-bazaar/ |
+| metro near me now | 162 | 0 | 8.3 | /nearest-station/ |
+| closest metro station to me | 131 | 0 | 7.3 | /nearest-station/ |
+| nearby metro station | 162 | 1 | 10.3 | /nearest-station/ |
+| which metro station is near to me | 191 | 2 | 7.7 | /nearest-station/ |
+| deira metro station | 302 | 0 | 11.5 | /stations/city-centre-deira/ |
+| meena bazar nearest metro station | 97 | 0 | 7.0 | /destinations/meena-bazaar/ |
+| nearest metro station to my location | 129 | 1 | 7.6 | /nearest-station/ |
+| dubai municipality head office | 88 | 0 | 10.2 | /destinations/dubai-municipality-head-office/ |
+| metro station near me now | 85 | 0 | 7.9 | / |
+| closest metro station near me | 117 | 1 | 9.4 | /nearest-station/ |
+| international modern hospital nearest metro station | 46 | 0 | 5.3 | /destinations/international-modern-hospital/ |
+| future museum metro station | 73 | 0 | 9.0 | /destinations/museum-of-the-future/ |
+| al ghurair metro station | 106 | 1 | 7.1 | /destinations/al-ghurair-centre/ |
 
 ## 2. Just below page 1 (positions 11-20)
 
 | Query | Impr. | Pos. | Page |
 |---|---|---|---|
-| deira metro station | 286 | 11.5 | /stations/city-centre-deira/ |
-| al qiyadah metro station | 89 | 16.1 | /stations/al-qiyadah/ |
+| deira metro station | 302 | 11.5 | /stations/city-centre-deira/ |
+| al qiyadah metro station | 114 | 15.1 | /stations/al-qiyadah/ |
 | media city metro station | 52 | 13.5 | /destinations/dubai-media-city/ |
 | dubai metro station near me | 46 | 14.9 | /nearest-station/ |
-| dubai festival city metro station | 33 | 15.6 | /destinations/dubai-festival-city-mall/ |
-| emirates mall metro station | 30 | 13.0 | /stations/mall-of-the-emirates/ |
+| dubai festival city metro station | 35 | 15.5 | /destinations/dubai-festival-city-mall/ |
+| emirates mall metro station | 34 | 12.6 | /stations/mall-of-the-emirates/ |
 | dubai marina tram map | 26 | 16.2 | /stations/al-sufouh/ |
-| festival city metro station | 24 | 13.3 | /destinations/dubai-festival-city-mall/ |
-| dubai creek harbour metro station | 23 | 12.0 | /destinations/dubai-creek-harbour/ |
-| metro station near by me | 21 | 10.8 | /nearest-station/ |
+| festival city metro station | 26 | 13.1 | /destinations/dubai-festival-city-mall/ |
+| dubai creek harbour metro station | 24 | 11.9 | /destinations/dubai-creek-harbour/ |
+| city centre deira metro station | 22 | 15.7 | /stations/city-centre-deira/ |
+| metro station near by me | 21 | 10.8 | / |
 | metro bus station near me | 19 | 14.4 | /nearest-station/ |
-| city centre deira metro station | 18 | 16.9 | /stations/city-centre-deira/ |
-| dubai land nearest metro station | 15 | 11.8 | /destinations/dubai-land-department/ |
+| al fahidi metro station | 15 | 12.9 | /destinations/al-fahidi/ |
 | festival city mall nearest metro | 15 | 14.2 | /destinations/dubai-festival-city-mall/ |
 | city centre deira metro | 14 | 12.2 | /stations/city-centre-deira/ |
 
@@ -52,21 +52,21 @@ Improve the title or description of the page, or the page itself.
 
 | Page | Impr. | Pos. |
 |---|---|---|
-| /destinations/dubai-festival-city-mall/ | 1129 | 10.5 |
-| /destinations/museum-of-the-future/ | 574 | 9.2 |
-| /destinations/expo-city-dubai/ | 479 | 11.6 |
-| /destinations/creek-park/ | 435 | 7.2 |
-| /destinations/jw-marriott-marquis-dubai/ | 420 | 8.9 |
-| /destinations/dubai-media-city/ | 372 | 9.1 |
-| /destinations/dubai-mall/ | 284 | 14.2 |
-| /destinations/dubai-creek-harbour/ | 283 | 17.1 |
-| /lines/red-line/ | 271 | 35.6 |
-| /destinations/dubai-marina/ | 236 | 16.3 |
-| /destinations/dubai-airport/ | 232 | 23.4 |
-| /stations/al-sufouh/ | 231 | 10.7 |
-| /destinations/safa-park/ | 221 | 9.9 |
-| /destinations/alserkal-avenue/ | 218 | 8.0 |
-| /lines/green-line/ | 217 | 38.2 |
+| /destinations/dubai-festival-city-mall/ | 1166 | 10.5 |
+| /destinations/museum-of-the-future/ | 604 | 9.1 |
+| /destinations/expo-city-dubai/ | 466 | 11.7 |
+| /destinations/creek-park/ | 442 | 7.3 |
+| /destinations/jw-marriott-marquis-dubai/ | 437 | 8.8 |
+| /destinations/dubai-media-city/ | 375 | 9.0 |
+| /destinations/dubai-creek-harbour/ | 293 | 16.8 |
+| /destinations/dubai-mall/ | 278 | 14.0 |
+| /lines/red-line/ | 273 | 35.3 |
+| /destinations/dubai-marina/ | 240 | 16.2 |
+| /destinations/dubai-airport/ | 233 | 23.4 |
+| /stations/al-sufouh/ | 232 | 10.7 |
+| /destinations/alserkal-avenue/ | 225 | 7.9 |
+| /destinations/safa-park/ | 222 | 9.8 |
+| /destinations/zabeel-park/ | 218 | 9.4 |
 
 ## 4. Index
 
@@ -88,15 +88,15 @@ Improve the title or description of the page, or the page itself.
 Request indexing by hand today (Search Console, URL inspection; skip any that already show as indexed):
 
 ```
-https://dubaimetro.fyi/stations/al-ghubaiba/
-https://dubaimetro.fyi/stations/al-ittihad-park/
-https://dubaimetro.fyi/stations/al-jadaf/
-https://dubaimetro.fyi/stations/al-nahda/
+https://dubaimetro.fyi/stations/al-qusais/
+https://dubaimetro.fyi/stations/al-ras/
+https://dubaimetro.fyi/stations/al-rigga/
+https://dubaimetro.fyi/stations/atlantis-aquaventure/
 ```
 
 ## 5. English and Arabic searches
 
 | | Impressions | Clicks |
 |---|---|---|
-| English (top queries) | 16452 | 58 |
+| English (top queries) | 17137 | 68 |
 | Arabic (top queries) | 89 | 2 |
