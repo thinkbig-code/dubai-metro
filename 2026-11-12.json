@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-12T08:24:41Z",
+ "generated": "2026-11-12T13:17:40Z",
  "start": "2026-10-13",
  "end": "2026-11-13",
  "total": {
-  "total": 450,
-  "total_events": 149,
-  "total_utc": 450,
+  "total": 458,
+  "total_events": 151,
+  "total_utc": 458,
   "stats": [
    {
     "day": "2026-10-13",
@@ -611,7 +611,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 281
+    "monthly": 289
    },
    {
     "day": "2026-11-02",
@@ -883,7 +883,7 @@
      0
     ],
     "daily": 48,
-    "weekly": 107
+    "weekly": 115
    },
    {
     "day": "2026-11-11",
@@ -930,11 +930,11 @@
      0,
      0,
      3,
+     1,
+     1,
      0,
      0,
-     0,
-     0,
-     0,
+     6,
      0,
      0,
      0,
@@ -943,7 +943,7 @@
      0,
      0
     ],
-    "daily": 14
+    "daily": 22
    },
    {
     "day": "2026-11-13",
@@ -983,7 +983,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 78,
+   "count": 81,
    "daily": {
     "2026-10-13": 1,
     "2026-10-14": 4,
@@ -1010,7 +1010,7 @@
     "2026-11-09": 6,
     "2026-11-10": 9,
     "2026-11-11": 11,
-    "2026-11-12": 5
+    "2026-11-12": 8
    }
   },
   {
@@ -1018,7 +1018,7 @@
    "path_id": 116082941,
    "title": "Nearest Metro Station to Me in Dubai: Find It by Location",
    "event": false,
-   "count": 58,
+   "count": 60,
    "daily": {
     "2026-10-28": 1,
     "2026-10-31": 1,
@@ -1031,7 +1031,7 @@
     "2026-11-09": 8,
     "2026-11-10": 10,
     "2026-11-11": 12,
-    "2026-11-12": 3
+    "2026-11-12": 5
    }
   },
   {
@@ -1187,6 +1187,17 @@
    }
   },
   {
+   "path": "geo/ok/adcb",
+   "path_id": 121131925,
+   "title": "en",
+   "event": true,
+   "count": 4,
+   "daily": {
+    "2026-11-11": 1,
+    "2026-11-12": 3
+   }
+  },
+  {
    "path": "/destinations/pakistan-consulate-dubai",
    "path_id": 112004545,
    "title": "Pakistan Consulate Dubai Metro Station: Sharaf DG (Green Line), 5 min walk",
@@ -1246,17 +1257,6 @@
    "daily": {
     "2026-11-02": 2,
     "2026-11-07": 2
-   }
-  },
-  {
-   "path": "geo/ok/adcb",
-   "path_id": 121131925,
-   "title": "en",
-   "event": true,
-   "count": 3,
-   "daily": {
-    "2026-11-11": 1,
-    "2026-11-12": 2
    }
   },
   {
@@ -1343,6 +1343,18 @@
    }
   },
   {
+   "path": "/destinations/us-consulate-dubai",
+   "path_id": 112091077,
+   "title": "US Consulate Dubai Metro Station: BurJuman (Red/Green lines), 12 min walk",
+   "event": false,
+   "count": 3,
+   "daily": {
+    "2026-10-14": 1,
+    "2026-10-19": 1,
+    "2026-11-12": 1
+   }
+  },
+  {
    "path": "/destinations/palm-jumeirah-mall",
    "path_id": 111939146,
    "title": "Palm Jumeirah Mall and The View at The Palm Tram Stop: Palm Jumeirah Mall",
@@ -1396,6 +1408,17 @@
    "count": 2,
    "daily": {
     "2026-11-11": 2
+   }
+  },
+  {
+   "path": "geo/ok/stadium",
+   "path_id": 120745204,
+   "title": "en",
+   "event": true,
+   "count": 2,
+   "daily": {
+    "2026-11-10": 1,
+    "2026-11-12": 1
    }
   },
   {
@@ -1539,17 +1562,6 @@
    "daily": {
     "2026-10-19": 1,
     "2026-11-03": 1
-   }
-  },
-  {
-   "path": "/destinations/us-consulate-dubai",
-   "path_id": 112091077,
-   "title": "US Consulate Dubai Metro Station: BurJuman (Red/Green lines), 12 min walk",
-   "event": false,
-   "count": 2,
-   "daily": {
-    "2026-10-14": 1,
-    "2026-10-19": 1
    }
   },
   {
@@ -1740,16 +1752,6 @@
    "path": "route/stadium/adcb",
    "path_id": 120745535,
    "title": "en|search|ok|first_geo",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-11-10": 1
-   }
-  },
-  {
-   "path": "geo/ok/stadium",
-   "path_id": 120745204,
-   "title": "en",
    "event": true,
    "count": 1,
    "daily": {
@@ -2589,9 +2591,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 301,
-  "events_total": 149,
-  "goatcounter_total_with_events": 450,
+  "visits": 307,
+  "events_total": 151,
+  "goatcounter_total_with_events": 458,
   "page_loads_by_day": {
    "2026-10-13": 6,
    "2026-10-14": 6,
@@ -2623,7 +2625,7 @@
    "2026-11-09": 21,
    "2026-11-10": 30,
    "2026-11-11": 30,
-   "2026-11-12": 10
+   "2026-11-12": 16
   },
   "visitor_days_by_day": {
    "2026-10-13": 1,
@@ -2674,7 +2676,7 @@
   ],
   "nearest_station": {
    "denied": 11,
-   "ok": 21,
+   "ok": 23,
    "far": 7,
    "fail": 3,
    "outside": 1
@@ -2830,7 +2832,7 @@
   "/": [
    {
     "name": "dubaimetro.fyi/nearest-station",
-    "count": 26
+    "count": 28
    },
    {
     "name": "dubaimetro.fyi",
@@ -2838,7 +2840,7 @@
    },
    {
     "name": "(direct or unknown)",
-    "count": 17
+    "count": 18
    },
    {
     "name": "com.reddit.frontpage",
@@ -2884,7 +2886,7 @@
   "/nearest-station": [
    {
     "name": "Google",
-    "count": 58
+    "count": 60
    }
   ],
   "/destinations/etihad-rail-dubai": [
@@ -3013,6 +3015,16 @@
     "count": 3
    }
   ],
+  "/destinations/us-consulate-dubai": [
+   {
+    "name": "Google",
+    "count": 2
+   },
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   }
+  ],
   "/destinations/palm-jumeirah-mall": [
    {
     "name": "chatgpt.com",
@@ -3090,16 +3102,6 @@
    },
    {
     "name": "chatgpt.com",
-    "count": 1
-   }
-  ],
-  "/destinations/us-consulate-dubai": [
-   {
-    "name": "(direct or unknown)",
-    "count": 1
-   },
-   {
-    "name": "Google",
     "count": 1
    }
   ],
@@ -3304,7 +3306,7 @@
   "dubaimetro.fyi/nearest-station": [
    {
     "path": "/",
-    "count": 26
+    "count": 28
    },
    {
     "path": "/map",
@@ -3320,7 +3322,7 @@
   "(direct or unknown)": [
    {
     "path": "/",
-    "count": 17
+    "count": 18
    },
    {
     "path": "/destinations/etihad-rail-dubai",
@@ -3335,15 +3337,15 @@
     "count": 2
    },
    {
+    "path": "/destinations/us-consulate-dubai",
+    "count": 1
+   },
+   {
     "path": "/destinations/palm-jumeirah-mall",
     "count": 1
    },
    {
     "path": "/destinations/al-jalila-children-s-specialty-hospital",
-    "count": 1
-   },
-   {
-    "path": "/destinations/us-consulate-dubai",
     "count": 1
    },
    {
@@ -3376,7 +3378,7 @@
   "Google": [
    {
     "path": "/nearest-station",
-    "count": 58
+    "count": 60
    },
    {
     "path": "/destinations/etihad-rail-dubai",
@@ -3439,6 +3441,10 @@
     "count": 2
    },
    {
+    "path": "/destinations/us-consulate-dubai",
+    "count": 2
+   },
+   {
     "path": "/destinations/american-hospital-dubai",
     "count": 2
    },
@@ -3468,10 +3474,6 @@
    },
    {
     "path": "/destinations/gdrfa-immigration-al-jafiliya",
-    "count": 1
-   },
-   {
-    "path": "/destinations/us-consulate-dubai",
     "count": 1
    },
    {
@@ -3688,12 +3690,12 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 185,
+   "count": 188,
    "ref_scheme": "g"
   },
   {
    "name": "",
-   "count": 72,
+   "count": 73,
    "ref_scheme": "o"
   },
   {
@@ -3731,7 +3733,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 421
+   "count": 429
   },
   {
    "id": "rus",
@@ -3788,7 +3790,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 367
+   "count": 374
   },
   {
    "id": "US",
@@ -3831,6 +3833,11 @@
    "count": 2
   },
   {
+   "id": "DE",
+   "name": "Germany",
+   "count": 2
+  },
+  {
    "id": "HK",
    "name": "Hong Kong",
    "count": 2
@@ -3866,11 +3873,6 @@
    "count": 2
   },
   {
-   "id": "DE",
-   "name": "Germany",
-   "count": 1
-  },
-  {
    "id": "IE",
    "name": "Ireland",
    "count": 1
@@ -3900,12 +3902,12 @@
   {
    "id": "phone",
    "name": "",
-   "count": 364
+   "count": 371
   },
   {
    "id": "tablet",
    "name": "",
-   "count": 23
+   "count": 24
   },
   {
    "id": "desktop",
@@ -3932,7 +3934,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 177
+   "count": 185
   }
  ],
  "systems": [
@@ -3944,7 +3946,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 177
+   "count": 184
   },
   {
    "id": "Windows",
@@ -3959,7 +3961,7 @@
   {
    "id": "macOS",
    "name": "macOS",
-   "count": 5
+   "count": 6
   },
   {
    "id": "Chrome OS",
