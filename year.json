@@ -1,43 +1,13 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-11T23:05:47Z",
- "start": "2025-11-11",
- "end": "2026-11-12",
+ "generated": "2026-11-12T04:18:57Z",
+ "start": "2025-11-12",
+ "end": "2026-11-13",
  "total": {
-  "total": 722,
-  "total_events": 320,
-  "total_utc": 722,
+  "total": 731,
+  "total_events": 323,
+  "total_utc": 731,
   "stats": [
-   {
-    "day": "2025-11-11",
-    "hourly": [
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0
-    ],
-    "daily": 0
-   },
    {
     "day": "2025-11-12",
     "hourly": [
@@ -9696,8 +9666,7 @@
      0,
      0
     ],
-    "daily": 0,
-    "weekly": 71
+    "daily": 0
    },
    {
     "day": "2026-09-30",
@@ -9727,7 +9696,8 @@
      0,
      0
     ],
-    "daily": 0
+    "daily": 0,
+    "weekly": 71
    },
    {
     "day": "2026-10-01",
@@ -9908,8 +9878,7 @@
      0,
      0
     ],
-    "daily": 0,
-    "weekly": 215
+    "daily": 0
    },
    {
     "day": "2026-10-07",
@@ -9939,7 +9908,8 @@
      0,
      11
     ],
-    "daily": 21
+    "daily": 21,
+    "weekly": 222
    },
    {
     "day": "2026-10-08",
@@ -10119,8 +10089,7 @@
      2,
      0
     ],
-    "daily": 7,
-    "weekly": 56
+    "daily": 7
    },
    {
     "day": "2026-10-14",
@@ -10150,7 +10119,8 @@
      0,
      1
     ],
-    "daily": 21
+    "daily": 21,
+    "weekly": 62
    },
    {
     "day": "2026-10-15",
@@ -10330,8 +10300,7 @@
      1,
      0
     ],
-    "daily": 13,
-    "weekly": 75
+    "daily": 13
    },
    {
     "day": "2026-10-21",
@@ -10361,7 +10330,8 @@
      0,
      0
     ],
-    "daily": 3
+    "daily": 3,
+    "weekly": 73
    },
    {
     "day": "2026-10-22",
@@ -10541,8 +10511,7 @@
      0,
      0
     ],
-    "daily": 11,
-    "weekly": 67
+    "daily": 11
    },
    {
     "day": "2026-10-28",
@@ -10572,7 +10541,8 @@
      0,
      0
     ],
-    "daily": 8
+    "daily": 8,
+    "weekly": 67
    },
    {
     "day": "2026-10-29",
@@ -10693,7 +10663,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 267
+    "monthly": 276
    },
    {
     "day": "2026-11-02",
@@ -10753,8 +10723,7 @@
      0,
      0
     ],
-    "daily": 11,
-    "weekly": 145
+    "daily": 11
    },
    {
     "day": "2026-11-04",
@@ -10784,7 +10753,8 @@
      0,
      0
     ],
-    "daily": 19
+    "daily": 19,
+    "weekly": 182
    },
    {
     "day": "2026-11-05",
@@ -10964,8 +10934,7 @@
      0,
      0
     ],
-    "daily": 48,
-    "weekly": 93
+    "daily": 48
    },
    {
     "day": "2026-11-11",
@@ -10995,10 +10964,41 @@
      0,
      1
     ],
-    "daily": 45
+    "daily": 45,
+    "weekly": 54
    },
    {
     "day": "2026-11-12",
+    "hourly": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     5,
+     1,
+     3,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "daily": 9
+   },
+   {
+    "day": "2026-11-13",
     "hourly": [
      0,
      0,
@@ -11035,7 +11035,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 163,
+   "count": 166,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -11072,7 +11072,8 @@
     "2026-11-08": 5,
     "2026-11-09": 6,
     "2026-11-10": 9,
-    "2026-11-11": 11
+    "2026-11-11": 11,
+    "2026-11-12": 3
    }
   },
   {
@@ -11114,7 +11115,7 @@
    "path_id": 116082941,
    "title": "Nearest Metro Station to Me in Dubai: Find It by Location",
    "event": false,
-   "count": 55,
+   "count": 57,
    "daily": {
     "2026-10-28": 1,
     "2026-10-31": 1,
@@ -11126,7 +11127,8 @@
     "2026-11-08": 9,
     "2026-11-09": 8,
     "2026-11-10": 10,
-    "2026-11-11": 12
+    "2026-11-11": 12,
+    "2026-11-12": 2
    }
   },
   {
@@ -11182,7 +11184,7 @@
    "path_id": 112289662,
    "title": "Indian Consulate Dubai Metro Station: BurJuman, 7 min walk",
    "event": false,
-   "count": 11,
+   "count": 12,
    "daily": {
     "2026-10-16": 1,
     "2026-10-18": 1,
@@ -11192,7 +11194,8 @@
     "2026-11-03": 1,
     "2026-11-04": 1,
     "2026-11-06": 2,
-    "2026-11-09": 1
+    "2026-11-09": 1,
+    "2026-11-12": 1
    }
   },
   {
@@ -11332,6 +11335,19 @@
    }
   },
   {
+   "path": "geo/fail/-",
+   "path_id": 110447348,
+   "title": "en",
+   "event": true,
+   "count": 4,
+   "daily": {
+    "2026-10-08": 1,
+    "2026-11-07": 1,
+    "2026-11-11": 1,
+    "2026-11-12": 1
+   }
+  },
+  {
    "path": "place/p_dubai_mall/from",
    "path_id": 109724714,
    "title": "ru|name",
@@ -11341,6 +11357,17 @@
     "2026-10-05": 2,
     "2026-10-08": 1,
     "2026-10-15": 1
+   }
+  },
+  {
+   "path": "geo/ok/adcb",
+   "path_id": 121131925,
+   "title": "en",
+   "event": true,
+   "count": 3,
+   "daily": {
+    "2026-11-11": 1,
+    "2026-11-12": 2
    }
   },
   {
@@ -11494,18 +11521,6 @@
     "2026-10-08": 1,
     "2026-10-14": 1,
     "2026-10-20": 1
-   }
-  },
-  {
-   "path": "geo/fail/-",
-   "path_id": 110447348,
-   "title": "en",
-   "event": true,
-   "count": 3,
-   "daily": {
-    "2026-10-08": 1,
-    "2026-11-07": 1,
-    "2026-11-11": 1
    }
   },
   {
@@ -11981,16 +11996,6 @@
   {
    "path": "geo/far/jge",
    "path_id": 121166360,
-   "title": "en",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-11-11": 1
-   }
-  },
-  {
-   "path": "geo/ok/adcb",
-   "path_id": 121131925,
    "title": "en",
    "event": true,
    "count": 1,
@@ -13239,6 +13244,16 @@
    }
   },
   {
+   "path": "/stations/insurancemarket",
+   "path_id": 121322993,
+   "title": "InsuranceMarket Metro Station, Dubai: Red Line (formerly Mashreq)",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-11-12": 1
+   }
+  },
+  {
    "path": "route/dmm/jlt",
    "path_id": 110484214,
    "title": "en|map|ok|first_place_search",
@@ -13871,9 +13886,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 402,
-  "events_total": 320,
-  "goatcounter_total_with_events": 722,
+  "visits": 409,
+  "events_total": 323,
+  "goatcounter_total_with_events": 731,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -13915,7 +13930,8 @@
    "2026-11-08": 18,
    "2026-11-09": 21,
    "2026-11-10": 30,
-   "2026-11-11": 30
+   "2026-11-11": 30,
+   "2026-11-12": 7
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -13971,9 +13987,9 @@
   ],
   "nearest_station": {
    "denied": 13,
+   "fail": 4,
+   "ok": 22,
    "far": 7,
-   "fail": 3,
-   "ok": 20,
    "outside": 1
   },
   "visitors_new_return": {
@@ -14135,11 +14151,11 @@
    },
    {
     "name": "dubaimetro.fyi/nearest-station",
-    "count": 24
+    "count": 25
    },
    {
     "name": "dubaimetro.fyi",
-    "count": 17
+    "count": 19
    },
    {
     "name": "com.reddit.frontpage",
@@ -14197,7 +14213,7 @@
   "/nearest-station": [
    {
     "name": "Google",
-    "count": 55
+    "count": 57
    }
   ],
   "/destinations/etihad-rail-dubai": [
@@ -14217,7 +14233,7 @@
   "/destinations/indian-consulate-dubai": [
    {
     "name": "Google",
-    "count": 11
+    "count": 12
    }
   ],
   "/destinations/meena-bazaar": [
@@ -14707,7 +14723,7 @@
   "dubaimetro.fyi/nearest-station": [
    {
     "path": "/",
-    "count": 24
+    "count": 25
    },
    {
     "path": "/map",
@@ -14717,7 +14733,7 @@
   "dubaimetro.fyi": [
    {
     "path": "/",
-    "count": 17
+    "count": 19
    },
    {
     "path": "/ru.html",
@@ -14751,7 +14767,7 @@
   "Google": [
    {
     "path": "/nearest-station",
-    "count": 55
+    "count": 57
    },
    {
     "path": "/destinations/etihad-rail-dubai",
@@ -14759,7 +14775,7 @@
    },
    {
     "path": "/destinations/indian-consulate-dubai",
-    "count": 11
+    "count": 12
    },
    {
     "path": "/destinations/meena-bazaar",
@@ -15092,7 +15108,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 185,
+   "count": 188,
    "ref_scheme": "g"
   },
   {
@@ -15104,7 +15120,7 @@
   {
    "id": "chatgpt.com",
    "name": "chatgpt.com",
-   "count": 22,
+   "count": 23,
    "ref_scheme": "c"
   },
   {
@@ -15154,7 +15170,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 666
+   "count": 675
   },
   {
    "id": "rus",
@@ -15200,13 +15216,18 @@
    "id": "por",
    "name": "Portuguese",
    "count": 1
+  },
+  {
+   "id": "ron",
+   "name": "Romanian",
+   "count": 1
   }
  ],
  "locations": [
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 569
+   "count": 578
   },
   {
    "id": "US",
@@ -15339,6 +15360,11 @@
    "count": 1
   },
   {
+   "id": "RO",
+   "name": "Romania",
+   "count": 1
+  },
+  {
    "id": "SE",
    "name": "Sweden",
    "count": 1
@@ -15358,7 +15384,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 497
+   "count": 507
   },
   {
    "id": "tablet",
@@ -15385,12 +15411,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 446
+   "count": 451
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 271
+   "count": 276
   },
   {
    "id": "Firefox",
@@ -15406,12 +15432,12 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 267
+   "count": 272
   },
   {
    "id": "Android",
    "name": "Android",
-   "count": 232
+   "count": 237
   },
   {
    "id": "Windows",
