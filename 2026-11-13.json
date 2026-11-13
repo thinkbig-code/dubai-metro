@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-13T18:05:53Z",
+ "generated": "2026-11-13T23:53:29Z",
  "start": "2026-10-14",
  "end": "2026-11-14",
  "total": {
-  "total": 519,
+  "total": 520,
   "total_events": 173,
-  "total_utc": 504,
+  "total_utc": 505,
   "stats": [
    {
     "day": "2026-10-14",
@@ -581,7 +581,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 357
+    "monthly": 358
    },
    {
     "day": "2026-11-02",
@@ -883,7 +883,7 @@
      1
     ],
     "daily": 45,
-    "weekly": 135
+    "weekly": 136
    },
    {
     "day": "2026-11-12",
@@ -948,7 +948,7 @@
    {
     "day": "2026-11-14",
     "hourly": [
-     0,
+     1,
      0,
      0,
      0,
@@ -973,7 +973,7 @@
      0,
      0
     ],
-    "daily": 0
+    "daily": 1
    }
   ]
  },
@@ -1385,6 +1385,18 @@
    }
   },
   {
+   "path": "/destinations/jw-marriott-marquis-dubai",
+   "path_id": 113368505,
+   "title": "JW Marriott Marquis Dubai Metro Station: Business Bay, 12 min walk",
+   "event": false,
+   "count": 3,
+   "daily": {
+    "2026-10-21": 1,
+    "2026-11-13": 1,
+    "2026-11-14": 1
+   }
+  },
+  {
    "path": "/destinations/gdrfa-immigration-al-jafiliya",
    "path_id": 113030966,
    "title": "GDRFA Immigration Al Jafiliya Metro Station: Max (Red Line), 3 min walk",
@@ -1604,17 +1616,6 @@
    "daily": {
     "2026-10-22": 1,
     "2026-11-01": 1
-   }
-  },
-  {
-   "path": "/destinations/jw-marriott-marquis-dubai",
-   "path_id": 113368505,
-   "title": "JW Marriott Marquis Dubai Metro Station: Business Bay, 12 min walk",
-   "event": false,
-   "count": 2,
-   "daily": {
-    "2026-10-21": 1,
-    "2026-11-13": 1
    }
   },
   {
@@ -2717,9 +2718,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 346,
+  "visits": 347,
   "events_total": 173,
-  "goatcounter_total_with_events": 519,
+  "goatcounter_total_with_events": 520,
   "page_loads_by_day": {
    "2026-10-14": 6,
    "2026-10-15": 2,
@@ -2751,7 +2752,8 @@
    "2026-11-10": 30,
    "2026-11-11": 30,
    "2026-11-12": 23,
-   "2026-11-13": 38
+   "2026-11-13": 38,
+   "2026-11-14": 1
   },
   "visitor_days_by_day": {
    "2026-10-14": 4,
@@ -3146,6 +3148,16 @@
     "count": 1
    }
   ],
+  "/destinations/jw-marriott-marquis-dubai": [
+   {
+    "name": "Google",
+    "count": 2
+   },
+   {
+    "name": "chatgpt.com",
+    "count": 1
+   }
+  ],
   "/destinations/gdrfa-immigration-al-jafiliya": [
    {
     "name": "(direct or unknown)",
@@ -3232,16 +3244,6 @@
    {
     "name": "Google",
     "count": 2
-   }
-  ],
-  "/destinations/jw-marriott-marquis-dubai": [
-   {
-    "name": "Google",
-    "count": 1
-   },
-   {
-    "name": "chatgpt.com",
-    "count": 1
    }
   ],
   "/destinations/canadian-specialist-hospital": [
@@ -3584,6 +3586,10 @@
     "count": 2
    },
    {
+    "path": "/destinations/jw-marriott-marquis-dubai",
+    "count": 2
+   },
+   {
     "path": "/destinations/dubai-police-general-headquarters",
     "count": 2
    },
@@ -3625,10 +3631,6 @@
    },
    {
     "path": "/destinations/coca-cola-arena",
-    "count": 1
-   },
-   {
-    "path": "/destinations/jw-marriott-marquis-dubai",
     "count": 1
    },
    {
@@ -3734,6 +3736,10 @@
     "count": 1
    },
    {
+    "path": "/destinations/jw-marriott-marquis-dubai",
+    "count": 1
+   },
+   {
     "path": "/destinations/gdrfa-immigration-al-jafiliya",
     "count": 1
    },
@@ -3743,10 +3749,6 @@
    },
    {
     "path": "/destinations/al-jalila-children-s-specialty-hospital",
-    "count": 1
-   },
-   {
-    "path": "/destinations/jw-marriott-marquis-dubai",
     "count": 1
    },
    {
@@ -3837,7 +3839,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 213,
+   "count": 214,
    "ref_scheme": "g"
   },
   {
@@ -3880,7 +3882,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 491
+   "count": 492
   },
   {
    "id": "rus",
@@ -3927,7 +3929,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 428
+   "count": 429
   },
   {
    "id": "US",
@@ -4059,7 +4061,7 @@
   {
    "id": "desktophd",
    "name": "",
-   "count": 3
+   "count": 4
   },
   {
    "id": "unknown",
@@ -4071,7 +4073,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 308
+   "count": 309
   },
   {
    "id": "Safari",
@@ -4093,7 +4095,7 @@
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 61
+   "count": 62
   },
   {
    "id": "Linux",
