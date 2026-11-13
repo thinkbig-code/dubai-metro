@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-13T10:00:28Z",
+ "generated": "2026-11-13T18:05:53Z",
  "start": "2026-10-14",
  "end": "2026-11-14",
  "total": {
-  "total": 482,
-  "total_events": 159,
-  "total_utc": 467,
+  "total": 519,
+  "total_events": 173,
+  "total_utc": 504,
   "stats": [
    {
     "day": "2026-10-14",
@@ -581,7 +581,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 320
+    "monthly": 357
    },
    {
     "day": "2026-11-02",
@@ -883,7 +883,7 @@
      1
     ],
     "daily": 45,
-    "weekly": 98
+    "weekly": 135
    },
    {
     "day": "2026-11-12",
@@ -932,18 +932,18 @@
      5,
      0,
      1,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
+     1,
+     5,
+     10,
+     7,
+     2,
+     8,
+     3,
+     1,
      0,
      0
     ],
-    "daily": 20
+    "daily": 57
    },
    {
     "day": "2026-11-14",
@@ -983,7 +983,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 87,
+   "count": 96,
    "daily": {
     "2026-10-14": 4,
     "2026-10-15": 1,
@@ -1010,7 +1010,7 @@
     "2026-11-10": 9,
     "2026-11-11": 11,
     "2026-11-12": 11,
-    "2026-11-13": 4
+    "2026-11-13": 13
    }
   },
   {
@@ -1018,7 +1018,7 @@
    "path_id": 116082941,
    "title": "Nearest Metro Station to Me in Dubai: Find It by Location",
    "event": false,
-   "count": 68,
+   "count": 77,
    "daily": {
     "2026-10-28": 1,
     "2026-10-31": 1,
@@ -1032,7 +1032,7 @@
     "2026-11-10": 10,
     "2026-11-11": 12,
     "2026-11-12": 7,
-    "2026-11-13": 6
+    "2026-11-13": 15
    }
   },
   {
@@ -1040,7 +1040,7 @@
    "path_id": 110626146,
    "title": "Etihad Rail Dubai Station (Al Yalayis) Metro Station: Jumeirah Golf Estates",
    "event": false,
-   "count": 36,
+   "count": 37,
    "daily": {
     "2026-10-15": 1,
     "2026-10-16": 1,
@@ -1059,7 +1059,8 @@
     "2026-11-04": 1,
     "2026-11-06": 1,
     "2026-11-09": 2,
-    "2026-11-10": 3
+    "2026-11-10": 3,
+    "2026-11-13": 1
    }
   },
   {
@@ -1067,7 +1068,7 @@
    "path_id": 110447314,
    "title": "en",
    "event": true,
-   "count": 33,
+   "count": 34,
    "daily": {
     "2026-10-14": 4,
     "2026-10-15": 1,
@@ -1088,7 +1089,8 @@
     "2026-11-07": 1,
     "2026-11-08": 1,
     "2026-11-09": 2,
-    "2026-11-12": 1
+    "2026-11-12": 1,
+    "2026-11-13": 1
    }
   },
   {
@@ -1096,7 +1098,7 @@
    "path_id": 112289662,
    "title": "Indian Consulate Dubai Metro Station: BurJuman, 7 min walk",
    "event": false,
-   "count": 12,
+   "count": 13,
    "daily": {
     "2026-10-16": 1,
     "2026-10-18": 1,
@@ -1107,7 +1109,8 @@
     "2026-11-04": 1,
     "2026-11-06": 2,
     "2026-11-09": 1,
-    "2026-11-12": 1
+    "2026-11-12": 1,
+    "2026-11-13": 1
    }
   },
   {
@@ -1166,7 +1169,7 @@
    "path_id": 110878762,
    "title": "en",
    "event": true,
-   "count": 8,
+   "count": 9,
    "daily": {
     "2026-11-01": 1,
     "2026-11-02": 1,
@@ -1174,7 +1177,8 @@
     "2026-11-05": 1,
     "2026-11-07": 2,
     "2026-11-09": 1,
-    "2026-11-12": 1
+    "2026-11-12": 1,
+    "2026-11-13": 1
    }
   },
   {
@@ -1288,6 +1292,17 @@
    }
   },
   {
+   "path": "geo/far/stadium",
+   "path_id": 121126343,
+   "title": "en",
+   "event": true,
+   "count": 3,
+   "daily": {
+    "2026-11-11": 1,
+    "2026-11-13": 2
+   }
+  },
+  {
    "path": "geo/far/centrepoint",
    "path_id": 120799654,
    "title": "en",
@@ -1296,6 +1311,17 @@
    "daily": {
     "2026-11-10": 1,
     "2026-11-11": 2
+   }
+  },
+  {
+   "path": "geo/ok/bb",
+   "path_id": 120276447,
+   "title": "en",
+   "event": true,
+   "count": 3,
+   "daily": {
+    "2026-11-08": 1,
+    "2026-11-13": 2
    }
   },
   {
@@ -1383,6 +1409,18 @@
    }
   },
   {
+   "path": "place/p_burj_khalifa/to",
+   "path_id": 110476414,
+   "title": "en|name",
+   "event": true,
+   "count": 3,
+   "daily": {
+    "2026-10-14": 1,
+    "2026-10-20": 1,
+    "2026-11-13": 1
+   }
+  },
+  {
    "path": "geo/fail/-",
    "path_id": 110447348,
    "title": "en",
@@ -1415,6 +1453,17 @@
    }
   },
   {
+   "path": "geo/ok/sharafdg",
+   "path_id": 120833235,
+   "title": "en",
+   "event": true,
+   "count": 2,
+   "daily": {
+    "2026-11-10": 1,
+    "2026-11-13": 1
+   }
+  },
+  {
    "path": "geo/ok/stadium",
    "path_id": 120745204,
    "title": "en",
@@ -1423,17 +1472,6 @@
    "daily": {
     "2026-11-10": 1,
     "2026-11-12": 1
-   }
-  },
-  {
-   "path": "geo/ok/bb",
-   "path_id": 120276447,
-   "title": "en",
-   "event": true,
-   "count": 2,
-   "daily": {
-    "2026-11-08": 1,
-    "2026-11-13": 1
    }
   },
   {
@@ -1569,6 +1607,17 @@
    }
   },
   {
+   "path": "/destinations/jw-marriott-marquis-dubai",
+   "path_id": 113368505,
+   "title": "JW Marriott Marquis Dubai Metro Station: Business Bay, 12 min walk",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-10-21": 1,
+    "2026-11-13": 1
+   }
+  },
+  {
    "path": "/destinations/canadian-specialist-hospital",
    "path_id": 113313760,
    "title": "Canadian Specialist Hospital Metro Station: Abu Hail, 6 min walk",
@@ -1635,17 +1684,6 @@
    }
   },
   {
-   "path": "place/p_burj_khalifa/to",
-   "path_id": 110476414,
-   "title": "en|name",
-   "event": true,
-   "count": 2,
-   "daily": {
-    "2026-10-14": 1,
-    "2026-10-20": 1
-   }
-  },
-  {
    "path": "place/p_dxb_airport_terminal_3/to",
    "path_id": 110326886,
    "title": "en|name",
@@ -1653,6 +1691,96 @@
    "count": 2,
    "daily": {
     "2026-10-15": 1,
+    "2026-11-13": 1
+   }
+  },
+  {
+   "path": "/stations/al-garhoud",
+   "path_id": 121912878,
+   "title": "Al Garhoud Metro Station, Dubai: Red Line (formerly GGICO)",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-11-13": 1
+   }
+  },
+  {
+   "path": "/destinations/ibn-battuta-bus-station",
+   "path_id": 121912739,
+   "title": "Ibn Battuta Bus Station Metro Station: Ibn Battuta (Red Line), 2 min walk",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-11-13": 1
+   }
+  },
+  {
+   "path": "geo/ok/alras",
+   "path_id": 121905383,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-13": 1
+   }
+  },
+  {
+   "path": "view/jadaf/p_burj_khalifa",
+   "path_id": 121866698,
+   "title": "en|details",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-13": 1
+   }
+  },
+  {
+   "path": "route/jadaf/p_burj_khalifa",
+   "path_id": 121866575,
+   "title": "en|search|ok|first_geo",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-13": 1
+   }
+  },
+  {
+   "path": "geo/ok/jadaf",
+   "path_id": 121866504,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-13": 1
+   }
+  },
+  {
+   "path": "geo/far/lp",
+   "path_id": 121844125,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-13": 1
+   }
+  },
+  {
+   "path": "station/lp/to",
+   "path_id": 121830563,
+   "title": "en|name",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-13": 1
+   }
+  },
+  {
+   "path": "geo/ok/qusais",
+   "path_id": 121830398,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
     "2026-11-13": 1
    }
   },
@@ -1714,26 +1842,6 @@
    "count": 1,
    "daily": {
     "2026-11-11": 1
-   }
-  },
-  {
-   "path": "geo/far/stadium",
-   "path_id": 121126343,
-   "title": "en",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-11-11": 1
-   }
-  },
-  {
-   "path": "geo/ok/sharafdg",
-   "path_id": 120833235,
-   "title": "en",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-11-10": 1
    }
   },
   {
@@ -2297,16 +2405,6 @@
    }
   },
   {
-   "path": "/destinations/jw-marriott-marquis-dubai",
-   "path_id": 113368505,
-   "title": "JW Marriott Marquis Dubai Metro Station: Business Bay, 12 min walk",
-   "event": false,
-   "count": 1,
-   "daily": {
-    "2026-10-21": 1
-   }
-  },
-  {
    "path": "route/lp/p_dubai_creek_harbour",
    "path_id": 113285885,
    "title": "en|search|ok|first_place_search",
@@ -2619,9 +2717,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 323,
-  "events_total": 159,
-  "goatcounter_total_with_events": 482,
+  "visits": 346,
+  "events_total": 173,
+  "goatcounter_total_with_events": 519,
   "page_loads_by_day": {
    "2026-10-14": 6,
    "2026-10-15": 2,
@@ -2653,7 +2751,7 @@
    "2026-11-10": 30,
    "2026-11-11": 30,
    "2026-11-12": 23,
-   "2026-11-13": 15
+   "2026-11-13": 38
   },
   "visitor_days_by_day": {
    "2026-10-14": 4,
@@ -2677,21 +2775,22 @@
    "2026-11-07": 3,
    "2026-11-08": 1,
    "2026-11-09": 3,
-   "2026-11-12": 2
+   "2026-11-12": 2,
+   "2026-11-13": 2
   },
-  "visitor_days": 41,
-  "return_rate": 0.195,
-  "routes": 15,
+  "visitor_days": 43,
+  "return_rate": 0.209,
+  "routes": 16,
   "routes_not_found": 0,
   "routes_per_visit": 0.05,
-  "routes_per_visitor_day": 0.24,
-  "share_rate": 0.2,
+  "routes_per_visitor_day": 0.26,
+  "share_rate": 0.188,
   "shares": {
    "qr": 1,
    "copy": 1,
    "whatsapp": 1
   },
-  "failed_search_rate": 0.095,
+  "failed_search_rate": 0.087,
   "failed_searches": [
    {
     "name": "indigo",
@@ -2704,19 +2803,23 @@
   ],
   "nearest_station": {
    "denied": 12,
-   "ok": 27,
-   "far": 8,
+   "ok": 32,
+   "far": 11,
    "fail": 3,
    "outside": 1
   },
   "visitors_new_return": {
-   "new": 33,
-   "return": 8
+   "new": 34,
+   "return": 9
   },
   "top_routes": [
    {
     "name": "jge > et",
     "count": 2
+   },
+   {
+    "name": "jadaf > p_burj_khalifa",
+    "count": 1
    },
    {
     "name": "stadium > union",
@@ -2789,6 +2892,10 @@
     "count": 2
    },
    {
+    "name": "jadaf",
+    "count": 1
+   },
+   {
     "name": "p_dubai_internet_city",
     "count": 1
    },
@@ -2807,23 +2914,19 @@
    {
     "name": "p_dubai_marina_walk",
     "count": 1
-   },
-   {
-    "name": "p_dubai_mall",
-    "count": 1
    }
   ],
   "top_destinations": [
+   {
+    "name": "p_burj_khalifa",
+    "count": 3
+   },
    {
     "name": "et",
     "count": 2
    },
    {
     "name": "union",
-    "count": 2
-   },
-   {
-    "name": "p_burj_khalifa",
     "count": 2
    },
    {
@@ -2860,15 +2963,15 @@
   "/": [
    {
     "name": "dubaimetro.fyi/nearest-station",
-    "count": 33
+    "count": 37
    },
    {
     "name": "dubaimetro.fyi",
-    "count": 20
+    "count": 24
    },
    {
     "name": "(direct or unknown)",
-    "count": 19
+    "count": 20
    },
    {
     "name": "com.reddit.frontpage",
@@ -2914,13 +3017,13 @@
   "/nearest-station": [
    {
     "name": "Google",
-    "count": 68
+    "count": 77
    }
   ],
   "/destinations/etihad-rail-dubai": [
    {
     "name": "Google",
-    "count": 32
+    "count": 33
    },
    {
     "name": "(direct or unknown)",
@@ -2934,7 +3037,7 @@
   "/destinations/indian-consulate-dubai": [
    {
     "name": "Google",
-    "count": 12
+    "count": 13
    }
   ],
   "/destinations/meena-bazaar": [
@@ -3131,6 +3234,16 @@
     "count": 2
    }
   ],
+  "/destinations/jw-marriott-marquis-dubai": [
+   {
+    "name": "Google",
+    "count": 1
+   },
+   {
+    "name": "chatgpt.com",
+    "count": 1
+   }
+  ],
   "/destinations/canadian-specialist-hospital": [
    {
     "name": "Google",
@@ -3162,6 +3275,18 @@
    },
    {
     "name": "www.bing.com",
+    "count": 1
+   }
+  ],
+  "/stations/al-garhoud": [
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
+  "/destinations/ibn-battuta-bus-station": [
+   {
+    "name": "Google",
     "count": 1
    }
   ],
@@ -3309,27 +3434,9 @@
     "count": 1
    }
   ],
-  "/destinations/jw-marriott-marquis-dubai": [
-   {
-    "name": "chatgpt.com",
-    "count": 1
-   }
-  ],
   "/destinations/dubai-creek-harbour": [
    {
     "name": "chatgpt.com",
-    "count": 1
-   }
-  ],
-  "/destinations/dubai-municipality-head-office": [
-   {
-    "name": "Google",
-    "count": 1
-   }
-  ],
-  "/destinations/st-mary-s-catholic-church": [
-   {
-    "name": "Google",
     "count": 1
    }
   ]
@@ -3338,7 +3445,7 @@
   "dubaimetro.fyi/nearest-station": [
    {
     "path": "/",
-    "count": 33
+    "count": 37
    },
    {
     "path": "/map",
@@ -3348,13 +3455,13 @@
   "dubaimetro.fyi": [
    {
     "path": "/",
-    "count": 20
+    "count": 24
    }
   ],
   "(direct or unknown)": [
    {
     "path": "/",
-    "count": 19
+    "count": 20
    },
    {
     "path": "/destinations/etihad-rail-dubai",
@@ -3414,15 +3521,15 @@
   "Google": [
    {
     "path": "/nearest-station",
-    "count": 68
+    "count": 77
    },
    {
     "path": "/destinations/etihad-rail-dubai",
-    "count": 32
+    "count": 33
    },
    {
     "path": "/destinations/indian-consulate-dubai",
-    "count": 12
+    "count": 13
    },
    {
     "path": "/destinations/meena-bazaar",
@@ -3521,6 +3628,18 @@
     "count": 1
    },
    {
+    "path": "/destinations/jw-marriott-marquis-dubai",
+    "count": 1
+   },
+   {
+    "path": "/stations/al-garhoud",
+    "count": 1
+   },
+   {
+    "path": "/destinations/ibn-battuta-bus-station",
+    "count": 1
+   },
+   {
     "path": "/destinations/dubai-festival-city-mall",
     "count": 1
    },
@@ -3579,14 +3698,6 @@
    {
     "path": "/destinations/expo-city-dubai",
     "count": 1
-   },
-   {
-    "path": "/destinations/dubai-municipality-head-office",
-    "count": 1
-   },
-   {
-    "path": "/destinations/st-mary-s-catholic-church",
-    "count": 1
    }
   ],
   "chatgpt.com": [
@@ -3635,6 +3746,10 @@
     "count": 1
    },
    {
+    "path": "/destinations/jw-marriott-marquis-dubai",
+    "count": 1
+   },
+   {
     "path": "/stations/insurancemarket",
     "count": 1
    },
@@ -3648,10 +3763,6 @@
    },
    {
     "path": "/destinations/al-fahidi",
-    "count": 1
-   },
-   {
-    "path": "/destinations/jw-marriott-marquis-dubai",
     "count": 1
    },
    {
@@ -3726,12 +3837,12 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 199,
+   "count": 213,
    "ref_scheme": "g"
   },
   {
    "name": "",
-   "count": 76,
+   "count": 78,
    "ref_scheme": "o"
   },
   {
@@ -3769,7 +3880,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 454
+   "count": 491
   },
   {
    "id": "rus",
@@ -3816,12 +3927,12 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 394
+   "count": 428
   },
   {
    "id": "US",
    "name": "United States",
-   "count": 26
+   "count": 29
   },
   {
    "id": "IN",
@@ -3933,7 +4044,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 394
+   "count": 427
   },
   {
    "id": "tablet",
@@ -3943,12 +4054,12 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 62
+   "count": 65
   },
   {
    "id": "desktophd",
    "name": "",
-   "count": 2
+   "count": 3
   },
   {
    "id": "unknown",
@@ -3960,34 +4071,34 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 292
+   "count": 308
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 190
+   "count": 211
   }
  ],
  "systems": [
   {
    "id": "Android",
    "name": "Android",
-   "count": 208
+   "count": 220
   },
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 189
+   "count": 210
   },
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 60
+   "count": 61
   },
   {
    "id": "Linux",
    "name": "Linux",
-   "count": 14
+   "count": 17
   },
   {
    "id": "macOS",
