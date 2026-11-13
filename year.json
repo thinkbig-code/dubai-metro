@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-13T02:09:59Z",
+ "generated": "2026-11-13T08:07:12Z",
  "start": "2025-11-13",
  "end": "2026-11-14",
  "total": {
-  "total": 757,
-  "total_events": 330,
-  "total_utc": 757,
+  "total": 774,
+  "total_events": 335,
+  "total_utc": 774,
   "stats": [
    {
     "day": "2025-11-13",
@@ -10633,7 +10633,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 302
+    "monthly": 319
    },
    {
     "day": "2026-11-02",
@@ -10965,7 +10965,7 @@
      0
     ],
     "daily": 33,
-    "weekly": 35
+    "weekly": 52
    },
    {
     "day": "2026-11-13",
@@ -10977,11 +10977,11 @@
      0,
      0,
      0,
+     2,
      0,
-     0,
-     0,
-     0,
-     0,
+     7,
+     3,
+     5,
      0,
      0,
      0,
@@ -10995,7 +10995,7 @@
      0,
      0
     ],
-    "daily": 2
+    "daily": 19
    },
    {
     "day": "2026-11-14",
@@ -11035,7 +11035,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 174,
+   "count": 178,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -11073,7 +11073,8 @@
     "2026-11-09": 6,
     "2026-11-10": 9,
     "2026-11-11": 11,
-    "2026-11-12": 11
+    "2026-11-12": 11,
+    "2026-11-13": 4
    }
   },
   {
@@ -11081,7 +11082,7 @@
    "path_id": 116082941,
    "title": "Nearest Metro Station to Me in Dubai: Find It by Location",
    "event": false,
-   "count": 62,
+   "count": 68,
    "daily": {
     "2026-10-28": 1,
     "2026-10-31": 1,
@@ -11094,7 +11095,8 @@
     "2026-11-09": 8,
     "2026-11-10": 10,
     "2026-11-11": 12,
-    "2026-11-12": 7
+    "2026-11-12": 7,
+    "2026-11-13": 6
    }
   },
   {
@@ -11167,7 +11169,7 @@
    "path_id": 110313382,
    "title": "en",
    "event": true,
-   "count": 13,
+   "count": 14,
    "daily": {
     "2026-10-07": 1,
     "2026-10-08": 1,
@@ -11177,7 +11179,8 @@
     "2026-11-08": 1,
     "2026-11-09": 2,
     "2026-11-10": 3,
-    "2026-11-11": 2
+    "2026-11-11": 2,
+    "2026-11-13": 1
    }
   },
   {
@@ -11335,6 +11338,19 @@
    }
   },
   {
+   "path": "/destinations/us-consulate-dubai",
+   "path_id": 112091077,
+   "title": "US Consulate Dubai Metro Station: BurJuman (Red/Green lines), 12 min walk",
+   "event": false,
+   "count": 4,
+   "daily": {
+    "2026-10-14": 1,
+    "2026-10-19": 1,
+    "2026-11-12": 1,
+    "2026-11-13": 1
+   }
+  },
+  {
    "path": "/destinations/pakistan-consulate-dubai",
    "path_id": 112004545,
    "title": "Pakistan Consulate Dubai Metro Station: Sharaf DG (Green Line), 5 min walk",
@@ -11394,6 +11410,18 @@
    "daily": {
     "2026-11-10": 1,
     "2026-11-11": 2
+   }
+  },
+  {
+   "path": "geo/far/creek",
+   "path_id": 119969626,
+   "title": "en",
+   "event": true,
+   "count": 3,
+   "daily": {
+    "2026-11-07": 1,
+    "2026-11-11": 1,
+    "2026-11-13": 1
    }
   },
   {
@@ -11466,18 +11494,6 @@
     "2026-10-17": 1,
     "2026-11-10": 1,
     "2026-11-11": 1
-   }
-  },
-  {
-   "path": "/destinations/us-consulate-dubai",
-   "path_id": 112091077,
-   "title": "US Consulate Dubai Metro Station: BurJuman (Red/Green lines), 12 min walk",
-   "event": false,
-   "count": 3,
-   "daily": {
-    "2026-10-14": 1,
-    "2026-10-19": 1,
-    "2026-11-12": 1
    }
   },
   {
@@ -11574,6 +11590,18 @@
    }
   },
   {
+   "path": "place/p_dxb_airport_terminal_3/to",
+   "path_id": 110326886,
+   "title": "en|name",
+   "event": true,
+   "count": 3,
+   "daily": {
+    "2026-10-08": 1,
+    "2026-10-15": 1,
+    "2026-11-13": 1
+   }
+  },
+  {
    "path": "map_station_click/moe/-",
    "path_id": 110312988,
    "title": "en|home|phone",
@@ -11629,6 +11657,17 @@
    }
   },
   {
+   "path": "geo/ok/bb",
+   "path_id": 120276447,
+   "title": "en",
+   "event": true,
+   "count": 2,
+   "daily": {
+    "2026-11-08": 1,
+    "2026-11-13": 1
+   }
+  },
+  {
    "path": "geo/ok/jbr2",
    "path_id": 120261772,
    "title": "en",
@@ -11637,17 +11676,6 @@
    "daily": {
     "2026-11-08": 1,
     "2026-11-09": 1
-   }
-  },
-  {
-   "path": "geo/far/creek",
-   "path_id": 119969626,
-   "title": "en",
-   "event": true,
-   "count": 2,
-   "daily": {
-    "2026-11-07": 1,
-    "2026-11-11": 1
    }
   },
   {
@@ -11692,6 +11720,17 @@
    "daily": {
     "2026-11-02": 1,
     "2026-11-07": 1
+   }
+  },
+  {
+   "path": "/stations/city-centre-deira",
+   "path_id": 117728351,
+   "title": "City Centre Deira Metro Station, Dubai: Red Line",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-11-02": 1,
+    "2026-11-13": 1
    }
   },
   {
@@ -11882,17 +11921,6 @@
    }
   },
   {
-   "path": "place/p_dxb_airport_terminal_3/to",
-   "path_id": 110326886,
-   "title": "en|name",
-   "event": true,
-   "count": 2,
-   "daily": {
-    "2026-10-08": 1,
-    "2026-10-15": 1
-   }
-  },
-  {
    "path": "route_to_station_click/rigga/-",
    "path_id": 110317467,
    "title": "en",
@@ -12009,6 +12037,16 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "geo/ok/dafz",
+   "path_id": 121723641,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-13": 1
    }
   },
   {
@@ -12212,16 +12250,6 @@
    }
   },
   {
-   "path": "geo/ok/bb",
-   "path_id": 120276447,
-   "title": "en",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-11-08": 1
-   }
-  },
-  {
    "path": "/stations/dmcc",
    "path_id": 120136030,
    "title": "DMCC Metro Station, Dubai: Red Line (formerly Jumeirah Lakes Towers)",
@@ -12406,16 +12434,6 @@
    "path_id": 117752054,
    "title": "en",
    "event": true,
-   "count": 1,
-   "daily": {
-    "2026-11-02": 1
-   }
-  },
-  {
-   "path": "/stations/city-centre-deira",
-   "path_id": 117728351,
-   "title": "City Centre Deira Metro Station, Dubai: Red Line",
-   "event": false,
    "count": 1,
    "daily": {
     "2026-11-02": 1
@@ -13914,9 +13932,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 427,
-  "events_total": 330,
-  "goatcounter_total_with_events": 757,
+  "visits": 439,
+  "events_total": 335,
+  "goatcounter_total_with_events": 774,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -13960,7 +13978,7 @@
    "2026-11-10": 30,
    "2026-11-11": 30,
    "2026-11-12": 23,
-   "2026-11-13": 2
+   "2026-11-13": 14
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -14004,7 +14022,7 @@
    "copy": 1,
    "whatsapp": 1
   },
-  "failed_search_rate": 0.045,
+  "failed_search_rate": 0.044,
   "failed_searches": [
    {
     "name": "indigo",
@@ -14016,10 +14034,10 @@
    }
   ],
   "nearest_station": {
-   "denied": 13,
-   "ok": 27,
+   "denied": 14,
+   "ok": 29,
    "fail": 4,
-   "far": 7,
+   "far": 8,
    "outside": 1
   },
   "visitors_new_return": {
@@ -14181,11 +14199,11 @@
    },
    {
     "name": "dubaimetro.fyi/nearest-station",
-    "count": 30
+    "count": 33
    },
    {
     "name": "dubaimetro.fyi",
-    "count": 19
+    "count": 20
    },
    {
     "name": "com.reddit.frontpage",
@@ -14247,7 +14265,7 @@
   "/nearest-station": [
    {
     "name": "Google",
-    "count": 62
+    "count": 68
    }
   ],
   "/destinations/etihad-rail-dubai": [
@@ -14340,6 +14358,16 @@
     "count": 1
    }
   ],
+  "/destinations/us-consulate-dubai": [
+   {
+    "name": "Google",
+    "count": 3
+   },
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   }
+  ],
   "/destinations/pakistan-consulate-dubai": [
    {
     "name": "Google",
@@ -14406,16 +14434,6 @@
    {
     "name": "Google",
     "count": 3
-   }
-  ],
-  "/destinations/us-consulate-dubai": [
-   {
-    "name": "Google",
-    "count": 2
-   },
-   {
-    "name": "(direct or unknown)",
-    "count": 1
    }
   ],
   "/destinations/palm-jumeirah-mall": [
@@ -14491,6 +14509,16 @@
    },
    {
     "name": "chatgpt.com",
+    "count": 1
+   }
+  ],
+  "/stations/city-centre-deira": [
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   },
+   {
+    "name": "Google",
     "count": 1
    }
   ],
@@ -14654,12 +14682,6 @@
     "count": 1
    }
   ],
-  "/stations/city-centre-deira": [
-   {
-    "name": "Google",
-    "count": 1
-   }
-  ],
   "/destinations/dubai-chamber-of-commerce": [
    {
     "name": "(direct or unknown)",
@@ -14726,11 +14748,11 @@
     "count": 2
    },
    {
-    "path": "/destinations/gdrfa-immigration-al-jafiliya",
+    "path": "/destinations/us-consulate-dubai",
     "count": 1
    },
    {
-    "path": "/destinations/us-consulate-dubai",
+    "path": "/destinations/gdrfa-immigration-al-jafiliya",
     "count": 1
    },
    {
@@ -14743,6 +14765,10 @@
    },
    {
     "path": "/destinations/al-jalila-children-s-specialty-hospital",
+    "count": 1
+   },
+   {
+    "path": "/stations/city-centre-deira",
     "count": 1
    },
    {
@@ -14773,7 +14799,7 @@
   "dubaimetro.fyi/nearest-station": [
    {
     "path": "/",
-    "count": 30
+    "count": 33
    },
    {
     "path": "/map",
@@ -14783,7 +14809,7 @@
   "dubaimetro.fyi": [
    {
     "path": "/",
-    "count": 19
+    "count": 20
    },
    {
     "path": "/ru.html",
@@ -14817,7 +14843,7 @@
   "Google": [
    {
     "path": "/nearest-station",
-    "count": 62
+    "count": 68
    },
    {
     "path": "/destinations/etihad-rail-dubai",
@@ -14852,6 +14878,10 @@
     "count": 4
    },
    {
+    "path": "/destinations/us-consulate-dubai",
+    "count": 3
+   },
+   {
     "path": "/destinations/dubai-police-general-headquarters",
     "count": 3
    },
@@ -14877,10 +14907,6 @@
    },
    {
     "path": "/destinations/times-square-center",
-    "count": 2
-   },
-   {
-    "path": "/destinations/us-consulate-dubai",
     "count": 2
    },
    {
@@ -14917,6 +14943,10 @@
    },
    {
     "path": "/destinations/reef-mall",
+    "count": 1
+   },
+   {
+    "path": "/stations/city-centre-deira",
     "count": 1
    },
    {
@@ -14969,10 +14999,6 @@
    },
    {
     "path": "/destinations/jebel-ali-free-zone",
-    "count": 1
-   },
-   {
-    "path": "/stations/city-centre-deira",
     "count": 1
    },
    {
@@ -15158,13 +15184,13 @@
  "toprefs": [
   {
    "name": "",
-   "count": 304,
+   "count": 305,
    "ref_scheme": "o"
   },
   {
    "id": "Google",
    "name": "Google",
-   "count": 196,
+   "count": 203,
    "ref_scheme": "g"
   },
   {
@@ -15226,7 +15252,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 699
+   "count": 716
   },
   {
    "id": "rus",
@@ -15283,17 +15309,17 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 595
+   "count": 610
   },
   {
    "id": "US",
    "name": "United States",
-   "count": 58
+   "count": 59
   },
   {
    "id": "IN",
    "name": "India",
-   "count": 19
+   "count": 20
   },
   {
    "id": "NL",
@@ -15450,7 +15476,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 530
+   "count": 546
   },
   {
    "id": "tablet",
@@ -15460,7 +15486,7 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 173
+   "count": 174
   },
   {
    "id": "desktophd",
@@ -15477,12 +15503,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 466
+   "count": 478
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 286
+   "count": 291
   },
   {
    "id": "Firefox",
@@ -15498,12 +15524,12 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 281
+   "count": 286
   },
   {
    "id": "Android",
    "name": "Android",
-   "count": 251
+   "count": 262
   },
   {
    "id": "Windows",
@@ -15518,7 +15544,7 @@
   {
    "id": "Linux",
    "name": "Linux",
-   "count": 28
+   "count": 29
   },
   {
    "id": "Chrome OS",
