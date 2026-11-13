@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-13T08:07:12Z",
+ "generated": "2026-11-13T10:01:37Z",
  "start": "2025-11-13",
  "end": "2026-11-14",
  "total": {
-  "total": 774,
+  "total": 775,
   "total_events": 335,
-  "total_utc": 774,
+  "total_utc": 775,
   "stats": [
    {
     "day": "2025-11-13",
@@ -10633,7 +10633,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 319
+    "monthly": 320
    },
    {
     "day": "2026-11-02",
@@ -10965,7 +10965,7 @@
      0
     ],
     "daily": 33,
-    "weekly": 52
+    "weekly": 53
    },
    {
     "day": "2026-11-13",
@@ -10983,7 +10983,7 @@
      3,
      5,
      0,
-     0,
+     1,
      0,
      0,
      0,
@@ -10995,7 +10995,7 @@
      0,
      0
     ],
-    "daily": 19
+    "daily": 20
    },
    {
     "day": "2026-11-14",
@@ -11338,6 +11338,19 @@
    }
   },
   {
+   "path": "/destinations/dubai-land-department",
+   "path_id": 112493634,
+   "title": "Dubai Land Department Metro Station: Union (Red/Green lines), 8 min walk",
+   "event": false,
+   "count": 4,
+   "daily": {
+    "2026-10-17": 1,
+    "2026-11-10": 1,
+    "2026-11-11": 1,
+    "2026-11-13": 1
+   }
+  },
+  {
    "path": "/destinations/us-consulate-dubai",
    "path_id": 112091077,
    "title": "US Consulate Dubai Metro Station: BurJuman (Red/Green lines), 12 min walk",
@@ -11482,18 +11495,6 @@
     "2026-10-19": 1,
     "2026-11-03": 1,
     "2026-11-13": 1
-   }
-  },
-  {
-   "path": "/destinations/dubai-land-department",
-   "path_id": 112493634,
-   "title": "Dubai Land Department Metro Station: Union (Red/Green lines), 8 min walk",
-   "event": false,
-   "count": 3,
-   "daily": {
-    "2026-10-17": 1,
-    "2026-11-10": 1,
-    "2026-11-11": 1
    }
   },
   {
@@ -13932,9 +13933,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 439,
+  "visits": 440,
   "events_total": 335,
-  "goatcounter_total_with_events": 774,
+  "goatcounter_total_with_events": 775,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -13978,7 +13979,7 @@
    "2026-11-10": 30,
    "2026-11-11": 30,
    "2026-11-12": 23,
-   "2026-11-13": 14
+   "2026-11-13": 15
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -14358,6 +14359,12 @@
     "count": 1
    }
   ],
+  "/destinations/dubai-land-department": [
+   {
+    "name": "Google",
+    "count": 4
+   }
+  ],
   "/destinations/us-consulate-dubai": [
    {
     "name": "Google",
@@ -14428,12 +14435,6 @@
    {
     "name": "chatgpt.com",
     "count": 1
-   }
-  ],
-  "/destinations/dubai-land-department": [
-   {
-    "name": "Google",
-    "count": 3
    }
   ],
   "/destinations/palm-jumeirah-mall": [
@@ -14874,6 +14875,10 @@
     "count": 4
    },
    {
+    "path": "/destinations/dubai-land-department",
+    "count": 4
+   },
+   {
     "path": "/destinations/pakistan-consulate-dubai",
     "count": 4
    },
@@ -14891,10 +14896,6 @@
    },
    {
     "path": "/destinations/aster-hospital-al-qusais",
-    "count": 3
-   },
-   {
-    "path": "/destinations/dubai-land-department",
     "count": 3
    },
    {
@@ -15190,7 +15191,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 203,
+   "count": 204,
    "ref_scheme": "g"
   },
   {
@@ -15275,14 +15276,14 @@
    "count": 4
   },
   {
-   "id": "fra",
-   "name": "French",
+   "id": "deu",
+   "name": "German",
    "count": 3
   },
   {
-   "id": "deu",
-   "name": "German",
-   "count": 2
+   "id": "fra",
+   "name": "French",
+   "count": 3
   },
   {
    "id": "ron",
@@ -15309,7 +15310,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 610
+   "count": 611
   },
   {
    "id": "US",
@@ -15486,7 +15487,7 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 174
+   "count": 175
   },
   {
    "id": "desktophd",
@@ -15503,7 +15504,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 478
+   "count": 479
   },
   {
    "id": "Safari",
@@ -15539,7 +15540,7 @@
   {
    "id": "macOS",
    "name": "macOS",
-   "count": 69
+   "count": 70
   },
   {
    "id": "Linux",
