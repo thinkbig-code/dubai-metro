@@ -1,43 +1,13 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-13T23:54:42Z",
- "start": "2025-11-13",
- "end": "2026-11-14",
+ "generated": "2026-11-14T07:04:18Z",
+ "start": "2025-11-14",
+ "end": "2026-11-15",
  "total": {
-  "total": 813,
-  "total_events": 349,
-  "total_utc": 813,
+  "total": 836,
+  "total_events": 366,
+  "total_utc": 836,
   "stats": [
-   {
-    "day": "2025-11-13",
-    "hourly": [
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0
-    ],
-    "daily": 0
-   },
    {
     "day": "2025-11-14",
     "hourly": [
@@ -9516,7 +9486,8 @@
      0,
      0
     ],
-    "daily": 0
+    "daily": 0,
+    "weekly": 6
    },
    {
     "day": "2026-09-26",
@@ -9697,7 +9668,6 @@
      5
     ],
     "daily": 6,
-    "weekly": 92,
     "monthly": 455
    },
    {
@@ -9728,7 +9698,8 @@
      0,
      1
     ],
-    "daily": 35
+    "daily": 35,
+    "weekly": 197
    },
    {
     "day": "2026-10-03",
@@ -9908,8 +9879,7 @@
      3,
      2
     ],
-    "daily": 111,
-    "weekly": 222
+    "daily": 111
    },
    {
     "day": "2026-10-09",
@@ -9939,7 +9909,8 @@
      2,
      0
     ],
-    "daily": 18
+    "daily": 18,
+    "weekly": 117
    },
    {
     "day": "2026-10-10",
@@ -10119,8 +10090,7 @@
      0,
      0
     ],
-    "daily": 6,
-    "weekly": 44
+    "daily": 6
    },
    {
     "day": "2026-10-16",
@@ -10150,7 +10120,8 @@
      0,
      1
     ],
-    "daily": 4
+    "daily": 4,
+    "weekly": 47
    },
    {
     "day": "2026-10-17",
@@ -10330,8 +10301,7 @@
      6,
      0
     ],
-    "daily": 9,
-    "weekly": 78
+    "daily": 9
    },
    {
     "day": "2026-10-23",
@@ -10361,7 +10331,8 @@
      0,
      0
     ],
-    "daily": 3
+    "daily": 3,
+    "weekly": 74
    },
    {
     "day": "2026-10-24",
@@ -10541,8 +10512,7 @@
      0,
      0
     ],
-    "daily": 5,
-    "weekly": 78
+    "daily": 5
    },
    {
     "day": "2026-10-30",
@@ -10572,7 +10542,8 @@
      0,
      0
     ],
-    "daily": 3
+    "daily": 3,
+    "weekly": 85
    },
    {
     "day": "2026-10-31",
@@ -10633,7 +10604,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 358
+    "monthly": 381
    },
    {
     "day": "2026-11-02",
@@ -10753,8 +10724,7 @@
      0,
      0
     ],
-    "daily": 12,
-    "weekly": 208
+    "daily": 12
    },
    {
     "day": "2026-11-06",
@@ -10784,7 +10754,8 @@
      0,
      0
     ],
-    "daily": 19
+    "daily": 19,
+    "weekly": 229
    },
    {
     "day": "2026-11-07",
@@ -10964,8 +10935,7 @@
      5,
      0
     ],
-    "daily": 33,
-    "weekly": 91
+    "daily": 33
    },
    {
     "day": "2026-11-13",
@@ -10995,12 +10965,43 @@
      0,
      0
     ],
-    "daily": 57
+    "daily": 57,
+    "weekly": 81
    },
    {
     "day": "2026-11-14",
     "hourly": [
      1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     2,
+     0,
+     5,
+     16,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "daily": 24
+   },
+   {
+    "day": "2026-11-15",
+    "hourly": [
+     0,
      0,
      0,
      0,
@@ -11025,7 +11026,7 @@
      0,
      0
     ],
-    "daily": 1
+    "daily": 0
    }
   ]
  },
@@ -11035,7 +11036,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 187,
+   "count": 189,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -11074,7 +11075,8 @@
     "2026-11-10": 9,
     "2026-11-11": 11,
     "2026-11-12": 11,
-    "2026-11-13": 13
+    "2026-11-13": 13,
+    "2026-11-14": 2
    }
   },
   {
@@ -11082,7 +11084,7 @@
    "path_id": 116082941,
    "title": "Nearest Metro Station to Me in Dubai: Find It by Location",
    "event": false,
-   "count": 77,
+   "count": 80,
    "daily": {
     "2026-10-28": 1,
     "2026-10-31": 1,
@@ -11096,7 +11098,8 @@
     "2026-11-10": 10,
     "2026-11-11": 12,
     "2026-11-12": 7,
-    "2026-11-13": 15
+    "2026-11-13": 15,
+    "2026-11-14": 3
    }
   },
   {
@@ -11140,7 +11143,7 @@
    "path_id": 110626146,
    "title": "Etihad Rail Dubai Station (Al Yalayis) Metro Station: Jumeirah Golf Estates",
    "event": false,
-   "count": 40,
+   "count": 41,
    "daily": {
     "2026-10-09": 1,
     "2026-10-12": 1,
@@ -11163,7 +11166,8 @@
     "2026-11-06": 1,
     "2026-11-09": 2,
     "2026-11-10": 3,
-    "2026-11-13": 1
+    "2026-11-13": 1,
+    "2026-11-14": 1
    }
   },
   {
@@ -11330,6 +11334,18 @@
    }
   },
   {
+   "path": "geo/far/centrepoint",
+   "path_id": 120799654,
+   "title": "en",
+   "event": true,
+   "count": 4,
+   "daily": {
+    "2026-11-10": 1,
+    "2026-11-11": 2,
+    "2026-11-14": 1
+   }
+  },
+  {
    "path": "geo/ok/equiti",
    "path_id": 117954536,
    "title": "en",
@@ -11420,6 +11436,19 @@
    }
   },
   {
+   "path": "map_station_click/moe/-",
+   "path_id": 110312988,
+   "title": "en|home|phone",
+   "event": true,
+   "count": 4,
+   "daily": {
+    "2026-10-07": 1,
+    "2026-10-11": 1,
+    "2026-11-06": 1,
+    "2026-11-14": 1
+   }
+  },
+  {
    "path": "place/p_dubai_mall/from",
    "path_id": 109724714,
    "title": "ru|name",
@@ -11440,17 +11469,6 @@
    "daily": {
     "2026-11-11": 1,
     "2026-11-13": 2
-   }
-  },
-  {
-   "path": "geo/far/centrepoint",
-   "path_id": 120799654,
-   "title": "en",
-   "event": true,
-   "count": 3,
-   "daily": {
-    "2026-11-10": 1,
-    "2026-11-11": 2
    }
   },
   {
@@ -11642,15 +11660,15 @@
    }
   },
   {
-   "path": "map_station_click/moe/-",
-   "path_id": 110312988,
-   "title": "en|home|phone",
+   "path": "map_station_click/sobha/-",
+   "path_id": 110294723,
+   "title": "en|home|desktop",
    "event": true,
    "count": 3,
    "daily": {
     "2026-10-07": 1,
-    "2026-10-11": 1,
-    "2026-11-06": 1
+    "2026-10-08": 1,
+    "2026-11-14": 1
    }
   },
   {
@@ -11992,6 +12010,17 @@
    }
   },
   {
+   "path": "route_to_station_click/moe/-",
+   "path_id": 110313000,
+   "title": "en",
+   "event": true,
+   "count": 2,
+   "daily": {
+    "2026-10-07": 1,
+    "2026-11-14": 1
+   }
+  },
+  {
    "path": "map_station_click/creek/-",
    "path_id": 110312977,
    "title": "en|home|phone",
@@ -12014,14 +12043,14 @@
    }
   },
   {
-   "path": "map_station_click/sobha/-",
-   "path_id": 110294723,
-   "title": "en|home|desktop",
+   "path": "route_from_station_click/sobha/-",
+   "path_id": 110294730,
+   "title": "en",
    "event": true,
    "count": 2,
    "daily": {
     "2026-10-07": 1,
-    "2026-10-08": 1
+    "2026-11-14": 1
    }
   },
   {
@@ -12077,6 +12106,126 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "view/sobha/moe",
+   "path_id": 122190947,
+   "title": "en|details",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-14": 1
+   }
+  },
+  {
+   "path": "station_pair_route_search/sobha/moe",
+   "path_id": 122190892,
+   "title": "en|geo",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-14": 1
+   }
+  },
+  {
+   "path": "route/sobha/moe",
+   "path_id": 122190891,
+   "title": "en|map|ok|first_geo",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-14": 1
+   }
+  },
+  {
+   "path": "station_pair_route_search/bk/moe",
+   "path_id": 122190851,
+   "title": "en|geo",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-14": 1
+   }
+  },
+  {
+   "path": "route/bk/moe",
+   "path_id": 122190850,
+   "title": "en|map|ok|first_geo",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-14": 1
+   }
+  },
+  {
+   "path": "map_station_click/garmin/-",
+   "path_id": 122190805,
+   "title": "en|home|phone",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-14": 1
+   }
+  },
+  {
+   "path": "station_pair_route_search/bk/ccd",
+   "path_id": 122190651,
+   "title": "en|geo",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-14": 1
+   }
+  },
+  {
+   "path": "route/bk/ccd",
+   "path_id": 122190650,
+   "title": "en|search|ok|first_geo",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-14": 1
+   }
+  },
+  {
+   "path": "station/ccd/to",
+   "path_id": 122190649,
+   "title": "en|former_name",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-14": 1
+   }
+  },
+  {
+   "path": "geo/far/bk",
+   "path_id": 122190106,
+   "title": "en",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-14": 1
+   }
+  },
+  {
+   "path": "route/centrepoint/p_almas_tower_dmcc_hq",
+   "path_id": 122166208,
+   "title": "en|search|ok|first_geo",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-14": 1
+   }
+  },
+  {
+   "path": "place/p_almas_tower_dmcc_hq/to",
+   "path_id": 122166203,
+   "title": "en|alias",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-14": 1
    }
   },
   {
@@ -13810,16 +13959,6 @@
    }
   },
   {
-   "path": "route_to_station_click/moe/-",
-   "path_id": 110313000,
-   "title": "en",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-07": 1
-   }
-  },
-  {
    "path": "route_from_station_click/creek/-",
    "path_id": 110312982,
    "title": "en",
@@ -13852,16 +13991,6 @@
   {
    "path": "route_to_station_click/centrepoint/-",
    "path_id": 110294748,
-   "title": "en",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-07": 1
-   }
-  },
-  {
-   "path": "route_from_station_click/sobha/-",
-   "path_id": 110294730,
    "title": "en",
    "event": true,
    "count": 1,
@@ -14032,9 +14161,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 464,
-  "events_total": 349,
-  "goatcounter_total_with_events": 813,
+  "visits": 470,
+  "events_total": 366,
+  "goatcounter_total_with_events": 836,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -14079,7 +14208,7 @@
    "2026-11-11": 30,
    "2026-11-12": 23,
    "2026-11-13": 38,
-   "2026-11-14": 1
+   "2026-11-14": 7
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -14114,17 +14243,17 @@
   },
   "visitor_days": 72,
   "return_rate": 0.139,
-  "routes": 49,
+  "routes": 53,
   "routes_not_found": 0,
   "routes_per_visit": 0.11,
   "routes_per_visitor_day": 0.46,
-  "share_rate": 0.061,
+  "share_rate": 0.057,
   "shares": {
    "qr": 1,
    "copy": 1,
    "whatsapp": 1
   },
-  "failed_search_rate": 0.043,
+  "failed_search_rate": 0.041,
   "failed_searches": [
    {
     "name": "indigo",
@@ -14138,8 +14267,8 @@
   "nearest_station": {
    "denied": 14,
    "ok": 34,
+   "far": 13,
    "fail": 4,
-   "far": 11,
    "outside": 1
   },
   "visitors_new_return": {
@@ -14154,6 +14283,22 @@
    {
     "name": "p_dubai_mall > p_dxb_airport_terminal_3",
     "count": 2
+   },
+   {
+    "name": "sobha > moe",
+    "count": 1
+   },
+   {
+    "name": "bk > moe",
+    "count": 1
+   },
+   {
+    "name": "bk > ccd",
+    "count": 1
+   },
+   {
+    "name": "centrepoint > p_almas_tower_dmcc_hq",
+    "count": 1
    },
    {
     "name": "jadaf > p_burj_khalifa",
@@ -14190,25 +14335,13 @@
    {
     "name": "wtc > p_st_mary_s_catholic_church",
     "count": 1
-   },
-   {
-    "name": "lp > p_dubai_creek_harbour",
-    "count": 1
-   },
-   {
-    "name": "lp > p_burj_khalifa",
-    "count": 1
-   },
-   {
-    "name": "mc > p_burjuman_mall",
-    "count": 1
-   },
-   {
-    "name": "p_dubai_marina_walk > p_burj_khalifa",
-    "count": 1
    }
   ],
   "top_origins": [
+   {
+    "name": "bk",
+    "count": 5
+   },
    {
     "name": "p_dubai_mall",
     "count": 4
@@ -14226,11 +14359,15 @@
     "count": 3
    },
    {
-    "name": "bk",
-    "count": 3
+    "name": "jge",
+    "count": 2
    },
    {
-    "name": "jge",
+    "name": "sobha",
+    "count": 2
+   },
+   {
+    "name": "centrepoint",
     "count": 2
    },
    {
@@ -14240,20 +14377,16 @@
    {
     "name": "lp",
     "count": 2
-   },
-   {
-    "name": "bb",
-    "count": 2
-   },
-   {
-    "name": "moe",
-    "count": 2
    }
   ],
   "top_destinations": [
    {
     "name": "p_dxb_airport_terminal_3",
     "count": 5
+   },
+   {
+    "name": "moe",
+    "count": 4
    },
    {
     "name": "p_burj_khalifa",
@@ -14284,11 +14417,7 @@
     "count": 2
    },
    {
-    "name": "moe",
-    "count": 2
-   },
-   {
-    "name": "p_spice_souk",
+    "name": "ccd",
     "count": 1
    }
   ]
@@ -14301,11 +14430,11 @@
    },
    {
     "name": "dubaimetro.fyi/nearest-station",
-    "count": 37
+    "count": 38
    },
    {
     "name": "dubaimetro.fyi",
-    "count": 24
+    "count": 25
    },
    {
     "name": "com.reddit.frontpage",
@@ -14367,13 +14496,13 @@
   "/nearest-station": [
    {
     "name": "Google",
-    "count": 77
+    "count": 80
    }
   ],
   "/destinations/etihad-rail-dubai": [
    {
     "name": "Google",
-    "count": 34
+    "count": 35
    },
    {
     "name": "(direct or unknown)",
@@ -14901,7 +15030,7 @@
   "dubaimetro.fyi/nearest-station": [
    {
     "path": "/",
-    "count": 37
+    "count": 38
    },
    {
     "path": "/map",
@@ -14911,7 +15040,7 @@
   "dubaimetro.fyi": [
    {
     "path": "/",
-    "count": 24
+    "count": 25
    },
    {
     "path": "/ru.html",
@@ -14945,11 +15074,11 @@
   "Google": [
    {
     "path": "/nearest-station",
-    "count": 77
+    "count": 80
    },
    {
     "path": "/destinations/etihad-rail-dubai",
-    "count": 34
+    "count": 35
    },
    {
     "path": "/destinations/indian-consulate-dubai",
@@ -15300,7 +15429,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 219,
+   "count": 223,
    "ref_scheme": "g"
   },
   {
@@ -15362,7 +15491,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 754
+   "count": 777
   },
   {
    "id": "rus",
@@ -15419,7 +15548,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 646
+   "count": 669
   },
   {
    "id": "US",
@@ -15586,17 +15715,17 @@
   {
    "id": "phone",
    "name": "",
-   "count": 579
+   "count": 596
   },
   {
    "id": "tablet",
    "name": "",
-   "count": 41
+   "count": 46
   },
   {
    "id": "desktop",
    "name": "",
-   "count": 178
+   "count": 179
   },
   {
    "id": "desktophd",
@@ -15613,12 +15742,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 496
+   "count": 513
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 312
+   "count": 318
   },
   {
    "id": "Firefox",
@@ -15634,22 +15763,22 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 307
+   "count": 308
   },
   {
    "id": "Android",
    "name": "Android",
-   "count": 274
+   "count": 290
   },
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 126
+   "count": 127
   },
   {
    "id": "macOS",
    "name": "macOS",
-   "count": 70
+   "count": 75
   },
   {
    "id": "Linux",
