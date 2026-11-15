@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-15T17:59:15Z",
+ "generated": "2026-11-15T23:11:14Z",
  "start": "2026-10-16",
  "end": "2026-11-16",
  "total": {
-  "total": 554,
+  "total": 555,
   "total_events": 183,
-  "total_utc": 554,
+  "total_utc": 555,
   "stats": [
    {
     "day": "2026-10-16",
@@ -521,7 +521,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 419
+    "monthly": 420
    },
    {
     "day": "2026-11-02",
@@ -883,7 +883,7 @@
      0
     ],
     "daily": 57,
-    "weekly": 119
+    "weekly": 120
    },
    {
     "day": "2026-11-14",
@@ -940,10 +940,10 @@
      4,
      0,
      0,
-     0,
+     1,
      0
     ],
-    "daily": 7
+    "daily": 8
    },
    {
     "day": "2026-11-16",
@@ -1209,6 +1209,19 @@
    }
   },
   {
+   "path": "/destinations/al-zahra-hospital-dubai",
+   "path_id": 111715857,
+   "title": "Al Zahra Hospital Dubai Metro Station: Dubai Internet City, 10 min walk",
+   "event": false,
+   "count": 5,
+   "daily": {
+    "2026-10-18": 1,
+    "2026-10-24": 1,
+    "2026-10-26": 2,
+    "2026-11-15": 1
+   }
+  },
+  {
    "path": "geo/far/centrepoint",
    "path_id": 120799654,
    "title": "en",
@@ -1268,18 +1281,6 @@
     "2026-11-10": 1,
     "2026-11-11": 1,
     "2026-11-13": 1
-   }
-  },
-  {
-   "path": "/destinations/al-zahra-hospital-dubai",
-   "path_id": 111715857,
-   "title": "Al Zahra Hospital Dubai Metro Station: Dubai Internet City, 10 min walk",
-   "event": false,
-   "count": 4,
-   "daily": {
-    "2026-10-18": 1,
-    "2026-10-24": 1,
-    "2026-10-26": 2
    }
   },
   {
@@ -2826,9 +2827,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 371,
+  "visits": 372,
   "events_total": 183,
-  "goatcounter_total_with_events": 554,
+  "goatcounter_total_with_events": 555,
   "page_loads_by_day": {
    "2026-10-16": 4,
    "2026-10-17": 3,
@@ -2860,7 +2861,7 @@
    "2026-11-12": 23,
    "2026-11-13": 38,
    "2026-11-14": 28,
-   "2026-11-15": 5
+   "2026-11-15": 6
   },
   "visitor_days_by_day": {
    "2026-10-17": 1,
@@ -3178,6 +3179,16 @@
     "count": 5
    }
   ],
+  "/destinations/al-zahra-hospital-dubai": [
+   {
+    "name": "Google",
+    "count": 4
+   },
+   {
+    "name": "chatgpt.com",
+    "count": 1
+   }
+  ],
   "/destinations/jw-marriott-marquis-dubai": [
    {
     "name": "Google",
@@ -3206,16 +3217,6 @@
    {
     "name": "Google",
     "count": 4
-   }
-  ],
-  "/destinations/al-zahra-hospital-dubai": [
-   {
-    "name": "Google",
-    "count": 3
-   },
-   {
-    "name": "chatgpt.com",
-    "count": 1
    }
   ],
   "/destinations/dubai-mall": [
@@ -3646,6 +3647,10 @@
     "count": 5
    },
    {
+    "path": "/destinations/al-zahra-hospital-dubai",
+    "count": 4
+   },
+   {
     "path": "/destinations/dubai-land-department",
     "count": 4
    },
@@ -3655,10 +3660,6 @@
    },
    {
     "path": "/destinations/jw-marriott-marquis-dubai",
-    "count": 3
-   },
-   {
-    "path": "/destinations/al-zahra-hospital-dubai",
     "count": 3
    },
    {
@@ -3838,15 +3839,15 @@
     "count": 1
    },
    {
+    "path": "/destinations/al-zahra-hospital-dubai",
+    "count": 1
+   },
+   {
     "path": "/destinations/jw-marriott-marquis-dubai",
     "count": 1
    },
    {
     "path": "/destinations/gdrfa-immigration-al-jafiliya",
-    "count": 1
-   },
-   {
-    "path": "/destinations/al-zahra-hospital-dubai",
     "count": 1
    },
    {
@@ -3945,7 +3946,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 233,
+   "count": 234,
    "ref_scheme": "g"
   },
   {
@@ -3988,7 +3989,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 524
+   "count": 525
   },
   {
    "id": "rus",
@@ -4035,7 +4036,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 461
+   "count": 462
   },
   {
    "id": "US",
@@ -4152,7 +4153,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 460
+   "count": 461
   },
   {
    "id": "tablet",
@@ -4184,7 +4185,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 216
+   "count": 217
   }
  ],
  "systems": [
@@ -4196,7 +4197,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 210
+   "count": 211
   },
   {
    "id": "Windows",
