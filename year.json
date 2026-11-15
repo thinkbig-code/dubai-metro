@@ -1,43 +1,13 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-14T23:25:14Z",
- "start": "2025-11-14",
- "end": "2026-11-15",
+ "generated": "2026-11-15T03:07:15Z",
+ "start": "2025-11-15",
+ "end": "2026-11-16",
  "total": {
-  "total": 867,
+  "total": 868,
   "total_events": 376,
-  "total_utc": 867,
+  "total_utc": 868,
   "stats": [
-   {
-    "day": "2025-11-14",
-    "hourly": [
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0
-    ],
-    "daily": 0
-   },
    {
     "day": "2025-11-15",
     "hourly": [
@@ -9486,8 +9456,7 @@
      0,
      0
     ],
-    "daily": 0,
-    "weekly": 6
+    "daily": 0
    },
    {
     "day": "2026-09-26",
@@ -9517,7 +9486,8 @@
      0,
      0
     ],
-    "daily": 0
+    "daily": 0,
+    "weekly": 41
    },
    {
     "day": "2026-09-27",
@@ -9698,8 +9668,7 @@
      0,
      1
     ],
-    "daily": 35,
-    "weekly": 197
+    "daily": 35
    },
    {
     "day": "2026-10-03",
@@ -9729,7 +9698,8 @@
      0,
      0
     ],
-    "daily": 4
+    "daily": 4,
+    "weekly": 180
    },
    {
     "day": "2026-10-04",
@@ -9909,8 +9879,7 @@
      2,
      0
     ],
-    "daily": 18,
-    "weekly": 117
+    "daily": 18
    },
    {
     "day": "2026-10-10",
@@ -9940,7 +9909,8 @@
      0,
      0
     ],
-    "daily": 17
+    "daily": 17,
+    "weekly": 103
    },
    {
     "day": "2026-10-11",
@@ -10120,8 +10090,7 @@
      0,
      1
     ],
-    "daily": 4,
-    "weekly": 47
+    "daily": 4
    },
    {
     "day": "2026-10-17",
@@ -10151,7 +10120,8 @@
      0,
      1
     ],
-    "daily": 5
+    "daily": 5,
+    "weekly": 46
    },
    {
     "day": "2026-10-18",
@@ -10331,8 +10301,7 @@
      0,
      0
     ],
-    "daily": 3,
-    "weekly": 74
+    "daily": 3
    },
    {
     "day": "2026-10-24",
@@ -10362,7 +10331,8 @@
      2,
      0
     ],
-    "daily": 12
+    "daily": 12,
+    "weekly": 74
    },
    {
     "day": "2026-10-25",
@@ -10542,8 +10512,7 @@
      0,
      0
     ],
-    "daily": 3,
-    "weekly": 85
+    "daily": 3
    },
    {
     "day": "2026-10-31",
@@ -10573,7 +10542,8 @@
      1,
      0
     ],
-    "daily": 11
+    "daily": 11,
+    "weekly": 101
    },
    {
     "day": "2026-11-01",
@@ -10604,7 +10574,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 412
+    "monthly": 413
    },
    {
     "day": "2026-11-02",
@@ -10754,8 +10724,7 @@
      0,
      0
     ],
-    "daily": 19,
-    "weekly": 229
+    "daily": 19
    },
    {
     "day": "2026-11-07",
@@ -10785,7 +10754,8 @@
      6,
      0
     ],
-    "daily": 32
+    "daily": 32,
+    "weekly": 267
    },
    {
     "day": "2026-11-08",
@@ -10965,8 +10935,7 @@
      0,
      0
     ],
-    "daily": 57,
-    "weekly": 112
+    "daily": 57
    },
    {
     "day": "2026-11-14",
@@ -10996,10 +10965,41 @@
      0,
      1
     ],
-    "daily": 55
+    "daily": 55,
+    "weekly": 56
    },
    {
     "day": "2026-11-15",
+    "hourly": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "daily": 1
+   },
+   {
+    "day": "2026-11-16",
     "hourly": [
      0,
      0,
@@ -11894,6 +11894,17 @@
    "daily": {
     "2026-10-20": 1,
     "2026-10-31": 1
+   }
+  },
+  {
+   "path": "/destinations/museum-of-the-future",
+   "path_id": 111942261,
+   "title": "Museum of the Future Metro Station: Emirates Towers (Red Line), 5 min walk",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-10-13": 1,
+    "2026-11-15": 1
    }
   },
   {
@@ -13157,16 +13168,6 @@
    }
   },
   {
-   "path": "/destinations/museum-of-the-future",
-   "path_id": 111942261,
-   "title": "Museum of the Future Metro Station: Emirates Towers (Red Line), 5 min walk",
-   "event": false,
-   "count": 1,
-   "daily": {
-    "2026-10-13": 1
-   }
-  },
-  {
    "path": "route/p_dxb_airport_terminal_3/p_dubai_municipality_head_office",
    "path_id": 111690652,
    "title": "en|landing:destinations-dubai-municipality-head-office|ok|first_landing",
@@ -14219,9 +14220,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 491,
+  "visits": 492,
   "events_total": 376,
-  "goatcounter_total_with_events": 867,
+  "goatcounter_total_with_events": 868,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -14266,7 +14267,8 @@
    "2026-11-11": 30,
    "2026-11-12": 23,
    "2026-11-13": 38,
-   "2026-11-14": 28
+   "2026-11-14": 28,
+   "2026-11-15": 1
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -14856,6 +14858,16 @@
     "count": 2
    }
   ],
+  "/destinations/museum-of-the-future": [
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   },
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
   "/destinations/dubai-municipality-head-office": [
    {
     "name": "Google",
@@ -15011,12 +15023,6 @@
     "name": "Google",
     "count": 1
    }
-  ],
-  "/destinations/american-university-in-dubai": [
-   {
-    "name": "Google",
-    "count": 1
-   }
   ]
  },
  "ref_pages": {
@@ -15067,6 +15073,10 @@
    },
    {
     "path": "/destinations/coca-cola-arena",
+    "count": 1
+   },
+   {
+    "path": "/destinations/museum-of-the-future",
     "count": 1
    },
    {
@@ -15248,6 +15258,10 @@
     "count": 1
    },
    {
+    "path": "/destinations/museum-of-the-future",
+    "count": 1
+   },
+   {
     "path": "/lines/green-line",
     "count": 1
    },
@@ -15309,10 +15323,6 @@
    },
    {
     "path": "/destinations/dubai-garden-glow",
-    "count": 1
-   },
-   {
-    "path": "/destinations/american-university-in-dubai",
     "count": 1
    }
   ],
@@ -15488,7 +15498,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 237,
+   "count": 238,
    "ref_scheme": "g"
   },
   {
@@ -15550,7 +15560,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 806
+   "count": 807
   },
   {
    "id": "rus",
@@ -15617,7 +15627,7 @@
   {
    "id": "IN",
    "name": "India",
-   "count": 20
+   "count": 21
   },
   {
    "id": "DE",
@@ -15774,7 +15784,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 625
+   "count": 626
   },
   {
    "id": "tablet",
@@ -15801,7 +15811,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 537
+   "count": 538
   },
   {
    "id": "Safari",
@@ -15827,7 +15837,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 312
+   "count": 313
   },
   {
    "id": "Windows",
