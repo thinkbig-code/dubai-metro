@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-15T03:07:15Z",
+ "generated": "2026-11-15T07:56:08Z",
  "start": "2025-11-15",
  "end": "2026-11-16",
  "total": {
-  "total": 868,
+  "total": 869,
   "total_events": 376,
-  "total_utc": 868,
+  "total_utc": 869,
   "stats": [
    {
     "day": "2025-11-15",
@@ -10574,7 +10574,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 413
+    "monthly": 414
    },
    {
     "day": "2026-11-02",
@@ -10966,7 +10966,7 @@
      1
     ],
     "daily": 55,
-    "weekly": 56
+    "weekly": 57
    },
    {
     "day": "2026-11-15",
@@ -10976,6 +10976,8 @@
      0,
      0,
      0,
+     0,
+     1,
      0,
      1,
      0,
@@ -10992,11 +10994,9 @@
      0,
      0,
      0,
-     0,
-     0,
      0
     ],
-    "daily": 1
+    "daily": 2
    },
    {
     "day": "2026-11-16",
@@ -11375,6 +11375,19 @@
    }
   },
   {
+   "path": "/destinations/gdrfa-immigration-al-jafiliya",
+   "path_id": 113030966,
+   "title": "GDRFA Immigration Al Jafiliya Metro Station: Max (Red Line), 3 min walk",
+   "event": false,
+   "count": 4,
+   "daily": {
+    "2026-10-19": 1,
+    "2026-11-03": 1,
+    "2026-11-13": 1,
+    "2026-11-15": 1
+   }
+  },
+  {
    "path": "/destinations/dubai-land-department",
    "path_id": 112493634,
    "title": "Dubai Land Department Metro Station: Union (Red/Green lines), 8 min walk",
@@ -11569,18 +11582,6 @@
     "2026-10-23": 1,
     "2026-10-25": 1,
     "2026-11-06": 1
-   }
-  },
-  {
-   "path": "/destinations/gdrfa-immigration-al-jafiliya",
-   "path_id": 113030966,
-   "title": "GDRFA Immigration Al Jafiliya Metro Station: Max (Red Line), 3 min walk",
-   "event": false,
-   "count": 3,
-   "daily": {
-    "2026-10-19": 1,
-    "2026-11-03": 1,
-    "2026-11-13": 1
    }
   },
   {
@@ -14220,9 +14221,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 492,
+  "visits": 493,
   "events_total": 376,
-  "goatcounter_total_with_events": 868,
+  "goatcounter_total_with_events": 869,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -14268,7 +14269,7 @@
    "2026-11-12": 23,
    "2026-11-13": 38,
    "2026-11-14": 28,
-   "2026-11-15": 1
+   "2026-11-15": 2
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -14660,6 +14661,20 @@
     "count": 1
    }
   ],
+  "/destinations/gdrfa-immigration-al-jafiliya": [
+   {
+    "name": "(direct or unknown)",
+    "count": 2
+   },
+   {
+    "name": "Google",
+    "count": 1
+   },
+   {
+    "name": "chatgpt.com",
+    "count": 1
+   }
+  ],
   "/destinations/dubai-land-department": [
    {
     "name": "Google",
@@ -14724,20 +14739,6 @@
    {
     "name": "Google",
     "count": 2
-   },
-   {
-    "name": "chatgpt.com",
-    "count": 1
-   }
-  ],
-  "/destinations/gdrfa-immigration-al-jafiliya": [
-   {
-    "name": "(direct or unknown)",
-    "count": 1
-   },
-   {
-    "name": "Google",
-    "count": 1
    },
    {
     "name": "chatgpt.com",
@@ -15044,15 +15045,15 @@
     "count": 2
    },
    {
+    "path": "/destinations/gdrfa-immigration-al-jafiliya",
+    "count": 2
+   },
+   {
     "path": "/lines/red-line",
     "count": 2
    },
    {
     "path": "/destinations/us-consulate-dubai",
-    "count": 1
-   },
-   {
-    "path": "/destinations/gdrfa-immigration-al-jafiliya",
     "count": 1
    },
    {
@@ -15364,15 +15365,15 @@
     "count": 1
    },
    {
+    "path": "/destinations/gdrfa-immigration-al-jafiliya",
+    "count": 1
+   },
+   {
     "path": "/destinations/dubai-police-general-headquarters",
     "count": 1
    },
    {
     "path": "/destinations/times-square-center",
-    "count": 1
-   },
-   {
-    "path": "/destinations/gdrfa-immigration-al-jafiliya",
     "count": 1
    },
    {
@@ -15492,7 +15493,7 @@
  "toprefs": [
   {
    "name": "",
-   "count": 307,
+   "count": 308,
    "ref_scheme": "o"
   },
   {
@@ -15560,7 +15561,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 807
+   "count": 808
   },
   {
    "id": "rus",
@@ -15617,7 +15618,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 698
+   "count": 699
   },
   {
    "id": "US",
@@ -15784,7 +15785,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 626
+   "count": 627
   },
   {
    "id": "tablet",
@@ -15816,7 +15817,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 325
+   "count": 326
   },
   {
    "id": "Firefox",
@@ -15832,7 +15833,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 315
+   "count": 316
   },
   {
    "id": "Android",
