@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-15T11:32:31Z",
+ "generated": "2026-11-15T18:00:29Z",
  "start": "2025-11-15",
  "end": "2026-11-16",
  "total": {
-  "total": 869,
-  "total_events": 376,
-  "total_utc": 869,
+  "total": 874,
+  "total_events": 378,
+  "total_utc": 874,
   "stats": [
    {
     "day": "2025-11-15",
@@ -10574,7 +10574,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 414
+    "monthly": 419
    },
    {
     "day": "2026-11-02",
@@ -10966,7 +10966,7 @@
      1
     ],
     "daily": 55,
-    "weekly": 57
+    "weekly": 62
    },
    {
     "day": "2026-11-15",
@@ -10986,17 +10986,17 @@
      0,
      0,
      0,
+     1,
      0,
      0,
      0,
-     0,
-     0,
+     4,
      0,
      0,
      0,
      0
     ],
-    "daily": 2
+    "daily": 7
    },
    {
     "day": "2026-11-16",
@@ -11036,7 +11036,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 197,
+   "count": 198,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -11076,7 +11076,8 @@
     "2026-11-11": 11,
     "2026-11-12": 11,
     "2026-11-13": 13,
-    "2026-11-14": 10
+    "2026-11-14": 10,
+    "2026-11-15": 1
    }
   },
   {
@@ -11084,7 +11085,7 @@
    "path_id": 116082941,
    "title": "Nearest Metro Station to Me in Dubai: Find It by Location",
    "event": false,
-   "count": 88,
+   "count": 89,
    "daily": {
     "2026-10-28": 1,
     "2026-10-31": 1,
@@ -11099,7 +11100,8 @@
     "2026-11-11": 12,
     "2026-11-12": 7,
     "2026-11-13": 15,
-    "2026-11-14": 11
+    "2026-11-14": 11,
+    "2026-11-15": 1
    }
   },
   {
@@ -11317,6 +11319,20 @@
    }
   },
   {
+   "path": "geo/fail/-",
+   "path_id": 110447348,
+   "title": "en",
+   "event": true,
+   "count": 5,
+   "daily": {
+    "2026-10-08": 1,
+    "2026-11-07": 1,
+    "2026-11-11": 1,
+    "2026-11-12": 1,
+    "2026-11-15": 1
+   }
+  },
+  {
    "path": "/tl.html",
    "path_id": 110332677,
    "title": "Interactive na Mapa ng Dubai Metro: Metro, Tram, Palm Monorail",
@@ -11453,19 +11469,6 @@
    }
   },
   {
-   "path": "geo/fail/-",
-   "path_id": 110447348,
-   "title": "en",
-   "event": true,
-   "count": 4,
-   "daily": {
-    "2026-10-08": 1,
-    "2026-11-07": 1,
-    "2026-11-11": 1,
-    "2026-11-12": 1
-   }
-  },
-  {
    "path": "map_station_click/moe/-",
    "path_id": 110312988,
    "title": "en|home|phone",
@@ -11522,6 +11525,18 @@
     "2026-11-07": 1,
     "2026-11-11": 1,
     "2026-11-13": 1
+   }
+  },
+  {
+   "path": "geo/ok/fc",
+   "path_id": 119255504,
+   "title": "en",
+   "event": true,
+   "count": 3,
+   "daily": {
+    "2026-11-05": 1,
+    "2026-11-14": 1,
+    "2026-11-15": 1
    }
   },
   {
@@ -11582,6 +11597,17 @@
     "2026-10-23": 1,
     "2026-10-25": 1,
     "2026-11-06": 1
+   }
+  },
+  {
+   "path": "/destinations/museum-of-the-future",
+   "path_id": 111942261,
+   "title": "Museum of the Future Metro Station: Emirates Towers (Red Line), 5 min walk",
+   "event": false,
+   "count": 3,
+   "daily": {
+    "2026-10-13": 1,
+    "2026-11-15": 2
    }
   },
   {
@@ -11777,17 +11803,6 @@
    }
   },
   {
-   "path": "geo/ok/fc",
-   "path_id": 119255504,
-   "title": "en",
-   "event": true,
-   "count": 2,
-   "daily": {
-    "2026-11-05": 1,
-    "2026-11-14": 1
-   }
-  },
-  {
    "path": "/destinations/reef-mall",
    "path_id": 119231973,
    "title": "Reef Mall Metro Station: Salah Al Din (Green Line), 2 min walk",
@@ -11895,17 +11910,6 @@
    "daily": {
     "2026-10-20": 1,
     "2026-10-31": 1
-   }
-  },
-  {
-   "path": "/destinations/museum-of-the-future",
-   "path_id": 111942261,
-   "title": "Museum of the Future Metro Station: Emirates Towers (Red Line), 5 min walk",
-   "event": false,
-   "count": 2,
-   "daily": {
-    "2026-10-13": 1,
-    "2026-11-15": 1
    }
   },
   {
@@ -14221,9 +14225,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 493,
-  "events_total": 376,
-  "goatcounter_total_with_events": 869,
+  "visits": 496,
+  "events_total": 378,
+  "goatcounter_total_with_events": 874,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -14269,7 +14273,7 @@
    "2026-11-12": 23,
    "2026-11-13": 38,
    "2026-11-14": 28,
-   "2026-11-15": 2
+   "2026-11-15": 5
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -14328,9 +14332,9 @@
   ],
   "nearest_station": {
    "denied": 15,
-   "ok": 40,
+   "ok": 41,
+   "fail": 5,
    "far": 14,
-   "fail": 4,
    "outside": 1
   },
   "visitors_new_return": {
@@ -14492,7 +14496,7 @@
    },
    {
     "name": "dubaimetro.fyi/nearest-station",
-    "count": 45
+    "count": 46
    },
    {
     "name": "dubaimetro.fyi",
@@ -14559,6 +14563,10 @@
    {
     "name": "Google",
     "count": 88
+   },
+   {
+    "name": "(direct or unknown)",
+    "count": 1
    }
   ],
   "/destinations/etihad-rail-dubai": [
@@ -14745,6 +14753,16 @@
     "count": 1
    }
   ],
+  "/destinations/museum-of-the-future": [
+   {
+    "name": "Google",
+    "count": 2
+   },
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   }
+  ],
   "/destinations/palm-jumeirah-mall": [
    {
     "name": "chatgpt.com",
@@ -14857,16 +14875,6 @@
    {
     "name": "Google",
     "count": 2
-   }
-  ],
-  "/destinations/museum-of-the-future": [
-   {
-    "name": "(direct or unknown)",
-    "count": 1
-   },
-   {
-    "name": "Google",
-    "count": 1
    }
   ],
   "/destinations/dubai-municipality-head-office": [
@@ -15053,7 +15061,15 @@
     "count": 2
    },
    {
+    "path": "/nearest-station",
+    "count": 1
+   },
+   {
     "path": "/destinations/us-consulate-dubai",
+    "count": 1
+   },
+   {
+    "path": "/destinations/museum-of-the-future",
     "count": 1
    },
    {
@@ -15077,10 +15093,6 @@
     "count": 1
    },
    {
-    "path": "/destinations/museum-of-the-future",
-    "count": 1
-   },
-   {
     "path": "/destinations/st-mary-s-catholic-church",
     "count": 1
    },
@@ -15100,7 +15112,7 @@
   "dubaimetro.fyi/nearest-station": [
    {
     "path": "/",
-    "count": 45
+    "count": 46
    },
    {
     "path": "/map",
@@ -15219,6 +15231,10 @@
     "count": 2
    },
    {
+    "path": "/destinations/museum-of-the-future",
+    "count": 2
+   },
+   {
     "path": "/destinations/american-hospital-dubai",
     "count": 2
    },
@@ -15256,10 +15272,6 @@
    },
    {
     "path": "/destinations/coca-cola-arena",
-    "count": 1
-   },
-   {
-    "path": "/destinations/museum-of-the-future",
     "count": 1
    },
    {
@@ -15493,13 +15505,13 @@
  "toprefs": [
   {
    "name": "",
-   "count": 308,
+   "count": 309,
    "ref_scheme": "o"
   },
   {
    "id": "Google",
    "name": "Google",
-   "count": 238,
+   "count": 239,
    "ref_scheme": "g"
   },
   {
@@ -15561,7 +15573,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 808
+   "count": 813
   },
   {
    "id": "rus",
@@ -15618,7 +15630,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 699
+   "count": 703
   },
   {
    "id": "US",
@@ -15671,6 +15683,11 @@
    "count": 3
   },
   {
+   "id": "HK",
+   "name": "Hong Kong",
+   "count": 3
+  },
+  {
    "id": "KR",
    "name": "South Korea",
    "count": 3
@@ -15678,11 +15695,6 @@
   {
    "id": "CO",
    "name": "Colombia",
-   "count": 2
-  },
-  {
-   "id": "HK",
-   "name": "Hong Kong",
    "count": 2
   },
   {
@@ -15785,7 +15797,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 627
+   "count": 632
   },
   {
    "id": "tablet",
@@ -15812,12 +15824,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 538
+   "count": 542
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 326
+   "count": 327
   },
   {
    "id": "Firefox",
@@ -15831,14 +15843,14 @@
  ],
  "systems": [
   {
-   "id": "iOS",
-   "name": "iOS",
-   "count": 316
-  },
-  {
    "id": "Android",
    "name": "Android",
-   "count": 313
+   "count": 317
+  },
+  {
+   "id": "iOS",
+   "name": "iOS",
+   "count": 317
   },
   {
    "id": "Windows",

@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-15T11:31:17Z",
+ "generated": "2026-11-15T17:59:15Z",
  "start": "2026-10-16",
  "end": "2026-11-16",
  "total": {
-  "total": 549,
-  "total_events": 181,
-  "total_utc": 549,
+  "total": 554,
+  "total_events": 183,
+  "total_utc": 554,
   "stats": [
    {
     "day": "2026-10-16",
@@ -521,7 +521,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 414
+    "monthly": 419
    },
    {
     "day": "2026-11-02",
@@ -883,7 +883,7 @@
      0
     ],
     "daily": 57,
-    "weekly": 114
+    "weekly": 119
    },
    {
     "day": "2026-11-14",
@@ -933,17 +933,17 @@
      0,
      0,
      0,
+     1,
      0,
      0,
      0,
-     0,
-     0,
+     4,
      0,
      0,
      0,
      0
     ],
-    "daily": 2
+    "daily": 7
    },
    {
     "day": "2026-11-16",
@@ -983,7 +983,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 101,
+   "count": 102,
    "daily": {
     "2026-10-17": 1,
     "2026-10-18": 1,
@@ -1009,7 +1009,8 @@
     "2026-11-11": 11,
     "2026-11-12": 11,
     "2026-11-13": 13,
-    "2026-11-14": 10
+    "2026-11-14": 10,
+    "2026-11-15": 1
    }
   },
   {
@@ -1017,7 +1018,7 @@
    "path_id": 116082941,
    "title": "Nearest Metro Station to Me in Dubai: Find It by Location",
    "event": false,
-   "count": 88,
+   "count": 89,
    "daily": {
     "2026-10-28": 1,
     "2026-10-31": 1,
@@ -1032,7 +1033,8 @@
     "2026-11-11": 12,
     "2026-11-12": 7,
     "2026-11-13": 15,
-    "2026-11-14": 11
+    "2026-11-14": 11,
+    "2026-11-15": 1
    }
   },
   {
@@ -1294,6 +1296,19 @@
    }
   },
   {
+   "path": "geo/fail/-",
+   "path_id": 110447348,
+   "title": "en",
+   "event": true,
+   "count": 4,
+   "daily": {
+    "2026-11-07": 1,
+    "2026-11-11": 1,
+    "2026-11-12": 1,
+    "2026-11-15": 1
+   }
+  },
+  {
    "path": "/ru.html",
    "path_id": 109203485,
    "title": "Карта метро Дубая и планировщик маршрутов: метро, трамвай, монорельс",
@@ -1336,6 +1351,18 @@
     "2026-11-07": 1,
     "2026-11-11": 1,
     "2026-11-13": 1
+   }
+  },
+  {
+   "path": "geo/ok/fc",
+   "path_id": 119255504,
+   "title": "en",
+   "event": true,
+   "count": 3,
+   "daily": {
+    "2026-11-05": 1,
+    "2026-11-14": 1,
+    "2026-11-15": 1
    }
   },
   {
@@ -1435,18 +1462,6 @@
    }
   },
   {
-   "path": "geo/fail/-",
-   "path_id": 110447348,
-   "title": "en",
-   "event": true,
-   "count": 3,
-   "daily": {
-    "2026-11-07": 1,
-    "2026-11-11": 1,
-    "2026-11-12": 1
-   }
-  },
-  {
    "path": "station_pair_route_search/jge/et",
    "path_id": 121166484,
    "title": "en|geo",
@@ -1518,17 +1533,6 @@
    "count": 2,
    "daily": {
     "2026-11-06": 1,
-    "2026-11-14": 1
-   }
-  },
-  {
-   "path": "geo/ok/fc",
-   "path_id": 119255504,
-   "title": "en",
-   "event": true,
-   "count": 2,
-   "daily": {
-    "2026-11-05": 1,
     "2026-11-14": 1
    }
   },
@@ -1640,6 +1644,16 @@
    "daily": {
     "2026-10-20": 1,
     "2026-10-31": 1
+   }
+  },
+  {
+   "path": "/destinations/museum-of-the-future",
+   "path_id": 111942261,
+   "title": "Museum of the Future Metro Station: Emirates Towers (Red Line), 5 min walk",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-11-15": 2
    }
   },
   {
@@ -2650,16 +2664,6 @@
    }
   },
   {
-   "path": "/destinations/museum-of-the-future",
-   "path_id": 111942261,
-   "title": "Museum of the Future Metro Station: Emirates Towers (Red Line), 5 min walk",
-   "event": false,
-   "count": 1,
-   "daily": {
-    "2026-11-15": 1
-   }
-  },
-  {
    "path": "/destinations/dubai-municipality-head-office",
    "path_id": 111690629,
    "title": "Dubai Municipality Head Office Metro Station: Union, 9 min walk",
@@ -2822,9 +2826,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 368,
-  "events_total": 181,
-  "goatcounter_total_with_events": 549,
+  "visits": 371,
+  "events_total": 183,
+  "goatcounter_total_with_events": 554,
   "page_loads_by_day": {
    "2026-10-16": 4,
    "2026-10-17": 3,
@@ -2856,7 +2860,7 @@
    "2026-11-12": 23,
    "2026-11-13": 38,
    "2026-11-14": 28,
-   "2026-11-15": 2
+   "2026-11-15": 5
   },
   "visitor_days_by_day": {
    "2026-10-17": 1,
@@ -2907,9 +2911,9 @@
   ],
   "nearest_station": {
    "denied": 12,
-   "ok": 38,
+   "ok": 39,
    "far": 14,
-   "fail": 3,
+   "fail": 4,
    "outside": 1
   },
   "visitors_new_return": {
@@ -3067,7 +3071,7 @@
   "/": [
    {
     "name": "dubaimetro.fyi/nearest-station",
-    "count": 45
+    "count": 46
    },
    {
     "name": "dubaimetro.fyi",
@@ -3122,6 +3126,10 @@
    {
     "name": "Google",
     "count": 88
+   },
+   {
+    "name": "(direct or unknown)",
+    "count": 1
    }
   ],
   "/destinations/etihad-rail-dubai": [
@@ -3350,6 +3358,12 @@
     "count": 2
    }
   ],
+  "/destinations/museum-of-the-future": [
+   {
+    "name": "Google",
+    "count": 2
+   }
+  ],
   "/destinations/palm-jumeirah-mall": [
    {
     "name": "chatgpt.com",
@@ -3533,19 +3547,13 @@
     "name": "Yahoo",
     "count": 1
    }
-  ],
-  "/destinations/expo-city-dubai": [
-   {
-    "name": "Google",
-    "count": 1
-   }
   ]
  },
  "ref_pages": {
   "dubaimetro.fyi/nearest-station": [
    {
     "path": "/",
-    "count": 45
+    "count": 46
    },
    {
     "path": "/map",
@@ -3574,6 +3582,10 @@
    {
     "path": "/lines/red-line",
     "count": 2
+   },
+   {
+    "path": "/nearest-station",
+    "count": 1
    },
    {
     "path": "/destinations/etihad-rail-dubai",
@@ -3702,6 +3714,10 @@
     "count": 2
    },
    {
+    "path": "/destinations/museum-of-the-future",
+    "count": 2
+   },
+   {
     "path": "/destinations/american-hospital-dubai",
     "count": 2
    },
@@ -3787,10 +3803,6 @@
    },
    {
     "path": "/destinations/burj-khalifa",
-    "count": 1
-   },
-   {
-    "path": "/destinations/expo-city-dubai",
     "count": 1
    }
   ],
@@ -3933,12 +3945,12 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 232,
+   "count": 233,
    "ref_scheme": "g"
   },
   {
    "name": "",
-   "count": 62,
+   "count": 63,
    "ref_scheme": "o"
   },
   {
@@ -3976,7 +3988,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 519
+   "count": 524
   },
   {
    "id": "rus",
@@ -4023,7 +4035,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 457
+   "count": 461
   },
   {
    "id": "US",
@@ -4066,6 +4078,11 @@
    "count": 3
   },
   {
+   "id": "HK",
+   "name": "Hong Kong",
+   "count": 3
+  },
+  {
    "id": "BR",
    "name": "Brazil",
    "count": 2
@@ -4073,11 +4090,6 @@
   {
    "id": "CO",
    "name": "Colombia",
-   "count": 2
-  },
-  {
-   "id": "HK",
-   "name": "Hong Kong",
    "count": 2
   },
   {
@@ -4140,7 +4152,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 455
+   "count": 460
   },
   {
    "id": "tablet",
@@ -4167,24 +4179,24 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 334
+   "count": 338
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 215
+   "count": 216
   }
  ],
  "systems": [
   {
    "id": "Android",
    "name": "Android",
-   "count": 249
+   "count": 253
   },
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 209
+   "count": 210
   },
   {
    "id": "Windows",
