@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-16T12:05:10Z",
+ "generated": "2026-11-16T22:32:32Z",
  "start": "2025-11-16",
  "end": "2026-11-17",
  "total": {
-  "total": 885,
-  "total_events": 380,
-  "total_utc": 885,
+  "total": 891,
+  "total_events": 381,
+  "total_utc": 891,
   "stats": [
    {
     "day": "2025-11-16",
@@ -10544,7 +10544,7 @@
     ],
     "daily": 12,
     "weekly": 122,
-    "monthly": 430
+    "monthly": 436
    },
    {
     "day": "2026-11-02",
@@ -10966,7 +10966,7 @@
      0
     ],
     "daily": 8,
-    "weekly": 18
+    "weekly": 24
    },
    {
     "day": "2026-11-16",
@@ -10988,7 +10988,7 @@
      4,
      0,
      0,
-     0,
+     6,
      0,
      0,
      0,
@@ -10996,7 +10996,7 @@
      0,
      0
     ],
-    "daily": 10
+    "daily": 16
    },
    {
     "day": "2026-11-17",
@@ -11036,7 +11036,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 199,
+   "count": 200,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -11078,7 +11078,7 @@
     "2026-11-13": 13,
     "2026-11-14": 10,
     "2026-11-15": 1,
-    "2026-11-16": 1
+    "2026-11-16": 2
    }
   },
   {
@@ -11110,7 +11110,7 @@
    "path_id": 110447314,
    "title": "en",
    "event": true,
-   "count": 64,
+   "count": 65,
    "daily": {
     "2026-10-08": 7,
     "2026-10-09": 6,
@@ -11139,7 +11139,8 @@
     "2026-11-09": 2,
     "2026-11-12": 1,
     "2026-11-13": 1,
-    "2026-11-14": 2
+    "2026-11-14": 2,
+    "2026-11-16": 1
    }
   },
   {
@@ -11385,6 +11386,17 @@
    }
   },
   {
+   "path": "/destinations/egyptian-consulate-dubai",
+   "path_id": 119206104,
+   "title": "Egyptian Consulate Dubai Metro Station: BurJuman, 5 min walk",
+   "event": false,
+   "count": 4,
+   "daily": {
+    "2026-11-05": 1,
+    "2026-11-16": 3
+   }
+  },
+  {
    "path": "geo/ok/equiti",
    "path_id": 117954536,
    "title": "en",
@@ -11592,6 +11604,18 @@
     "2026-11-03": 1,
     "2026-11-09": 1,
     "2026-11-11": 1
+   }
+  },
+  {
+   "path": "/destinations/al-jalila-children-s-specialty-hospital",
+   "path_id": 117749447,
+   "title": "Al Jalila Children's Specialty Hospital Metro Station: Dubai Healthcare City",
+   "event": false,
+   "count": 3,
+   "daily": {
+    "2026-11-02": 1,
+    "2026-11-07": 1,
+    "2026-11-16": 1
    }
   },
   {
@@ -11841,17 +11865,6 @@
    "daily": {
     "2026-11-04": 1,
     "2026-11-06": 1
-   }
-  },
-  {
-   "path": "/destinations/al-jalila-children-s-specialty-hospital",
-   "path_id": 117749447,
-   "title": "Al Jalila Children's Specialty Hospital Metro Station: Dubai Healthcare City",
-   "event": false,
-   "count": 2,
-   "daily": {
-    "2026-11-02": 1,
-    "2026-11-07": 1
    }
   },
   {
@@ -12718,16 +12731,6 @@
    "count": 1,
    "daily": {
     "2026-11-06": 1
-   }
-  },
-  {
-   "path": "/destinations/egyptian-consulate-dubai",
-   "path_id": 119206104,
-   "title": "Egyptian Consulate Dubai Metro Station: BurJuman, 5 min walk",
-   "event": false,
-   "count": 1,
-   "daily": {
-    "2026-11-05": 1
    }
   },
   {
@@ -14243,9 +14246,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 505,
-  "events_total": 380,
-  "goatcounter_total_with_events": 885,
+  "visits": 510,
+  "events_total": 381,
+  "goatcounter_total_with_events": 891,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -14292,7 +14295,7 @@
    "2026-11-13": 38,
    "2026-11-14": 28,
    "2026-11-15": 6,
-   "2026-11-16": 8
+   "2026-11-16": 13
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -14325,14 +14328,14 @@
    "2026-11-12": 2,
    "2026-11-13": 2,
    "2026-11-14": 2,
-   "2026-11-16": 1
+   "2026-11-16": 2
   },
-  "visitor_days": 75,
-  "return_rate": 0.147,
+  "visitor_days": 76,
+  "return_rate": 0.145,
   "routes": 54,
   "routes_not_found": 0,
   "routes_per_visit": 0.11,
-  "routes_per_visitor_day": 0.51,
+  "routes_per_visitor_day": 0.5,
   "share_rate": 0.056,
   "shares": {
    "qr": 1,
@@ -14358,7 +14361,7 @@
    "outside": 1
   },
   "visitors_new_return": {
-   "new": 64,
+   "new": 65,
    "return": 11
   },
   "top_routes": [
@@ -14512,7 +14515,7 @@
   "/": [
    {
     "name": "(direct or unknown)",
-    "count": 98
+    "count": 99
    },
    {
     "name": "dubaimetro.fyi/nearest-station",
@@ -14697,6 +14700,16 @@
     "count": 1
    }
   ],
+  "/destinations/egyptian-consulate-dubai": [
+   {
+    "name": "(direct or unknown)",
+    "count": 3
+   },
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
   "/destinations/al-ghurair-centre": [
    {
     "name": "Google",
@@ -14761,6 +14774,20 @@
    {
     "name": "Google",
     "count": 3
+   }
+  ],
+  "/destinations/al-jalila-children-s-specialty-hospital": [
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   },
+   {
+    "name": "Google",
+    "count": 1
+   },
+   {
+    "name": "chatgpt.com",
+    "count": 1
    }
   ],
   "/map": [
@@ -14857,16 +14884,6 @@
    {
     "name": "Google",
     "count": 2
-   }
-  ],
-  "/destinations/al-jalila-children-s-specialty-hospital": [
-   {
-    "name": "(direct or unknown)",
-    "count": 1
-   },
-   {
-    "name": "chatgpt.com",
-    "count": 1
    }
   ],
   "/stations/city-centre-deira": [
@@ -15021,12 +15038,6 @@
     "count": 1
    }
   ],
-  "/destinations/egyptian-consulate-dubai": [
-   {
-    "name": "Google",
-    "count": 1
-   }
-  ],
   "/destinations/jebel-ali-free-zone": [
    {
     "name": "Google",
@@ -15062,7 +15073,7 @@
   "(direct or unknown)": [
    {
     "path": "/",
-    "count": 98
+    "count": 99
    },
    {
     "path": "/destinations/etihad-rail-dubai",
@@ -15071,6 +15082,10 @@
    {
     "path": "/destinations/gdrfa-immigration-al-jafiliya",
     "count": 4
+   },
+   {
+    "path": "/destinations/egyptian-consulate-dubai",
+    "count": 3
    },
    {
     "path": "/destinations/atlantis-the-palm",
@@ -15093,6 +15108,10 @@
     "count": 1
    },
    {
+    "path": "/destinations/al-jalila-children-s-specialty-hospital",
+    "count": 1
+   },
+   {
     "path": "/destinations/museum-of-the-future",
     "count": 1
    },
@@ -15102,10 +15121,6 @@
    },
    {
     "path": "/ar.html",
-    "count": 1
-   },
-   {
-    "path": "/destinations/al-jalila-children-s-specialty-hospital",
     "count": 1
    },
    {
@@ -15287,6 +15302,14 @@
     "count": 1
    },
    {
+    "path": "/destinations/egyptian-consulate-dubai",
+    "count": 1
+   },
+   {
+    "path": "/destinations/al-jalila-children-s-specialty-hospital",
+    "count": 1
+   },
+   {
     "path": "/destinations/reef-mall",
     "count": 1
    },
@@ -15351,10 +15374,6 @@
     "count": 1
    },
    {
-    "path": "/destinations/egyptian-consulate-dubai",
-    "count": 1
-   },
-   {
     "path": "/destinations/jebel-ali-free-zone",
     "count": 1
    },
@@ -15409,15 +15428,15 @@
     "count": 1
    },
    {
+    "path": "/destinations/al-jalila-children-s-specialty-hospital",
+    "count": 1
+   },
+   {
     "path": "/destinations/times-square-center",
     "count": 1
    },
    {
     "path": "/destinations/american-hospital-dubai",
-    "count": 1
-   },
-   {
-    "path": "/destinations/al-jalila-children-s-specialty-hospital",
     "count": 1
    },
    {
@@ -15535,13 +15554,13 @@
  "toprefs": [
   {
    "name": "",
-   "count": 312,
+   "count": 317,
    "ref_scheme": "o"
   },
   {
    "id": "Google",
    "name": "Google",
-   "count": 245,
+   "count": 246,
    "ref_scheme": "g"
   },
   {
@@ -15603,7 +15622,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 824
+   "count": 830
   },
   {
    "id": "rus",
@@ -15660,17 +15679,17 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 714
+   "count": 715
   },
   {
    "id": "US",
    "name": "United States",
-   "count": 62
+   "count": 65
   },
   {
    "id": "IN",
    "name": "India",
-   "count": 21
+   "count": 22
   },
   {
    "id": "DE",
@@ -15778,6 +15797,11 @@
    "count": 1
   },
   {
+   "id": "BD",
+   "name": "Bangladesh",
+   "count": 1
+  },
+  {
    "id": "CA",
    "name": "Canada",
    "count": 1
@@ -15827,7 +15851,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 643
+   "count": 644
   },
   {
    "id": "tablet",
@@ -15837,12 +15861,12 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 181
+   "count": 184
   },
   {
    "id": "desktophd",
    "name": "",
-   "count": 15
+   "count": 17
   },
   {
    "id": "unknown",
@@ -15854,7 +15878,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 548
+   "count": 554
   },
   {
    "id": "Safari",
@@ -15875,7 +15899,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 323
+   "count": 324
   },
   {
    "id": "iOS",
@@ -15885,7 +15909,7 @@
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 129
+   "count": 134
   },
   {
    "id": "macOS",
