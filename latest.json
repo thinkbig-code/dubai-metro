@@ -1,45 +1,13 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-15T23:11:14Z",
- "start": "2026-10-16",
- "end": "2026-11-16",
+ "generated": "2026-11-16T03:09:24Z",
+ "start": "2026-10-17",
+ "end": "2026-11-17",
  "total": {
-  "total": 555,
+  "total": 551,
   "total_events": 183,
-  "total_utc": 555,
+  "total_utc": 551,
   "stats": [
-   {
-    "day": "2026-10-16",
-    "hourly": [
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     1,
-     0,
-     0,
-     1,
-     1,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     1
-    ],
-    "daily": 4,
-    "weekly": 47,
-    "monthly": 135
-   },
    {
     "day": "2026-10-17",
     "hourly": [
@@ -68,7 +36,9 @@
      0,
      1
     ],
-    "daily": 5
+    "daily": 5,
+    "weekly": 46,
+    "monthly": 131
    },
    {
     "day": "2026-10-18",
@@ -248,8 +218,7 @@
      0,
      0
     ],
-    "daily": 3,
-    "weekly": 74
+    "daily": 3
    },
    {
     "day": "2026-10-24",
@@ -279,7 +248,8 @@
      2,
      0
     ],
-    "daily": 12
+    "daily": 12,
+    "weekly": 74
    },
    {
     "day": "2026-10-25",
@@ -459,8 +429,7 @@
      0,
      0
     ],
-    "daily": 3,
-    "weekly": 85
+    "daily": 3
    },
    {
     "day": "2026-10-31",
@@ -490,7 +459,8 @@
      1,
      0
     ],
-    "daily": 11
+    "daily": 11,
+    "weekly": 101
    },
    {
     "day": "2026-11-01",
@@ -671,8 +641,7 @@
      0,
      0
     ],
-    "daily": 19,
-    "weekly": 229
+    "daily": 19
    },
    {
     "day": "2026-11-07",
@@ -702,7 +671,8 @@
      6,
      0
     ],
-    "daily": 32
+    "daily": 32,
+    "weekly": 267
    },
    {
     "day": "2026-11-08",
@@ -882,8 +852,7 @@
      0,
      0
     ],
-    "daily": 57,
-    "weekly": 120
+    "daily": 57
    },
    {
     "day": "2026-11-14",
@@ -913,7 +882,8 @@
      0,
      1
     ],
-    "daily": 55
+    "daily": 55,
+    "weekly": 63
    },
    {
     "day": "2026-11-15",
@@ -947,6 +917,36 @@
    },
    {
     "day": "2026-11-16",
+    "hourly": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "daily": 0
+   },
+   {
+    "day": "2026-11-17",
     "hourly": [
      0,
      0,
@@ -1042,9 +1042,8 @@
    "path_id": 110626146,
    "title": "Etihad Rail Dubai Station (Al Yalayis) Metro Station: Jumeirah Golf Estates",
    "event": false,
-   "count": 37,
+   "count": 36,
    "daily": {
-    "2026-10-16": 1,
     "2026-10-18": 1,
     "2026-10-20": 2,
     "2026-10-21": 2,
@@ -1099,9 +1098,8 @@
    "path_id": 112289662,
    "title": "Indian Consulate Dubai Metro Station: BurJuman, 7 min walk",
    "event": false,
-   "count": 14,
+   "count": 13,
    "daily": {
-    "2026-10-16": 1,
     "2026-10-18": 1,
     "2026-10-23": 1,
     "2026-10-26": 2,
@@ -1658,17 +1656,6 @@
    }
   },
   {
-   "path": "/destinations/palm-jumeirah-mall",
-   "path_id": 111939146,
-   "title": "Palm Jumeirah Mall and The View at The Palm Tram Stop: Palm Jumeirah Mall",
-   "event": false,
-   "count": 2,
-   "daily": {
-    "2026-10-16": 1,
-    "2026-10-17": 1
-   }
-  },
-  {
    "path": "/destinations/american-hospital-dubai",
    "path_id": 111868353,
    "title": "American Hospital Dubai Metro Station: Oud Metha (Green Line), 17 min walk",
@@ -1677,17 +1664,6 @@
    "daily": {
     "2026-10-24": 1,
     "2026-11-04": 1
-   }
-  },
-  {
-   "path": "/lines/red-line",
-   "path_id": 111681936,
-   "title": "Dubai Metro Red Line: Stations, Expo Branch, Map and Hours",
-   "event": false,
-   "count": 2,
-   "daily": {
-    "2026-10-16": 1,
-    "2026-10-22": 1
    }
   },
   {
@@ -2665,6 +2641,16 @@
    }
   },
   {
+   "path": "/destinations/palm-jumeirah-mall",
+   "path_id": 111939146,
+   "title": "Palm Jumeirah Mall and The View at The Palm Tram Stop: Palm Jumeirah Mall",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-10-17": 1
+   }
+  },
+  {
    "path": "/destinations/dubai-municipality-head-office",
    "path_id": 111690629,
    "title": "Dubai Municipality Head Office Metro Station: Union, 9 min walk",
@@ -2672,6 +2658,16 @@
    "count": 1,
    "daily": {
     "2026-10-29": 1
+   }
+  },
+  {
+   "path": "/lines/red-line",
+   "path_id": 111681936,
+   "title": "Dubai Metro Red Line: Stations, Expo Branch, Map and Hours",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-10-22": 1
    }
   },
   {
@@ -2827,11 +2823,10 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 372,
+  "visits": 368,
   "events_total": 183,
-  "goatcounter_total_with_events": 555,
+  "goatcounter_total_with_events": 551,
   "page_loads_by_day": {
-   "2026-10-16": 4,
    "2026-10-17": 3,
    "2026-10-18": 4,
    "2026-10-19": 4,
@@ -3136,7 +3131,7 @@
   "/destinations/etihad-rail-dubai": [
    {
     "name": "Google",
-    "count": 34
+    "count": 33
    },
    {
     "name": "chatgpt.com",
@@ -3150,7 +3145,7 @@
   "/destinations/indian-consulate-dubai": [
    {
     "name": "Google",
-    "count": 14
+    "count": 13
    }
   ],
   "/destinations/rashid-hospital": [
@@ -3365,21 +3360,9 @@
     "count": 2
    }
   ],
-  "/destinations/palm-jumeirah-mall": [
-   {
-    "name": "chatgpt.com",
-    "count": 2
-   }
-  ],
   "/destinations/american-hospital-dubai": [
    {
     "name": "Google",
-    "count": 2
-   }
-  ],
-  "/lines/red-line": [
-   {
-    "name": "(direct or unknown)",
     "count": 2
    }
   ],
@@ -3548,6 +3531,18 @@
     "name": "Yahoo",
     "count": 1
    }
+  ],
+  "/destinations/expo-city-dubai": [
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
+  "/destinations/dubai-creek-harbour": [
+   {
+    "name": "chatgpt.com",
+    "count": 1
+   }
   ]
  },
  "ref_pages": {
@@ -3578,10 +3573,6 @@
    },
    {
     "path": "/ru.html",
-    "count": 2
-   },
-   {
-    "path": "/lines/red-line",
     "count": 2
    },
    {
@@ -3628,11 +3619,11 @@
    },
    {
     "path": "/destinations/etihad-rail-dubai",
-    "count": 34
+    "count": 33
    },
    {
     "path": "/destinations/indian-consulate-dubai",
-    "count": 14
+    "count": 13
    },
    {
     "path": "/destinations/rashid-hospital",
@@ -3805,6 +3796,10 @@
    {
     "path": "/destinations/burj-khalifa",
     "count": 1
+   },
+   {
+    "path": "/destinations/expo-city-dubai",
+    "count": 1
    }
   ],
   "com.reddit.frontpage": [
@@ -3824,10 +3819,6 @@
    },
    {
     "path": "/ru.html",
-    "count": 2
-   },
-   {
-    "path": "/destinations/palm-jumeirah-mall",
     "count": 2
    },
    {
@@ -3876,6 +3867,10 @@
    },
    {
     "path": "/destinations/al-fahidi",
+    "count": 1
+   },
+   {
+    "path": "/destinations/dubai-creek-harbour",
     "count": 1
    }
   ],
@@ -3946,18 +3941,18 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 234,
+   "count": 232,
    "ref_scheme": "g"
   },
   {
    "name": "",
-   "count": 63,
+   "count": 62,
    "ref_scheme": "o"
   },
   {
    "id": "chatgpt.com",
    "name": "chatgpt.com",
-   "count": 21,
+   "count": 20,
    "ref_scheme": "c"
   },
   {
@@ -3989,7 +3984,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 525
+   "count": 522
   },
   {
    "id": "rus",
@@ -4007,14 +4002,14 @@
    "count": 4
   },
   {
-   "id": "deu",
-   "name": "German",
-   "count": 4
-  },
-  {
    "id": "zho",
    "name": "Chinese",
    "count": 4
+  },
+  {
+   "id": "deu",
+   "name": "German",
+   "count": 3
   },
   {
    "id": "fra",
@@ -4036,7 +4031,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 462
+   "count": 458
   },
   {
    "id": "US",
@@ -4153,7 +4148,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 461
+   "count": 457
   },
   {
    "id": "tablet",
@@ -4180,24 +4175,24 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 338
+   "count": 336
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 217
+   "count": 215
   }
  ],
  "systems": [
   {
    "id": "Android",
    "name": "Android",
-   "count": 253
+   "count": 251
   },
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 211
+   "count": 209
   },
   {
    "id": "Windows",
