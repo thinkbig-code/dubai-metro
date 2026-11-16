@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-16T08:02:44Z",
+ "generated": "2026-11-16T12:04:11Z",
  "start": "2026-10-17",
  "end": "2026-11-17",
  "total": {
-  "total": 556,
-  "total_events": 184,
-  "total_utc": 556,
+  "total": 561,
+  "total_events": 185,
+  "total_utc": 561,
   "stats": [
    {
     "day": "2026-10-17",
@@ -491,7 +491,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 425
+    "monthly": 430
    },
    {
     "day": "2026-11-02",
@@ -883,7 +883,7 @@
      1
     ],
     "daily": 55,
-    "weekly": 68
+    "weekly": 73
    },
    {
     "day": "2026-11-15",
@@ -931,8 +931,8 @@
      0,
      0,
      0,
-     0,
-     0,
+     1,
+     4,
      0,
      0,
      0,
@@ -943,7 +943,7 @@
      0,
      0
     ],
-    "daily": 5
+    "daily": 10
    },
    {
     "day": "2026-11-17",
@@ -983,7 +983,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 102,
+   "count": 103,
    "daily": {
     "2026-10-17": 1,
     "2026-10-18": 1,
@@ -1010,7 +1010,8 @@
     "2026-11-12": 11,
     "2026-11-13": 13,
     "2026-11-14": 10,
-    "2026-11-15": 1
+    "2026-11-15": 1,
+    "2026-11-16": 1
    }
   },
   {
@@ -1042,7 +1043,7 @@
    "path_id": 110626146,
    "title": "Etihad Rail Dubai Station (Al Yalayis) Metro Station: Jumeirah Golf Estates",
    "event": false,
-   "count": 36,
+   "count": 37,
    "daily": {
     "2026-10-18": 1,
     "2026-10-20": 2,
@@ -1061,7 +1062,8 @@
     "2026-11-09": 2,
     "2026-11-10": 3,
     "2026-11-13": 1,
-    "2026-11-14": 1
+    "2026-11-14": 1,
+    "2026-11-16": 1
    }
   },
   {
@@ -1259,6 +1261,32 @@
    }
   },
   {
+   "path": "/destinations/al-ghurair-centre",
+   "path_id": 117012967,
+   "title": "Al Ghurair Centre Metro Station: Union (Red/Green lines), 6 min walk",
+   "event": false,
+   "count": 4,
+   "daily": {
+    "2026-10-31": 1,
+    "2026-11-08": 1,
+    "2026-11-14": 1,
+    "2026-11-16": 1
+   }
+  },
+  {
+   "path": "/destinations/aster-hospital-al-qusais",
+   "path_id": 116157918,
+   "title": "Aster Hospital Al Qusais Metro Station: Dubai Airport Free Zone",
+   "event": false,
+   "count": 4,
+   "daily": {
+    "2026-10-28": 1,
+    "2026-10-29": 1,
+    "2026-11-05": 1,
+    "2026-11-16": 1
+   }
+  },
+  {
    "path": "/destinations/al-mulla-plaza",
    "path_id": 114013835,
    "title": "Al Mulla Plaza Metro Station: Al Qiyadah (Green Line), 7 min walk",
@@ -1388,30 +1416,6 @@
     "2026-11-03": 1,
     "2026-11-09": 1,
     "2026-11-11": 1
-   }
-  },
-  {
-   "path": "/destinations/al-ghurair-centre",
-   "path_id": 117012967,
-   "title": "Al Ghurair Centre Metro Station: Union (Red/Green lines), 6 min walk",
-   "event": false,
-   "count": 3,
-   "daily": {
-    "2026-10-31": 1,
-    "2026-11-08": 1,
-    "2026-11-14": 1
-   }
-  },
-  {
-   "path": "/destinations/aster-hospital-al-qusais",
-   "path_id": 116157918,
-   "title": "Aster Hospital Al Qusais Metro Station: Dubai Airport Free Zone",
-   "event": false,
-   "count": 3,
-   "daily": {
-    "2026-10-28": 1,
-    "2026-10-29": 1,
-    "2026-11-05": 1
    }
   },
   {
@@ -1711,6 +1715,16 @@
    "daily": {
     "2026-11-06": 1,
     "2026-11-14": 1
+   }
+  },
+  {
+   "path": "route/p_dxb_airport_terminal_3/p_al_ghurair_centre",
+   "path_id": 122853708,
+   "title": "en|landing:destinations-al-ghurair-centre|ok|first_landing",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-16": 1
    }
   },
   {
@@ -2826,9 +2840,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 372,
-  "events_total": 184,
-  "goatcounter_total_with_events": 556,
+  "visits": 376,
+  "events_total": 185,
+  "goatcounter_total_with_events": 561,
   "page_loads_by_day": {
    "2026-10-17": 3,
    "2026-10-18": 4,
@@ -2860,7 +2874,7 @@
    "2026-11-13": 38,
    "2026-11-14": 28,
    "2026-11-15": 6,
-   "2026-11-16": 4
+   "2026-11-16": 8
   },
   "visitor_days_by_day": {
    "2026-10-17": 1,
@@ -2889,11 +2903,11 @@
   },
   "visitor_days": 41,
   "return_rate": 0.244,
-  "routes": 17,
+  "routes": 18,
   "routes_not_found": 0,
   "routes_per_visit": 0.05,
-  "routes_per_visitor_day": 0.29,
-  "share_rate": 0.176,
+  "routes_per_visitor_day": 0.32,
+  "share_rate": 0.167,
   "shares": {
    "qr": 1,
    "copy": 1,
@@ -2925,6 +2939,10 @@
    {
     "name": "jge > et",
     "count": 2
+   },
+   {
+    "name": "p_dxb_airport_terminal_3 > p_al_ghurair_centre",
+    "count": 1
    },
    {
     "name": "sobha > moe",
@@ -2977,13 +2995,13 @@
    {
     "name": "wtc > p_st_mary_s_catholic_church",
     "count": 1
-   },
-   {
-    "name": "lp > p_dubai_creek_harbour",
-    "count": 1
    }
   ],
   "top_origins": [
+   {
+    "name": "p_dxb_airport_terminal_3",
+    "count": 3
+   },
    {
     "name": "stadium",
     "count": 3
@@ -2994,10 +3012,6 @@
    },
    {
     "name": "bk",
-    "count": 2
-   },
-   {
-    "name": "p_dxb_airport_terminal_3",
     "count": 2
    },
    {
@@ -3043,6 +3057,10 @@
     "count": 2
    },
    {
+    "name": "p_al_ghurair_centre",
+    "count": 1
+   },
+   {
     "name": "ccd",
     "count": 1
    },
@@ -3060,10 +3078,6 @@
    },
    {
     "name": "p_al_jalila_children_s_specialty_hospital",
-    "count": 1
-   },
-   {
-    "name": "p_american_hospital_dubai",
     "count": 1
    }
   ]
@@ -3121,6 +3135,10 @@
    {
     "name": "dubaimetro.fyi/stations/insurancemarket",
     "count": 1
+   },
+   {
+    "name": "dubaimetro.fyi/destinations/al-ghurair-centre",
+    "count": 1
    }
   ],
   "/nearest-station": [
@@ -3136,7 +3154,7 @@
   "/destinations/etihad-rail-dubai": [
    {
     "name": "Google",
-    "count": 33
+    "count": 34
    },
    {
     "name": "chatgpt.com",
@@ -3203,6 +3221,18 @@
     "count": 1
    }
   ],
+  "/destinations/al-ghurair-centre": [
+   {
+    "name": "Google",
+    "count": 4
+   }
+  ],
+  "/destinations/aster-hospital-al-qusais": [
+   {
+    "name": "Google",
+    "count": 4
+   }
+  ],
   "/destinations/al-mulla-plaza": [
    {
     "name": "Google",
@@ -3242,18 +3272,6 @@
    }
   ],
   "/destinations/international-modern-hospital": [
-   {
-    "name": "Google",
-    "count": 3
-   }
-  ],
-  "/destinations/al-ghurair-centre": [
-   {
-    "name": "Google",
-    "count": 3
-   }
-  ],
-  "/destinations/aster-hospital-al-qusais": [
    {
     "name": "Google",
     "count": 3
@@ -3624,7 +3642,7 @@
    },
    {
     "path": "/destinations/etihad-rail-dubai",
-    "count": 33
+    "count": 34
    },
    {
     "path": "/destinations/indian-consulate-dubai",
@@ -3647,6 +3665,14 @@
     "count": 4
    },
    {
+    "path": "/destinations/al-ghurair-centre",
+    "count": 4
+   },
+   {
+    "path": "/destinations/aster-hospital-al-qusais",
+    "count": 4
+   },
+   {
     "path": "/destinations/al-mulla-plaza",
     "count": 4
    },
@@ -3664,14 +3690,6 @@
    },
    {
     "path": "/destinations/international-modern-hospital",
-    "count": 3
-   },
-   {
-    "path": "/destinations/al-ghurair-centre",
-    "count": 3
-   },
-   {
-    "path": "/destinations/aster-hospital-al-qusais",
     "count": 3
    },
    {
@@ -3921,6 +3939,12 @@
     "count": 1
    }
   ],
+  "dubaimetro.fyi/destinations/al-ghurair-centre": [
+   {
+    "path": "/",
+    "count": 1
+   }
+  ],
   "Yahoo": [
    {
     "path": "/destinations/reef-mall",
@@ -3946,7 +3970,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 234,
+   "count": 237,
    "ref_scheme": "g"
   },
   {
@@ -3989,7 +4013,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 527
+   "count": 532
   },
   {
    "id": "rus",
@@ -4036,7 +4060,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 463
+   "count": 468
   },
   {
    "id": "US",
@@ -4153,7 +4177,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 462
+   "count": 467
   },
   {
    "id": "tablet",
@@ -4180,7 +4204,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 337
+   "count": 342
   },
   {
    "id": "Safari",
@@ -4192,7 +4216,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 252
+   "count": 257
   },
   {
    "id": "iOS",
