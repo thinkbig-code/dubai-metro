@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-16T03:10:29Z",
+ "generated": "2026-11-16T08:03:58Z",
  "start": "2025-11-16",
  "end": "2026-11-17",
  "total": {
-  "total": 875,
-  "total_events": 378,
-  "total_utc": 875,
+  "total": 880,
+  "total_events": 379,
+  "total_utc": 880,
   "stats": [
    {
     "day": "2025-11-16",
@@ -10544,7 +10544,7 @@
     ],
     "daily": 12,
     "weekly": 122,
-    "monthly": 420
+    "monthly": 425
    },
    {
     "day": "2026-11-02",
@@ -10966,7 +10966,7 @@
      0
     ],
     "daily": 8,
-    "weekly": 8
+    "weekly": 13
    },
    {
     "day": "2026-11-16",
@@ -10978,9 +10978,9 @@
      0,
      0,
      0,
-     0,
-     0,
-     0,
+     1,
+     3,
+     1,
      0,
      0,
      0,
@@ -10996,7 +10996,7 @@
      0,
      0
     ],
-    "daily": 0
+    "daily": 5
    },
    {
     "day": "2026-11-17",
@@ -11215,6 +11215,25 @@
    }
   },
   {
+   "path": "visit/return/-",
+   "path_id": 110878762,
+   "title": "en",
+   "event": true,
+   "count": 11,
+   "daily": {
+    "2026-10-10": 1,
+    "2026-11-01": 1,
+    "2026-11-02": 1,
+    "2026-11-03": 1,
+    "2026-11-05": 1,
+    "2026-11-07": 2,
+    "2026-11-09": 1,
+    "2026-11-12": 1,
+    "2026-11-13": 1,
+    "2026-11-16": 1
+   }
+  },
+  {
    "path": "/destinations/rashid-hospital",
    "path_id": 112804201,
    "title": "Rashid Hospital Metro Station: Oud Metha (Green Line), 5 min walk",
@@ -11233,24 +11252,6 @@
    }
   },
   {
-   "path": "visit/return/-",
-   "path_id": 110878762,
-   "title": "en",
-   "event": true,
-   "count": 10,
-   "daily": {
-    "2026-10-10": 1,
-    "2026-11-01": 1,
-    "2026-11-02": 1,
-    "2026-11-03": 1,
-    "2026-11-05": 1,
-    "2026-11-07": 2,
-    "2026-11-09": 1,
-    "2026-11-12": 1,
-    "2026-11-13": 1
-   }
-  },
-  {
    "path": "/destinations/meena-bazaar",
    "path_id": 115183314,
    "title": "Meena Bazaar Metro Station: Sharaf DG (Green Line), 9 min walk",
@@ -11265,6 +11266,20 @@
     "2026-11-07": 1,
     "2026-11-08": 1,
     "2026-11-11": 2
+   }
+  },
+  {
+   "path": "/destinations/gdrfa-immigration-al-jafiliya",
+   "path_id": 113030966,
+   "title": "GDRFA Immigration Al Jafiliya Metro Station: Max (Red Line), 3 min walk",
+   "event": false,
+   "count": 6,
+   "daily": {
+    "2026-10-19": 1,
+    "2026-11-03": 1,
+    "2026-11-13": 1,
+    "2026-11-15": 1,
+    "2026-11-16": 2
    }
   },
   {
@@ -11380,6 +11395,18 @@
    }
   },
   {
+   "path": "/destinations/al-mulla-plaza",
+   "path_id": 114013835,
+   "title": "Al Mulla Plaza Metro Station: Al Qiyadah (Green Line), 7 min walk",
+   "event": false,
+   "count": 4,
+   "daily": {
+    "2026-10-22": 1,
+    "2026-11-01": 1,
+    "2026-11-16": 2
+   }
+  },
+  {
    "path": "/destinations/jw-marriott-marquis-dubai",
    "path_id": 113368505,
    "title": "JW Marriott Marquis Dubai Metro Station: Business Bay, 12 min walk",
@@ -11389,19 +11416,6 @@
     "2026-10-21": 1,
     "2026-11-13": 1,
     "2026-11-14": 2
-   }
-  },
-  {
-   "path": "/destinations/gdrfa-immigration-al-jafiliya",
-   "path_id": 113030966,
-   "title": "GDRFA Immigration Al Jafiliya Metro Station: Max (Red Line), 3 min walk",
-   "event": false,
-   "count": 4,
-   "daily": {
-    "2026-10-19": 1,
-    "2026-11-03": 1,
-    "2026-11-13": 1,
-    "2026-11-15": 1
    }
   },
   {
@@ -11889,17 +11903,6 @@
    "daily": {
     "2026-10-22": 1,
     "2026-11-06": 1
-   }
-  },
-  {
-   "path": "/destinations/al-mulla-plaza",
-   "path_id": 114013835,
-   "title": "Al Mulla Plaza Metro Station: Al Qiyadah (Green Line), 7 min walk",
-   "event": false,
-   "count": 2,
-   "daily": {
-    "2026-10-22": 1,
-    "2026-11-01": 1
    }
   },
   {
@@ -14226,9 +14229,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 497,
-  "events_total": 378,
-  "goatcounter_total_with_events": 875,
+  "visits": 501,
+  "events_total": 379,
+  "goatcounter_total_with_events": 880,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -14274,7 +14277,8 @@
    "2026-11-12": 23,
    "2026-11-13": 38,
    "2026-11-14": 28,
-   "2026-11-15": 6
+   "2026-11-15": 6,
+   "2026-11-16": 4
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -14306,14 +14310,15 @@
    "2026-11-09": 3,
    "2026-11-12": 2,
    "2026-11-13": 2,
-   "2026-11-14": 2
+   "2026-11-14": 2,
+   "2026-11-16": 1
   },
-  "visitor_days": 74,
-  "return_rate": 0.135,
+  "visitor_days": 75,
+  "return_rate": 0.147,
   "routes": 53,
   "routes_not_found": 0,
   "routes_per_visit": 0.11,
-  "routes_per_visitor_day": 0.5,
+  "routes_per_visitor_day": 0.49,
   "share_rate": 0.057,
   "shares": {
    "qr": 1,
@@ -14340,7 +14345,7 @@
   },
   "visitors_new_return": {
    "new": 64,
-   "return": 10
+   "return": 11
   },
   "top_routes": [
    {
@@ -14610,6 +14615,20 @@
     "count": 1
    }
   ],
+  "/destinations/gdrfa-immigration-al-jafiliya": [
+   {
+    "name": "(direct or unknown)",
+    "count": 4
+   },
+   {
+    "name": "Google",
+    "count": 1
+   },
+   {
+    "name": "chatgpt.com",
+    "count": 1
+   }
+  ],
   "/destinations/al-zahra-hospital-dubai": [
    {
     "name": "Google",
@@ -14660,24 +14679,16 @@
     "count": 1
    }
   ],
+  "/destinations/al-mulla-plaza": [
+   {
+    "name": "Google",
+    "count": 4
+   }
+  ],
   "/destinations/jw-marriott-marquis-dubai": [
    {
     "name": "Google",
     "count": 3
-   },
-   {
-    "name": "chatgpt.com",
-    "count": 1
-   }
-  ],
-  "/destinations/gdrfa-immigration-al-jafiliya": [
-   {
-    "name": "(direct or unknown)",
-    "count": 2
-   },
-   {
-    "name": "Google",
-    "count": 1
    },
    {
     "name": "chatgpt.com",
@@ -14866,12 +14877,6 @@
     "count": 1
    }
   ],
-  "/destinations/al-mulla-plaza": [
-   {
-    "name": "Google",
-    "count": 2
-   }
-  ],
   "/destinations/canadian-specialist-hospital": [
    {
     "name": "Google",
@@ -15046,15 +15051,15 @@
     "count": 4
    },
    {
+    "path": "/destinations/gdrfa-immigration-al-jafiliya",
+    "count": 4
+   },
+   {
     "path": "/destinations/atlantis-the-palm",
     "count": 3
    },
    {
     "path": "/ru.html",
-    "count": 2
-   },
-   {
-    "path": "/destinations/gdrfa-immigration-al-jafiliya",
     "count": 2
    },
    {
@@ -15188,6 +15193,10 @@
     "count": 4
    },
    {
+    "path": "/destinations/al-mulla-plaza",
+    "count": 4
+   },
+   {
     "path": "/destinations/dubai-land-department",
     "count": 4
    },
@@ -15245,10 +15254,6 @@
    },
    {
     "path": "/destinations/al-khaleej-centre",
-    "count": 2
-   },
-   {
-    "path": "/destinations/al-mulla-plaza",
     "count": 2
    },
    {
@@ -15366,6 +15371,10 @@
     "count": 1
    },
    {
+    "path": "/destinations/gdrfa-immigration-al-jafiliya",
+    "count": 1
+   },
+   {
     "path": "/destinations/al-zahra-hospital-dubai",
     "count": 1
    },
@@ -15375,10 +15384,6 @@
    },
    {
     "path": "/destinations/jw-marriott-marquis-dubai",
-    "count": 1
-   },
-   {
-    "path": "/destinations/gdrfa-immigration-al-jafiliya",
     "count": 1
    },
    {
@@ -15506,13 +15511,13 @@
  "toprefs": [
   {
    "name": "",
-   "count": 309,
+   "count": 312,
    "ref_scheme": "o"
   },
   {
    "id": "Google",
    "name": "Google",
-   "count": 240,
+   "count": 242,
    "ref_scheme": "g"
   },
   {
@@ -15574,7 +15579,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 814
+   "count": 819
   },
   {
    "id": "rus",
@@ -15631,7 +15636,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 704
+   "count": 709
   },
   {
    "id": "US",
@@ -15798,7 +15803,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 633
+   "count": 638
   },
   {
    "id": "tablet",
@@ -15825,12 +15830,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 542
+   "count": 543
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 328
+   "count": 332
   },
   {
    "id": "Firefox",
@@ -15846,12 +15851,12 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 318
+   "count": 322
   },
   {
    "id": "Android",
    "name": "Android",
-   "count": 317
+   "count": 318
   },
   {
    "id": "Windows",
