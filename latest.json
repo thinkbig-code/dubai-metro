@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-17T09:17:31Z",
+ "generated": "2026-11-17T14:54:32Z",
  "start": "2026-10-18",
  "end": "2026-11-18",
  "total": {
-  "total": 563,
-  "total_events": 184,
-  "total_utc": 563,
+  "total": 567,
+  "total_events": 185,
+  "total_utc": 567,
   "stats": [
    {
     "day": "2026-10-18",
@@ -461,7 +461,7 @@
     ],
     "daily": 12,
     "weekly": 122,
-    "monthly": 437
+    "monthly": 441
    },
    {
     "day": "2026-11-02",
@@ -883,7 +883,7 @@
      0
     ],
     "daily": 8,
-    "weekly": 25
+    "weekly": 29
    },
    {
     "day": "2026-11-16",
@@ -933,17 +933,17 @@
      0,
      1,
      0,
+     2,
      0,
      0,
-     0,
-     0,
+     2,
      0,
      0,
      0,
      0,
      0
     ],
-    "daily": 1
+    "daily": 5
    },
    {
     "day": "2026-11-18",
@@ -983,7 +983,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 103,
+   "count": 104,
    "daily": {
     "2026-10-18": 1,
     "2026-10-19": 1,
@@ -1010,7 +1010,8 @@
     "2026-11-13": 13,
     "2026-11-14": 10,
     "2026-11-15": 1,
-    "2026-11-16": 2
+    "2026-11-16": 2,
+    "2026-11-17": 1
    }
   },
   {
@@ -1132,6 +1133,25 @@
    }
   },
   {
+   "path": "visit/return/-",
+   "path_id": 110878762,
+   "title": "en",
+   "event": true,
+   "count": 11,
+   "daily": {
+    "2026-11-01": 1,
+    "2026-11-02": 1,
+    "2026-11-03": 1,
+    "2026-11-05": 1,
+    "2026-11-07": 2,
+    "2026-11-09": 1,
+    "2026-11-12": 1,
+    "2026-11-13": 1,
+    "2026-11-16": 1,
+    "2026-11-17": 1
+   }
+  },
+  {
    "path": "/destinations/rashid-hospital",
    "path_id": 112804201,
    "title": "Rashid Hospital Metro Station: Oud Metha (Green Line), 5 min walk",
@@ -1147,24 +1167,6 @@
     "2026-11-11": 1,
     "2026-11-12": 1,
     "2026-11-14": 1
-   }
-  },
-  {
-   "path": "visit/return/-",
-   "path_id": 110878762,
-   "title": "en",
-   "event": true,
-   "count": 10,
-   "daily": {
-    "2026-11-01": 1,
-    "2026-11-02": 1,
-    "2026-11-03": 1,
-    "2026-11-05": 1,
-    "2026-11-07": 2,
-    "2026-11-09": 1,
-    "2026-11-12": 1,
-    "2026-11-13": 1,
-    "2026-11-16": 1
    }
   },
   {
@@ -1199,6 +1201,20 @@
    }
   },
   {
+   "path": "/destinations/al-zahra-hospital-dubai",
+   "path_id": 111715857,
+   "title": "Al Zahra Hospital Dubai Metro Station: Dubai Internet City, 10 min walk",
+   "event": false,
+   "count": 6,
+   "daily": {
+    "2026-10-18": 1,
+    "2026-10-24": 1,
+    "2026-10-26": 2,
+    "2026-11-15": 1,
+    "2026-11-17": 1
+   }
+  },
+  {
    "path": "geo/ok/adcb",
    "path_id": 121131925,
    "title": "en",
@@ -1220,19 +1236,6 @@
     "2026-10-30": 1,
     "2026-11-10": 2,
     "2026-11-11": 2
-   }
-  },
-  {
-   "path": "/destinations/al-zahra-hospital-dubai",
-   "path_id": 111715857,
-   "title": "Al Zahra Hospital Dubai Metro Station: Dubai Internet City, 10 min walk",
-   "event": false,
-   "count": 5,
-   "daily": {
-    "2026-10-18": 1,
-    "2026-10-24": 1,
-    "2026-10-26": 2,
-    "2026-11-15": 1
    }
   },
   {
@@ -1725,6 +1728,16 @@
    "daily": {
     "2026-11-06": 1,
     "2026-11-14": 1
+   }
+  },
+  {
+   "path": "/stations/national-paints",
+   "path_id": 123256510,
+   "title": "National Paints Metro Station, Dubai: Red Line (formerly Jabal Ali)",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-11-17": 1
    }
   },
   {
@@ -2830,9 +2843,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 379,
-  "events_total": 184,
-  "goatcounter_total_with_events": 563,
+  "visits": 382,
+  "events_total": 185,
+  "goatcounter_total_with_events": 567,
   "page_loads_by_day": {
    "2026-10-18": 4,
    "2026-10-19": 4,
@@ -2864,7 +2877,7 @@
    "2026-11-14": 28,
    "2026-11-15": 6,
    "2026-11-16": 13,
-   "2026-11-17": 1
+   "2026-11-17": 4
   },
   "visitor_days_by_day": {
    "2026-10-18": 1,
@@ -2888,14 +2901,15 @@
    "2026-11-12": 2,
    "2026-11-13": 2,
    "2026-11-14": 2,
-   "2026-11-16": 2
+   "2026-11-16": 2,
+   "2026-11-17": 1
   },
-  "visitor_days": 41,
-  "return_rate": 0.244,
+  "visitor_days": 42,
+  "return_rate": 0.262,
   "routes": 18,
   "routes_not_found": 0,
   "routes_per_visit": 0.05,
-  "routes_per_visitor_day": 0.32,
+  "routes_per_visitor_day": 0.31,
   "share_rate": 0.167,
   "shares": {
    "qr": 1,
@@ -2922,7 +2936,7 @@
   },
   "visitors_new_return": {
    "new": 31,
-   "return": 10
+   "return": 11
   },
   "top_routes": [
    {
@@ -3128,6 +3142,10 @@
    {
     "name": "dubaimetro.fyi/destinations/al-ghurair-centre",
     "count": 1
+   },
+   {
+    "name": "dubaimetro.fyi/destinations/al-zahra-hospital-dubai",
+    "count": 1
    }
   ],
   "/nearest-station": [
@@ -3194,20 +3212,20 @@
     "count": 1
    }
   ],
-  "/destinations/wafi-city": [
-   {
-    "name": "Google",
-    "count": 5
-   }
-  ],
   "/destinations/al-zahra-hospital-dubai": [
    {
     "name": "Google",
-    "count": 4
+    "count": 5
    },
    {
     "name": "chatgpt.com",
     "count": 1
+   }
+  ],
+  "/destinations/wafi-city": [
+   {
+    "name": "Google",
+    "count": 5
    }
   ],
   "/destinations/egyptian-consulate-dubai": [
@@ -3402,6 +3420,12 @@
     "count": 1
    }
   ],
+  "/stations/national-paints": [
+   {
+    "name": "chatgpt.com",
+    "count": 1
+   }
+  ],
   "/destinations/ain-dubai": [
    {
     "name": "Google",
@@ -3557,12 +3581,6 @@
     "name": "Yahoo",
     "count": 1
    }
-  ],
-  "/destinations/expo-city-dubai": [
-   {
-    "name": "Google",
-    "count": 1
-   }
   ]
  },
  "ref_pages": {
@@ -3658,12 +3676,12 @@
     "count": 8
    },
    {
-    "path": "/destinations/wafi-city",
+    "path": "/destinations/al-zahra-hospital-dubai",
     "count": 5
    },
    {
-    "path": "/destinations/al-zahra-hospital-dubai",
-    "count": 4
+    "path": "/destinations/wafi-city",
+    "count": 5
    },
    {
     "path": "/destinations/al-ghurair-centre",
@@ -3828,10 +3846,6 @@
    {
     "path": "/destinations/burj-khalifa",
     "count": 1
-   },
-   {
-    "path": "/destinations/expo-city-dubai",
-    "count": 1
    }
   ],
   "com.reddit.frontpage": [
@@ -3883,6 +3897,10 @@
    },
    {
     "path": "/destinations/dubai-police-general-headquarters",
+    "count": 1
+   },
+   {
+    "path": "/stations/national-paints",
     "count": 1
    },
    {
@@ -3950,6 +3968,12 @@
     "count": 1
    }
   ],
+  "dubaimetro.fyi/destinations/al-zahra-hospital-dubai": [
+   {
+    "path": "/",
+    "count": 1
+   }
+  ],
   "Yahoo": [
    {
     "path": "/destinations/reef-mall",
@@ -3975,18 +3999,18 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 238,
+   "count": 239,
    "ref_scheme": "g"
   },
   {
    "name": "",
-   "count": 67,
+   "count": 68,
    "ref_scheme": "o"
   },
   {
    "id": "chatgpt.com",
    "name": "chatgpt.com",
-   "count": 19,
+   "count": 20,
    "ref_scheme": "c"
   },
   {
@@ -4018,7 +4042,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 537
+   "count": 541
   },
   {
    "id": "ara",
@@ -4065,7 +4089,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 465
+   "count": 469
   },
   {
    "id": "US",
@@ -4187,7 +4211,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 467
+   "count": 471
   },
   {
    "id": "tablet",
@@ -4214,24 +4238,24 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 345
+   "count": 347
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 218
+   "count": 220
   }
  ],
  "systems": [
   {
    "id": "Android",
    "name": "Android",
-   "count": 258
+   "count": 260
   },
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 212
+   "count": 214
   },
   {
    "id": "Windows",

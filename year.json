@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-17T09:18:38Z",
+ "generated": "2026-11-17T14:55:36Z",
  "start": "2025-11-17",
  "end": "2026-11-18",
  "total": {
-  "total": 892,
-  "total_events": 381,
-  "total_utc": 892,
+  "total": 896,
+  "total_events": 382,
+  "total_utc": 896,
   "stats": [
    {
     "day": "2025-11-17",
@@ -10513,7 +10513,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 437
+    "monthly": 441
    },
    {
     "day": "2026-11-02",
@@ -10966,7 +10966,7 @@
      0
     ],
     "daily": 16,
-    "weekly": 17
+    "weekly": 21
    },
    {
     "day": "2026-11-17",
@@ -10986,17 +10986,17 @@
      0,
      1,
      0,
+     2,
      0,
      0,
-     0,
-     0,
+     2,
      0,
      0,
      0,
      0,
      0
     ],
-    "daily": 1
+    "daily": 5
    },
    {
     "day": "2026-11-18",
@@ -11036,7 +11036,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 200,
+   "count": 201,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -11078,7 +11078,8 @@
     "2026-11-13": 13,
     "2026-11-14": 10,
     "2026-11-15": 1,
-    "2026-11-16": 2
+    "2026-11-16": 2,
+    "2026-11-17": 1
    }
   },
   {
@@ -11222,7 +11223,7 @@
    "path_id": 110878762,
    "title": "en",
    "event": true,
-   "count": 11,
+   "count": 12,
    "daily": {
     "2026-10-10": 1,
     "2026-11-01": 1,
@@ -11233,7 +11234,8 @@
     "2026-11-09": 1,
     "2026-11-12": 1,
     "2026-11-13": 1,
-    "2026-11-16": 1
+    "2026-11-16": 1,
+    "2026-11-17": 1
    }
   },
   {
@@ -11272,6 +11274,21 @@
    }
   },
   {
+   "path": "/destinations/al-zahra-hospital-dubai",
+   "path_id": 111715857,
+   "title": "Al Zahra Hospital Dubai Metro Station: Dubai Internet City, 10 min walk",
+   "event": false,
+   "count": 7,
+   "daily": {
+    "2026-10-12": 1,
+    "2026-10-18": 1,
+    "2026-10-24": 1,
+    "2026-10-26": 2,
+    "2026-11-15": 1,
+    "2026-11-17": 1
+   }
+  },
+  {
    "path": "/destinations/gdrfa-immigration-al-jafiliya",
    "path_id": 113030966,
    "title": "GDRFA Immigration Al Jafiliya Metro Station: Max (Red Line), 3 min walk",
@@ -11283,20 +11300,6 @@
     "2026-11-13": 1,
     "2026-11-15": 1,
     "2026-11-16": 2
-   }
-  },
-  {
-   "path": "/destinations/al-zahra-hospital-dubai",
-   "path_id": 111715857,
-   "title": "Al Zahra Hospital Dubai Metro Station: Dubai Internet City, 10 min walk",
-   "event": false,
-   "count": 6,
-   "daily": {
-    "2026-10-12": 1,
-    "2026-10-18": 1,
-    "2026-10-24": 1,
-    "2026-10-26": 2,
-    "2026-11-15": 1
    }
   },
   {
@@ -12171,6 +12174,16 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/stations/national-paints",
+   "path_id": 123256510,
+   "title": "National Paints Metro Station, Dubai: Red Line (formerly Jabal Ali)",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-11-17": 1
    }
   },
   {
@@ -14256,9 +14269,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 511,
-  "events_total": 381,
-  "goatcounter_total_with_events": 892,
+  "visits": 514,
+  "events_total": 382,
+  "goatcounter_total_with_events": 896,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -14306,7 +14319,7 @@
    "2026-11-14": 28,
    "2026-11-15": 6,
    "2026-11-16": 13,
-   "2026-11-17": 1
+   "2026-11-17": 4
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -14339,14 +14352,15 @@
    "2026-11-12": 2,
    "2026-11-13": 2,
    "2026-11-14": 2,
-   "2026-11-16": 2
+   "2026-11-16": 2,
+   "2026-11-17": 1
   },
-  "visitor_days": 76,
-  "return_rate": 0.145,
+  "visitor_days": 77,
+  "return_rate": 0.156,
   "routes": 54,
   "routes_not_found": 0,
   "routes_per_visit": 0.11,
-  "routes_per_visitor_day": 0.5,
+  "routes_per_visitor_day": 0.49,
   "share_rate": 0.056,
   "shares": {
    "qr": 1,
@@ -14373,7 +14387,7 @@
   },
   "visitors_new_return": {
    "new": 65,
-   "return": 11
+   "return": 12
   },
   "top_routes": [
    {
@@ -14595,6 +14609,10 @@
    {
     "name": "dubaimetro.fyi/destinations/al-ghurair-centre",
     "count": 1
+   },
+   {
+    "name": "dubaimetro.fyi/destinations/al-zahra-hospital-dubai",
+    "count": 1
    }
   ],
   "/nearest-station": [
@@ -14647,6 +14665,16 @@
     "count": 1
    }
   ],
+  "/destinations/al-zahra-hospital-dubai": [
+   {
+    "name": "Google",
+    "count": 6
+   },
+   {
+    "name": "chatgpt.com",
+    "count": 1
+   }
+  ],
   "/destinations/gdrfa-immigration-al-jafiliya": [
    {
     "name": "(direct or unknown)",
@@ -14655,16 +14683,6 @@
    {
     "name": "Google",
     "count": 1
-   },
-   {
-    "name": "chatgpt.com",
-    "count": 1
-   }
-  ],
-  "/destinations/al-zahra-hospital-dubai": [
-   {
-    "name": "Google",
-    "count": 5
    },
    {
     "name": "chatgpt.com",
@@ -14965,6 +14983,12 @@
     "count": 1
    }
   ],
+  "/stations/national-paints": [
+   {
+    "name": "chatgpt.com",
+    "count": 1
+   }
+  ],
   "/destinations/ain-dubai": [
    {
     "name": "Google",
@@ -15072,12 +15096,6 @@
     "name": "chatgpt.com",
     "count": 1
    }
-  ],
-  "/destinations/dubai-chamber-of-commerce": [
-   {
-    "name": "(direct or unknown)",
-    "count": 1
-   }
   ]
  },
  "ref_pages": {
@@ -15153,10 +15171,6 @@
    {
     "path": "/destinations/jumeirah-emirates-towers",
     "count": 1
-   },
-   {
-    "path": "/destinations/dubai-chamber-of-commerce",
-    "count": 1
    }
   ],
   "dubaimetro.fyi/nearest-station": [
@@ -15226,7 +15240,7 @@
    },
    {
     "path": "/destinations/al-zahra-hospital-dubai",
-    "count": 5
+    "count": 6
    },
    {
     "path": "/destinations/wafi-city",
@@ -15419,11 +15433,11 @@
     "count": 1
    },
    {
-    "path": "/destinations/gdrfa-immigration-al-jafiliya",
+    "path": "/destinations/al-zahra-hospital-dubai",
     "count": 1
    },
    {
-    "path": "/destinations/al-zahra-hospital-dubai",
+    "path": "/destinations/gdrfa-immigration-al-jafiliya",
     "count": 1
    },
    {
@@ -15448,6 +15462,10 @@
    },
    {
     "path": "/destinations/american-hospital-dubai",
+    "count": 1
+   },
+   {
+    "path": "/stations/national-paints",
     "count": 1
    },
    {
@@ -15537,6 +15555,12 @@
     "count": 1
    }
   ],
+  "dubaimetro.fyi/destinations/al-zahra-hospital-dubai": [
+   {
+    "path": "/",
+    "count": 1
+   }
+  ],
   "www.facebook.com": [
    {
     "path": "/tl.html",
@@ -15565,13 +15589,13 @@
  "toprefs": [
   {
    "name": "",
-   "count": 317,
+   "count": 318,
    "ref_scheme": "o"
   },
   {
    "id": "Google",
    "name": "Google",
-   "count": 247,
+   "count": 248,
    "ref_scheme": "g"
   },
   {
@@ -15583,7 +15607,7 @@
   {
    "id": "chatgpt.com",
    "name": "chatgpt.com",
-   "count": 23,
+   "count": 24,
    "ref_scheme": "c"
   },
   {
@@ -15633,7 +15657,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 831
+   "count": 835
   },
   {
    "id": "rus",
@@ -15690,7 +15714,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 716
+   "count": 720
   },
   {
    "id": "US",
@@ -15862,7 +15886,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 645
+   "count": 649
   },
   {
    "id": "tablet",
@@ -15889,12 +15913,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 554
+   "count": 556
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 333
+   "count": 335
   },
   {
    "id": "Firefox",
@@ -15910,12 +15934,12 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 324
+   "count": 326
   },
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 323
+   "count": 325
   },
   {
    "id": "Windows",
