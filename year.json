@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-17T04:49:00Z",
+ "generated": "2026-11-17T09:18:38Z",
  "start": "2025-11-17",
  "end": "2026-11-18",
  "total": {
-  "total": 891,
+  "total": 892,
   "total_events": 381,
-  "total_utc": 891,
+  "total_utc": 892,
   "stats": [
    {
     "day": "2025-11-17",
@@ -10513,7 +10513,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 436
+    "monthly": 437
    },
    {
     "day": "2026-11-02",
@@ -10966,7 +10966,7 @@
      0
     ],
     "daily": 16,
-    "weekly": 16
+    "weekly": 17
    },
    {
     "day": "2026-11-17",
@@ -10984,7 +10984,7 @@
      0,
      0,
      0,
-     0,
+     1,
      0,
      0,
      0,
@@ -10996,7 +10996,7 @@
      0,
      0
     ],
-    "daily": 0
+    "daily": 1
    },
    {
     "day": "2026-11-18",
@@ -12171,6 +12171,16 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/destinations/ain-dubai",
+   "path_id": 123148536,
+   "title": "Ain Dubai and Bluewaters Tram Stop: Jumeirah Beach Residence 1, 15 min walk",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-11-17": 1
    }
   },
   {
@@ -14246,9 +14256,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 510,
+  "visits": 511,
   "events_total": 381,
-  "goatcounter_total_with_events": 891,
+  "goatcounter_total_with_events": 892,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -14295,7 +14305,8 @@
    "2026-11-13": 38,
    "2026-11-14": 28,
    "2026-11-15": 6,
-   "2026-11-16": 13
+   "2026-11-16": 13,
+   "2026-11-17": 1
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -14954,6 +14965,12 @@
     "count": 1
    }
   ],
+  "/destinations/ain-dubai": [
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
   "/de.html": [
    {
     "name": "Google",
@@ -15059,12 +15076,6 @@
   "/destinations/dubai-chamber-of-commerce": [
    {
     "name": "(direct or unknown)",
-    "count": 1
-   }
-  ],
-  "/destinations/dubai-garden-glow": [
-   {
-    "name": "Google",
     "count": 1
    }
   ]
@@ -15330,6 +15341,10 @@
     "count": 1
    },
    {
+    "path": "/destinations/ain-dubai",
+    "count": 1
+   },
+   {
     "path": "/de.html",
     "count": 1
    },
@@ -15375,10 +15390,6 @@
    },
    {
     "path": "/destinations/jebel-ali-free-zone",
-    "count": 1
-   },
-   {
-    "path": "/destinations/dubai-garden-glow",
     "count": 1
    }
   ],
@@ -15560,7 +15571,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 246,
+   "count": 247,
    "ref_scheme": "g"
   },
   {
@@ -15622,7 +15633,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 830
+   "count": 831
   },
   {
    "id": "rus",
@@ -15679,7 +15690,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 715
+   "count": 716
   },
   {
    "id": "US",
@@ -15851,7 +15862,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 644
+   "count": 645
   },
   {
    "id": "tablet",
@@ -15883,7 +15894,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 332
+   "count": 333
   },
   {
    "id": "Firefox",
@@ -15904,7 +15915,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 322
+   "count": 323
   },
   {
    "id": "Windows",
