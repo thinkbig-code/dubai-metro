@@ -1,49 +1,17 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-17T23:09:48Z",
- "start": "2026-10-18",
- "end": "2026-11-18",
+ "generated": "2026-11-18T04:43:08Z",
+ "start": "2026-10-19",
+ "end": "2026-11-19",
  "total": {
-  "total": 567,
-  "total_events": 185,
-  "total_utc": 567,
+  "total": 558,
+  "total_events": 181,
+  "total_utc": 558,
   "stats": [
-   {
-    "day": "2026-10-18",
-    "hourly": [
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     1,
-     0,
-     0,
-     3,
-     0,
-     0,
-     2,
-     0,
-     0,
-     0,
-     0
-    ],
-    "daily": 6,
-    "weekly": 53,
-    "monthly": 126
-   },
    {
     "day": "2026-10-19",
     "hourly": [
-     5,
+     0,
      0,
      0,
      0,
@@ -68,7 +36,9 @@
      0,
      0
     ],
-    "daily": 7
+    "daily": 2,
+    "weekly": 63,
+    "monthly": 115
    },
    {
     "day": "2026-10-20",
@@ -248,8 +218,7 @@
      0,
      0
     ],
-    "daily": 21,
-    "weekly": 73
+    "daily": 21
    },
    {
     "day": "2026-10-26",
@@ -279,7 +248,8 @@
      2,
      0
     ],
-    "daily": 14
+    "daily": 14,
+    "weekly": 64
    },
    {
     "day": "2026-10-27",
@@ -460,8 +430,7 @@
      0
     ],
     "daily": 12,
-    "weekly": 122,
-    "monthly": 441
+    "monthly": 443
    },
    {
     "day": "2026-11-02",
@@ -491,7 +460,8 @@
      0,
      0
     ],
-    "daily": 17
+    "daily": 17,
+    "weekly": 134
    },
    {
     "day": "2026-11-03",
@@ -671,8 +641,7 @@
      3,
      1
     ],
-    "daily": 24,
-    "weekly": 290
+    "daily": 24
    },
    {
     "day": "2026-11-09",
@@ -702,7 +671,8 @@
      0,
      0
     ],
-    "daily": 28
+    "daily": 28,
+    "weekly": 274
    },
    {
     "day": "2026-11-10",
@@ -882,8 +852,7 @@
      1,
      0
     ],
-    "daily": 8,
-    "weekly": 29
+    "daily": 8
    },
    {
     "day": "2026-11-16",
@@ -913,7 +882,8 @@
      0,
      0
     ],
-    "daily": 16
+    "daily": 16,
+    "weekly": 23
    },
    {
     "day": "2026-11-17",
@@ -954,6 +924,36 @@
      0,
      0,
      0,
+     2,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "daily": 2
+   },
+   {
+    "day": "2026-11-19",
+    "hourly": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
      0,
      0,
      0,
@@ -983,10 +983,8 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 104,
+   "count": 103,
    "daily": {
-    "2026-10-18": 1,
-    "2026-10-19": 1,
     "2026-10-20": 1,
     "2026-10-22": 2,
     "2026-10-24": 2,
@@ -1011,7 +1009,8 @@
     "2026-11-14": 10,
     "2026-11-15": 1,
     "2026-11-16": 2,
-    "2026-11-17": 1
+    "2026-11-17": 1,
+    "2026-11-18": 1
    }
   },
   {
@@ -1043,9 +1042,8 @@
    "path_id": 110626146,
    "title": "Etihad Rail Dubai Station (Al Yalayis) Metro Station: Jumeirah Golf Estates",
    "event": false,
-   "count": 37,
+   "count": 36,
    "daily": {
-    "2026-10-18": 1,
     "2026-10-20": 2,
     "2026-10-21": 2,
     "2026-10-24": 4,
@@ -1071,10 +1069,8 @@
    "path_id": 110447314,
    "title": "en",
    "event": true,
-   "count": 31,
+   "count": 29,
    "daily": {
-    "2026-10-18": 1,
-    "2026-10-19": 1,
     "2026-10-20": 1,
     "2026-10-22": 2,
     "2026-10-24": 3,
@@ -1100,9 +1096,8 @@
    "path_id": 112289662,
    "title": "Indian Consulate Dubai Metro Station: BurJuman, 7 min walk",
    "event": false,
-   "count": 13,
+   "count": 12,
    "daily": {
-    "2026-10-18": 1,
     "2026-10-23": 1,
     "2026-10-26": 2,
     "2026-10-28": 1,
@@ -1113,6 +1108,26 @@
     "2026-11-12": 1,
     "2026-11-13": 1,
     "2026-11-14": 1
+   }
+  },
+  {
+   "path": "visit/return/-",
+   "path_id": 110878762,
+   "title": "en",
+   "event": true,
+   "count": 12,
+   "daily": {
+    "2026-11-01": 1,
+    "2026-11-02": 1,
+    "2026-11-03": 1,
+    "2026-11-05": 1,
+    "2026-11-07": 2,
+    "2026-11-09": 1,
+    "2026-11-12": 1,
+    "2026-11-13": 1,
+    "2026-11-16": 1,
+    "2026-11-17": 1,
+    "2026-11-18": 1
    }
   },
   {
@@ -1129,43 +1144,6 @@
     "2026-11-10": 3,
     "2026-11-11": 2,
     "2026-11-13": 1,
-    "2026-11-14": 1
-   }
-  },
-  {
-   "path": "visit/return/-",
-   "path_id": 110878762,
-   "title": "en",
-   "event": true,
-   "count": 11,
-   "daily": {
-    "2026-11-01": 1,
-    "2026-11-02": 1,
-    "2026-11-03": 1,
-    "2026-11-05": 1,
-    "2026-11-07": 2,
-    "2026-11-09": 1,
-    "2026-11-12": 1,
-    "2026-11-13": 1,
-    "2026-11-16": 1,
-    "2026-11-17": 1
-   }
-  },
-  {
-   "path": "/destinations/rashid-hospital",
-   "path_id": 112804201,
-   "title": "Rashid Hospital Metro Station: Oud Metha (Green Line), 5 min walk",
-   "event": false,
-   "count": 10,
-   "daily": {
-    "2026-10-19": 1,
-    "2026-10-26": 2,
-    "2026-10-27": 1,
-    "2026-11-05": 1,
-    "2026-11-07": 1,
-    "2026-11-10": 1,
-    "2026-11-11": 1,
-    "2026-11-12": 1,
     "2026-11-14": 1
    }
   },
@@ -1187,6 +1165,23 @@
    }
   },
   {
+   "path": "/destinations/rashid-hospital",
+   "path_id": 112804201,
+   "title": "Rashid Hospital Metro Station: Oud Metha (Green Line), 5 min walk",
+   "event": false,
+   "count": 9,
+   "daily": {
+    "2026-10-26": 2,
+    "2026-10-27": 1,
+    "2026-11-05": 1,
+    "2026-11-07": 1,
+    "2026-11-10": 1,
+    "2026-11-11": 1,
+    "2026-11-12": 1,
+    "2026-11-14": 1
+   }
+  },
+  {
    "path": "/destinations/gdrfa-immigration-al-jafiliya",
    "path_id": 113030966,
    "title": "GDRFA Immigration Al Jafiliya Metro Station: Max (Red Line), 3 min walk",
@@ -1198,20 +1193,6 @@
     "2026-11-13": 1,
     "2026-11-15": 1,
     "2026-11-16": 2
-   }
-  },
-  {
-   "path": "/destinations/al-zahra-hospital-dubai",
-   "path_id": 111715857,
-   "title": "Al Zahra Hospital Dubai Metro Station: Dubai Internet City, 10 min walk",
-   "event": false,
-   "count": 6,
-   "daily": {
-    "2026-10-18": 1,
-    "2026-10-24": 1,
-    "2026-10-26": 2,
-    "2026-11-15": 1,
-    "2026-11-17": 1
    }
   },
   {
@@ -1236,6 +1217,19 @@
     "2026-10-30": 1,
     "2026-11-10": 2,
     "2026-11-11": 2
+   }
+  },
+  {
+   "path": "/destinations/al-zahra-hospital-dubai",
+   "path_id": 111715857,
+   "title": "Al Zahra Hospital Dubai Metro Station: Dubai Internet City, 10 min walk",
+   "event": false,
+   "count": 5,
+   "daily": {
+    "2026-10-24": 1,
+    "2026-10-26": 2,
+    "2026-11-15": 1,
+    "2026-11-17": 1
    }
   },
   {
@@ -2671,16 +2665,6 @@
    }
   },
   {
-   "path": "route_from_station_click/atlantis/-",
-   "path_id": 112806271,
-   "title": "en",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-19": 1
-   }
-  },
-  {
    "path": "/destinations/dubai-municipality-head-office",
    "path_id": 111690629,
    "title": "Dubai Municipality Head Office Metro Station: Union, 9 min walk",
@@ -2708,16 +2692,6 @@
    "count": 1,
    "daily": {
     "2026-10-25": 1
-   }
-  },
-  {
-   "path": "map_station_click/atlantis/-",
-   "path_id": 110484435,
-   "title": "en|home|desktop",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-19": 1
    }
   },
   {
@@ -2829,26 +2803,15 @@
    "daily": {
     "2026-11-11": 1
    }
-  },
-  {
-   "path": "map_station_click/dic/-",
-   "path_id": 109247471,
-   "title": "en|home|desktop",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-18": 1
-   }
   }
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 382,
-  "events_total": 185,
-  "goatcounter_total_with_events": 567,
+  "visits": 377,
+  "events_total": 181,
+  "goatcounter_total_with_events": 558,
   "page_loads_by_day": {
-   "2026-10-18": 4,
-   "2026-10-19": 4,
+   "2026-10-19": 2,
    "2026-10-20": 6,
    "2026-10-21": 3,
    "2026-10-22": 5,
@@ -2877,11 +2840,10 @@
    "2026-11-14": 28,
    "2026-11-15": 6,
    "2026-11-16": 13,
-   "2026-11-17": 4
+   "2026-11-17": 4,
+   "2026-11-18": 1
   },
   "visitor_days_by_day": {
-   "2026-10-18": 1,
-   "2026-10-19": 1,
    "2026-10-20": 1,
    "2026-10-22": 2,
    "2026-10-24": 3,
@@ -2902,14 +2864,15 @@
    "2026-11-13": 2,
    "2026-11-14": 2,
    "2026-11-16": 2,
-   "2026-11-17": 1
+   "2026-11-17": 1,
+   "2026-11-18": 1
   },
-  "visitor_days": 42,
-  "return_rate": 0.262,
+  "visitor_days": 41,
+  "return_rate": 0.293,
   "routes": 18,
   "routes_not_found": 0,
   "routes_per_visit": 0.05,
-  "routes_per_visitor_day": 0.31,
+  "routes_per_visitor_day": 0.32,
   "share_rate": 0.167,
   "shares": {
    "qr": 1,
@@ -2935,8 +2898,8 @@
    "outside": 1
   },
   "visitors_new_return": {
-   "new": 31,
-   "return": 11
+   "new": 29,
+   "return": 12
   },
   "top_routes": [
    {
@@ -3097,14 +3060,10 @@
    },
    {
     "name": "(direct or unknown)",
-    "count": 17
+    "count": 18
    },
    {
     "name": "Google",
-    "count": 2
-   },
-   {
-    "name": "com.reddit.frontpage",
     "count": 2
    },
    {
@@ -3112,7 +3071,7 @@
     "count": 2
    },
    {
-    "name": "duckduckgo.com",
+    "name": "com.reddit.frontpage",
     "count": 1
    },
    {
@@ -3164,28 +3123,18 @@
     "count": 34
    },
    {
-    "name": "chatgpt.com",
-    "count": 2
+    "name": "(direct or unknown)",
+    "count": 1
    },
    {
-    "name": "(direct or unknown)",
+    "name": "chatgpt.com",
     "count": 1
    }
   ],
   "/destinations/indian-consulate-dubai": [
    {
     "name": "Google",
-    "count": 13
-   }
-  ],
-  "/destinations/rashid-hospital": [
-   {
-    "name": "Google",
-    "count": 9
-   },
-   {
-    "name": "chatgpt.com",
-    "count": 1
+    "count": 12
    }
   ],
   "/destinations/meena-bazaar": [
@@ -3196,6 +3145,12 @@
    {
     "name": "chatgpt.com",
     "count": 1
+   }
+  ],
+  "/destinations/rashid-hospital": [
+   {
+    "name": "Google",
+    "count": 9
    }
   ],
   "/destinations/gdrfa-immigration-al-jafiliya": [
@@ -3212,20 +3167,20 @@
     "count": 1
    }
   ],
-  "/destinations/al-zahra-hospital-dubai": [
-   {
-    "name": "Google",
-    "count": 5
-   },
-   {
-    "name": "chatgpt.com",
-    "count": 1
-   }
-  ],
   "/destinations/wafi-city": [
    {
     "name": "Google",
     "count": 5
+   }
+  ],
+  "/destinations/al-zahra-hospital-dubai": [
+   {
+    "name": "Google",
+    "count": 4
+   },
+   {
+    "name": "chatgpt.com",
+    "count": 1
    }
   ],
   "/destinations/egyptian-consulate-dubai": [
@@ -3603,7 +3558,7 @@
   "(direct or unknown)": [
    {
     "path": "/",
-    "count": 17
+    "count": 18
    },
    {
     "path": "/destinations/gdrfa-immigration-al-jafiliya",
@@ -3665,7 +3620,7 @@
    },
    {
     "path": "/destinations/indian-consulate-dubai",
-    "count": 13
+    "count": 12
    },
    {
     "path": "/destinations/rashid-hospital",
@@ -3676,12 +3631,12 @@
     "count": 8
    },
    {
-    "path": "/destinations/al-zahra-hospital-dubai",
+    "path": "/destinations/wafi-city",
     "count": 5
    },
    {
-    "path": "/destinations/wafi-city",
-    "count": 5
+    "path": "/destinations/al-zahra-hospital-dubai",
+    "count": 4
    },
    {
     "path": "/destinations/al-ghurair-centre",
@@ -3848,19 +3803,9 @@
     "count": 1
    }
   ],
-  "com.reddit.frontpage": [
-   {
-    "path": "/",
-    "count": 2
-   }
-  ],
   "chatgpt.com": [
    {
     "path": "/",
-    "count": 2
-   },
-   {
-    "path": "/destinations/etihad-rail-dubai",
     "count": 2
    },
    {
@@ -3868,7 +3813,7 @@
     "count": 2
    },
    {
-    "path": "/destinations/rashid-hospital",
+    "path": "/destinations/etihad-rail-dubai",
     "count": 1
    },
    {
@@ -3920,7 +3865,7 @@
     "count": 1
    }
   ],
-  "duckduckgo.com": [
+  "com.reddit.frontpage": [
    {
     "path": "/",
     "count": 1
@@ -3999,18 +3944,18 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 239,
+   "count": 237,
    "ref_scheme": "g"
   },
   {
    "name": "",
-   "count": 68,
+   "count": 70,
    "ref_scheme": "o"
   },
   {
    "id": "chatgpt.com",
    "name": "chatgpt.com",
-   "count": 20,
+   "count": 18,
    "ref_scheme": "c"
   },
   {
@@ -4022,14 +3967,8 @@
   {
    "id": "com.reddit.frontpage",
    "name": "com.reddit.frontpage",
-   "count": 11,
+   "count": 8,
    "ref_scheme": "o"
-  },
-  {
-   "id": "duckduckgo.com",
-   "name": "duckduckgo.com",
-   "count": 4,
-   "ref_scheme": "h"
   },
   {
    "id": "Yahoo",
@@ -4042,7 +3981,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 541
+   "count": 532
   },
   {
    "id": "ara",
@@ -4089,7 +4028,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 469
+   "count": 464
   },
   {
    "id": "US",
@@ -4114,11 +4053,6 @@
   {
    "id": "DE",
    "name": "Germany",
-   "count": 4
-  },
-  {
-   "id": "GB",
-   "name": "United Kingdom",
    "count": 4
   },
   {
@@ -4211,7 +4145,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 471
+   "count": 467
   },
   {
    "id": "tablet",
@@ -4221,7 +4155,7 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 61
+   "count": 56
   },
   {
    "id": "desktophd",
@@ -4238,24 +4172,24 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 347
+   "count": 340
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 220
+   "count": 218
   }
  ],
  "systems": [
   {
    "id": "Android",
    "name": "Android",
-   "count": 260
+   "count": 258
   },
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 214
+   "count": 212
   },
   {
    "id": "Windows",
@@ -4270,12 +4204,7 @@
   {
    "id": "macOS",
    "name": "macOS",
-   "count": 12
-  },
-  {
-   "id": "Chrome OS",
-   "name": "Chrome OS",
-   "count": 4
+   "count": 11
   }
  ],
  "campaigns": []
