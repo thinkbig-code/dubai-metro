@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-18T08:36:18Z",
+ "generated": "2026-11-18T13:28:25Z",
  "start": "2026-10-19",
  "end": "2026-11-19",
  "total": {
-  "total": 559,
+  "total": 561,
   "total_events": 181,
-  "total_utc": 559,
+  "total_utc": 561,
   "stats": [
    {
     "day": "2026-10-19",
@@ -430,7 +430,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 444
+    "monthly": 446
    },
    {
     "day": "2026-11-02",
@@ -883,7 +883,7 @@
      0
     ],
     "daily": 16,
-    "weekly": 24
+    "weekly": 26
    },
    {
     "day": "2026-11-17",
@@ -932,9 +932,9 @@
      0,
      0,
      0,
+     1,
      0,
-     0,
-     0,
+     1,
      0,
      0,
      0,
@@ -943,7 +943,7 @@
      0,
      0
     ],
-    "daily": 3
+    "daily": 5
    },
    {
     "day": "2026-11-19",
@@ -1257,6 +1257,19 @@
    }
   },
   {
+   "path": "/destinations/international-modern-hospital",
+   "path_id": 118056711,
+   "title": "International Modern Hospital Metro Station: ADCB (Red Line)",
+   "event": false,
+   "count": 4,
+   "daily": {
+    "2026-11-03": 1,
+    "2026-11-09": 1,
+    "2026-11-11": 1,
+    "2026-11-18": 1
+   }
+  },
+  {
    "path": "geo/ok/equiti",
    "path_id": 117954536,
    "title": "en",
@@ -1266,6 +1279,19 @@
     "2026-11-03": 1,
     "2026-11-08": 1,
     "2026-11-12": 2
+   }
+  },
+  {
+   "path": "/destinations/al-jalila-children-s-specialty-hospital",
+   "path_id": 117749447,
+   "title": "Al Jalila Children's Specialty Hospital Metro Station: Dubai Healthcare City",
+   "event": false,
+   "count": 4,
+   "daily": {
+    "2026-11-02": 1,
+    "2026-11-07": 1,
+    "2026-11-16": 1,
+    "2026-11-18": 1
    }
   },
   {
@@ -1399,30 +1425,6 @@
     "2026-11-05": 1,
     "2026-11-14": 1,
     "2026-11-15": 1
-   }
-  },
-  {
-   "path": "/destinations/international-modern-hospital",
-   "path_id": 118056711,
-   "title": "International Modern Hospital Metro Station: ADCB (Red Line)",
-   "event": false,
-   "count": 3,
-   "daily": {
-    "2026-11-03": 1,
-    "2026-11-09": 1,
-    "2026-11-11": 1
-   }
-  },
-  {
-   "path": "/destinations/al-jalila-children-s-specialty-hospital",
-   "path_id": 117749447,
-   "title": "Al Jalila Children's Specialty Hospital Metro Station: Dubai Healthcare City",
-   "event": false,
-   "count": 3,
-   "daily": {
-    "2026-11-02": 1,
-    "2026-11-07": 1,
-    "2026-11-16": 1
    }
   },
   {
@@ -2808,9 +2810,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 378,
+  "visits": 380,
   "events_total": 181,
-  "goatcounter_total_with_events": 559,
+  "goatcounter_total_with_events": 561,
   "page_loads_by_day": {
    "2026-10-19": 2,
    "2026-10-20": 6,
@@ -2842,7 +2844,7 @@
    "2026-11-15": 6,
    "2026-11-16": 13,
    "2026-11-17": 4,
-   "2026-11-18": 2
+   "2026-11-18": 4
   },
   "visitor_days_by_day": {
    "2026-10-20": 1,
@@ -3194,6 +3196,30 @@
     "count": 1
    }
   ],
+  "/destinations/international-modern-hospital": [
+   {
+    "name": "Google",
+    "count": 3
+   },
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   }
+  ],
+  "/destinations/al-jalila-children-s-specialty-hospital": [
+   {
+    "name": "Google",
+    "count": 2
+   },
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   },
+   {
+    "name": "chatgpt.com",
+    "count": 1
+   }
+  ],
   "/destinations/al-ghurair-centre": [
    {
     "name": "Google",
@@ -3236,26 +3262,6 @@
    {
     "name": "chatgpt.com",
     "count": 2
-   }
-  ],
-  "/destinations/international-modern-hospital": [
-   {
-    "name": "Google",
-    "count": 3
-   }
-  ],
-  "/destinations/al-jalila-children-s-specialty-hospital": [
-   {
-    "name": "(direct or unknown)",
-    "count": 1
-   },
-   {
-    "name": "Google",
-    "count": 1
-   },
-   {
-    "name": "chatgpt.com",
-    "count": 1
    }
   ],
   "/map": [
@@ -3582,6 +3588,10 @@
     "count": 1
    },
    {
+    "path": "/destinations/international-modern-hospital",
+    "count": 1
+   },
+   {
     "path": "/destinations/al-jalila-children-s-specialty-hospital",
     "count": 1
    },
@@ -3656,11 +3666,11 @@
     "count": 4
    },
    {
-    "path": "/destinations/jw-marriott-marquis-dubai",
+    "path": "/destinations/international-modern-hospital",
     "count": 3
    },
    {
-    "path": "/destinations/international-modern-hospital",
+    "path": "/destinations/jw-marriott-marquis-dubai",
     "count": 3
    },
    {
@@ -3677,6 +3687,10 @@
    },
    {
     "path": "/",
+    "count": 2
+   },
+   {
+    "path": "/destinations/al-jalila-children-s-specialty-hospital",
     "count": 2
    },
    {
@@ -3717,10 +3731,6 @@
    },
    {
     "path": "/destinations/egyptian-consulate-dubai",
-    "count": 1
-   },
-   {
-    "path": "/destinations/al-jalila-children-s-specialty-hospital",
     "count": 1
    },
    {
@@ -3830,11 +3840,11 @@
     "count": 1
    },
    {
-    "path": "/destinations/jw-marriott-marquis-dubai",
+    "path": "/destinations/al-jalila-children-s-specialty-hospital",
     "count": 1
    },
    {
-    "path": "/destinations/al-jalila-children-s-specialty-hospital",
+    "path": "/destinations/jw-marriott-marquis-dubai",
     "count": 1
    },
    {
@@ -3945,12 +3955,12 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 238,
+   "count": 239,
    "ref_scheme": "g"
   },
   {
    "name": "",
-   "count": 70,
+   "count": 71,
    "ref_scheme": "o"
   },
   {
@@ -3982,7 +3992,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 533
+   "count": 535
   },
   {
    "id": "ara",
@@ -4029,7 +4039,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 465
+   "count": 467
   },
   {
    "id": "US",
@@ -4146,7 +4156,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 467
+   "count": 469
   },
   {
    "id": "tablet",
@@ -4173,7 +4183,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 341
+   "count": 343
   },
   {
    "id": "Safari",
@@ -4185,7 +4195,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 258
+   "count": 260
   },
   {
    "id": "iOS",

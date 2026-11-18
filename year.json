@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-18T08:37:20Z",
+ "generated": "2026-11-18T13:29:36Z",
  "start": "2025-11-18",
  "end": "2026-11-19",
  "total": {
-  "total": 899,
+  "total": 901,
   "total_events": 383,
-  "total_utc": 899,
+  "total_utc": 901,
   "stats": [
    {
     "day": "2025-11-18",
@@ -10483,7 +10483,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 444
+    "monthly": 446
    },
    {
     "day": "2026-11-02",
@@ -10966,7 +10966,7 @@
      0
     ],
     "daily": 5,
-    "weekly": 8
+    "weekly": 10
    },
    {
     "day": "2026-11-18",
@@ -10985,9 +10985,9 @@
      0,
      0,
      0,
+     1,
      0,
-     0,
-     0,
+     1,
      0,
      0,
      0,
@@ -10996,7 +10996,7 @@
      0,
      0
     ],
-    "daily": 3
+    "daily": 5
    },
    {
     "day": "2026-11-19",
@@ -11403,6 +11403,19 @@
    }
   },
   {
+   "path": "/destinations/international-modern-hospital",
+   "path_id": 118056711,
+   "title": "International Modern Hospital Metro Station: ADCB (Red Line)",
+   "event": false,
+   "count": 4,
+   "daily": {
+    "2026-11-03": 1,
+    "2026-11-09": 1,
+    "2026-11-11": 1,
+    "2026-11-18": 1
+   }
+  },
+  {
    "path": "geo/ok/equiti",
    "path_id": 117954536,
    "title": "en",
@@ -11412,6 +11425,19 @@
     "2026-11-03": 1,
     "2026-11-08": 1,
     "2026-11-12": 2
+   }
+  },
+  {
+   "path": "/destinations/al-jalila-children-s-specialty-hospital",
+   "path_id": 117749447,
+   "title": "Al Jalila Children's Specialty Hospital Metro Station: Dubai Healthcare City",
+   "event": false,
+   "count": 4,
+   "daily": {
+    "2026-11-02": 1,
+    "2026-11-07": 1,
+    "2026-11-16": 1,
+    "2026-11-18": 1
    }
   },
   {
@@ -11598,30 +11624,6 @@
     "2026-11-05": 1,
     "2026-11-14": 1,
     "2026-11-15": 1
-   }
-  },
-  {
-   "path": "/destinations/international-modern-hospital",
-   "path_id": 118056711,
-   "title": "International Modern Hospital Metro Station: ADCB (Red Line)",
-   "event": false,
-   "count": 3,
-   "daily": {
-    "2026-11-03": 1,
-    "2026-11-09": 1,
-    "2026-11-11": 1
-   }
-  },
-  {
-   "path": "/destinations/al-jalila-children-s-specialty-hospital",
-   "path_id": 117749447,
-   "title": "Al Jalila Children's Specialty Hospital Metro Station: Dubai Healthcare City",
-   "event": false,
-   "count": 3,
-   "daily": {
-    "2026-11-02": 1,
-    "2026-11-07": 1,
-    "2026-11-16": 1
    }
   },
   {
@@ -14272,9 +14274,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 516,
+  "visits": 518,
   "events_total": 383,
-  "goatcounter_total_with_events": 899,
+  "goatcounter_total_with_events": 901,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -14323,7 +14325,7 @@
    "2026-11-15": 6,
    "2026-11-16": 13,
    "2026-11-17": 4,
-   "2026-11-18": 2
+   "2026-11-18": 4
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -14744,6 +14746,30 @@
     "count": 1
    }
   ],
+  "/destinations/international-modern-hospital": [
+   {
+    "name": "Google",
+    "count": 3
+   },
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   }
+  ],
+  "/destinations/al-jalila-children-s-specialty-hospital": [
+   {
+    "name": "Google",
+    "count": 2
+   },
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   },
+   {
+    "name": "chatgpt.com",
+    "count": 1
+   }
+  ],
   "/destinations/al-ghurair-centre": [
    {
     "name": "Google",
@@ -14798,26 +14824,6 @@
    {
     "name": "Google",
     "count": 3
-   },
-   {
-    "name": "chatgpt.com",
-    "count": 1
-   }
-  ],
-  "/destinations/international-modern-hospital": [
-   {
-    "name": "Google",
-    "count": 3
-   }
-  ],
-  "/destinations/al-jalila-children-s-specialty-hospital": [
-   {
-    "name": "(direct or unknown)",
-    "count": 1
-   },
-   {
-    "name": "Google",
-    "count": 1
    },
    {
     "name": "chatgpt.com",
@@ -15138,11 +15144,15 @@
     "count": 1
    },
    {
-    "path": "/destinations/us-consulate-dubai",
+    "path": "/destinations/international-modern-hospital",
     "count": 1
    },
    {
     "path": "/destinations/al-jalila-children-s-specialty-hospital",
+    "count": 1
+   },
+   {
+    "path": "/destinations/us-consulate-dubai",
     "count": 1
    },
    {
@@ -15276,6 +15286,10 @@
     "count": 4
    },
    {
+    "path": "/destinations/international-modern-hospital",
+    "count": 3
+   },
+   {
     "path": "/destinations/jw-marriott-marquis-dubai",
     "count": 3
    },
@@ -15288,11 +15302,11 @@
     "count": 3
    },
    {
-    "path": "/destinations/international-modern-hospital",
-    "count": 3
+    "path": "/",
+    "count": 2
    },
    {
-    "path": "/",
+    "path": "/destinations/al-jalila-children-s-specialty-hospital",
     "count": 2
    },
    {
@@ -15333,10 +15347,6 @@
    },
    {
     "path": "/destinations/egyptian-consulate-dubai",
-    "count": 1
-   },
-   {
-    "path": "/destinations/al-jalila-children-s-specialty-hospital",
     "count": 1
    },
    {
@@ -15450,15 +15460,15 @@
     "count": 1
    },
    {
+    "path": "/destinations/al-jalila-children-s-specialty-hospital",
+    "count": 1
+   },
+   {
     "path": "/destinations/jw-marriott-marquis-dubai",
     "count": 1
    },
    {
     "path": "/destinations/dubai-police-general-headquarters",
-    "count": 1
-   },
-   {
-    "path": "/destinations/al-jalila-children-s-specialty-hospital",
     "count": 1
    },
    {
@@ -15594,13 +15604,13 @@
  "toprefs": [
   {
    "name": "",
-   "count": 320,
+   "count": 321,
    "ref_scheme": "o"
   },
   {
    "id": "Google",
    "name": "Google",
-   "count": 249,
+   "count": 250,
    "ref_scheme": "g"
   },
   {
@@ -15662,7 +15672,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 838
+   "count": 840
   },
   {
    "id": "rus",
@@ -15719,7 +15729,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 723
+   "count": 725
   },
   {
    "id": "US",
@@ -15891,7 +15901,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 651
+   "count": 653
   },
   {
    "id": "tablet",
@@ -15918,7 +15928,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 559
+   "count": 561
   },
   {
    "id": "Safari",
@@ -15939,7 +15949,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 328
+   "count": 330
   },
   {
    "id": "iOS",
