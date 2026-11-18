@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-18T13:28:25Z",
+ "generated": "2026-11-18T21:36:41Z",
  "start": "2026-10-19",
  "end": "2026-11-19",
  "total": {
-  "total": 561,
+  "total": 563,
   "total_events": 181,
-  "total_utc": 561,
+  "total_utc": 563,
   "stats": [
    {
     "day": "2026-10-19",
@@ -430,7 +430,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 446
+    "monthly": 448
    },
    {
     "day": "2026-11-02",
@@ -883,7 +883,7 @@
      0
     ],
     "daily": 16,
-    "weekly": 26
+    "weekly": 28
    },
    {
     "day": "2026-11-17",
@@ -939,11 +939,11 @@
      0,
      0,
      0,
-     0,
+     2,
      0,
      0
     ],
-    "daily": 5
+    "daily": 7
    },
    {
     "day": "2026-11-19",
@@ -1097,7 +1097,7 @@
    "path_id": 112289662,
    "title": "Indian Consulate Dubai Metro Station: BurJuman, 7 min walk",
    "event": false,
-   "count": 12,
+   "count": 13,
    "daily": {
     "2026-10-23": 1,
     "2026-10-26": 2,
@@ -1108,7 +1108,8 @@
     "2026-11-09": 1,
     "2026-11-12": 1,
     "2026-11-13": 1,
-    "2026-11-14": 1
+    "2026-11-14": 1,
+    "2026-11-18": 1
    }
   },
   {
@@ -1725,6 +1726,17 @@
    "daily": {
     "2026-11-06": 1,
     "2026-11-14": 1
+   }
+  },
+  {
+   "path": "/tram",
+   "path_id": 109752598,
+   "title": "Dubai Tram: Stops, JBR Loop, Metro Links and Hours",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-11-09": 1,
+    "2026-11-18": 1
    }
   },
   {
@@ -2788,16 +2800,6 @@
    }
   },
   {
-   "path": "/tram",
-   "path_id": 109752598,
-   "title": "Dubai Tram: Stops, JBR Loop, Metro Links and Hours",
-   "event": false,
-   "count": 1,
-   "daily": {
-    "2026-11-09": 1
-   }
-  },
-  {
    "path": "station/et/to",
    "path_id": 109748382,
    "title": "en|name",
@@ -2810,9 +2812,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 380,
+  "visits": 382,
   "events_total": 181,
-  "goatcounter_total_with_events": 561,
+  "goatcounter_total_with_events": 563,
   "page_loads_by_day": {
    "2026-10-19": 2,
    "2026-10-20": 6,
@@ -2844,7 +2846,7 @@
    "2026-11-15": 6,
    "2026-11-16": 13,
    "2026-11-17": 4,
-   "2026-11-18": 4
+   "2026-11-18": 6
   },
   "visitor_days_by_day": {
    "2026-10-20": 1,
@@ -3137,7 +3139,7 @@
   "/destinations/indian-consulate-dubai": [
    {
     "name": "Google",
-    "count": 12
+    "count": 13
    }
   ],
   "/destinations/meena-bazaar": [
@@ -3382,6 +3384,16 @@
     "count": 1
    }
   ],
+  "/tram": [
+   {
+    "name": "Google",
+    "count": 1
+   },
+   {
+    "name": "dubaimetro.fyi",
+    "count": 1
+   }
+  ],
   "/stations/national-paints": [
    {
     "name": "chatgpt.com",
@@ -3537,12 +3549,6 @@
     "name": "chatgpt.com",
     "count": 1
    }
-  ],
-  "/stations": [
-   {
-    "name": "Yahoo",
-    "count": 1
-   }
   ]
  },
  "ref_pages": {
@@ -3560,6 +3566,10 @@
    {
     "path": "/",
     "count": 26
+   },
+   {
+    "path": "/tram",
+    "count": 1
    }
   ],
   "(direct or unknown)": [
@@ -3631,7 +3641,7 @@
    },
    {
     "path": "/destinations/indian-consulate-dubai",
-    "count": 12
+    "count": 13
    },
    {
     "path": "/destinations/rashid-hospital",
@@ -3743,6 +3753,10 @@
    },
    {
     "path": "/destinations/coca-cola-arena",
+    "count": 1
+   },
+   {
+    "path": "/tram",
     "count": 1
    },
    {
@@ -3934,10 +3948,6 @@
    {
     "path": "/destinations/reef-mall",
     "count": 1
-   },
-   {
-    "path": "/stations",
-    "count": 1
    }
   ],
   "www.bing.com": [
@@ -3955,7 +3965,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 239,
+   "count": 241,
    "ref_scheme": "g"
   },
   {
@@ -3992,7 +4002,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 535
+   "count": 537
   },
   {
    "id": "ara",
@@ -4039,7 +4049,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 467
+   "count": 469
   },
   {
    "id": "US",
@@ -4156,7 +4166,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 469
+   "count": 471
   },
   {
    "id": "tablet",
@@ -4183,7 +4193,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 343
+   "count": 345
   },
   {
    "id": "Safari",
@@ -4195,7 +4205,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 260
+   "count": 262
   },
   {
    "id": "iOS",
