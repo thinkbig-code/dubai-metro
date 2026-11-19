@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-19T02:50:18Z",
+ "generated": "2026-11-19T08:52:58Z",
  "start": "2025-11-19",
  "end": "2026-11-20",
  "total": {
-  "total": 903,
+  "total": 904,
   "total_events": 383,
-  "total_utc": 903,
+  "total_utc": 904,
   "stats": [
    {
     "day": "2025-11-19",
@@ -10453,7 +10453,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 448
+    "monthly": 449
    },
    {
     "day": "2026-11-02",
@@ -10966,7 +10966,7 @@
      0
     ],
     "daily": 7,
-    "weekly": 7
+    "weekly": 8
    },
    {
     "day": "2026-11-19",
@@ -10980,7 +10980,7 @@
      0,
      0,
      0,
-     0,
+     1,
      0,
      0,
      0,
@@ -10996,7 +10996,7 @@
      0,
      0
     ],
-    "daily": 0
+    "daily": 1
    },
    {
     "day": "2026-11-20",
@@ -11088,7 +11088,7 @@
    "path_id": 116082941,
    "title": "Nearest Metro Station to Me in Dubai: Find It by Location",
    "event": false,
-   "count": 89,
+   "count": 90,
    "daily": {
     "2026-10-28": 1,
     "2026-10-31": 1,
@@ -11104,7 +11104,8 @@
     "2026-11-12": 7,
     "2026-11-13": 15,
     "2026-11-14": 11,
-    "2026-11-15": 1
+    "2026-11-15": 1,
+    "2026-11-19": 1
    }
   },
   {
@@ -14276,9 +14277,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 520,
+  "visits": 521,
   "events_total": 383,
-  "goatcounter_total_with_events": 903,
+  "goatcounter_total_with_events": 904,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -14327,7 +14328,8 @@
    "2026-11-15": 6,
    "2026-11-16": 13,
    "2026-11-17": 4,
-   "2026-11-18": 6
+   "2026-11-18": 6,
+   "2026-11-19": 1
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -14627,7 +14629,7 @@
   "/nearest-station": [
    {
     "name": "Google",
-    "count": 88
+    "count": 89
    },
    {
     "name": "(direct or unknown)",
@@ -15241,7 +15243,7 @@
   "Google": [
    {
     "path": "/nearest-station",
-    "count": 88
+    "count": 89
    },
    {
     "path": "/destinations/etihad-rail-dubai",
@@ -15620,7 +15622,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 252,
+   "count": 253,
    "ref_scheme": "g"
   },
   {
@@ -15682,7 +15684,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 842
+   "count": 843
   },
   {
    "id": "rus",
@@ -15739,7 +15741,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 727
+   "count": 728
   },
   {
    "id": "US",
@@ -15911,7 +15913,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 655
+   "count": 656
   },
   {
    "id": "tablet",
@@ -15943,7 +15945,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 335
+   "count": 336
   },
   {
    "id": "Firefox",
@@ -15964,7 +15966,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 325
+   "count": 326
   },
   {
    "id": "Windows",
