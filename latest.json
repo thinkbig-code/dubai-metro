@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-19T08:51:56Z",
+ "generated": "2026-11-19T12:10:30Z",
  "start": "2026-10-20",
  "end": "2026-11-20",
  "total": {
-  "total": 562,
+  "total": 565,
   "total_events": 181,
-  "total_utc": 562,
+  "total_utc": 565,
   "stats": [
    {
     "day": "2026-10-20",
@@ -400,7 +400,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 449
+    "monthly": 452
    },
    {
     "day": "2026-11-02",
@@ -883,7 +883,7 @@
      0
     ],
     "daily": 5,
-    "weekly": 13
+    "weekly": 16
    },
    {
     "day": "2026-11-18",
@@ -932,8 +932,8 @@
      0,
      0,
      0,
-     0,
-     0,
+     1,
+     2,
      0,
      0,
      0,
@@ -943,7 +943,7 @@
      0,
      0
     ],
-    "daily": 1
+    "daily": 4
    },
    {
     "day": "2026-11-20",
@@ -1018,7 +1018,7 @@
    "path_id": 116082941,
    "title": "Nearest Metro Station to Me in Dubai: Find It by Location",
    "event": false,
-   "count": 90,
+   "count": 91,
    "daily": {
     "2026-10-28": 1,
     "2026-10-31": 1,
@@ -1035,7 +1035,7 @@
     "2026-11-13": 15,
     "2026-11-14": 11,
     "2026-11-15": 1,
-    "2026-11-19": 1
+    "2026-11-19": 2
    }
   },
   {
@@ -1098,7 +1098,7 @@
    "path_id": 112289662,
    "title": "Indian Consulate Dubai Metro Station: BurJuman, 7 min walk",
    "event": false,
-   "count": 13,
+   "count": 14,
    "daily": {
     "2026-10-23": 1,
     "2026-10-26": 2,
@@ -1110,7 +1110,8 @@
     "2026-11-12": 1,
     "2026-11-13": 1,
     "2026-11-14": 1,
-    "2026-11-18": 1
+    "2026-11-18": 1,
+    "2026-11-19": 1
    }
   },
   {
@@ -1185,6 +1186,20 @@
    }
   },
   {
+   "path": "/destinations/gdrfa-immigration-al-jafiliya",
+   "path_id": 113030966,
+   "title": "GDRFA Immigration Al Jafiliya Metro Station: Max (Red Line), 3 min walk",
+   "event": false,
+   "count": 6,
+   "daily": {
+    "2026-11-03": 1,
+    "2026-11-13": 1,
+    "2026-11-15": 1,
+    "2026-11-16": 2,
+    "2026-11-19": 1
+   }
+  },
+  {
    "path": "geo/ok/adcb",
    "path_id": 121131925,
    "title": "en",
@@ -1206,19 +1221,6 @@
     "2026-10-30": 1,
     "2026-11-10": 2,
     "2026-11-11": 2
-   }
-  },
-  {
-   "path": "/destinations/gdrfa-immigration-al-jafiliya",
-   "path_id": 113030966,
-   "title": "GDRFA Immigration Al Jafiliya Metro Station: Max (Red Line), 3 min walk",
-   "event": false,
-   "count": 5,
-   "daily": {
-    "2026-11-03": 1,
-    "2026-11-13": 1,
-    "2026-11-15": 1,
-    "2026-11-16": 2
    }
   },
   {
@@ -2811,9 +2813,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 381,
+  "visits": 384,
   "events_total": 181,
-  "goatcounter_total_with_events": 562,
+  "goatcounter_total_with_events": 565,
   "page_loads_by_day": {
    "2026-10-20": 6,
    "2026-10-21": 3,
@@ -2845,7 +2847,7 @@
    "2026-11-16": 13,
    "2026-11-17": 4,
    "2026-11-18": 6,
-   "2026-11-19": 1
+   "2026-11-19": 4
   },
   "visitor_days_by_day": {
    "2026-10-20": 1,
@@ -3119,6 +3121,10 @@
    {
     "name": "(direct or unknown)",
     "count": 1
+   },
+   {
+    "name": "dubaimetro.fyi/destinations/indian-consulate-dubai",
+    "count": 1
    }
   ],
   "/destinations/etihad-rail-dubai": [
@@ -3138,7 +3144,7 @@
   "/destinations/indian-consulate-dubai": [
    {
     "name": "Google",
-    "count": 13
+    "count": 14
    }
   ],
   "/destinations/meena-bazaar": [
@@ -3157,12 +3163,6 @@
     "count": 9
    }
   ],
-  "/destinations/wafi-city": [
-   {
-    "name": "Google",
-    "count": 5
-   }
-  ],
   "/destinations/gdrfa-immigration-al-jafiliya": [
    {
     "name": "(direct or unknown)",
@@ -3170,7 +3170,13 @@
    },
    {
     "name": "Google",
-    "count": 1
+    "count": 2
+   }
+  ],
+  "/destinations/wafi-city": [
+   {
+    "name": "Google",
+    "count": 5
    }
   ],
   "/destinations/al-zahra-hospital-dubai": [
@@ -3636,7 +3642,7 @@
    },
    {
     "path": "/destinations/indian-consulate-dubai",
-    "count": 13
+    "count": 14
    },
    {
     "path": "/destinations/rashid-hospital",
@@ -3691,6 +3697,10 @@
     "count": 2
    },
    {
+    "path": "/destinations/gdrfa-immigration-al-jafiliya",
+    "count": 2
+   },
+   {
     "path": "/destinations/al-jalila-children-s-specialty-hospital",
     "count": 2
    },
@@ -3729,10 +3739,6 @@
    {
     "path": "/destinations/american-hospital-dubai",
     "count": 2
-   },
-   {
-    "path": "/destinations/gdrfa-immigration-al-jafiliya",
-    "count": 1
    },
    {
     "path": "/destinations/egyptian-consulate-dubai",
@@ -3935,6 +3941,12 @@
     "count": 1
    }
   ],
+  "dubaimetro.fyi/destinations/indian-consulate-dubai": [
+   {
+    "path": "/nearest-station",
+    "count": 1
+   }
+  ],
   "Yahoo": [
    {
     "path": "/destinations/reef-mall",
@@ -3956,7 +3968,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 241,
+   "count": 243,
    "ref_scheme": "g"
   },
   {
@@ -3993,7 +4005,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 536
+   "count": 539
   },
   {
    "id": "ara",
@@ -4040,7 +4052,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 468
+   "count": 471
   },
   {
    "id": "US",
@@ -4157,7 +4169,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 470
+   "count": 472
   },
   {
    "id": "tablet",
@@ -4167,7 +4179,7 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 57
+   "count": 58
   },
   {
    "id": "desktophd",
@@ -4184,12 +4196,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 344
+   "count": 345
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 218
+   "count": 220
   }
  ],
  "systems": [
@@ -4201,12 +4213,12 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 212
+   "count": 214
   },
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 61
+   "count": 62
   },
   {
    "id": "Linux",

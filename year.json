@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-19T08:52:58Z",
+ "generated": "2026-11-19T12:11:45Z",
  "start": "2025-11-19",
  "end": "2026-11-20",
  "total": {
-  "total": 904,
+  "total": 907,
   "total_events": 383,
-  "total_utc": 904,
+  "total_utc": 907,
   "stats": [
    {
     "day": "2025-11-19",
@@ -10453,7 +10453,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 449
+    "monthly": 452
    },
    {
     "day": "2026-11-02",
@@ -10966,7 +10966,7 @@
      0
     ],
     "daily": 7,
-    "weekly": 8
+    "weekly": 11
    },
    {
     "day": "2026-11-19",
@@ -10985,8 +10985,8 @@
      0,
      0,
      0,
-     0,
-     0,
+     1,
+     2,
      0,
      0,
      0,
@@ -10996,7 +10996,7 @@
      0,
      0
     ],
-    "daily": 1
+    "daily": 4
    },
    {
     "day": "2026-11-20",
@@ -11088,7 +11088,7 @@
    "path_id": 116082941,
    "title": "Nearest Metro Station to Me in Dubai: Find It by Location",
    "event": false,
-   "count": 90,
+   "count": 91,
    "daily": {
     "2026-10-28": 1,
     "2026-10-31": 1,
@@ -11105,7 +11105,7 @@
     "2026-11-13": 15,
     "2026-11-14": 11,
     "2026-11-15": 1,
-    "2026-11-19": 1
+    "2026-11-19": 2
    }
   },
   {
@@ -11185,7 +11185,7 @@
    "path_id": 112289662,
    "title": "Indian Consulate Dubai Metro Station: BurJuman, 7 min walk",
    "event": false,
-   "count": 15,
+   "count": 16,
    "daily": {
     "2026-10-16": 1,
     "2026-10-18": 1,
@@ -11199,7 +11199,8 @@
     "2026-11-12": 1,
     "2026-11-13": 1,
     "2026-11-14": 1,
-    "2026-11-18": 1
+    "2026-11-18": 1,
+    "2026-11-19": 1
    }
   },
   {
@@ -11279,6 +11280,21 @@
    }
   },
   {
+   "path": "/destinations/gdrfa-immigration-al-jafiliya",
+   "path_id": 113030966,
+   "title": "GDRFA Immigration Al Jafiliya Metro Station: Max (Red Line), 3 min walk",
+   "event": false,
+   "count": 7,
+   "daily": {
+    "2026-10-19": 1,
+    "2026-11-03": 1,
+    "2026-11-13": 1,
+    "2026-11-15": 1,
+    "2026-11-16": 2,
+    "2026-11-19": 1
+   }
+  },
+  {
    "path": "/destinations/al-zahra-hospital-dubai",
    "path_id": 111715857,
    "title": "Al Zahra Hospital Dubai Metro Station: Dubai Internet City, 10 min walk",
@@ -11291,20 +11307,6 @@
     "2026-10-26": 2,
     "2026-11-15": 1,
     "2026-11-17": 1
-   }
-  },
-  {
-   "path": "/destinations/gdrfa-immigration-al-jafiliya",
-   "path_id": 113030966,
-   "title": "GDRFA Immigration Al Jafiliya Metro Station: Max (Red Line), 3 min walk",
-   "event": false,
-   "count": 6,
-   "daily": {
-    "2026-10-19": 1,
-    "2026-11-03": 1,
-    "2026-11-13": 1,
-    "2026-11-15": 1,
-    "2026-11-16": 2
    }
   },
   {
@@ -14277,9 +14279,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 521,
+  "visits": 524,
   "events_total": 383,
-  "goatcounter_total_with_events": 904,
+  "goatcounter_total_with_events": 907,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -14329,7 +14331,7 @@
    "2026-11-16": 13,
    "2026-11-17": 4,
    "2026-11-18": 6,
-   "2026-11-19": 1
+   "2026-11-19": 4
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -14634,6 +14636,10 @@
    {
     "name": "(direct or unknown)",
     "count": 1
+   },
+   {
+    "name": "dubaimetro.fyi/destinations/indian-consulate-dubai",
+    "count": 1
    }
   ],
   "/destinations/etihad-rail-dubai": [
@@ -14653,7 +14659,7 @@
   "/destinations/indian-consulate-dubai": [
    {
     "name": "Google",
-    "count": 15
+    "count": 16
    }
   ],
   "/destinations/rashid-hospital": [
@@ -14676,16 +14682,6 @@
     "count": 1
    }
   ],
-  "/destinations/al-zahra-hospital-dubai": [
-   {
-    "name": "Google",
-    "count": 6
-   },
-   {
-    "name": "chatgpt.com",
-    "count": 1
-   }
-  ],
   "/destinations/gdrfa-immigration-al-jafiliya": [
    {
     "name": "(direct or unknown)",
@@ -14693,7 +14689,17 @@
    },
    {
     "name": "Google",
+    "count": 2
+   },
+   {
+    "name": "chatgpt.com",
     "count": 1
+   }
+  ],
+  "/destinations/al-zahra-hospital-dubai": [
+   {
+    "name": "Google",
+    "count": 6
    },
    {
     "name": "chatgpt.com",
@@ -15251,7 +15257,7 @@
    },
    {
     "path": "/destinations/indian-consulate-dubai",
-    "count": 15
+    "count": 16
    },
    {
     "path": "/destinations/rashid-hospital",
@@ -15314,6 +15320,10 @@
     "count": 2
    },
    {
+    "path": "/destinations/gdrfa-immigration-al-jafiliya",
+    "count": 2
+   },
+   {
     "path": "/destinations/al-jalila-children-s-specialty-hospital",
     "count": 2
    },
@@ -15348,10 +15358,6 @@
    {
     "path": "/destinations/dubai-municipality-head-office",
     "count": 2
-   },
-   {
-    "path": "/destinations/gdrfa-immigration-al-jafiliya",
-    "count": 1
    },
    {
     "path": "/destinations/egyptian-consulate-dubai",
@@ -15460,11 +15466,11 @@
     "count": 1
    },
    {
-    "path": "/destinations/al-zahra-hospital-dubai",
+    "path": "/destinations/gdrfa-immigration-al-jafiliya",
     "count": 1
    },
    {
-    "path": "/destinations/gdrfa-immigration-al-jafiliya",
+    "path": "/destinations/al-zahra-hospital-dubai",
     "count": 1
    },
    {
@@ -15588,6 +15594,12 @@
     "count": 1
    }
   ],
+  "dubaimetro.fyi/destinations/indian-consulate-dubai": [
+   {
+    "path": "/nearest-station",
+    "count": 1
+   }
+  ],
   "www.facebook.com": [
    {
     "path": "/tl.html",
@@ -15622,7 +15634,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 253,
+   "count": 255,
    "ref_scheme": "g"
   },
   {
@@ -15684,7 +15696,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 843
+   "count": 846
   },
   {
    "id": "rus",
@@ -15741,7 +15753,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 728
+   "count": 731
   },
   {
    "id": "US",
@@ -15913,7 +15925,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 656
+   "count": 658
   },
   {
    "id": "tablet",
@@ -15923,7 +15935,7 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 185
+   "count": 186
   },
   {
    "id": "desktophd",
@@ -15940,12 +15952,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 563
+   "count": 564
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 336
+   "count": 338
   },
   {
    "id": "Firefox",
@@ -15966,12 +15978,12 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 326
+   "count": 328
   },
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 135
+   "count": 136
   },
   {
    "id": "macOS",
