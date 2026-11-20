@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-20T10:32:47Z",
+ "generated": "2026-11-20T18:51:58Z",
  "start": "2025-11-20",
  "end": "2026-11-21",
  "total": {
-  "total": 922,
-  "total_events": 389,
-  "total_utc": 922,
+  "total": 929,
+  "total_events": 390,
+  "total_utc": 929,
   "stats": [
    {
     "day": "2025-11-20",
@@ -10423,7 +10423,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 467
+    "monthly": 474
    },
    {
     "day": "2026-11-02",
@@ -10966,7 +10966,7 @@
      0
     ],
     "daily": 7,
-    "weekly": 19
+    "weekly": 26
    },
    {
     "day": "2026-11-20",
@@ -10986,17 +10986,17 @@
      0,
      8,
      0,
+     1,
+     1,
      0,
      0,
+     3,
      0,
-     0,
-     0,
-     0,
-     0,
+     2,
      0,
      0
     ],
-    "daily": 12
+    "daily": 19
    },
    {
     "day": "2026-11-21",
@@ -11036,7 +11036,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 204,
+   "count": 205,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -11081,7 +11081,7 @@
     "2026-11-16": 2,
     "2026-11-17": 1,
     "2026-11-18": 1,
-    "2026-11-20": 2
+    "2026-11-20": 3
    }
   },
   {
@@ -11089,7 +11089,7 @@
    "path_id": 116082941,
    "title": "Nearest Metro Station to Me in Dubai: Find It by Location",
    "event": false,
-   "count": 92,
+   "count": 94,
    "daily": {
     "2026-10-28": 1,
     "2026-10-31": 1,
@@ -11107,7 +11107,7 @@
     "2026-11-14": 11,
     "2026-11-15": 1,
     "2026-11-19": 2,
-    "2026-11-20": 1
+    "2026-11-20": 3
    }
   },
   {
@@ -11252,7 +11252,7 @@
    "path_id": 115183314,
    "title": "Meena Bazaar Metro Station: Sharaf DG (Green Line), 9 min walk",
    "event": false,
-   "count": 11,
+   "count": 12,
    "daily": {
     "2026-10-26": 1,
     "2026-10-27": 1,
@@ -11262,7 +11262,8 @@
     "2026-11-07": 1,
     "2026-11-08": 1,
     "2026-11-11": 2,
-    "2026-11-19": 2
+    "2026-11-19": 2,
+    "2026-11-20": 1
    }
   },
   {
@@ -11490,6 +11491,19 @@
    }
   },
   {
+   "path": "/destinations/times-square-center",
+   "path_id": 114208930,
+   "title": "Times Square Center Metro Station: Equiti (Red Line)",
+   "event": false,
+   "count": 4,
+   "daily": {
+    "2026-10-23": 1,
+    "2026-10-25": 1,
+    "2026-11-06": 1,
+    "2026-11-20": 1
+   }
+  },
+  {
    "path": "/destinations/al-mulla-plaza",
    "path_id": 114013835,
    "title": "Al Mulla Plaza Metro Station: Al Qiyadah (Green Line), 7 min walk",
@@ -11673,18 +11687,6 @@
    }
   },
   {
-   "path": "/destinations/times-square-center",
-   "path_id": 114208930,
-   "title": "Times Square Center Metro Station: Equiti (Red Line)",
-   "event": false,
-   "count": 3,
-   "daily": {
-    "2026-10-23": 1,
-    "2026-10-25": 1,
-    "2026-11-06": 1
-   }
-  },
-  {
    "path": "/destinations/palm-jumeirah-mall",
    "path_id": 111939146,
    "title": "Palm Jumeirah Mall and The View at The Palm Tram Stop: Palm Jumeirah Mall",
@@ -11814,6 +11816,17 @@
    }
   },
   {
+   "path": "/destinations/dubai-festival-city-mall",
+   "path_id": 121584169,
+   "title": "Dubai Festival City Mall Metro Station: Creek (Green Line)",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-11-13": 1,
+    "2026-11-20": 1
+   }
+  },
+  {
    "path": "station_pair_route_search/jge/et",
    "path_id": 121166484,
    "title": "en|geo",
@@ -11908,6 +11921,17 @@
    "daily": {
     "2026-11-04": 1,
     "2026-11-06": 1
+   }
+  },
+  {
+   "path": "geo/ok/bk",
+   "path_id": 117752054,
+   "title": "en",
+   "event": true,
+   "count": 2,
+   "daily": {
+    "2026-11-02": 1,
+    "2026-11-20": 1
    }
   },
   {
@@ -12546,16 +12570,6 @@
    }
   },
   {
-   "path": "/destinations/dubai-festival-city-mall",
-   "path_id": 121584169,
-   "title": "Dubai Festival City Mall Metro Station: Creek (Green Line)",
-   "event": false,
-   "count": 1,
-   "daily": {
-    "2026-11-13": 1
-   }
-  },
-  {
    "path": "geo/ok/wtc",
    "path_id": 121542882,
    "title": "en",
@@ -12859,16 +12873,6 @@
    "path": "noresult/indigo",
    "path_id": 117752318,
    "title": "en|indigo",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-11-02": 1
-   }
-  },
-  {
-   "path": "geo/ok/bk",
-   "path_id": 117752054,
-   "title": "en",
    "event": true,
    "count": 1,
    "daily": {
@@ -14328,9 +14332,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 533,
-  "events_total": 389,
-  "goatcounter_total_with_events": 922,
+  "visits": 539,
+  "events_total": 390,
+  "goatcounter_total_with_events": 929,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -14381,7 +14385,7 @@
    "2026-11-17": 4,
    "2026-11-18": 6,
    "2026-11-19": 7,
-   "2026-11-20": 6
+   "2026-11-20": 12
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -14444,7 +14448,7 @@
   ],
   "nearest_station": {
    "denied": 15,
-   "ok": 42,
+   "ok": 43,
    "fail": 5,
    "far": 14,
    "outside": 1
@@ -14608,7 +14612,7 @@
    },
    {
     "name": "dubaimetro.fyi/nearest-station",
-    "count": 46
+    "count": 47
    },
    {
     "name": "dubaimetro.fyi",
@@ -14682,11 +14686,11 @@
   "/nearest-station": [
    {
     "name": "Google",
-    "count": 90
+    "count": 91
    },
    {
     "name": "(direct or unknown)",
-    "count": 1
+    "count": 2
    },
    {
     "name": "dubaimetro.fyi/destinations/indian-consulate-dubai",
@@ -14716,7 +14720,7 @@
   "/destinations/meena-bazaar": [
    {
     "name": "Google",
-    "count": 10
+    "count": 11
    },
    {
     "name": "chatgpt.com",
@@ -14853,6 +14857,16 @@
     "count": 4
    }
   ],
+  "/destinations/times-square-center": [
+   {
+    "name": "Google",
+    "count": 3
+   },
+   {
+    "name": "chatgpt.com",
+    "count": 1
+   }
+  ],
   "/destinations/al-mulla-plaza": [
    {
     "name": "Google",
@@ -14908,16 +14922,6 @@
    },
    {
     "name": "dubaimetro.fyi/nearest-station",
-    "count": 1
-   }
-  ],
-  "/destinations/times-square-center": [
-   {
-    "name": "Google",
-    "count": 2
-   },
-   {
-    "name": "chatgpt.com",
     "count": 1
    }
   ],
@@ -14983,6 +14987,12 @@
    {
     "name": "dubaimetro.fyi",
     "count": 1
+   }
+  ],
+  "/destinations/dubai-festival-city-mall": [
+   {
+    "name": "Google",
+    "count": 2
    }
   ],
   "/destinations/dubai-hospital": [
@@ -15095,12 +15105,6 @@
     "count": 1
    }
   ],
-  "/destinations/dubai-festival-city-mall": [
-   {
-    "name": "Google",
-    "count": 1
-   }
-  ],
   "/stations/insurancemarket": [
    {
     "name": "chatgpt.com",
@@ -15197,16 +15201,16 @@
     "count": 3
    },
    {
+    "path": "/nearest-station",
+    "count": 2
+   },
+   {
     "path": "/ru.html",
     "count": 2
    },
    {
     "path": "/lines/red-line",
     "count": 2
-   },
-   {
-    "path": "/nearest-station",
-    "count": 1
    },
    {
     "path": "/destinations/international-modern-hospital",
@@ -15256,7 +15260,7 @@
   "dubaimetro.fyi/nearest-station": [
    {
     "path": "/",
-    "count": 46
+    "count": 47
    },
    {
     "path": "/map",
@@ -15300,7 +15304,7 @@
   "Google": [
    {
     "path": "/nearest-station",
-    "count": 90
+    "count": 91
    },
    {
     "path": "/destinations/etihad-rail-dubai",
@@ -15312,7 +15316,7 @@
    },
    {
     "path": "/destinations/meena-bazaar",
-    "count": 10
+    "count": 11
    },
    {
     "path": "/destinations/rashid-hospital",
@@ -15359,6 +15363,10 @@
     "count": 3
    },
    {
+    "path": "/destinations/times-square-center",
+    "count": 3
+   },
+   {
     "path": "/destinations/jw-marriott-marquis-dubai",
     "count": 3
    },
@@ -15387,11 +15395,11 @@
     "count": 2
    },
    {
-    "path": "/destinations/times-square-center",
+    "path": "/destinations/american-hospital-dubai",
     "count": 2
    },
    {
-    "path": "/destinations/american-hospital-dubai",
+    "path": "/destinations/dubai-festival-city-mall",
     "count": 2
    },
    {
@@ -15456,10 +15464,6 @@
    },
    {
     "path": "/destinations/ibn-battuta-bus-station",
-    "count": 1
-   },
-   {
-    "path": "/destinations/dubai-festival-city-mall",
     "count": 1
    },
    {
@@ -15537,11 +15541,11 @@
     "count": 1
    },
    {
-    "path": "/destinations/jw-marriott-marquis-dubai",
+    "path": "/destinations/times-square-center",
     "count": 1
    },
    {
-    "path": "/destinations/times-square-center",
+    "path": "/destinations/jw-marriott-marquis-dubai",
     "count": 1
    },
    {
@@ -15679,13 +15683,13 @@
  "toprefs": [
   {
    "name": "",
-   "count": 323,
+   "count": 324,
    "ref_scheme": "o"
   },
   {
    "id": "Google",
    "name": "Google",
-   "count": 262,
+   "count": 266,
    "ref_scheme": "g"
   },
   {
@@ -15747,7 +15751,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 861
+   "count": 868
   },
   {
    "id": "rus",
@@ -15804,7 +15808,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 743
+   "count": 748
   },
   {
    "id": "US",
@@ -15814,11 +15818,16 @@
   {
    "id": "IN",
    "name": "India",
-   "count": 23
+   "count": 24
   },
   {
    "id": "DE",
    "name": "Germany",
+   "count": 9
+  },
+  {
+   "id": "GB",
+   "name": "United Kingdom",
    "count": 9
   },
   {
@@ -15829,11 +15838,6 @@
   {
    "id": "FR",
    "name": "France",
-   "count": 8
-  },
-  {
-   "id": "GB",
-   "name": "United Kingdom",
    "count": 8
   },
   {
@@ -15976,7 +15980,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 670
+   "count": 677
   },
   {
    "id": "tablet",
@@ -16003,12 +16007,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 569
+   "count": 575
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 347
+   "count": 348
   },
   {
    "id": "Firefox",
@@ -16022,14 +16026,14 @@
  ],
  "systems": [
   {
-   "id": "iOS",
-   "name": "iOS",
-   "count": 337
-  },
-  {
    "id": "Android",
    "name": "Android",
-   "count": 335
+   "count": 341
+  },
+  {
+   "id": "iOS",
+   "name": "iOS",
+   "count": 338
   },
   {
    "id": "Windows",
