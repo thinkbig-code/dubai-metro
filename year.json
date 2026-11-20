@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-20T08:40:34Z",
+ "generated": "2026-11-20T10:32:47Z",
  "start": "2025-11-20",
  "end": "2026-11-21",
  "total": {
-  "total": 914,
-  "total_events": 384,
-  "total_utc": 914,
+  "total": 922,
+  "total_events": 389,
+  "total_utc": 922,
   "stats": [
    {
     "day": "2025-11-20",
@@ -10423,7 +10423,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 459
+    "monthly": 467
    },
    {
     "day": "2026-11-02",
@@ -10966,7 +10966,7 @@
      0
     ],
     "daily": 7,
-    "weekly": 11
+    "weekly": 19
    },
    {
     "day": "2026-11-20",
@@ -10984,7 +10984,7 @@
      1,
      0,
      0,
-     0,
+     8,
      0,
      0,
      0,
@@ -10996,7 +10996,7 @@
      0,
      0
     ],
-    "daily": 4
+    "daily": 12
    },
    {
     "day": "2026-11-21",
@@ -11036,7 +11036,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 203,
+   "count": 204,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -11081,7 +11081,7 @@
     "2026-11-16": 2,
     "2026-11-17": 1,
     "2026-11-18": 1,
-    "2026-11-20": 1
+    "2026-11-20": 2
    }
   },
   {
@@ -11089,7 +11089,7 @@
    "path_id": 116082941,
    "title": "Nearest Metro Station to Me in Dubai: Find It by Location",
    "event": false,
-   "count": 91,
+   "count": 92,
    "daily": {
     "2026-10-28": 1,
     "2026-10-31": 1,
@@ -11106,7 +11106,8 @@
     "2026-11-13": 15,
     "2026-11-14": 11,
     "2026-11-15": 1,
-    "2026-11-19": 2
+    "2026-11-19": 2,
+    "2026-11-20": 1
    }
   },
   {
@@ -11269,7 +11270,7 @@
    "path_id": 112804201,
    "title": "Rashid Hospital Metro Station: Oud Metha (Green Line), 5 min walk",
    "event": false,
-   "count": 10,
+   "count": 11,
    "daily": {
     "2026-10-19": 1,
     "2026-10-26": 2,
@@ -11279,7 +11280,8 @@
     "2026-11-10": 1,
     "2026-11-11": 1,
     "2026-11-12": 1,
-    "2026-11-14": 1
+    "2026-11-14": 1,
+    "2026-11-20": 1
    }
   },
   {
@@ -11635,6 +11637,18 @@
    }
   },
   {
+   "path": "geo/ok/garmin",
+   "path_id": 119596593,
+   "title": "en",
+   "event": true,
+   "count": 3,
+   "daily": {
+    "2026-11-06": 1,
+    "2026-11-14": 1,
+    "2026-11-20": 1
+   }
+  },
+  {
    "path": "geo/ok/fc",
    "path_id": 119255504,
    "title": "en",
@@ -11872,17 +11886,6 @@
    "daily": {
     "2026-11-06": 1,
     "2026-11-09": 1
-   }
-  },
-  {
-   "path": "geo/ok/garmin",
-   "path_id": 119596593,
-   "title": "en",
-   "event": true,
-   "count": 2,
-   "daily": {
-    "2026-11-06": 1,
-    "2026-11-14": 1
    }
   },
   {
@@ -12200,6 +12203,46 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "station_pair_route_search/garmin/danube",
+   "path_id": 124414262,
+   "title": "en|geo",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-20": 1
+   }
+  },
+  {
+   "path": "route/garmin/danube",
+   "path_id": 124414261,
+   "title": "en|search|ok|first_geo",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-20": 1
+   }
+  },
+  {
+   "path": "station/danube/to",
+   "path_id": 124414260,
+   "title": "en|name",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-20": 1
+   }
+  },
+  {
+   "path": "station/danube/from",
+   "path_id": 124414184,
+   "title": "en|name",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-20": 1
    }
   },
   {
@@ -14285,9 +14328,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 530,
-  "events_total": 384,
-  "goatcounter_total_with_events": 914,
+  "visits": 533,
+  "events_total": 389,
+  "goatcounter_total_with_events": 922,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -14338,7 +14381,7 @@
    "2026-11-17": 4,
    "2026-11-18": 6,
    "2026-11-19": 7,
-   "2026-11-20": 3
+   "2026-11-20": 6
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -14378,17 +14421,17 @@
   },
   "visitor_days": 79,
   "return_rate": 0.165,
-  "routes": 54,
+  "routes": 55,
   "routes_not_found": 0,
   "routes_per_visit": 0.1,
-  "routes_per_visitor_day": 0.48,
-  "share_rate": 0.056,
+  "routes_per_visitor_day": 0.49,
+  "share_rate": 0.055,
   "shares": {
    "qr": 1,
    "copy": 1,
    "whatsapp": 1
   },
-  "failed_search_rate": 0.041,
+  "failed_search_rate": 0.039,
   "failed_searches": [
    {
     "name": "indigo",
@@ -14401,7 +14444,7 @@
   ],
   "nearest_station": {
    "denied": 15,
-   "ok": 41,
+   "ok": 42,
    "fail": 5,
    "far": 14,
    "outside": 1
@@ -14418,6 +14461,10 @@
    {
     "name": "p_dubai_mall > p_dxb_airport_terminal_3",
     "count": 2
+   },
+   {
+    "name": "garmin > danube",
+    "count": 1
    },
    {
     "name": "p_dxb_airport_terminal_3 > p_al_ghurair_centre",
@@ -14465,10 +14512,6 @@
    },
    {
     "name": "p_dubai_internet_city > p_etihad_rail_al_yalayis_station",
-    "count": 1
-   },
-   {
-    "name": "p_mall_of_the_emirates > union",
     "count": 1
    }
   ],
@@ -14552,7 +14595,7 @@
     "count": 2
    },
    {
-    "name": "p_al_ghurair_centre",
+    "name": "danube",
     "count": 1
    }
   ]
@@ -14569,7 +14612,7 @@
    },
    {
     "name": "dubaimetro.fyi",
-    "count": 26
+    "count": 27
    },
    {
     "name": "com.reddit.frontpage",
@@ -14639,7 +14682,7 @@
   "/nearest-station": [
    {
     "name": "Google",
-    "count": 89
+    "count": 90
    },
    {
     "name": "(direct or unknown)",
@@ -14683,7 +14726,7 @@
   "/destinations/rashid-hospital": [
    {
     "name": "Google",
-    "count": 9
+    "count": 10
    },
    {
     "name": "chatgpt.com",
@@ -15223,7 +15266,7 @@
   "dubaimetro.fyi": [
    {
     "path": "/",
-    "count": 26
+    "count": 27
    },
    {
     "path": "/ru.html",
@@ -15257,7 +15300,7 @@
   "Google": [
    {
     "path": "/nearest-station",
-    "count": 89
+    "count": 90
    },
    {
     "path": "/destinations/etihad-rail-dubai",
@@ -15273,7 +15316,7 @@
    },
    {
     "path": "/destinations/rashid-hospital",
-    "count": 9
+    "count": 10
    },
    {
     "path": "/destinations/al-zahra-hospital-dubai",
@@ -15642,7 +15685,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 260,
+   "count": 262,
    "ref_scheme": "g"
   },
   {
@@ -15704,7 +15747,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 853
+   "count": 861
   },
   {
    "id": "rus",
@@ -15761,7 +15804,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 735
+   "count": 743
   },
   {
    "id": "US",
@@ -15933,7 +15976,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 662
+   "count": 670
   },
   {
    "id": "tablet",
@@ -15960,12 +16003,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 568
+   "count": 569
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 340
+   "count": 347
   },
   {
    "id": "Firefox",
@@ -15979,14 +16022,14 @@
  ],
  "systems": [
   {
-   "id": "Android",
-   "name": "Android",
-   "count": 334
-  },
-  {
    "id": "iOS",
    "name": "iOS",
-   "count": 330
+   "count": 337
+  },
+  {
+   "id": "Android",
+   "name": "Android",
+   "count": 335
   },
   {
    "id": "Windows",

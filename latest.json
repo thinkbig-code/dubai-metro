@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-20T08:39:21Z",
+ "generated": "2026-11-20T10:31:39Z",
  "start": "2026-10-21",
  "end": "2026-11-21",
  "total": {
-  "total": 559,
-  "total_events": 175,
-  "total_utc": 559,
+  "total": 567,
+  "total_events": 180,
+  "total_utc": 567,
   "stats": [
    {
     "day": "2026-10-21",
@@ -370,7 +370,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 459
+    "monthly": 467
    },
    {
     "day": "2026-11-02",
@@ -883,7 +883,7 @@
      0
     ],
     "daily": 7,
-    "weekly": 18
+    "weekly": 26
    },
    {
     "day": "2026-11-19",
@@ -931,7 +931,7 @@
      1,
      0,
      0,
-     0,
+     8,
      0,
      0,
      0,
@@ -943,7 +943,7 @@
      0,
      0
     ],
-    "daily": 4
+    "daily": 12
    },
    {
     "day": "2026-11-21",
@@ -983,7 +983,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 103,
+   "count": 104,
    "daily": {
     "2026-10-22": 2,
     "2026-10-24": 2,
@@ -1010,7 +1010,7 @@
     "2026-11-16": 2,
     "2026-11-17": 1,
     "2026-11-18": 1,
-    "2026-11-20": 1
+    "2026-11-20": 2
    }
   },
   {
@@ -1018,7 +1018,7 @@
    "path_id": 116082941,
    "title": "Nearest Metro Station to Me in Dubai: Find It by Location",
    "event": false,
-   "count": 91,
+   "count": 92,
    "daily": {
     "2026-10-28": 1,
     "2026-10-31": 1,
@@ -1035,7 +1035,8 @@
     "2026-11-13": 15,
     "2026-11-14": 11,
     "2026-11-15": 1,
-    "2026-11-19": 2
+    "2026-11-19": 2,
+    "2026-11-20": 1
    }
   },
   {
@@ -1173,7 +1174,7 @@
    "path_id": 112804201,
    "title": "Rashid Hospital Metro Station: Oud Metha (Green Line), 5 min walk",
    "event": false,
-   "count": 9,
+   "count": 10,
    "daily": {
     "2026-10-26": 2,
     "2026-10-27": 1,
@@ -1182,7 +1183,8 @@
     "2026-11-10": 1,
     "2026-11-11": 1,
     "2026-11-12": 1,
-    "2026-11-14": 1
+    "2026-11-14": 1,
+    "2026-11-20": 1
    }
   },
   {
@@ -1419,6 +1421,18 @@
    }
   },
   {
+   "path": "geo/ok/garmin",
+   "path_id": 119596593,
+   "title": "en",
+   "event": true,
+   "count": 3,
+   "daily": {
+    "2026-11-06": 1,
+    "2026-11-14": 1,
+    "2026-11-20": 1
+   }
+  },
+  {
    "path": "geo/ok/fc",
    "path_id": 119255504,
    "title": "en",
@@ -1577,17 +1591,6 @@
    }
   },
   {
-   "path": "geo/ok/garmin",
-   "path_id": 119596593,
-   "title": "en",
-   "event": true,
-   "count": 2,
-   "daily": {
-    "2026-11-06": 1,
-    "2026-11-14": 1
-   }
-  },
-  {
    "path": "/destinations/reef-mall",
    "path_id": 119231973,
    "title": "Reef Mall Metro Station: Salah Al Din (Green Line), 2 min walk",
@@ -1728,6 +1731,46 @@
    "daily": {
     "2026-11-09": 1,
     "2026-11-18": 1
+   }
+  },
+  {
+   "path": "station_pair_route_search/garmin/danube",
+   "path_id": 124414262,
+   "title": "en|geo",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-20": 1
+   }
+  },
+  {
+   "path": "route/garmin/danube",
+   "path_id": 124414261,
+   "title": "en|search|ok|first_geo",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-20": 1
+   }
+  },
+  {
+   "path": "station/danube/to",
+   "path_id": 124414260,
+   "title": "en|name",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-20": 1
+   }
+  },
+  {
+   "path": "station/danube/from",
+   "path_id": 124414184,
+   "title": "en|name",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-20": 1
    }
   },
   {
@@ -2753,9 +2796,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 384,
-  "events_total": 175,
-  "goatcounter_total_with_events": 559,
+  "visits": 387,
+  "events_total": 180,
+  "goatcounter_total_with_events": 567,
   "page_loads_by_day": {
    "2026-10-21": 3,
    "2026-10-22": 5,
@@ -2787,7 +2830,7 @@
    "2026-11-17": 4,
    "2026-11-18": 6,
    "2026-11-19": 7,
-   "2026-11-20": 3
+   "2026-11-20": 6
   },
   "visitor_days_by_day": {
    "2026-10-22": 2,
@@ -2815,17 +2858,17 @@
   },
   "visitor_days": 41,
   "return_rate": 0.293,
-  "routes": 16,
+  "routes": 17,
   "routes_not_found": 0,
   "routes_per_visit": 0.04,
-  "routes_per_visitor_day": 0.27,
-  "share_rate": 0.188,
+  "routes_per_visitor_day": 0.29,
+  "share_rate": 0.176,
   "shares": {
    "qr": 1,
    "copy": 1,
    "whatsapp": 1
   },
-  "failed_search_rate": 0.062,
+  "failed_search_rate": 0.056,
   "failed_searches": [
    {
     "name": "indigo",
@@ -2834,7 +2877,7 @@
   ],
   "nearest_station": {
    "denied": 12,
-   "ok": 39,
+   "ok": 40,
    "far": 14,
    "fail": 4,
    "outside": 1
@@ -2847,6 +2890,10 @@
    {
     "name": "jge > et",
     "count": 2
+   },
+   {
+    "name": "garmin > danube",
+    "count": 1
    },
    {
     "name": "p_dxb_airport_terminal_3 > p_al_ghurair_centre",
@@ -2899,10 +2946,6 @@
    {
     "name": "p_mall_of_the_emirates > union",
     "count": 1
-   },
-   {
-    "name": "wtc > p_st_mary_s_catholic_church",
-    "count": 1
    }
   ],
   "top_origins": [
@@ -2923,6 +2966,10 @@
     "count": 2
    },
    {
+    "name": "garmin",
+    "count": 1
+   },
+   {
     "name": "sobha",
     "count": 1
    },
@@ -2941,10 +2988,6 @@
    {
     "name": "p_mall_of_the_emirates",
     "count": 1
-   },
-   {
-    "name": "wtc",
-    "count": 1
    }
   ],
   "top_destinations": [
@@ -2959,6 +3002,10 @@
    {
     "name": "union",
     "count": 2
+   },
+   {
+    "name": "danube",
+    "count": 1
    },
    {
     "name": "p_al_ghurair_centre",
@@ -2983,10 +3030,6 @@
    {
     "name": "adcb",
     "count": 1
-   },
-   {
-    "name": "p_al_jalila_children_s_specialty_hospital",
-    "count": 1
    }
   ]
  },
@@ -2998,7 +3041,7 @@
    },
    {
     "name": "dubaimetro.fyi",
-    "count": 26
+    "count": 27
    },
    {
     "name": "(direct or unknown)",
@@ -3048,7 +3091,7 @@
   "/nearest-station": [
    {
     "name": "Google",
-    "count": 89
+    "count": 90
    },
    {
     "name": "(direct or unknown)",
@@ -3088,7 +3131,7 @@
   "/destinations/rashid-hospital": [
    {
     "name": "Google",
-    "count": 9
+    "count": 10
    }
   ],
   "/destinations/gdrfa-immigration-al-jafiliya": [
@@ -3490,7 +3533,7 @@
   "dubaimetro.fyi": [
    {
     "path": "/",
-    "count": 26
+    "count": 27
    },
    {
     "path": "/tram",
@@ -3558,7 +3601,7 @@
   "Google": [
    {
     "path": "/nearest-station",
-    "count": 89
+    "count": 90
    },
    {
     "path": "/destinations/etihad-rail-dubai",
@@ -3574,7 +3617,7 @@
    },
    {
     "path": "/destinations/rashid-hospital",
-    "count": 9
+    "count": 10
    },
    {
     "path": "/destinations/wafi-city",
@@ -3878,7 +3921,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 246,
+   "count": 248,
    "ref_scheme": "g"
   },
   {
@@ -3909,7 +3952,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 533
+   "count": 541
   },
   {
    "id": "ara",
@@ -3956,7 +3999,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 462
+   "count": 470
   },
   {
    "id": "US",
@@ -4078,7 +4121,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 463
+   "count": 471
   },
   {
    "id": "tablet",
@@ -4105,12 +4148,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 340
+   "count": 341
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 218
+   "count": 225
   },
   {
    "id": "Firefox",
@@ -4122,12 +4165,12 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 254
+   "count": 255
   },
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 212
+   "count": 219
   },
   {
    "id": "Windows",
