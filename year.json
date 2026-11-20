@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-20T02:38:55Z",
+ "generated": "2026-11-20T08:40:34Z",
  "start": "2025-11-20",
  "end": "2026-11-21",
  "total": {
-  "total": 913,
+  "total": 914,
   "total_events": 384,
-  "total_utc": 913,
+  "total_utc": 914,
   "stats": [
    {
     "day": "2025-11-20",
@@ -10423,7 +10423,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 458
+    "monthly": 459
    },
    {
     "day": "2026-11-02",
@@ -10966,7 +10966,7 @@
      0
     ],
     "daily": 7,
-    "weekly": 10
+    "weekly": 11
    },
    {
     "day": "2026-11-20",
@@ -10981,7 +10981,7 @@
      0,
      0,
      0,
-     0,
+     1,
      0,
      0,
      0,
@@ -10996,7 +10996,7 @@
      0,
      0
     ],
-    "daily": 3
+    "daily": 4
    },
    {
     "day": "2026-11-21",
@@ -11337,6 +11337,20 @@
    }
   },
   {
+   "path": "/destinations/dubai-police-general-headquarters",
+   "path_id": 111896140,
+   "title": "Dubai Police General Headquarters Metro Station: Al Qiyadah, 7 min walk",
+   "event": false,
+   "count": 5,
+   "daily": {
+    "2026-10-13": 1,
+    "2026-10-20": 1,
+    "2026-11-05": 1,
+    "2026-11-09": 1,
+    "2026-11-20": 1
+   }
+  },
+  {
    "path": "/destinations/dubai-mall",
    "path_id": 110484997,
    "title": "Dubai Mall Metro Station: Burj Khalifa/Dubai Mall (Red Line), 12 min walk",
@@ -11546,19 +11560,6 @@
     "2026-10-13": 1,
     "2026-11-15": 2,
     "2026-11-20": 1
-   }
-  },
-  {
-   "path": "/destinations/dubai-police-general-headquarters",
-   "path_id": 111896140,
-   "title": "Dubai Police General Headquarters Metro Station: Al Qiyadah, 7 min walk",
-   "event": false,
-   "count": 4,
-   "daily": {
-    "2026-10-13": 1,
-    "2026-10-20": 1,
-    "2026-11-05": 1,
-    "2026-11-09": 1
    }
   },
   {
@@ -14284,9 +14285,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 529,
+  "visits": 530,
   "events_total": 384,
-  "goatcounter_total_with_events": 913,
+  "goatcounter_total_with_events": 914,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -14337,7 +14338,7 @@
    "2026-11-17": 4,
    "2026-11-18": 6,
    "2026-11-19": 7,
-   "2026-11-20": 2
+   "2026-11-20": 3
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -14719,6 +14720,16 @@
     "count": 5
    }
   ],
+  "/destinations/dubai-police-general-headquarters": [
+   {
+    "name": "Google",
+    "count": 4
+   },
+   {
+    "name": "chatgpt.com",
+    "count": 1
+   }
+  ],
   "/destinations/dubai-mall": [
    {
     "name": "Google",
@@ -14844,16 +14855,6 @@
    },
    {
     "name": "(direct or unknown)",
-    "count": 1
-   }
-  ],
-  "/destinations/dubai-police-general-headquarters": [
-   {
-    "name": "Google",
-    "count": 3
-   },
-   {
-    "name": "chatgpt.com",
     "count": 1
    }
   ],
@@ -15283,6 +15284,10 @@
     "count": 5
    },
    {
+    "path": "/destinations/dubai-police-general-headquarters",
+    "count": 4
+   },
+   {
     "path": "/destinations/dubai-mall",
     "count": 4
    },
@@ -15320,10 +15325,6 @@
    },
    {
     "path": "/destinations/museum-of-the-future",
-    "count": 3
-   },
-   {
-    "path": "/destinations/dubai-police-general-headquarters",
     "count": 3
    },
    {
@@ -15481,6 +15482,10 @@
     "count": 1
    },
    {
+    "path": "/destinations/dubai-police-general-headquarters",
+    "count": 1
+   },
+   {
     "path": "/destinations/dubai-mall",
     "count": 1
    },
@@ -15490,10 +15495,6 @@
    },
    {
     "path": "/destinations/jw-marriott-marquis-dubai",
-    "count": 1
-   },
-   {
-    "path": "/destinations/dubai-police-general-headquarters",
     "count": 1
    },
    {
@@ -15641,7 +15642,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 259,
+   "count": 260,
    "ref_scheme": "g"
   },
   {
@@ -15703,7 +15704,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 852
+   "count": 853
   },
   {
    "id": "rus",
@@ -15760,7 +15761,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 734
+   "count": 735
   },
   {
    "id": "US",
@@ -15942,7 +15943,7 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 186
+   "count": 187
   },
   {
    "id": "desktophd",
@@ -15969,7 +15970,7 @@
   {
    "id": "Firefox",
    "name": "Firefox",
-   "count": 4
+   "count": 5
   },
   {
    "name": "",
@@ -15990,7 +15991,7 @@
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 136
+   "count": 137
   },
   {
    "id": "macOS",

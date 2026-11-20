@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-20T02:37:52Z",
+ "generated": "2026-11-20T08:39:21Z",
  "start": "2026-10-21",
  "end": "2026-11-21",
  "total": {
-  "total": 558,
+  "total": 559,
   "total_events": 175,
-  "total_utc": 558,
+  "total_utc": 559,
   "stats": [
    {
     "day": "2026-10-21",
@@ -370,7 +370,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 458
+    "monthly": 459
    },
    {
     "day": "2026-11-02",
@@ -883,7 +883,7 @@
      0
     ],
     "daily": 7,
-    "weekly": 17
+    "weekly": 18
    },
    {
     "day": "2026-11-19",
@@ -928,7 +928,7 @@
      0,
      0,
      0,
-     0,
+     1,
      0,
      0,
      0,
@@ -943,7 +943,7 @@
      0,
      0
     ],
-    "daily": 3
+    "daily": 4
    },
    {
     "day": "2026-11-21",
@@ -1490,6 +1490,18 @@
    }
   },
   {
+   "path": "/destinations/dubai-police-general-headquarters",
+   "path_id": 111896140,
+   "title": "Dubai Police General Headquarters Metro Station: Al Qiyadah, 7 min walk",
+   "event": false,
+   "count": 3,
+   "daily": {
+    "2026-11-05": 1,
+    "2026-11-09": 1,
+    "2026-11-20": 1
+   }
+  },
+  {
    "path": "station_pair_route_search/jge/et",
    "path_id": 121166484,
    "title": "en|geo",
@@ -1661,17 +1673,6 @@
    "daily": {
     "2026-11-12": 1,
     "2026-11-13": 1
-   }
-  },
-  {
-   "path": "/destinations/dubai-police-general-headquarters",
-   "path_id": 111896140,
-   "title": "Dubai Police General Headquarters Metro Station: Al Qiyadah, 7 min walk",
-   "event": false,
-   "count": 2,
-   "daily": {
-    "2026-11-05": 1,
-    "2026-11-09": 1
    }
   },
   {
@@ -2752,9 +2753,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 383,
+  "visits": 384,
   "events_total": 175,
-  "goatcounter_total_with_events": 558,
+  "goatcounter_total_with_events": 559,
   "page_loads_by_day": {
    "2026-10-21": 3,
    "2026-10-22": 5,
@@ -2786,7 +2787,7 @@
    "2026-11-17": 4,
    "2026-11-18": 6,
    "2026-11-19": 7,
-   "2026-11-20": 2
+   "2026-11-20": 3
   },
   "visitor_days_by_day": {
    "2026-10-22": 2,
@@ -3232,6 +3233,12 @@
     "count": 3
    }
   ],
+  "/destinations/dubai-police-general-headquarters": [
+   {
+    "name": "Google",
+    "count": 3
+   }
+  ],
   "/destinations/dubai-hospital": [
    {
     "name": "Google",
@@ -3281,12 +3288,6 @@
    }
   ],
   "/destinations/us-consulate-dubai": [
-   {
-    "name": "Google",
-    "count": 2
-   }
-  ],
-  "/destinations/dubai-police-general-headquarters": [
    {
     "name": "Google",
     "count": 2
@@ -3620,6 +3621,10 @@
     "count": 3
    },
    {
+    "path": "/destinations/dubai-police-general-headquarters",
+    "count": 3
+   },
+   {
     "path": "/",
     "count": 2
    },
@@ -3653,10 +3658,6 @@
    },
    {
     "path": "/destinations/us-consulate-dubai",
-    "count": 2
-   },
-   {
-    "path": "/destinations/dubai-police-general-headquarters",
     "count": 2
    },
    {
@@ -3877,7 +3878,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 245,
+   "count": 246,
    "ref_scheme": "g"
   },
   {
@@ -3908,7 +3909,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 532
+   "count": 533
   },
   {
    "id": "ara",
@@ -3955,7 +3956,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 461
+   "count": 462
   },
   {
    "id": "US",
@@ -4087,7 +4088,7 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 58
+   "count": 59
   },
   {
    "id": "desktophd",
@@ -4110,6 +4111,11 @@
    "id": "Safari",
    "name": "Safari",
    "count": 218
+  },
+  {
+   "id": "Firefox",
+   "name": "Firefox",
+   "count": 1
   }
  ],
  "systems": [
@@ -4126,7 +4132,7 @@
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 62
+   "count": 63
   },
   {
    "id": "Linux",
