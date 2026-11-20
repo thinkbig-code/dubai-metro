@@ -1,43 +1,13 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-19T21:01:00Z",
- "start": "2025-11-19",
- "end": "2026-11-20",
+ "generated": "2026-11-20T02:38:55Z",
+ "start": "2025-11-20",
+ "end": "2026-11-21",
  "total": {
-  "total": 910,
-  "total_events": 383,
-  "total_utc": 910,
+  "total": 913,
+  "total_events": 384,
+  "total_utc": 913,
   "stats": [
-   {
-    "day": "2025-11-19",
-    "hourly": [
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0
-    ],
-    "daily": 0
-   },
    {
     "day": "2025-11-20",
     "hourly": [
@@ -9486,8 +9456,7 @@
      0,
      0
     ],
-    "daily": 0,
-    "weekly": 71
+    "daily": 0
    },
    {
     "day": "2026-10-01",
@@ -9518,6 +9487,7 @@
      5
     ],
     "daily": 6,
+    "weekly": 92,
     "monthly": 455
    },
    {
@@ -9698,8 +9668,7 @@
      0,
      11
     ],
-    "daily": 21,
-    "weekly": 222
+    "daily": 21
    },
    {
     "day": "2026-10-08",
@@ -9729,7 +9698,8 @@
      3,
      2
     ],
-    "daily": 111
+    "daily": 111,
+    "weekly": 222
    },
    {
     "day": "2026-10-09",
@@ -9909,8 +9879,7 @@
      0,
      1
     ],
-    "daily": 21,
-    "weekly": 62
+    "daily": 21
    },
    {
     "day": "2026-10-15",
@@ -9940,7 +9909,8 @@
      0,
      0
     ],
-    "daily": 6
+    "daily": 6,
+    "weekly": 44
    },
    {
     "day": "2026-10-16",
@@ -10120,8 +10090,7 @@
      0,
      0
     ],
-    "daily": 3,
-    "weekly": 73
+    "daily": 3
    },
    {
     "day": "2026-10-22",
@@ -10151,7 +10120,8 @@
      6,
      0
     ],
-    "daily": 9
+    "daily": 9,
+    "weekly": 78
    },
    {
     "day": "2026-10-23",
@@ -10331,8 +10301,7 @@
      0,
      0
     ],
-    "daily": 8,
-    "weekly": 67
+    "daily": 8
    },
    {
     "day": "2026-10-29",
@@ -10362,7 +10331,8 @@
      0,
      0
     ],
-    "daily": 5
+    "daily": 5,
+    "weekly": 78
    },
    {
     "day": "2026-10-30",
@@ -10453,7 +10423,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 455
+    "monthly": 458
    },
    {
     "day": "2026-11-02",
@@ -10543,8 +10513,7 @@
      0,
      0
     ],
-    "daily": 19,
-    "weekly": 182
+    "daily": 19
    },
    {
     "day": "2026-11-05",
@@ -10574,7 +10543,8 @@
      0,
      0
     ],
-    "daily": 12
+    "daily": 12,
+    "weekly": 208
    },
    {
     "day": "2026-11-06",
@@ -10754,8 +10724,7 @@
      0,
      1
     ],
-    "daily": 45,
-    "weekly": 219
+    "daily": 45
    },
    {
     "day": "2026-11-12",
@@ -10785,7 +10754,8 @@
      5,
      0
     ],
-    "daily": 33
+    "daily": 33,
+    "weekly": 181
    },
    {
     "day": "2026-11-13",
@@ -10965,8 +10935,7 @@
      0,
      0
     ],
-    "daily": 7,
-    "weekly": 14
+    "daily": 7
    },
    {
     "day": "2026-11-19",
@@ -10996,10 +10965,41 @@
      0,
      0
     ],
-    "daily": 7
+    "daily": 7,
+    "weekly": 10
    },
    {
     "day": "2026-11-20",
+    "hourly": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     2,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "daily": 3
+   },
+   {
+    "day": "2026-11-21",
     "hourly": [
      0,
      0,
@@ -11036,7 +11036,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 202,
+   "count": 203,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -11080,7 +11080,8 @@
     "2026-11-15": 1,
     "2026-11-16": 2,
     "2026-11-17": 1,
-    "2026-11-18": 1
+    "2026-11-18": 1,
+    "2026-11-20": 1
    }
   },
   {
@@ -11113,7 +11114,7 @@
    "path_id": 110447314,
    "title": "en",
    "event": true,
-   "count": 65,
+   "count": 66,
    "daily": {
     "2026-10-08": 7,
     "2026-10-09": 6,
@@ -11143,7 +11144,8 @@
     "2026-11-12": 1,
     "2026-11-13": 1,
     "2026-11-14": 2,
-    "2026-11-16": 1
+    "2026-11-16": 1,
+    "2026-11-20": 1
    }
   },
   {
@@ -11535,6 +11537,18 @@
    }
   },
   {
+   "path": "/destinations/museum-of-the-future",
+   "path_id": 111942261,
+   "title": "Museum of the Future Metro Station: Emirates Towers (Red Line), 5 min walk",
+   "event": false,
+   "count": 4,
+   "daily": {
+    "2026-10-13": 1,
+    "2026-11-15": 2,
+    "2026-11-20": 1
+   }
+  },
+  {
    "path": "/destinations/dubai-police-general-headquarters",
    "path_id": 111896140,
    "title": "Dubai Police General Headquarters Metro Station: Al Qiyadah, 7 min walk",
@@ -11653,17 +11667,6 @@
     "2026-10-23": 1,
     "2026-10-25": 1,
     "2026-11-06": 1
-   }
-  },
-  {
-   "path": "/destinations/museum-of-the-future",
-   "path_id": 111942261,
-   "title": "Museum of the Future Metro Station: Emirates Towers (Red Line), 5 min walk",
-   "event": false,
-   "count": 3,
-   "daily": {
-    "2026-10-13": 1,
-    "2026-11-15": 2
    }
   },
   {
@@ -14281,9 +14284,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 527,
-  "events_total": 383,
-  "goatcounter_total_with_events": 910,
+  "visits": 529,
+  "events_total": 384,
+  "goatcounter_total_with_events": 913,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -14333,7 +14336,8 @@
    "2026-11-16": 13,
    "2026-11-17": 4,
    "2026-11-18": 6,
-   "2026-11-19": 7
+   "2026-11-19": 7,
+   "2026-11-20": 2
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -14368,14 +14372,15 @@
    "2026-11-14": 2,
    "2026-11-16": 2,
    "2026-11-17": 1,
-   "2026-11-18": 1
+   "2026-11-18": 1,
+   "2026-11-20": 1
   },
-  "visitor_days": 78,
-  "return_rate": 0.167,
+  "visitor_days": 79,
+  "return_rate": 0.165,
   "routes": 54,
   "routes_not_found": 0,
   "routes_per_visit": 0.1,
-  "routes_per_visitor_day": 0.49,
+  "routes_per_visitor_day": 0.48,
   "share_rate": 0.056,
   "shares": {
    "qr": 1,
@@ -14401,7 +14406,7 @@
    "outside": 1
   },
   "visitors_new_return": {
-   "new": 65,
+   "new": 66,
    "return": 13
   },
   "top_routes": [
@@ -14555,7 +14560,7 @@
   "/": [
    {
     "name": "(direct or unknown)",
-    "count": 100
+    "count": 101
    },
    {
     "name": "dubaimetro.fyi/nearest-station",
@@ -14832,6 +14837,16 @@
     "count": 4
    }
   ],
+  "/destinations/museum-of-the-future": [
+   {
+    "name": "Google",
+    "count": 3
+   },
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   }
+  ],
   "/destinations/dubai-police-general-headquarters": [
    {
     "name": "Google",
@@ -14859,16 +14874,6 @@
    },
    {
     "name": "chatgpt.com",
-    "count": 1
-   }
-  ],
-  "/destinations/museum-of-the-future": [
-   {
-    "name": "Google",
-    "count": 2
-   },
-   {
-    "name": "(direct or unknown)",
     "count": 1
    }
   ],
@@ -15129,7 +15134,7 @@
   "(direct or unknown)": [
    {
     "path": "/",
-    "count": 100
+    "count": 101
    },
    {
     "path": "/destinations/etihad-rail-dubai",
@@ -15314,6 +15319,10 @@
     "count": 3
    },
    {
+    "path": "/destinations/museum-of-the-future",
+    "count": 3
+   },
+   {
     "path": "/destinations/dubai-police-general-headquarters",
     "count": 3
    },
@@ -15335,10 +15344,6 @@
    },
    {
     "path": "/destinations/times-square-center",
-    "count": 2
-   },
-   {
-    "path": "/destinations/museum-of-the-future",
     "count": 2
    },
    {
@@ -15630,13 +15635,13 @@
  "toprefs": [
   {
    "name": "",
-   "count": 321,
+   "count": 323,
    "ref_scheme": "o"
   },
   {
    "id": "Google",
    "name": "Google",
-   "count": 258,
+   "count": 259,
    "ref_scheme": "g"
   },
   {
@@ -15698,7 +15703,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 849
+   "count": 852
   },
   {
    "id": "rus",
@@ -15755,7 +15760,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 733
+   "count": 734
   },
   {
    "id": "US",
@@ -15805,6 +15810,11 @@
   {
    "id": "BR",
    "name": "Brazil",
+   "count": 3
+  },
+  {
+   "id": "CA",
+   "name": "Canada",
    "count": 3
   },
   {
@@ -15878,11 +15888,6 @@
    "count": 1
   },
   {
-   "id": "CA",
-   "name": "Canada",
-   "count": 1
-  },
-  {
    "id": "CL",
    "name": "Chile",
    "count": 1
@@ -15927,12 +15932,12 @@
   {
    "id": "phone",
    "name": "",
-   "count": 661
+   "count": 662
   },
   {
    "id": "tablet",
    "name": "",
-   "count": 46
+   "count": 48
   },
   {
    "id": "desktop",
@@ -15954,7 +15959,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 565
+   "count": 568
   },
   {
    "id": "Safari",
@@ -15975,7 +15980,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 333
+   "count": 334
   },
   {
    "id": "iOS",
@@ -15995,7 +16000,7 @@
   {
    "id": "Linux",
    "name": "Linux",
-   "count": 32
+   "count": 34
   },
   {
    "id": "Chrome OS",
