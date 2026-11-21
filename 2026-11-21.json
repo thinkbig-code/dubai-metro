@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-21T08:46:17Z",
+ "generated": "2026-11-21T16:24:39Z",
  "start": "2026-10-22",
  "end": "2026-11-22",
  "total": {
-  "total": 571,
-  "total_events": 181,
-  "total_utc": 570,
+  "total": 576,
+  "total_events": 182,
+  "total_utc": 575,
   "stats": [
    {
     "day": "2026-10-22",
@@ -340,7 +340,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 475
+    "monthly": 480
    },
    {
     "day": "2026-11-02",
@@ -883,7 +883,7 @@
      0
     ],
     "daily": 7,
-    "weekly": 27
+    "weekly": 32
    },
    {
     "day": "2026-11-20",
@@ -931,10 +931,10 @@
      0,
      0,
      0,
+     2,
      0,
-     0,
-     0,
-     0,
+     1,
+     2,
      0,
      0,
      0,
@@ -943,7 +943,7 @@
      0,
      0
     ],
-    "daily": 1
+    "daily": 6
    },
    {
     "day": "2026-11-22",
@@ -983,7 +983,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 105,
+   "count": 107,
    "daily": {
     "2026-10-22": 2,
     "2026-10-24": 2,
@@ -1010,7 +1010,8 @@
     "2026-11-16": 2,
     "2026-11-17": 1,
     "2026-11-18": 1,
-    "2026-11-20": 3
+    "2026-11-20": 3,
+    "2026-11-21": 2
    }
   },
   {
@@ -1018,7 +1019,7 @@
    "path_id": 116082941,
    "title": "Nearest Metro Station to Me in Dubai: Find It by Location",
    "event": false,
-   "count": 94,
+   "count": 95,
    "daily": {
     "2026-10-28": 1,
     "2026-10-31": 1,
@@ -1036,7 +1037,8 @@
     "2026-11-14": 11,
     "2026-11-15": 1,
     "2026-11-19": 2,
-    "2026-11-20": 3
+    "2026-11-20": 3,
+    "2026-11-21": 1
    }
   },
   {
@@ -1070,7 +1072,7 @@
    "path_id": 110447314,
    "title": "en",
    "event": true,
-   "count": 29,
+   "count": 30,
    "daily": {
     "2026-10-22": 2,
     "2026-10-24": 3,
@@ -1089,7 +1091,8 @@
     "2026-11-13": 1,
     "2026-11-14": 2,
     "2026-11-16": 1,
-    "2026-11-20": 1
+    "2026-11-20": 1,
+    "2026-11-21": 1
    }
   },
   {
@@ -1119,7 +1122,7 @@
    "path_id": 115183314,
    "title": "Meena Bazaar Metro Station: Sharaf DG (Green Line), 9 min walk",
    "event": false,
-   "count": 12,
+   "count": 13,
    "daily": {
     "2026-10-26": 1,
     "2026-10-27": 1,
@@ -1130,7 +1133,8 @@
     "2026-11-08": 1,
     "2026-11-11": 2,
     "2026-11-19": 2,
-    "2026-11-20": 1
+    "2026-11-20": 1,
+    "2026-11-21": 1
    }
   },
   {
@@ -2789,9 +2793,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 390,
-  "events_total": 181,
-  "goatcounter_total_with_events": 571,
+  "visits": 394,
+  "events_total": 182,
+  "goatcounter_total_with_events": 576,
   "page_loads_by_day": {
    "2026-10-22": 4,
    "2026-10-23": 3,
@@ -2823,7 +2827,7 @@
    "2026-11-18": 6,
    "2026-11-19": 7,
    "2026-11-20": 12,
-   "2026-11-21": 1
+   "2026-11-21": 5
   },
   "visitor_days_by_day": {
    "2026-10-22": 2,
@@ -2847,10 +2851,11 @@
    "2026-11-16": 2,
    "2026-11-17": 1,
    "2026-11-18": 1,
-   "2026-11-20": 1
+   "2026-11-20": 1,
+   "2026-11-21": 1
   },
-  "visitor_days": 41,
-  "return_rate": 0.293,
+  "visitor_days": 42,
+  "return_rate": 0.286,
   "routes": 17,
   "routes_not_found": 0,
   "routes_per_visit": 0.04,
@@ -2876,7 +2881,7 @@
    "outside": 1
   },
   "visitors_new_return": {
-   "new": 29,
+   "new": 30,
    "return": 12
   },
   "top_routes": [
@@ -3042,7 +3047,7 @@
    },
    {
     "name": "Google",
-    "count": 2
+    "count": 4
    },
    {
     "name": "chatgpt.com",
@@ -3091,6 +3096,10 @@
     "count": 2
    },
    {
+    "name": "Yahoo",
+    "count": 1
+   },
+   {
     "name": "dubaimetro.fyi/destinations/indian-consulate-dubai",
     "count": 1
    }
@@ -3114,7 +3123,7 @@
   "/destinations/meena-bazaar": [
    {
     "name": "Google",
-    "count": 11
+    "count": 12
    },
    {
     "name": "chatgpt.com",
@@ -3602,7 +3611,7 @@
    },
    {
     "path": "/destinations/meena-bazaar",
-    "count": 11
+    "count": 12
    },
    {
     "path": "/destinations/rashid-hospital",
@@ -3611,6 +3620,10 @@
    {
     "path": "/destinations/wafi-city",
     "count": 5
+   },
+   {
+    "path": "/",
+    "count": 4
    },
    {
     "path": "/destinations/al-zahra-hospital-dubai",
@@ -3659,10 +3672,6 @@
    {
     "path": "/destinations/dubai-police-general-headquarters",
     "count": 3
-   },
-   {
-    "path": "/",
-    "count": 2
    },
    {
     "path": "/destinations/gdrfa-immigration-al-jafiliya",
@@ -3875,19 +3884,23 @@
     "count": 1
    }
   ],
-  "dubaimetro.fyi/destinations/indian-consulate-dubai": [
+  "Yahoo": [
    {
     "path": "/nearest-station",
     "count": 1
-   }
-  ],
-  "Yahoo": [
+   },
    {
     "path": "/destinations/reef-mall",
     "count": 1
    },
    {
     "path": "/stations",
+    "count": 1
+   }
+  ],
+  "dubaimetro.fyi/destinations/indian-consulate-dubai": [
+   {
+    "path": "/nearest-station",
     "count": 1
    }
   ],
@@ -3906,7 +3919,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 251,
+   "count": 255,
    "ref_scheme": "g"
   },
   {
@@ -3929,7 +3942,7 @@
   {
    "id": "Yahoo",
    "name": "Yahoo",
-   "count": 2,
+   "count": 3,
    "ref_scheme": "g"
   }
  ],
@@ -3937,7 +3950,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 545
+   "count": 550
   },
   {
    "id": "ara",
@@ -3984,7 +3997,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 473
+   "count": 478
   },
   {
    "id": "US",
@@ -4111,7 +4124,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 478
+   "count": 482
   },
   {
    "id": "tablet",
@@ -4121,7 +4134,7 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 56
+   "count": 57
   },
   {
    "id": "desktophd",
@@ -4138,12 +4151,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 345
+   "count": 347
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 225
+   "count": 228
   },
   {
    "id": "Firefox",
@@ -4155,17 +4168,17 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 262
+   "count": 263
   },
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 219
+   "count": 222
   },
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 61
+   "count": 62
   },
   {
    "id": "Linux",
