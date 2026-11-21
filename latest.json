@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-21T16:24:39Z",
+ "generated": "2026-11-21T21:53:53Z",
  "start": "2026-10-22",
  "end": "2026-11-22",
  "total": {
-  "total": 576,
+  "total": 577,
   "total_events": 182,
-  "total_utc": 575,
+  "total_utc": 576,
   "stats": [
    {
     "day": "2026-10-22",
@@ -340,7 +340,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 480
+    "monthly": 481
    },
    {
     "day": "2026-11-02",
@@ -883,7 +883,7 @@
      0
     ],
     "daily": 7,
-    "weekly": 32
+    "weekly": 33
    },
    {
     "day": "2026-11-20",
@@ -939,11 +939,11 @@
      0,
      0,
      0,
-     0,
+     1,
      0,
      0
     ],
-    "daily": 6
+    "daily": 7
    },
    {
     "day": "2026-11-22",
@@ -1758,6 +1758,16 @@
    "daily": {
     "2026-11-09": 1,
     "2026-11-18": 1
+   }
+  },
+  {
+   "path": "/destinations/dubai-media-city",
+   "path_id": 124832871,
+   "title": "Dubai Media City Tram Stop: Media City (Dubai Tram)",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-11-21": 1
    }
   },
   {
@@ -2793,9 +2803,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 394,
+  "visits": 395,
   "events_total": 182,
-  "goatcounter_total_with_events": 576,
+  "goatcounter_total_with_events": 577,
   "page_loads_by_day": {
    "2026-10-22": 4,
    "2026-10-23": 3,
@@ -2827,7 +2837,7 @@
    "2026-11-18": 6,
    "2026-11-19": 7,
    "2026-11-20": 12,
-   "2026-11-21": 5
+   "2026-11-21": 6
   },
   "visitor_days_by_day": {
    "2026-10-22": 2,
@@ -3366,6 +3376,12 @@
     "count": 1
    }
   ],
+  "/destinations/dubai-media-city": [
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
   "/stations/national-paints": [
    {
     "name": "chatgpt.com",
@@ -3507,12 +3523,6 @@
   "/destinations/al-fahidi": [
    {
     "name": "chatgpt.com",
-    "count": 1
-   }
-  ],
-  "/stations": [
-   {
-    "name": "Yahoo",
     "count": 1
    }
   ]
@@ -3730,6 +3740,10 @@
     "count": 1
    },
    {
+    "path": "/destinations/dubai-media-city",
+    "count": 1
+   },
+   {
     "path": "/destinations/ain-dubai",
     "count": 1
    },
@@ -3892,10 +3906,6 @@
    {
     "path": "/destinations/reef-mall",
     "count": 1
-   },
-   {
-    "path": "/stations",
-    "count": 1
    }
   ],
   "dubaimetro.fyi/destinations/indian-consulate-dubai": [
@@ -3919,7 +3929,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 255,
+   "count": 256,
    "ref_scheme": "g"
   },
   {
@@ -3950,7 +3960,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 550
+   "count": 551
   },
   {
    "id": "ara",
@@ -3997,7 +4007,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 478
+   "count": 479
   },
   {
    "id": "US",
@@ -4124,7 +4134,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 482
+   "count": 483
   },
   {
    "id": "tablet",
@@ -4151,7 +4161,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 347
+   "count": 348
   },
   {
    "id": "Safari",
@@ -4168,7 +4178,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 263
+   "count": 264
   },
   {
    "id": "iOS",
