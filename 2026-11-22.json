@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-22T02:39:44Z",
+ "generated": "2026-11-22T08:05:15Z",
  "start": "2026-10-23",
  "end": "2026-11-23",
  "total": {
-  "total": 570,
+  "total": 575,
   "total_events": 178,
-  "total_utc": 570,
+  "total_utc": 575,
   "stats": [
    {
     "day": "2026-10-23",
@@ -310,7 +310,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 482
+    "monthly": 487
    },
    {
     "day": "2026-11-02",
@@ -883,7 +883,7 @@
      0
     ],
     "daily": 19,
-    "weekly": 27
+    "weekly": 32
    },
    {
     "day": "2026-11-21",
@@ -924,12 +924,12 @@
      0,
      1,
      0,
+     1,
+     1,
+     1,
      0,
      0,
-     0,
-     0,
-     0,
-     0,
+     2,
      0,
      0,
      0,
@@ -943,7 +943,7 @@
      0,
      0
     ],
-    "daily": 1
+    "daily": 6
    },
    {
     "day": "2026-11-23",
@@ -1018,7 +1018,7 @@
    "path_id": 116082941,
    "title": "Nearest Metro Station to Me in Dubai: Find It by Location",
    "event": false,
-   "count": 95,
+   "count": 96,
    "daily": {
     "2026-10-28": 1,
     "2026-10-31": 1,
@@ -1037,7 +1037,8 @@
     "2026-11-15": 1,
     "2026-11-19": 2,
     "2026-11-20": 3,
-    "2026-11-21": 1
+    "2026-11-21": 1,
+    "2026-11-22": 1
    }
   },
   {
@@ -1229,6 +1230,34 @@
    }
   },
   {
+   "path": "/destinations/aster-hospital-al-qusais",
+   "path_id": 116157918,
+   "title": "Aster Hospital Al Qusais Metro Station: Dubai Airport Free Zone",
+   "event": false,
+   "count": 5,
+   "daily": {
+    "2026-10-28": 1,
+    "2026-10-29": 1,
+    "2026-11-05": 1,
+    "2026-11-16": 1,
+    "2026-11-22": 1
+   }
+  },
+  {
+   "path": "/destinations/times-square-center",
+   "path_id": 114208930,
+   "title": "Times Square Center Metro Station: Equiti (Red Line)",
+   "event": false,
+   "count": 5,
+   "daily": {
+    "2026-10-23": 1,
+    "2026-10-25": 1,
+    "2026-11-06": 1,
+    "2026-11-20": 1,
+    "2026-11-22": 1
+   }
+  },
+  {
    "path": "/destinations/al-zahra-hospital-dubai",
    "path_id": 111715857,
    "title": "Al Zahra Hospital Dubai Metro Station: Dubai Internet City, 10 min walk",
@@ -1316,29 +1345,15 @@
    }
   },
   {
-   "path": "/destinations/aster-hospital-al-qusais",
-   "path_id": 116157918,
-   "title": "Aster Hospital Al Qusais Metro Station: Dubai Airport Free Zone",
+   "path": "/destinations/jw-marriott-marquis-dubai",
+   "path_id": 113368505,
+   "title": "JW Marriott Marquis Dubai Metro Station: Business Bay, 12 min walk",
    "event": false,
    "count": 4,
    "daily": {
-    "2026-10-28": 1,
-    "2026-10-29": 1,
-    "2026-11-05": 1,
-    "2026-11-16": 1
-   }
-  },
-  {
-   "path": "/destinations/times-square-center",
-   "path_id": 114208930,
-   "title": "Times Square Center Metro Station: Equiti (Red Line)",
-   "event": false,
-   "count": 4,
-   "daily": {
-    "2026-10-23": 1,
-    "2026-10-25": 1,
-    "2026-11-06": 1,
-    "2026-11-20": 1
+    "2026-11-13": 1,
+    "2026-11-14": 2,
+    "2026-11-22": 1
    }
   },
   {
@@ -1469,17 +1484,6 @@
    "daily": {
     "2026-11-01": 1,
     "2026-11-16": 2
-   }
-  },
-  {
-   "path": "/destinations/jw-marriott-marquis-dubai",
-   "path_id": 113368505,
-   "title": "JW Marriott Marquis Dubai Metro Station: Business Bay, 12 min walk",
-   "event": false,
-   "count": 3,
-   "daily": {
-    "2026-11-13": 1,
-    "2026-11-14": 2
    }
   },
   {
@@ -1712,6 +1716,17 @@
    "daily": {
     "2026-11-04": 1,
     "2026-11-10": 1
+   }
+  },
+  {
+   "path": "/destinations/st-mary-s-catholic-church",
+   "path_id": 111037420,
+   "title": "St. Mary's Catholic Church Metro Station: Oud Metha, 7 min walk",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-10-25": 1,
+    "2026-11-22": 1
    }
   },
   {
@@ -2658,16 +2673,6 @@
    }
   },
   {
-   "path": "/destinations/st-mary-s-catholic-church",
-   "path_id": 111037420,
-   "title": "St. Mary's Catholic Church Metro Station: Oud Metha, 7 min walk",
-   "event": false,
-   "count": 1,
-   "daily": {
-    "2026-10-25": 1
-   }
-  },
-  {
    "path": "route_from_station_click/dmm/-",
    "path_id": 110484179,
    "title": "en",
@@ -2780,9 +2785,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 392,
+  "visits": 397,
   "events_total": 178,
-  "goatcounter_total_with_events": 570,
+  "goatcounter_total_with_events": 575,
   "page_loads_by_day": {
    "2026-10-23": 3,
    "2026-10-24": 9,
@@ -2814,7 +2819,7 @@
    "2026-11-19": 7,
    "2026-11-20": 12,
    "2026-11-21": 6,
-   "2026-11-22": 1
+   "2026-11-22": 6
   },
   "visitor_days_by_day": {
    "2026-10-24": 3,
@@ -3075,7 +3080,7 @@
   "/nearest-station": [
    {
     "name": "Google",
-    "count": 91
+    "count": 92
    },
    {
     "name": "(direct or unknown)",
@@ -3138,6 +3143,22 @@
     "count": 5
    }
   ],
+  "/destinations/aster-hospital-al-qusais": [
+   {
+    "name": "Google",
+    "count": 5
+   }
+  ],
+  "/destinations/times-square-center": [
+   {
+    "name": "Google",
+    "count": 4
+   },
+   {
+    "name": "chatgpt.com",
+    "count": 1
+   }
+  ],
   "/destinations/al-zahra-hospital-dubai": [
    {
     "name": "Google",
@@ -3188,19 +3209,13 @@
     "count": 4
    }
   ],
-  "/destinations/aster-hospital-al-qusais": [
-   {
-    "name": "Google",
-    "count": 4
-   }
-  ],
-  "/destinations/times-square-center": [
+  "/destinations/jw-marriott-marquis-dubai": [
    {
     "name": "Google",
     "count": 3
    },
    {
-    "name": "chatgpt.com",
+    "name": "(direct or unknown)",
     "count": 1
    }
   ],
@@ -3237,12 +3252,6 @@
    }
   ],
   "/destinations/al-mulla-plaza": [
-   {
-    "name": "Google",
-    "count": 3
-   }
-  ],
-  "/destinations/jw-marriott-marquis-dubai": [
    {
     "name": "Google",
     "count": 3
@@ -3327,6 +3336,12 @@
    }
   ],
   "/destinations/american-hospital-dubai": [
+   {
+    "name": "Google",
+    "count": 2
+   }
+  ],
+  "/destinations/st-mary-s-catholic-church": [
    {
     "name": "Google",
     "count": 2
@@ -3495,12 +3510,6 @@
     "name": "Google",
     "count": 1
    }
-  ],
-  "/destinations/al-fahidi": [
-   {
-    "name": "chatgpt.com",
-    "count": 1
-   }
   ]
  },
  "ref_pages": {
@@ -3558,6 +3567,10 @@
     "count": 1
    },
    {
+    "path": "/destinations/jw-marriott-marquis-dubai",
+    "count": 1
+   },
+   {
     "path": "/stations/city-centre-deira",
     "count": 1
    },
@@ -3585,7 +3598,7 @@
   "Google": [
    {
     "path": "/nearest-station",
-    "count": 91
+    "count": 92
    },
    {
     "path": "/destinations/etihad-rail-dubai",
@@ -3608,7 +3621,15 @@
     "count": 5
    },
    {
+    "path": "/destinations/aster-hospital-al-qusais",
+    "count": 5
+   },
+   {
     "path": "/",
+    "count": 4
+   },
+   {
+    "path": "/destinations/times-square-center",
     "count": 4
    },
    {
@@ -3617,10 +3638,6 @@
    },
    {
     "path": "/destinations/al-ghurair-centre",
-    "count": 4
-   },
-   {
-    "path": "/destinations/aster-hospital-al-qusais",
     "count": 4
    },
    {
@@ -3636,15 +3653,11 @@
     "count": 3
    },
    {
-    "path": "/destinations/times-square-center",
+    "path": "/destinations/jw-marriott-marquis-dubai",
     "count": 3
    },
    {
     "path": "/destinations/al-mulla-plaza",
-    "count": 3
-   },
-   {
-    "path": "/destinations/jw-marriott-marquis-dubai",
     "count": 3
    },
    {
@@ -3693,6 +3706,10 @@
    },
    {
     "path": "/destinations/american-hospital-dubai",
+    "count": 2
+   },
+   {
+    "path": "/destinations/st-mary-s-catholic-church",
     "count": 2
    },
    {
@@ -3794,15 +3811,15 @@
     "count": 1
    },
    {
+    "path": "/destinations/times-square-center",
+    "count": 1
+   },
+   {
     "path": "/destinations/al-zahra-hospital-dubai",
     "count": 1
    },
    {
     "path": "/destinations/al-jalila-children-s-specialty-hospital",
-    "count": 1
-   },
-   {
-    "path": "/destinations/times-square-center",
     "count": 1
    },
    {
@@ -3819,10 +3836,6 @@
    },
    {
     "path": "/stations/al-ras",
-    "count": 1
-   },
-   {
-    "path": "/destinations/al-fahidi",
     "count": 1
    }
   ],
@@ -3905,12 +3918,12 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 255,
+   "count": 259,
    "ref_scheme": "g"
   },
   {
    "name": "",
-   "count": 67,
+   "count": 68,
    "ref_scheme": "o"
   },
   {
@@ -3936,7 +3949,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 543
+   "count": 548
   },
   {
    "id": "ara",
@@ -3988,7 +4001,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 478
+   "count": 483
   },
   {
    "id": "US",
@@ -4115,7 +4128,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 476
+   "count": 481
   },
   {
    "id": "tablet",
@@ -4142,12 +4155,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 346
+   "count": 348
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 223
+   "count": 226
   },
   {
    "id": "Firefox",
@@ -4159,12 +4172,12 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 262
+   "count": 264
   },
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 217
+   "count": 220
   },
   {
    "id": "Windows",
