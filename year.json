@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-22T10:20:51Z",
+ "generated": "2026-11-22T18:04:26Z",
  "start": "2025-11-22",
  "end": "2026-11-23",
  "total": {
-  "total": 943,
-  "total_events": 391,
-  "total_utc": 943,
+  "total": 951,
+  "total_events": 394,
+  "total_utc": 951,
   "stats": [
    {
     "day": "2025-11-22",
@@ -10364,7 +10364,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 488
+    "monthly": 496
    },
    {
     "day": "2026-11-02",
@@ -10967,7 +10967,7 @@
      0
     ],
     "daily": 7,
-    "weekly": 14
+    "weekly": 22
    },
    {
     "day": "2026-11-22",
@@ -10987,17 +10987,17 @@
      0,
      1,
      0,
+     1,
      0,
+     5,
      0,
-     0,
-     0,
-     0,
+     2,
      0,
      0,
      0,
      0
     ],
-    "daily": 7
+    "daily": 15
    },
    {
     "day": "2026-11-23",
@@ -11037,7 +11037,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 207,
+   "count": 211,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -11083,7 +11083,8 @@
     "2026-11-17": 1,
     "2026-11-18": 1,
     "2026-11-20": 3,
-    "2026-11-21": 2
+    "2026-11-21": 2,
+    "2026-11-22": 4
    }
   },
   {
@@ -11119,7 +11120,7 @@
    "path_id": 110447314,
    "title": "en",
    "event": true,
-   "count": 67,
+   "count": 70,
    "daily": {
     "2026-10-08": 7,
     "2026-10-09": 6,
@@ -11151,7 +11152,8 @@
     "2026-11-14": 2,
     "2026-11-16": 1,
     "2026-11-20": 1,
-    "2026-11-21": 1
+    "2026-11-21": 1,
+    "2026-11-22": 3
    }
   },
   {
@@ -12240,6 +12242,16 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/destinations/dubai-ferry-al-ghubaiba-marine-station",
+   "path_id": 125019257,
+   "title": "Dubai Ferry Al Ghubaiba Marine Station Metro Station: Al Ghubaiba",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-11-22": 1
    }
   },
   {
@@ -14355,9 +14367,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 552,
-  "events_total": 391,
-  "goatcounter_total_with_events": 943,
+  "visits": 557,
+  "events_total": 394,
+  "goatcounter_total_with_events": 951,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -14410,7 +14422,7 @@
    "2026-11-19": 7,
    "2026-11-20": 12,
    "2026-11-21": 6,
-   "2026-11-22": 7
+   "2026-11-22": 12
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -14447,14 +14459,15 @@
    "2026-11-17": 1,
    "2026-11-18": 1,
    "2026-11-20": 1,
-   "2026-11-21": 1
+   "2026-11-21": 1,
+   "2026-11-22": 3
   },
-  "visitor_days": 80,
-  "return_rate": 0.163,
+  "visitor_days": 83,
+  "return_rate": 0.157,
   "routes": 55,
   "routes_not_found": 0,
   "routes_per_visit": 0.1,
-  "routes_per_visitor_day": 0.49,
+  "routes_per_visitor_day": 0.47,
   "share_rate": 0.055,
   "shares": {
    "qr": 1,
@@ -14480,7 +14493,7 @@
    "outside": 1
   },
   "visitors_new_return": {
-   "new": 67,
+   "new": 70,
    "return": 13
   },
   "top_routes": [
@@ -14649,16 +14662,16 @@
     "count": 9
    },
    {
+    "name": "chatgpt.com",
+    "count": 6
+   },
+   {
     "name": "Google",
     "count": 4
    },
    {
     "name": "www.bing.com",
     "count": 4
-   },
-   {
-    "name": "chatgpt.com",
-    "count": 2
    },
    {
     "name": "dubaimetro.fyi/destinations/etihad-rail-dubai",
@@ -15109,6 +15122,12 @@
     "count": 1
    }
   ],
+  "/destinations/dubai-ferry-al-ghubaiba-marine-station": [
+   {
+    "name": "Yahoo",
+    "count": 1
+   }
+  ],
   "/destinations/dubai-media-city": [
    {
     "name": "Google",
@@ -15204,12 +15223,6 @@
     "name": "Google",
     "count": 1
    }
-  ],
-  "/destinations/jumeirah-emirates-towers": [
-   {
-    "name": "(direct or unknown)",
-    "count": 1
-   }
   ]
  },
  "ref_pages": {
@@ -15289,10 +15302,6 @@
    {
     "path": "/destinations/coca-cola-arena",
     "count": 1
-   },
-   {
-    "path": "/destinations/jumeirah-emirates-towers",
-    "count": 1
    }
   ],
   "dubaimetro.fyi/nearest-station": [
@@ -15323,6 +15332,76 @@
    {
     "path": "/",
     "count": 9
+   }
+  ],
+  "chatgpt.com": [
+   {
+    "path": "/",
+    "count": 6
+   },
+   {
+    "path": "/destinations/etihad-rail-dubai",
+    "count": 2
+   },
+   {
+    "path": "/ru.html",
+    "count": 2
+   },
+   {
+    "path": "/destinations/palm-jumeirah-mall",
+    "count": 2
+   },
+   {
+    "path": "/destinations/meena-bazaar",
+    "count": 1
+   },
+   {
+    "path": "/destinations/rashid-hospital",
+    "count": 1
+   },
+   {
+    "path": "/destinations/gdrfa-immigration-al-jafiliya",
+    "count": 1
+   },
+   {
+    "path": "/destinations/al-zahra-hospital-dubai",
+    "count": 1
+   },
+   {
+    "path": "/destinations/times-square-center",
+    "count": 1
+   },
+   {
+    "path": "/destinations/jw-marriott-marquis-dubai",
+    "count": 1
+   },
+   {
+    "path": "/destinations/dubai-police-general-headquarters",
+    "count": 1
+   },
+   {
+    "path": "/destinations/dubai-mall",
+    "count": 1
+   },
+   {
+    "path": "/destinations/al-jalila-children-s-specialty-hospital",
+    "count": 1
+   },
+   {
+    "path": "/destinations/american-hospital-dubai",
+    "count": 1
+   },
+   {
+    "path": "/stations/national-paints",
+    "count": 1
+   },
+   {
+    "path": "/stations/insurancemarket",
+    "count": 1
+   },
+   {
+    "path": "/stations/dmcc",
+    "count": 1
    }
   ],
   "Google": [
@@ -15537,76 +15616,6 @@
     "count": 1
    }
   ],
-  "chatgpt.com": [
-   {
-    "path": "/",
-    "count": 2
-   },
-   {
-    "path": "/destinations/etihad-rail-dubai",
-    "count": 2
-   },
-   {
-    "path": "/ru.html",
-    "count": 2
-   },
-   {
-    "path": "/destinations/palm-jumeirah-mall",
-    "count": 2
-   },
-   {
-    "path": "/destinations/meena-bazaar",
-    "count": 1
-   },
-   {
-    "path": "/destinations/rashid-hospital",
-    "count": 1
-   },
-   {
-    "path": "/destinations/gdrfa-immigration-al-jafiliya",
-    "count": 1
-   },
-   {
-    "path": "/destinations/al-zahra-hospital-dubai",
-    "count": 1
-   },
-   {
-    "path": "/destinations/times-square-center",
-    "count": 1
-   },
-   {
-    "path": "/destinations/jw-marriott-marquis-dubai",
-    "count": 1
-   },
-   {
-    "path": "/destinations/dubai-police-general-headquarters",
-    "count": 1
-   },
-   {
-    "path": "/destinations/dubai-mall",
-    "count": 1
-   },
-   {
-    "path": "/destinations/al-jalila-children-s-specialty-hospital",
-    "count": 1
-   },
-   {
-    "path": "/destinations/american-hospital-dubai",
-    "count": 1
-   },
-   {
-    "path": "/stations/national-paints",
-    "count": 1
-   },
-   {
-    "path": "/stations/insurancemarket",
-    "count": 1
-   },
-   {
-    "path": "/stations/dmcc",
-    "count": 1
-   }
-  ],
   "dubaimetro.fyi/destinations/etihad-rail-dubai": [
    {
     "path": "/",
@@ -15628,6 +15637,10 @@
    },
    {
     "path": "/destinations/reef-mall",
+    "count": 1
+   },
+   {
+    "path": "/destinations/dubai-ferry-al-ghubaiba-marine-station",
     "count": 1
    }
   ],
@@ -15725,7 +15738,7 @@
  "toprefs": [
   {
    "name": "",
-   "count": 325,
+   "count": 328,
    "ref_scheme": "o"
   },
   {
@@ -15743,7 +15756,7 @@
   {
    "id": "chatgpt.com",
    "name": "chatgpt.com",
-   "count": 24,
+   "count": 28,
    "ref_scheme": "c"
   },
   {
@@ -15755,7 +15768,7 @@
   {
    "id": "Yahoo",
    "name": "Yahoo",
-   "count": 9,
+   "count": 10,
    "ref_scheme": "g"
   },
   {
@@ -15793,7 +15806,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 881
+   "count": 889
   },
   {
    "id": "rus",
@@ -15850,7 +15863,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 762
+   "count": 770
   },
   {
    "id": "US",
@@ -16022,7 +16035,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 690
+   "count": 698
   },
   {
    "id": "tablet",
@@ -16054,7 +16067,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 355
+   "count": 363
   },
   {
    "id": "Firefox",
@@ -16068,14 +16081,14 @@
  ],
  "systems": [
   {
+   "id": "iOS",
+   "name": "iOS",
+   "count": 353
+  },
+  {
    "id": "Android",
    "name": "Android",
    "count": 347
-  },
-  {
-   "id": "iOS",
-   "name": "iOS",
-   "count": 345
   },
   {
    "id": "Windows",
