@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-22T08:06:16Z",
+ "generated": "2026-11-22T10:20:51Z",
  "start": "2025-11-22",
  "end": "2026-11-23",
  "total": {
-  "total": 942,
+  "total": 943,
   "total_events": 391,
-  "total_utc": 942,
+  "total_utc": 943,
   "stats": [
    {
     "day": "2025-11-22",
@@ -10364,7 +10364,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 487
+    "monthly": 488
    },
    {
     "day": "2026-11-02",
@@ -10967,7 +10967,7 @@
      0
     ],
     "daily": 7,
-    "weekly": 13
+    "weekly": 14
    },
    {
     "day": "2026-11-22",
@@ -10985,7 +10985,7 @@
      0,
      2,
      0,
-     0,
+     1,
      0,
      0,
      0,
@@ -10997,7 +10997,7 @@
      0,
      0
     ],
-    "daily": 6
+    "daily": 7
    },
    {
     "day": "2026-11-23",
@@ -11297,14 +11297,15 @@
    "path_id": 113030966,
    "title": "GDRFA Immigration Al Jafiliya Metro Station: Max (Red Line), 3 min walk",
    "event": false,
-   "count": 7,
+   "count": 8,
    "daily": {
     "2026-10-19": 1,
     "2026-11-03": 1,
     "2026-11-13": 1,
     "2026-11-15": 1,
     "2026-11-16": 2,
-    "2026-11-19": 1
+    "2026-11-19": 1,
+    "2026-11-22": 1
    }
   },
   {
@@ -14354,9 +14355,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 551,
+  "visits": 552,
   "events_total": 391,
-  "goatcounter_total_with_events": 942,
+  "goatcounter_total_with_events": 943,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -14409,7 +14410,7 @@
    "2026-11-19": 7,
    "2026-11-20": 12,
    "2026-11-21": 6,
-   "2026-11-22": 6
+   "2026-11-22": 7
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -14773,7 +14774,7 @@
    },
    {
     "name": "Google",
-    "count": 2
+    "count": 3
    },
    {
     "name": "chatgpt.com",
@@ -15394,6 +15395,10 @@
     "count": 4
    },
    {
+    "path": "/destinations/gdrfa-immigration-al-jafiliya",
+    "count": 3
+   },
+   {
     "path": "/destinations/jw-marriott-marquis-dubai",
     "count": 3
    },
@@ -15404,10 +15409,6 @@
    {
     "path": "/destinations/us-consulate-dubai",
     "count": 3
-   },
-   {
-    "path": "/destinations/gdrfa-immigration-al-jafiliya",
-    "count": 2
    },
    {
     "path": "/destinations/al-jalila-children-s-specialty-hospital",
@@ -15730,7 +15731,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 277,
+   "count": 278,
    "ref_scheme": "g"
   },
   {
@@ -15792,7 +15793,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 880
+   "count": 881
   },
   {
    "id": "rus",
@@ -15849,7 +15850,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 761
+   "count": 762
   },
   {
    "id": "US",
@@ -16021,7 +16022,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 689
+   "count": 690
   },
   {
    "id": "tablet",
@@ -16048,7 +16049,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 581
+   "count": 582
   },
   {
    "id": "Safari",
@@ -16069,7 +16070,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 346
+   "count": 347
   },
   {
    "id": "iOS",
