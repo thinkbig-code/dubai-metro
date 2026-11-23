@@ -1,177 +1,177 @@
 {
  "host": "dubaimetro.fyi",
- "generated": "2026-11-22",
+ "generated": "2026-11-23",
  "gsc_period": [
-  "2026-10-25",
-  "2026-11-22"
+  "2026-10-26",
+  "2026-11-23"
  ],
- "index_checked": "2026-11-22T08:07:27Z",
+ "index_checked": "2026-11-23T09:14:01Z",
  "low_ctr_queries": [
   {
    "query": "nearest metro station",
-   "impressions": 5750,
+   "impressions": 6111,
    "clicks": 9,
-   "position": 8.6,
+   "position": 8.4,
    "page": "/nearest-station/",
-   "lost_clicks": 163.5
+   "lost_clicks": 174.33
   },
   {
    "query": "nearest metro station to me",
-   "impressions": 2761,
+   "impressions": 2871,
    "clicks": 11,
-   "position": 6.7,
+   "position": 6.6,
    "page": "/nearest-station/",
-   "lost_clicks": 71.83
+   "lost_clicks": 75.13
   },
   {
    "query": "near metro station to me",
-   "impressions": 2489,
+   "impressions": 2533,
    "clicks": 24,
-   "position": 6.7,
+   "position": 6.5,
    "page": "/nearest-station/",
-   "lost_clicks": 50.67
+   "lost_clicks": 51.99
   },
   {
    "query": "metro near me",
-   "impressions": 886,
+   "impressions": 887,
    "clicks": 2,
-   "position": 9.7,
+   "position": 9.6,
    "page": "/nearest-station/",
-   "lost_clicks": 24.58
-  },
-  {
-   "query": "metro station near me",
-   "impressions": 580,
-   "clicks": 5,
-   "position": 9.3,
-   "page": "/nearest-station/",
-   "lost_clicks": 12.4
+   "lost_clicks": 24.61
   },
   {
    "query": "near me metro station",
-   "impressions": 450,
+   "impressions": 507,
    "clicks": 2,
-   "position": 8.3,
+   "position": 8.4,
    "page": "/nearest-station/",
-   "lost_clicks": 11.5
+   "lost_clicks": 13.21
+  },
+  {
+   "query": "metro station near me",
+   "impressions": 601,
+   "clicks": 5,
+   "position": 9.3,
+   "page": "/nearest-station/",
+   "lost_clicks": 13.03
   },
   {
    "query": "nearest metro station near me",
-   "impressions": 383,
+   "impressions": 410,
    "clicks": 1,
-   "position": 7.9,
+   "position": 7.7,
    "page": "/nearest-station/",
-   "lost_clicks": 10.49
+   "lost_clicks": 11.3
   },
   {
    "query": "nearby metro station",
-   "impressions": 278,
+   "impressions": 313,
    "clicks": 2,
    "position": 9.9,
    "page": "/nearest-station/",
-   "lost_clicks": 6.34
+   "lost_clicks": 7.39
   },
   {
    "query": "metro near me now",
-   "impressions": 197,
+   "impressions": 209,
    "clicks": 0,
    "position": 8.1,
    "page": "/nearest-station/",
-   "lost_clicks": 5.91
+   "lost_clicks": 6.27
   },
   {
    "query": "which metro station is near to me",
-   "impressions": 262,
+   "impressions": 268,
    "clicks": 3,
-   "position": 8.2,
+   "position": 8.1,
    "page": "/nearest-station/",
-   "lost_clicks": 4.86
+   "lost_clicks": 5.04
   },
   {
    "query": "closest metro station to me",
-   "impressions": 186,
+   "impressions": 193,
    "clicks": 1,
    "position": 7.0,
    "page": "/nearest-station/",
-   "lost_clicks": 4.58
+   "lost_clicks": 4.79
   },
   {
    "query": "meena bazaar metro station",
-   "impressions": 97,
+   "impressions": 91,
    "clicks": 1,
    "position": 5.1,
    "page": "/destinations/meena-bazaar/",
-   "lost_clicks": 3.85
+   "lost_clicks": 3.55
   },
   {
    "query": "closest metro station near me",
-   "impressions": 141,
+   "impressions": 146,
    "clicks": 1,
    "position": 9.4,
    "page": "/nearest-station/",
-   "lost_clicks": 3.23
-  },
-  {
-   "query": "deira metro station",
-   "impressions": 312,
-   "clicks": 0,
-   "position": 11.2,
-   "page": "/stations/city-centre-deira/",
-   "lost_clicks": 3.12
+   "lost_clicks": 3.38
   },
   {
    "query": "meena bazar nearest metro station",
-   "impressions": 104,
+   "impressions": 107,
    "clicks": 0,
-   "position": 6.4,
+   "position": 6.3,
    "page": "/destinations/meena-bazaar/",
-   "lost_clicks": 3.12
+   "lost_clicks": 3.21
+  },
+  {
+   "query": "deira metro station",
+   "impressions": 308,
+   "clicks": 0,
+   "position": 11.2,
+   "page": "/stations/city-centre-deira/",
+   "lost_clicks": 3.08
   },
   {
    "query": "nearest metro station to my location",
-   "impressions": 168,
+   "impressions": 167,
    "clicks": 2,
    "position": 7.4,
    "page": "/nearest-station/",
-   "lost_clicks": 3.04
-  },
-  {
-   "query": "dubai municipality head office",
-   "impressions": 92,
-   "clicks": 0,
-   "position": 10.3,
-   "page": "/destinations/dubai-municipality-head-office/",
-   "lost_clicks": 2.76
+   "lost_clicks": 3.01
   },
   {
    "query": "future museum metro station",
-   "impressions": 117,
+   "impressions": 125,
    "clicks": 1,
-   "position": 8.2,
+   "position": 8.3,
    "page": "/destinations/museum-of-the-future/",
-   "lost_clicks": 2.51
+   "lost_clicks": 2.75
+  },
+  {
+   "query": "dubai municipality head office",
+   "impressions": 90,
+   "clicks": 0,
+   "position": 10.3,
+   "page": "/destinations/dubai-municipality-head-office/",
+   "lost_clicks": 2.7
   },
   {
    "query": "closest metro station",
-   "impressions": 82,
+   "impressions": 85,
    "clicks": 0,
    "position": 9.7,
    "page": "/nearest-station/",
-   "lost_clicks": 2.46
+   "lost_clicks": 2.55
   },
   {
    "query": "al qiyadah police station dubai",
-   "impressions": 74,
+   "impressions": 73,
    "clicks": 0,
    "position": 9.0,
    "page": "/destinations/dubai-police-general-headquarters/",
-   "lost_clicks": 2.22
+   "lost_clicks": 2.19
   }
  ],
  "near_page_one": [
   {
    "query": "deira metro station",
-   "impressions": 312,
+   "impressions": 308,
    "position": 11.2,
    "page": "/stations/city-centre-deira/"
   },
@@ -182,45 +182,45 @@
    "page": "/stations/al-qiyadah/"
   },
   {
-   "query": "media city metro station",
-   "impressions": 52,
-   "position": 11.4,
-   "page": "/destinations/dubai-media-city/"
-  },
-  {
    "query": "dubai metro station near me",
-   "impressions": 51,
-   "position": 13.0,
+   "impressions": 55,
+   "position": 12.3,
    "page": "/nearest-station/"
   },
   {
    "query": "dewa head office",
-   "impressions": 48,
-   "position": 11.3,
+   "impressions": 53,
+   "position": 11.5,
    "page": "/destinations/dewa-head-office/"
   },
   {
+   "query": "media city metro station",
+   "impressions": 53,
+   "position": 11.3,
+   "page": "/destinations/dubai-media-city/"
+  },
+  {
    "query": "creek harbour metro station",
-   "impressions": 47,
-   "position": 11.0,
+   "impressions": 44,
+   "position": 12.3,
    "page": "/destinations/dubai-creek-harbour/"
   },
   {
    "query": "dubai festival city metro station",
-   "impressions": 42,
-   "position": 13.2,
+   "impressions": 43,
+   "position": 13.1,
    "page": "/destinations/dubai-festival-city-mall/"
   },
   {
    "query": "festival city metro station",
-   "impressions": 37,
+   "impressions": 36,
    "position": 12.9,
    "page": "/destinations/dubai-festival-city-mall/"
   },
   {
    "query": "al fahidi metro station",
-   "impressions": 34,
-   "position": 14.9,
+   "impressions": 35,
+   "position": 15.3,
    "page": "/destinations/al-fahidi/"
   },
   {
@@ -237,99 +237,99 @@
   },
   {
    "query": "metro station near by me",
-   "impressions": 26,
-   "position": 10.8,
+   "impressions": 27,
+   "position": 10.9,
    "page": "/"
   },
   {
    "query": "jafiliya metro station",
-   "impressions": 24,
-   "position": 14.1,
+   "impressions": 26,
+   "position": 15.6,
    "page": "/destinations/gdrfa-immigration-al-jafiliya/"
   },
   {
    "query": "al jafiliya metro station",
-   "impressions": 20,
-   "position": 13.6,
+   "impressions": 23,
+   "position": 13.5,
    "page": "/destinations/gdrfa-immigration-al-jafiliya/"
   },
   {
    "query": "dubai creek harbour metro",
    "impressions": 20,
-   "position": 16.9,
+   "position": 20.5,
    "page": "/destinations/dubai-creek-harbour/"
   }
  ],
  "pages_no_clicks": [
   {
    "page": "/destinations/coca-cola-arena/",
-   "impressions": 713,
+   "impressions": 763,
    "position": 8.2
   },
   {
    "page": "/destinations/zabeel-park/",
-   "impressions": 565,
+   "impressions": 580,
    "position": 9.1
   },
   {
    "page": "/destinations/creek-park/",
-   "impressions": 521,
+   "impressions": 523,
    "position": 7.7
   },
   {
    "page": "/destinations/dubai-creek-harbour/",
-   "impressions": 381,
-   "position": 14.3
+   "impressions": 386,
+   "position": 14.8
   },
   {
    "page": "/destinations/al-seef/",
-   "impressions": 351,
-   "position": 9.8
+   "impressions": 374,
+   "position": 9.7
   },
   {
    "page": "/lines/red-line/",
-   "impressions": 349,
-   "position": 29.9
-  },
-  {
-   "page": "/destinations/dubai-marina/",
-   "impressions": 318,
-   "position": 14.6
+   "impressions": 350,
+   "position": 29.8
   },
   {
    "page": "/destinations/al-ghubaiba-bus-station/",
-   "impressions": 302,
-   "position": 16.4
+   "impressions": 319,
+   "position": 16.0
   },
   {
-   "page": "/destinations/dewa-head-office/",
-   "impressions": 263,
-   "position": 8.7
-  },
-  {
-   "page": "/destinations/safa-park/",
-   "impressions": 259,
-   "position": 9.8
+   "page": "/destinations/dubai-marina/",
+   "impressions": 315,
+   "position": 14.5
   },
   {
    "page": "/stations/oud-metha/",
-   "impressions": 255,
-   "position": 10.2
+   "impressions": 272,
+   "position": 10.3
+  },
+  {
+   "page": "/destinations/dewa-head-office/",
+   "impressions": 270,
+   "position": 8.8
+  },
+  {
+   "page": "/destinations/safa-park/",
+   "impressions": 254,
+   "position": 9.8
   },
   {
    "page": "/destinations/alserkal-avenue/",
-   "impressions": 247,
+   "impressions": 253,
    "position": 7.1
   },
   {
    "page": "/lines/green-line/",
-   "impressions": 231,
-   "position": 37.2
+   "impressions": 235,
+   "position": 37.7
   },
   {
-   "page": "/destinations/expo-city-dubai/",
-   "impressions": 225,
-   "position": 16.2
+   "page": "/destinations/al-fahidi/",
+   "impressions": 201,
+   "position": 9.9
   },
   {
    "page": "/destinations/al-sabkha-abra-station/",
@@ -400,22 +400,23 @@
   }
  },
  "request_today": [
-  "https://dubaimetro.fyi/routes/dubai-airport-to-dubai-mall/",
-  "https://dubaimetro.fyi/routes/dubai-airport-to-dubai-marina/",
-  "https://dubaimetro.fyi/routes/dubai-marina-to-dubai-mall/",
-  "https://dubaimetro.fyi/rules/",
-  "https://dubaimetro.fyi/stations/",
-  "https://dubaimetro.fyi/stations/national-paints/",
-  "https://dubaimetro.fyi/stations/palm-gateway/",
-  "https://dubaimetro.fyi/stations/palm-jumeirah-mall/"
+  "https://dubaimetro.fyi/destinations/difc/",
+  "https://dubaimetro.fyi/destinations/ibn-battuta-bus-station/",
+  "https://dubaimetro.fyi/destinations/jumeirah-emirates-towers/",
+  "https://dubaimetro.fyi/destinations/latifa-hospital/",
+  "https://dubaimetro.fyi/stations/abu-baker-al-siddique/",
+  "https://dubaimetro.fyi/stations/abu-hail/",
+  "https://dubaimetro.fyi/stations/adcb/",
+  "https://dubaimetro.fyi/stations/airport-terminal-1/",
+  "https://dubaimetro.fyi/fr.html"
  ],
  "languages": {
   "en": {
-   "impressions": 21367,
+   "impressions": 22068,
    "clicks": 110
   },
   "ar": {
-   "impressions": 80,
+   "impressions": 75,
    "clicks": 3
   }
  },
@@ -425,16 +426,16 @@
   "https://dubaimetro.fyi/routes/dubai-marina-to-dubai-mall/": "2026-11-22",
   "https://dubaimetro.fyi/rules/": "2026-11-22",
   "https://dubaimetro.fyi/stations/": "2026-11-22",
-  "https://dubaimetro.fyi/destinations/difc/": "2026-11-09",
-  "https://dubaimetro.fyi/destinations/ibn-battuta-bus-station/": "2026-11-09",
-  "https://dubaimetro.fyi/destinations/jumeirah-emirates-towers/": "2026-11-09",
-  "https://dubaimetro.fyi/destinations/latifa-hospital/": "2026-11-09",
-  "https://dubaimetro.fyi/stations/abu-baker-al-siddique/": "2026-11-09",
-  "https://dubaimetro.fyi/stations/abu-hail/": "2026-11-09",
-  "https://dubaimetro.fyi/stations/adcb/": "2026-11-09",
-  "https://dubaimetro.fyi/stations/airport-terminal-1/": "2026-11-09",
+  "https://dubaimetro.fyi/destinations/difc/": "2026-11-23",
+  "https://dubaimetro.fyi/destinations/ibn-battuta-bus-station/": "2026-11-23",
+  "https://dubaimetro.fyi/destinations/jumeirah-emirates-towers/": "2026-11-23",
+  "https://dubaimetro.fyi/destinations/latifa-hospital/": "2026-11-23",
+  "https://dubaimetro.fyi/stations/abu-baker-al-siddique/": "2026-11-23",
+  "https://dubaimetro.fyi/stations/abu-hail/": "2026-11-23",
+  "https://dubaimetro.fyi/stations/adcb/": "2026-11-23",
+  "https://dubaimetro.fyi/stations/airport-terminal-1/": "2026-11-23",
   "https://dubaimetro.fyi/bn.html": "2026-10-26",
-  "https://dubaimetro.fyi/fr.html": "2026-11-09",
+  "https://dubaimetro.fyi/fr.html": "2026-11-23",
   "https://dubaimetro.fyi/destinations/medeor-hospital-dubai/": "2026-11-10",
   "https://dubaimetro.fyi/stations/airport-terminal-3/": "2026-11-10",
   "https://dubaimetro.fyi/stations/al-fardan-exchange/": "2026-11-10",
