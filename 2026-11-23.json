@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-23T09:11:50Z",
+ "generated": "2026-11-23T20:35:02Z",
  "start": "2026-10-24",
  "end": "2026-11-24",
  "total": {
-  "total": 583,
-  "total_events": 181,
-  "total_utc": 583,
+  "total": 595,
+  "total_events": 184,
+  "total_utc": 595,
   "stats": [
    {
     "day": "2026-10-24",
@@ -280,7 +280,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 498
+    "monthly": 510
    },
    {
     "day": "2026-11-02",
@@ -883,7 +883,7 @@
      0
     ],
     "daily": 7,
-    "weekly": 24
+    "weekly": 36
    },
    {
     "day": "2026-11-22",
@@ -933,17 +933,17 @@
      0,
      0,
      0,
-     0,
-     0,
-     0,
-     0,
-     0,
+     3,
+     2,
+     1,
+     2,
+     4,
      0,
      0,
      0,
      0
     ],
-    "daily": 2
+    "daily": 14
    },
    {
     "day": "2026-11-24",
@@ -1073,7 +1073,7 @@
    "path_id": 110447314,
    "title": "en",
    "event": true,
-   "count": 31,
+   "count": 33,
    "daily": {
     "2026-10-24": 3,
     "2026-10-25": 2,
@@ -1093,7 +1093,8 @@
     "2026-11-16": 1,
     "2026-11-20": 1,
     "2026-11-21": 1,
-    "2026-11-22": 3
+    "2026-11-22": 3,
+    "2026-11-23": 2
    }
   },
   {
@@ -1179,7 +1180,7 @@
    "path_id": 112804201,
    "title": "Rashid Hospital Metro Station: Oud Metha (Green Line), 5 min walk",
    "event": false,
-   "count": 10,
+   "count": 11,
    "daily": {
     "2026-10-26": 2,
     "2026-10-27": 1,
@@ -1189,7 +1190,8 @@
     "2026-11-11": 1,
     "2026-11-12": 1,
     "2026-11-14": 1,
-    "2026-11-20": 1
+    "2026-11-20": 1,
+    "2026-11-23": 1
    }
   },
   {
@@ -1208,6 +1210,20 @@
    }
   },
   {
+   "path": "/destinations/al-zahra-hospital-dubai",
+   "path_id": 111715857,
+   "title": "Al Zahra Hospital Dubai Metro Station: Dubai Internet City, 10 min walk",
+   "event": false,
+   "count": 6,
+   "daily": {
+    "2026-10-24": 1,
+    "2026-10-26": 2,
+    "2026-11-15": 1,
+    "2026-11-17": 1,
+    "2026-11-23": 1
+   }
+  },
+  {
    "path": "geo/ok/adcb",
    "path_id": 121131925,
    "title": "en",
@@ -1217,6 +1233,20 @@
     "2026-11-11": 1,
     "2026-11-12": 3,
     "2026-11-14": 1
+   }
+  },
+  {
+   "path": "/destinations/al-ghurair-centre",
+   "path_id": 117012967,
+   "title": "Al Ghurair Centre Metro Station: Union (Red/Green lines), 6 min walk",
+   "event": false,
+   "count": 5,
+   "daily": {
+    "2026-10-31": 1,
+    "2026-11-08": 1,
+    "2026-11-14": 1,
+    "2026-11-16": 1,
+    "2026-11-23": 1
    }
   },
   {
@@ -1246,16 +1276,15 @@
    }
   },
   {
-   "path": "/destinations/al-zahra-hospital-dubai",
-   "path_id": 111715857,
-   "title": "Al Zahra Hospital Dubai Metro Station: Dubai Internet City, 10 min walk",
+   "path": "/ru.html",
+   "path_id": 109203485,
+   "title": "Карта метро Дубая и планировщик маршрутов: метро, трамвай, монорельс",
    "event": false,
    "count": 5,
    "daily": {
-    "2026-10-24": 1,
-    "2026-10-26": 2,
-    "2026-11-15": 1,
-    "2026-11-17": 1
+    "2026-11-02": 2,
+    "2026-11-07": 2,
+    "2026-11-23": 1
    }
   },
   {
@@ -1320,19 +1349,6 @@
    }
   },
   {
-   "path": "/destinations/al-ghurair-centre",
-   "path_id": 117012967,
-   "title": "Al Ghurair Centre Metro Station: Union (Red/Green lines), 6 min walk",
-   "event": false,
-   "count": 4,
-   "daily": {
-    "2026-10-31": 1,
-    "2026-11-08": 1,
-    "2026-11-14": 1,
-    "2026-11-16": 1
-   }
-  },
-  {
    "path": "/destinations/times-square-center",
    "path_id": 114208930,
    "title": "Times Square Center Metro Station: Equiti (Red Line)",
@@ -1370,6 +1386,18 @@
    }
   },
   {
+   "path": "/destinations/st-mary-s-catholic-church",
+   "path_id": 111037420,
+   "title": "St. Mary's Catholic Church Metro Station: Oud Metha, 7 min walk",
+   "event": false,
+   "count": 4,
+   "daily": {
+    "2026-10-25": 1,
+    "2026-11-22": 1,
+    "2026-11-23": 2
+   }
+  },
+  {
    "path": "/destinations/dubai-mall",
    "path_id": 110484997,
    "title": "Dubai Mall Metro Station: Burj Khalifa/Dubai Mall (Red Line), 12 min walk",
@@ -1393,17 +1421,6 @@
     "2026-11-11": 1,
     "2026-11-12": 1,
     "2026-11-15": 1
-   }
-  },
-  {
-   "path": "/ru.html",
-   "path_id": 109203485,
-   "title": "Карта метро Дубая и планировщик маршрутов: метро, трамвай, монорельс",
-   "event": false,
-   "count": 4,
-   "daily": {
-    "2026-11-02": 2,
-    "2026-11-07": 2
    }
   },
   {
@@ -1524,6 +1541,16 @@
    }
   },
   {
+   "path": "/stations/equiti",
+   "path_id": 125292306,
+   "title": "Equiti Metro Station, Dubai: Red Line (formerly Umm Al Sheif)",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-11-23": 2
+   }
+  },
+  {
    "path": "/destinations/dubai-festival-city-mall",
    "path_id": 121584169,
    "title": "Dubai Festival City Mall Metro Station: Creek (Green Line)",
@@ -1588,6 +1615,17 @@
    }
   },
   {
+   "path": "/destinations/knowledge-park",
+   "path_id": 120289423,
+   "title": "Knowledge Park Tram Stop: Knowledge Village (Dubai Tram)",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-11-08": 1,
+    "2026-11-23": 1
+   }
+  },
+  {
    "path": "geo/ok/jbr2",
    "path_id": 120261772,
    "title": "en",
@@ -1596,6 +1634,17 @@
    "daily": {
     "2026-11-08": 1,
     "2026-11-09": 1
+   }
+  },
+  {
+   "path": "/zh.html",
+   "path_id": 119628872,
+   "title": "迪拜地铁互动线路图：地铁、有轨电车、棕榈岛单轨",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-11-06": 1,
+    "2026-11-23": 1
    }
   },
   {
@@ -1720,17 +1769,6 @@
    }
   },
   {
-   "path": "/destinations/st-mary-s-catholic-church",
-   "path_id": 111037420,
-   "title": "St. Mary's Catholic Church Metro Station: Oud Metha, 7 min walk",
-   "event": false,
-   "count": 2,
-   "daily": {
-    "2026-10-25": 1,
-    "2026-11-22": 1
-   }
-  },
-  {
    "path": "/ar.html",
    "path_id": 110830469,
    "title": "خريطة مترو دبي التفاعلية: المترو والترام ومونوريل النخلة",
@@ -1761,16 +1799,6 @@
    "daily": {
     "2026-11-09": 1,
     "2026-11-18": 1
-   }
-  },
-  {
-   "path": "/stations/equiti",
-   "path_id": 125292306,
-   "title": "Equiti Metro Station, Dubai: Red Line (formerly Umm Al Sheif)",
-   "event": false,
-   "count": 1,
-   "daily": {
-    "2026-11-23": 1
    }
   },
   {
@@ -2284,16 +2312,6 @@
    }
   },
   {
-   "path": "/destinations/knowledge-park",
-   "path_id": 120289423,
-   "title": "Knowledge Park Tram Stop: Knowledge Village (Dubai Tram)",
-   "event": false,
-   "count": 1,
-   "daily": {
-    "2026-11-08": 1
-   }
-  },
-  {
    "path": "/stations/dmcc",
    "path_id": 120136030,
    "title": "DMCC Metro Station, Dubai: Red Line (formerly Jumeirah Lakes Towers)",
@@ -2371,16 +2389,6 @@
    "count": 1,
    "daily": {
     "2026-11-07": 1
-   }
-  },
-  {
-   "path": "/zh.html",
-   "path_id": 119628872,
-   "title": "迪拜地铁互动线路图：地铁、有轨电车、棕榈岛单轨",
-   "event": false,
-   "count": 1,
-   "daily": {
-    "2026-11-06": 1
    }
   },
   {
@@ -2694,6 +2702,16 @@
    }
   },
   {
+   "path": "map_station_click/palmgw/-",
+   "path_id": 110484363,
+   "title": "en|home|desktop",
+   "event": true,
+   "count": 1,
+   "daily": {
+    "2026-11-23": 1
+   }
+  },
+  {
    "path": "route_from_station_click/dmm/-",
    "path_id": 110484179,
    "title": "en",
@@ -2806,9 +2824,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 402,
-  "events_total": 181,
-  "goatcounter_total_with_events": 583,
+  "visits": 411,
+  "events_total": 184,
+  "goatcounter_total_with_events": 595,
   "page_loads_by_day": {
    "2026-10-24": 9,
    "2026-10-25": 9,
@@ -2840,7 +2858,7 @@
    "2026-11-20": 12,
    "2026-11-21": 6,
    "2026-11-22": 12,
-   "2026-11-23": 2
+   "2026-11-23": 11
   },
   "visitor_days_by_day": {
    "2026-10-24": 3,
@@ -2865,14 +2883,15 @@
    "2026-11-18": 1,
    "2026-11-20": 1,
    "2026-11-21": 1,
-   "2026-11-22": 3
+   "2026-11-22": 3,
+   "2026-11-23": 2
   },
-  "visitor_days": 43,
-  "return_rate": 0.279,
+  "visitor_days": 45,
+  "return_rate": 0.267,
   "routes": 17,
   "routes_not_found": 0,
   "routes_per_visit": 0.04,
-  "routes_per_visitor_day": 0.28,
+  "routes_per_visitor_day": 0.27,
   "share_rate": 0.176,
   "shares": {
    "qr": 1,
@@ -2894,7 +2913,7 @@
    "outside": 1
   },
   "visitors_new_return": {
-   "new": 31,
+   "new": 33,
    "return": 12
   },
   "top_routes": [
@@ -3146,7 +3165,7 @@
   "/destinations/rashid-hospital": [
    {
     "name": "Google",
-    "count": 10
+    "count": 11
    }
   ],
   "/destinations/gdrfa-immigration-al-jafiliya": [
@@ -3157,6 +3176,22 @@
    {
     "name": "Google",
     "count": 3
+   }
+  ],
+  "/destinations/al-zahra-hospital-dubai": [
+   {
+    "name": "Google",
+    "count": 5
+   },
+   {
+    "name": "chatgpt.com",
+    "count": 1
+   }
+  ],
+  "/destinations/al-ghurair-centre": [
+   {
+    "name": "Google",
+    "count": 5
    }
   ],
   "/destinations/wafi-city": [
@@ -3171,13 +3206,17 @@
     "count": 5
    }
   ],
-  "/destinations/al-zahra-hospital-dubai": [
+  "/ru.html": [
    {
-    "name": "Google",
-    "count": 4
+    "name": "(direct or unknown)",
+    "count": 2
    },
    {
     "name": "chatgpt.com",
+    "count": 2
+   },
+   {
+    "name": "Google",
     "count": 1
    }
   ],
@@ -3215,12 +3254,6 @@
     "count": 1
    }
   ],
-  "/destinations/al-ghurair-centre": [
-   {
-    "name": "Google",
-    "count": 4
-   }
-  ],
   "/destinations/times-square-center": [
    {
     "name": "Google",
@@ -3243,20 +3276,20 @@
     "count": 4
    }
   ],
-  "/destinations/dubai-mall": [
-   {
-    "name": "Google",
-    "count": 4
-   }
-  ],
-  "/ru.html": [
+  "/destinations/st-mary-s-catholic-church": [
    {
     "name": "(direct or unknown)",
     "count": 2
    },
    {
-    "name": "chatgpt.com",
+    "name": "Google",
     "count": 2
+   }
+  ],
+  "/destinations/dubai-mall": [
+   {
+    "name": "Google",
+    "count": 4
    }
   ],
   "/map": [
@@ -3293,6 +3326,12 @@
     "count": 3
    }
   ],
+  "/stations/equiti": [
+   {
+    "name": "(direct or unknown)",
+    "count": 2
+   }
+  ],
   "/destinations/dubai-festival-city-mall": [
    {
     "name": "Google",
@@ -3302,6 +3341,18 @@
   "/destinations/dubai-hospital": [
    {
     "name": "Google",
+    "count": 2
+   }
+  ],
+  "/destinations/knowledge-park": [
+   {
+    "name": "Google",
+    "count": 2
+   }
+  ],
+  "/zh.html": [
+   {
+    "name": "www.bing.com",
     "count": 2
    }
   ],
@@ -3359,12 +3410,6 @@
     "count": 2
    }
   ],
-  "/destinations/st-mary-s-catholic-church": [
-   {
-    "name": "Google",
-    "count": 2
-   }
-  ],
   "/ar.html": [
    {
     "name": "(direct or unknown)",
@@ -3382,12 +3427,6 @@
    },
    {
     "name": "dubaimetro.fyi",
-    "count": 1
-   }
-  ],
-  "/stations/equiti": [
-   {
-    "name": "(direct or unknown)",
     "count": 1
    }
   ],
@@ -3451,12 +3490,6 @@
     "count": 1
    }
   ],
-  "/destinations/knowledge-park": [
-   {
-    "name": "Google",
-    "count": 1
-   }
-  ],
   "/stations/dmcc": [
    {
     "name": "chatgpt.com",
@@ -3472,12 +3505,6 @@
   "/stations/al-qiyadah": [
    {
     "name": "Google",
-    "count": 1
-   }
-  ],
-  "/zh.html": [
-   {
-    "name": "www.bing.com",
     "count": 1
    }
   ],
@@ -3573,6 +3600,14 @@
     "count": 2
    },
    {
+    "path": "/destinations/st-mary-s-catholic-church",
+    "count": 2
+   },
+   {
+    "path": "/stations/equiti",
+    "count": 2
+   },
+   {
     "path": "/destinations/etihad-rail-dubai",
     "count": 1
    },
@@ -3598,10 +3633,6 @@
    },
    {
     "path": "/ar.html",
-    "count": 1
-   },
-   {
-    "path": "/stations/equiti",
     "count": 1
    },
    {
@@ -3670,7 +3701,15 @@
    },
    {
     "path": "/destinations/rashid-hospital",
-    "count": 10
+    "count": 11
+   },
+   {
+    "path": "/destinations/al-zahra-hospital-dubai",
+    "count": 5
+   },
+   {
+    "path": "/destinations/al-ghurair-centre",
+    "count": 5
    },
    {
     "path": "/destinations/wafi-city",
@@ -3682,14 +3721,6 @@
    },
    {
     "path": "/",
-    "count": 4
-   },
-   {
-    "path": "/destinations/al-zahra-hospital-dubai",
-    "count": 4
-   },
-   {
-    "path": "/destinations/al-ghurair-centre",
     "count": 4
    },
    {
@@ -3737,6 +3768,10 @@
     "count": 2
    },
    {
+    "path": "/destinations/st-mary-s-catholic-church",
+    "count": 2
+   },
+   {
     "path": "/map",
     "count": 2
    },
@@ -3746,6 +3781,10 @@
    },
    {
     "path": "/destinations/dubai-hospital",
+    "count": 2
+   },
+   {
+    "path": "/destinations/knowledge-park",
     "count": 2
    },
    {
@@ -3765,8 +3804,8 @@
     "count": 2
    },
    {
-    "path": "/destinations/st-mary-s-catholic-church",
-    "count": 2
+    "path": "/ru.html",
+    "count": 1
    },
    {
     "path": "/destinations/egyptian-consulate-dubai",
@@ -3814,10 +3853,6 @@
    },
    {
     "path": "/destinations/city-centre-deira",
-    "count": 1
-   },
-   {
-    "path": "/destinations/knowledge-park",
     "count": 1
    },
    {
@@ -3919,11 +3954,11 @@
   ],
   "www.bing.com": [
    {
-    "path": "/ar.html",
-    "count": 1
+    "path": "/zh.html",
+    "count": 2
    },
    {
-    "path": "/zh.html",
+    "path": "/ar.html",
     "count": 1
    }
   ]
@@ -3932,12 +3967,12 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 259,
+   "count": 265,
    "ref_scheme": "g"
   },
   {
    "name": "",
-   "count": 72,
+   "count": 75,
    "ref_scheme": "o"
   },
   {
@@ -3949,7 +3984,7 @@
   {
    "id": "www.bing.com",
    "name": "www.bing.com",
-   "count": 12,
+   "count": 15,
    "ref_scheme": "h"
   },
   {
@@ -3963,7 +3998,17 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 556
+   "count": 563
+  },
+  {
+   "id": "zho",
+   "name": "Chinese",
+   "count": 7
+  },
+  {
+   "id": "rus",
+   "name": "Russian",
+   "count": 6
   },
   {
    "id": "ara",
@@ -3973,16 +4018,6 @@
   {
    "id": "(unknown)",
    "name": "(unknown)",
-   "count": 4
-  },
-  {
-   "id": "rus",
-   "name": "Russian",
-   "count": 4
-  },
-  {
-   "id": "zho",
-   "name": "Chinese",
    "count": 4
   },
   {
@@ -4015,7 +4050,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 490
+   "count": 496
   },
   {
    "id": "US",
@@ -4048,19 +4083,24 @@
    "count": 4
   },
   {
+   "id": "BR",
+   "name": "Brazil",
+   "count": 3
+  },
+  {
    "id": "FR",
    "name": "France",
+   "count": 3
+  },
+  {
+   "id": "GH",
+   "name": "Ghana",
    "count": 3
   },
   {
    "id": "HK",
    "name": "Hong Kong",
    "count": 3
-  },
-  {
-   "id": "BR",
-   "name": "Brazil",
-   "count": 2
   },
   {
    "id": "CA",
@@ -4103,6 +4143,11 @@
    "count": 2
   },
   {
+   "id": "AM",
+   "name": "Armenia",
+   "count": 1
+  },
+  {
    "id": "BD",
    "name": "Bangladesh",
    "count": 1
@@ -4110,6 +4155,11 @@
   {
    "id": "GB",
    "name": "United Kingdom",
+   "count": 1
+  },
+  {
+   "id": "HU",
+   "name": "Hungary",
    "count": 1
   },
   {
@@ -4147,22 +4197,22 @@
   {
    "id": "phone",
    "name": "",
-   "count": 488
+   "count": 494
   },
   {
    "id": "tablet",
    "name": "",
-   "count": 32
+   "count": 33
   },
   {
    "id": "desktop",
    "name": "",
-   "count": 57
+   "count": 60
   },
   {
    "id": "desktophd",
    "name": "",
-   "count": 6
+   "count": 8
   },
   {
    "id": "unknown",
@@ -4174,12 +4224,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 350
+   "count": 358
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 232
+   "count": 236
   },
   {
    "id": "Firefox",
@@ -4191,22 +4241,22 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 265
+   "count": 267
   },
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 226
+   "count": 230
   },
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 62
+   "count": 67
   },
   {
    "id": "Linux",
    "name": "Linux",
-   "count": 19
+   "count": 20
   },
   {
    "id": "macOS",
