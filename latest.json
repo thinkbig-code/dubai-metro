@@ -1,45 +1,13 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-22T23:51:38Z",
- "start": "2026-10-23",
- "end": "2026-11-23",
+ "generated": "2026-11-23T08:16:23Z",
+ "start": "2026-10-24",
+ "end": "2026-11-24",
  "total": {
-  "total": 584,
+  "total": 583,
   "total_events": 181,
-  "total_utc": 584,
+  "total_utc": 583,
   "stats": [
-   {
-    "day": "2026-10-23",
-    "hourly": [
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     1,
-     1,
-     0,
-     0,
-     1,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0
-    ],
-    "daily": 3,
-    "weekly": 74,
-    "monthly": 88
-   },
    {
     "day": "2026-10-24",
     "hourly": [
@@ -68,7 +36,9 @@
      2,
      0
     ],
-    "daily": 12
+    "daily": 12,
+    "weekly": 74,
+    "monthly": 85
    },
    {
     "day": "2026-10-25",
@@ -248,8 +218,7 @@
      0,
      0
     ],
-    "daily": 3,
-    "weekly": 85
+    "daily": 3
    },
    {
     "day": "2026-10-31",
@@ -279,7 +248,8 @@
      1,
      0
     ],
-    "daily": 11
+    "daily": 11,
+    "weekly": 101
    },
    {
     "day": "2026-11-01",
@@ -310,7 +280,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 496
+    "monthly": 498
    },
    {
     "day": "2026-11-02",
@@ -460,8 +430,7 @@
      0,
      0
     ],
-    "daily": 19,
-    "weekly": 229
+    "daily": 19
    },
    {
     "day": "2026-11-07",
@@ -491,7 +460,8 @@
      6,
      0
     ],
-    "daily": 32
+    "daily": 32,
+    "weekly": 267
    },
    {
     "day": "2026-11-08",
@@ -671,8 +641,7 @@
      0,
      0
     ],
-    "daily": 57,
-    "weekly": 155
+    "daily": 57
    },
    {
     "day": "2026-11-14",
@@ -702,7 +671,8 @@
      0,
      1
     ],
-    "daily": 55
+    "daily": 55,
+    "weekly": 117
    },
    {
     "day": "2026-11-15",
@@ -882,8 +852,7 @@
      0,
      0
     ],
-    "daily": 19,
-    "weekly": 41
+    "daily": 19
    },
    {
     "day": "2026-11-21",
@@ -913,7 +882,8 @@
      0,
      0
     ],
-    "daily": 7
+    "daily": 7,
+    "weekly": 24
    },
    {
     "day": "2026-11-22",
@@ -947,6 +917,36 @@
    },
    {
     "day": "2026-11-23",
+    "hourly": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "daily": 2
+   },
+   {
+    "day": "2026-11-24",
     "hourly": [
      0,
      0,
@@ -1101,9 +1101,8 @@
    "path_id": 112289662,
    "title": "Indian Consulate Dubai Metro Station: BurJuman, 7 min walk",
    "event": false,
-   "count": 15,
+   "count": 14,
    "daily": {
-    "2026-10-23": 1,
     "2026-10-26": 2,
     "2026-10-28": 1,
     "2026-11-03": 1,
@@ -1247,20 +1246,6 @@
    }
   },
   {
-   "path": "/destinations/times-square-center",
-   "path_id": 114208930,
-   "title": "Times Square Center Metro Station: Equiti (Red Line)",
-   "event": false,
-   "count": 5,
-   "daily": {
-    "2026-10-23": 1,
-    "2026-10-25": 1,
-    "2026-11-06": 1,
-    "2026-11-20": 1,
-    "2026-11-22": 1
-   }
-  },
-  {
    "path": "/destinations/al-zahra-hospital-dubai",
    "path_id": 111715857,
    "title": "Al Zahra Hospital Dubai Metro Station: Dubai Internet City, 10 min walk",
@@ -1345,6 +1330,19 @@
     "2026-11-08": 1,
     "2026-11-14": 1,
     "2026-11-16": 1
+   }
+  },
+  {
+   "path": "/destinations/times-square-center",
+   "path_id": 114208930,
+   "title": "Times Square Center Metro Station: Equiti (Red Line)",
+   "event": false,
+   "count": 4,
+   "daily": {
+    "2026-10-25": 1,
+    "2026-11-06": 1,
+    "2026-11-20": 1,
+    "2026-11-22": 1
    }
   },
   {
@@ -1656,6 +1654,17 @@
    }
   },
   {
+   "path": "/destinations/aster-hospital-mankhool",
+   "path_id": 115758732,
+   "title": "Aster Hospital Mankhool Metro Station: Sharaf DG (Green Line), 18 min walk",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-10-27": 1,
+    "2026-11-23": 1
+   }
+  },
+  {
    "path": "/destinations/al-khaleej-centre",
    "path_id": 115737347,
    "title": "Al Khaleej Centre Metro Station: Sharaf DG (Green Line), 4 min walk",
@@ -1675,17 +1684,6 @@
    "daily": {
     "2026-10-25": 1,
     "2026-11-10": 1
-   }
-  },
-  {
-   "path": "/destinations/coca-cola-arena",
-   "path_id": 114216387,
-   "title": "Coca-Cola Arena Metro Station: Burj Khalifa/Dubai Mall, 7 min walk",
-   "event": false,
-   "count": 2,
-   "daily": {
-    "2026-10-23": 1,
-    "2026-11-12": 1
    }
   },
   {
@@ -1763,6 +1761,16 @@
    "daily": {
     "2026-11-09": 1,
     "2026-11-18": 1
+   }
+  },
+  {
+   "path": "/stations/equiti",
+   "path_id": 125292306,
+   "title": "Equiti Metro Station, Dubai: Red Line (formerly Umm Al Sheif)",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-11-23": 1
    }
   },
   {
@@ -2526,16 +2534,6 @@
    }
   },
   {
-   "path": "/destinations/aster-hospital-mankhool",
-   "path_id": 115758732,
-   "title": "Aster Hospital Mankhool Metro Station: Sharaf DG (Green Line), 18 min walk",
-   "event": false,
-   "count": 1,
-   "daily": {
-    "2026-10-27": 1
-   }
-  },
-  {
    "path": "/destinations/burj-khalifa",
    "path_id": 115376444,
    "title": "Burj Khalifa Metro Station: Burj Khalifa/Dubai Mall (Red Line), 15 min walk",
@@ -2653,6 +2651,16 @@
    "count": 1,
    "daily": {
     "2026-10-25": 1
+   }
+  },
+  {
+   "path": "/destinations/coca-cola-arena",
+   "path_id": 114216387,
+   "title": "Coca-Cola Arena Metro Station: Burj Khalifa/Dubai Mall, 7 min walk",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-11-12": 1
    }
   },
   {
@@ -2798,11 +2806,10 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 403,
+  "visits": 402,
   "events_total": 181,
-  "goatcounter_total_with_events": 584,
+  "goatcounter_total_with_events": 583,
   "page_loads_by_day": {
-   "2026-10-23": 3,
    "2026-10-24": 9,
    "2026-10-25": 9,
    "2026-10-26": 14,
@@ -2832,7 +2839,8 @@
    "2026-11-19": 7,
    "2026-11-20": 12,
    "2026-11-21": 6,
-   "2026-11-22": 12
+   "2026-11-22": 12,
+   "2026-11-23": 2
   },
   "visitor_days_by_day": {
    "2026-10-24": 3,
@@ -3122,7 +3130,7 @@
   "/destinations/indian-consulate-dubai": [
    {
     "name": "Google",
-    "count": 15
+    "count": 14
    }
   ],
   "/destinations/meena-bazaar": [
@@ -3161,16 +3169,6 @@
    {
     "name": "Google",
     "count": 5
-   }
-  ],
-  "/destinations/times-square-center": [
-   {
-    "name": "Google",
-    "count": 4
-   },
-   {
-    "name": "chatgpt.com",
-    "count": 1
    }
   ],
   "/destinations/al-zahra-hospital-dubai": [
@@ -3218,6 +3216,12 @@
    }
   ],
   "/destinations/al-ghurair-centre": [
+   {
+    "name": "Google",
+    "count": 4
+   }
+  ],
+  "/destinations/times-square-center": [
    {
     "name": "Google",
     "count": 4
@@ -3327,13 +3331,7 @@
     "count": 1
    }
   ],
-  "/destinations/al-khaleej-centre": [
-   {
-    "name": "Google",
-    "count": 2
-   }
-  ],
-  "/destinations/coca-cola-arena": [
+  "/destinations/aster-hospital-mankhool": [
    {
     "name": "(direct or unknown)",
     "count": 1
@@ -3341,6 +3339,12 @@
    {
     "name": "Google",
     "count": 1
+   }
+  ],
+  "/destinations/al-khaleej-centre": [
+   {
+    "name": "Google",
+    "count": 2
    }
   ],
   "/destinations/us-consulate-dubai": [
@@ -3378,6 +3382,12 @@
    },
    {
     "name": "dubaimetro.fyi",
+    "count": 1
+   }
+  ],
+  "/stations/equiti": [
+   {
+    "name": "(direct or unknown)",
     "count": 1
    }
   ],
@@ -3518,12 +3528,6 @@
     "name": "Google",
     "count": 1
    }
-  ],
-  "/destinations/aster-hospital-mankhool": [
-   {
-    "name": "(direct or unknown)",
-    "count": 1
-   }
   ]
  },
  "ref_pages": {
@@ -3589,11 +3593,15 @@
     "count": 1
    },
    {
-    "path": "/destinations/coca-cola-arena",
+    "path": "/destinations/aster-hospital-mankhool",
     "count": 1
    },
    {
     "path": "/ar.html",
+    "count": 1
+   },
+   {
+    "path": "/stations/equiti",
     "count": 1
    },
    {
@@ -3602,10 +3610,6 @@
    },
    {
     "path": "/destinations/dubai-chamber-of-commerce",
-    "count": 1
-   },
-   {
-    "path": "/destinations/aster-hospital-mankhool",
     "count": 1
    }
   ],
@@ -3620,10 +3624,6 @@
    },
    {
     "path": "/destinations/meena-bazaar",
-    "count": 1
-   },
-   {
-    "path": "/destinations/times-square-center",
     "count": 1
    },
    {
@@ -3662,7 +3662,7 @@
    },
    {
     "path": "/destinations/indian-consulate-dubai",
-    "count": 15
+    "count": 14
    },
    {
     "path": "/destinations/meena-bazaar",
@@ -3685,15 +3685,15 @@
     "count": 4
    },
    {
-    "path": "/destinations/times-square-center",
-    "count": 4
-   },
-   {
     "path": "/destinations/al-zahra-hospital-dubai",
     "count": 4
    },
    {
     "path": "/destinations/al-ghurair-centre",
+    "count": 4
+   },
+   {
+    "path": "/destinations/times-square-center",
     "count": 4
    },
    {
@@ -3781,7 +3781,7 @@
     "count": 1
    },
    {
-    "path": "/destinations/coca-cola-arena",
+    "path": "/destinations/aster-hospital-mankhool",
     "count": 1
    },
    {
@@ -3932,18 +3932,18 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 260,
+   "count": 259,
    "ref_scheme": "g"
   },
   {
    "name": "",
-   "count": 71,
+   "count": 72,
    "ref_scheme": "o"
   },
   {
    "id": "chatgpt.com",
    "name": "chatgpt.com",
-   "count": 17,
+   "count": 16,
    "ref_scheme": "c"
   },
   {
@@ -3963,7 +3963,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 557
+   "count": 556
   },
   {
    "id": "ara",
@@ -4015,7 +4015,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 492
+   "count": 490
   },
   {
    "id": "US",
@@ -4123,6 +4123,11 @@
    "count": 1
   },
   {
+   "id": "LT",
+   "name": "Republic of Lithuania",
+   "count": 1
+  },
+  {
    "id": "MY",
    "name": "Malaysia",
    "count": 1
@@ -4142,12 +4147,12 @@
   {
    "id": "phone",
    "name": "",
-   "count": 490
+   "count": 488
   },
   {
    "id": "tablet",
    "name": "",
-   "count": 31
+   "count": 32
   },
   {
    "id": "desktop",
@@ -4169,12 +4174,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 349
+   "count": 350
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 234
+   "count": 232
   },
   {
    "id": "Firefox",
@@ -4191,7 +4196,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 228
+   "count": 226
   },
   {
    "id": "Windows",
@@ -4201,7 +4206,7 @@
   {
    "id": "Linux",
    "name": "Linux",
-   "count": 18
+   "count": 19
   },
   {
    "id": "macOS",

@@ -1,43 +1,13 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-22T23:52:42Z",
- "start": "2025-11-22",
- "end": "2026-11-23",
+ "generated": "2026-11-23T08:17:36Z",
+ "start": "2025-11-23",
+ "end": "2026-11-24",
  "total": {
-  "total": 951,
+  "total": 953,
   "total_events": 394,
-  "total_utc": 951,
+  "total_utc": 953,
   "stats": [
-   {
-    "day": "2025-11-22",
-    "hourly": [
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0
-    ],
-    "daily": 0
-   },
    {
     "day": "2025-11-23",
     "hourly": [
@@ -9276,8 +9246,7 @@
      0,
      0
     ],
-    "daily": 0,
-    "weekly": 41
+    "daily": 0
    },
    {
     "day": "2026-09-27",
@@ -9307,7 +9276,8 @@
      0,
      0
     ],
-    "daily": 0
+    "daily": 0,
+    "weekly": 45
    },
    {
     "day": "2026-09-28",
@@ -9488,8 +9458,7 @@
      0,
      0
     ],
-    "daily": 4,
-    "weekly": 180
+    "daily": 4
    },
    {
     "day": "2026-10-04",
@@ -9519,7 +9488,8 @@
      0,
      0
     ],
-    "daily": 13
+    "daily": 13,
+    "weekly": 193
    },
    {
     "day": "2026-10-05",
@@ -9699,8 +9669,7 @@
      0,
      0
     ],
-    "daily": 17,
-    "weekly": 103
+    "daily": 17
    },
    {
     "day": "2026-10-11",
@@ -9730,7 +9699,8 @@
      2,
      0
     ],
-    "daily": 39
+    "daily": 39,
+    "weekly": 91
    },
    {
     "day": "2026-10-12",
@@ -9910,8 +9880,7 @@
      0,
      1
     ],
-    "daily": 5,
-    "weekly": 46
+    "daily": 5
    },
    {
     "day": "2026-10-18",
@@ -9941,7 +9910,8 @@
      0,
      0
     ],
-    "daily": 6
+    "daily": 6,
+    "weekly": 53
    },
    {
     "day": "2026-10-19",
@@ -10121,8 +10091,7 @@
      2,
      0
     ],
-    "daily": 12,
-    "weekly": 74
+    "daily": 12
    },
    {
     "day": "2026-10-25",
@@ -10152,7 +10121,8 @@
      0,
      0
     ],
-    "daily": 21
+    "daily": 21,
+    "weekly": 73
    },
    {
     "day": "2026-10-26",
@@ -10332,8 +10302,7 @@
      1,
      0
     ],
-    "daily": 11,
-    "weekly": 101
+    "daily": 11
    },
    {
     "day": "2026-11-01",
@@ -10364,7 +10333,8 @@
      0
     ],
     "daily": 12,
-    "monthly": 496
+    "weekly": 122,
+    "monthly": 498
    },
    {
     "day": "2026-11-02",
@@ -10544,8 +10514,7 @@
      6,
      0
     ],
-    "daily": 32,
-    "weekly": 267
+    "daily": 32
    },
    {
     "day": "2026-11-08",
@@ -10575,7 +10544,8 @@
      3,
      1
     ],
-    "daily": 24
+    "daily": 24,
+    "weekly": 290
    },
    {
     "day": "2026-11-09",
@@ -10755,8 +10725,7 @@
      0,
      1
     ],
-    "daily": 55,
-    "weekly": 117
+    "daily": 55
    },
    {
     "day": "2026-11-15",
@@ -10786,7 +10755,8 @@
      1,
      0
     ],
-    "daily": 8
+    "daily": 8,
+    "weekly": 69
    },
    {
     "day": "2026-11-16",
@@ -10966,8 +10936,7 @@
      0,
      0
     ],
-    "daily": 7,
-    "weekly": 22
+    "daily": 7
    },
    {
     "day": "2026-11-22",
@@ -10997,10 +10966,41 @@
      0,
      0
     ],
-    "daily": 15
+    "daily": 15,
+    "weekly": 17
    },
    {
     "day": "2026-11-23",
+    "hourly": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "daily": 2
+   },
+   {
+    "day": "2026-11-24",
     "hourly": [
      0,
      0,
@@ -11972,6 +11972,17 @@
    }
   },
   {
+   "path": "/destinations/aster-hospital-mankhool",
+   "path_id": 115758732,
+   "title": "Aster Hospital Mankhool Metro Station: Sharaf DG (Green Line), 18 min walk",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-10-27": 1,
+    "2026-11-23": 1
+   }
+  },
+  {
    "path": "/destinations/al-khaleej-centre",
    "path_id": 115737347,
    "title": "Al Khaleej Centre Metro Station: Sharaf DG (Green Line), 4 min walk",
@@ -12242,6 +12253,16 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/stations/equiti",
+   "path_id": 125292306,
+   "title": "Equiti Metro Station, Dubai: Red Line (formerly Umm Al Sheif)",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-11-23": 1
    }
   },
   {
@@ -13002,16 +13023,6 @@
    "count": 1,
    "daily": {
     "2026-10-29": 1
-   }
-  },
-  {
-   "path": "/destinations/aster-hospital-mankhool",
-   "path_id": 115758732,
-   "title": "Aster Hospital Mankhool Metro Station: Sharaf DG (Green Line), 18 min walk",
-   "event": false,
-   "count": 1,
-   "daily": {
-    "2026-10-27": 1
    }
   },
   {
@@ -14367,9 +14378,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 557,
+  "visits": 559,
   "events_total": 394,
-  "goatcounter_total_with_events": 951,
+  "goatcounter_total_with_events": 953,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -14422,7 +14433,8 @@
    "2026-11-19": 7,
    "2026-11-20": 12,
    "2026-11-21": 6,
-   "2026-11-22": 12
+   "2026-11-22": 12,
+   "2026-11-23": 2
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -15084,6 +15096,16 @@
     "count": 1
    }
   ],
+  "/destinations/aster-hospital-mankhool": [
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   },
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
   "/destinations/al-khaleej-centre": [
    {
     "name": "Google",
@@ -15119,6 +15141,12 @@
    },
    {
     "name": "dubaimetro.fyi/destinations/etihad-rail-dubai",
+    "count": 1
+   }
+  ],
+  "/stations/equiti": [
+   {
+    "name": "(direct or unknown)",
     "count": 1
    }
   ],
@@ -15211,18 +15239,6 @@
     "name": "www.bing.com",
     "count": 1
    }
-  ],
-  "/destinations/saudi-german-hospital-dubai": [
-   {
-    "name": "Google",
-    "count": 1
-   }
-  ],
-  "/destinations/jebel-ali-free-zone": [
-   {
-    "name": "Google",
-    "count": 1
-   }
   ]
  },
  "ref_pages": {
@@ -15300,7 +15316,15 @@
     "count": 1
    },
    {
+    "path": "/destinations/aster-hospital-mankhool",
+    "count": 1
+   },
+   {
     "path": "/destinations/coca-cola-arena",
+    "count": 1
+   },
+   {
+    "path": "/stations/equiti",
     "count": 1
    }
   ],
@@ -15546,6 +15570,10 @@
     "count": 1
    },
    {
+    "path": "/destinations/aster-hospital-mankhool",
+    "count": 1
+   },
+   {
     "path": "/destinations/coca-cola-arena",
     "count": 1
    },
@@ -15591,14 +15619,6 @@
    },
    {
     "path": "/stations/al-qiyadah",
-    "count": 1
-   },
-   {
-    "path": "/destinations/saudi-german-hospital-dubai",
-    "count": 1
-   },
-   {
-    "path": "/destinations/jebel-ali-free-zone",
     "count": 1
    }
   ],
@@ -15738,13 +15758,13 @@
  "toprefs": [
   {
    "name": "",
-   "count": 328,
+   "count": 329,
    "ref_scheme": "o"
   },
   {
    "id": "Google",
    "name": "Google",
-   "count": 278,
+   "count": 279,
    "ref_scheme": "g"
   },
   {
@@ -15806,7 +15826,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 889
+   "count": 891
   },
   {
    "id": "rus",
@@ -15863,7 +15883,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 770
+   "count": 771
   },
   {
    "id": "US",
@@ -15933,6 +15953,11 @@
   {
    "id": "CO",
    "name": "Colombia",
+   "count": 2
+  },
+  {
+   "id": "LT",
+   "name": "Republic of Lithuania",
    "count": 2
   },
   {
@@ -16006,11 +16031,6 @@
    "count": 1
   },
   {
-   "id": "LT",
-   "name": "Republic of Lithuania",
-   "count": 1
-  },
-  {
    "id": "MY",
    "name": "Malaysia",
    "count": 1
@@ -16035,12 +16055,12 @@
   {
    "id": "phone",
    "name": "",
-   "count": 698
+   "count": 699
   },
   {
    "id": "tablet",
    "name": "",
-   "count": 48
+   "count": 49
   },
   {
    "id": "desktop",
@@ -16062,7 +16082,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 582
+   "count": 584
   },
   {
    "id": "Safari",
@@ -16088,7 +16108,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 347
+   "count": 348
   },
   {
    "id": "Windows",
@@ -16103,7 +16123,7 @@
   {
    "id": "Linux",
    "name": "Linux",
-   "count": 34
+   "count": 35
   },
   {
    "id": "Chrome OS",
