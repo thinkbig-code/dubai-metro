@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-24T11:03:39Z",
+ "generated": "2026-11-24T16:27:36Z",
  "start": "2026-10-25",
  "end": "2026-11-25",
  "total": {
-  "total": 588,
-  "total_events": 183,
-  "total_utc": 580,
+  "total": 595,
+  "total_events": 184,
+  "total_utc": 587,
   "stats": [
    {
     "day": "2026-10-25",
@@ -250,7 +250,7 @@
     ],
     "daily": 12,
     "weekly": 122,
-    "monthly": 516
+    "monthly": 523
    },
    {
     "day": "2026-11-02",
@@ -883,7 +883,7 @@
      0
     ],
     "daily": 15,
-    "weekly": 35
+    "weekly": 42
    },
    {
     "day": "2026-11-23",
@@ -933,17 +933,17 @@
      2,
      0,
      2,
-     0,
-     0,
-     0,
-     0,
-     0,
+     1,
+     1,
+     1,
+     3,
+     1,
      0,
      0,
      0,
      0
     ],
-    "daily": 6
+    "daily": 13
    },
    {
     "day": "2026-11-25",
@@ -983,7 +983,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 109,
+   "count": 110,
    "daily": {
     "2026-10-25": 2,
     "2026-10-26": 1,
@@ -1011,7 +1011,7 @@
     "2026-11-20": 3,
     "2026-11-21": 2,
     "2026-11-22": 4,
-    "2026-11-24": 2
+    "2026-11-24": 3
    }
   },
   {
@@ -1019,7 +1019,7 @@
    "path_id": 116082941,
    "title": "Nearest Metro Station to Me in Dubai: Find It by Location",
    "event": false,
-   "count": 97,
+   "count": 99,
    "daily": {
     "2026-10-28": 1,
     "2026-10-31": 1,
@@ -1040,7 +1040,7 @@
     "2026-11-20": 3,
     "2026-11-21": 1,
     "2026-11-22": 1,
-    "2026-11-24": 1
+    "2026-11-24": 3
    }
   },
   {
@@ -1196,6 +1196,21 @@
    }
   },
   {
+   "path": "/destinations/al-ghurair-centre",
+   "path_id": 117012967,
+   "title": "Al Ghurair Centre Metro Station: Union (Red/Green lines), 6 min walk",
+   "event": false,
+   "count": 7,
+   "daily": {
+    "2026-10-31": 1,
+    "2026-11-08": 1,
+    "2026-11-14": 1,
+    "2026-11-16": 1,
+    "2026-11-23": 1,
+    "2026-11-24": 2
+   }
+  },
+  {
    "path": "/destinations/gdrfa-immigration-al-jafiliya",
    "path_id": 113030966,
    "title": "GDRFA Immigration Al Jafiliya Metro Station: Max (Red Line), 3 min walk",
@@ -1220,20 +1235,6 @@
     "2026-11-11": 1,
     "2026-11-12": 3,
     "2026-11-14": 1
-   }
-  },
-  {
-   "path": "/destinations/al-ghurair-centre",
-   "path_id": 117012967,
-   "title": "Al Ghurair Centre Metro Station: Union (Red/Green lines), 6 min walk",
-   "event": false,
-   "count": 5,
-   "daily": {
-    "2026-10-31": 1,
-    "2026-11-08": 1,
-    "2026-11-14": 1,
-    "2026-11-16": 1,
-    "2026-11-23": 1
    }
   },
   {
@@ -1285,6 +1286,17 @@
     "2026-11-02": 2,
     "2026-11-07": 2,
     "2026-11-23": 1
+   }
+  },
+  {
+   "path": "/stations/equiti",
+   "path_id": 125292306,
+   "title": "Equiti Metro Station, Dubai: Red Line (formerly Umm Al Sheif)",
+   "event": false,
+   "count": 4,
+   "daily": {
+    "2026-11-23": 2,
+    "2026-11-24": 2
    }
   },
   {
@@ -1424,17 +1436,6 @@
    }
   },
   {
-   "path": "/stations/equiti",
-   "path_id": 125292306,
-   "title": "Equiti Metro Station, Dubai: Red Line (formerly Umm Al Sheif)",
-   "event": false,
-   "count": 3,
-   "daily": {
-    "2026-11-23": 2,
-    "2026-11-24": 1
-   }
-  },
-  {
    "path": "geo/far/stadium",
    "path_id": 121126343,
    "title": "en",
@@ -1443,6 +1444,18 @@
    "daily": {
     "2026-11-11": 1,
     "2026-11-13": 2
+   }
+  },
+  {
+   "path": "geo/ok/sharafdg",
+   "path_id": 120833235,
+   "title": "en",
+   "event": true,
+   "count": 3,
+   "daily": {
+    "2026-11-10": 1,
+    "2026-11-13": 1,
+    "2026-11-24": 1
    }
   },
   {
@@ -1568,17 +1581,6 @@
    "count": 2,
    "daily": {
     "2026-11-11": 2
-   }
-  },
-  {
-   "path": "geo/ok/sharafdg",
-   "path_id": 120833235,
-   "title": "en",
-   "event": true,
-   "count": 2,
-   "daily": {
-    "2026-11-10": 1,
-    "2026-11-13": 1
    }
   },
   {
@@ -2822,9 +2824,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 405,
-  "events_total": 183,
-  "goatcounter_total_with_events": 588,
+  "visits": 411,
+  "events_total": 184,
+  "goatcounter_total_with_events": 595,
   "page_loads_by_day": {
    "2026-10-25": 8,
    "2026-10-26": 14,
@@ -2856,7 +2858,7 @@
    "2026-11-21": 6,
    "2026-11-22": 12,
    "2026-11-23": 11,
-   "2026-11-24": 4
+   "2026-11-24": 10
   },
   "visitor_days_by_day": {
    "2026-10-25": 2,
@@ -2905,7 +2907,7 @@
   ],
   "nearest_station": {
    "denied": 12,
-   "ok": 41,
+   "ok": 42,
    "far": 14,
    "fail": 4,
    "outside": 1
@@ -3065,7 +3067,7 @@
   "/": [
    {
     "name": "dubaimetro.fyi/nearest-station",
-    "count": 47
+    "count": 48
    },
    {
     "name": "dubaimetro.fyi",
@@ -3119,7 +3121,7 @@
   "/nearest-station": [
    {
     "name": "Google",
-    "count": 92
+    "count": 94
    },
    {
     "name": "(direct or unknown)",
@@ -3166,6 +3168,12 @@
     "count": 11
    }
   ],
+  "/destinations/al-ghurair-centre": [
+   {
+    "name": "Google",
+    "count": 7
+   }
+  ],
   "/destinations/gdrfa-immigration-al-jafiliya": [
    {
     "name": "(direct or unknown)",
@@ -3174,12 +3182,6 @@
    {
     "name": "Google",
     "count": 3
-   }
-  ],
-  "/destinations/al-ghurair-centre": [
-   {
-    "name": "Google",
-    "count": 5
    }
   ],
   "/destinations/wafi-city": [
@@ -3216,6 +3218,12 @@
    {
     "name": "Google",
     "count": 1
+   }
+  ],
+  "/stations/equiti": [
+   {
+    "name": "(direct or unknown)",
+    "count": 4
    }
   ],
   "/destinations/egyptian-consulate-dubai": [
@@ -3288,12 +3296,6 @@
    {
     "name": "Google",
     "count": 4
-   }
-  ],
-  "/stations/equiti": [
-   {
-    "name": "(direct or unknown)",
-    "count": 3
    }
   ],
   "/destinations/al-mulla-plaza": [
@@ -3555,7 +3557,7 @@
   "dubaimetro.fyi/nearest-station": [
    {
     "path": "/",
-    "count": 47
+    "count": 48
    },
    {
     "path": "/map",
@@ -3582,15 +3584,15 @@
     "count": 4
    },
    {
+    "path": "/stations/equiti",
+    "count": 4
+   },
+   {
     "path": "/nearest-station",
     "count": 3
    },
    {
     "path": "/destinations/egyptian-consulate-dubai",
-    "count": 3
-   },
-   {
-    "path": "/stations/equiti",
     "count": 3
    },
    {
@@ -3679,7 +3681,7 @@
   "Google": [
    {
     "path": "/nearest-station",
-    "count": 92
+    "count": 94
    },
    {
     "path": "/destinations/etihad-rail-dubai",
@@ -3699,7 +3701,7 @@
    },
    {
     "path": "/destinations/al-ghurair-centre",
-    "count": 5
+    "count": 7
    },
    {
     "path": "/destinations/wafi-city",
@@ -3957,12 +3959,12 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 256,
+   "count": 260,
    "ref_scheme": "g"
   },
   {
    "name": "",
-   "count": 76,
+   "count": 77,
    "ref_scheme": "o"
   },
   {
@@ -3988,7 +3990,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 557
+   "count": 564
   },
   {
    "id": "zho",
@@ -4035,12 +4037,12 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 490
+   "count": 496
   },
   {
    "id": "US",
    "name": "United States",
-   "count": 24
+   "count": 25
   },
   {
    "id": "IN",
@@ -4177,12 +4179,12 @@
   {
    "id": "phone",
    "name": "",
-   "count": 486
+   "count": 492
   },
   {
    "id": "tablet",
    "name": "",
-   "count": 32
+   "count": 33
   },
   {
    "id": "desktop",
@@ -4204,12 +4206,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 354
+   "count": 359
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 233
+   "count": 235
   },
   {
    "id": "Firefox",
@@ -4221,12 +4223,12 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 262
+   "count": 266
   },
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 227
+   "count": 229
   },
   {
    "id": "Windows",
@@ -4236,7 +4238,7 @@
   {
    "id": "Linux",
    "name": "Linux",
-   "count": 19
+   "count": 20
   },
   {
    "id": "macOS",
