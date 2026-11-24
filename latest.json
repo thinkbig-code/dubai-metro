@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-24T04:59:31Z",
+ "generated": "2026-11-24T11:03:39Z",
  "start": "2026-10-25",
  "end": "2026-11-25",
  "total": {
-  "total": 584,
-  "total_events": 181,
-  "total_utc": 576,
+  "total": 588,
+  "total_events": 183,
+  "total_utc": 580,
   "stats": [
    {
     "day": "2026-10-25",
@@ -250,7 +250,7 @@
     ],
     "daily": 12,
     "weekly": 122,
-    "monthly": 512
+    "monthly": 516
    },
    {
     "day": "2026-11-02",
@@ -883,7 +883,7 @@
      0
     ],
     "daily": 15,
-    "weekly": 31
+    "weekly": 35
    },
    {
     "day": "2026-11-23",
@@ -930,9 +930,9 @@
      0,
      0,
      0,
+     2,
      0,
-     0,
-     0,
+     2,
      0,
      0,
      0,
@@ -943,7 +943,7 @@
      0,
      0
     ],
-    "daily": 2
+    "daily": 6
    },
    {
     "day": "2026-11-25",
@@ -983,7 +983,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 107,
+   "count": 109,
    "daily": {
     "2026-10-25": 2,
     "2026-10-26": 1,
@@ -1010,7 +1010,8 @@
     "2026-11-18": 1,
     "2026-11-20": 3,
     "2026-11-21": 2,
-    "2026-11-22": 4
+    "2026-11-22": 4,
+    "2026-11-24": 2
    }
   },
   {
@@ -1047,7 +1048,7 @@
    "path_id": 110447314,
    "title": "en",
    "event": true,
-   "count": 30,
+   "count": 31,
    "daily": {
     "2026-10-25": 2,
     "2026-10-27": 1,
@@ -1067,7 +1068,8 @@
     "2026-11-20": 1,
     "2026-11-21": 1,
     "2026-11-22": 3,
-    "2026-11-23": 2
+    "2026-11-23": 2,
+    "2026-11-24": 1
    }
   },
   {
@@ -1141,7 +1143,7 @@
    "path_id": 110878762,
    "title": "en",
    "event": true,
-   "count": 12,
+   "count": 13,
    "daily": {
     "2026-11-01": 1,
     "2026-11-02": 1,
@@ -1153,7 +1155,8 @@
     "2026-11-13": 1,
     "2026-11-16": 1,
     "2026-11-17": 1,
-    "2026-11-18": 1
+    "2026-11-18": 1,
+    "2026-11-24": 1
    }
   },
   {
@@ -2819,9 +2822,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 403,
-  "events_total": 181,
-  "goatcounter_total_with_events": 584,
+  "visits": 405,
+  "events_total": 183,
+  "goatcounter_total_with_events": 588,
   "page_loads_by_day": {
    "2026-10-25": 8,
    "2026-10-26": 14,
@@ -2853,7 +2856,7 @@
    "2026-11-21": 6,
    "2026-11-22": 12,
    "2026-11-23": 11,
-   "2026-11-24": 2
+   "2026-11-24": 4
   },
   "visitor_days_by_day": {
    "2026-10-25": 2,
@@ -2878,14 +2881,15 @@
    "2026-11-20": 1,
    "2026-11-21": 1,
    "2026-11-22": 3,
-   "2026-11-23": 2
+   "2026-11-23": 2,
+   "2026-11-24": 2
   },
-  "visitor_days": 42,
-  "return_rate": 0.286,
+  "visitor_days": 44,
+  "return_rate": 0.295,
   "routes": 17,
   "routes_not_found": 0,
   "routes_per_visit": 0.04,
-  "routes_per_visitor_day": 0.29,
+  "routes_per_visitor_day": 0.27,
   "share_rate": 0.176,
   "shares": {
    "qr": 1,
@@ -2907,8 +2911,8 @@
    "outside": 1
   },
   "visitors_new_return": {
-   "new": 30,
-   "return": 12
+   "new": 31,
+   "return": 13
   },
   "top_routes": [
    {
@@ -3065,11 +3069,11 @@
    },
    {
     "name": "dubaimetro.fyi",
-    "count": 27
+    "count": 28
    },
    {
     "name": "(direct or unknown)",
-    "count": 17
+    "count": 18
    },
    {
     "name": "chatgpt.com",
@@ -3561,7 +3565,7 @@
   "dubaimetro.fyi": [
    {
     "path": "/",
-    "count": 27
+    "count": 28
    },
    {
     "path": "/tram",
@@ -3571,7 +3575,7 @@
   "(direct or unknown)": [
    {
     "path": "/",
-    "count": 17
+    "count": 18
    },
    {
     "path": "/destinations/gdrfa-immigration-al-jafiliya",
@@ -3958,7 +3962,7 @@
   },
   {
    "name": "",
-   "count": 74,
+   "count": 76,
    "ref_scheme": "o"
   },
   {
@@ -3984,7 +3988,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 553
+   "count": 557
   },
   {
    "id": "zho",
@@ -4031,7 +4035,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 488
+   "count": 490
   },
   {
    "id": "US",
@@ -4061,6 +4065,11 @@
   {
    "id": "IE",
    "name": "Ireland",
+   "count": 4
+  },
+  {
+   "id": "PK",
+   "name": "Pakistan",
    "count": 4
   },
   {
@@ -4101,11 +4110,6 @@
   {
    "id": "MA",
    "name": "Morocco",
-   "count": 2
-  },
-  {
-   "id": "PK",
-   "name": "Pakistan",
    "count": 2
   },
   {
@@ -4173,7 +4177,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 484
+   "count": 486
   },
   {
    "id": "tablet",
@@ -4183,7 +4187,7 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 60
+   "count": 62
   },
   {
    "id": "desktophd",
@@ -4200,12 +4204,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 352
+   "count": 354
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 231
+   "count": 233
   },
   {
    "id": "Firefox",
@@ -4222,12 +4226,12 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 225
+   "count": 227
   },
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 67
+   "count": 69
   },
   {
    "id": "Linux",

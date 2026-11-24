@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-24T05:00:44Z",
+ "generated": "2026-11-24T11:04:44Z",
  "start": "2025-11-24",
  "end": "2026-11-25",
  "total": {
-  "total": 967,
-  "total_events": 397,
-  "total_utc": 967,
+  "total": 971,
+  "total_events": 399,
+  "total_utc": 971,
   "stats": [
    {
     "day": "2025-11-24",
@@ -10303,7 +10303,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 512
+    "monthly": 516
    },
    {
     "day": "2026-11-02",
@@ -10967,7 +10967,7 @@
      0
     ],
     "daily": 14,
-    "weekly": 16
+    "weekly": 20
    },
    {
     "day": "2026-11-24",
@@ -10984,9 +10984,9 @@
      0,
      0,
      0,
+     2,
      0,
-     0,
-     0,
+     2,
      0,
      0,
      0,
@@ -10997,7 +10997,7 @@
      0,
      0
     ],
-    "daily": 2
+    "daily": 6
    },
    {
     "day": "2026-11-25",
@@ -11037,7 +11037,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 211,
+   "count": 213,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -11084,7 +11084,8 @@
     "2026-11-18": 1,
     "2026-11-20": 3,
     "2026-11-21": 2,
-    "2026-11-22": 4
+    "2026-11-22": 4,
+    "2026-11-24": 2
    }
   },
   {
@@ -11121,7 +11122,7 @@
    "path_id": 110447314,
    "title": "en",
    "event": true,
-   "count": 72,
+   "count": 73,
    "daily": {
     "2026-10-08": 7,
     "2026-10-09": 6,
@@ -11155,7 +11156,8 @@
     "2026-11-20": 1,
     "2026-11-21": 1,
     "2026-11-22": 3,
-    "2026-11-23": 2
+    "2026-11-23": 2,
+    "2026-11-24": 1
    }
   },
   {
@@ -11237,6 +11239,28 @@
    }
   },
   {
+   "path": "visit/return/-",
+   "path_id": 110878762,
+   "title": "en",
+   "event": true,
+   "count": 14,
+   "daily": {
+    "2026-10-10": 1,
+    "2026-11-01": 1,
+    "2026-11-02": 1,
+    "2026-11-03": 1,
+    "2026-11-05": 1,
+    "2026-11-07": 2,
+    "2026-11-09": 1,
+    "2026-11-12": 1,
+    "2026-11-13": 1,
+    "2026-11-16": 1,
+    "2026-11-17": 1,
+    "2026-11-18": 1,
+    "2026-11-24": 1
+   }
+  },
+  {
    "path": "/destinations/meena-bazaar",
    "path_id": 115183314,
    "title": "Meena Bazaar Metro Station: Sharaf DG (Green Line), 9 min walk",
@@ -11254,27 +11278,6 @@
     "2026-11-19": 2,
     "2026-11-20": 1,
     "2026-11-21": 1
-   }
-  },
-  {
-   "path": "visit/return/-",
-   "path_id": 110878762,
-   "title": "en",
-   "event": true,
-   "count": 13,
-   "daily": {
-    "2026-10-10": 1,
-    "2026-11-01": 1,
-    "2026-11-02": 1,
-    "2026-11-03": 1,
-    "2026-11-05": 1,
-    "2026-11-07": 2,
-    "2026-11-09": 1,
-    "2026-11-12": 1,
-    "2026-11-13": 1,
-    "2026-11-16": 1,
-    "2026-11-17": 1,
-    "2026-11-18": 1
    }
   },
   {
@@ -14389,9 +14392,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 570,
-  "events_total": 397,
-  "goatcounter_total_with_events": 967,
+  "visits": 572,
+  "events_total": 399,
+  "goatcounter_total_with_events": 971,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -14446,7 +14449,7 @@
    "2026-11-21": 6,
    "2026-11-22": 12,
    "2026-11-23": 11,
-   "2026-11-24": 2
+   "2026-11-24": 4
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -14485,14 +14488,15 @@
    "2026-11-20": 1,
    "2026-11-21": 1,
    "2026-11-22": 3,
-   "2026-11-23": 2
+   "2026-11-23": 2,
+   "2026-11-24": 2
   },
-  "visitor_days": 85,
-  "return_rate": 0.153,
+  "visitor_days": 87,
+  "return_rate": 0.161,
   "routes": 55,
   "routes_not_found": 0,
   "routes_per_visit": 0.1,
-  "routes_per_visitor_day": 0.46,
+  "routes_per_visitor_day": 0.45,
   "share_rate": 0.055,
   "shares": {
    "qr": 1,
@@ -14518,8 +14522,8 @@
    "outside": 1
   },
   "visitors_new_return": {
-   "new": 72,
-   "return": 13
+   "new": 73,
+   "return": 14
   },
   "top_routes": [
    {
@@ -14672,7 +14676,7 @@
   "/": [
    {
     "name": "(direct or unknown)",
-    "count": 101
+    "count": 102
    },
    {
     "name": "dubaimetro.fyi/nearest-station",
@@ -14680,7 +14684,7 @@
    },
    {
     "name": "dubaimetro.fyi",
-    "count": 27
+    "count": 28
    },
    {
     "name": "com.reddit.frontpage",
@@ -15262,7 +15266,7 @@
   "(direct or unknown)": [
    {
     "path": "/",
-    "count": 101
+    "count": 102
    },
    {
     "path": "/destinations/etihad-rail-dubai",
@@ -15358,7 +15362,7 @@
   "dubaimetro.fyi": [
    {
     "path": "/",
-    "count": 27
+    "count": 28
    },
    {
     "path": "/ru.html",
@@ -15779,7 +15783,7 @@
  "toprefs": [
   {
    "name": "",
-   "count": 334,
+   "count": 336,
    "ref_scheme": "o"
   },
   {
@@ -15847,7 +15851,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 900
+   "count": 904
   },
   {
    "id": "rus",
@@ -15904,7 +15908,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 778
+   "count": 780
   },
   {
    "id": "US",
@@ -15957,6 +15961,11 @@
    "count": 4
   },
   {
+   "id": "PK",
+   "name": "Pakistan",
+   "count": 4
+  },
+  {
    "id": "CA",
    "name": "Canada",
    "count": 3
@@ -15989,11 +15998,6 @@
   {
    "id": "MA",
    "name": "Morocco",
-   "count": 2
-  },
-  {
-   "id": "PK",
-   "name": "Pakistan",
    "count": 2
   },
   {
@@ -16091,7 +16095,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 706
+   "count": 708
   },
   {
    "id": "tablet",
@@ -16101,7 +16105,7 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 191
+   "count": 193
   },
   {
    "id": "desktophd",
@@ -16118,12 +16122,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 594
+   "count": 596
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 367
+   "count": 369
   },
   {
    "id": "Firefox",
@@ -16139,7 +16143,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 357
+   "count": 359
   },
   {
    "id": "Android",
@@ -16149,7 +16153,7 @@
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 143
+   "count": 145
   },
   {
    "id": "macOS",
