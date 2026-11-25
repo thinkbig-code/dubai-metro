@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-25T09:55:13Z",
+ "generated": "2026-11-25T10:31:31Z",
  "start": "2025-11-25",
  "end": "2026-11-26",
  "total": {
-  "total": 990,
+  "total": 992,
   "total_events": 401,
-  "total_utc": 990,
+  "total_utc": 992,
   "stats": [
    {
     "day": "2025-11-25",
@@ -10273,7 +10273,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 535
+    "monthly": 537
    },
    {
     "day": "2026-11-02",
@@ -10967,7 +10967,7 @@
      0
     ],
     "daily": 15,
-    "weekly": 25
+    "weekly": 27
    },
    {
     "day": "2026-11-25",
@@ -10986,7 +10986,7 @@
      1,
      1,
      1,
-     0,
+     2,
      0,
      0,
      0,
@@ -10997,7 +10997,7 @@
      0,
      0
     ],
-    "daily": 10
+    "daily": 12
    },
    {
     "day": "2026-11-26",
@@ -11356,14 +11356,14 @@
    "path_id": 114208930,
    "title": "Times Square Center Metro Station: Equiti (Red Line)",
    "event": false,
-   "count": 6,
+   "count": 7,
    "daily": {
     "2026-10-23": 1,
     "2026-10-25": 1,
     "2026-11-06": 1,
     "2026-11-20": 1,
     "2026-11-22": 1,
-    "2026-11-25": 1
+    "2026-11-25": 2
    }
   },
   {
@@ -12068,6 +12068,17 @@
    "daily": {
     "2026-11-02": 1,
     "2026-11-13": 1
+   }
+  },
+  {
+   "path": "/destinations/american-university-in-dubai",
+   "path_id": 116983456,
+   "title": "American University in Dubai Metro Station: Al Fardan Exchange, 5 min walk",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-10-31": 1,
+    "2026-11-25": 1
    }
   },
   {
@@ -13037,16 +13048,6 @@
    "path_id": 117213271,
    "title": "en",
    "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-31": 1
-   }
-  },
-  {
-   "path": "/destinations/american-university-in-dubai",
-   "path_id": 116983456,
-   "title": "American University in Dubai Metro Station: Al Fardan Exchange, 5 min walk",
-   "event": false,
    "count": 1,
    "daily": {
     "2026-10-31": 1
@@ -14405,9 +14406,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 589,
+  "visits": 591,
   "events_total": 401,
-  "goatcounter_total_with_events": 990,
+  "goatcounter_total_with_events": 992,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -14463,7 +14464,7 @@
    "2026-11-22": 12,
    "2026-11-23": 11,
    "2026-11-24": 12,
-   "2026-11-25": 9
+   "2026-11-25": 11
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -14856,7 +14857,7 @@
   "/destinations/times-square-center": [
    {
     "name": "Google",
-    "count": 5
+    "count": 6
    },
    {
     "name": "chatgpt.com",
@@ -15179,6 +15180,12 @@
     "count": 1
    }
   ],
+  "/destinations/american-university-in-dubai": [
+   {
+    "name": "Google",
+    "count": 2
+   }
+  ],
   "/destinations/al-khaleej-centre": [
    {
     "name": "Google",
@@ -15274,12 +15281,6 @@
   "/stations/dmcc": [
    {
     "name": "chatgpt.com",
-    "count": 1
-   }
-  ],
-  "/destinations/gold-souk": [
-   {
-    "name": "Google",
     "count": 1
    }
   ]
@@ -15502,7 +15503,7 @@
    },
    {
     "path": "/destinations/times-square-center",
-    "count": 5
+    "count": 6
    },
    {
     "path": "/destinations/wafi-city",
@@ -15597,6 +15598,10 @@
     "count": 2
    },
    {
+    "path": "/destinations/american-university-in-dubai",
+    "count": 2
+   },
+   {
     "path": "/destinations/al-khaleej-centre",
     "count": 2
    },
@@ -15662,10 +15667,6 @@
    },
    {
     "path": "/destinations/city-centre-deira",
-    "count": 1
-   },
-   {
-    "path": "/destinations/gold-souk",
     "count": 1
    }
   ],
@@ -15819,7 +15820,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 298,
+   "count": 300,
    "ref_scheme": "g"
   },
   {
@@ -15881,7 +15882,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 923
+   "count": 925
   },
   {
    "id": "rus",
@@ -15938,7 +15939,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 797
+   "count": 799
   },
   {
    "id": "US",
@@ -16130,7 +16131,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 723
+   "count": 724
   },
   {
    "id": "tablet",
@@ -16140,7 +16141,7 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 196
+   "count": 197
   },
   {
    "id": "desktophd",
@@ -16157,12 +16158,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 607
+   "count": 608
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 377
+   "count": 378
   },
   {
    "id": "Firefox",
@@ -16178,7 +16179,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 367
+   "count": 368
   },
   {
    "id": "Android",
@@ -16188,7 +16189,7 @@
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 148
+   "count": 149
   },
   {
    "id": "macOS",

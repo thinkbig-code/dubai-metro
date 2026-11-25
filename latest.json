@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-25T09:54:05Z",
+ "generated": "2026-11-25T10:30:19Z",
  "start": "2026-10-26",
  "end": "2026-11-26",
  "total": {
-  "total": 586,
+  "total": 588,
   "total_events": 173,
-  "total_utc": 586,
+  "total_utc": 588,
   "stats": [
    {
     "day": "2026-10-26",
@@ -219,7 +219,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 535
+    "monthly": 537
    },
    {
     "day": "2026-11-02",
@@ -883,7 +883,7 @@
      0
     ],
     "daily": 14,
-    "weekly": 39
+    "weekly": 41
    },
    {
     "day": "2026-11-24",
@@ -932,7 +932,7 @@
      1,
      1,
      1,
-     0,
+     2,
      0,
      0,
      0,
@@ -943,7 +943,7 @@
      0,
      0
     ],
-    "daily": 10
+    "daily": 12
    },
    {
     "day": "2026-11-26",
@@ -1277,6 +1277,19 @@
    }
   },
   {
+   "path": "/destinations/times-square-center",
+   "path_id": 114208930,
+   "title": "Times Square Center Metro Station: Equiti (Red Line)",
+   "event": false,
+   "count": 5,
+   "daily": {
+    "2026-11-06": 1,
+    "2026-11-20": 1,
+    "2026-11-22": 1,
+    "2026-11-25": 2
+   }
+  },
+  {
    "path": "/destinations/al-zahra-hospital-dubai",
    "path_id": 111715857,
    "title": "Al Zahra Hospital Dubai Metro Station: Dubai Internet City, 10 min walk",
@@ -1359,19 +1372,6 @@
     "2026-11-07": 1,
     "2026-11-16": 1,
     "2026-11-18": 1
-   }
-  },
-  {
-   "path": "/destinations/times-square-center",
-   "path_id": 114208930,
-   "title": "Times Square Center Metro Station: Equiti (Red Line)",
-   "event": false,
-   "count": 4,
-   "daily": {
-    "2026-11-06": 1,
-    "2026-11-20": 1,
-    "2026-11-22": 1,
-    "2026-11-25": 1
    }
   },
   {
@@ -1715,6 +1715,17 @@
    "daily": {
     "2026-11-02": 1,
     "2026-11-13": 1
+   }
+  },
+  {
+   "path": "/destinations/american-university-in-dubai",
+   "path_id": 116983456,
+   "title": "American University in Dubai Metro Station: Al Fardan Exchange, 5 min walk",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-10-31": 1,
+    "2026-11-25": 1
    }
   },
   {
@@ -2494,16 +2505,6 @@
    }
   },
   {
-   "path": "/destinations/american-university-in-dubai",
-   "path_id": 116983456,
-   "title": "American University in Dubai Metro Station: Al Fardan Exchange, 5 min walk",
-   "event": false,
-   "count": 1,
-   "daily": {
-    "2026-10-31": 1
-   }
-  },
-  {
    "path": "/destinations/almas-tower",
    "path_id": 116363768,
    "title": "Almas Tower (DMCC HQ) Metro Station: DMCC (Red Line), 6 min walk",
@@ -2736,9 +2737,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 413,
+  "visits": 415,
   "events_total": 173,
-  "goatcounter_total_with_events": 586,
+  "goatcounter_total_with_events": 588,
   "page_loads_by_day": {
    "2026-10-26": 13,
    "2026-10-27": 8,
@@ -2770,7 +2771,7 @@
    "2026-11-22": 12,
    "2026-11-23": 11,
    "2026-11-24": 12,
-   "2026-11-25": 9
+   "2026-11-25": 11
   },
   "visitor_days_by_day": {
    "2026-10-27": 1,
@@ -3091,6 +3092,12 @@
     "count": 5
    }
   ],
+  "/destinations/times-square-center": [
+   {
+    "name": "Google",
+    "count": 5
+   }
+  ],
   "/destinations/al-zahra-hospital-dubai": [
    {
     "name": "Google",
@@ -3153,12 +3160,6 @@
    {
     "name": "chatgpt.com",
     "count": 1
-   }
-  ],
-  "/destinations/times-square-center": [
-   {
-    "name": "Google",
-    "count": 4
    }
   ],
   "/destinations/jw-marriott-marquis-dubai": [
@@ -3285,6 +3286,12 @@
    {
     "name": "Google",
     "count": 1
+   }
+  ],
+  "/destinations/american-university-in-dubai": [
+   {
+    "name": "Google",
+    "count": 2
    }
   ],
   "/destinations/al-khaleej-centre": [
@@ -3422,12 +3429,6 @@
    }
   ],
   "/destinations/dubai-garden-glow": [
-   {
-    "name": "Google",
-    "count": 1
-   }
-  ],
-  "/destinations/american-university-in-dubai": [
    {
     "name": "Google",
     "count": 1
@@ -3611,11 +3612,11 @@
     "count": 5
    },
    {
-    "path": "/destinations/al-zahra-hospital-dubai",
-    "count": 4
+    "path": "/destinations/times-square-center",
+    "count": 5
    },
    {
-    "path": "/destinations/times-square-center",
+    "path": "/destinations/al-zahra-hospital-dubai",
     "count": 4
    },
    {
@@ -3684,6 +3685,10 @@
    },
    {
     "path": "/destinations/al-barsha-pond-park",
+    "count": 2
+   },
+   {
+    "path": "/destinations/american-university-in-dubai",
     "count": 2
    },
    {
@@ -3771,10 +3776,6 @@
     "count": 1
    },
    {
-    "path": "/destinations/american-university-in-dubai",
-    "count": 1
-   },
-   {
     "path": "/destinations/almas-tower",
     "count": 1
    },
@@ -3856,7 +3857,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 264,
+   "count": 266,
    "ref_scheme": "g"
   },
   {
@@ -3887,7 +3888,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 555
+   "count": 557
   },
   {
    "id": "zho",
@@ -3934,7 +3935,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 491
+   "count": 493
   },
   {
    "id": "US",
@@ -4076,7 +4077,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 497
+   "count": 498
   },
   {
    "id": "tablet",
@@ -4086,7 +4087,7 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 56
+   "count": 57
   },
   {
    "id": "desktophd",
@@ -4103,12 +4104,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 351
+   "count": 352
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 234
+   "count": 235
   },
   {
    "id": "Firefox",
@@ -4125,12 +4126,12 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 228
+   "count": 229
   },
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 61
+   "count": 62
   },
   {
    "id": "Linux",
