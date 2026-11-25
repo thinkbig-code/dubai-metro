@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-25T01:05:59Z",
+ "generated": "2026-11-25T09:54:05Z",
  "start": "2026-10-26",
  "end": "2026-11-26",
  "total": {
-  "total": 577,
-  "total_events": 172,
-  "total_utc": 577,
+  "total": 586,
+  "total_events": 173,
+  "total_utc": 586,
   "stats": [
    {
     "day": "2026-10-26",
@@ -219,7 +219,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 526
+    "monthly": 535
    },
    {
     "day": "2026-11-02",
@@ -883,7 +883,7 @@
      0
     ],
     "daily": 14,
-    "weekly": 30
+    "weekly": 39
    },
    {
     "day": "2026-11-24",
@@ -927,11 +927,11 @@
      0,
      0,
      0,
-     0,
-     0,
-     0,
-     0,
-     0,
+     2,
+     4,
+     1,
+     1,
+     1,
      0,
      0,
      0,
@@ -943,7 +943,7 @@
      0,
      0
     ],
-    "daily": 1
+    "daily": 10
    },
    {
     "day": "2026-11-26",
@@ -983,7 +983,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 108,
+   "count": 109,
    "daily": {
     "2026-10-26": 1,
     "2026-10-27": 1,
@@ -1010,7 +1010,8 @@
     "2026-11-20": 3,
     "2026-11-21": 2,
     "2026-11-22": 4,
-    "2026-11-24": 3
+    "2026-11-24": 3,
+    "2026-11-25": 1
    }
   },
   {
@@ -1018,7 +1019,7 @@
    "path_id": 116082941,
    "title": "Nearest Metro Station to Me in Dubai: Find It by Location",
    "event": false,
-   "count": 99,
+   "count": 101,
    "daily": {
     "2026-10-28": 1,
     "2026-10-31": 1,
@@ -1039,7 +1040,8 @@
     "2026-11-20": 3,
     "2026-11-21": 1,
     "2026-11-22": 1,
-    "2026-11-24": 3
+    "2026-11-24": 3,
+    "2026-11-25": 2
    }
   },
   {
@@ -1075,7 +1077,7 @@
    "path_id": 110626146,
    "title": "Etihad Rail Dubai Station (Al Yalayis) Metro Station: Jumeirah Golf Estates",
    "event": false,
-   "count": 27,
+   "count": 28,
    "daily": {
     "2026-10-26": 3,
     "2026-10-27": 2,
@@ -1091,7 +1093,8 @@
     "2026-11-13": 1,
     "2026-11-14": 1,
     "2026-11-16": 1,
-    "2026-11-18": 1
+    "2026-11-18": 1,
+    "2026-11-25": 1
    }
   },
   {
@@ -1235,6 +1238,19 @@
    }
   },
   {
+   "path": "geo/ok/equiti",
+   "path_id": 117954536,
+   "title": "en",
+   "event": true,
+   "count": 5,
+   "daily": {
+    "2026-11-03": 1,
+    "2026-11-08": 1,
+    "2026-11-12": 2,
+    "2026-11-25": 1
+   }
+  },
+  {
    "path": "/destinations/wafi-city",
    "path_id": 116627826,
    "title": "Wafi City Metro Station: Dubai Healthcare City (Green Line)",
@@ -1333,18 +1349,6 @@
    }
   },
   {
-   "path": "geo/ok/equiti",
-   "path_id": 117954536,
-   "title": "en",
-   "event": true,
-   "count": 4,
-   "daily": {
-    "2026-11-03": 1,
-    "2026-11-08": 1,
-    "2026-11-12": 2
-   }
-  },
-  {
    "path": "/destinations/al-jalila-children-s-specialty-hospital",
    "path_id": 117749447,
    "title": "Al Jalila Children's Specialty Hospital Metro Station: Dubai Healthcare City",
@@ -1355,6 +1359,19 @@
     "2026-11-07": 1,
     "2026-11-16": 1,
     "2026-11-18": 1
+   }
+  },
+  {
+   "path": "/destinations/times-square-center",
+   "path_id": 114208930,
+   "title": "Times Square Center Metro Station: Equiti (Red Line)",
+   "event": false,
+   "count": 4,
+   "daily": {
+    "2026-11-06": 1,
+    "2026-11-20": 1,
+    "2026-11-22": 1,
+    "2026-11-25": 1
    }
   },
   {
@@ -1490,15 +1507,15 @@
    }
   },
   {
-   "path": "/destinations/times-square-center",
-   "path_id": 114208930,
-   "title": "Times Square Center Metro Station: Equiti (Red Line)",
+   "path": "/destinations/aster-hospital-mankhool",
+   "path_id": 115758732,
+   "title": "Aster Hospital Mankhool Metro Station: Sharaf DG (Green Line), 18 min walk",
    "event": false,
    "count": 3,
    "daily": {
-    "2026-11-06": 1,
-    "2026-11-20": 1,
-    "2026-11-22": 1
+    "2026-10-27": 1,
+    "2026-11-23": 1,
+    "2026-11-25": 1
    }
   },
   {
@@ -1546,6 +1563,17 @@
     "2026-11-05": 1,
     "2026-11-09": 1,
     "2026-11-20": 1
+   }
+  },
+  {
+   "path": "/destinations/dubai-ferry-al-ghubaiba-marine-station",
+   "path_id": 125019257,
+   "title": "Dubai Ferry Al Ghubaiba Marine Station Metro Station: Al Ghubaiba",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-11-22": 1,
+    "2026-11-25": 1
    }
   },
   {
@@ -1690,17 +1718,6 @@
    }
   },
   {
-   "path": "/destinations/aster-hospital-mankhool",
-   "path_id": 115758732,
-   "title": "Aster Hospital Mankhool Metro Station: Sharaf DG (Green Line), 18 min walk",
-   "event": false,
-   "count": 2,
-   "daily": {
-    "2026-10-27": 1,
-    "2026-11-23": 1
-   }
-  },
-  {
    "path": "/destinations/al-khaleej-centre",
    "path_id": 115737347,
    "title": "Al Khaleej Centre Metro Station: Sharaf DG (Green Line), 4 min walk",
@@ -1764,16 +1781,6 @@
    "daily": {
     "2026-11-09": 1,
     "2026-11-18": 1
-   }
-  },
-  {
-   "path": "/destinations/dubai-ferry-al-ghubaiba-marine-station",
-   "path_id": 125019257,
-   "title": "Dubai Ferry Al Ghubaiba Marine Station Metro Station: Al Ghubaiba",
-   "event": false,
-   "count": 1,
-   "daily": {
-    "2026-11-22": 1
    }
   },
   {
@@ -2537,6 +2544,16 @@
    }
   },
   {
+   "path": "/stations",
+   "path_id": 115021481,
+   "title": "Dubai Metro Stations: Full List with Old and New Names",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-11-25": 1
+   }
+  },
+  {
    "path": "/destinations/coca-cola-arena",
    "path_id": 114216387,
    "title": "Coca-Cola Arena Metro Station: Burj Khalifa/Dubai Mall, 7 min walk",
@@ -2719,9 +2736,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 405,
-  "events_total": 172,
-  "goatcounter_total_with_events": 577,
+  "visits": 413,
+  "events_total": 173,
+  "goatcounter_total_with_events": 586,
   "page_loads_by_day": {
    "2026-10-26": 13,
    "2026-10-27": 8,
@@ -2753,7 +2770,7 @@
    "2026-11-22": 12,
    "2026-11-23": 11,
    "2026-11-24": 12,
-   "2026-11-25": 1
+   "2026-11-25": 9
   },
   "visitor_days_by_day": {
    "2026-10-27": 1,
@@ -2797,7 +2814,7 @@
   ],
   "nearest_station": {
    "denied": 12,
-   "ok": 42,
+   "ok": 43,
    "far": 14,
    "fail": 4,
    "outside": 1
@@ -2949,7 +2966,7 @@
   "/": [
    {
     "name": "dubaimetro.fyi/nearest-station",
-    "count": 48
+    "count": 49
    },
    {
     "name": "dubaimetro.fyi",
@@ -2999,7 +3016,7 @@
   "/nearest-station": [
    {
     "name": "Google",
-    "count": 94
+    "count": 96
    },
    {
     "name": "(direct or unknown)",
@@ -3017,7 +3034,7 @@
   "/destinations/etihad-rail-dubai": [
    {
     "name": "Google",
-    "count": 26
+    "count": 27
    },
    {
     "name": "(direct or unknown)",
@@ -3138,6 +3155,12 @@
     "count": 1
    }
   ],
+  "/destinations/times-square-center": [
+   {
+    "name": "Google",
+    "count": 4
+   }
+  ],
   "/destinations/jw-marriott-marquis-dubai": [
    {
     "name": "Google",
@@ -3170,10 +3193,14 @@
     "count": 4
    }
   ],
-  "/destinations/times-square-center": [
+  "/destinations/aster-hospital-mankhool": [
    {
     "name": "Google",
-    "count": 3
+    "count": 2
+   },
+   {
+    "name": "(direct or unknown)",
+    "count": 1
    }
   ],
   "/destinations/al-mulla-plaza": [
@@ -3198,6 +3225,16 @@
    {
     "name": "Google",
     "count": 3
+   }
+  ],
+  "/destinations/dubai-ferry-al-ghubaiba-marine-station": [
+   {
+    "name": "Google",
+    "count": 1
+   },
+   {
+    "name": "Yahoo",
+    "count": 1
    }
   ],
   "/destinations/dubai-festival-city-mall": [
@@ -3250,16 +3287,6 @@
     "count": 1
    }
   ],
-  "/destinations/aster-hospital-mankhool": [
-   {
-    "name": "(direct or unknown)",
-    "count": 1
-   },
-   {
-    "name": "Google",
-    "count": 1
-   }
-  ],
   "/destinations/al-khaleej-centre": [
    {
     "name": "Google",
@@ -3289,12 +3316,6 @@
    },
    {
     "name": "dubaimetro.fyi",
-    "count": 1
-   }
-  ],
-  "/destinations/dubai-ferry-al-ghubaiba-marine-station": [
-   {
-    "name": "Yahoo",
     "count": 1
    }
   ],
@@ -3435,7 +3456,7 @@
   "dubaimetro.fyi/nearest-station": [
    {
     "path": "/",
-    "count": 48
+    "count": 49
    },
    {
     "path": "/map",
@@ -3498,11 +3519,11 @@
     "count": 1
    },
    {
-    "path": "/stations/city-centre-deira",
+    "path": "/destinations/aster-hospital-mankhool",
     "count": 1
    },
    {
-    "path": "/destinations/aster-hospital-mankhool",
+    "path": "/stations/city-centre-deira",
     "count": 1
    },
    {
@@ -3559,11 +3580,11 @@
   "Google": [
    {
     "path": "/nearest-station",
-    "count": 94
+    "count": 96
    },
    {
     "path": "/destinations/etihad-rail-dubai",
-    "count": 26
+    "count": 27
    },
    {
     "path": "/destinations/indian-consulate-dubai",
@@ -3594,6 +3615,10 @@
     "count": 4
    },
    {
+    "path": "/destinations/times-square-center",
+    "count": 4
+   },
+   {
     "path": "/destinations/museum-of-the-future",
     "count": 4
    },
@@ -3618,10 +3643,6 @@
     "count": 3
    },
    {
-    "path": "/destinations/times-square-center",
-    "count": 3
-   },
-   {
     "path": "/destinations/al-mulla-plaza",
     "count": 3
    },
@@ -3643,6 +3664,10 @@
    },
    {
     "path": "/destinations/st-mary-s-catholic-church",
+    "count": 2
+   },
+   {
+    "path": "/destinations/aster-hospital-mankhool",
     "count": 2
    },
    {
@@ -3678,15 +3703,15 @@
     "count": 1
    },
    {
+    "path": "/destinations/dubai-ferry-al-ghubaiba-marine-station",
+    "count": 1
+   },
+   {
     "path": "/destinations/reef-mall",
     "count": 1
    },
    {
     "path": "/stations/city-centre-deira",
-    "count": 1
-   },
-   {
-    "path": "/destinations/aster-hospital-mankhool",
     "count": 1
    },
    {
@@ -3806,11 +3831,11 @@
     "count": 1
    },
    {
-    "path": "/destinations/reef-mall",
+    "path": "/destinations/dubai-ferry-al-ghubaiba-marine-station",
     "count": 1
    },
    {
-    "path": "/destinations/dubai-ferry-al-ghubaiba-marine-station",
+    "path": "/destinations/reef-mall",
     "count": 1
    }
   ],
@@ -3831,7 +3856,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 258,
+   "count": 264,
    "ref_scheme": "g"
   },
   {
@@ -3862,7 +3887,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 546
+   "count": 555
   },
   {
    "id": "zho",
@@ -3909,7 +3934,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 482
+   "count": 491
   },
   {
    "id": "US",
@@ -4051,7 +4076,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 491
+   "count": 497
   },
   {
    "id": "tablet",
@@ -4061,7 +4086,7 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 53
+   "count": 56
   },
   {
    "id": "desktophd",
@@ -4078,12 +4103,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 346
+   "count": 351
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 230
+   "count": 234
   },
   {
    "id": "Firefox",
@@ -4095,17 +4120,17 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 264
+   "count": 266
   },
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 224
+   "count": 228
   },
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 58
+   "count": 61
   },
   {
    "id": "Linux",
