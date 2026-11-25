@@ -1,51 +1,19 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-24T16:27:36Z",
- "start": "2026-10-25",
- "end": "2026-11-25",
+ "generated": "2026-11-25T01:05:59Z",
+ "start": "2026-10-26",
+ "end": "2026-11-26",
  "total": {
-  "total": 595,
-  "total_events": 184,
-  "total_utc": 587,
+  "total": 577,
+  "total_events": 172,
+  "total_utc": 577,
   "stats": [
-   {
-    "day": "2026-10-25",
-    "hourly": [
-     0,
-     0,
-     0,
-     0,
-     0,
-     6,
-     0,
-     2,
-     0,
-     1,
-     0,
-     0,
-     0,
-     0,
-     0,
-     5,
-     5,
-     1,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0
-    ],
-    "daily": 20,
-    "weekly": 72,
-    "monthly": 72
-   },
    {
     "day": "2026-10-26",
     "hourly": [
      0,
      0,
-     1,
+     0,
      0,
      0,
      0,
@@ -68,7 +36,9 @@
      2,
      0
     ],
-    "daily": 14
+    "daily": 13,
+    "weekly": 63,
+    "monthly": 51
    },
    {
     "day": "2026-10-27",
@@ -249,8 +219,7 @@
      0
     ],
     "daily": 12,
-    "weekly": 122,
-    "monthly": 523
+    "monthly": 526
    },
    {
     "day": "2026-11-02",
@@ -280,7 +249,8 @@
      0,
      0
     ],
-    "daily": 17
+    "daily": 17,
+    "weekly": 134
    },
    {
     "day": "2026-11-03",
@@ -460,8 +430,7 @@
      3,
      1
     ],
-    "daily": 24,
-    "weekly": 290
+    "daily": 24
    },
    {
     "day": "2026-11-09",
@@ -491,7 +460,8 @@
      0,
      0
     ],
-    "daily": 28
+    "daily": 28,
+    "weekly": 274
    },
    {
     "day": "2026-11-10",
@@ -671,8 +641,7 @@
      1,
      0
     ],
-    "daily": 8,
-    "weekly": 69
+    "daily": 8
    },
    {
     "day": "2026-11-16",
@@ -702,7 +671,8 @@
      0,
      0
     ],
-    "daily": 16
+    "daily": 16,
+    "weekly": 76
    },
    {
     "day": "2026-11-17",
@@ -882,8 +852,7 @@
      0,
      0
     ],
-    "daily": 15,
-    "weekly": 42
+    "daily": 15
    },
    {
     "day": "2026-11-23",
@@ -913,7 +882,8 @@
      0,
      0
     ],
-    "daily": 14
+    "daily": 14,
+    "weekly": 30
    },
    {
     "day": "2026-11-24",
@@ -938,15 +908,45 @@
      1,
      3,
      1,
+     1,
+     1,
+     0,
+     0
+    ],
+    "daily": 15
+   },
+   {
+    "day": "2026-11-25",
+    "hourly": [
+     0,
+     0,
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
      0,
      0,
      0,
      0
     ],
-    "daily": 13
+    "daily": 1
    },
    {
-    "day": "2026-11-25",
+    "day": "2026-11-26",
     "hourly": [
      0,
      0,
@@ -983,9 +983,8 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 110,
+   "count": 108,
    "daily": {
-    "2026-10-25": 2,
     "2026-10-26": 1,
     "2026-10-27": 1,
     "2026-10-29": 1,
@@ -1048,9 +1047,8 @@
    "path_id": 110447314,
    "title": "en",
    "event": true,
-   "count": 31,
+   "count": 29,
    "daily": {
-    "2026-10-25": 2,
     "2026-10-27": 1,
     "2026-10-29": 1,
     "2026-10-31": 1,
@@ -1077,9 +1075,8 @@
    "path_id": 110626146,
    "title": "Etihad Rail Dubai Station (Al Yalayis) Metro Station: Jumeirah Golf Estates",
    "event": false,
-   "count": 29,
+   "count": 27,
    "daily": {
-    "2026-10-25": 2,
     "2026-10-26": 3,
     "2026-10-27": 2,
     "2026-10-28": 5,
@@ -1125,7 +1122,6 @@
    "event": false,
    "count": 13,
    "daily": {
-    "2026-10-26": 1,
     "2026-10-27": 1,
     "2026-10-31": 1,
     "2026-11-03": 1,
@@ -1135,7 +1131,8 @@
     "2026-11-11": 2,
     "2026-11-19": 2,
     "2026-11-20": 1,
-    "2026-11-21": 1
+    "2026-11-21": 1,
+    "2026-11-25": 1
    }
   },
   {
@@ -1361,19 +1358,6 @@
    }
   },
   {
-   "path": "/destinations/times-square-center",
-   "path_id": 114208930,
-   "title": "Times Square Center Metro Station: Equiti (Red Line)",
-   "event": false,
-   "count": 4,
-   "daily": {
-    "2026-10-25": 1,
-    "2026-11-06": 1,
-    "2026-11-20": 1,
-    "2026-11-22": 1
-   }
-  },
-  {
    "path": "/destinations/jw-marriott-marquis-dubai",
    "path_id": 113368505,
    "title": "JW Marriott Marquis Dubai Metro Station: Business Bay, 12 min walk",
@@ -1404,9 +1388,9 @@
    "event": false,
    "count": 4,
    "daily": {
-    "2026-10-25": 1,
     "2026-11-22": 1,
-    "2026-11-23": 2
+    "2026-11-23": 2,
+    "2026-11-24": 1
    }
   },
   {
@@ -1503,6 +1487,18 @@
     "2026-11-05": 1,
     "2026-11-14": 1,
     "2026-11-15": 1
+   }
+  },
+  {
+   "path": "/destinations/times-square-center",
+   "path_id": 114208930,
+   "title": "Times Square Center Metro Station: Equiti (Red Line)",
+   "event": false,
+   "count": 3,
+   "daily": {
+    "2026-11-06": 1,
+    "2026-11-20": 1,
+    "2026-11-22": 1
    }
   },
   {
@@ -1713,17 +1709,6 @@
    "daily": {
     "2026-10-27": 1,
     "2026-11-09": 1
-   }
-  },
-  {
-   "path": "station/union/to",
-   "path_id": 115031332,
-   "title": "ar|name",
-   "event": true,
-   "count": 2,
-   "daily": {
-    "2026-10-25": 1,
-    "2026-11-10": 1
    }
   },
   {
@@ -2542,103 +2527,13 @@
    }
   },
   {
-   "path": "share/qr/p_mall_of_the_emirates/union",
-   "path_id": 115033125,
-   "title": "ar|qr",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-25": 1
-   }
-  },
-  {
-   "path": "share/copy/p_mall_of_the_emirates/union",
-   "path_id": 115033104,
-   "title": "ar|copy",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-25": 1
-   }
-  },
-  {
-   "path": "share/whatsapp/p_mall_of_the_emirates/union",
-   "path_id": 115032953,
-   "title": "ar|whatsapp",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-25": 1
-   }
-  },
-  {
-   "path": "route/p_mall_of_the_emirates/union",
-   "path_id": 115031331,
-   "title": "ar|search|ok|first_place_search",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-25": 1
-   }
-  },
-  {
-   "path": "place/p_mall_of_the_emirates/from",
-   "path_id": 115030232,
+   "path": "station/union/to",
+   "path_id": 115031332,
    "title": "ar|name",
    "event": true,
    "count": 1,
    "daily": {
-    "2026-10-25": 1
-   }
-  },
-  {
-   "path": "/stations",
-   "path_id": 115021481,
-   "title": "Dubai Metro Stations: Full List with Old and New Names",
-   "event": false,
-   "count": 1,
-   "daily": {
-    "2026-10-25": 1
-   }
-  },
-  {
-   "path": "route/wtc/p_st_mary_s_catholic_church",
-   "path_id": 114803661,
-   "title": "en|map|ok|first_landing",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-25": 1
-   }
-  },
-  {
-   "path": "route_from_station_click/wtc/-",
-   "path_id": 114803659,
-   "title": "en",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-25": 1
-   }
-  },
-  {
-   "path": "map_station_click/wtc/-",
-   "path_id": 114803647,
-   "title": "en|landing:destinations-st-mary-s-catholic-church|desktop",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-25": 1
-   }
-  },
-  {
-   "path": "station_link/to/p_st_mary_s_catholic_church",
-   "path_id": 114803605,
-   "title": "en|landing:destinations-st-mary-s-catholic-church",
-   "event": true,
-   "count": 1,
-   "daily": {
-    "2026-10-25": 1
+    "2026-11-10": 1
    }
   },
   {
@@ -2692,13 +2587,13 @@
    }
   },
   {
-   "path": "/ar.html",
-   "path_id": 110830469,
-   "title": "خريطة مترو دبي التفاعلية: المترو والترام ومونوريل النخلة",
+   "path": "/lines/green-line",
+   "path_id": 111066360,
+   "title": "Dubai Metro Green Line: Stations, Map and Hours",
    "event": false,
    "count": 1,
    "daily": {
-    "2026-10-25": 1
+    "2026-11-24": 1
    }
   },
   {
@@ -2824,12 +2719,11 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 411,
-  "events_total": 184,
-  "goatcounter_total_with_events": 595,
+  "visits": 405,
+  "events_total": 172,
+  "goatcounter_total_with_events": 577,
   "page_loads_by_day": {
-   "2026-10-25": 8,
-   "2026-10-26": 14,
+   "2026-10-26": 13,
    "2026-10-27": 8,
    "2026-10-28": 8,
    "2026-10-29": 4,
@@ -2858,10 +2752,10 @@
    "2026-11-21": 6,
    "2026-11-22": 12,
    "2026-11-23": 11,
-   "2026-11-24": 10
+   "2026-11-24": 12,
+   "2026-11-25": 1
   },
   "visitor_days_by_day": {
-   "2026-10-25": 2,
    "2026-10-27": 1,
    "2026-10-29": 1,
    "2026-10-31": 1,
@@ -2886,19 +2780,15 @@
    "2026-11-23": 2,
    "2026-11-24": 2
   },
-  "visitor_days": 44,
-  "return_rate": 0.295,
-  "routes": 17,
+  "visitor_days": 42,
+  "return_rate": 0.31,
+  "routes": 15,
   "routes_not_found": 0,
   "routes_per_visit": 0.04,
-  "routes_per_visitor_day": 0.27,
-  "share_rate": 0.176,
-  "shares": {
-   "qr": 1,
-   "copy": 1,
-   "whatsapp": 1
-  },
-  "failed_search_rate": 0.056,
+  "routes_per_visitor_day": 0.24,
+  "share_rate": 0.0,
+  "shares": {},
+  "failed_search_rate": 0.062,
   "failed_searches": [
    {
     "name": "indigo",
@@ -2913,7 +2803,7 @@
    "outside": 1
   },
   "visitors_new_return": {
-   "new": 31,
+   "new": 29,
    "return": 13
   },
   "top_routes": [
@@ -2972,10 +2862,6 @@
    {
     "name": "p_dubai_internet_city > p_etihad_rail_al_yalayis_station",
     "count": 1
-   },
-   {
-    "name": "p_mall_of_the_emirates > union",
-    "count": 1
    }
   ],
   "top_origins": [
@@ -3014,10 +2900,6 @@
    {
     "name": "p_dubai_internet_city",
     "count": 1
-   },
-   {
-    "name": "p_mall_of_the_emirates",
-    "count": 1
    }
   ],
   "top_destinations": [
@@ -3027,10 +2909,6 @@
    },
    {
     "name": "moe",
-    "count": 2
-   },
-   {
-    "name": "union",
     "count": 2
    },
    {
@@ -3051,6 +2929,10 @@
    },
    {
     "name": "p_burj_khalifa",
+    "count": 1
+   },
+   {
+    "name": "union",
     "count": 1
    },
    {
@@ -3075,7 +2957,7 @@
    },
    {
     "name": "(direct or unknown)",
-    "count": 18
+    "count": 17
    },
    {
     "name": "chatgpt.com",
@@ -3087,10 +2969,6 @@
    },
    {
     "name": "dubaimetro.fyi/destinations/etihad-rail-dubai",
-    "count": 1
-   },
-   {
-    "name": "dubaimetro.fyi/destinations/st-mary-s-catholic-church",
     "count": 1
    },
    {
@@ -3139,7 +3017,7 @@
   "/destinations/etihad-rail-dubai": [
    {
     "name": "Google",
-    "count": 28
+    "count": 26
    },
    {
     "name": "(direct or unknown)",
@@ -3260,12 +3138,6 @@
     "count": 1
    }
   ],
-  "/destinations/times-square-center": [
-   {
-    "name": "Google",
-    "count": 4
-   }
-  ],
   "/destinations/jw-marriott-marquis-dubai": [
    {
     "name": "Google",
@@ -3296,6 +3168,12 @@
    {
     "name": "Google",
     "count": 4
+   }
+  ],
+  "/destinations/times-square-center": [
+   {
+    "name": "Google",
+    "count": 3
    }
   ],
   "/destinations/al-mulla-plaza": [
@@ -3577,7 +3455,7 @@
   "(direct or unknown)": [
    {
     "path": "/",
-    "count": 18
+    "count": 17
    },
    {
     "path": "/destinations/gdrfa-immigration-al-jafiliya",
@@ -3685,7 +3563,7 @@
    },
    {
     "path": "/destinations/etihad-rail-dubai",
-    "count": 28
+    "count": 26
    },
    {
     "path": "/destinations/indian-consulate-dubai",
@@ -3716,10 +3594,6 @@
     "count": 4
    },
    {
-    "path": "/destinations/times-square-center",
-    "count": 4
-   },
-   {
     "path": "/destinations/museum-of-the-future",
     "count": 4
    },
@@ -3741,6 +3615,10 @@
    },
    {
     "path": "/destinations/jw-marriott-marquis-dubai",
+    "count": 3
+   },
+   {
+    "path": "/destinations/times-square-center",
     "count": 3
    },
    {
@@ -3886,12 +3764,6 @@
     "count": 1
    }
   ],
-  "dubaimetro.fyi/destinations/st-mary-s-catholic-church": [
-   {
-    "path": "/",
-    "count": 1
-   }
-  ],
   "dubaimetro.fyi/destinations/al-fahidi": [
    {
     "path": "/",
@@ -3959,19 +3831,13 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 260,
+   "count": 258,
    "ref_scheme": "g"
   },
   {
    "name": "",
-   "count": 77,
+   "count": 75,
    "ref_scheme": "o"
-  },
-  {
-   "id": "www.bing.com",
-   "name": "www.bing.com",
-   "count": 15,
-   "ref_scheme": "h"
   },
   {
    "id": "chatgpt.com",
@@ -3980,9 +3846,15 @@
    "ref_scheme": "c"
   },
   {
+   "id": "www.bing.com",
+   "name": "www.bing.com",
+   "count": 7,
+   "ref_scheme": "h"
+  },
+  {
    "id": "Yahoo",
    "name": "Yahoo",
-   "count": 4,
+   "count": 3,
    "ref_scheme": "g"
   }
  ],
@@ -3990,7 +3862,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 564
+   "count": 546
   },
   {
    "id": "zho",
@@ -4037,12 +3909,12 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 496
+   "count": 482
   },
   {
    "id": "US",
    "name": "United States",
-   "count": 25
+   "count": 23
   },
   {
    "id": "IN",
@@ -4055,11 +3927,6 @@
    "count": 5
   },
   {
-   "id": "CN",
-   "name": "China",
-   "count": 4
-  },
-  {
    "id": "DE",
    "name": "Germany",
    "count": 4
@@ -4070,13 +3937,13 @@
    "count": 4
   },
   {
-   "id": "PK",
-   "name": "Pakistan",
-   "count": 4
-  },
-  {
    "id": "BR",
    "name": "Brazil",
+   "count": 3
+  },
+  {
+   "id": "CN",
+   "name": "China",
    "count": 3
   },
   {
@@ -4092,6 +3959,11 @@
   {
    "id": "HK",
    "name": "Hong Kong",
+   "count": 3
+  },
+  {
+   "id": "PK",
+   "name": "Pakistan",
    "count": 3
   },
   {
@@ -4155,13 +4027,13 @@
    "count": 1
   },
   {
-   "id": "LT",
-   "name": "Republic of Lithuania",
+   "id": "KW",
+   "name": "Kuwait",
    "count": 1
   },
   {
-   "id": "MY",
-   "name": "Malaysia",
+   "id": "LT",
+   "name": "Republic of Lithuania",
    "count": 1
   },
   {
@@ -4179,17 +4051,17 @@
   {
    "id": "phone",
    "name": "",
-   "count": 492
+   "count": 491
   },
   {
    "id": "tablet",
    "name": "",
-   "count": 33
+   "count": 25
   },
   {
    "id": "desktop",
    "name": "",
-   "count": 62
+   "count": 53
   },
   {
    "id": "desktophd",
@@ -4206,12 +4078,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 359
+   "count": 346
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 235
+   "count": 230
   },
   {
    "id": "Firefox",
@@ -4223,17 +4095,17 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 266
+   "count": 264
   },
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 229
+   "count": 224
   },
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 69
+   "count": 58
   },
   {
    "id": "Linux",
