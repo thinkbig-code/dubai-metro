@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-26T09:38:39Z",
+ "generated": "2026-11-26T13:11:33Z",
  "start": "2026-10-27",
  "end": "2026-11-27",
  "total": {
-  "total": 592,
-  "total_events": 175,
-  "total_utc": 592,
+  "total": 597,
+  "total_events": 176,
+  "total_utc": 597,
   "stats": [
    {
     "day": "2026-10-27",
@@ -189,7 +189,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 554
+    "monthly": 559
    },
    {
     "day": "2026-11-02",
@@ -883,7 +883,7 @@
      0
     ],
     "daily": 15,
-    "weekly": 44
+    "weekly": 49
    },
    {
     "day": "2026-11-25",
@@ -933,9 +933,9 @@
      1,
      0,
      0,
-     0,
-     0,
-     0,
+     2,
+     2,
+     1,
      0,
      0,
      0,
@@ -943,7 +943,7 @@
      0,
      0
     ],
-    "daily": 5
+    "daily": 10
    },
    {
     "day": "2026-11-27",
@@ -983,7 +983,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 109,
+   "count": 110,
    "daily": {
     "2026-10-27": 1,
     "2026-10-29": 1,
@@ -1010,7 +1010,8 @@
     "2026-11-21": 2,
     "2026-11-22": 4,
     "2026-11-24": 3,
-    "2026-11-25": 2
+    "2026-11-25": 2,
+    "2026-11-26": 1
    }
   },
   {
@@ -1018,7 +1019,7 @@
    "path_id": 116082941,
    "title": "Nearest Metro Station to Me in Dubai: Find It by Location",
    "event": false,
-   "count": 102,
+   "count": 103,
    "daily": {
     "2026-10-28": 1,
     "2026-10-31": 1,
@@ -1040,7 +1041,8 @@
     "2026-11-21": 1,
     "2026-11-22": 1,
     "2026-11-24": 3,
-    "2026-11-25": 3
+    "2026-11-25": 3,
+    "2026-11-26": 1
    }
   },
   {
@@ -1121,7 +1123,7 @@
    "path_id": 110878762,
    "title": "en",
    "event": true,
-   "count": 13,
+   "count": 14,
    "daily": {
     "2026-11-01": 1,
     "2026-11-02": 1,
@@ -1134,7 +1136,8 @@
     "2026-11-16": 1,
     "2026-11-17": 1,
     "2026-11-18": 1,
-    "2026-11-24": 1
+    "2026-11-24": 1,
+    "2026-11-26": 1
    }
   },
   {
@@ -1241,11 +1244,11 @@
    "path_id": 125292306,
    "title": "Equiti Metro Station, Dubai: Red Line (formerly Umm Al Sheif)",
    "event": false,
-   "count": 5,
+   "count": 6,
    "daily": {
     "2026-11-23": 2,
     "2026-11-24": 2,
-    "2026-11-26": 1
+    "2026-11-26": 2
    }
   },
   {
@@ -1596,6 +1599,17 @@
    "daily": {
     "2026-11-13": 1,
     "2026-11-20": 1
+   }
+  },
+  {
+   "path": "/stations/insurancemarket",
+   "path_id": 121322993,
+   "title": "InsuranceMarket Metro Station, Dubai: Red Line (formerly Mashreq)",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-11-12": 1,
+    "2026-11-26": 1
    }
   },
   {
@@ -2186,16 +2200,6 @@
    }
   },
   {
-   "path": "/stations/insurancemarket",
-   "path_id": 121322993,
-   "title": "InsuranceMarket Metro Station, Dubai: Red Line (formerly Mashreq)",
-   "event": false,
-   "count": 1,
-   "daily": {
-    "2026-11-12": 1
-   }
-  },
-  {
    "path": "station/jge/from",
    "path_id": 121166407,
    "title": "en|name",
@@ -2758,9 +2762,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 417,
-  "events_total": 175,
-  "goatcounter_total_with_events": 592,
+  "visits": 421,
+  "events_total": 176,
+  "goatcounter_total_with_events": 597,
   "page_loads_by_day": {
    "2026-10-27": 8,
    "2026-10-28": 8,
@@ -2792,7 +2796,7 @@
    "2026-11-23": 11,
    "2026-11-24": 12,
    "2026-11-25": 22,
-   "2026-11-26": 4
+   "2026-11-26": 8
   },
   "visitor_days_by_day": {
    "2026-10-27": 1,
@@ -2818,10 +2822,10 @@
    "2026-11-22": 3,
    "2026-11-23": 2,
    "2026-11-24": 2,
-   "2026-11-26": 1
+   "2026-11-26": 2
   },
-  "visitor_days": 43,
-  "return_rate": 0.302,
+  "visitor_days": 44,
+  "return_rate": 0.318,
   "routes": 15,
   "routes_not_found": 0,
   "routes_per_visit": 0.04,
@@ -2844,7 +2848,7 @@
   },
   "visitors_new_return": {
    "new": 30,
-   "return": 13
+   "return": 14
   },
   "top_routes": [
    {
@@ -2989,7 +2993,7 @@
   "/": [
    {
     "name": "dubaimetro.fyi/nearest-station",
-    "count": 50
+    "count": 51
    },
    {
     "name": "dubaimetro.fyi",
@@ -3035,7 +3039,7 @@
   "/nearest-station": [
    {
     "name": "Google",
-    "count": 96
+    "count": 97
    },
    {
     "name": "(direct or unknown)",
@@ -3107,7 +3111,7 @@
   "/stations/equiti": [
    {
     "name": "(direct or unknown)",
-    "count": 5
+    "count": 6
    }
   ],
   "/destinations/wafi-city": [
@@ -3264,6 +3268,16 @@
     "count": 2
    }
   ],
+  "/stations/insurancemarket": [
+   {
+    "name": "perplexity",
+    "count": 1
+   },
+   {
+    "name": "chatgpt.com",
+    "count": 1
+   }
+  ],
   "/destinations/dubai-hospital": [
    {
     "name": "Google",
@@ -3388,12 +3402,6 @@
     "count": 1
    }
   ],
-  "/stations/insurancemarket": [
-   {
-    "name": "chatgpt.com",
-    "count": 1
-   }
-  ],
   "/destinations/naif-souk": [
    {
     "name": "Google",
@@ -3471,7 +3479,7 @@
   "dubaimetro.fyi/nearest-station": [
    {
     "path": "/",
-    "count": 50
+    "count": 51
    },
    {
     "path": "/map",
@@ -3495,7 +3503,7 @@
    },
    {
     "path": "/stations/equiti",
-    "count": 5
+    "count": 6
    },
    {
     "path": "/nearest-station",
@@ -3568,11 +3576,11 @@
     "count": 1
    },
    {
-    "path": "/stations/national-paints",
+    "path": "/stations/insurancemarket",
     "count": 1
    },
    {
-    "path": "/stations/insurancemarket",
+    "path": "/stations/national-paints",
     "count": 1
    },
    {
@@ -3587,7 +3595,7 @@
   "Google": [
    {
     "path": "/nearest-station",
-    "count": 96
+    "count": 97
    },
    {
     "path": "/destinations/etihad-rail-dubai",
@@ -3846,6 +3854,12 @@
     "count": 1
    }
   ],
+  "perplexity": [
+   {
+    "path": "/stations/insurancemarket",
+    "count": 1
+   }
+  ],
   "www.bing.com": [
    {
     "path": "/zh.html",
@@ -3863,12 +3877,12 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 265,
+   "count": 266,
    "ref_scheme": "g"
   },
   {
    "name": "",
-   "count": 79,
+   "count": 80,
    "ref_scheme": "o"
   },
   {
@@ -3888,13 +3902,19 @@
    "name": "Yahoo",
    "count": 3,
    "ref_scheme": "g"
+  },
+  {
+   "id": "perplexity",
+   "name": "perplexity",
+   "count": 1,
+   "ref_scheme": "c"
   }
  ],
  "languages": [
   {
    "id": "eng",
    "name": "English",
-   "count": 562
+   "count": 567
   },
   {
    "id": "zho",
@@ -3941,12 +3961,12 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 502
+   "count": 505
   },
   {
    "id": "US",
    "name": "United States",
-   "count": 24
+   "count": 25
   },
   {
    "id": "IN",
@@ -3954,13 +3974,13 @@
    "count": 18
   },
   {
-   "id": "DE",
-   "name": "Germany",
-   "count": 4
-  },
-  {
    "id": "NL",
    "name": "Netherlands",
+   "count": 5
+  },
+  {
+   "id": "DE",
+   "name": "Germany",
    "count": 4
   },
   {
@@ -4078,12 +4098,12 @@
   {
    "id": "phone",
    "name": "",
-   "count": 504
+   "count": 508
   },
   {
    "id": "tablet",
    "name": "",
-   "count": 26
+   "count": 27
   },
   {
    "id": "desktop",
@@ -4105,12 +4125,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 349
+   "count": 353
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 242
+   "count": 243
   },
   {
    "id": "Firefox",
@@ -4122,12 +4142,12 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 265
+   "count": 268
   },
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 236
+   "count": 237
   },
   {
    "id": "Windows",
@@ -4137,7 +4157,7 @@
   {
    "id": "Linux",
    "name": "Linux",
-   "count": 20
+   "count": 21
   },
   {
    "id": "macOS",

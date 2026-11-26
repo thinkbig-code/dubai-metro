@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-26T09:39:52Z",
+ "generated": "2026-11-26T13:12:34Z",
  "start": "2025-11-26",
  "end": "2026-11-27",
  "total": {
-  "total": 1009,
-  "total_events": 403,
-  "total_utc": 1009,
+  "total": 1014,
+  "total_events": 404,
+  "total_utc": 1014,
   "stats": [
    {
     "day": "2025-11-26",
@@ -10243,7 +10243,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 554
+    "monthly": 559
    },
    {
     "day": "2026-11-02",
@@ -10967,7 +10967,7 @@
      0
     ],
     "daily": 24,
-    "weekly": 29
+    "weekly": 34
    },
    {
     "day": "2026-11-26",
@@ -10987,9 +10987,9 @@
      1,
      0,
      0,
-     0,
-     0,
-     0,
+     2,
+     2,
+     1,
      0,
      0,
      0,
@@ -10997,7 +10997,7 @@
      0,
      0
     ],
-    "daily": 5
+    "daily": 10
    },
    {
     "day": "2026-11-27",
@@ -11037,7 +11037,7 @@
    "path_id": 109162716,
    "title": "Dubai Metro Map & Route Planner: Metro, Tram, Palm Monorail",
    "event": false,
-   "count": 216,
+   "count": 217,
    "daily": {
     "2026-10-01": 6,
     "2026-10-02": 23,
@@ -11086,7 +11086,8 @@
     "2026-11-21": 2,
     "2026-11-22": 4,
     "2026-11-24": 3,
-    "2026-11-25": 2
+    "2026-11-25": 2,
+    "2026-11-26": 1
    }
   },
   {
@@ -11094,7 +11095,7 @@
    "path_id": 116082941,
    "title": "Nearest Metro Station to Me in Dubai: Find It by Location",
    "event": false,
-   "count": 102,
+   "count": 103,
    "daily": {
     "2026-10-28": 1,
     "2026-10-31": 1,
@@ -11116,7 +11117,8 @@
     "2026-11-21": 1,
     "2026-11-22": 1,
     "2026-11-24": 3,
-    "2026-11-25": 3
+    "2026-11-25": 3,
+    "2026-11-26": 1
    }
   },
   {
@@ -11244,6 +11246,29 @@
    }
   },
   {
+   "path": "visit/return/-",
+   "path_id": 110878762,
+   "title": "en",
+   "event": true,
+   "count": 15,
+   "daily": {
+    "2026-10-10": 1,
+    "2026-11-01": 1,
+    "2026-11-02": 1,
+    "2026-11-03": 1,
+    "2026-11-05": 1,
+    "2026-11-07": 2,
+    "2026-11-09": 1,
+    "2026-11-12": 1,
+    "2026-11-13": 1,
+    "2026-11-16": 1,
+    "2026-11-17": 1,
+    "2026-11-18": 1,
+    "2026-11-24": 1,
+    "2026-11-26": 1
+   }
+  },
+  {
    "path": "geo/denied/-",
    "path_id": 110313382,
    "title": "en",
@@ -11261,28 +11286,6 @@
     "2026-11-11": 2,
     "2026-11-13": 1,
     "2026-11-14": 1
-   }
-  },
-  {
-   "path": "visit/return/-",
-   "path_id": 110878762,
-   "title": "en",
-   "event": true,
-   "count": 14,
-   "daily": {
-    "2026-10-10": 1,
-    "2026-11-01": 1,
-    "2026-11-02": 1,
-    "2026-11-03": 1,
-    "2026-11-05": 1,
-    "2026-11-07": 2,
-    "2026-11-09": 1,
-    "2026-11-12": 1,
-    "2026-11-13": 1,
-    "2026-11-16": 1,
-    "2026-11-17": 1,
-    "2026-11-18": 1,
-    "2026-11-24": 1
    }
   },
   {
@@ -11369,6 +11372,18 @@
    }
   },
   {
+   "path": "/stations/equiti",
+   "path_id": 125292306,
+   "title": "Equiti Metro Station, Dubai: Red Line (formerly Umm Al Sheif)",
+   "event": false,
+   "count": 6,
+   "daily": {
+    "2026-11-23": 2,
+    "2026-11-24": 2,
+    "2026-11-26": 2
+   }
+  },
+  {
    "path": "/destinations/st-mary-s-catholic-church",
    "path_id": 111037420,
    "title": "St. Mary's Catholic Church Metro Station: Oud Metha, 7 min walk",
@@ -11393,18 +11408,6 @@
     "2026-11-02": 2,
     "2026-11-07": 2,
     "2026-11-23": 1
-   }
-  },
-  {
-   "path": "/stations/equiti",
-   "path_id": 125292306,
-   "title": "Equiti Metro Station, Dubai: Red Line (formerly Umm Al Sheif)",
-   "event": false,
-   "count": 5,
-   "daily": {
-    "2026-11-23": 2,
-    "2026-11-24": 2,
-    "2026-11-26": 1
    }
   },
   {
@@ -11969,6 +11972,17 @@
    "daily": {
     "2026-11-13": 1,
     "2026-11-20": 1
+   }
+  },
+  {
+   "path": "/stations/insurancemarket",
+   "path_id": 121322993,
+   "title": "InsuranceMarket Metro Station, Dubai: Red Line (formerly Mashreq)",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-11-12": 1,
+    "2026-11-26": 1
    }
   },
   {
@@ -12727,16 +12741,6 @@
    "path_id": 121542882,
    "title": "en",
    "event": true,
-   "count": 1,
-   "daily": {
-    "2026-11-12": 1
-   }
-  },
-  {
-   "path": "/stations/insurancemarket",
-   "path_id": 121322993,
-   "title": "InsuranceMarket Metro Station, Dubai: Red Line (formerly Mashreq)",
-   "event": false,
    "count": 1,
    "daily": {
     "2026-11-12": 1
@@ -14435,9 +14439,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 606,
-  "events_total": 403,
-  "goatcounter_total_with_events": 1009,
+  "visits": 610,
+  "events_total": 404,
+  "goatcounter_total_with_events": 1014,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -14494,7 +14498,7 @@
    "2026-11-23": 11,
    "2026-11-24": 12,
    "2026-11-25": 22,
-   "2026-11-26": 4
+   "2026-11-26": 8
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -14535,10 +14539,10 @@
    "2026-11-22": 3,
    "2026-11-23": 2,
    "2026-11-24": 2,
-   "2026-11-26": 1
+   "2026-11-26": 2
   },
-  "visitor_days": 88,
-  "return_rate": 0.159,
+  "visitor_days": 89,
+  "return_rate": 0.169,
   "routes": 55,
   "routes_not_found": 0,
   "routes_per_visit": 0.09,
@@ -14569,7 +14573,7 @@
   },
   "visitors_new_return": {
    "new": 74,
-   "return": 14
+   "return": 15
   },
   "top_routes": [
    {
@@ -14726,7 +14730,7 @@
    },
    {
     "name": "dubaimetro.fyi/nearest-station",
-    "count": 50
+    "count": 51
    },
    {
     "name": "dubaimetro.fyi",
@@ -14800,7 +14804,7 @@
   "/nearest-station": [
    {
     "name": "Google",
-    "count": 96
+    "count": 97
    },
    {
     "name": "(direct or unknown)",
@@ -14895,6 +14899,12 @@
     "count": 1
    }
   ],
+  "/stations/equiti": [
+   {
+    "name": "(direct or unknown)",
+    "count": 6
+   }
+  ],
   "/destinations/st-mary-s-catholic-church": [
    {
     "name": "(direct or unknown)",
@@ -14921,12 +14931,6 @@
    {
     "name": "dubaimetro.fyi",
     "count": 1
-   }
-  ],
-  "/stations/equiti": [
-   {
-    "name": "(direct or unknown)",
-    "count": 5
    }
   ],
   "/destinations/wafi-city": [
@@ -15183,6 +15187,16 @@
     "count": 2
    }
   ],
+  "/stations/insurancemarket": [
+   {
+    "name": "perplexity",
+    "count": 1
+   },
+   {
+    "name": "chatgpt.com",
+    "count": 1
+   }
+  ],
   "/destinations/dubai-hospital": [
    {
     "name": "Google",
@@ -15301,12 +15315,6 @@
     "count": 1
    }
   ],
-  "/stations/insurancemarket": [
-   {
-    "name": "chatgpt.com",
-    "count": 1
-   }
-  ],
   "/destinations/naif-souk": [
    {
     "name": "Google",
@@ -15328,7 +15336,7 @@
    },
    {
     "path": "/stations/equiti",
-    "count": 5
+    "count": 6
    },
    {
     "path": "/nearest-station",
@@ -15410,7 +15418,7 @@
   "dubaimetro.fyi/nearest-station": [
    {
     "path": "/",
-    "count": 50
+    "count": 51
    },
    {
     "path": "/map",
@@ -15495,18 +15503,18 @@
     "count": 1
    },
    {
-    "path": "/stations/national-paints",
+    "path": "/stations/insurancemarket",
     "count": 1
    },
    {
-    "path": "/stations/insurancemarket",
+    "path": "/stations/national-paints",
     "count": 1
    }
   ],
   "Google": [
    {
     "path": "/nearest-station",
-    "count": 96
+    "count": 97
    },
    {
     "path": "/destinations/etihad-rail-dubai",
@@ -15847,6 +15855,12 @@
     "count": 1
    }
   ],
+  "perplexity": [
+   {
+    "path": "/stations/insurancemarket",
+    "count": 1
+   }
+  ],
   "dubaimetro.fyi/lines/red-line": [
    {
     "path": "/stations/burjuman",
@@ -15857,13 +15871,13 @@
  "toprefs": [
   {
    "name": "",
-   "count": 341,
+   "count": 342,
    "ref_scheme": "o"
   },
   {
    "id": "Google",
    "name": "Google",
-   "count": 309,
+   "count": 310,
    "ref_scheme": "g"
   },
   {
@@ -15919,13 +15933,19 @@
    "name": "web.telegram.org",
    "count": 1,
    "ref_scheme": "h"
+  },
+  {
+   "id": "perplexity",
+   "name": "perplexity",
+   "count": 1,
+   "ref_scheme": "c"
   }
  ],
  "languages": [
   {
    "id": "eng",
    "name": "English",
-   "count": 942
+   "count": 947
   },
   {
    "id": "rus",
@@ -15982,17 +16002,22 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 814
+   "count": 817
   },
   {
    "id": "US",
    "name": "United States",
-   "count": 68
+   "count": 69
   },
   {
    "id": "IN",
    "name": "India",
    "count": 25
+  },
+  {
+   "id": "NL",
+   "name": "Netherlands",
+   "count": 10
   },
   {
    "id": "DE",
@@ -16002,11 +16027,6 @@
   {
    "id": "GB",
    "name": "United Kingdom",
-   "count": 9
-  },
-  {
-   "id": "NL",
-   "name": "Netherlands",
    "count": 9
   },
   {
@@ -16174,12 +16194,12 @@
   {
    "id": "phone",
    "name": "",
-   "count": 739
+   "count": 743
   },
   {
    "id": "tablet",
    "name": "",
-   "count": 53
+   "count": 54
   },
   {
    "id": "desktop",
@@ -16201,12 +16221,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 614
+   "count": 618
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 389
+   "count": 390
   },
   {
    "id": "Firefox",
@@ -16222,12 +16242,12 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 379
+   "count": 380
   },
   {
    "id": "Android",
    "name": "Android",
-   "count": 362
+   "count": 365
   },
   {
    "id": "Windows",
@@ -16242,7 +16262,7 @@
   {
    "id": "Linux",
    "name": "Linux",
-   "count": 39
+   "count": 40
   },
   {
    "id": "Chrome OS",
