@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-26T03:10:12Z",
+ "generated": "2026-11-26T09:39:52Z",
  "start": "2025-11-26",
  "end": "2026-11-27",
  "total": {
-  "total": 1007,
+  "total": 1009,
   "total_events": 403,
-  "total_utc": 1007,
+  "total_utc": 1009,
   "stats": [
    {
     "day": "2025-11-26",
@@ -10243,7 +10243,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 552
+    "monthly": 554
    },
    {
     "day": "2026-11-02",
@@ -10967,7 +10967,7 @@
      0
     ],
     "daily": 24,
-    "weekly": 27
+    "weekly": 29
    },
    {
     "day": "2026-11-26",
@@ -10982,9 +10982,9 @@
      0,
      0,
      0,
+     1,
      0,
-     0,
-     0,
+     1,
      0,
      0,
      0,
@@ -10997,7 +10997,7 @@
      0,
      0
     ],
-    "daily": 3
+    "daily": 5
    },
    {
     "day": "2026-11-27",
@@ -11600,6 +11600,19 @@
    }
   },
   {
+   "path": "/destinations/aster-hospital-mankhool",
+   "path_id": 115758732,
+   "title": "Aster Hospital Mankhool Metro Station: Sharaf DG (Green Line), 18 min walk",
+   "event": false,
+   "count": 4,
+   "daily": {
+    "2026-10-27": 1,
+    "2026-11-23": 1,
+    "2026-11-25": 1,
+    "2026-11-26": 1
+   }
+  },
+  {
    "path": "/destinations/al-mulla-plaza",
    "path_id": 114013835,
    "title": "Al Mulla Plaza Metro Station: Al Qiyadah (Green Line), 7 min walk",
@@ -11772,15 +11785,15 @@
    }
   },
   {
-   "path": "/destinations/aster-hospital-mankhool",
-   "path_id": 115758732,
-   "title": "Aster Hospital Mankhool Metro Station: Sharaf DG (Green Line), 18 min walk",
+   "path": "/destinations/american-university-in-dubai",
+   "path_id": 116983456,
+   "title": "American University in Dubai Metro Station: Al Fardan Exchange, 5 min walk",
    "event": false,
    "count": 3,
    "daily": {
-    "2026-10-27": 1,
-    "2026-11-23": 1,
-    "2026-11-25": 1
+    "2026-10-31": 1,
+    "2026-11-25": 1,
+    "2026-11-26": 1
    }
   },
   {
@@ -12086,17 +12099,6 @@
    "daily": {
     "2026-11-02": 1,
     "2026-11-13": 1
-   }
-  },
-  {
-   "path": "/destinations/american-university-in-dubai",
-   "path_id": 116983456,
-   "title": "American University in Dubai Metro Station: Al Fardan Exchange, 5 min walk",
-   "event": false,
-   "count": 2,
-   "daily": {
-    "2026-10-31": 1,
-    "2026-11-25": 1
    }
   },
   {
@@ -14433,9 +14435,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 604,
+  "visits": 606,
   "events_total": 403,
-  "goatcounter_total_with_events": 1007,
+  "goatcounter_total_with_events": 1009,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -14492,7 +14494,7 @@
    "2026-11-23": 11,
    "2026-11-24": 12,
    "2026-11-25": 22,
-   "2026-11-26": 2
+   "2026-11-26": 4
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -15033,6 +15035,16 @@
     "count": 1
    }
   ],
+  "/destinations/aster-hospital-mankhool": [
+   {
+    "name": "Google",
+    "count": 3
+   },
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   }
+  ],
   "/destinations/al-mulla-plaza": [
    {
     "name": "Google",
@@ -15083,14 +15095,10 @@
     "count": 1
    }
   ],
-  "/destinations/aster-hospital-mankhool": [
+  "/destinations/american-university-in-dubai": [
    {
     "name": "Google",
-    "count": 2
-   },
-   {
-    "name": "(direct or unknown)",
-    "count": 1
+    "count": 3
    }
   ],
   "/map": [
@@ -15217,12 +15225,6 @@
    {
     "name": "Google",
     "count": 1
-   }
-  ],
-  "/destinations/american-university-in-dubai": [
-   {
-    "name": "Google",
-    "count": 2
    }
   ],
   "/destinations/al-khaleej-centre": [
@@ -15381,11 +15383,11 @@
     "count": 1
    },
    {
-    "path": "/destinations/us-consulate-dubai",
+    "path": "/destinations/aster-hospital-mankhool",
     "count": 1
    },
    {
-    "path": "/destinations/aster-hospital-mankhool",
+    "path": "/destinations/us-consulate-dubai",
     "count": 1
    },
    {
@@ -15587,7 +15589,15 @@
     "count": 3
    },
    {
+    "path": "/destinations/aster-hospital-mankhool",
+    "count": 3
+   },
+   {
     "path": "/destinations/us-consulate-dubai",
+    "count": 3
+   },
+   {
+    "path": "/destinations/american-university-in-dubai",
     "count": 3
    },
    {
@@ -15596,10 +15606,6 @@
    },
    {
     "path": "/destinations/al-jalila-children-s-specialty-hospital",
-    "count": 2
-   },
-   {
-    "path": "/destinations/aster-hospital-mankhool",
     "count": 2
    },
    {
@@ -15628,10 +15634,6 @@
    },
    {
     "path": "/destinations/al-barsha-pond-park",
-    "count": 2
-   },
-   {
-    "path": "/destinations/american-university-in-dubai",
     "count": 2
    },
    {
@@ -15861,7 +15863,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 307,
+   "count": 309,
    "ref_scheme": "g"
   },
   {
@@ -15923,7 +15925,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 940
+   "count": 942
   },
   {
    "id": "rus",
@@ -15980,7 +15982,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 812
+   "count": 814
   },
   {
    "id": "US",
@@ -16172,7 +16174,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 737
+   "count": 739
   },
   {
    "id": "tablet",
@@ -16204,7 +16206,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 387
+   "count": 389
   },
   {
    "id": "Firefox",
@@ -16220,7 +16222,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 377
+   "count": 379
   },
   {
    "id": "Android",
