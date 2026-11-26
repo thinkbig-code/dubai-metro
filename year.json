@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-26T13:12:34Z",
+ "generated": "2026-11-26T22:38:19Z",
  "start": "2025-11-26",
  "end": "2026-11-27",
  "total": {
-  "total": 1014,
+  "total": 1017,
   "total_events": 404,
-  "total_utc": 1014,
+  "total_utc": 1017,
   "stats": [
    {
     "day": "2025-11-26",
@@ -10243,7 +10243,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 559
+    "monthly": 562
    },
    {
     "day": "2026-11-02",
@@ -10967,7 +10967,7 @@
      0
     ],
     "daily": 24,
-    "weekly": 34
+    "weekly": 37
    },
    {
     "day": "2026-11-26",
@@ -10989,15 +10989,15 @@
      0,
      2,
      2,
+     3,
+     0,
+     0,
      1,
-     0,
-     0,
-     0,
      0,
      0,
      0
     ],
-    "daily": 10
+    "daily": 13
    },
    {
     "day": "2026-11-27",
@@ -11293,7 +11293,7 @@
    "path_id": 112804201,
    "title": "Rashid Hospital Metro Station: Oud Metha (Green Line), 5 min walk",
    "event": false,
-   "count": 12,
+   "count": 13,
    "daily": {
     "2026-10-19": 1,
     "2026-10-26": 2,
@@ -11305,7 +11305,8 @@
     "2026-11-12": 1,
     "2026-11-14": 1,
     "2026-11-20": 1,
-    "2026-11-23": 1
+    "2026-11-23": 1,
+    "2026-11-26": 1
    }
   },
   {
@@ -11706,6 +11707,19 @@
    }
   },
   {
+   "path": "/tram",
+   "path_id": 109752598,
+   "title": "Dubai Tram: Stops, JBR Loop, Metro Links and Hours",
+   "event": false,
+   "count": 4,
+   "daily": {
+    "2026-10-05": 1,
+    "2026-11-09": 1,
+    "2026-11-18": 1,
+    "2026-11-26": 1
+   }
+  },
+  {
    "path": "place/p_dubai_mall/from",
    "path_id": 109724714,
    "title": "ru|name",
@@ -11926,18 +11940,6 @@
     "2026-10-07": 1,
     "2026-10-08": 1,
     "2026-11-14": 1
-   }
-  },
-  {
-   "path": "/tram",
-   "path_id": 109752598,
-   "title": "Dubai Tram: Stops, JBR Loop, Metro Links and Hours",
-   "event": false,
-   "count": 3,
-   "daily": {
-    "2026-10-05": 1,
-    "2026-11-09": 1,
-    "2026-11-18": 1
    }
   },
   {
@@ -12364,6 +12366,16 @@
    "daily": {
     "2026-10-02": 1,
     "2026-10-08": 1
+   }
+  },
+  {
+   "path": "/destinations/iranian-hospital-dubai",
+   "path_id": 127534736,
+   "title": "Iranian Hospital Dubai Metro Station: World Trade Centre (Red Line)",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-11-26": 1
    }
   },
   {
@@ -14439,9 +14451,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 610,
+  "visits": 613,
   "events_total": 404,
-  "goatcounter_total_with_events": 1014,
+  "goatcounter_total_with_events": 1017,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -14498,7 +14510,7 @@
    "2026-11-23": 11,
    "2026-11-24": 12,
    "2026-11-25": 22,
-   "2026-11-26": 8
+   "2026-11-26": 11
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -14852,7 +14864,7 @@
   "/destinations/rashid-hospital": [
    {
     "name": "Google",
-    "count": 11
+    "count": 12
    },
    {
     "name": "chatgpt.com",
@@ -15099,6 +15111,20 @@
     "count": 1
    }
   ],
+  "/tram": [
+   {
+    "name": "Google",
+    "count": 2
+   },
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   },
+   {
+    "name": "dubaimetro.fyi",
+    "count": 1
+   }
+  ],
   "/destinations/american-university-in-dubai": [
    {
     "name": "Google",
@@ -15155,20 +15181,6 @@
    {
     "name": "(direct or unknown)",
     "count": 3
-   }
-  ],
-  "/tram": [
-   {
-    "name": "(direct or unknown)",
-    "count": 1
-   },
-   {
-    "name": "Google",
-    "count": 1
-   },
-   {
-    "name": "dubaimetro.fyi",
-    "count": 1
    }
   ],
   "/destinations/dubai-ferry-al-ghubaiba-marine-station": [
@@ -15273,6 +15285,12 @@
     "count": 2
    }
   ],
+  "/destinations/iranian-hospital-dubai": [
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
   "/stations/burjuman": [
    {
     "name": "dubaimetro.fyi/lines/red-line",
@@ -15316,12 +15334,6 @@
    }
   ],
   "/destinations/naif-souk": [
-   {
-    "name": "Google",
-    "count": 1
-   }
-  ],
-  "/destinations/city-centre-deira": [
    {
     "name": "Google",
     "count": 1
@@ -15399,11 +15411,11 @@
     "count": 1
    },
    {
-    "path": "/destinations/palm-jumeirah-mall",
+    "path": "/tram",
     "count": 1
    },
    {
-    "path": "/tram",
+    "path": "/destinations/palm-jumeirah-mall",
     "count": 1
    },
    {
@@ -15530,7 +15542,7 @@
    },
    {
     "path": "/destinations/rashid-hospital",
-    "count": 11
+    "count": 12
    },
    {
     "path": "/destinations/times-square-center",
@@ -15617,6 +15629,10 @@
     "count": 2
    },
    {
+    "path": "/tram",
+    "count": 2
+   },
+   {
     "path": "/map",
     "count": 2
    },
@@ -15661,10 +15677,6 @@
     "count": 1
    },
    {
-    "path": "/tram",
-    "count": 1
-   },
-   {
     "path": "/destinations/dubai-ferry-al-ghubaiba-marine-station",
     "count": 1
    },
@@ -15678,6 +15690,10 @@
    },
    {
     "path": "/destinations/coca-cola-arena",
+    "count": 1
+   },
+   {
+    "path": "/destinations/iranian-hospital-dubai",
     "count": 1
    },
    {
@@ -15702,10 +15718,6 @@
    },
    {
     "path": "/destinations/naif-souk",
-    "count": 1
-   },
-   {
-    "path": "/destinations/city-centre-deira",
     "count": 1
    }
   ],
@@ -15877,7 +15889,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 310,
+   "count": 313,
    "ref_scheme": "g"
   },
   {
@@ -15945,7 +15957,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 947
+   "count": 949
   },
   {
    "id": "rus",
@@ -15975,7 +15987,7 @@
   {
    "id": "fra",
    "name": "French",
-   "count": 3
+   "count": 4
   },
   {
    "id": "por",
@@ -16002,7 +16014,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 817
+   "count": 819
   },
   {
    "id": "US",
@@ -16012,7 +16024,7 @@
   {
    "id": "IN",
    "name": "India",
-   "count": 25
+   "count": 26
   },
   {
    "id": "NL",
@@ -16194,7 +16206,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 743
+   "count": 745
   },
   {
    "id": "tablet",
@@ -16204,7 +16216,7 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 198
+   "count": 199
   },
   {
    "id": "desktophd",
@@ -16221,7 +16233,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 618
+   "count": 621
   },
   {
    "id": "Safari",
@@ -16247,12 +16259,12 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 365
+   "count": 367
   },
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 150
+   "count": 151
   },
   {
    "id": "macOS",
