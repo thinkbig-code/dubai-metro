@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-27T09:43:42Z",
+ "generated": "2026-11-27T14:23:15Z",
  "start": "2026-10-28",
  "end": "2026-11-28",
  "total": {
-  "total": 592,
+  "total": 594,
   "total_events": 173,
-  "total_utc": 592,
+  "total_utc": 594,
   "stats": [
    {
     "day": "2026-10-28",
@@ -159,7 +159,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 567
+    "monthly": 569
    },
    {
     "day": "2026-11-02",
@@ -883,7 +883,7 @@
      0
     ],
     "daily": 24,
-    "weekly": 42
+    "weekly": 44
    },
    {
     "day": "2026-11-26",
@@ -933,17 +933,17 @@
      0,
      1,
      0,
+     1,
      0,
      0,
-     0,
-     0,
+     1,
      0,
      0,
      0,
      0,
      0
     ],
-    "daily": 5
+    "daily": 7
    },
    {
     "day": "2026-11-28",
@@ -1261,6 +1261,20 @@
    }
   },
   {
+   "path": "/destinations/international-modern-hospital",
+   "path_id": 118056711,
+   "title": "International Modern Hospital Metro Station: ADCB (Red Line)",
+   "event": false,
+   "count": 5,
+   "daily": {
+    "2026-11-03": 1,
+    "2026-11-09": 1,
+    "2026-11-11": 1,
+    "2026-11-18": 1,
+    "2026-11-27": 1
+   }
+  },
+  {
    "path": "geo/ok/equiti",
    "path_id": 117954536,
    "title": "en",
@@ -1346,19 +1360,6 @@
    "daily": {
     "2026-11-05": 1,
     "2026-11-16": 3
-   }
-  },
-  {
-   "path": "/destinations/international-modern-hospital",
-   "path_id": 118056711,
-   "title": "International Modern Hospital Metro Station: ADCB (Red Line)",
-   "event": false,
-   "count": 4,
-   "daily": {
-    "2026-11-03": 1,
-    "2026-11-09": 1,
-    "2026-11-11": 1,
-    "2026-11-18": 1
    }
   },
   {
@@ -1814,6 +1815,16 @@
    "daily": {
     "2026-11-06": 1,
     "2026-11-14": 1
+   }
+  },
+  {
+   "path": "/destinations/al-ghubaiba-bus-station",
+   "path_id": 128204203,
+   "title": "Al Ghubaiba Bus Station Metro Station: Al Ghubaiba (Green Line), 6 min walk",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-11-27": 1
    }
   },
   {
@@ -2769,9 +2780,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 419,
+  "visits": 421,
   "events_total": 173,
-  "goatcounter_total_with_events": 592,
+  "goatcounter_total_with_events": 594,
   "page_loads_by_day": {
    "2026-10-28": 6,
    "2026-10-29": 4,
@@ -2803,7 +2814,7 @@
    "2026-11-24": 12,
    "2026-11-25": 22,
    "2026-11-26": 11,
-   "2026-11-27": 5
+   "2026-11-27": 7
   },
   "visitor_days_by_day": {
    "2026-10-29": 1,
@@ -3120,6 +3131,16 @@
     "count": 3
    }
   ],
+  "/destinations/international-modern-hospital": [
+   {
+    "name": "Google",
+    "count": 4
+   },
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   }
+  ],
   "/destinations/wafi-city": [
    {
     "name": "Google",
@@ -3159,16 +3180,6 @@
    },
    {
     "name": "Google",
-    "count": 1
-   }
-  ],
-  "/destinations/international-modern-hospital": [
-   {
-    "name": "Google",
-    "count": 3
-   },
-   {
-    "name": "(direct or unknown)",
     "count": 1
    }
   ],
@@ -3366,6 +3377,12 @@
     "count": 2
    }
   ],
+  "/destinations/al-ghubaiba-bus-station": [
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
   "/destinations/al-sabkha-abra-station": [
    {
     "name": "Yahoo",
@@ -3473,12 +3490,6 @@
     "name": "(direct or unknown)",
     "count": 1
    }
-  ],
-  "/stations/al-ras": [
-   {
-    "name": "chatgpt.com",
-    "count": 1
-   }
   ]
  },
  "ref_pages": {
@@ -3584,10 +3595,6 @@
    {
     "path": "/stations/dmcc",
     "count": 1
-   },
-   {
-    "path": "/stations/al-ras",
-    "count": 1
    }
   ],
   "Google": [
@@ -3632,6 +3639,10 @@
     "count": 5
    },
    {
+    "path": "/destinations/international-modern-hospital",
+    "count": 4
+   },
+   {
     "path": "/destinations/museum-of-the-future",
     "count": 4
    },
@@ -3641,10 +3652,6 @@
    },
    {
     "path": "/destinations/gdrfa-immigration-al-jafiliya",
-    "count": 3
-   },
-   {
-    "path": "/destinations/international-modern-hospital",
     "count": 3
    },
    {
@@ -3741,6 +3748,10 @@
    },
    {
     "path": "/lines/green-line",
+    "count": 1
+   },
+   {
+    "path": "/destinations/al-ghubaiba-bus-station",
     "count": 1
    },
    {
@@ -3887,7 +3898,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 262,
+   "count": 264,
    "ref_scheme": "g"
   },
   {
@@ -3924,7 +3935,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 561
+   "count": 563
   },
   {
    "id": "zho",
@@ -3971,7 +3982,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 504
+   "count": 506
   },
   {
    "id": "US",
@@ -4108,7 +4119,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 498
+   "count": 499
   },
   {
    "id": "tablet",
@@ -4118,7 +4129,7 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 59
+   "count": 60
   },
   {
    "id": "desktophd",
@@ -4135,7 +4146,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 355
+   "count": 357
   },
   {
    "id": "Safari",
@@ -4152,7 +4163,7 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 265
+   "count": 266
   },
   {
    "id": "iOS",
@@ -4162,7 +4173,7 @@
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 65
+   "count": 66
   },
   {
    "id": "Linux",
