@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-27T14:24:29Z",
+ "generated": "2026-11-27T22:59:04Z",
  "start": "2025-11-27",
  "end": "2026-11-28",
  "total": {
-  "total": 1024,
+  "total": 1026,
   "total_events": 404,
-  "total_utc": 1024,
+  "total_utc": 1026,
   "stats": [
    {
     "day": "2025-11-27",
@@ -10213,7 +10213,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 569
+    "monthly": 571
    },
    {
     "day": "2026-11-02",
@@ -10967,7 +10967,7 @@
      0
     ],
     "daily": 13,
-    "weekly": 20
+    "weekly": 22
    },
    {
     "day": "2026-11-27",
@@ -10990,14 +10990,14 @@
      1,
      0,
      0,
+     2,
+     0,
+     0,
+     0,
      1,
-     0,
-     0,
-     0,
-     0,
      0
     ],
-    "daily": 7
+    "daily": 9
    },
    {
     "day": "2026-11-28",
@@ -11842,6 +11842,18 @@
    }
   },
   {
+   "path": "/destinations/coca-cola-arena",
+   "path_id": 114216387,
+   "title": "Coca-Cola Arena Metro Station: Burj Khalifa/Dubai Mall, 7 min walk",
+   "event": false,
+   "count": 3,
+   "daily": {
+    "2026-10-23": 1,
+    "2026-11-12": 1,
+    "2026-11-27": 1
+   }
+  },
+  {
    "path": "/destinations/canadian-specialist-hospital",
    "path_id": 113313760,
    "title": "Canadian Specialist Hospital Metro Station: Abu Hail, 6 min walk",
@@ -11967,6 +11979,17 @@
    "daily": {
     "2026-11-22": 1,
     "2026-11-25": 1
+   }
+  },
+  {
+   "path": "/destinations/ain-dubai",
+   "path_id": 123148536,
+   "title": "Ain Dubai and Bluewaters Tram Stop: Jumeirah Beach Residence 1, 15 min walk",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-11-17": 1,
+    "2026-11-27": 1
    }
   },
   {
@@ -12152,17 +12175,6 @@
    "daily": {
     "2026-10-25": 1,
     "2026-11-25": 1
-   }
-  },
-  {
-   "path": "/destinations/coca-cola-arena",
-   "path_id": 114216387,
-   "title": "Coca-Cola Arena Metro Station: Burj Khalifa/Dubai Mall, 7 min walk",
-   "event": false,
-   "count": 2,
-   "daily": {
-    "2026-10-23": 1,
-    "2026-11-12": 1
    }
   },
   {
@@ -12486,16 +12498,6 @@
    "path": "/stations/national-paints",
    "path_id": 123256510,
    "title": "National Paints Metro Station, Dubai: Red Line (formerly Jabal Ali)",
-   "event": false,
-   "count": 1,
-   "daily": {
-    "2026-11-17": 1
-   }
-  },
-  {
-   "path": "/destinations/ain-dubai",
-   "path_id": 123148536,
-   "title": "Ain Dubai and Bluewaters Tram Stop: Jumeirah Beach Residence 1, 15 min walk",
    "event": false,
    "count": 1,
    "daily": {
@@ -14485,9 +14487,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 620,
+  "visits": 622,
   "events_total": 404,
-  "goatcounter_total_with_events": 1024,
+  "goatcounter_total_with_events": 1026,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -14545,7 +14547,7 @@
    "2026-11-24": 12,
    "2026-11-25": 22,
    "2026-11-26": 11,
-   "2026-11-27": 7
+   "2026-11-27": 9
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -15190,6 +15192,16 @@
     "count": 1
    }
   ],
+  "/destinations/coca-cola-arena": [
+   {
+    "name": "Google",
+    "count": 2
+   },
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   }
+  ],
   "/destinations/canadian-specialist-hospital": [
    {
     "name": "Google",
@@ -15229,6 +15241,16 @@
    },
    {
     "name": "Yahoo",
+    "count": 1
+   }
+  ],
+  "/destinations/ain-dubai": [
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   },
+   {
+    "name": "Google",
     "count": 1
    }
   ],
@@ -15308,16 +15330,6 @@
     "count": 1
    }
   ],
-  "/destinations/coca-cola-arena": [
-   {
-    "name": "(direct or unknown)",
-    "count": 1
-   },
-   {
-    "name": "Google",
-    "count": 1
-   }
-  ],
   "/destinations/dubai-municipality-head-office": [
    {
     "name": "Google",
@@ -15363,12 +15375,6 @@
   "/stations/national-paints": [
    {
     "name": "chatgpt.com",
-    "count": 1
-   }
-  ],
-  "/destinations/ain-dubai": [
-   {
-    "name": "Google",
     "count": 1
    }
   ],
@@ -15454,15 +15460,19 @@
     "count": 1
    },
    {
+    "path": "/destinations/coca-cola-arena",
+    "count": 1
+   },
+   {
     "path": "/destinations/palm-jumeirah-mall",
     "count": 1
    },
    {
-    "path": "/stations/city-centre-deira",
+    "path": "/destinations/ain-dubai",
     "count": 1
    },
    {
-    "path": "/destinations/coca-cola-arena",
+    "path": "/stations/city-centre-deira",
     "count": 1
    }
   ],
@@ -15680,6 +15690,10 @@
     "count": 2
    },
    {
+    "path": "/destinations/coca-cola-arena",
+    "count": 2
+   },
+   {
     "path": "/destinations/american-hospital-dubai",
     "count": 2
    },
@@ -15720,15 +15734,15 @@
     "count": 1
    },
    {
+    "path": "/destinations/ain-dubai",
+    "count": 1
+   },
+   {
     "path": "/destinations/reef-mall",
     "count": 1
    },
    {
     "path": "/stations/city-centre-deira",
-    "count": 1
-   },
-   {
-    "path": "/destinations/coca-cola-arena",
     "count": 1
    },
    {
@@ -15741,10 +15755,6 @@
    },
    {
     "path": "/destinations/dubai-media-city",
-    "count": 1
-   },
-   {
-    "path": "/destinations/ain-dubai",
     "count": 1
    },
    {
@@ -15926,13 +15936,13 @@
  "toprefs": [
   {
    "name": "",
-   "count": 343,
+   "count": 344,
    "ref_scheme": "o"
   },
   {
    "id": "Google",
    "name": "Google",
-   "count": 316,
+   "count": 317,
    "ref_scheme": "g"
   },
   {
@@ -16000,7 +16010,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 956
+   "count": 958
   },
   {
    "id": "rus",
@@ -16057,12 +16067,12 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 825
+   "count": 826
   },
   {
    "id": "US",
    "name": "United States",
-   "count": 70
+   "count": 71
   },
   {
    "id": "IN",
@@ -16249,7 +16259,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 746
+   "count": 747
   },
   {
    "id": "tablet",
@@ -16259,7 +16269,7 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 204
+   "count": 205
   },
   {
    "id": "desktophd",
@@ -16276,12 +16286,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 628
+   "count": 629
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 390
+   "count": 391
   },
   {
    "id": "Firefox",
@@ -16297,7 +16307,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 380
+   "count": 381
   },
   {
    "id": "Android",
@@ -16317,7 +16327,7 @@
   {
    "id": "Linux",
    "name": "Linux",
-   "count": 41
+   "count": 42
   },
   {
    "id": "Chrome OS",

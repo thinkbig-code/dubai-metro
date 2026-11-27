@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-27T14:23:15Z",
+ "generated": "2026-11-27T22:57:56Z",
  "start": "2026-10-28",
  "end": "2026-11-28",
  "total": {
-  "total": 594,
+  "total": 596,
   "total_events": 173,
-  "total_utc": 594,
+  "total_utc": 596,
   "stats": [
    {
     "day": "2026-10-28",
@@ -159,7 +159,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 569
+    "monthly": 571
    },
    {
     "day": "2026-11-02",
@@ -883,7 +883,7 @@
      0
     ],
     "daily": 24,
-    "weekly": 44
+    "weekly": 46
    },
    {
     "day": "2026-11-26",
@@ -936,14 +936,14 @@
      1,
      0,
      0,
+     2,
+     0,
+     0,
+     0,
      1,
-     0,
-     0,
-     0,
-     0,
      0
     ],
-    "daily": 7
+    "daily": 9
    },
    {
     "day": "2026-11-28",
@@ -1589,6 +1589,17 @@
    }
   },
   {
+   "path": "/destinations/ain-dubai",
+   "path_id": 123148536,
+   "title": "Ain Dubai and Bluewaters Tram Stop: Jumeirah Beach Residence 1, 15 min walk",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-11-17": 1,
+    "2026-11-27": 1
+   }
+  },
+  {
    "path": "/destinations/dubai-festival-city-mall",
    "path_id": 121584169,
    "title": "Dubai Festival City Mall Metro Station: Creek (Green Line)",
@@ -1749,6 +1760,17 @@
    "daily": {
     "2026-11-01": 1,
     "2026-11-02": 1
+   }
+  },
+  {
+   "path": "/destinations/coca-cola-arena",
+   "path_id": 114216387,
+   "title": "Coca-Cola Arena Metro Station: Burj Khalifa/Dubai Mall, 7 min walk",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-11-12": 1,
+    "2026-11-27": 1
    }
   },
   {
@@ -1931,16 +1953,6 @@
    "path": "/stations/national-paints",
    "path_id": 123256510,
    "title": "National Paints Metro Station, Dubai: Red Line (formerly Jabal Ali)",
-   "event": false,
-   "count": 1,
-   "daily": {
-    "2026-11-17": 1
-   }
-  },
-  {
-   "path": "/destinations/ain-dubai",
-   "path_id": 123148536,
-   "title": "Ain Dubai and Bluewaters Tram Stop: Jumeirah Beach Residence 1, 15 min walk",
    "event": false,
    "count": 1,
    "daily": {
@@ -2618,16 +2630,6 @@
    }
   },
   {
-   "path": "/destinations/coca-cola-arena",
-   "path_id": 114216387,
-   "title": "Coca-Cola Arena Metro Station: Burj Khalifa/Dubai Mall, 7 min walk",
-   "event": false,
-   "count": 1,
-   "daily": {
-    "2026-11-12": 1
-   }
-  },
-  {
    "path": "map_station_click/burjuman/-",
    "path_id": 114086554,
    "title": "en|home|phone",
@@ -2780,9 +2782,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 421,
+  "visits": 423,
   "events_total": 173,
-  "goatcounter_total_with_events": 594,
+  "goatcounter_total_with_events": 596,
   "page_loads_by_day": {
    "2026-10-28": 6,
    "2026-10-29": 4,
@@ -2814,7 +2816,7 @@
    "2026-11-24": 12,
    "2026-11-25": 22,
    "2026-11-26": 11,
-   "2026-11-27": 7
+   "2026-11-27": 9
   },
   "visitor_days_by_day": {
    "2026-10-29": 1,
@@ -3279,6 +3281,16 @@
     "count": 1
    }
   ],
+  "/destinations/ain-dubai": [
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   },
+   {
+    "name": "Google",
+    "count": 1
+   }
+  ],
   "/destinations/dubai-festival-city-mall": [
    {
     "name": "Google",
@@ -3346,6 +3358,16 @@
    },
    {
     "name": "dubaimetro.fyi/nearest-station",
+    "count": 1
+   }
+  ],
+  "/destinations/coca-cola-arena": [
+   {
+    "name": "(direct or unknown)",
+    "count": 1
+   },
+   {
+    "name": "Google",
     "count": 1
    }
   ],
@@ -3419,12 +3441,6 @@
     "count": 1
    }
   ],
-  "/destinations/ain-dubai": [
-   {
-    "name": "Google",
-    "count": 1
-   }
-  ],
   "/de.html": [
    {
     "name": "Google",
@@ -3482,12 +3498,6 @@
   "/destinations/jebel-ali-free-zone": [
    {
     "name": "Google",
-    "count": 1
-   }
-  ],
-  "/destinations/jumeirah-emirates-towers": [
-   {
-    "name": "(direct or unknown)",
     "count": 1
    }
   ]
@@ -3559,11 +3569,15 @@
     "count": 1
    },
    {
+    "path": "/destinations/ain-dubai",
+    "count": 1
+   },
+   {
     "path": "/stations/city-centre-deira",
     "count": 1
    },
    {
-    "path": "/destinations/jumeirah-emirates-towers",
+    "path": "/destinations/coca-cola-arena",
     "count": 1
    }
   ],
@@ -3735,6 +3749,10 @@
     "count": 1
    },
    {
+    "path": "/destinations/ain-dubai",
+    "count": 1
+   },
+   {
     "path": "/destinations/reef-mall",
     "count": 1
    },
@@ -3744,6 +3762,10 @@
    },
    {
     "path": "/map",
+    "count": 1
+   },
+   {
+    "path": "/destinations/coca-cola-arena",
     "count": 1
    },
    {
@@ -3760,10 +3782,6 @@
    },
    {
     "path": "/destinations/dubai-media-city",
-    "count": 1
-   },
-   {
-    "path": "/destinations/ain-dubai",
     "count": 1
    },
    {
@@ -3898,12 +3916,12 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 264,
+   "count": 265,
    "ref_scheme": "g"
   },
   {
    "name": "",
-   "count": 76,
+   "count": 77,
    "ref_scheme": "o"
   },
   {
@@ -3935,7 +3953,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 563
+   "count": 565
   },
   {
    "id": "zho",
@@ -3982,12 +4000,12 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 506
+   "count": 507
   },
   {
    "id": "US",
    "name": "United States",
-   "count": 25
+   "count": 26
   },
   {
    "id": "IN",
@@ -4119,7 +4137,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 499
+   "count": 500
   },
   {
    "id": "tablet",
@@ -4129,7 +4147,7 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 60
+   "count": 61
   },
   {
    "id": "desktophd",
@@ -4146,12 +4164,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 357
+   "count": 358
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 236
+   "count": 237
   },
   {
    "id": "Firefox",
@@ -4168,7 +4186,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 230
+   "count": 231
   },
   {
    "id": "Windows",
@@ -4178,7 +4196,7 @@
   {
    "id": "Linux",
    "name": "Linux",
-   "count": 21
+   "count": 22
   },
   {
    "id": "macOS",
