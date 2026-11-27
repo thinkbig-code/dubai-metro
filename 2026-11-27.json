@@ -1,12 +1,12 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-27T04:34:08Z",
+ "generated": "2026-11-27T09:43:42Z",
  "start": "2026-10-28",
  "end": "2026-11-28",
  "total": {
-  "total": 590,
+  "total": 592,
   "total_events": 173,
-  "total_utc": 590,
+  "total_utc": 592,
   "stats": [
    {
     "day": "2026-10-28",
@@ -159,7 +159,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 565
+    "monthly": 567
    },
    {
     "day": "2026-11-02",
@@ -883,7 +883,7 @@
      0
     ],
     "daily": 24,
-    "weekly": 40
+    "weekly": 42
    },
    {
     "day": "2026-11-26",
@@ -929,9 +929,9 @@
      0,
      0,
      0,
+     1,
      0,
-     0,
-     0,
+     1,
      0,
      0,
      0,
@@ -943,7 +943,7 @@
      0,
      0
     ],
-    "daily": 3
+    "daily": 5
    },
    {
     "day": "2026-11-28",
@@ -1221,6 +1221,19 @@
    }
   },
   {
+   "path": "/stations/equiti",
+   "path_id": 125292306,
+   "title": "Equiti Metro Station, Dubai: Red Line (formerly Umm Al Sheif)",
+   "event": false,
+   "count": 7,
+   "daily": {
+    "2026-11-23": 2,
+    "2026-11-24": 2,
+    "2026-11-26": 2,
+    "2026-11-27": 1
+   }
+  },
+  {
    "path": "/destinations/gdrfa-immigration-al-jafiliya",
    "path_id": 113030966,
    "title": "GDRFA Immigration Al Jafiliya Metro Station: Max (Red Line), 3 min walk",
@@ -1233,18 +1246,6 @@
     "2026-11-16": 2,
     "2026-11-19": 1,
     "2026-11-22": 1
-   }
-  },
-  {
-   "path": "/stations/equiti",
-   "path_id": 125292306,
-   "title": "Equiti Metro Station, Dubai: Red Line (formerly Umm Al Sheif)",
-   "event": false,
-   "count": 6,
-   "daily": {
-    "2026-11-23": 2,
-    "2026-11-24": 2,
-    "2026-11-26": 2
    }
   },
   {
@@ -1813,6 +1814,16 @@
    "daily": {
     "2026-11-06": 1,
     "2026-11-14": 1
+   }
+  },
+  {
+   "path": "/destinations/al-sabkha-abra-station",
+   "path_id": 128027206,
+   "title": "Al Sabkha Abra Station Metro Station: Baniyas Square, 7 min walk",
+   "event": false,
+   "count": 1,
+   "daily": {
+    "2026-11-27": 1
    }
   },
   {
@@ -2758,9 +2769,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 417,
+  "visits": 419,
   "events_total": 173,
-  "goatcounter_total_with_events": 590,
+  "goatcounter_total_with_events": 592,
   "page_loads_by_day": {
    "2026-10-28": 6,
    "2026-10-29": 4,
@@ -2792,7 +2803,7 @@
    "2026-11-24": 12,
    "2026-11-25": 22,
    "2026-11-26": 11,
-   "2026-11-27": 3
+   "2026-11-27": 5
   },
   "visitor_days_by_day": {
    "2026-10-29": 1,
@@ -3093,6 +3104,12 @@
     "count": 8
    }
   ],
+  "/stations/equiti": [
+   {
+    "name": "(direct or unknown)",
+    "count": 7
+   }
+  ],
   "/destinations/gdrfa-immigration-al-jafiliya": [
    {
     "name": "(direct or unknown)",
@@ -3101,12 +3118,6 @@
    {
     "name": "Google",
     "count": 3
-   }
-  ],
-  "/stations/equiti": [
-   {
-    "name": "(direct or unknown)",
-    "count": 6
    }
   ],
   "/destinations/wafi-city": [
@@ -3355,6 +3366,12 @@
     "count": 2
    }
   ],
+  "/destinations/al-sabkha-abra-station": [
+   {
+    "name": "Yahoo",
+    "count": 1
+   }
+  ],
   "/stations/sharaf-dg": [
    {
     "name": "dubaimetro.fyi/lines/green-line",
@@ -3462,12 +3479,6 @@
     "name": "chatgpt.com",
     "count": 1
    }
-  ],
-  "/destinations/dubai-chamber-of-commerce": [
-   {
-    "name": "(direct or unknown)",
-    "count": 1
-   }
   ]
  },
  "ref_pages": {
@@ -3498,7 +3509,7 @@
    },
    {
     "path": "/stations/equiti",
-    "count": 6
+    "count": 7
    },
    {
     "path": "/nearest-station",
@@ -3542,10 +3553,6 @@
    },
    {
     "path": "/destinations/jumeirah-emirates-towers",
-    "count": 1
-   },
-   {
-    "path": "/destinations/dubai-chamber-of-commerce",
     "count": 1
    }
   ],
@@ -3833,6 +3840,10 @@
    {
     "path": "/destinations/reef-mall",
     "count": 1
+   },
+   {
+    "path": "/destinations/al-sabkha-abra-station",
+    "count": 1
    }
   ],
   "dubaimetro.fyi/destinations/indian-consulate-dubai": [
@@ -3881,7 +3892,7 @@
   },
   {
    "name": "",
-   "count": 75,
+   "count": 76,
    "ref_scheme": "o"
   },
   {
@@ -3899,7 +3910,7 @@
   {
    "id": "Yahoo",
    "name": "Yahoo",
-   "count": 3,
+   "count": 4,
    "ref_scheme": "g"
   },
   {
@@ -3913,7 +3924,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 559
+   "count": 561
   },
   {
    "id": "zho",
@@ -3960,12 +3971,12 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 503
+   "count": 504
   },
   {
    "id": "US",
    "name": "United States",
-   "count": 24
+   "count": 25
   },
   {
    "id": "IN",
@@ -4102,12 +4113,12 @@
   {
    "id": "tablet",
    "name": "",
-   "count": 27
+   "count": 28
   },
   {
    "id": "desktop",
    "name": "",
-   "count": 58
+   "count": 59
   },
   {
    "id": "desktophd",
@@ -4124,7 +4135,7 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 353
+   "count": 355
   },
   {
    "id": "Safari",
@@ -4151,12 +4162,12 @@
   {
    "id": "Windows",
    "name": "Windows",
-   "count": 64
+   "count": 65
   },
   {
    "id": "Linux",
    "name": "Linux",
-   "count": 20
+   "count": 21
   },
   {
    "id": "macOS",
