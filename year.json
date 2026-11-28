@@ -1,43 +1,13 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-27T22:59:04Z",
- "start": "2025-11-27",
- "end": "2026-11-28",
+ "generated": "2026-11-28T04:59:21Z",
+ "start": "2025-11-28",
+ "end": "2026-11-29",
  "total": {
-  "total": 1026,
+  "total": 1027,
   "total_events": 404,
-  "total_utc": 1026,
+  "total_utc": 1027,
   "stats": [
-   {
-    "day": "2025-11-27",
-    "hourly": [
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0
-    ],
-    "daily": 0
-   },
    {
     "day": "2025-11-28",
     "hourly": [
@@ -9096,7 +9066,8 @@
      0,
      0
     ],
-    "daily": 0
+    "daily": 0,
+    "weekly": 6
    },
    {
     "day": "2026-09-26",
@@ -9277,7 +9248,6 @@
      5
     ],
     "daily": 6,
-    "weekly": 92,
     "monthly": 455
    },
    {
@@ -9308,7 +9278,8 @@
      0,
      1
     ],
-    "daily": 35
+    "daily": 35,
+    "weekly": 197
    },
    {
     "day": "2026-10-03",
@@ -9488,8 +9459,7 @@
      3,
      2
     ],
-    "daily": 111,
-    "weekly": 222
+    "daily": 111
    },
    {
     "day": "2026-10-09",
@@ -9519,7 +9489,8 @@
      2,
      0
     ],
-    "daily": 18
+    "daily": 18,
+    "weekly": 117
    },
    {
     "day": "2026-10-10",
@@ -9699,8 +9670,7 @@
      0,
      0
     ],
-    "daily": 6,
-    "weekly": 44
+    "daily": 6
    },
    {
     "day": "2026-10-16",
@@ -9730,7 +9700,8 @@
      0,
      1
     ],
-    "daily": 4
+    "daily": 4,
+    "weekly": 47
    },
    {
     "day": "2026-10-17",
@@ -9910,8 +9881,7 @@
      6,
      0
     ],
-    "daily": 9,
-    "weekly": 78
+    "daily": 9
    },
    {
     "day": "2026-10-23",
@@ -9941,7 +9911,8 @@
      0,
      0
     ],
-    "daily": 3
+    "daily": 3,
+    "weekly": 74
    },
    {
     "day": "2026-10-24",
@@ -10121,8 +10092,7 @@
      0,
      0
     ],
-    "daily": 5,
-    "weekly": 78
+    "daily": 5
    },
    {
     "day": "2026-10-30",
@@ -10152,7 +10122,8 @@
      0,
      0
     ],
-    "daily": 3
+    "daily": 3,
+    "weekly": 85
    },
    {
     "day": "2026-10-31",
@@ -10213,7 +10184,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 571
+    "monthly": 572
    },
    {
     "day": "2026-11-02",
@@ -10333,8 +10304,7 @@
      0,
      0
     ],
-    "daily": 12,
-    "weekly": 208
+    "daily": 12
    },
    {
     "day": "2026-11-06",
@@ -10364,7 +10334,8 @@
      0,
      0
     ],
-    "daily": 19
+    "daily": 19,
+    "weekly": 229
    },
    {
     "day": "2026-11-07",
@@ -10544,8 +10515,7 @@
      5,
      0
     ],
-    "daily": 33,
-    "weekly": 181
+    "daily": 33
    },
    {
     "day": "2026-11-13",
@@ -10575,7 +10545,8 @@
      0,
      0
     ],
-    "daily": 57
+    "daily": 57,
+    "weekly": 155
    },
    {
     "day": "2026-11-14",
@@ -10755,8 +10726,7 @@
      0,
      0
     ],
-    "daily": 7,
-    "weekly": 101
+    "daily": 7
    },
    {
     "day": "2026-11-20",
@@ -10786,7 +10756,8 @@
      0,
      0
     ],
-    "daily": 19
+    "daily": 19,
+    "weekly": 107
    },
    {
     "day": "2026-11-21",
@@ -10966,8 +10937,7 @@
      0,
      0
     ],
-    "daily": 13,
-    "weekly": 22
+    "daily": 13
    },
    {
     "day": "2026-11-27",
@@ -10997,10 +10967,41 @@
      1,
      0
     ],
-    "daily": 9
+    "daily": 9,
+    "weekly": 10
    },
    {
     "day": "2026-11-28",
+    "hourly": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "daily": 1
+   },
+   {
+    "day": "2026-11-29",
     "hourly": [
      0,
      0,
@@ -11982,6 +11983,17 @@
    }
   },
   {
+   "path": "/destinations/dubai-media-city",
+   "path_id": 124832871,
+   "title": "Dubai Media City Tram Stop: Media City (Dubai Tram)",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-11-21": 1,
+    "2026-11-28": 1
+   }
+  },
+  {
    "path": "/destinations/ain-dubai",
    "path_id": 123148536,
    "title": "Ain Dubai and Bluewaters Tram Stop: Jumeirah Beach Residence 1, 15 min walk",
@@ -12442,16 +12454,6 @@
    "count": 1,
    "daily": {
     "2026-11-25": 1
-   }
-  },
-  {
-   "path": "/destinations/dubai-media-city",
-   "path_id": 124832871,
-   "title": "Dubai Media City Tram Stop: Media City (Dubai Tram)",
-   "event": false,
-   "count": 1,
-   "daily": {
-    "2026-11-21": 1
    }
   },
   {
@@ -14487,9 +14489,9 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 622,
+  "visits": 623,
   "events_total": 404,
-  "goatcounter_total_with_events": 1026,
+  "goatcounter_total_with_events": 1027,
   "page_loads_by_day": {
    "2026-10-01": 6,
    "2026-10-02": 24,
@@ -14547,7 +14549,8 @@
    "2026-11-24": 12,
    "2026-11-25": 22,
    "2026-11-26": 11,
-   "2026-11-27": 9
+   "2026-11-27": 9,
+   "2026-11-28": 1
   },
   "visitor_days_by_day": {
    "2026-10-08": 7,
@@ -15244,6 +15247,12 @@
     "count": 1
    }
   ],
+  "/destinations/dubai-media-city": [
+   {
+    "name": "Google",
+    "count": 2
+   }
+  ],
   "/destinations/ain-dubai": [
    {
     "name": "(direct or unknown)",
@@ -15363,12 +15372,6 @@
   "/stations/burjuman": [
    {
     "name": "dubaimetro.fyi/lines/red-line",
-    "count": 1
-   }
-  ],
-  "/destinations/dubai-media-city": [
-   {
-    "name": "Google",
     "count": 1
    }
   ],
@@ -15698,6 +15701,10 @@
     "count": 2
    },
    {
+    "path": "/destinations/dubai-media-city",
+    "count": 2
+   },
+   {
     "path": "/destinations/dubai-festival-city-mall",
     "count": 2
    },
@@ -15751,10 +15758,6 @@
    },
    {
     "path": "/destinations/iranian-hospital-dubai",
-    "count": 1
-   },
-   {
-    "path": "/destinations/dubai-media-city",
     "count": 1
    },
    {
@@ -15942,7 +15945,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 317,
+   "count": 318,
    "ref_scheme": "g"
   },
   {
@@ -16010,7 +16013,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 958
+   "count": 959
   },
   {
    "id": "rus",
@@ -16067,7 +16070,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 826
+   "count": 827
   },
   {
    "id": "US",
@@ -16259,7 +16262,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 747
+   "count": 748
   },
   {
    "id": "tablet",
@@ -16291,7 +16294,7 @@
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 391
+   "count": 392
   },
   {
    "id": "Firefox",
@@ -16307,7 +16310,7 @@
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 381
+   "count": 382
   },
   {
    "id": "Android",

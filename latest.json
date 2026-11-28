@@ -1,45 +1,13 @@
 {
  "site": "https://dubaimetro.goatcounter.com",
- "generated": "2026-11-27T22:57:56Z",
- "start": "2026-10-28",
- "end": "2026-11-28",
+ "generated": "2026-11-28T04:58:20Z",
+ "start": "2026-10-29",
+ "end": "2026-11-29",
  "total": {
-  "total": 596,
+  "total": 591,
   "total_events": 173,
-  "total_utc": 596,
+  "total_utc": 589,
   "stats": [
-   {
-    "day": "2026-10-28",
-    "hourly": [
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     0,
-     1,
-     1,
-     1,
-     0,
-     2,
-     0,
-     0,
-     0,
-     1,
-     0,
-     0,
-     0,
-     0
-    ],
-    "daily": 6,
-    "weekly": 65,
-    "monthly": 25
-   },
    {
     "day": "2026-10-29",
     "hourly": [
@@ -68,7 +36,9 @@
      0,
      0
     ],
-    "daily": 5
+    "daily": 5,
+    "weekly": 78,
+    "monthly": 19
    },
    {
     "day": "2026-10-30",
@@ -159,7 +129,7 @@
      0
     ],
     "daily": 12,
-    "monthly": 571
+    "monthly": 572
    },
    {
     "day": "2026-11-02",
@@ -249,8 +219,7 @@
      0,
      0
     ],
-    "daily": 19,
-    "weekly": 182
+    "daily": 19
    },
    {
     "day": "2026-11-05",
@@ -280,7 +249,8 @@
      0,
      0
     ],
-    "daily": 12
+    "daily": 12,
+    "weekly": 208
    },
    {
     "day": "2026-11-06",
@@ -460,8 +430,7 @@
      0,
      1
     ],
-    "daily": 45,
-    "weekly": 219
+    "daily": 45
    },
    {
     "day": "2026-11-12",
@@ -491,7 +460,8 @@
      5,
      0
     ],
-    "daily": 33
+    "daily": 33,
+    "weekly": 181
    },
    {
     "day": "2026-11-13",
@@ -671,8 +641,7 @@
      0,
      0
     ],
-    "daily": 7,
-    "weekly": 84
+    "daily": 7
    },
    {
     "day": "2026-11-19",
@@ -702,7 +671,8 @@
      0,
      0
     ],
-    "daily": 7
+    "daily": 7,
+    "weekly": 101
    },
    {
     "day": "2026-11-20",
@@ -882,8 +852,7 @@
      0,
      0
     ],
-    "daily": 24,
-    "weekly": 46
+    "daily": 24
    },
    {
     "day": "2026-11-26",
@@ -913,7 +882,8 @@
      0,
      0
     ],
-    "daily": 13
+    "daily": 13,
+    "weekly": 23
    },
    {
     "day": "2026-11-27",
@@ -947,6 +917,36 @@
    },
    {
     "day": "2026-11-28",
+    "hourly": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "daily": 1
+   },
+   {
+    "day": "2026-11-29",
     "hourly": [
      0,
      0,
@@ -1018,9 +1018,8 @@
    "path_id": 116082941,
    "title": "Nearest Metro Station to Me in Dubai: Find It by Location",
    "event": false,
-   "count": 103,
+   "count": 102,
    "daily": {
-    "2026-10-28": 1,
     "2026-10-31": 1,
     "2026-11-02": 2,
     "2026-11-03": 1,
@@ -1077,9 +1076,8 @@
    "path_id": 110626146,
    "title": "Etihad Rail Dubai Station (Al Yalayis) Metro Station: Jumeirah Golf Estates",
    "event": false,
-   "count": 21,
+   "count": 18,
    "daily": {
-    "2026-10-28": 3,
     "2026-10-30": 2,
     "2026-10-31": 1,
     "2026-11-01": 2,
@@ -1137,26 +1135,6 @@
    }
   },
   {
-   "path": "/destinations/indian-consulate-dubai",
-   "path_id": 112289662,
-   "title": "Indian Consulate Dubai Metro Station: BurJuman, 7 min walk",
-   "event": false,
-   "count": 12,
-   "daily": {
-    "2026-10-28": 1,
-    "2026-11-03": 1,
-    "2026-11-04": 1,
-    "2026-11-06": 2,
-    "2026-11-09": 1,
-    "2026-11-12": 1,
-    "2026-11-13": 1,
-    "2026-11-14": 1,
-    "2026-11-18": 1,
-    "2026-11-19": 1,
-    "2026-11-21": 1
-   }
-  },
-  {
    "path": "geo/denied/-",
    "path_id": 110313382,
    "title": "en",
@@ -1171,6 +1149,25 @@
     "2026-11-11": 2,
     "2026-11-13": 1,
     "2026-11-14": 1
+   }
+  },
+  {
+   "path": "/destinations/indian-consulate-dubai",
+   "path_id": 112289662,
+   "title": "Indian Consulate Dubai Metro Station: BurJuman, 7 min walk",
+   "event": false,
+   "count": 11,
+   "daily": {
+    "2026-11-03": 1,
+    "2026-11-04": 1,
+    "2026-11-06": 2,
+    "2026-11-09": 1,
+    "2026-11-12": 1,
+    "2026-11-13": 1,
+    "2026-11-14": 1,
+    "2026-11-18": 1,
+    "2026-11-19": 1,
+    "2026-11-21": 1
    }
   },
   {
@@ -1300,20 +1297,6 @@
    }
   },
   {
-   "path": "/destinations/aster-hospital-al-qusais",
-   "path_id": 116157918,
-   "title": "Aster Hospital Al Qusais Metro Station: Dubai Airport Free Zone",
-   "event": false,
-   "count": 5,
-   "daily": {
-    "2026-10-28": 1,
-    "2026-10-29": 1,
-    "2026-11-05": 1,
-    "2026-11-16": 1,
-    "2026-11-22": 1
-   }
-  },
-  {
    "path": "/destinations/pakistan-consulate-dubai",
    "path_id": 112004545,
    "title": "Pakistan Consulate Dubai Metro Station: Sharaf DG (Green Line), 5 min walk",
@@ -1373,6 +1356,19 @@
     "2026-11-07": 1,
     "2026-11-16": 1,
     "2026-11-18": 1
+   }
+  },
+  {
+   "path": "/destinations/aster-hospital-al-qusais",
+   "path_id": 116157918,
+   "title": "Aster Hospital Al Qusais Metro Station: Dubai Airport Free Zone",
+   "event": false,
+   "count": 4,
+   "daily": {
+    "2026-10-29": 1,
+    "2026-11-05": 1,
+    "2026-11-16": 1,
+    "2026-11-22": 1
    }
   },
   {
@@ -1586,6 +1582,17 @@
    "daily": {
     "2026-11-22": 1,
     "2026-11-25": 1
+   }
+  },
+  {
+   "path": "/destinations/dubai-media-city",
+   "path_id": 124832871,
+   "title": "Dubai Media City Tram Stop: Media City (Dubai Tram)",
+   "event": false,
+   "count": 2,
+   "daily": {
+    "2026-11-21": 1,
+    "2026-11-28": 1
    }
   },
   {
@@ -1897,16 +1904,6 @@
    "count": 1,
    "daily": {
     "2026-11-25": 1
-   }
-  },
-  {
-   "path": "/destinations/dubai-media-city",
-   "path_id": 124832871,
-   "title": "Dubai Media City Tram Stop: Media City (Dubai Tram)",
-   "event": false,
-   "count": 1,
-   "daily": {
-    "2026-11-21": 1
    }
   },
   {
@@ -2782,11 +2779,10 @@
  ],
  "summary": {
   "_about": "visits = page loads only (events excluded; GoatCounter's own total adds them). visitor_days = visit/new + visit/return, one per browser per day, counted since the visit events exist; only the map page sends them, so people who opened just a station or district page are not in it. events_total = actions inside the map.",
-  "visits": 423,
+  "visits": 418,
   "events_total": 173,
-  "goatcounter_total_with_events": 596,
+  "goatcounter_total_with_events": 591,
   "page_loads_by_day": {
-   "2026-10-28": 6,
    "2026-10-29": 4,
    "2026-10-30": 3,
    "2026-10-31": 8,
@@ -2816,7 +2812,8 @@
    "2026-11-24": 12,
    "2026-11-25": 22,
    "2026-11-26": 11,
-   "2026-11-27": 9
+   "2026-11-27": 9,
+   "2026-11-28": 1
   },
   "visitor_days_by_day": {
    "2026-10-29": 1,
@@ -3058,7 +3055,7 @@
   "/nearest-station": [
    {
     "name": "Google",
-    "count": 97
+    "count": 96
    },
    {
     "name": "(direct or unknown)",
@@ -3076,7 +3073,7 @@
   "/destinations/etihad-rail-dubai": [
    {
     "name": "Google",
-    "count": 20
+    "count": 17
    },
    {
     "name": "(direct or unknown)",
@@ -3096,7 +3093,7 @@
   "/destinations/indian-consulate-dubai": [
    {
     "name": "Google",
-    "count": 12
+    "count": 11
    }
   ],
   "/destinations/rashid-hospital": [
@@ -3149,12 +3146,6 @@
     "count": 5
    }
   ],
-  "/destinations/aster-hospital-al-qusais": [
-   {
-    "name": "Google",
-    "count": 5
-   }
-  ],
   "/destinations/pakistan-consulate-dubai": [
    {
     "name": "Google",
@@ -3197,6 +3188,12 @@
    {
     "name": "chatgpt.com",
     "count": 1
+   }
+  ],
+  "/destinations/aster-hospital-al-qusais": [
+   {
+    "name": "Google",
+    "count": 4
    }
   ],
   "/destinations/jw-marriott-marquis-dubai": [
@@ -3279,6 +3276,12 @@
    {
     "name": "Yahoo",
     "count": 1
+   }
+  ],
+  "/destinations/dubai-media-city": [
+   {
+    "name": "Google",
+    "count": 2
    }
   ],
   "/destinations/ain-dubai": [
@@ -3426,12 +3429,6 @@
   "/stations/burjuman": [
    {
     "name": "dubaimetro.fyi/lines/red-line",
-    "count": 1
-   }
-  ],
-  "/destinations/dubai-media-city": [
-   {
-    "name": "Google",
     "count": 1
    }
   ],
@@ -3614,11 +3611,11 @@
   "Google": [
    {
     "path": "/nearest-station",
-    "count": 97
+    "count": 96
    },
    {
     "path": "/destinations/etihad-rail-dubai",
-    "count": 20
+    "count": 17
    },
    {
     "path": "/destinations/meena-bazaar",
@@ -3626,7 +3623,7 @@
    },
    {
     "path": "/destinations/indian-consulate-dubai",
-    "count": 12
+    "count": 11
    },
    {
     "path": "/destinations/rashid-hospital",
@@ -3645,15 +3642,15 @@
     "count": 5
    },
    {
-    "path": "/destinations/aster-hospital-al-qusais",
-    "count": 5
-   },
-   {
     "path": "/destinations/pakistan-consulate-dubai",
     "count": 5
    },
    {
     "path": "/destinations/international-modern-hospital",
+    "count": 4
+   },
+   {
+    "path": "/destinations/aster-hospital-al-qusais",
     "count": 4
    },
    {
@@ -3706,6 +3703,10 @@
    },
    {
     "path": "/tram",
+    "count": 2
+   },
+   {
+    "path": "/destinations/dubai-media-city",
     "count": 2
    },
    {
@@ -3778,10 +3779,6 @@
    },
    {
     "path": "/destinations/iranian-hospital-dubai",
-    "count": 1
-   },
-   {
-    "path": "/destinations/dubai-media-city",
     "count": 1
    },
    {
@@ -3916,7 +3913,7 @@
   {
    "id": "Google",
    "name": "Google",
-   "count": 265,
+   "count": 260,
    "ref_scheme": "g"
   },
   {
@@ -3953,7 +3950,7 @@
   {
    "id": "eng",
    "name": "English",
-   "count": 565
+   "count": 560
   },
   {
    "id": "zho",
@@ -4000,7 +3997,7 @@
   {
    "id": "AE",
    "name": "United Arab Emirates",
-   "count": 507
+   "count": 504
   },
   {
    "id": "US",
@@ -4050,11 +4047,6 @@
   {
    "id": "CA",
    "name": "Canada",
-   "count": 2
-  },
-  {
-   "id": "CN",
-   "name": "China",
    "count": 2
   },
   {
@@ -4137,7 +4129,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 500
+   "count": 495
   },
   {
    "id": "tablet",
@@ -4164,12 +4156,12 @@
   {
    "id": "Chrome",
    "name": "Chrome",
-   "count": 358
+   "count": 354
   },
   {
    "id": "Safari",
    "name": "Safari",
-   "count": 237
+   "count": 236
   },
   {
    "id": "Firefox",
@@ -4181,12 +4173,12 @@
   {
    "id": "Android",
    "name": "Android",
-   "count": 266
+   "count": 262
   },
   {
    "id": "iOS",
    "name": "iOS",
-   "count": 231
+   "count": 230
   },
   {
    "id": "Windows",
